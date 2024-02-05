@@ -1,0 +1,18 @@
+DigitalIdentifier:
+  attributes:
+    howToCite:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/howToCite
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    identifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/identifier
+    identifierSchema:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/identifierSchema
+  class_uri: https://openminds.ebrains.eu/core/DigitalIdentifier
+  description: Structured information on a digital identifier.

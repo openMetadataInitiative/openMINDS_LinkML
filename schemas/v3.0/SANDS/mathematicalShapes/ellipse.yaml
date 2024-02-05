@@ -1,0 +1,14 @@
+Ellipse:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    semiMajorAxis:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/semiMajorAxis
+    semiMinorAxis:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/semiMinorAxis
+  class_uri: https://openminds.ebrains.eu/sands/Ellipse
+  description: null

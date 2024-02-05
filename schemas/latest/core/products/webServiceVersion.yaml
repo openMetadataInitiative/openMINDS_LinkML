@@ -1,0 +1,104 @@
+WebServiceVersion:
+  attributes:
+    accessibility:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/accessibility
+    copyright:
+      slot_uri: https://openminds.ebrains.eu/vocab/copyright
+    custodian:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      slot_uri: https://openminds.ebrains.eu/vocab/custodian
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    developer:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      slot_uri: https://openminds.ebrains.eu/vocab/developer
+    fullDocumentation:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullDocumentation
+    fullName:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    funding:
+      list_elements_unique: true
+      multivalued: true
+      range: Funding
+      slot_uri: https://openminds.ebrains.eu/vocab/funding
+    hasPart:
+      list_elements_unique: true
+      multivalued: true
+      range: SoftwareVersion
+      slot_uri: https://openminds.ebrains.eu/vocab/hasPart
+    homepage:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    howToCite:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/howToCite
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    inputFormat:
+      list_elements_unique: true
+      multivalued: true
+      range: ContentType
+      slot_uri: https://openminds.ebrains.eu/vocab/inputFormat
+    isAlternativeVersionOf:
+      list_elements_unique: true
+      multivalued: true
+      range: WebServiceVersion
+      slot_uri: https://openminds.ebrains.eu/vocab/isAlternativeVersionOf
+    isNewVersionOf:
+      slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
+    keyword:
+      list_elements_unique: true
+      multivalued: true
+      range: ActionStatusType
+      slot_uri: https://openminds.ebrains.eu/vocab/keyword
+    otherContribution:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: Contribution
+      slot_uri: https://openminds.ebrains.eu/vocab/otherContribution
+    outputFormat:
+      list_elements_unique: true
+      multivalued: true
+      range: ContentType
+      slot_uri: https://openminds.ebrains.eu/vocab/outputFormat
+    relatedPublication:
+      list_elements_unique: true
+      multivalued: true
+      range: DOI
+      slot_uri: https://openminds.ebrains.eu/vocab/relatedPublication
+    releaseDate:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
+    repository:
+      slot_uri: https://openminds.ebrains.eu/vocab/repository
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+    supportChannel:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/supportChannel
+    versionIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
+    versionInnovation:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
+  class_uri: https://openminds.ebrains.eu/core/WebServiceVersion
+  description: null

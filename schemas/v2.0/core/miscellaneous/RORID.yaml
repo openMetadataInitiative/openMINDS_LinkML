@@ -1,0 +1,12 @@
+RORID:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    identifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/identifier
+  class_uri: https://openminds.ebrains.eu/core/RORID
+  description: A persistent identifier for a research organization, provided by the
+    Research Organization Registry.

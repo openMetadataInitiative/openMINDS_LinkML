@@ -1,0 +1,15 @@
+PublicationIssue:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isPartOf:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    issueNumber:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/issueNumber
+  class_uri: https://openminds.ebrains.eu/publications/PublicationIssue
+  description: null

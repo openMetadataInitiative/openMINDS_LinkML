@@ -1,0 +1,11 @@
+URL:
+  attributes:
+    URL:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/URL
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/core/URL
+  description: null

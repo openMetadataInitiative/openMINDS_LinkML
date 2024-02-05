@@ -1,0 +1,14 @@
+AmountOfChemical:
+  attributes:
+    amount:
+      slot_uri: https://openminds.ebrains.eu/vocab/amount
+    chemicalProduct:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/chemicalProduct
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/chemicals/AmountOfChemical
+  description: Structured information about the amount of a given chemical that was
+    used.

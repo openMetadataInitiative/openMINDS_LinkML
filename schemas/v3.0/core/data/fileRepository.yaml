@@ -1,0 +1,34 @@
+FileRepository:
+  attributes:
+    IRI:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/IRI
+    contentTypePattern:
+      list_elements_unique: true
+      multivalued: true
+      range: ContentTypePattern
+      slot_uri: https://openminds.ebrains.eu/vocab/contentTypePattern
+    format:
+      slot_uri: https://openminds.ebrains.eu/vocab/format
+    hash:
+      slot_uri: https://openminds.ebrains.eu/vocab/hash
+    hostedBy:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hostedBy
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    storageSize:
+      slot_uri: https://openminds.ebrains.eu/vocab/storageSize
+    structurePattern:
+      slot_uri: https://openminds.ebrains.eu/vocab/structurePattern
+    type:
+      slot_uri: https://openminds.ebrains.eu/vocab/type
+  class_uri: https://openminds.ebrains.eu/core/FileRepository
+  description: Structured information on a file repository.

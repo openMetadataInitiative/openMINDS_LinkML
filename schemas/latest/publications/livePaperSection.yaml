@@ -1,0 +1,25 @@
+LivePaperSection:
+  attributes:
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isPartOf:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    order:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/order
+    type:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/type
+  class_uri: https://openminds.ebrains.eu/publications/LivePaperSection
+  description: null

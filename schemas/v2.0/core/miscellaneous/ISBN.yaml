@@ -1,0 +1,11 @@
+ISBN:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    identifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/identifier
+  class_uri: https://openminds.ebrains.eu/core/ISBN
+  description: An International Standard Book Number of the International ISBN Agency.

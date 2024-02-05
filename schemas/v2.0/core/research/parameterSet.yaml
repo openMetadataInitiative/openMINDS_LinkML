@@ -1,0 +1,22 @@
+ParameterSet:
+  attributes:
+    context:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/context
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    parameter:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: NumericalParameter
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/parameter
+    relevantFor:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/relevantFor
+  class_uri: https://openminds.ebrains.eu/core/ParameterSet
+  description: Structured information on a used parameter set.

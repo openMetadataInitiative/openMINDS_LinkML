@@ -1,0 +1,19 @@
+NumericalProperty:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    value:
+      inlined: true
+      multivalued: true
+      range: QuantitativeValue
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/value
+  class_uri: https://openminds.ebrains.eu/core/NumericalProperty
+  description: Structured information about a property of some entity or process whose
+    value is a number.

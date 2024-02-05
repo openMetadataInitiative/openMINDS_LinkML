@@ -1,0 +1,36 @@
+File:
+  attributes:
+    IRI:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/IRI
+    content:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/content
+    fileRepository:
+      slot_uri: https://openminds.ebrains.eu/vocab/fileRepository
+    format:
+      slot_uri: https://openminds.ebrains.eu/vocab/format
+    hash:
+      slot_uri: https://openminds.ebrains.eu/vocab/hash
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isPartOf:
+      list_elements_unique: true
+      multivalued: true
+      range: FileBundle
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    specialUsageRole:
+      slot_uri: https://openminds.ebrains.eu/vocab/specialUsageRole
+    storageSize:
+      slot_uri: https://openminds.ebrains.eu/vocab/storageSize
+  class_uri: https://openminds.ebrains.eu/core/File
+  description: Structured information on a file instance that is accessible via a
+    URL.

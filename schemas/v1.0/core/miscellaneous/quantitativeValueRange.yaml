@@ -1,0 +1,14 @@
+QuantitativeValueRange:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    maxValue:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/maxValue
+    minValue:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/minValue
+  class_uri: https://openminds.ebrains.eu/core/QuantitativeValueRange
+  description: A representation of a range of quantitative values.

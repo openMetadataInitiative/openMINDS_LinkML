@@ -1,0 +1,67 @@
+StimulationActivity:
+  attributes:
+    customPropertySet:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: CustomPropertySet
+      slot_uri: https://openminds.ebrains.eu/vocab/customPropertySet
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    endTime:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/endTime
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    input:
+      list_elements_unique: true
+      multivalued: true
+      range: SubjectGroupState
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/input
+    isPartOf:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    output:
+      list_elements_unique: true
+      multivalued: true
+      range: SubjectGroupState
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/output
+    performedBy:
+      list_elements_unique: true
+      multivalued: true
+      range: SoftwareAgent
+      slot_uri: https://openminds.ebrains.eu/vocab/performedBy
+    preparationDesign:
+      slot_uri: https://openminds.ebrains.eu/vocab/preparationDesign
+    protocol:
+      list_elements_unique: true
+      multivalued: true
+      range: Protocol
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/protocol
+    setup:
+      slot_uri: https://openminds.ebrains.eu/vocab/setup
+    startTime:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/startTime
+    stimulus:
+      list_elements_unique: true
+      multivalued: true
+      range: EphysStimulus
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/stimulus
+    studyTarget:
+      list_elements_unique: true
+      multivalued: true
+      range: AuditoryStimulusType
+      slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
+  class_uri: https://openminds.ebrains.eu/stimulation/StimulationActivity
+  description: null

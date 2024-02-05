@@ -1,0 +1,18 @@
+SoftwareAgent:
+  attributes:
+    environment:
+      slot_uri: https://openminds.ebrains.eu/vocab/environment
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    software:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/software
+  class_uri: https://openminds.ebrains.eu/computation/SoftwareAgent
+  description: Structured information about a piece of software or web service that
+    can perform a task autonomously.

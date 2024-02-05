@@ -1,0 +1,52 @@
+CommonCoordinateSpace:
+  attributes:
+    anatomicalAxesOrientation:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalAxesOrientation
+    axesOrigin:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: QuantitativeValue
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/axesOrigin
+    defaultImage:
+      list_elements_unique: true
+      multivalued: true
+      range: File
+      slot_uri: https://openminds.ebrains.eu/vocab/defaultImage
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    homepage:
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    howToCite:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/howToCite
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    nativeUnit:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/nativeUnit
+    ontologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+    releaseDate:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+    versionIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
+  class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpace
+  description: null

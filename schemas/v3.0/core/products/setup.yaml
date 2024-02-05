@@ -1,0 +1,35 @@
+Setup:
+  attributes:
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    hasPart:
+      list_elements_unique: true
+      multivalued: true
+      range: Setup
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasPart
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    location:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/location
+    manufacturer:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      slot_uri: https://openminds.ebrains.eu/vocab/manufacturer
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    type:
+      list_elements_unique: true
+      multivalued: true
+      range: SetupType
+      slot_uri: https://openminds.ebrains.eu/vocab/type
+  class_uri: https://openminds.ebrains.eu/core/Setup
+  description: null

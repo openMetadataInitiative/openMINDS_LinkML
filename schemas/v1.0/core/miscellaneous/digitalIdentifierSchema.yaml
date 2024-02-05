@@ -1,0 +1,18 @@
+DigitalIdentifierSchema:
+  attributes:
+    IRI:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/IRI
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    identifierPattern:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/identifierPattern
+    type:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/type
+  class_uri: https://openminds.ebrains.eu/core/DigitalIdentifierSchema
+  description: Structured information on a digital identifier schema.

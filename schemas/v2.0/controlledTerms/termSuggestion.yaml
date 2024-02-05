@@ -1,0 +1,26 @@
+TermSuggestion:
+  attributes:
+    addExistingTerminology:
+      slot_uri: https://openminds.ebrains.eu/vocab/addExistingTerminology
+    definition:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/definition
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    ontologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+    suggestNewTerminology:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/suggestNewTerminology
+  class_uri: https://openminds.ebrains.eu/controlledTerms/TermSuggestion
+  description: null

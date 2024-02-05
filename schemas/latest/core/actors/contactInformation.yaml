@@ -1,0 +1,12 @@
+ContactInformation:
+  attributes:
+    email:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/email
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/core/ContactInformation
+  description: Structured information about how to contact a given person or consortium.

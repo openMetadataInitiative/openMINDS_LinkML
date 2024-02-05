@@ -1,0 +1,24 @@
+ParcellationTerminology:
+  attributes:
+    dataLocation:
+      list_elements_unique: true
+      multivalued: true
+      range: File
+      slot_uri: https://openminds.ebrains.eu/vocab/dataLocation
+    hasEntity:
+      list_elements_unique: true
+      multivalued: true
+      range: ParcellationEntity
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasEntity
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    ontologyIdentifier:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+  class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
+  description: null

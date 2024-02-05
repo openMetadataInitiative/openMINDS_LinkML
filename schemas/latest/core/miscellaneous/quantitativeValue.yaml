@@ -1,0 +1,18 @@
+QuantitativeValue:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    typeOfUncertainty:
+      slot_uri: https://openminds.ebrains.eu/vocab/typeOfUncertainty
+    uncertainty:
+      multivalued: true
+      slot_uri: https://openminds.ebrains.eu/vocab/uncertainty
+    unit:
+      slot_uri: https://openminds.ebrains.eu/vocab/unit
+    value:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/value
+  class_uri: https://openminds.ebrains.eu/core/QuantitativeValue
+  description: Structured information on a quantitative value.

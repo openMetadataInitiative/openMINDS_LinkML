@@ -1,0 +1,17 @@
+CoordinatePoint:
+  attributes:
+    coordinateSpace:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/coordinateSpace
+    coordinates:
+      inlined: true
+      multivalued: true
+      range: QuantitativeValue
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/coordinates
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
+  description: Structured information on a coordinate point.

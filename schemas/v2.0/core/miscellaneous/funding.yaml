@@ -1,0 +1,20 @@
+Funding:
+  attributes:
+    acknowledgement:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/acknowledgement
+    awardNumber:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/awardNumber
+    awardTitle:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/awardTitle
+    funder:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/funder
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/core/Funding
+  description: Structured information on used funding.

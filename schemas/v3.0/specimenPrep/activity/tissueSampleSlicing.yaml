@@ -1,0 +1,22 @@
+TissueSampleSlicing:
+  attributes:
+    device:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/device
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    input:
+      slot_uri: https://openminds.ebrains.eu/vocab/input
+    output:
+      list_elements_unique: true
+      multivalued: true
+      range: TissueSampleCollectionState
+      slot_uri: https://openminds.ebrains.eu/vocab/output
+    temperature:
+      slot_uri: https://openminds.ebrains.eu/vocab/temperature
+    tissueBathSolution:
+      slot_uri: https://openminds.ebrains.eu/vocab/tissueBathSolution
+  class_uri: https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing
+  description: null

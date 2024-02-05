@@ -1,0 +1,16 @@
+QuantitativeRelationAssessment:
+  attributes:
+    criteria:
+      slot_uri: https://openminds.ebrains.eu/vocab/criteria
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    inRelationTo:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/inRelationTo
+    quantitativeOverlap:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/quantitativeOverlap
+  class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
+  description: null

@@ -1,0 +1,35 @@
+BehavioralProtocol:
+  attributes:
+    describedIn:
+      list_elements_unique: true
+      multivalued: true
+      range: DOI
+      slot_uri: https://openminds.ebrains.eu/vocab/describedIn
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    internalIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    stimulation:
+      list_elements_unique: true
+      multivalued: true
+      range: StimulationApproach
+      slot_uri: https://openminds.ebrains.eu/vocab/stimulation
+    stimulusType:
+      list_elements_unique: true
+      multivalued: true
+      range: AuditoryStimulusType
+      slot_uri: https://openminds.ebrains.eu/vocab/stimulusType
+  class_uri: https://openminds.ebrains.eu/core/BehavioralProtocol
+  description: Structured information about a protocol used in an experiment studying
+    human or animal behavior.

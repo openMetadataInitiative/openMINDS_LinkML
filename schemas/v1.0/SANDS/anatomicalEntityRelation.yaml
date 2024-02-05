@@ -1,0 +1,22 @@
+AnatomicalEntityRelation:
+  attributes:
+    criteria:
+      slot_uri: https://openminds.ebrains.eu/vocab/criteria
+    criteriaQualityType:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/criteriaQualityType
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    inRelationTo:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/inRelationTo
+    qualitativeOverlap:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/qualitativeOverlap
+    quantitativeOverlap:
+      slot_uri: https://openminds.ebrains.eu/vocab/quantitativeOverlap
+  class_uri: https://openminds.ebrains.eu/sands/AnatomicalEntityRelation
+  description: Structured information on the relation between one anatomical entity
+    and another.

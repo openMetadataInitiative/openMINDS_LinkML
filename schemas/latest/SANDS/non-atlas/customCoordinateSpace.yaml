@@ -1,0 +1,30 @@
+CustomCoordinateSpace:
+  attributes:
+    anatomicalAxesOrientation:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalAxesOrientation
+    axesOrigin:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: QuantitativeValue
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/axesOrigin
+    defaultImage:
+      list_elements_unique: true
+      multivalued: true
+      range: File
+      slot_uri: https://openminds.ebrains.eu/vocab/defaultImage
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    nativeUnit:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/nativeUnit
+  class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
+  description: null

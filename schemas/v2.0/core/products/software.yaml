@@ -1,0 +1,44 @@
+Software:
+  attributes:
+    custodian:
+      list_elements_unique: true
+      multivalued: true
+      range: Organization
+      slot_uri: https://openminds.ebrains.eu/vocab/custodian
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    developer:
+      list_elements_unique: true
+      multivalued: true
+      range: Organization
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/developer
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    hasVersion:
+      list_elements_unique: true
+      multivalued: true
+      range: SoftwareVersion
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasVersion
+    homepage:
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    howToCite:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/howToCite
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+  class_uri: https://openminds.ebrains.eu/core/Software
+  description: Structured information on a software tool (concept level).

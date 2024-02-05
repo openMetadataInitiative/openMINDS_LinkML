@@ -1,0 +1,117 @@
+DatasetVersion:
+  attributes:
+    accessibility:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/accessibility
+    author:
+      list_elements_unique: true
+      multivalued: true
+      range: Organization
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/author
+    copyright:
+      slot_uri: https://openminds.ebrains.eu/vocab/copyright
+    custodian:
+      list_elements_unique: true
+      multivalued: true
+      range: Organization
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/custodian
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    developer:
+      list_elements_unique: true
+      multivalued: true
+      range: Organization
+      slot_uri: https://openminds.ebrains.eu/vocab/developer
+    digitalIdentifier:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    ethicsAssessment:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/ethicsAssessment
+    fullDocumentation:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullDocumentation
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    funding:
+      list_elements_unique: true
+      multivalued: true
+      range: Funding
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/funding
+    hasAlternativeVersion:
+      list_elements_unique: true
+      multivalued: true
+      range: DatasetVersion
+      slot_uri: https://openminds.ebrains.eu/vocab/hasAlternativeVersion
+    hasSupplementVersion:
+      list_elements_unique: true
+      multivalued: true
+      range: DatasetVersion
+      slot_uri: https://openminds.ebrains.eu/vocab/hasSupplementVersion
+    homepage:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isNewVersionOf:
+      slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
+    keyword:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/keyword
+    license:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/license
+    modality:
+      list_elements_unique: true
+      multivalued: true
+      range: Modality
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/modality
+    otherContribution:
+      list_elements_unique: true
+      multivalued: true
+      range: Contribution
+      slot_uri: https://openminds.ebrains.eu/vocab/otherContribution
+    relatedPublication:
+      list_elements_unique: true
+      multivalued: true
+      range: DigitalIdentifier
+      slot_uri: https://openminds.ebrains.eu/vocab/relatedPublication
+    releaseDate:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
+    repository:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/repository
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+    type:
+      list_elements_unique: true
+      multivalued: true
+      range: DatasetType
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/type
+    versionIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
+    versionInnovation:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
+  class_uri: https://openminds.ebrains.eu/core/DatasetVersion
+  description: Structured information on data originating from human/animal studies
+    or simulations (version level).

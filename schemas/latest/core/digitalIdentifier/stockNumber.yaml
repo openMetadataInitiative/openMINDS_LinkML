@@ -1,0 +1,15 @@
+StockNumber:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    identifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/identifier
+    vendor:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/vendor
+  class_uri: https://openminds.ebrains.eu/core/StockNumber
+  description: null

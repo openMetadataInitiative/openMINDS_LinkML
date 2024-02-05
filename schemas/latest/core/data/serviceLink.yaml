@@ -1,0 +1,23 @@
+ServiceLink:
+  attributes:
+    dataLocation:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/dataLocation
+    displayLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/displayLabel
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    openDataIn:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/openDataIn
+    previewImage:
+      slot_uri: https://openminds.ebrains.eu/vocab/previewImage
+    service:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/service
+  class_uri: https://openminds.ebrains.eu/core/ServiceLink
+  description: null

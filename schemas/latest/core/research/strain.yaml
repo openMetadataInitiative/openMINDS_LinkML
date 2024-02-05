@@ -1,0 +1,58 @@
+Strain:
+  attributes:
+    alternateIdentifier:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/alternateIdentifier
+    backgroundStrain:
+      list_elements_unique: true
+      multivalued: true
+      range: Strain
+      slot_uri: https://openminds.ebrains.eu/vocab/backgroundStrain
+    breedingType:
+      slot_uri: https://openminds.ebrains.eu/vocab/breedingType
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    diseaseModel:
+      list_elements_unique: true
+      multivalued: true
+      range: Disease
+      slot_uri: https://openminds.ebrains.eu/vocab/diseaseModel
+    geneticStrainType:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/geneticStrainType
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    laboratoryCode:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/laboratoryCode
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    ontologyIdentifier:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+    phenotype:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/phenotype
+    species:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/species
+    stockNumber:
+      slot_uri: https://openminds.ebrains.eu/vocab/stockNumber
+    synonym:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/synonym
+  class_uri: https://openminds.ebrains.eu/core/Strain
+  description: null

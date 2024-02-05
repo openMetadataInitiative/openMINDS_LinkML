@@ -1,0 +1,18 @@
+HardwareSystem:
+  attributes:
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    versionIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
+  class_uri: https://openminds.ebrains.eu/computation/HardwareSystem
+  description: Structured information about computing hardware.

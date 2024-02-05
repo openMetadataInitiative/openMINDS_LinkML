@@ -1,0 +1,35 @@
+Recording:
+  attributes:
+    additionalRemarks:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
+    channel:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: Channel
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/channel
+    dataLocation:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/dataLocation
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    internalIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    name:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    previousRecording:
+      slot_uri: https://openminds.ebrains.eu/vocab/previousRecording
+    recordedWith:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/recordedWith
+    samplingFrequency:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/samplingFrequency
+  class_uri: https://openminds.ebrains.eu/ephys/Recording
+  description: null

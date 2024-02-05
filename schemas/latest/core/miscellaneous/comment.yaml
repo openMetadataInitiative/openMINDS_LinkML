@@ -1,0 +1,23 @@
+Comment:
+  attributes:
+    about:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/about
+    comment:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/comment
+    commenter:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/commenter
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    timestamp:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/timestamp
+  class_uri: https://openminds.ebrains.eu/core/Comment
+  description: Structured information about a short text expressing an opinion on,
+    or giving information about some entity.

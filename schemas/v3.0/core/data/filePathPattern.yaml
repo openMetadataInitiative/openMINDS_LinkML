@@ -1,0 +1,18 @@
+FilePathPattern:
+  attributes:
+    groupingType:
+      list_elements_unique: true
+      multivalued: true
+      range: FileBundleGrouping
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/groupingType
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    regex:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/regex
+  class_uri: https://openminds.ebrains.eu/core/FilePathPattern
+  description: null

@@ -1,0 +1,30 @@
+Subject:
+  attributes:
+    biologicalSex:
+      slot_uri: https://openminds.ebrains.eu/vocab/biologicalSex
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    internalIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    isPartOf:
+      list_elements_unique: true
+      multivalued: true
+      range: SubjectGroup
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    species:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/species
+    studiedState:
+      list_elements_unique: true
+      multivalued: true
+      range: SubjectState
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/studiedState
+  class_uri: https://openminds.ebrains.eu/core/Subject
+  description: Structured information on a subject.

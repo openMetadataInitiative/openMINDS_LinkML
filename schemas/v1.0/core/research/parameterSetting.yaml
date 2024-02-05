@@ -1,0 +1,25 @@
+ParameterSetting:
+  attributes:
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    relevantFor:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/relevantFor
+    unit:
+      slot_uri: https://openminds.ebrains.eu/vocab/unit
+    value:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/value
+      type: UNKNOWN_TYPE
+  class_uri: https://openminds.ebrains.eu/core/ParameterSetting
+  description: Structured information on a used parameter setting.

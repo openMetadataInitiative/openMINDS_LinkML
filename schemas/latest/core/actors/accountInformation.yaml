@@ -1,0 +1,15 @@
+AccountInformation:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    service:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/service
+    userName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/userName
+  class_uri: https://openminds.ebrains.eu/core/AccountInformation
+  description: Structured information about a user account for a web service.

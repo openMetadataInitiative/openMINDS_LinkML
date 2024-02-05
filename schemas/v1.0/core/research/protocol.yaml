@@ -1,0 +1,32 @@
+Protocol:
+  attributes:
+    behavioralTask:
+      list_elements_unique: true
+      multivalued: true
+      range: BehavioralTask
+      slot_uri: https://openminds.ebrains.eu/vocab/behavioralTask
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    studyTarget:
+      list_elements_unique: true
+      multivalued: true
+      range: BiologicalSex
+      slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
+    technique:
+      list_elements_unique: true
+      multivalued: true
+      range: Technique
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/technique
+  class_uri: https://openminds.ebrains.eu/core/Protocol
+  description: Structured information on a research project.

@@ -1,0 +1,63 @@
+TissueSampleCollection:
+  attributes:
+    biologicalSex:
+      list_elements_unique: true
+      multivalued: true
+      range: BiologicalSex
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/biologicalSex
+    genotype:
+      list_elements_unique: true
+      multivalued: true
+      range: Genotype
+      slot_uri: https://openminds.ebrains.eu/vocab/genotype
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    internalIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    laterality:
+      list_elements_unique: true
+      multivalued: true
+      range: Laterality
+      slot_uri: https://openminds.ebrains.eu/vocab/laterality
+    origin:
+      list_elements_unique: true
+      multivalued: true
+      range: CellType
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/origin
+    phenotype:
+      list_elements_unique: true
+      multivalued: true
+      range: Phenotype
+      slot_uri: https://openminds.ebrains.eu/vocab/phenotype
+    quantity:
+      slot_uri: https://openminds.ebrains.eu/vocab/quantity
+    species:
+      list_elements_unique: true
+      multivalued: true
+      range: Species
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/species
+    strain:
+      list_elements_unique: true
+      multivalued: true
+      range: Strain
+      slot_uri: https://openminds.ebrains.eu/vocab/strain
+    studiedState:
+      list_elements_unique: true
+      multivalued: true
+      range: TissueSampleCollectionState
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/studiedState
+    type:
+      list_elements_unique: true
+      multivalued: true
+      range: TissueSampleType
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/type
+  class_uri: https://openminds.ebrains.eu/core/TissueSampleCollection
+  description: null

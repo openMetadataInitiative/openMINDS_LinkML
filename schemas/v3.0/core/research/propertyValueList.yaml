@@ -1,0 +1,18 @@
+PropertyValueList:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    propertyValuePair:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: NumericalProperty
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/propertyValuePair
+  class_uri: https://openminds.ebrains.eu/core/PropertyValueList
+  description: An identifiable list of property-value pairs.

@@ -1,0 +1,31 @@
+EphysStimulus:
+  attributes:
+    deliveredBy:
+      slot_uri: https://openminds.ebrains.eu/vocab/deliveredBy
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    epoch:
+      slot_uri: https://openminds.ebrains.eu/vocab/epoch
+    generatedBy:
+      slot_uri: https://openminds.ebrains.eu/vocab/generatedBy
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    internalIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    specification:
+      list_elements_unique: true
+      multivalued: true
+      range: Configuration
+      slot_uri: https://openminds.ebrains.eu/vocab/specification
+    type:
+      slot_uri: https://openminds.ebrains.eu/vocab/type
+  class_uri: https://openminds.ebrains.eu/stimulation/EphysStimulus
+  description: null

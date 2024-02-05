@@ -1,0 +1,39 @@
+ParcellationTerminology:
+  attributes:
+    definedIn:
+      list_elements_unique: true
+      multivalued: true
+      range: File
+      slot_uri: https://openminds.ebrains.eu/vocab/definedIn
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isAlternativeVersionOf:
+      list_elements_unique: true
+      multivalued: true
+      range: BrainAtlasVersion
+      slot_uri: https://openminds.ebrains.eu/vocab/isAlternativeVersionOf
+    isNewVersionOf:
+      slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
+    ontologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+    versionIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
+    versionInnovation:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
+  class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
+  description: null

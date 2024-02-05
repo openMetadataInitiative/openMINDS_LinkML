@@ -1,0 +1,42 @@
+ParcellationEntity:
+  attributes:
+    hasAnnotation:
+      slot_uri: https://openminds.ebrains.eu/vocab/hasAnnotation
+    hasParent:
+      slot_uri: https://openminds.ebrains.eu/vocab/hasParent
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isPartOf:
+      list_elements_unique: true
+      multivalued: true
+      range: ParcellationTerminology
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    ontologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+    relatedUBERONTerm:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/relatedUBERONTerm
+    relationAssessment:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: QualitativeRelationAssessment
+      slot_uri: https://openminds.ebrains.eu/vocab/relationAssessment
+    versionIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
+    versionInnovation:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
+  class_uri: https://openminds.ebrains.eu/sands/ParcellationEntity
+  description: null

@@ -1,0 +1,11 @@
+Circle:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    radius:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/radius
+  class_uri: https://openminds.ebrains.eu/sands/Circle
+  description: null

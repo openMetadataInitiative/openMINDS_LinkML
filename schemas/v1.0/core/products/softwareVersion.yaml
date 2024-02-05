@@ -1,0 +1,152 @@
+SoftwareVersion:
+  attributes:
+    accessibility:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/accessibility
+    applicationCategory:
+      list_elements_unique: true
+      multivalued: true
+      range: SoftwareApplicationCategory
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/applicationCategory
+    author:
+      list_elements_unique: true
+      multivalued: true
+      range: Organization
+      slot_uri: https://openminds.ebrains.eu/vocab/author
+    copyright:
+      slot_uri: https://openminds.ebrains.eu/vocab/copyright
+    custodian:
+      list_elements_unique: true
+      multivalued: true
+      range: Organization
+      slot_uri: https://openminds.ebrains.eu/vocab/custodian
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    developer:
+      list_elements_unique: true
+      multivalued: true
+      range: Organization
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/developer
+    device:
+      list_elements_unique: true
+      multivalued: true
+      range: OperatingDevice
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/device
+    digitalIdentifier:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    fullDocumentation:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullDocumentation
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    funding:
+      list_elements_unique: true
+      multivalued: true
+      range: Funding
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/funding
+    hasAlternativeVersion:
+      list_elements_unique: true
+      multivalued: true
+      range: SoftwareVersion
+      slot_uri: https://openminds.ebrains.eu/vocab/hasAlternativeVersion
+    hasFeature:
+      list_elements_unique: true
+      multivalued: true
+      range: SoftwareFeature
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasFeature
+    hasRequirement:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasRequirement
+    hasSupplementVersion:
+      list_elements_unique: true
+      multivalued: true
+      range: SoftwareVersion
+      slot_uri: https://openminds.ebrains.eu/vocab/hasSupplementVersion
+    homepage:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    inputFormat:
+      list_elements_unique: true
+      multivalued: true
+      range: ContentType
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/inputFormat
+    isNewVersionOf:
+      slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
+    keyword:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/keyword
+    language:
+      list_elements_unique: true
+      multivalued: true
+      range: Language
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/language
+    license:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/license
+    operatingSystem:
+      list_elements_unique: true
+      multivalued: true
+      range: OperatingSystem
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/operatingSystem
+    otherContribution:
+      list_elements_unique: true
+      multivalued: true
+      range: Contribution
+      slot_uri: https://openminds.ebrains.eu/vocab/otherContribution
+    outputFormat:
+      list_elements_unique: true
+      multivalued: true
+      range: ContentType
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/outputFormat
+    programmingLanguage:
+      list_elements_unique: true
+      multivalued: true
+      range: ProgrammingLanguage
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/programmingLanguage
+    relatedPublication:
+      list_elements_unique: true
+      multivalued: true
+      range: DigitalIdentifier
+      slot_uri: https://openminds.ebrains.eu/vocab/relatedPublication
+    releaseDate:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
+    repository:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/repository
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+    versionIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
+    versionInnovation:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
+  class_uri: https://openminds.ebrains.eu/core/SoftwareVersion
+  description: null

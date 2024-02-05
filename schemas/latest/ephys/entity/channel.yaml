@@ -1,0 +1,15 @@
+Channel:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    internalIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    unit:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/unit
+  class_uri: https://openminds.ebrains.eu/ephys/Channel
+  description: null

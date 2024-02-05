@@ -1,0 +1,24 @@
+Person:
+  attributes:
+    digitalIdentifier:
+      list_elements_unique: true
+      multivalued: true
+      range: DigitalIdentifier
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    email:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/email
+    familyName:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/familyName
+    givenName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/givenName
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/core/Person
+  description: Structured information on a person.

@@ -1,0 +1,17 @@
+WebResource:
+  attributes:
+    IRI:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/IRI
+    contentDescription:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/contentDescription
+    format:
+      slot_uri: https://openminds.ebrains.eu/vocab/format
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/core/WebResource
+  description: null

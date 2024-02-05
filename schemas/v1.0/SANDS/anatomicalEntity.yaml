@@ -1,0 +1,22 @@
+AnatomicalEntity:
+  attributes:
+    hasParent:
+      slot_uri: https://openminds.ebrains.eu/vocab/hasParent
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    ontologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+    otherAnatomicalRelation:
+      list_elements_unique: true
+      multivalued: true
+      range: AnatomicalEntityRelation
+      slot_uri: https://openminds.ebrains.eu/vocab/otherAnatomicalRelation
+  class_uri: https://openminds.ebrains.eu/sands/AnatomicalEntity
+  description: Structured information on an anatomical entity.

@@ -1,0 +1,32 @@
+ContentType:
+  attributes:
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    fileExtension:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/fileExtension
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    relatedMediaType:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/relatedMediaType
+    specification:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/specification
+    synonym:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/synonym
+  class_uri: https://openminds.ebrains.eu/core/ContentType
+  description: Structured information on the content type of a file instance, bundle
+    or repository.

@@ -1,0 +1,30 @@
+Subject:
+  attributes:
+    biologicalSex:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/biologicalSex
+    genotype:
+      slot_uri: https://openminds.ebrains.eu/vocab/genotype
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    internalIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    phenotype:
+      slot_uri: https://openminds.ebrains.eu/vocab/phenotype
+    species:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/species
+    strain:
+      slot_uri: https://openminds.ebrains.eu/vocab/strain
+    studiedState:
+      list_elements_unique: true
+      multivalued: true
+      range: SubjectState
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/studiedState
+  class_uri: https://openminds.ebrains.eu/core/Subject
+  description: Structured information on a subject.

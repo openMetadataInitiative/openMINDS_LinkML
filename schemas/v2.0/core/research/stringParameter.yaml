@@ -1,0 +1,16 @@
+StringParameter:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    value:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/value
+  class_uri: https://openminds.ebrains.eu/core/StringParameter
+  description: null

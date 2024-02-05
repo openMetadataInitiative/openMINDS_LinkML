@@ -1,0 +1,30 @@
+AtlasTerminology:
+  attributes:
+    anatomicalEntity:
+      list_elements_unique: true
+      multivalued: true
+      range: AnatomicalEntity
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalEntity
+    definedIn:
+      list_elements_unique: true
+      multivalued: true
+      range: FileInstance
+      slot_uri: https://openminds.ebrains.eu/vocab/definedIn
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    ontologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+  class_uri: https://openminds.ebrains.eu/sands/AtlasTerminology
+  description: null

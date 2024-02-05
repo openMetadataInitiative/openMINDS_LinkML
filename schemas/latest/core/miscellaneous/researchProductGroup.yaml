@@ -1,0 +1,18 @@
+ResearchProductGroup:
+  attributes:
+    context:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/context
+    hasPart:
+      list_elements_unique: true
+      multivalued: true
+      range: ValidationTest
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasPart
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/core/ResearchProductGroup
+  description: null

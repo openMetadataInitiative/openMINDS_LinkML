@@ -1,0 +1,27 @@
+ElectrodeUsage:
+  attributes:
+    anatomicalLocation:
+      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalLocation
+    contactResistance:
+      slot_uri: https://openminds.ebrains.eu/vocab/contactResistance
+    device:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/device
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    metadataLocation:
+      list_elements_unique: true
+      multivalued: true
+      range: File
+      slot_uri: https://openminds.ebrains.eu/vocab/metadataLocation
+    spatialLocation:
+      slot_uri: https://openminds.ebrains.eu/vocab/spatialLocation
+    usedSpecimen:
+      slot_uri: https://openminds.ebrains.eu/vocab/usedSpecimen
+  class_uri: https://openminds.ebrains.eu/ephys/ElectrodeUsage
+  description: null

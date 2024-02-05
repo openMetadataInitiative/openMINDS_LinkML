@@ -1,0 +1,16 @@
+Periodical:
+  attributes:
+    abbreviation:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/abbreviation
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+  class_uri: https://openminds.ebrains.eu/publications/Periodical
+  description: null

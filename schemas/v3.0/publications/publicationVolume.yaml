@@ -1,0 +1,15 @@
+PublicationVolume:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isPartOf:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    volumeNumber:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/volumeNumber
+  class_uri: https://openminds.ebrains.eu/publications/PublicationVolume
+  description: null

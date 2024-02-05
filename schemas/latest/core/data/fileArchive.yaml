@@ -1,0 +1,20 @@
+FileArchive:
+  attributes:
+    IRI:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/IRI
+    format:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/format
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    sourceData:
+      list_elements_unique: true
+      multivalued: true
+      range: File
+      slot_uri: https://openminds.ebrains.eu/vocab/sourceData
+  class_uri: https://openminds.ebrains.eu/core/FileArchive
+  description: null

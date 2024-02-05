@@ -1,0 +1,54 @@
+ElectrodeArray:
+  attributes:
+    conductorMaterial:
+      slot_uri: https://openminds.ebrains.eu/vocab/conductorMaterial
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    deviceType:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/deviceType
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    electrodeIdentifier:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/electrodeIdentifier
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    insulatorMaterial:
+      slot_uri: https://openminds.ebrains.eu/vocab/insulatorMaterial
+    internalIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    intrinsicResistance:
+      slot_uri: https://openminds.ebrains.eu/vocab/intrinsicResistance
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    manufacturer:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      slot_uri: https://openminds.ebrains.eu/vocab/manufacturer
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    numberOfElectrodes:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/numberOfElectrodes
+    owner:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      slot_uri: https://openminds.ebrains.eu/vocab/owner
+    serialNumber:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/serialNumber
+  class_uri: https://openminds.ebrains.eu/ephys/ElectrodeArray
+  description: null

@@ -1,0 +1,31 @@
+MetaDataModel:
+  attributes:
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    digitalIdentifier:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    hasVersion:
+      list_elements_unique: true
+      multivalued: true
+      range: MetaDataModelVersion
+      slot_uri: https://openminds.ebrains.eu/vocab/hasVersion
+    homepage:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+  class_uri: https://openminds.ebrains.eu/core/MetaDataModel
+  description: null

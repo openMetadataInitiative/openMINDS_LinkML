@@ -1,0 +1,35 @@
+ElectrodeContact:
+  attributes:
+    coordinatePoint:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/coordinatePoint
+    definedIn:
+      list_elements_unique: true
+      multivalued: true
+      range: FileInstance
+      slot_uri: https://openminds.ebrains.eu/vocab/definedIn
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    internalIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    relatedRecording:
+      list_elements_unique: true
+      multivalued: true
+      range: FileInstance
+      slot_uri: https://openminds.ebrains.eu/vocab/relatedRecording
+    relatedStimulation:
+      list_elements_unique: true
+      multivalued: true
+      range: FileInstance
+      slot_uri: https://openminds.ebrains.eu/vocab/relatedStimulation
+    visualizedIn:
+      list_elements_unique: true
+      multivalued: true
+      range: Image
+      slot_uri: https://openminds.ebrains.eu/vocab/visualizedIn
+  class_uri: https://openminds.ebrains.eu/sands/ElectrodeContact
+  description: Structured information on an electrode contact.

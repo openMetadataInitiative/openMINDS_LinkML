@@ -1,0 +1,79 @@
+Simulation:
+  attributes:
+    customPropertySet:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: CustomPropertySet
+      slot_uri: https://openminds.ebrains.eu/vocab/customPropertySet
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    endTime:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/endTime
+    environment:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/environment
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    input:
+      list_elements_unique: true
+      multivalued: true
+      range: LocalFile
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/input
+    launchConfiguration:
+      slot_uri: https://openminds.ebrains.eu/vocab/launchConfiguration
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    output:
+      list_elements_unique: true
+      multivalued: true
+      range: LocalFile
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/output
+    performedBy:
+      list_elements_unique: true
+      multivalued: true
+      range: SoftwareAgent
+      slot_uri: https://openminds.ebrains.eu/vocab/performedBy
+    recipe:
+      slot_uri: https://openminds.ebrains.eu/vocab/recipe
+    resourceUsage:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: QuantitativeValue
+      slot_uri: https://openminds.ebrains.eu/vocab/resourceUsage
+    startTime:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/startTime
+    startedBy:
+      slot_uri: https://openminds.ebrains.eu/vocab/startedBy
+    status:
+      slot_uri: https://openminds.ebrains.eu/vocab/status
+    studyTarget:
+      list_elements_unique: true
+      multivalued: true
+      range: AuditoryStimulusType
+      slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
+    tag:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/tag
+    technique:
+      list_elements_unique: true
+      multivalued: true
+      range: AnalysisTechnique
+      slot_uri: https://openminds.ebrains.eu/vocab/technique
+    wasInformedBy:
+      slot_uri: https://openminds.ebrains.eu/vocab/wasInformedBy
+  class_uri: https://openminds.ebrains.eu/computation/Simulation
+  description: Structured information about a process of running simulations of a
+    computational model.

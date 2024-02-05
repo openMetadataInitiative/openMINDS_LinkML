@@ -1,0 +1,55 @@
+BrainAtlasVersion:
+  attributes:
+    annotationSet:
+      list_elements_unique: true
+      multivalued: true
+      range: Annotation
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/annotationSet
+    coordinateSpace:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/coordinateSpace
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    hasAlternativeVersion:
+      list_elements_unique: true
+      multivalued: true
+      range: BrainAtlasVersion
+      slot_uri: https://openminds.ebrains.eu/vocab/hasAlternativeVersion
+    homepage:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isNewVersionOf:
+      slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
+    ontologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+    releaseDate:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+    terminology:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/terminology
+    versionIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
+    versionInnovation:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
+  class_uri: https://openminds.ebrains.eu/sands/BrainAtlasVersion
+  description: Structured information on a brain atlas (version level).

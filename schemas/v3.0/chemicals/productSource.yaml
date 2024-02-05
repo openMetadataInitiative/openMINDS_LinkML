@@ -1,0 +1,23 @@
+ProductSource:
+  attributes:
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    identifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/identifier
+    productName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/productName
+    provider:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/provider
+    purity:
+      slot_uri: https://openminds.ebrains.eu/vocab/purity
+  class_uri: https://openminds.ebrains.eu/chemicals/ProductSource
+  description: Structured information about the source of a chemical substance or
+    mixture.

@@ -1,0 +1,34 @@
+Organization:
+  attributes:
+    affiliation:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: Affiliation
+      slot_uri: https://openminds.ebrains.eu/vocab/affiliation
+    digitalIdentifier:
+      list_elements_unique: true
+      multivalued: true
+      range: GRIDID
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    hasParent:
+      list_elements_unique: true
+      multivalued: true
+      range: Organization
+      slot_uri: https://openminds.ebrains.eu/vocab/hasParent
+    homepage:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    shortName:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+  class_uri: https://openminds.ebrains.eu/core/Organization
+  description: Structured information on an organization.

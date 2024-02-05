@@ -1,0 +1,56 @@
+BrainAtlas:
+  attributes:
+    abbreviation:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/abbreviation
+    author:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/author
+    custodian:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      slot_uri: https://openminds.ebrains.eu/vocab/custodian
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    hasTerminology:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasTerminology
+    hasVersion:
+      list_elements_unique: true
+      multivalued: true
+      range: BrainAtlasVersion
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasVersion
+    homepage:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    howToCite:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/howToCite
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    ontologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+    usedSpecies:
+      slot_uri: https://openminds.ebrains.eu/vocab/usedSpecies
+  class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
+  description: Structured information on a brain atlas (concept level).

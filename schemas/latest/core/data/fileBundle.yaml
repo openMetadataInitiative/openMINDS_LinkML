@@ -1,0 +1,34 @@
+FileBundle:
+  attributes:
+    contentDescription:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/contentDescription
+    format:
+      slot_uri: https://openminds.ebrains.eu/vocab/format
+    groupedBy:
+      list_elements_unique: true
+      multivalued: true
+      range: LocalFile
+      slot_uri: https://openminds.ebrains.eu/vocab/groupedBy
+    groupingType:
+      list_elements_unique: true
+      multivalued: true
+      range: FileBundleGrouping
+      slot_uri: https://openminds.ebrains.eu/vocab/groupingType
+    hash:
+      slot_uri: https://openminds.ebrains.eu/vocab/hash
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isPartOf:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    storageSize:
+      slot_uri: https://openminds.ebrains.eu/vocab/storageSize
+  class_uri: https://openminds.ebrains.eu/core/FileBundle
+  description: Structured information on a bundle of file instances.

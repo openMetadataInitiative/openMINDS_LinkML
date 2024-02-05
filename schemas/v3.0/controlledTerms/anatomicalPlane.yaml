@@ -1,0 +1,32 @@
+AnatomicalPlane:
+  attributes:
+    definition:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/definition
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    interlexIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/interlexIdentifier
+    knowledgeSpaceLink:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/knowledgeSpaceLink
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    preferredOntologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/preferredOntologyIdentifier
+    synonym:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/synonym
+  class_uri: https://openminds.ebrains.eu/controlledTerms/AnatomicalPlane
+  description: null

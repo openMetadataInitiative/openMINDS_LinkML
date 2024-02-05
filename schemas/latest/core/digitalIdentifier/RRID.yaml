@@ -1,0 +1,13 @@
+RRID:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    identifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/identifier
+  class_uri: https://openminds.ebrains.eu/core/RRID
+  description: A persistent identifier for a research resource provided by the Resource
+    Identification Initiative.

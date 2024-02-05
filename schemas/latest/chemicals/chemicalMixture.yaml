@@ -1,0 +1,26 @@
+ChemicalMixture:
+  attributes:
+    additionalRemarks:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
+    hasPart:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: AmountOfChemical
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasPart
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    productSource:
+      slot_uri: https://openminds.ebrains.eu/vocab/productSource
+    type:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/type
+  class_uri: https://openminds.ebrains.eu/chemicals/ChemicalMixture
+  description: Structured information about a mixture of chemical substances.

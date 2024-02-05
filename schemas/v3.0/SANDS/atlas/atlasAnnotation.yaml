@@ -1,0 +1,41 @@
+AtlasAnnotation:
+  attributes:
+    anchorPoint:
+      inlined: true
+      multivalued: true
+      range: QuantitativeValue
+      slot_uri: https://openminds.ebrains.eu/vocab/anchorPoint
+    criteria:
+      slot_uri: https://openminds.ebrains.eu/vocab/criteria
+    criteriaQualityType:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/criteriaQualityType
+    criteriaType:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/criteriaType
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    inspiredBy:
+      list_elements_unique: true
+      multivalued: true
+      range: File
+      slot_uri: https://openminds.ebrains.eu/vocab/inspiredBy
+    internalIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    laterality:
+      list_elements_unique: true
+      multivalued: true
+      range: Laterality
+      slot_uri: https://openminds.ebrains.eu/vocab/laterality
+    preferredVisualization:
+      slot_uri: https://openminds.ebrains.eu/vocab/preferredVisualization
+    specification:
+      slot_uri: https://openminds.ebrains.eu/vocab/specification
+    type:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/type
+  class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
+  description: null

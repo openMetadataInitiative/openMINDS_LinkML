@@ -1,0 +1,18 @@
+ContentTypePattern:
+  attributes:
+    contentType:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/contentType
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    regex:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/regex
+  class_uri: https://openminds.ebrains.eu/core/ContentTypePattern
+  description: null

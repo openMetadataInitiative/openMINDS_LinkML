@@ -1,0 +1,23 @@
+License:
+  attributes:
+    deed:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/deed
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    legalCode:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/legalCode
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+  class_uri: https://openminds.ebrains.eu/core/License
+  description: Structured information on a used license.

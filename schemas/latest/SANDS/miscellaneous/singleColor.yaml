@@ -1,0 +1,12 @@
+SingleColor:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    value:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/value
+  class_uri: https://openminds.ebrains.eu/sands/SingleColor
+  description: null

@@ -1,0 +1,27 @@
+Measurement:
+  attributes:
+    additionalRemarks:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    measuredQuantity:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/measuredQuantity
+    measuredWith:
+      slot_uri: https://openminds.ebrains.eu/vocab/measuredWith
+    timestamp:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/timestamp
+    value:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: QuantitativeValue
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/value
+  class_uri: https://openminds.ebrains.eu/core/Measurement
+  description: Structured information about a measurement performed during a scientific
+    experiment.

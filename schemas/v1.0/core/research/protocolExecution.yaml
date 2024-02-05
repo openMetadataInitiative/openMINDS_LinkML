@@ -1,0 +1,43 @@
+ProtocolExecution:
+  attributes:
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    input:
+      list_elements_unique: true
+      multivalued: true
+      range: FileBundle
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/input
+    output:
+      list_elements_unique: true
+      multivalued: true
+      range: FileBundle
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/output
+    parameterSetting:
+      list_elements_unique: true
+      multivalued: true
+      range: ParameterSetting
+      slot_uri: https://openminds.ebrains.eu/vocab/parameterSetting
+    preparationType:
+      slot_uri: https://openminds.ebrains.eu/vocab/preparationType
+    protocol:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/protocol
+    semanticallyAnchoredTo:
+      list_elements_unique: true
+      multivalued: true
+      range: AnatomicalEntity
+      slot_uri: https://openminds.ebrains.eu/vocab/semanticallyAnchoredTo
+    studyTarget:
+      list_elements_unique: true
+      multivalued: true
+      range: BiologicalSex
+      slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
+  class_uri: https://openminds.ebrains.eu/core/ProtocolExecution
+  description: Structured information on a protocol execution.

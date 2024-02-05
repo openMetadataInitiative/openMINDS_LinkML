@@ -1,0 +1,24 @@
+LaunchConfiguration:
+  attributes:
+    argument:
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/argument
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    environmentVariable:
+      slot_uri: https://openminds.ebrains.eu/vocab/environmentVariable
+    executable:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/executable
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+  class_uri: https://openminds.ebrains.eu/computation/LaunchConfiguration
+  description: Structured information about the launch of a computational process.

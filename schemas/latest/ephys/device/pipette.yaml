@@ -1,0 +1,45 @@
+Pipette:
+  attributes:
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    deviceType:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/deviceType
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    externalDiameter:
+      slot_uri: https://openminds.ebrains.eu/vocab/externalDiameter
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    internalDiameter:
+      slot_uri: https://openminds.ebrains.eu/vocab/internalDiameter
+    internalIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    manufacturer:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      slot_uri: https://openminds.ebrains.eu/vocab/manufacturer
+    material:
+      slot_uri: https://openminds.ebrains.eu/vocab/material
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    owner:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      slot_uri: https://openminds.ebrains.eu/vocab/owner
+    serialNumber:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/serialNumber
+  class_uri: https://openminds.ebrains.eu/ephys/Pipette
+  description: null

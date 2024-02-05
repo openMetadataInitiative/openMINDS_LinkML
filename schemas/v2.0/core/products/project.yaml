@@ -1,0 +1,33 @@
+Project:
+  attributes:
+    coordinator:
+      list_elements_unique: true
+      multivalued: true
+      range: Organization
+      slot_uri: https://openminds.ebrains.eu/vocab/coordinator
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    hasResearchProducts:
+      list_elements_unique: true
+      multivalued: true
+      range: Dataset
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasResearchProducts
+    homepage:
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+  class_uri: https://openminds.ebrains.eu/core/Project
+  description: Structured information on a research project.

@@ -1,0 +1,19 @@
+Configuration:
+  attributes:
+    configuration:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/configuration
+    format:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/format
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+  class_uri: https://openminds.ebrains.eu/core/Configuration
+  description: Structured information about the properties or parameters of an entity
+    or process.

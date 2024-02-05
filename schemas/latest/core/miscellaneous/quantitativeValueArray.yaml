@@ -1,0 +1,23 @@
+QuantitativeValueArray:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    negativeUncertainties:
+      multivalued: true
+      slot_uri: https://openminds.ebrains.eu/vocab/negativeUncertainties
+    positiveUncertainties:
+      multivalued: true
+      slot_uri: https://openminds.ebrains.eu/vocab/positiveUncertainties
+    typeOfUncertainty:
+      slot_uri: https://openminds.ebrains.eu/vocab/typeOfUncertainty
+    unit:
+      slot_uri: https://openminds.ebrains.eu/vocab/unit
+    values:
+      multivalued: true
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/values
+  class_uri: https://openminds.ebrains.eu/core/QuantitativeValueArray
+  description: A representation of an array of quantitative values, optionally with
+    uncertainties.

@@ -1,0 +1,21 @@
+SoftwareFeatureCategory:
+  attributes:
+    definition:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/definition
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    ontologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+  class_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareFeatureCategory
+  description: Structured information on the category of the software feature.

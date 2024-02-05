@@ -1,0 +1,33 @@
+BrainAtlas:
+  attributes:
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    hasVersion:
+      list_elements_unique: true
+      multivalued: true
+      range: BrainAtlasVersion
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasVersion
+    homepage:
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    howToCite:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/howToCite
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+  class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
+  description: Structured information on a brain atlas (concept level).

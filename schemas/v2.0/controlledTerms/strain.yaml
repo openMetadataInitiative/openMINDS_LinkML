@@ -1,0 +1,26 @@
+Strain:
+  attributes:
+    definition:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/definition
+    description:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    identifier:
+      list_elements_unique: true
+      multivalued: true
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/identifier
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    ontologyIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
+  class_uri: https://openminds.ebrains.eu/controlledTerms/Strain
+  description: null

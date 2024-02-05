@@ -1,0 +1,76 @@
+ScholarlyArticle:
+  attributes:
+    IRI:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/IRI
+    abstract:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/abstract
+    author:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/author
+    citedPublication:
+      list_elements_unique: true
+      multivalued: true
+      range: DOI
+      slot_uri: https://openminds.ebrains.eu/vocab/citedPublication
+    copyright:
+      slot_uri: https://openminds.ebrains.eu/vocab/copyright
+    creationDate:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/creationDate
+    custodian:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      slot_uri: https://openminds.ebrains.eu/vocab/custodian
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    editor:
+      list_elements_unique: true
+      multivalued: true
+      range: Person
+      slot_uri: https://openminds.ebrains.eu/vocab/editor
+    funding:
+      list_elements_unique: true
+      multivalued: true
+      range: Funding
+      slot_uri: https://openminds.ebrains.eu/vocab/funding
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isPartOf:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    keyword:
+      list_elements_unique: true
+      multivalued: true
+      range: ActionStatusType
+      slot_uri: https://openminds.ebrains.eu/vocab/keyword
+    license:
+      slot_uri: https://openminds.ebrains.eu/vocab/license
+    modificationDate:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/modificationDate
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+    pagination:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/pagination
+    publicationDate:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/publicationDate
+    publisher:
+      slot_uri: https://openminds.ebrains.eu/vocab/publisher
+    versionIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
+  class_uri: https://openminds.ebrains.eu/publications/ScholarlyArticle
+  description: null

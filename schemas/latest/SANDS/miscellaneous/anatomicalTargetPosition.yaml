@@ -1,0 +1,26 @@
+AnatomicalTargetPosition:
+  attributes:
+    additionalRemarks:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
+    anatomicalTarget:
+      list_elements_unique: true
+      multivalued: true
+      range: CellType
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalTarget
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    spatialLocation:
+      inlined: true
+      list_elements_unique: true
+      multivalued: true
+      range: CoordinatePoint
+      slot_uri: https://openminds.ebrains.eu/vocab/spatialLocation
+    targetIdentificationType:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/targetIdentificationType
+  class_uri: https://openminds.ebrains.eu/sands/AnatomicalTargetPosition
+  description: null

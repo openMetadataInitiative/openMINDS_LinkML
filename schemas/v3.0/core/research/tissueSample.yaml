@@ -1,0 +1,46 @@
+TissueSample:
+  attributes:
+    anatomicalLocation:
+      list_elements_unique: true
+      multivalued: true
+      range: CellType
+      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalLocation
+    biologicalSex:
+      slot_uri: https://openminds.ebrains.eu/vocab/biologicalSex
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    internalIdentifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    isPartOf:
+      list_elements_unique: true
+      multivalued: true
+      range: TissueSampleCollection
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    laterality:
+      list_elements_unique: true
+      multivalued: true
+      range: Laterality
+      slot_uri: https://openminds.ebrains.eu/vocab/laterality
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    origin:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/origin
+    species:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/species
+    studiedState:
+      list_elements_unique: true
+      multivalued: true
+      range: TissueSampleState
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/studiedState
+    type:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/type
+  class_uri: https://openminds.ebrains.eu/core/TissueSample
+  description: Structured information on a tissue sample.

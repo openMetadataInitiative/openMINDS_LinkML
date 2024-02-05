@@ -1,0 +1,20 @@
+TissueSampleState:
+  attributes:
+    additionalRemarks:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
+    age:
+      slot_uri: https://openminds.ebrains.eu/vocab/age
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    pathology:
+      list_elements_unique: true
+      multivalued: true
+      range: Disease
+      slot_uri: https://openminds.ebrains.eu/vocab/pathology
+    weight:
+      slot_uri: https://openminds.ebrains.eu/vocab/weight
+  class_uri: https://openminds.ebrains.eu/core/TissueSampleState
+  description: Structured information on a temporary state of a tissue sample.

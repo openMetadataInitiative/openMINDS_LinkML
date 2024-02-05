@@ -1,0 +1,16 @@
+Hash:
+  attributes:
+    algorithm:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/algorithm
+    digest:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/digest
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/core/Hash
+  description: Structured information on a hash.

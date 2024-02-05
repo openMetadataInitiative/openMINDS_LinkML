@@ -1,0 +1,12 @@
+ORCID:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    identifier:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/identifier
+  class_uri: https://openminds.ebrains.eu/core/ORCID
+  description: A persistent identifier for a researcher provided by Open Researcher
+    and Contributor ID, Inc.

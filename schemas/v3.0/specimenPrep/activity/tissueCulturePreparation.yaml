@@ -1,0 +1,18 @@
+TissueCulturePreparation:
+  attributes:
+    cultureMedium:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/cultureMedium
+    cultureType:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/cultureType
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    input:
+      slot_uri: https://openminds.ebrains.eu/vocab/input
+    output:
+      slot_uri: https://openminds.ebrains.eu/vocab/output
+  class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
+  description: null

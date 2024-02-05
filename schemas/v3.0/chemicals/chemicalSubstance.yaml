@@ -1,0 +1,21 @@
+ChemicalSubstance:
+  attributes:
+    additionalRemarks:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    molecularEntity:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/molecularEntity
+    productSource:
+      slot_uri: https://openminds.ebrains.eu/vocab/productSource
+    purity:
+      slot_uri: https://openminds.ebrains.eu/vocab/purity
+  class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
+  description: Structured information about a chemical substance.

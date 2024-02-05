@@ -1,0 +1,45 @@
+Annotation:
+  attributes:
+    bestViewPoint:
+      slot_uri: https://openminds.ebrains.eu/vocab/bestViewPoint
+    criteria:
+      slot_uri: https://openminds.ebrains.eu/vocab/criteria
+    criteriaQualityType:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/criteriaQualityType
+    displayColor:
+      multivalued: true
+      slot_uri: https://openminds.ebrains.eu/vocab/displayColor
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    inspiredBy:
+      list_elements_unique: true
+      multivalued: true
+      range: Image
+      slot_uri: https://openminds.ebrains.eu/vocab/inspiredBy
+    internalIdentifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
+    laterality:
+      list_elements_unique: true
+      multivalued: true
+      range: Laterality
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/laterality
+    namingTerm:
+      list_elements_unique: true
+      multivalued: true
+      range: AnatomicalEntity
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/namingTerm
+    relatedAtlasTerm:
+      multivalued: true
+      range: AnatomicalEntity
+      slot_uri: https://openminds.ebrains.eu/vocab/relatedAtlasTerm
+    visualizedIn:
+      slot_uri: https://openminds.ebrains.eu/vocab/visualizedIn
+  class_uri: https://openminds.ebrains.eu/sands/Annotation
+  description: Structured information on an image annotation.

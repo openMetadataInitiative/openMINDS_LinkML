@@ -1,0 +1,21 @@
+Consortium:
+  attributes:
+    contactInformation:
+      slot_uri: https://openminds.ebrains.eu/vocab/contactInformation
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    homepage:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    shortName:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+  class_uri: https://openminds.ebrains.eu/core/Consortium
+  description: Structured information about an association of two or more persons
+    or organizations, with the objective of participating in a common activity.

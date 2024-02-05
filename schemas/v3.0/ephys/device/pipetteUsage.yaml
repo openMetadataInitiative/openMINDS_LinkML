@@ -1,0 +1,53 @@
+PipetteUsage:
+  attributes:
+    anatomicalLocation:
+      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalLocation
+    chlorideReversalPotential:
+      inlined: true
+      multivalued: true
+      range: Measurement
+      slot_uri: https://openminds.ebrains.eu/vocab/chlorideReversalPotential
+    compensationCurrent:
+      slot_uri: https://openminds.ebrains.eu/vocab/compensationCurrent
+    device:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/device
+    endMembranePotential:
+      slot_uri: https://openminds.ebrains.eu/vocab/endMembranePotential
+    holdingPotential:
+      slot_uri: https://openminds.ebrains.eu/vocab/holdingPotential
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    inputResistance:
+      slot_uri: https://openminds.ebrains.eu/vocab/inputResistance
+    labelingCompound:
+      slot_uri: https://openminds.ebrains.eu/vocab/labelingCompound
+    liquidJunctionPotential:
+      slot_uri: https://openminds.ebrains.eu/vocab/liquidJunctionPotential
+    lookupLabel:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
+    metadataLocation:
+      list_elements_unique: true
+      multivalued: true
+      range: File
+      slot_uri: https://openminds.ebrains.eu/vocab/metadataLocation
+    pipetteResistance:
+      slot_uri: https://openminds.ebrains.eu/vocab/pipetteResistance
+    pipetteSolution:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/pipetteSolution
+    sealResistance:
+      slot_uri: https://openminds.ebrains.eu/vocab/sealResistance
+    seriesResistance:
+      slot_uri: https://openminds.ebrains.eu/vocab/seriesResistance
+    spatialLocation:
+      slot_uri: https://openminds.ebrains.eu/vocab/spatialLocation
+    startMembranePotential:
+      slot_uri: https://openminds.ebrains.eu/vocab/startMembranePotential
+    usedSpecimen:
+      slot_uri: https://openminds.ebrains.eu/vocab/usedSpecimen
+  class_uri: https://openminds.ebrains.eu/ephys/PipetteUsage
+  description: null

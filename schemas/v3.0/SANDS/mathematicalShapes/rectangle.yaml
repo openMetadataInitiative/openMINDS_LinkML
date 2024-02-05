@@ -1,0 +1,14 @@
+Rectangle:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    length:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/length
+    width:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/width
+  class_uri: https://openminds.ebrains.eu/sands/Rectangle
+  description: null

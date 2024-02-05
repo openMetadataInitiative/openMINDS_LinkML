@@ -1,0 +1,57 @@
+Model:
+  attributes:
+    abstractionLevel:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/abstractionLevel
+    custodian:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      slot_uri: https://openminds.ebrains.eu/vocab/custodian
+    description:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/description
+    developer:
+      list_elements_unique: true
+      multivalued: true
+      range: Consortium
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/developer
+    digitalIdentifier:
+      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
+    fullName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/fullName
+    hasVersion:
+      list_elements_unique: true
+      multivalued: true
+      range: ModelVersion
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hasVersion
+    homepage:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/homepage
+    howToCite:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/howToCite
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    scope:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/scope
+    shortName:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/shortName
+    studyTarget:
+      list_elements_unique: true
+      multivalued: true
+      range: AuditoryStimulusType
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
+  class_uri: https://openminds.ebrains.eu/core/Model
+  description: Structured information on a computational model (concept level).

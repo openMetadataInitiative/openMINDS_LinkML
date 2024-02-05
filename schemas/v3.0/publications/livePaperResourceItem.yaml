@@ -1,0 +1,22 @@
+LivePaperResourceItem:
+  attributes:
+    IRI:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/IRI
+    hostedBy:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/hostedBy
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    isPartOf:
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
+    name:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/name
+  class_uri: https://openminds.ebrains.eu/publications/LivePaperResourceItem
+  description: null

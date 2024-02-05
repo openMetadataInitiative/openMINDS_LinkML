@@ -1,0 +1,12 @@
+IdentifiersDotOrgID:
+  attributes:
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    identifier:
+      range: string
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/identifier
+  class_uri: https://openminds.ebrains.eu/core/IdentifiersDotOrgID
+  description: null

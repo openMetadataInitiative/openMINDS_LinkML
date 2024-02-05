@@ -1,0 +1,21 @@
+ViewerSpecification:
+  attributes:
+    additionalRemarks:
+      range: string
+      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
+    anchorPoint:
+      inlined: true
+      multivalued: true
+      range: QuantitativeValue
+      required: true
+      slot_uri: https://openminds.ebrains.eu/vocab/anchorPoint
+    cameraPosition:
+      slot_uri: https://openminds.ebrains.eu/vocab/cameraPosition
+    id:
+      identifier: true
+      required: true
+      slot_uri: schema:identifier
+    preferredDisplayColor:
+      slot_uri: https://openminds.ebrains.eu/vocab/preferredDisplayColor
+  class_uri: https://openminds.ebrains.eu/sands/ViewerSpecification
+  description: null
