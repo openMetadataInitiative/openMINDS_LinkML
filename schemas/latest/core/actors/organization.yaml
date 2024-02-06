@@ -1,34 +1,41 @@
 Organization:
   attributes:
     affiliation:
+      description: Declaration of a person being closely associated to an organization.
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: Affiliation
       slot_uri: https://openminds.ebrains.eu/vocab/affiliation
     digitalIdentifier:
+      description: Digital handle to identify objects or legal persons.
       list_elements_unique: true
       multivalued: true
       range: GRIDID
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     fullName:
+      description: Whole, non-abbreviated name of something or somebody.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/fullName
     hasParent:
+      description: Reference to a parent object or legal person.
       list_elements_unique: true
       multivalued: true
       range: Organization
       slot_uri: https://openminds.ebrains.eu/vocab/hasParent
     homepage:
-      range: string
+      description: Main website of something or someone.
+      range: Uri
       slot_uri: https://openminds.ebrains.eu/vocab/homepage
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     shortName:
+      description: Shortened or fully abbreviated name of something or somebody.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/shortName
   class_uri: https://openminds.ebrains.eu/core/Organization
   description: Structured information on an organization.
+  title: Organization

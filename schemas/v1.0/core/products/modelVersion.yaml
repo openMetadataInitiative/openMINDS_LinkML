@@ -1,47 +1,73 @@
 ModelVersion:
   attributes:
     abstractionLevel:
+      description: Extent of simplification of physical, spatial, or temporal details
+        or attributes in the study of objects or systems.
+      range: ModelAbstractionLevel
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/abstractionLevel
     accessibility:
+      description: Level to which something is accessible to someone or something.
+      range: ProductAccessibility
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/accessibility
     author:
+      description: Creator of a literary or creative work, as well as a dataset publication.
       list_elements_unique: true
       multivalued: true
       range: Organization
       slot_uri: https://openminds.ebrains.eu/vocab/author
     copyright:
+      description: Exclusive and assignable legal right of an originator to reproduce,
+        publish, sell, or distribute the matter and form of a creative work for a
+        defined time period.
+      inlined: true
+      range: Copyright
       slot_uri: https://openminds.ebrains.eu/vocab/copyright
     custodian:
+      description: The 'custodian' is a legal person who is responsible for the content
+        and quality of the data, metadata, and/or code of a research product.
       list_elements_unique: true
       multivalued: true
       range: Organization
       slot_uri: https://openminds.ebrains.eu/vocab/custodian
     description:
+      description: Longer statement or account giving the characteristics of someone
+        or something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/description
     developer:
+      description: Legal person that creates or improves products or services (e.g.,
+        software, applications, etc.).
       list_elements_unique: true
       multivalued: true
       range: Organization
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/developer
     digitalIdentifier:
+      description: Digital handle to identify objects or legal persons.
+      range: DigitalIdentifier
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     format:
+      description: Method of digitally organizing and structuring data or information.
+      range: ContentType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/format
     fullDocumentation:
+      description: Non-abridged instructions, comments, and information for using
+        a particular product.
+      range: DigitalIdentifier
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/fullDocumentation
     fullName:
+      description: Whole, non-abbreviated name of something or somebody.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/fullName
     funding:
+      description: Money provided by a legal person for a particular purpose.
       list_elements_unique: true
       multivalued: true
       range: Funding
@@ -58,6 +84,7 @@ ModelVersion:
       range: ModelVersion
       slot_uri: https://openminds.ebrains.eu/vocab/hasSupplementVersion
     homepage:
+      description: Main website of something or someone.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/homepage
     id:
@@ -65,55 +92,84 @@ ModelVersion:
       required: true
       slot_uri: schema:identifier
     inputData:
+      description: Data that is put into a process or machine.
+      range: DigitalIdentifier
       slot_uri: https://openminds.ebrains.eu/vocab/inputData
     isNewVersionOf:
+      description: Reference to a previous (potentially outdated) particular form
+        of something.
+      range: ModelVersion
       slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
     keyword:
+      description: Significant word or concept that are representative of something
+        or someone.
       list_elements_unique: true
       multivalued: true
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/keyword
     license:
+      description: Grant by a party to another party as an element of an agreement
+        between those parties that permits to do, use, or own something.
+      range: License
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/license
     otherContribution:
+      description: Giving or supplying of something (such as money or time) as a part
+        or share other than what is covered elsewhere.
       list_elements_unique: true
       multivalued: true
       range: Contribution
       slot_uri: https://openminds.ebrains.eu/vocab/otherContribution
     outputData:
+      description: Data that comes out of, is delivered or produced by a process or
+        machine.
+      range: DigitalIdentifier
       slot_uri: https://openminds.ebrains.eu/vocab/outputData
     relatedPublication:
+      description: Reference to something that was made available for the general
+        public to see or buy.
       list_elements_unique: true
       multivalued: true
       range: DigitalIdentifier
       slot_uri: https://openminds.ebrains.eu/vocab/relatedPublication
     releaseDate:
+      description: Fixed date on which a product is due to become or was made available
+        for the general public to see or buy
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
     repository:
+      description: Place, room, or container where something is deposited or stored.
+      range: FileRepository
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/repository
     scope:
+      description: Extent of something.
+      range: ModelScope
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/scope
     shortName:
+      description: Shortened or fully abbreviated name of something or somebody.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/shortName
     studyTarget:
+      description: Structure or function that was targeted within a study.
       list_elements_unique: true
       multivalued: true
       range: BiologicalSex
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
     versionIdentifier:
+      description: Term or code used to identify the version of something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
     versionInnovation:
+      description: Documentation on what changed in comparison to a previously published
+        form of something.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
   class_uri: https://openminds.ebrains.eu/core/ModelVersion
   description: Structured information on a computational model (version level).
+  title: Model version

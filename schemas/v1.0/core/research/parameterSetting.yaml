@@ -1,6 +1,8 @@
 ParameterSetting:
   attributes:
     description:
+      description: Longer statement or account giving the characteristics of someone
+        or something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/description
@@ -9,17 +11,27 @@ ParameterSetting:
       required: true
       slot_uri: schema:identifier
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
     relevantFor:
+      any_of:
+      - range: BehavioralTask
+      - range: Technique
+      description: Reference to what or whom something or someone bears significance.
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/relevantFor
     unit:
+      description: Determinate quantity adopted as a standard of measurement.
+      range: UnitOfMeasurement
       slot_uri: https://openminds.ebrains.eu/vocab/unit
     value:
+      description: Entry for a property.
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/value
       type: UNKNOWN_TYPE
   class_uri: https://openminds.ebrains.eu/core/ParameterSetting
   description: Structured information on a used parameter setting.
+  title: Parameter setting

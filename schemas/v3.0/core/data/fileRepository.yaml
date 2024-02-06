@@ -1,7 +1,10 @@
 FileRepository:
   attributes:
     IRI:
-      range: string
+      description: Stands for Internationalized Resource Identifier which is an internet
+        protocol standard that builds on the URI protocol, extending the set of permitted
+        characters to include Unicode/ISO 10646.
+      range: Uri
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/IRI
     contentTypePattern:
@@ -10,10 +13,19 @@ FileRepository:
       range: ContentTypePattern
       slot_uri: https://openminds.ebrains.eu/vocab/contentTypePattern
     format:
+      description: Method of digitally organizing and structuring data or information.
+      range: ContentType
       slot_uri: https://openminds.ebrains.eu/vocab/format
     hash:
+      description: Term used for the process of converting any data into a single
+        value. Often also directly refers to the resulting single value.
+      inlined: true
+      range: Hash
       slot_uri: https://openminds.ebrains.eu/vocab/hash
     hostedBy:
+      description: Reference to an organization that provides facilities and services
+        for something.
+      range: Organization
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/hostedBy
     id:
@@ -21,14 +33,25 @@ FileRepository:
       required: true
       slot_uri: schema:identifier
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
     storageSize:
+      description: Quantitative value defining how much disk space is used by an object
+        on a computer system.
+      inlined: true
+      range: QuantitativeValue
       slot_uri: https://openminds.ebrains.eu/vocab/storageSize
     structurePattern:
+      range: FileRepositoryStructure
       slot_uri: https://openminds.ebrains.eu/vocab/structurePattern
     type:
+      description: Distinct class to which a group of entities or concepts with similar
+        characteristics or attributes belong to.
+      range: FileRepositoryType
       slot_uri: https://openminds.ebrains.eu/vocab/type
   class_uri: https://openminds.ebrains.eu/core/FileRepository
   description: Structured information on a file repository.
+  title: File repository

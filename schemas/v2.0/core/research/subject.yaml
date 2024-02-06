@@ -1,6 +1,9 @@
 Subject:
   attributes:
     biologicalSex:
+      description: Differentiation of individuals of most species (animals and plants)
+        based on the type of gametes they produce.
+      range: BiologicalSex
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/biologicalSex
     id:
@@ -8,10 +11,13 @@ Subject:
       required: true
       slot_uri: schema:identifier
     internalIdentifier:
+      description: Term or code that identifies someone or something within a particular
+        product.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     isPartOf:
+      description: Reference to the ensemble of multiple things or beings.
       list_elements_unique: true
       multivalued: true
       range: SubjectGroup
@@ -20,13 +26,25 @@ Subject:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     phenotype:
+      description: Physical expression of one or more genes of an organism.
+      range: Phenotype
       slot_uri: https://openminds.ebrains.eu/vocab/phenotype
     species:
+      description: Category of biological classification comprising related organisms
+        or populations potentially capable of interbreeding, and being designated
+        by a binomial that consists of the name of a genus followed by a Latin or
+        latinized uncapitalized noun or adjective.
+      range: Species
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/species
     strain:
+      description: Group of presumed common ancestry with physiological but usually
+        not morphological distinctions.
+      range: Strain
       slot_uri: https://openminds.ebrains.eu/vocab/strain
     studiedState:
+      description: Reference to a point in time at which something or someone was
+        studied in a particular mode or condition.
       list_elements_unique: true
       multivalued: true
       range: SubjectState
@@ -34,3 +52,4 @@ Subject:
       slot_uri: https://openminds.ebrains.eu/vocab/studiedState
   class_uri: https://openminds.ebrains.eu/core/Subject
   description: Structured information on a subject.
+  title: Subject

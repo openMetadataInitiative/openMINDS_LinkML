@@ -1,15 +1,24 @@
 Funding:
   attributes:
     acknowledgement:
+      description: Official declaration or avowal of appreciation of an act or achievement.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/acknowledgement
     awardNumber:
+      description: Machine-readable identifier for a benefit that is conferred or
+        bestowed on the basis of merit or need.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/awardNumber
     awardTitle:
+      description: Human-readable identifier for a benefit that is conferred or bestowed
+        on the basis of merit or need.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/awardTitle
     funder:
+      any_of:
+      - range: Organization
+      - range: Person
+      description: Legal person that provides money for a particular purpose.
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/funder
     id:
@@ -18,3 +27,4 @@ Funding:
       slot_uri: schema:identifier
   class_uri: https://openminds.ebrains.eu/core/Funding
   description: Structured information on used funding.
+  title: Funding

@@ -4,6 +4,7 @@ License:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/deed
     fullName:
+      description: Whole, non-abbreviated name of something or somebody.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/fullName
@@ -12,12 +13,16 @@ License:
       required: true
       slot_uri: schema:identifier
     legalCode:
+      description: Type of legislation that claims to cover the law system (complete
+        or parts) as it existed at the time the code was enacted.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/legalCode
     shortName:
+      description: Shortened or fully abbreviated name of something or somebody.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/shortName
   class_uri: https://openminds.ebrains.eu/core/License
   description: Structured information on a used license.
+  title: License

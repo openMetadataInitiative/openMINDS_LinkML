@@ -1,9 +1,13 @@
 CustomCoordinateSpace:
   attributes:
     anatomicalAxesOrientation:
+      description: Relation between reference planes used in anatomy and mathematics.
+      range: AnatomicalAxesOrientation
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/anatomicalAxesOrientation
     axesOrigin:
+      description: Special point in a coordinate system used as a fixed point of reference
+        for the geometry of the surrounding space.
       inlined: true
       list_elements_unique: true
       multivalued: true
@@ -11,6 +15,8 @@ CustomCoordinateSpace:
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/axesOrigin
     defaultImage:
+      description: Two or three dimensional image that particluarly represents a specific
+        coordinate space.
       list_elements_unique: true
       multivalued: true
       range: File
@@ -20,11 +26,16 @@ CustomCoordinateSpace:
       required: true
       slot_uri: schema:identifier
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
     nativeUnit:
+      description: Determinate quantity used in the original measurement.
+      range: UnitOfMeasurement
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/nativeUnit
   class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
   description: null
+  title: Custom coordinate space

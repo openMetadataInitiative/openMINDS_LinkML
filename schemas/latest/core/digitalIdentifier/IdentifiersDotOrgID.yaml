@@ -5,8 +5,11 @@ IdentifiersDotOrgID:
       required: true
       slot_uri: schema:identifier
     identifier:
+      description: Term or code used to identify something or someone.
+      pattern: ^https://identifiers.org/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)|^https://identifiers.org/([a-zA-Z0-9-_.]+)/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/identifier
   class_uri: https://openminds.ebrains.eu/core/IdentifiersDotOrgID
   description: null
+  title: Identifiers dot org id

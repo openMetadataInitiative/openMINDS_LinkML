@@ -1,14 +1,25 @@
 ElectrodeArray:
   attributes:
     conductorMaterial:
+      any_of:
+      - range: ChemicalMixture
+      - range: ChemicalSubstance
+      - range: MolecularEntity
       slot_uri: https://openminds.ebrains.eu/vocab/conductorMaterial
     description:
+      description: Longer statement or account giving the characteristics of someone
+        or something.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/description
     deviceType:
+      range: DeviceType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/deviceType
     digitalIdentifier:
+      any_of:
+      - range: DOI
+      - range: RRID
+      description: Digital handle to identify objects or legal persons.
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     electrodeIdentifier:
       list_elements_unique: true
@@ -21,11 +32,21 @@ ElectrodeArray:
       required: true
       slot_uri: schema:identifier
     insulatorMaterial:
+      any_of:
+      - range: ChemicalMixture
+      - range: ChemicalSubstance
+      - range: MolecularEntity
       slot_uri: https://openminds.ebrains.eu/vocab/insulatorMaterial
     internalIdentifier:
+      description: Term or code that identifies someone or something within a particular
+        product.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     intrinsicResistance:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+      inlined: true
       slot_uri: https://openminds.ebrains.eu/vocab/intrinsicResistance
     lookupLabel:
       range: string
@@ -36,10 +57,14 @@ ElectrodeArray:
       range: Consortium
       slot_uri: https://openminds.ebrains.eu/vocab/manufacturer
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
     numberOfElectrodes:
+      minimum_value: 2
+      range: int
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/numberOfElectrodes
     owner:
@@ -52,3 +77,4 @@ ElectrodeArray:
       slot_uri: https://openminds.ebrains.eu/vocab/serialNumber
   class_uri: https://openminds.ebrains.eu/ephys/ElectrodeArray
   description: null
+  title: Electrode array

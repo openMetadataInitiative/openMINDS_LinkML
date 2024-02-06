@@ -1,27 +1,36 @@
 ParcellationEntity:
   attributes:
     hasAnnotation:
+      range: AtlasAnnotation
       slot_uri: https://openminds.ebrains.eu/vocab/hasAnnotation
     hasParent:
+      description: Reference to a parent object or legal person.
+      range: ParcellationEntity
       slot_uri: https://openminds.ebrains.eu/vocab/hasParent
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     isPartOf:
+      description: Reference to the ensemble of multiple things or beings.
       list_elements_unique: true
       multivalued: true
       range: ParcellationTerminology
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
     ontologyIdentifier:
-      range: string
+      description: Term or code used to identify something or someone registered within
+        a particular ontology.
+      range: Uri
       slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     relatedUBERONTerm:
+      range: UBERONParcellation
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/relatedUBERONTerm
     relationAssessment:
@@ -31,12 +40,16 @@ ParcellationEntity:
       range: QualitativeRelationAssessment
       slot_uri: https://openminds.ebrains.eu/vocab/relationAssessment
     versionIdentifier:
+      description: Term or code used to identify the version of something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
     versionInnovation:
+      description: Documentation on what changed in comparison to a previously published
+        form of something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
   class_uri: https://openminds.ebrains.eu/sands/ParcellationEntity
   description: null
+  title: Parcellation entity

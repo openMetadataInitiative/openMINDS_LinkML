@@ -1,6 +1,7 @@
 ViewerSpecification:
   attributes:
     additionalRemarks:
+      description: Mention of what deserves additional attention or notice.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
     anchorPoint:
@@ -10,12 +11,18 @@ ViewerSpecification:
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/anchorPoint
     cameraPosition:
+      inlined: true
+      range: CoordinatePoint
       slot_uri: https://openminds.ebrains.eu/vocab/cameraPosition
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     preferredDisplayColor:
+      any_of:
+      - range: Colormap
+      - range: SingleColor
       slot_uri: https://openminds.ebrains.eu/vocab/preferredDisplayColor
   class_uri: https://openminds.ebrains.eu/sands/ViewerSpecification
   description: null
+  title: Viewer specification

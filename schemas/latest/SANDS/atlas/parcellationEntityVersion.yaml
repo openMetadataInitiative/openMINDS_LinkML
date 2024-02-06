@@ -4,6 +4,7 @@ ParcellationEntityVersion:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/abbreviation
     additionalRemarks:
+      description: Mention of what deserves additional attention or notice.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
     alternateName:
@@ -21,6 +22,7 @@ ParcellationEntityVersion:
       range: AtlasAnnotation
       slot_uri: https://openminds.ebrains.eu/vocab/hasAnnotation
     hasParent:
+      description: Reference to a parent object or legal person.
       list_elements_unique: true
       multivalued: true
       range: ParcellationEntity
@@ -33,13 +35,17 @@ ParcellationEntityVersion:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
     ontologyIdentifier:
+      description: Term or code used to identify something or someone registered within
+        a particular ontology.
       list_elements_unique: true
       multivalued: true
-      range: string
+      range: Uri
       slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     relationAssessment:
       inlined: true
@@ -48,11 +54,15 @@ ParcellationEntityVersion:
       range: QualitativeRelationAssessment
       slot_uri: https://openminds.ebrains.eu/vocab/relationAssessment
     versionIdentifier:
+      description: Term or code used to identify the version of something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
     versionInnovation:
+      description: Documentation on what changed in comparison to a previously published
+        form of something.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
   class_uri: https://openminds.ebrains.eu/sands/ParcellationEntityVersion
   description: null
+  title: Parcellation entity version

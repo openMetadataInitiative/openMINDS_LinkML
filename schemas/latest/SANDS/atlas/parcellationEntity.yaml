@@ -9,14 +9,18 @@ ParcellationEntity:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/alternateName
     definition:
+      description: Short, but precise statement of the meaning of a word, word group,
+        sign or a symbol.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/definition
     hasParent:
+      description: Reference to a parent object or legal person.
       list_elements_unique: true
       multivalued: true
       range: ParcellationEntity
       slot_uri: https://openminds.ebrains.eu/vocab/hasParent
     hasVersion:
+      description: Reference to variants of an original.
       list_elements_unique: true
       multivalued: true
       range: ParcellationEntityVersion
@@ -29,15 +33,23 @@ ParcellationEntity:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
     ontologyIdentifier:
+      description: Term or code used to identify something or someone registered within
+        a particular ontology.
       list_elements_unique: true
       multivalued: true
-      range: string
+      range: Uri
       slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     relatedUBERONTerm:
+      any_of:
+      - range: Organ
+      - range: UBERONParcellation
       slot_uri: https://openminds.ebrains.eu/vocab/relatedUBERONTerm
   class_uri: https://openminds.ebrains.eu/sands/ParcellationEntity
   description: null
+  title: Parcellation entity

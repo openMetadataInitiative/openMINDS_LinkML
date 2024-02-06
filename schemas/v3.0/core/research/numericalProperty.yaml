@@ -5,10 +5,13 @@ NumericalProperty:
       required: true
       slot_uri: schema:identifier
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
     value:
+      description: Entry for a property.
       inlined: true
       multivalued: true
       range: QuantitativeValue
@@ -17,3 +20,4 @@ NumericalProperty:
   class_uri: https://openminds.ebrains.eu/core/NumericalProperty
   description: Structured information about a property of some entity or process whose
     value is a number.
+  title: Numerical property

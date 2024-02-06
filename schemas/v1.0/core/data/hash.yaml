@@ -1,10 +1,13 @@
 Hash:
   attributes:
     algorithm:
+      description: Procedure for solving a mathematical problem in a finite number
+        of steps. Can involve repetition of an operation.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/algorithm
     digest:
+      description: Summation or condensation of a body of information.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/digest
@@ -14,3 +17,4 @@ Hash:
       slot_uri: schema:identifier
   class_uri: https://openminds.ebrains.eu/core/Hash
   description: Structured information on a hash.
+  title: Hash

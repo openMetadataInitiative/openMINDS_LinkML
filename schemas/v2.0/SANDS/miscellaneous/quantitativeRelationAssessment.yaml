@@ -1,16 +1,27 @@
 QuantitativeRelationAssessment:
   attributes:
     criteria:
+      description: Aspects or standards on which a judgement or decision is based.
+      range: ProtocolExecution
       slot_uri: https://openminds.ebrains.eu/vocab/criteria
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     inRelationTo:
+      description: Reference to a related element.
+      range: ParcellationEntity
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/inRelationTo
     quantitativeOverlap:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+      description: Numerical characterization of how much two things occupy the same
+        space.
+      inlined: true
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/quantitativeOverlap
   class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
   description: null
+  title: Quantitative relation assessment

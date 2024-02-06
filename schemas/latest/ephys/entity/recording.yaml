@@ -1,6 +1,7 @@
 Recording:
   attributes:
     additionalRemarks:
+      description: Mention of what deserves additional attention or notice.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
     channel:
@@ -11,6 +12,9 @@ Recording:
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/channel
     dataLocation:
+      any_of:
+      - range: File
+      - range: FileBundle
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/dataLocation
     id:
@@ -18,18 +22,31 @@ Recording:
       required: true
       slot_uri: schema:identifier
     internalIdentifier:
+      description: Term or code that identifies someone or something within a particular
+        product.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/name
     previousRecording:
+      range: Recording
       slot_uri: https://openminds.ebrains.eu/vocab/previousRecording
     recordedWith:
+      any_of:
+      - range: ElectrodeArrayUsage
+      - range: ElectrodeUsage
+      - range: PipetteUsage
+      - range: SlicingDeviceUsage
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/recordedWith
     samplingFrequency:
+      inlined: true
+      range: QuantitativeValue
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/samplingFrequency
   class_uri: https://openminds.ebrains.eu/ephys/Recording
   description: null
+  title: Recording

@@ -4,13 +4,18 @@ Periodical:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/abbreviation
     digitalIdentifier:
+      description: Digital handle to identify objects or legal persons.
+      range: ISSN
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/name
   class_uri: https://openminds.ebrains.eu/publications/Periodical
   description: null
+  title: Periodical

@@ -1,6 +1,7 @@
 ContentTypePattern:
   attributes:
     contentType:
+      range: ContentType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/contentType
     id:
@@ -11,8 +12,9 @@ ContentTypePattern:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     regex:
-      range: string
+      range: ECMA262
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/regex
   class_uri: https://openminds.ebrains.eu/core/ContentTypePattern
   description: null
+  title: Content type pattern

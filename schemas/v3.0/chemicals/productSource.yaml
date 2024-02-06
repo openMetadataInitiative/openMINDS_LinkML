@@ -1,12 +1,15 @@
 ProductSource:
   attributes:
     digitalIdentifier:
+      description: Digital handle to identify objects or legal persons.
+      range: RRID
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     identifier:
+      description: Term or code used to identify something or someone.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/identifier
     productName:
@@ -14,10 +17,19 @@ ProductSource:
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/productName
     provider:
+      any_of:
+      - range: Consortium
+      - range: Organization
+      - range: Person
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/provider
     purity:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+      inlined: true
       slot_uri: https://openminds.ebrains.eu/vocab/purity
   class_uri: https://openminds.ebrains.eu/chemicals/ProductSource
   description: Structured information about the source of a chemical substance or
     mixture.
+  title: Product source

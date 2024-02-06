@@ -5,6 +5,8 @@ PublicationVolume:
       required: true
       slot_uri: schema:identifier
     isPartOf:
+      description: Reference to the ensemble of multiple things or beings.
+      range: Periodical
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     volumeNumber:
@@ -13,3 +15,4 @@ PublicationVolume:
       slot_uri: https://openminds.ebrains.eu/vocab/volumeNumber
   class_uri: https://openminds.ebrains.eu/publications/PublicationVolume
   description: null
+  title: Publication volume

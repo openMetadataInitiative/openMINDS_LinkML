@@ -1,18 +1,23 @@
 Person:
   attributes:
     digitalIdentifier:
+      description: Digital handle to identify objects or legal persons.
       list_elements_unique: true
       multivalued: true
       range: DigitalIdentifier
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     email:
+      description: Address to which or from which an electronic mail can be sent.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/email
     familyName:
+      description: Name borne in common by members of a family.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/familyName
     givenName:
+      description: Name given to a person, including all potential middle names, but
+        excluding the family name.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/givenName
@@ -22,3 +27,4 @@ Person:
       slot_uri: schema:identifier
   class_uri: https://openminds.ebrains.eu/core/Person
   description: Structured information on a person.
+  title: Person

@@ -1,6 +1,7 @@
 Person:
   attributes:
     affiliation:
+      description: Declaration of a person being closely associated to an organization.
       inlined: true
       list_elements_unique: true
       multivalued: true
@@ -17,16 +18,23 @@ Person:
       range: AccountInformation
       slot_uri: https://openminds.ebrains.eu/vocab/associatedAccount
     contactInformation:
+      description: Any available way used to contact a person or business (e.g., address,
+        phone number, email address, etc.).
+      range: ContactInformation
       slot_uri: https://openminds.ebrains.eu/vocab/contactInformation
     digitalIdentifier:
+      description: Digital handle to identify objects or legal persons.
       list_elements_unique: true
       multivalued: true
       range: ORCID
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     familyName:
+      description: Name borne in common by members of a family.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/familyName
     givenName:
+      description: Name given to a person, including all potential middle names, but
+        excluding the family name.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/givenName
@@ -36,3 +44,4 @@ Person:
       slot_uri: schema:identifier
   class_uri: https://openminds.ebrains.eu/core/Person
   description: Structured information on a person.
+  title: Person

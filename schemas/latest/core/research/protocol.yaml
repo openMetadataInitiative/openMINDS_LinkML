@@ -1,8 +1,14 @@
 Protocol:
   attributes:
     describedIn:
+      any_of:
+      - range: DOI
+      - range: File
+      - range: WebResource
       slot_uri: https://openminds.ebrains.eu/vocab/describedIn
     description:
+      description: Longer statement or account giving the characteristics of someone
+        or something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/description
@@ -11,6 +17,8 @@ Protocol:
       required: true
       slot_uri: schema:identifier
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
@@ -20,6 +28,7 @@ Protocol:
       range: AuditoryStimulusType
       slot_uri: https://openminds.ebrains.eu/vocab/stimulusType
     technique:
+      description: Method of accomplishing a desired aim.
       list_elements_unique: true
       multivalued: true
       range: AnalysisTechnique
@@ -27,3 +36,4 @@ Protocol:
       slot_uri: https://openminds.ebrains.eu/vocab/technique
   class_uri: https://openminds.ebrains.eu/core/Protocol
   description: Structured information on a research project.
+  title: Protocol

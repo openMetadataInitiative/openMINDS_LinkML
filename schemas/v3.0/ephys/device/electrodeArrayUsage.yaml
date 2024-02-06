@@ -17,6 +17,9 @@ ElectrodeArrayUsage:
       range: QuantitativeValue
       slot_uri: https://openminds.ebrains.eu/vocab/contactResistances
     device:
+      description: Piece of equipment or mechanism (hardware) designed to serve a
+        special purpose or perform a special function.
+      range: ElectrodeArray
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/device
     id:
@@ -43,6 +46,10 @@ ElectrodeArrayUsage:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/usedElectrode
     usedSpecimen:
+      any_of:
+      - range: SubjectState
+      - range: TissueSampleState
       slot_uri: https://openminds.ebrains.eu/vocab/usedSpecimen
   class_uri: https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage
   description: null
+  title: Electrode array usage

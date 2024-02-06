@@ -1,16 +1,24 @@
 QualitativeRelationAssessment:
   attributes:
     criteria:
+      description: Aspects or standards on which a judgement or decision is based.
+      range: ProtocolExecution
       slot_uri: https://openminds.ebrains.eu/vocab/criteria
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     inRelationTo:
+      description: Reference to a related element.
+      range: ParcellationEntity
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/inRelationTo
     qualitativeOverlap:
+      description: Semantic characterization of how much two things occupy the same
+        space.
+      range: QualitativeOverlap
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/qualitativeOverlap
   class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
   description: null
+  title: Qualitative relation assessment

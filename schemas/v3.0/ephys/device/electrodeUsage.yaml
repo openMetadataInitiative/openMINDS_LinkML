@@ -1,10 +1,26 @@
 ElectrodeUsage:
   attributes:
     anatomicalLocation:
+      any_of:
+      - range: CellType
+      - range: Organ
+      - range: OrganismSubstance
+      - range: SubcellularEntity
+      - range: UBERONParcellation
+      - range: CustomAnatomicalEntity
+      - range: ParcellationEntity
+      - range: ParcellationEntityVersion
       slot_uri: https://openminds.ebrains.eu/vocab/anatomicalLocation
     contactResistance:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+      inlined: true
       slot_uri: https://openminds.ebrains.eu/vocab/contactResistance
     device:
+      description: Piece of equipment or mechanism (hardware) designed to serve a
+        special purpose or perform a special function.
+      range: Electrode
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/device
     id:
@@ -20,8 +36,14 @@ ElectrodeUsage:
       range: File
       slot_uri: https://openminds.ebrains.eu/vocab/metadataLocation
     spatialLocation:
+      inlined: true
+      range: CoordinatePoint
       slot_uri: https://openminds.ebrains.eu/vocab/spatialLocation
     usedSpecimen:
+      any_of:
+      - range: SubjectState
+      - range: TissueSampleState
       slot_uri: https://openminds.ebrains.eu/vocab/usedSpecimen
   class_uri: https://openminds.ebrains.eu/ephys/ElectrodeUsage
   description: null
+  title: Electrode usage

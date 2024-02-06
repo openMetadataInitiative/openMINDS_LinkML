@@ -1,6 +1,7 @@
 Measurement:
   attributes:
     additionalRemarks:
+      description: Mention of what deserves additional attention or notice.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
     id:
@@ -8,14 +9,21 @@ Measurement:
       required: true
       slot_uri: schema:identifier
     measuredQuantity:
+      range: MeasuredQuantity
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/measuredQuantity
     measuredWith:
+      any_of:
+      - range: ElectrodeArrayUsage
+      - range: ElectrodeUsage
+      - range: PipetteUsage
+      - range: SlicingDeviceUsage
       slot_uri: https://openminds.ebrains.eu/vocab/measuredWith
     timestamp:
-      range: string
+      range: Datetime
       slot_uri: https://openminds.ebrains.eu/vocab/timestamp
     value:
+      description: Entry for a property.
       inlined: true
       list_elements_unique: true
       multivalued: true
@@ -25,3 +33,4 @@ Measurement:
   class_uri: https://openminds.ebrains.eu/core/Measurement
   description: Structured information about a measurement performed during a scientific
     experiment.
+  title: Measurement

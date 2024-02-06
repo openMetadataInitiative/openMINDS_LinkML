@@ -1,9 +1,16 @@
 TissueSampleCollectionState:
   attributes:
     additionalRemarks:
+      description: Mention of what deserves additional attention or notice.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
     age:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+      description: Time of life or existence at which some particular qualification,
+        capacity or event arises.
+      inlined: true
       slot_uri: https://openminds.ebrains.eu/vocab/age
     attribute:
       list_elements_unique: true
@@ -20,19 +27,33 @@ TissueSampleCollectionState:
       required: true
       slot_uri: schema:identifier
     internalIdentifier:
+      description: Term or code that identifies someone or something within a particular
+        product.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     lookupLabel:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     pathology:
+      description: Structural and functional deviation from the normal that constitutes
+        a disease or characterizes a particular disease.
       list_elements_unique: true
       multivalued: true
       range: Disease
       slot_uri: https://openminds.ebrains.eu/vocab/pathology
     relativeTimeIndication:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+      inlined: true
       slot_uri: https://openminds.ebrains.eu/vocab/relativeTimeIndication
     weight:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+      description: Amount that a thing or being weighs.
+      inlined: true
       slot_uri: https://openminds.ebrains.eu/vocab/weight
   class_uri: https://openminds.ebrains.eu/core/TissueSampleCollectionState
   description: null
+  title: Tissue sample collection state

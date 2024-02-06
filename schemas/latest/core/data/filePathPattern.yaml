@@ -11,8 +11,9 @@ FilePathPattern:
       required: true
       slot_uri: schema:identifier
     regex:
-      range: string
+      range: ECMA262
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/regex
   class_uri: https://openminds.ebrains.eu/core/FilePathPattern
   description: null
+  title: File path pattern

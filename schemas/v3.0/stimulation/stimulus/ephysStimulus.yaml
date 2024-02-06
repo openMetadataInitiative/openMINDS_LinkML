@@ -5,6 +5,10 @@ EphysStimulus:
       required: true
       slot_uri: schema:identifier
     type:
+      description: Distinct class to which a group of entities or concepts with similar
+        characteristics or attributes belong to.
+      range: ElectricalStimulusType
       slot_uri: https://openminds.ebrains.eu/vocab/type
   class_uri: https://openminds.ebrains.eu/stimulation/EphysStimulus
   description: null
+  title: Ephys stimulus

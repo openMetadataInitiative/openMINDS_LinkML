@@ -1,6 +1,8 @@
 ElectrodeArray:
   attributes:
     electrodes:
+      description: Elements in a semiconductor device that emits or collects electrons
+        or holes or controls their movements.
       list_elements_unique: true
       multivalued: true
       range: Electrode
@@ -11,8 +13,11 @@ ElectrodeArray:
       required: true
       slot_uri: schema:identifier
     internalIdentifier:
+      description: Term or code that identifies someone or something within a particular
+        product.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
   class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
   description: Structured information on an electrode array.
+  title: Electrode array

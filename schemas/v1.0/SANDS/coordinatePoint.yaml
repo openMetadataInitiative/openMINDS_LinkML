@@ -1,9 +1,13 @@
 CoordinatePoint:
   attributes:
     coordinateSpace:
+      description: Two or three dimensional geometric setting.
+      range: CoordinateSpace
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/coordinateSpace
     coordinates:
+      description: Pair or triplet of numbers defining a location in a given coordinate
+        space.
       inlined: true
       multivalued: true
       range: QuantitativeValue
@@ -15,3 +19,4 @@ CoordinatePoint:
       slot_uri: schema:identifier
   class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
   description: Structured information on a coordinate point.
+  title: Coordinate point

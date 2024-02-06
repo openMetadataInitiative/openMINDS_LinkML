@@ -1,40 +1,68 @@
 MetaDataModelVersion:
   attributes:
     accessibility:
+      description: Level to which something is accessible to someone or something.
+      range: ProductAccessibility
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/accessibility
     copyright:
+      description: Exclusive and assignable legal right of an originator to reproduce,
+        publish, sell, or distribute the matter and form of a creative work for a
+        defined time period.
+      inlined: true
+      range: Copyright
       slot_uri: https://openminds.ebrains.eu/vocab/copyright
     custodian:
+      description: The 'custodian' is a legal person who is responsible for the content
+        and quality of the data, metadata, and/or code of a research product.
       list_elements_unique: true
       multivalued: true
       range: Organization
       slot_uri: https://openminds.ebrains.eu/vocab/custodian
     description:
+      description: Longer statement or account giving the characteristics of someone
+        or something.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/description
     developer:
+      description: Legal person that creates or improves products or services (e.g.,
+        software, applications, etc.).
       list_elements_unique: true
       multivalued: true
       range: Organization
       slot_uri: https://openminds.ebrains.eu/vocab/developer
     digitalIdentifier:
+      any_of:
+      - range: DOI
+      - range: SWHID
+      description: Digital handle to identify objects or legal persons.
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     fullDocumentation:
+      any_of:
+      - range: DOI
+      - range: File
+      - range: URL
+      description: Non-abridged instructions, comments, and information for using
+        a particular product.
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/fullDocumentation
     fullName:
+      description: Whole, non-abbreviated name of something or somebody.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/fullName
     funding:
+      description: Money provided by a legal person for a particular purpose.
       list_elements_unique: true
       multivalued: true
       range: Funding
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/funding
     homepage:
+      description: Main website of something or someone.
+      range: URL
       slot_uri: https://openminds.ebrains.eu/vocab/homepage
     howToCite:
+      description: Preferred format for citing a particular object or legal person.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/howToCite
     id:
@@ -42,66 +70,99 @@ MetaDataModelVersion:
       required: true
       slot_uri: schema:identifier
     isAlternativeVersionOf:
+      description: Reference to an original form where the essence was preserved,
+        but presented in an alternative form.
       list_elements_unique: true
       multivalued: true
       range: MetaDataModelVersion
       slot_uri: https://openminds.ebrains.eu/vocab/isAlternativeVersionOf
     isNewVersionOf:
+      description: Reference to a previous (potentially outdated) particular form
+        of something.
+      range: MetaDataModelVersion
       slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
     keyword:
+      description: Significant word or concept that are representative of something
+        or someone.
       list_elements_unique: true
       multivalued: true
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/keyword
     license:
+      description: Grant by a party to another party as an element of an agreement
+        between those parties that permits to do, use, or own something.
+      range: License
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/license
     otherContribution:
+      description: Giving or supplying of something (such as money or time) as a part
+        or share other than what is covered elsewhere.
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: Contribution
       slot_uri: https://openminds.ebrains.eu/vocab/otherContribution
     relatedPublication:
+      description: Reference to something that was made available for the general
+        public to see or buy.
       list_elements_unique: true
       multivalued: true
       range: DOI
       slot_uri: https://openminds.ebrains.eu/vocab/relatedPublication
     releaseDate:
-      range: string
+      description: Fixed date on which a product is due to become or was made available
+        for the general public to see or buy
+      range: Date
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
     repository:
+      description: Place, room, or container where something is deposited or stored.
+      range: FileRepository
       slot_uri: https://openminds.ebrains.eu/vocab/repository
     serializationFormat:
+      description: Form in which a particular data structure or object state is translated
+        to for storage.
       list_elements_unique: true
       multivalued: true
       range: ContentType
       slot_uri: https://openminds.ebrains.eu/vocab/serializationFormat
     shortName:
+      description: Shortened or fully abbreviated name of something or somebody.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/shortName
     specificationFormat:
+      description: Form in which a particular data structure or object state is specified
+        in.
       list_elements_unique: true
       multivalued: true
       range: ContentType
       slot_uri: https://openminds.ebrains.eu/vocab/specificationFormat
     supportChannel:
+      any_of:
+      - range: Uri
+      description: Way of communication used to interact with users or customers.
       list_elements_unique: true
       multivalued: true
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/supportChannel
     type:
+      description: Distinct class to which a group of entities or concepts with similar
+        characteristics or attributes belong to.
+      range: MetaDataModelType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/type
     versionIdentifier:
+      description: Term or code used to identify the version of something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
     versionInnovation:
+      description: Documentation on what changed in comparison to a previously published
+        form of something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
   class_uri: https://openminds.ebrains.eu/core/MetaDataModelVersion
   description: null
+  title: Meta data model version

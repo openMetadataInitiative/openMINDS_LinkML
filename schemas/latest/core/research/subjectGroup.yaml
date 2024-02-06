@@ -1,9 +1,12 @@
 SubjectGroup:
   attributes:
     additionalRemarks:
+      description: Mention of what deserves additional attention or notice.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
     biologicalSex:
+      description: Differentiation of individuals of most species (animals and plants)
+        based on the type of gametes they produce.
       list_elements_unique: true
       multivalued: true
       range: BiologicalSex
@@ -13,20 +16,30 @@ SubjectGroup:
       required: true
       slot_uri: schema:identifier
     internalIdentifier:
+      description: Term or code that identifies someone or something within a particular
+        product.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     lookupLabel:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     numberOfSubjects:
+      minimum_value: 2
+      range: int
       slot_uri: https://openminds.ebrains.eu/vocab/numberOfSubjects
     species:
+      description: Category of biological classification comprising related organisms
+        or populations potentially capable of interbreeding, and being designated
+        by a binomial that consists of the name of a genus followed by a Latin or
+        latinized uncapitalized noun or adjective.
       list_elements_unique: true
       multivalued: true
       range: Species
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/species
     studiedState:
+      description: Reference to a point in time at which something or someone was
+        studied in a particular mode or condition.
       list_elements_unique: true
       multivalued: true
       range: SubjectGroupState
@@ -34,3 +47,4 @@ SubjectGroup:
       slot_uri: https://openminds.ebrains.eu/vocab/studiedState
   class_uri: https://openminds.ebrains.eu/core/SubjectGroup
   description: null
+  title: Subject group

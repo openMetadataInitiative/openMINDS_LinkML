@@ -1,11 +1,18 @@
 TermSuggestion:
   attributes:
     addExistingTerminology:
+      description: Reference to an existing terminology (distinct class to group related
+        terms).
+      range: Terminology
       slot_uri: https://openminds.ebrains.eu/vocab/addExistingTerminology
     definition:
+      description: Short, but precise statement of the meaning of a word, word group,
+        sign or a symbol.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/definition
     description:
+      description: Longer statement or account giving the characteristics of someone
+        or something.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/description
     id:
@@ -13,14 +20,20 @@ TermSuggestion:
       required: true
       slot_uri: schema:identifier
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
     ontologyIdentifier:
-      range: string
+      description: Term or code used to identify something or someone registered within
+        a particular ontology.
+      range: Uri
       slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     suggestNewTerminology:
+      description: Proposal of a new distinct class to group related terms.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/suggestNewTerminology
   class_uri: https://openminds.ebrains.eu/controlledTerms/TermSuggestion
   description: null
+  title: Term suggestion

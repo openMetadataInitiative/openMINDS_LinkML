@@ -5,8 +5,12 @@ SWHID:
       required: true
       slot_uri: schema:identifier
     identifier:
+      description: Term or code used to identify something or someone.
+      pattern: "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
+        \ \t\r\n\f]+)*$"
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/identifier
   class_uri: https://openminds.ebrains.eu/core/SWHID
   description: null
+  title: Swhid

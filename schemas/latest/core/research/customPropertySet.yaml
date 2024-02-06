@@ -5,6 +5,10 @@ CustomPropertySet:
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/context
     dataLocation:
+      any_of:
+      - range: Configuration
+      - range: File
+      - range: PropertyValueList
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/dataLocation
     id:
@@ -12,8 +16,15 @@ CustomPropertySet:
       required: true
       slot_uri: schema:identifier
     relevantFor:
+      any_of:
+      - range: AnalysisTechnique
+      - range: StimulationApproach
+      - range: StimulationTechnique
+      - range: Technique
+      description: Reference to what or whom something or someone bears significance.
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/relevantFor
   class_uri: https://openminds.ebrains.eu/core/CustomPropertySet
   description: Structured information about properties of an entity that are not represented
     in an openMINDS schema.
+  title: Custom property set

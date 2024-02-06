@@ -5,8 +5,11 @@ ISBN:
       required: true
       slot_uri: schema:identifier
     identifier:
+      description: Term or code used to identify something or someone.
+      pattern: ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/identifier
   class_uri: https://openminds.ebrains.eu/core/ISBN
   description: An International Standard Book Number of the International ISBN Agency.
+  title: Isbn

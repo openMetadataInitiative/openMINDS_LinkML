@@ -1,16 +1,30 @@
 CustomAnnotation:
   attributes:
     bestViewPoint:
+      description: Coordinate point from which you get the best view of something.
+      inlined: true
+      range: CoordinatePoint
       slot_uri: https://openminds.ebrains.eu/vocab/bestViewPoint
     coordinateSpace:
+      any_of:
+      - range: CommonCoordinateSpace
+      - range: CustomCoordinateSpace
+      description: Two or three dimensional geometric setting.
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/coordinateSpace
     criteria:
+      description: Aspects or standards on which a judgement or decision is based.
+      range: ProtocolExecution
       slot_uri: https://openminds.ebrains.eu/vocab/criteria
     criteriaQualityType:
+      description: Distinct class that defines how the judgement or decision was made
+        for a particular criteria.
+      range: CriteriaQualityType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/criteriaQualityType
     displayColor:
+      description: Preferred coloring.
+      pattern: ^#[0-9A-Fa-f]{6}$
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/displayColor
     id:
@@ -18,15 +32,20 @@ CustomAnnotation:
       required: true
       slot_uri: schema:identifier
     inspiredBy:
+      description: Reference to an inspiring element.
       list_elements_unique: true
       multivalued: true
       range: File
       slot_uri: https://openminds.ebrains.eu/vocab/inspiredBy
     internalIdentifier:
+      description: Term or code that identifies someone or something within a particular
+        product.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     laterality:
+      description: Differentiation between a pair of lateral homologous parts of the
+        body.
       list_elements_unique: true
       multivalued: true
       range: Laterality
@@ -35,10 +54,15 @@ CustomAnnotation:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/name
     visualizedIn:
+      description: Reference to an image in which something is visible.
+      range: File
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/visualizedIn
   class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
   description: null
+  title: Custom annotation

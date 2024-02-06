@@ -1,22 +1,35 @@
 Pipette:
   attributes:
     description:
+      description: Longer statement or account giving the characteristics of someone
+        or something.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/description
     deviceType:
+      range: DeviceType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/deviceType
     digitalIdentifier:
+      any_of:
+      - range: DOI
+      - range: RRID
+      description: Digital handle to identify objects or legal persons.
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     externalDiameter:
+      inlined: true
+      range: QuantitativeValue
       slot_uri: https://openminds.ebrains.eu/vocab/externalDiameter
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     internalDiameter:
+      inlined: true
+      range: QuantitativeValue
       slot_uri: https://openminds.ebrains.eu/vocab/internalDiameter
     internalIdentifier:
+      description: Term or code that identifies someone or something within a particular
+        product.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     lookupLabel:
@@ -28,8 +41,14 @@ Pipette:
       range: Consortium
       slot_uri: https://openminds.ebrains.eu/vocab/manufacturer
     material:
+      any_of:
+      - range: ChemicalMixture
+      - range: ChemicalSubstance
+      - range: MolecularEntity
       slot_uri: https://openminds.ebrains.eu/vocab/material
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
@@ -43,3 +62,4 @@ Pipette:
       slot_uri: https://openminds.ebrains.eu/vocab/serialNumber
   class_uri: https://openminds.ebrains.eu/ephys/Pipette
   description: null
+  title: Pipette

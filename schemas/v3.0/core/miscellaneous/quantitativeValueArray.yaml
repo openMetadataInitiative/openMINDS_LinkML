@@ -5,19 +5,33 @@ QuantitativeValueArray:
       required: true
       slot_uri: schema:identifier
     negativeUncertainties:
+      any_of:
+      - int
+      - float
       multivalued: true
       slot_uri: https://openminds.ebrains.eu/vocab/negativeUncertainties
     positiveUncertainties:
+      any_of:
+      - int
+      - float
       multivalued: true
       slot_uri: https://openminds.ebrains.eu/vocab/positiveUncertainties
     typeOfUncertainty:
+      description: Distinct technique used to quantify the uncertainty of a measurement.
+      range: TypeOfUncertainty
       slot_uri: https://openminds.ebrains.eu/vocab/typeOfUncertainty
     unit:
+      description: Determinate quantity adopted as a standard of measurement.
+      range: UnitOfMeasurement
       slot_uri: https://openminds.ebrains.eu/vocab/unit
     values:
+      any_of:
+      - int
+      - float
       multivalued: true
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/values
   class_uri: https://openminds.ebrains.eu/core/QuantitativeValueArray
   description: A representation of an array of quantitative values, optionally with
     uncertainties.
+  title: Quantitative value array

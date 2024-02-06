@@ -5,6 +5,8 @@ Configuration:
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/configuration
     format:
+      description: Method of digitally organizing and structuring data or information.
+      range: ContentType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/format
     id:
@@ -17,3 +19,4 @@ Configuration:
   class_uri: https://openminds.ebrains.eu/core/Configuration
   description: Structured information about the properties or parameters of an entity
     or process.
+  title: Configuration

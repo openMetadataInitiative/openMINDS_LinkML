@@ -5,6 +5,7 @@ AccountInformation:
       required: true
       slot_uri: schema:identifier
     service:
+      range: WebService
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/service
     userName:
@@ -13,3 +14,4 @@ AccountInformation:
       slot_uri: https://openminds.ebrains.eu/vocab/userName
   class_uri: https://openminds.ebrains.eu/core/AccountInformation
   description: Structured information about a user account for a web service.
+  title: Account information

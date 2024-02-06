@@ -1,6 +1,13 @@
 ServiceLink:
   attributes:
     dataLocation:
+      any_of:
+      - range: File
+      - range: FileArchive
+      - range: FileBundle
+      - range: ModelVersion
+      - range: LivePaperResourceItem
+      - range: ParcellationEntityVersion
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/dataLocation
     displayLabel:
@@ -11,13 +18,16 @@ ServiceLink:
       required: true
       slot_uri: schema:identifier
     openDataIn:
-      range: string
+      range: Uri
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/openDataIn
     previewImage:
+      range: File
       slot_uri: https://openminds.ebrains.eu/vocab/previewImage
     service:
+      range: Service
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/service
   class_uri: https://openminds.ebrains.eu/core/ServiceLink
   description: null
+  title: Service link

@@ -5,7 +5,10 @@ Circle:
       required: true
       slot_uri: schema:identifier
     radius:
+      inlined: true
+      range: QuantitativeValue
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/radius
   class_uri: https://openminds.ebrains.eu/sands/Circle
   description: null
+  title: Circle

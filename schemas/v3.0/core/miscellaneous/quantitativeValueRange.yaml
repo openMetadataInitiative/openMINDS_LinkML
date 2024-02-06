@@ -5,14 +5,25 @@ QuantitativeValueRange:
       required: true
       slot_uri: schema:identifier
     maxValue:
+      any_of:
+      - int
+      - float
+      description: Greatest quantity attained or allowed.
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/maxValue
     maxValueUnit:
+      range: UnitOfMeasurement
       slot_uri: https://openminds.ebrains.eu/vocab/maxValueUnit
     minValue:
+      any_of:
+      - int
+      - float
+      description: Smallest quantity attained or allowed.
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/minValue
     minValueUnit:
+      range: UnitOfMeasurement
       slot_uri: https://openminds.ebrains.eu/vocab/minValueUnit
   class_uri: https://openminds.ebrains.eu/core/QuantitativeValueRange
   description: A representation of a range of quantitative values.
+  title: Quantitative value range

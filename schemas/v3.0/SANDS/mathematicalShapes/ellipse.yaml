@@ -5,10 +5,15 @@ Ellipse:
       required: true
       slot_uri: schema:identifier
     semiMajorAxis:
+      inlined: true
+      range: QuantitativeValue
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/semiMajorAxis
     semiMinorAxis:
+      inlined: true
+      range: QuantitativeValue
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/semiMinorAxis
   class_uri: https://openminds.ebrains.eu/sands/Ellipse
   description: null
+  title: Ellipse

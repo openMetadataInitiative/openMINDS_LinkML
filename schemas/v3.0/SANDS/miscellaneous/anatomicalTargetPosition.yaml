@@ -1,6 +1,7 @@
 AnatomicalTargetPosition:
   attributes:
     additionalRemarks:
+      description: Mention of what deserves additional attention or notice.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
     anatomicalTarget:
@@ -20,7 +21,9 @@ AnatomicalTargetPosition:
       range: CoordinatePoint
       slot_uri: https://openminds.ebrains.eu/vocab/spatialLocation
     targetIdentificationType:
+      range: AnatomicalIdentificationType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/targetIdentificationType
   class_uri: https://openminds.ebrains.eu/sands/AnatomicalTargetPosition
   description: null
+  title: Anatomical target position

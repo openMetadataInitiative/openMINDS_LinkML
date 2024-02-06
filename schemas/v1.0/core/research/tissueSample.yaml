@@ -1,41 +1,71 @@
 TissueSample:
   attributes:
     biologicalSex:
+      description: Differentiation of individuals of most species (animals and plants)
+        based on the type of gametes they produce.
+      range: BiologicalSex
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/biologicalSex
     genotype:
+      description: Genetic constitution of an individual or group.
+      range: Genotype
       slot_uri: https://openminds.ebrains.eu/vocab/genotype
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     internalIdentifier:
+      description: Term or code that identifies someone or something within a particular
+        product.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     laterality:
+      description: Differentiation between a pair of lateral homologous parts of the
+        body.
       list_elements_unique: true
       multivalued: true
       range: Laterality
       slot_uri: https://openminds.ebrains.eu/vocab/laterality
     origin:
+      any_of:
+      - range: CellType
+      - range: Organ
+      description: Source at which something begins or rises, or from which something
+        derives.
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/origin
     phenotype:
+      description: Physical expression of one or more genes of an organism.
+      range: Phenotype
       slot_uri: https://openminds.ebrains.eu/vocab/phenotype
     species:
+      description: Category of biological classification comprising related organisms
+        or populations potentially capable of interbreeding, and being designated
+        by a binomial that consists of the name of a genus followed by a Latin or
+        latinized uncapitalized noun or adjective.
+      range: Species
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/species
     strain:
+      description: Group of presumed common ancestry with physiological but usually
+        not morphological distinctions.
+      range: Strain
       slot_uri: https://openminds.ebrains.eu/vocab/strain
     studiedState:
+      description: Reference to a point in time at which something or someone was
+        studied in a particular mode or condition.
       list_elements_unique: true
       multivalued: true
       range: TissueSampleState
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/studiedState
     type:
+      description: Distinct class to which a group of entities or concepts with similar
+        characteristics or attributes belong to.
+      range: TissueSampleType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/type
   class_uri: https://openminds.ebrains.eu/core/TissueSample
   description: Structured information on a tissue sample.
+  title: Tissue sample

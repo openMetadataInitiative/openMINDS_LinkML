@@ -7,9 +7,13 @@ StimulationActivity:
       range: CustomPropertySet
       slot_uri: https://openminds.ebrains.eu/vocab/customPropertySet
     description:
+      description: Longer statement or account giving the characteristics of someone
+        or something.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/description
     endTime:
+      any_of:
+      - range: Time
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/endTime
     id:
@@ -17,18 +21,24 @@ StimulationActivity:
       required: true
       slot_uri: schema:identifier
     input:
+      description: Something or someone that is put into or participates in a process
+        or machine.
       list_elements_unique: true
       multivalued: true
       range: SubjectGroupState
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/input
     isPartOf:
+      description: Reference to the ensemble of multiple things or beings.
+      range: DatasetVersion
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     lookupLabel:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     output:
+      description: Something or someone that comes out of, is delivered or produced
+        by a process or machine.
       list_elements_unique: true
       multivalued: true
       range: SubjectGroupState
@@ -40,16 +50,22 @@ StimulationActivity:
       range: SoftwareAgent
       slot_uri: https://openminds.ebrains.eu/vocab/performedBy
     preparationDesign:
+      range: PreparationType
       slot_uri: https://openminds.ebrains.eu/vocab/preparationDesign
     protocol:
+      description: Plan that describes the process of a scientific or medical experiment,
+        treatment, or procedure.
       list_elements_unique: true
       multivalued: true
       range: Protocol
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/protocol
     setup:
+      range: Setup
       slot_uri: https://openminds.ebrains.eu/vocab/setup
     startTime:
+      any_of:
+      - range: Time
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/startTime
     stimulus:
@@ -59,9 +75,11 @@ StimulationActivity:
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/stimulus
     studyTarget:
+      description: Structure or function that was targeted within a study.
       list_elements_unique: true
       multivalued: true
       range: AuditoryStimulusType
       slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
   class_uri: https://openminds.ebrains.eu/stimulation/StimulationActivity
   description: null
+  title: Stimulation activity

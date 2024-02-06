@@ -1,6 +1,15 @@
 PipetteUsage:
   attributes:
     anatomicalLocation:
+      any_of:
+      - range: CellType
+      - range: Organ
+      - range: OrganismSubstance
+      - range: SubcellularEntity
+      - range: UBERONParcellation
+      - range: CustomAnatomicalEntity
+      - range: ParcellationEntity
+      - range: ParcellationEntityVersion
       slot_uri: https://openminds.ebrains.eu/vocab/anatomicalLocation
     chlorideReversalPotential:
       inlined: true
@@ -8,23 +17,40 @@ PipetteUsage:
       range: Measurement
       slot_uri: https://openminds.ebrains.eu/vocab/chlorideReversalPotential
     compensationCurrent:
+      inlined: true
+      range: Measurement
       slot_uri: https://openminds.ebrains.eu/vocab/compensationCurrent
     device:
+      description: Piece of equipment or mechanism (hardware) designed to serve a
+        special purpose or perform a special function.
+      range: Pipette
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/device
     endMembranePotential:
+      inlined: true
+      range: Measurement
       slot_uri: https://openminds.ebrains.eu/vocab/endMembranePotential
     holdingPotential:
+      inlined: true
+      range: Measurement
       slot_uri: https://openminds.ebrains.eu/vocab/holdingPotential
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     inputResistance:
+      inlined: true
+      range: Measurement
       slot_uri: https://openminds.ebrains.eu/vocab/inputResistance
     labelingCompound:
+      any_of:
+      - range: ChemicalMixture
+      - range: ChemicalSubstance
+      - range: MolecularEntity
       slot_uri: https://openminds.ebrains.eu/vocab/labelingCompound
     liquidJunctionPotential:
+      inlined: true
+      range: Measurement
       slot_uri: https://openminds.ebrains.eu/vocab/liquidJunctionPotential
     lookupLabel:
       range: string
@@ -35,19 +61,36 @@ PipetteUsage:
       range: File
       slot_uri: https://openminds.ebrains.eu/vocab/metadataLocation
     pipetteResistance:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+      inlined: true
       slot_uri: https://openminds.ebrains.eu/vocab/pipetteResistance
     pipetteSolution:
+      range: ChemicalMixture
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/pipetteSolution
     sealResistance:
+      inlined: true
+      range: Measurement
       slot_uri: https://openminds.ebrains.eu/vocab/sealResistance
     seriesResistance:
+      inlined: true
+      range: Measurement
       slot_uri: https://openminds.ebrains.eu/vocab/seriesResistance
     spatialLocation:
+      inlined: true
+      range: CoordinatePoint
       slot_uri: https://openminds.ebrains.eu/vocab/spatialLocation
     startMembranePotential:
+      inlined: true
+      range: Measurement
       slot_uri: https://openminds.ebrains.eu/vocab/startMembranePotential
     usedSpecimen:
+      any_of:
+      - range: SubjectState
+      - range: TissueSampleState
       slot_uri: https://openminds.ebrains.eu/vocab/usedSpecimen
   class_uri: https://openminds.ebrains.eu/ephys/PipetteUsage
   description: null
+  title: Pipette usage

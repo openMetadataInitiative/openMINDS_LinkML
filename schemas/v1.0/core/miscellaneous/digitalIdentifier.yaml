@@ -1,6 +1,7 @@
 DigitalIdentifier:
   attributes:
     howToCite:
+      description: Preferred format for citing a particular object or legal person.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/howToCite
     id:
@@ -8,11 +9,16 @@ DigitalIdentifier:
       required: true
       slot_uri: schema:identifier
     identifier:
+      description: Term or code used to identify something or someone.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/identifier
     identifierSchema:
+      description: Standard for creating a particular identifier for something or
+        someone.
+      range: DigitalIdentifierSchema
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/identifierSchema
   class_uri: https://openminds.ebrains.eu/core/DigitalIdentifier
   description: Structured information on a digital identifier.
+  title: Digital identifier

@@ -1,6 +1,9 @@
 SlicingDeviceUsage:
   attributes:
     device:
+      description: Piece of equipment or mechanism (hardware) designed to serve a
+        special purpose or perform a special function.
+      range: SlicingDevice
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/device
     id:
@@ -16,8 +19,14 @@ SlicingDeviceUsage:
       range: File
       slot_uri: https://openminds.ebrains.eu/vocab/metadataLocation
     oscillationAmplitude:
+      inlined: true
+      range: QuantitativeValue
       slot_uri: https://openminds.ebrains.eu/vocab/oscillationAmplitude
     sliceThickness:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+      inlined: true
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/sliceThickness
     slicingAngle:
@@ -26,13 +35,22 @@ SlicingDeviceUsage:
       range: QuantitativeValue
       slot_uri: https://openminds.ebrains.eu/vocab/slicingAngle
     slicingPlane:
+      range: AnatomicalPlane
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/slicingPlane
     slicingSpeed:
+      inlined: true
+      range: QuantitativeValue
       slot_uri: https://openminds.ebrains.eu/vocab/slicingSpeed
     usedSpecimen:
+      any_of:
+      - range: SubjectState
+      - range: TissueSampleState
       slot_uri: https://openminds.ebrains.eu/vocab/usedSpecimen
     vibrationFrequency:
+      inlined: true
+      range: QuantitativeValue
       slot_uri: https://openminds.ebrains.eu/vocab/vibrationFrequency
   class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
   description: null
+  title: Slicing device usage

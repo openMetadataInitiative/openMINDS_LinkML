@@ -1,7 +1,7 @@
 URL:
   attributes:
     URL:
-      range: string
+      range: Uri
       slot_uri: https://openminds.ebrains.eu/vocab/URL
     id:
       identifier: true
@@ -9,3 +9,4 @@ URL:
       slot_uri: schema:identifier
   class_uri: https://openminds.ebrains.eu/core/URL
   description: null
+  title: Url

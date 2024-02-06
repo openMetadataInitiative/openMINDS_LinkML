@@ -1,6 +1,9 @@
 TissueSampleSlicing:
   attributes:
     device:
+      description: Piece of equipment or mechanism (hardware) designed to serve a
+        special purpose or perform a special function.
+      range: SlicingDeviceUsage
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/device
     id:
@@ -8,15 +11,29 @@ TissueSampleSlicing:
       required: true
       slot_uri: schema:identifier
     input:
+      any_of:
+      - range: SubjectState
+      - range: TissueSampleCollectionState
+      - range: TissueSampleState
+      description: Something or someone that is put into or participates in a process
+        or machine.
       slot_uri: https://openminds.ebrains.eu/vocab/input
     output:
+      description: Something or someone that comes out of, is delivered or produced
+        by a process or machine.
       list_elements_unique: true
       multivalued: true
       range: TissueSampleCollectionState
       slot_uri: https://openminds.ebrains.eu/vocab/output
     temperature:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+      inlined: true
       slot_uri: https://openminds.ebrains.eu/vocab/temperature
     tissueBathSolution:
+      range: ChemicalMixture
       slot_uri: https://openminds.ebrains.eu/vocab/tissueBathSolution
   class_uri: https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing
   description: null
+  title: Tissue sample slicing

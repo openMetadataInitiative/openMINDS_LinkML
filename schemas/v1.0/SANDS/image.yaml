@@ -1,9 +1,13 @@
 Image:
   attributes:
     coordinateSpace:
+      description: Two or three dimensional geometric setting.
+      range: CoordinateSpace
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/coordinateSpace
     definedIn:
+      description: Reference to a file instance in which something is stored.
+      range: FileInstance
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/definedIn
     id:
@@ -11,6 +15,8 @@ Image:
       required: true
       slot_uri: schema:identifier
     voxelSize:
+      description: Extent of the discrete elements comprising a three-dimensional
+        entity.
       inlined: true
       list_elements_unique: true
       multivalued: true
@@ -19,3 +25,4 @@ Image:
       slot_uri: https://openminds.ebrains.eu/vocab/voxelSize
   class_uri: https://openminds.ebrains.eu/sands/Image
   description: Structured information on an image.
+  title: Image

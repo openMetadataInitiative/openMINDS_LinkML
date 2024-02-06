@@ -4,6 +4,7 @@ LocalFile:
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/contentDescription
     copyOf:
+      range: File
       slot_uri: https://openminds.ebrains.eu/vocab/copyOf
     dataType:
       list_elements_unique: true
@@ -11,14 +12,22 @@ LocalFile:
       range: DataType
       slot_uri: https://openminds.ebrains.eu/vocab/dataType
     format:
+      description: Method of digitally organizing and structuring data or information.
+      range: ContentType
       slot_uri: https://openminds.ebrains.eu/vocab/format
     hash:
+      description: Term used for the process of converting any data into a single
+        value. Often also directly refers to the resulting single value.
+      inlined: true
+      range: Hash
       slot_uri: https://openminds.ebrains.eu/vocab/hash
     id:
       identifier: true
       required: true
       slot_uri: schema:identifier
     name:
+      description: Word or phrase that constitutes the distinctive designation of
+        a being or thing.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/name
@@ -27,8 +36,15 @@ LocalFile:
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/path
     specialUsageRole:
+      description: Particular function of something when it is used.
+      range: FileUsageRole
       slot_uri: https://openminds.ebrains.eu/vocab/specialUsageRole
     storageSize:
+      description: Quantitative value defining how much disk space is used by an object
+        on a computer system.
+      inlined: true
+      range: QuantitativeValue
       slot_uri: https://openminds.ebrains.eu/vocab/storageSize
   class_uri: https://openminds.ebrains.eu/computation/LocalFile
   description: Structured information about a file that is not accessible via a URL.
+  title: Local file

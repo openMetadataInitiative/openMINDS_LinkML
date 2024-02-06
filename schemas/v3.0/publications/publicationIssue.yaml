@@ -5,6 +5,8 @@ PublicationIssue:
       required: true
       slot_uri: schema:identifier
     isPartOf:
+      description: Reference to the ensemble of multiple things or beings.
+      range: PublicationVolume
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     issueNumber:
@@ -13,3 +15,4 @@ PublicationIssue:
       slot_uri: https://openminds.ebrains.eu/vocab/issueNumber
   class_uri: https://openminds.ebrains.eu/publications/PublicationIssue
   description: null
+  title: Publication issue

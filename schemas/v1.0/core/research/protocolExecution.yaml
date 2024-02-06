@@ -1,6 +1,8 @@
 ProtocolExecution:
   attributes:
     description:
+      description: Longer statement or account giving the characteristics of someone
+        or something.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/description
     id:
@@ -8,12 +10,16 @@ ProtocolExecution:
       required: true
       slot_uri: schema:identifier
     input:
+      description: Something or someone that is put into or participates in a process
+        or machine.
       list_elements_unique: true
       multivalued: true
       range: FileBundle
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/input
     output:
+      description: Something or someone that comes out of, is delivered or produced
+        by a process or machine.
       list_elements_unique: true
       multivalued: true
       range: FileBundle
@@ -25,19 +31,29 @@ ProtocolExecution:
       range: ParameterSetting
       slot_uri: https://openminds.ebrains.eu/vocab/parameterSetting
     preparationType:
+      description: Distinct class of actions or processes that make something ready
+        for use or service.
+      range: PreparationType
       slot_uri: https://openminds.ebrains.eu/vocab/preparationType
     protocol:
+      description: Plan that describes the process of a scientific or medical experiment,
+        treatment, or procedure.
+      range: Protocol
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/protocol
     semanticallyAnchoredTo:
+      description: Reference to a related anatomical structure without providing a
+        quantitative proof of the claimed relation.
       list_elements_unique: true
       multivalued: true
       range: AnatomicalEntity
       slot_uri: https://openminds.ebrains.eu/vocab/semanticallyAnchoredTo
     studyTarget:
+      description: Structure or function that was targeted within a study.
       list_elements_unique: true
       multivalued: true
       range: BiologicalSex
       slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
   class_uri: https://openminds.ebrains.eu/core/ProtocolExecution
   description: Structured information on a protocol execution.
+  title: Protocol execution

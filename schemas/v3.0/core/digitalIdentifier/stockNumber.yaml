@@ -5,11 +5,14 @@ StockNumber:
       required: true
       slot_uri: schema:identifier
     identifier:
+      description: Term or code used to identify something or someone.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/identifier
     vendor:
+      range: Organization
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/vendor
   class_uri: https://openminds.ebrains.eu/core/StockNumber
   description: null
+  title: Stock number

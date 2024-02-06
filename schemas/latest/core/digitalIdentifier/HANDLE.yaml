@@ -5,9 +5,12 @@ HANDLE:
       required: true
       slot_uri: schema:identifier
     identifier:
+      description: Term or code used to identify something or someone.
+      pattern: ^http://hdl.handle.net/[.0-9A-Za-z]+/[.0-9A-Za-z]+
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/identifier
   class_uri: https://openminds.ebrains.eu/core/HANDLE
   description: A persistent identifier for an information resource provided by the
     Handle System of the Corporation for National Research Initiatives.
+  title: Handle

@@ -1,53 +1,78 @@
 SoftwareVersion:
   attributes:
     accessibility:
+      description: Level to which something is accessible to someone or something.
+      range: ProductAccessibility
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/accessibility
     applicationCategory:
+      description: Distinct class that groups software programs which perform a similar
+        task or set of tasks.
       list_elements_unique: true
       multivalued: true
       range: SoftwareApplicationCategory
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/applicationCategory
     author:
+      description: Creator of a literary or creative work, as well as a dataset publication.
       list_elements_unique: true
       multivalued: true
       range: Organization
       slot_uri: https://openminds.ebrains.eu/vocab/author
     copyright:
+      description: Exclusive and assignable legal right of an originator to reproduce,
+        publish, sell, or distribute the matter and form of a creative work for a
+        defined time period.
+      inlined: true
+      range: Copyright
       slot_uri: https://openminds.ebrains.eu/vocab/copyright
     custodian:
+      description: The 'custodian' is a legal person who is responsible for the content
+        and quality of the data, metadata, and/or code of a research product.
       list_elements_unique: true
       multivalued: true
       range: Organization
       slot_uri: https://openminds.ebrains.eu/vocab/custodian
     description:
+      description: Longer statement or account giving the characteristics of someone
+        or something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/description
     developer:
+      description: Legal person that creates or improves products or services (e.g.,
+        software, applications, etc.).
       list_elements_unique: true
       multivalued: true
       range: Organization
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/developer
     device:
+      description: Piece of equipment or mechanism (hardware) designed to serve a
+        special purpose or perform a special function.
       list_elements_unique: true
       multivalued: true
       range: OperatingDevice
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/device
     digitalIdentifier:
+      description: Digital handle to identify objects or legal persons.
+      range: DigitalIdentifier
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     fullDocumentation:
+      description: Non-abridged instructions, comments, and information for using
+        a particular product.
+      range: DigitalIdentifier
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/fullDocumentation
     fullName:
+      description: Whole, non-abbreviated name of something or somebody.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/fullName
     funding:
+      description: Money provided by a legal person for a particular purpose.
       list_elements_unique: true
       multivalued: true
       range: Funding
@@ -74,6 +99,7 @@ SoftwareVersion:
       range: SoftwareVersion
       slot_uri: https://openminds.ebrains.eu/vocab/hasSupplementVersion
     homepage:
+      description: Main website of something or someone.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/homepage
     id:
@@ -81,72 +107,102 @@ SoftwareVersion:
       required: true
       slot_uri: schema:identifier
     inputFormat:
+      description: Format of data that is put into a process or machine.
       list_elements_unique: true
       multivalued: true
       range: ContentType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/inputFormat
     isNewVersionOf:
+      description: Reference to a previous (potentially outdated) particular form
+        of something.
+      range: SoftwareVersion
       slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
     keyword:
+      description: Significant word or concept that are representative of something
+        or someone.
       list_elements_unique: true
       multivalued: true
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/keyword
     language:
+      description: System of communication (words, their pronunciation, and the methods
+        of combining them) used and understood by a particular community.
       list_elements_unique: true
       multivalued: true
       range: Language
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/language
     license:
+      description: Grant by a party to another party as an element of an agreement
+        between those parties that permits to do, use, or own something.
+      range: License
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/license
     operatingSystem:
+      description: Software that controls the operation of a computer and directs
+        the processing of programs.
       list_elements_unique: true
       multivalued: true
       range: OperatingSystem
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/operatingSystem
     otherContribution:
+      description: Giving or supplying of something (such as money or time) as a part
+        or share other than what is covered elsewhere.
       list_elements_unique: true
       multivalued: true
       range: Contribution
       slot_uri: https://openminds.ebrains.eu/vocab/otherContribution
     outputFormat:
+      description: Format of data that comes out of, is delivered or produced by a
+        process or machine.
       list_elements_unique: true
       multivalued: true
       range: ContentType
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/outputFormat
     programmingLanguage:
+      description: Distinct set of instructions for computer programs in order to
+        produce various kinds of output.
       list_elements_unique: true
       multivalued: true
       range: ProgrammingLanguage
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/programmingLanguage
     relatedPublication:
+      description: Reference to something that was made available for the general
+        public to see or buy.
       list_elements_unique: true
       multivalued: true
       range: DigitalIdentifier
       slot_uri: https://openminds.ebrains.eu/vocab/relatedPublication
     releaseDate:
+      description: Fixed date on which a product is due to become or was made available
+        for the general public to see or buy
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
     repository:
+      description: Place, room, or container where something is deposited or stored.
+      range: FileRepository
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/repository
     shortName:
+      description: Shortened or fully abbreviated name of something or somebody.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/shortName
     versionIdentifier:
+      description: Term or code used to identify the version of something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
     versionInnovation:
+      description: Documentation on what changed in comparison to a previously published
+        form of something.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
   class_uri: https://openminds.ebrains.eu/core/SoftwareVersion
   description: null
+  title: Software version

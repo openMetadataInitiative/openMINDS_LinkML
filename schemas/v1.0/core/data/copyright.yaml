@@ -1,6 +1,7 @@
 Copyright:
   attributes:
     holder:
+      description: Legal person in possession of something.
       list_elements_unique: true
       multivalued: true
       range: Organization
@@ -11,8 +12,13 @@ Copyright:
       required: true
       slot_uri: schema:identifier
     year:
+      description: Cycle in the Gregorian calendar specified by a number and comprised
+        of 365 or 366 days divided into 12 months beginning with January and ending
+        with December.
+      pattern: ([0-9]{4}])
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/year
   class_uri: https://openminds.ebrains.eu/core/Copyright
   description: Structured information on the copyright.
+  title: Copyright

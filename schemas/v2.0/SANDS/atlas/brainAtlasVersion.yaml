@@ -1,20 +1,29 @@
 BrainAtlasVersion:
   attributes:
     coordinateSpace:
+      description: Two or three dimensional geometric setting.
+      range: CommonCoordinateSpace
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/coordinateSpace
     digitalIdentifier:
+      description: Digital handle to identify objects or legal persons.
+      range: DOI
       slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     fullName:
+      description: Whole, non-abbreviated name of something or somebody.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/fullName
     hasTerminology:
+      range: parcellationTerminology
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/hasTerminology
     homepage:
+      description: Main website of something or someone.
+      range: URL
       slot_uri: https://openminds.ebrains.eu/vocab/homepage
     howToCite:
+      description: Preferred format for citing a particular object or legal person.
       range: string
       slot_uri: https://openminds.ebrains.eu/vocab/howToCite
     id:
@@ -22,30 +31,44 @@ BrainAtlasVersion:
       required: true
       slot_uri: schema:identifier
     isAlternativeVersionOf:
+      description: Reference to an original form where the essence was preserved,
+        but presented in an alternative form.
       list_elements_unique: true
       multivalued: true
       range: BrainAtlasVersion
       slot_uri: https://openminds.ebrains.eu/vocab/isAlternativeVersionOf
     isNewVersionOf:
+      description: Reference to a previous (potentially outdated) particular form
+        of something.
+      range: BrainAtlasVersion
       slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
     ontologyIdentifier:
-      range: string
+      description: Term or code used to identify something or someone registered within
+        a particular ontology.
+      range: Uri
       slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     releaseDate:
-      range: string
+      description: Fixed date on which a product is due to become or was made available
+        for the general public to see or buy
+      range: Date
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
     shortName:
+      description: Shortened or fully abbreviated name of something or somebody.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/shortName
     versionIdentifier:
+      description: Term or code used to identify the version of something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
     versionInnovation:
+      description: Documentation on what changed in comparison to a previously published
+        form of something.
       range: string
       required: true
       slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
   class_uri: https://openminds.ebrains.eu/sands/BrainAtlasVersion
   description: Structured information on a brain atlas (version level).
+  title: Brain atlas version
