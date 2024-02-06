@@ -1,20 +1,15 @@
 Channel:
-  attributes:
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-    internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
-      range: string
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
-    unit:
-      description: Determinate quantity adopted as a standard of measurement.
-      range: UnitOfMeasurement
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/unit
   class_uri: https://openminds.ebrains.eu/ephys/Channel
   description: null
+  slot_usage:
+    internalIdentifier:
+      range: string
+      required: true
+    unit:
+      range: UnitOfMeasurement
+      required: true
+  slots:
+  - id
+  - internalIdentifier
+  - unit
   title: Channel

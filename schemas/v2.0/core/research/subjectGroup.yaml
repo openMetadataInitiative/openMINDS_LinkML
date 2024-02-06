@@ -1,64 +1,47 @@
 SubjectGroup:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/SubjectGroup
+  description: null
+  slot_usage:
     additionalRemarks:
-      description: Mention of what deserves additional attention or notice.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
     biologicalSex:
-      description: Differentiation of individuals of most species (animals and plants)
-        based on the type of gametes they produce.
       list_elements_unique: true
       multivalued: true
       range: BiologicalSex
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/biologicalSex
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     phenotype:
-      description: Physical expression of one or more genes of an organism.
       list_elements_unique: true
       multivalued: true
       range: Phenotype
-      slot_uri: https://openminds.ebrains.eu/vocab/phenotype
     quantity:
-      description: Total amount or number of things or beings.
       range: int
-      slot_uri: https://openminds.ebrains.eu/vocab/quantity
     species:
-      description: Category of biological classification comprising related organisms
-        or populations potentially capable of interbreeding, and being designated
-        by a binomial that consists of the name of a genus followed by a Latin or
-        latinized uncapitalized noun or adjective.
       list_elements_unique: true
       multivalued: true
       range: Species
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/species
     strain:
-      description: Group of presumed common ancestry with physiological but usually
-        not morphological distinctions.
       list_elements_unique: true
       multivalued: true
       range: Strain
-      slot_uri: https://openminds.ebrains.eu/vocab/strain
     studiedState:
-      description: Reference to a point in time at which something or someone was
-        studied in a particular mode or condition.
       list_elements_unique: true
       multivalued: true
       range: SubjectGroupState
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/studiedState
-  class_uri: https://openminds.ebrains.eu/core/SubjectGroup
-  description: null
+  slots:
+  - id
+  - additionalRemarks
+  - biologicalSex
+  - internalIdentifier
+  - lookupLabel
+  - phenotype
+  - quantity
+  - species
+  - strain
+  - studiedState
   title: Subject group

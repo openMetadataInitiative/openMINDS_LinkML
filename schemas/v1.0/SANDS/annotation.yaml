@@ -1,67 +1,50 @@
 Annotation:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/Annotation
+  description: Structured information on an image annotation.
+  slot_usage:
     bestViewPoint:
-      description: Coordinate point from which you get the best view of something.
       range: CoordinatePoint
-      slot_uri: https://openminds.ebrains.eu/vocab/bestViewPoint
     criteria:
-      description: Aspects or standards on which a judgement or decision is based.
       range: ProtocolExecution
-      slot_uri: https://openminds.ebrains.eu/vocab/criteria
     criteriaQualityType:
-      description: Distinct class that defines how the judgement or decision was made
-        for a particular criteria.
       range: CriteriaQualityType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/criteriaQualityType
     displayColor:
-      description: Preferred coloring.
       maximum_value: 255
       multivalued: true
       range: int
-      slot_uri: https://openminds.ebrains.eu/vocab/displayColor
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     inspiredBy:
-      description: Reference to an inspiring element.
       list_elements_unique: true
       multivalued: true
       range: Image
-      slot_uri: https://openminds.ebrains.eu/vocab/inspiredBy
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     laterality:
-      description: Differentiation between a pair of lateral homologous parts of the
-        body.
       list_elements_unique: true
       multivalued: true
       range: Laterality
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/laterality
     namingTerm:
-      description: Word or expression that has a precise meaning within a science,
-        art, profession, or subject.
       list_elements_unique: true
       multivalued: true
       range: AnatomicalEntity
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/namingTerm
     relatedAtlasTerm:
-      description: Reference to a related naming term of an anatomical structure that
-        is defined in a particular brain atlas.
       multivalued: true
       range: AnatomicalEntity
-      slot_uri: https://openminds.ebrains.eu/vocab/relatedAtlasTerm
     visualizedIn:
-      description: Reference to an image in which something is visible.
       range: Image
-      slot_uri: https://openminds.ebrains.eu/vocab/visualizedIn
-  class_uri: https://openminds.ebrains.eu/sands/Annotation
-  description: Structured information on an image annotation.
+  slots:
+  - id
+  - bestViewPoint
+  - criteria
+  - criteriaQualityType
+  - displayColor
+  - inspiredBy
+  - internalIdentifier
+  - laterality
+  - namingTerm
+  - relatedAtlasTerm
+  - visualizedIn
   title: Annotation

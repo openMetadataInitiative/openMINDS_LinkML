@@ -1,50 +1,39 @@
 ElectrodeContact:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/ElectrodeContact
+  description: Structured information on an electrode contact.
+  slot_usage:
     coordinatePoint:
-      description: Pair or triplet of numbers defining the position in a particular
-        two- or three dimensional plane or space.
       inlined: true
       range: CoordinatePoint
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/coordinatePoint
     definedIn:
-      description: Reference to a file instance in which something is stored.
       list_elements_unique: true
       multivalued: true
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/definedIn
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     relatedRecording:
-      description: Reference to the written, stored evidence of something.
       list_elements_unique: true
       multivalued: true
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/relatedRecording
     relatedStimulation:
-      description: Reference to the written, stored function used as a physiological
-        stimulus.
       list_elements_unique: true
       multivalued: true
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/relatedStimulation
     visualizedIn:
-      description: Reference to an image in which something is visible.
       list_elements_unique: true
       multivalued: true
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/visualizedIn
-  class_uri: https://openminds.ebrains.eu/sands/ElectrodeContact
-  description: Structured information on an electrode contact.
+  slots:
+  - id
+  - coordinatePoint
+  - definedIn
+  - internalIdentifier
+  - lookupLabel
+  - relatedRecording
+  - relatedStimulation
+  - visualizedIn
   title: Electrode contact

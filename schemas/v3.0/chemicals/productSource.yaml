@@ -1,35 +1,31 @@
 ProductSource:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/chemicals/ProductSource
+  description: Structured information about the source of a chemical substance or
+    mixture.
+  slot_usage:
     digitalIdentifier:
-      description: Digital handle to identify objects or legal persons.
       range: RRID
-      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     identifier:
-      description: Term or code used to identify something or someone.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/identifier
     productName:
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/productName
     provider:
       any_of:
       - range: Consortium
       - range: Organization
       - range: Person
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/provider
     purity:
       any_of:
       - range: QuantitativeValue
       - range: QuantitativeValueRange
       inlined: true
-      slot_uri: https://openminds.ebrains.eu/vocab/purity
-  class_uri: https://openminds.ebrains.eu/chemicals/ProductSource
-  description: Structured information about the source of a chemical substance or
-    mixture.
+  slots:
+  - id
+  - digitalIdentifier
+  - identifier
+  - productName
+  - provider
+  - purity
   title: Product source

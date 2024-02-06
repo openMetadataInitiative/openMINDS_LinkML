@@ -1,31 +1,21 @@
 AgeCategory:
-  attributes:
-    definition:
-      description: Short, but precise statement of the meaning of a word, word group,
-        sign or a symbol.
-      range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/definition
-    description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
-      range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/description
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-    name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
-      range: string
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
-    ontologyIdentifier:
-      description: Term or code used to identify something or someone registered within
-        a particular ontology.
-      range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
   class_uri: https://openminds.ebrains.eu/controlledTerms/AgeCategory
   description: Structured information on the life cycle (semantic term) of a specific
     age group.
+  slot_usage:
+    definition:
+      range: string
+    description:
+      range: string
+    name:
+      range: string
+      required: true
+    ontologyIdentifier:
+      range: string
+  slots:
+  - id
+  - definition
+  - description
+  - name
+  - ontologyIdentifier
   title: Age category

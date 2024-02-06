@@ -1,36 +1,28 @@
 BrainAtlas:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
+  description: Structured information on a brain atlas (concept level).
+  slot_usage:
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/description
     fullName:
-      description: Whole, non-abbreviated name of something or somebody.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/fullName
     hasVersion:
-      description: Reference to variants of an original.
       list_elements_unique: true
       multivalued: true
       range: BrainAtlasVersion
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/hasVersion
     homepage:
-      description: Main website of something or someone.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/homepage
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     shortName:
-      description: Shortened or fully abbreviated name of something or somebody.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/shortName
-  class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
-  description: Structured information on a brain atlas (concept level).
+  slots:
+  - id
+  - description
+  - fullName
+  - hasVersion
+  - homepage
+  - shortName
   title: Brain atlas

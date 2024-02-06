@@ -1,16 +1,13 @@
 RORID:
-  attributes:
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-    identifier:
-      description: Term or code used to identify something or someone.
-      pattern: ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
-      range: string
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/identifier
   class_uri: https://openminds.ebrains.eu/core/RORID
   description: A persistent identifier for a research organization, provided by the
     Research Organization Registry.
+  slot_usage:
+    identifier:
+      pattern: ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
+      range: string
+      required: true
+  slots:
+  - id
+  - identifier
   title: Rorid

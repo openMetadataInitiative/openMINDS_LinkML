@@ -1,16 +1,13 @@
 ORCID:
-  attributes:
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-    identifier:
-      description: Term or code used to identify something or someone.
-      pattern: ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
-      range: string
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/identifier
   class_uri: https://openminds.ebrains.eu/core/ORCID
   description: A persistent identifier for a researcher provided by Open Researcher
     and Contributor ID, Inc.
+  slot_usage:
+    identifier:
+      pattern: ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
+      range: string
+      required: true
+  slots:
+  - id
+  - identifier
   title: Orcid

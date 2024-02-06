@@ -1,71 +1,53 @@
 AtlasAnnotation:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
+  description: null
+  slot_usage:
     bestViewPoint:
-      description: Coordinate point from which you get the best view of something.
       inlined: true
       range: CoordinatePoint
-      slot_uri: https://openminds.ebrains.eu/vocab/bestViewPoint
     criteria:
-      description: Aspects or standards on which a judgement or decision is based.
       range: ProtocolExecution
-      slot_uri: https://openminds.ebrains.eu/vocab/criteria
     criteriaQualityType:
-      description: Distinct class that defines how the judgement or decision was made
-        for a particular criteria.
       range: CriteriaQualityType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/criteriaQualityType
     displayColor:
-      description: Preferred coloring.
       pattern: ^#[0-9A-Fa-f]{6}$
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/displayColor
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     inspiredBy:
-      description: Reference to an inspiring element.
       list_elements_unique: true
       multivalued: true
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/inspiredBy
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     laterality:
-      description: Differentiation between a pair of lateral homologous parts of the
-        body.
       list_elements_unique: true
       multivalued: true
       range: Laterality
-      slot_uri: https://openminds.ebrains.eu/vocab/laterality
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     versionIdentifier:
-      description: Term or code used to identify the version of something.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
     versionInnovation:
-      description: Documentation on what changed in comparison to a previously published
-        form of something.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
     visualizedIn:
-      description: Reference to an image in which something is visible.
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/visualizedIn
-  class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
-  description: null
+  slots:
+  - id
+  - bestViewPoint
+  - criteria
+  - criteriaQualityType
+  - displayColor
+  - inspiredBy
+  - internalIdentifier
+  - laterality
+  - lookupLabel
+  - name
+  - versionIdentifier
+  - versionInnovation
+  - visualizedIn
   title: Atlas annotation

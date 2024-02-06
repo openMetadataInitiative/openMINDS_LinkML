@@ -1,36 +1,25 @@
 Strain:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/controlledTerms/Strain
+  description: null
+  slot_usage:
     definition:
-      description: Short, but precise statement of the meaning of a word, word group,
-        sign or a symbol.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/definition
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/description
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     identifier:
-      description: Term or code used to identify something or someone.
       list_elements_unique: true
       multivalued: true
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/identifier
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     ontologyIdentifier:
-      description: Term or code used to identify something or someone registered within
-        a particular ontology.
       range: Uri
-      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
-  class_uri: https://openminds.ebrains.eu/controlledTerms/Strain
-  description: null
+  slots:
+  - id
+  - definition
+  - description
+  - identifier
+  - name
+  - ontologyIdentifier
   title: Strain

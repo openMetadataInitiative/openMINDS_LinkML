@@ -1,55 +1,51 @@
 ElectrodeArrayUsage:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage
+  description: null
+  slot_usage:
     anatomicalLocationOfArray:
       list_elements_unique: true
       multivalued: true
       range: CellType
-      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalLocationOfArray
     anatomicalLocationOfElectrodes:
       list_elements_unique: true
       multivalued: true
       range: CellType
-      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalLocationOfElectrodes
     contactResistances:
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: QuantitativeValue
-      slot_uri: https://openminds.ebrains.eu/vocab/contactResistances
     device:
-      description: Piece of equipment or mechanism (hardware) designed to serve a
-        special purpose or perform a special function.
       range: ElectrodeArray
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/device
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     metadataLocation:
       list_elements_unique: true
       multivalued: true
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/metadataLocation
     spatialLocationOfElectrodes:
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: CoordinatePoint
-      slot_uri: https://openminds.ebrains.eu/vocab/spatialLocationOfElectrodes
     usedElectrode:
       list_elements_unique: true
       multivalued: true
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/usedElectrode
     usedSpecimen:
       any_of:
       - range: SubjectState
       - range: TissueSampleState
-      slot_uri: https://openminds.ebrains.eu/vocab/usedSpecimen
-  class_uri: https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage
-  description: null
+  slots:
+  - id
+  - anatomicalLocationOfArray
+  - anatomicalLocationOfElectrodes
+  - contactResistances
+  - device
+  - lookupLabel
+  - metadataLocation
+  - spatialLocationOfElectrodes
+  - usedElectrode
+  - usedSpecimen
   title: Electrode array usage

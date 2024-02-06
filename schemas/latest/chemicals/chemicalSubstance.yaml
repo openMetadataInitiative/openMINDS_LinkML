@@ -1,29 +1,26 @@
 ChemicalSubstance:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
+  description: Structured information about a chemical substance.
+  slot_usage:
     additionalRemarks:
-      description: Mention of what deserves additional attention or notice.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     molecularEntity:
       range: MolecularEntity
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/molecularEntity
     productSource:
       range: ProductSource
-      slot_uri: https://openminds.ebrains.eu/vocab/productSource
     purity:
       any_of:
       - range: QuantitativeValue
       - range: QuantitativeValueRange
       inlined: true
-      slot_uri: https://openminds.ebrains.eu/vocab/purity
-  class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
-  description: Structured information about a chemical substance.
+  slots:
+  - id
+  - additionalRemarks
+  - lookupLabel
+  - molecularEntity
+  - productSource
+  - purity
   title: Chemical substance

@@ -1,25 +1,20 @@
 Contribution:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/Contribution
+  description: Structured information on the contribution made to a research product.
+  slot_usage:
     contributor:
       any_of:
       - range: Consortium
       - range: Organization
       - range: Person
-      description: Legal person that gave or supplied something as a part or share.
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/contributor
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     type:
-      description: Distinct class to which a group of entities or concepts with similar
-        characteristics or attributes belong to.
       list_elements_unique: true
       multivalued: true
       range: ContributionType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/type
-  class_uri: https://openminds.ebrains.eu/core/Contribution
-  description: Structured information on the contribution made to a research product.
+  slots:
+  - id
+  - contributor
+  - type
   title: Contribution

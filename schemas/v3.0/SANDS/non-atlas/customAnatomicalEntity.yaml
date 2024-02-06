@@ -1,32 +1,28 @@
 CustomAnatomicalEntity:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
+  description: null
+  slot_usage:
     hasAnnotation:
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: CustomAnnotation
-      slot_uri: https://openminds.ebrains.eu/vocab/hasAnnotation
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     relatedUBERONTerm:
       any_of:
       - range: Organ
       - range: UBERONParcellation
-      slot_uri: https://openminds.ebrains.eu/vocab/relatedUBERONTerm
     relationAssessment:
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: QualitativeRelationAssessment
-      slot_uri: https://openminds.ebrains.eu/vocab/relationAssessment
-  class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
-  description: null
+  slots:
+  - id
+  - hasAnnotation
+  - name
+  - relatedUBERONTerm
+  - relationAssessment
   title: Custom anatomical entity

@@ -1,24 +1,18 @@
 Affiliation:
-  attributes:
-    endDate:
-      description: Date in the Gregorian calendar at which something terminates in
-        time.
-      range: Date
-      slot_uri: https://openminds.ebrains.eu/vocab/endDate
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-    organization:
-      description: Legally accountable, administrative and functional structure.
-      range: Organization
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/organization
-    startDate:
-      description: Date in the Gregorian calendar at which something begins in time
-      range: Date
-      slot_uri: https://openminds.ebrains.eu/vocab/startDate
   class_uri: https://openminds.ebrains.eu/core/Affiliation
   description: Structured information about a relationship between two entities, such
     as a person and their employer.
+  slot_usage:
+    endDate:
+      range: Date
+    organization:
+      range: Organization
+      required: true
+    startDate:
+      range: Date
+  slots:
+  - id
+  - endDate
+  - organization
+  - startDate
   title: Affiliation

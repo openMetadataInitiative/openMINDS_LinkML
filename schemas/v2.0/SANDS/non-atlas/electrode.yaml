@@ -1,26 +1,20 @@
 Electrode:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/Electrode
+  description: Structured information on an electrode.
+  slot_usage:
     electrodeContact:
-      description: Not shielded part of a conductor that is used to establish electrical
-        contact with a nonmetallic part of a circuit.
       list_elements_unique: true
       multivalued: true
       range: ElectrodeContact
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/electrodeContact
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
-  class_uri: https://openminds.ebrains.eu/sands/Electrode
-  description: Structured information on an electrode.
+  slots:
+  - id
+  - electrodeContact
+  - internalIdentifier
+  - lookupLabel
   title: Electrode

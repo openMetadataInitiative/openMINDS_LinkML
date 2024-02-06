@@ -1,65 +1,56 @@
 Pipette:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/ephys/Pipette
+  description: null
+  slot_usage:
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/description
     deviceType:
       range: DeviceType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/deviceType
     digitalIdentifier:
       any_of:
       - range: DOI
       - range: RRID
-      description: Digital handle to identify objects or legal persons.
-      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     externalDiameter:
       inlined: true
       range: QuantitativeValue
-      slot_uri: https://openminds.ebrains.eu/vocab/externalDiameter
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     internalDiameter:
       inlined: true
       range: QuantitativeValue
-      slot_uri: https://openminds.ebrains.eu/vocab/internalDiameter
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     manufacturer:
       list_elements_unique: true
       multivalued: true
       range: Consortium
-      slot_uri: https://openminds.ebrains.eu/vocab/manufacturer
     material:
       any_of:
       - range: ChemicalMixture
       - range: ChemicalSubstance
       - range: MolecularEntity
-      slot_uri: https://openminds.ebrains.eu/vocab/material
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     owner:
       list_elements_unique: true
       multivalued: true
       range: Consortium
-      slot_uri: https://openminds.ebrains.eu/vocab/owner
     serialNumber:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/serialNumber
-  class_uri: https://openminds.ebrains.eu/ephys/Pipette
-  description: null
+  slots:
+  - id
+  - description
+  - deviceType
+  - digitalIdentifier
+  - externalDiameter
+  - internalDiameter
+  - internalIdentifier
+  - lookupLabel
+  - manufacturer
+  - material
+  - name
+  - owner
+  - serialNumber
   title: Pipette

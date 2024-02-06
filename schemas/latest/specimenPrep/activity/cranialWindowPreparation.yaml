@@ -1,90 +1,78 @@
 CranialWindowPreparation:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/specimenPrep/CranialWindowPreparation
+  description: null
+  slot_usage:
     constructionType:
       range: CranialWindowConstructionType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/constructionType
     customPropertySet:
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: CustomPropertySet
-      slot_uri: https://openminds.ebrains.eu/vocab/customPropertySet
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/description
     dimension:
       any_of:
       - range: Circle
       - range: Ellipse
       - range: Rectangle
       inlined: true
-      slot_uri: https://openminds.ebrains.eu/vocab/dimension
     endTime:
       any_of:
       - range: Time
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/endTime
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     input:
-      description: Something or someone that is put into or participates in a process
-        or machine.
       list_elements_unique: true
       multivalued: true
       range: SubjectState
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/input
     isPartOf:
-      description: Reference to the ensemble of multiple things or beings.
       range: DatasetVersion
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     output:
-      description: Something or someone that comes out of, is delivered or produced
-        by a process or machine.
       list_elements_unique: true
       multivalued: true
       range: SubjectState
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/output
     performedBy:
       list_elements_unique: true
       multivalued: true
       range: SoftwareAgent
-      slot_uri: https://openminds.ebrains.eu/vocab/performedBy
     preparationDesign:
       range: PreparationType
-      slot_uri: https://openminds.ebrains.eu/vocab/preparationDesign
     protocol:
-      description: Plan that describes the process of a scientific or medical experiment,
-        treatment, or procedure.
       list_elements_unique: true
       multivalued: true
       range: Protocol
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/protocol
     reinforcementType:
       range: CranialWindowReinforcementType
-      slot_uri: https://openminds.ebrains.eu/vocab/reinforcementType
     startTime:
       any_of:
       - range: Time
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/startTime
     studyTarget:
-      description: Structure or function that was targeted within a study.
       list_elements_unique: true
       multivalued: true
       range: AuditoryStimulusType
-      slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
-  class_uri: https://openminds.ebrains.eu/specimenPrep/CranialWindowPreparation
-  description: null
+  slots:
+  - id
+  - constructionType
+  - customPropertySet
+  - description
+  - dimension
+  - endTime
+  - input
+  - isPartOf
+  - lookupLabel
+  - output
+  - performedBy
+  - preparationDesign
+  - protocol
+  - reinforcementType
+  - startTime
+  - studyTarget
   title: Cranial window preparation

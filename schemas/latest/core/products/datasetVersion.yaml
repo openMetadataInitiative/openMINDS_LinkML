@@ -1,209 +1,164 @@
 DatasetVersion:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/DatasetVersion
+  description: Structured information on data originating from human/animal studies
+    or simulations (version level).
+  slot_usage:
     accessibility:
-      description: Level to which something is accessible to someone or something.
       range: ProductAccessibility
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/accessibility
     author:
-      description: Creator of a literary or creative work, as well as a dataset publication.
       list_elements_unique: true
       multivalued: true
       range: Consortium
-      slot_uri: https://openminds.ebrains.eu/vocab/author
     behavioralProtocol:
       list_elements_unique: true
       multivalued: true
       range: BehavioralProtocol
-      slot_uri: https://openminds.ebrains.eu/vocab/behavioralProtocol
     copyright:
-      description: Exclusive and assignable legal right of an originator to reproduce,
-        publish, sell, or distribute the matter and form of a creative work for a
-        defined time period.
       inlined: true
       range: Copyright
-      slot_uri: https://openminds.ebrains.eu/vocab/copyright
     custodian:
-      description: The 'custodian' is a legal person who is responsible for the content
-        and quality of the data, metadata, and/or code of a research product.
       list_elements_unique: true
       multivalued: true
       range: Consortium
-      slot_uri: https://openminds.ebrains.eu/vocab/custodian
     dataType:
       list_elements_unique: true
       multivalued: true
       range: SemanticDataType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/dataType
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/description
     digitalIdentifier:
       any_of:
       - range: DOI
       - range: IdentifiersDotOrgID
-      description: Digital handle to identify objects or legal persons.
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     ethicsAssessment:
-      description: Judgment about the applied principles of conduct governing an individual
-        or a group.
       range: EthicsAssessment
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/ethicsAssessment
     experimentalApproach:
       list_elements_unique: true
       multivalued: true
       range: ExperimentalApproach
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/experimentalApproach
     fullDocumentation:
       any_of:
       - range: DOI
       - range: File
       - range: WebResource
-      description: Non-abridged instructions, comments, and information for using
-        a particular product.
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/fullDocumentation
     fullName:
-      description: Whole, non-abbreviated name of something or somebody.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/fullName
     funding:
-      description: Money provided by a legal person for a particular purpose.
       list_elements_unique: true
       multivalued: true
       range: Funding
-      slot_uri: https://openminds.ebrains.eu/vocab/funding
     homepage:
-      description: Main website of something or someone.
       range: Uri
-      slot_uri: https://openminds.ebrains.eu/vocab/homepage
     howToCite:
-      description: Preferred format for citing a particular object or legal person.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/howToCite
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     inputData:
-      description: Data that is put into a process or machine.
       list_elements_unique: true
       multivalued: true
       range: DOI
-      slot_uri: https://openminds.ebrains.eu/vocab/inputData
     isAlternativeVersionOf:
-      description: Reference to an original form where the essence was preserved,
-        but presented in an alternative form.
       list_elements_unique: true
       multivalued: true
       range: DatasetVersion
-      slot_uri: https://openminds.ebrains.eu/vocab/isAlternativeVersionOf
     isNewVersionOf:
-      description: Reference to a previous (potentially outdated) particular form
-        of something.
       range: DatasetVersion
-      slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
     keyword:
-      description: Significant word or concept that are representative of something
-        or someone.
       list_elements_unique: true
       multivalued: true
       range: ActionStatusType
-      slot_uri: https://openminds.ebrains.eu/vocab/keyword
     license:
       any_of:
       - range: License
       - range: WebResource
-      description: Grant by a party to another party as an element of an agreement
-        between those parties that permits to do, use, or own something.
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/license
     otherContribution:
-      description: Giving or supplying of something (such as money or time) as a part
-        or share other than what is covered elsewhere.
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: Contribution
-      slot_uri: https://openminds.ebrains.eu/vocab/otherContribution
     preparationDesign:
       list_elements_unique: true
       multivalued: true
       range: PreparationType
-      slot_uri: https://openminds.ebrains.eu/vocab/preparationDesign
     protocol:
-      description: Plan that describes the process of a scientific or medical experiment,
-        treatment, or procedure.
       list_elements_unique: true
       multivalued: true
       range: Protocol
-      slot_uri: https://openminds.ebrains.eu/vocab/protocol
     relatedPublication:
-      description: Reference to something that was made available for the general
-        public to see or buy.
       list_elements_unique: true
       multivalued: true
       range: DOI
-      slot_uri: https://openminds.ebrains.eu/vocab/relatedPublication
     releaseDate:
-      description: Fixed date on which a product is due to become or was made available
-        for the general public to see or buy
       range: Date
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
     repository:
-      description: Place, room, or container where something is deposited or stored.
       range: FileRepository
-      slot_uri: https://openminds.ebrains.eu/vocab/repository
     shortName:
-      description: Shortened or fully abbreviated name of something or somebody.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/shortName
     studiedSpecimen:
       list_elements_unique: true
       multivalued: true
       range: Subject
-      slot_uri: https://openminds.ebrains.eu/vocab/studiedSpecimen
     studyTarget:
-      description: Structure or function that was targeted within a study.
       list_elements_unique: true
       multivalued: true
       range: AuditoryStimulusType
-      slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
     supportChannel:
       any_of:
       - range: Uri
-      description: Way of communication used to interact with users or customers.
       list_elements_unique: true
       multivalued: true
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/supportChannel
     technique:
-      description: Method of accomplishing a desired aim.
       list_elements_unique: true
       multivalued: true
       range: AnalysisTechnique
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/technique
     versionIdentifier:
-      description: Term or code used to identify the version of something.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
     versionInnovation:
-      description: Documentation on what changed in comparison to a previously published
-        form of something.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
-  class_uri: https://openminds.ebrains.eu/core/DatasetVersion
-  description: Structured information on data originating from human/animal studies
-    or simulations (version level).
+  slots:
+  - id
+  - accessibility
+  - author
+  - behavioralProtocol
+  - copyright
+  - custodian
+  - dataType
+  - description
+  - digitalIdentifier
+  - ethicsAssessment
+  - experimentalApproach
+  - fullDocumentation
+  - fullName
+  - funding
+  - homepage
+  - howToCite
+  - inputData
+  - isAlternativeVersionOf
+  - isNewVersionOf
+  - keyword
+  - license
+  - otherContribution
+  - preparationDesign
+  - protocol
+  - relatedPublication
+  - releaseDate
+  - repository
+  - shortName
+  - studiedSpecimen
+  - studyTarget
+  - supportChannel
+  - technique
+  - versionIdentifier
+  - versionInnovation
   title: Dataset version

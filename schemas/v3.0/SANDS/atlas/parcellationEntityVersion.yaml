@@ -1,68 +1,57 @@
 ParcellationEntityVersion:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/ParcellationEntityVersion
+  description: null
+  slot_usage:
     abbreviation:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/abbreviation
     additionalRemarks:
-      description: Mention of what deserves additional attention or notice.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
     alternateName:
       list_elements_unique: true
       multivalued: true
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/alternateName
     correctedName:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/correctedName
     hasAnnotation:
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: AtlasAnnotation
-      slot_uri: https://openminds.ebrains.eu/vocab/hasAnnotation
     hasParent:
-      description: Reference to a parent object or legal person.
       list_elements_unique: true
       multivalued: true
       range: ParcellationEntity
-      slot_uri: https://openminds.ebrains.eu/vocab/hasParent
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     ontologyIdentifier:
-      description: Term or code used to identify something or someone registered within
-        a particular ontology.
       list_elements_unique: true
       multivalued: true
       range: Uri
-      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     relationAssessment:
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: QualitativeRelationAssessment
-      slot_uri: https://openminds.ebrains.eu/vocab/relationAssessment
     versionIdentifier:
-      description: Term or code used to identify the version of something.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier
     versionInnovation:
-      description: Documentation on what changed in comparison to a previously published
-        form of something.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/versionInnovation
-  class_uri: https://openminds.ebrains.eu/sands/ParcellationEntityVersion
-  description: null
+  slots:
+  - id
+  - abbreviation
+  - additionalRemarks
+  - alternateName
+  - correctedName
+  - hasAnnotation
+  - hasParent
+  - lookupLabel
+  - name
+  - ontologyIdentifier
+  - relationAssessment
+  - versionIdentifier
+  - versionInnovation
   title: Parcellation entity version

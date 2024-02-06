@@ -1,15 +1,12 @@
 DOI:
-  attributes:
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-    identifier:
-      description: Term or code used to identify something or someone.
-      pattern: ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
-      range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/identifier
   class_uri: https://openminds.ebrains.eu/core/DOI
   description: Structured information about a digital object identifier, as standardized
     by the International Organization for Standardization.
+  slot_usage:
+    identifier:
+      pattern: ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
+      range: string
+  slots:
+  - id
+  - identifier
   title: Doi

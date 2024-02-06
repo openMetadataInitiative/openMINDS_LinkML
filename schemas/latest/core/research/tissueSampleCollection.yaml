@@ -1,78 +1,59 @@
 TissueSampleCollection:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/TissueSampleCollection
+  description: null
+  slot_usage:
     additionalRemarks:
-      description: Mention of what deserves additional attention or notice.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/additionalRemarks
     anatomicalLocation:
       list_elements_unique: true
       multivalued: true
       range: CellType
-      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalLocation
     biologicalSex:
-      description: Differentiation of individuals of most species (animals and plants)
-        based on the type of gametes they produce.
       list_elements_unique: true
       multivalued: true
       range: BiologicalSex
-      slot_uri: https://openminds.ebrains.eu/vocab/biologicalSex
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     laterality:
-      description: Differentiation between a pair of lateral homologous parts of the
-        body.
       list_elements_unique: true
       multivalued: true
       range: Laterality
-      slot_uri: https://openminds.ebrains.eu/vocab/laterality
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     numberOfTissueSamples:
       minimum_value: 2
       range: int
-      slot_uri: https://openminds.ebrains.eu/vocab/numberOfTissueSamples
     origin:
-      description: Source at which something begins or rises, or from which something
-        derives.
       list_elements_unique: true
       multivalued: true
       range: CellType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/origin
     species:
-      description: Category of biological classification comprising related organisms
-        or populations potentially capable of interbreeding, and being designated
-        by a binomial that consists of the name of a genus followed by a Latin or
-        latinized uncapitalized noun or adjective.
       list_elements_unique: true
       multivalued: true
       range: Species
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/species
     studiedState:
-      description: Reference to a point in time at which something or someone was
-        studied in a particular mode or condition.
       list_elements_unique: true
       multivalued: true
       range: TissueSampleCollectionState
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/studiedState
     type:
-      description: Distinct class to which a group of entities or concepts with similar
-        characteristics or attributes belong to.
       list_elements_unique: true
       multivalued: true
       range: TissueSampleType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/type
-  class_uri: https://openminds.ebrains.eu/core/TissueSampleCollection
-  description: null
+  slots:
+  - id
+  - additionalRemarks
+  - anatomicalLocation
+  - biologicalSex
+  - internalIdentifier
+  - laterality
+  - lookupLabel
+  - numberOfTissueSamples
+  - origin
+  - species
+  - studiedState
+  - type
   title: Tissue sample collection

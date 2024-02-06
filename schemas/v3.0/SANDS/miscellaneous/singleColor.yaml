@@ -1,15 +1,12 @@
 SingleColor:
-  attributes:
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/sands/SingleColor
+  description: null
+  slot_usage:
     value:
-      description: Entry for a property.
       pattern: ^#[0-9A-Fa-f]{6}$
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/value
-  class_uri: https://openminds.ebrains.eu/sands/SingleColor
-  description: null
+  slots:
+  - id
+  - value
   title: Single color

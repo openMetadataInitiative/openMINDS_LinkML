@@ -1,22 +1,17 @@
 CoordinatePoint:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
+  description: Structured information on a coordinate point.
+  slot_usage:
     coordinateSpace:
-      description: Two or three dimensional geometric setting.
       range: CoordinateSpace
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/coordinateSpace
     coordinates:
-      description: Pair or triplet of numbers defining a location in a given coordinate
-        space.
       inlined: true
       multivalued: true
       range: QuantitativeValue
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/coordinates
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-  class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
-  description: Structured information on a coordinate point.
+  slots:
+  - id
+  - coordinateSpace
+  - coordinates
   title: Coordinate point

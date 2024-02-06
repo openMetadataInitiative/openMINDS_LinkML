@@ -1,22 +1,19 @@
 Configuration:
-  attributes:
-    configuration:
-      range: string
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/configuration
-    format:
-      description: Method of digitally organizing and structuring data or information.
-      range: ContentType
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/format
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-    lookupLabel:
-      range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
   class_uri: https://openminds.ebrains.eu/core/Configuration
   description: Structured information about the properties or parameters of an entity
     or process.
+  slot_usage:
+    configuration:
+      range: string
+      required: true
+    format:
+      range: ContentType
+      required: true
+    lookupLabel:
+      range: string
+  slots:
+  - id
+  - configuration
+  - format
+  - lookupLabel
   title: Configuration

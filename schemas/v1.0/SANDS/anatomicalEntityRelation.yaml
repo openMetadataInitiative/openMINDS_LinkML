@@ -1,39 +1,29 @@
 AnatomicalEntityRelation:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/AnatomicalEntityRelation
+  description: Structured information on the relation between one anatomical entity
+    and another.
+  slot_usage:
     criteria:
-      description: Aspects or standards on which a judgement or decision is based.
       range: ProtocolExecution
-      slot_uri: https://openminds.ebrains.eu/vocab/criteria
     criteriaQualityType:
-      description: Distinct class that defines how the judgement or decision was made
-        for a particular criteria.
       range: CriteriaQualityType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/criteriaQualityType
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     inRelationTo:
-      description: Reference to a related element.
       range: AnatomicalEntity
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/inRelationTo
     qualitativeOverlap:
-      description: Semantic characterization of how much two things occupy the same
-        space.
       range: QualitativeOverlap
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/qualitativeOverlap
     quantitativeOverlap:
       any_of:
       - range: QuantitativeValue
       - range: QuantitativeValueRange
-      description: Numerical characterization of how much two things occupy the same
-        space.
       inlined: true
-      slot_uri: https://openminds.ebrains.eu/vocab/quantitativeOverlap
-  class_uri: https://openminds.ebrains.eu/sands/AnatomicalEntityRelation
-  description: Structured information on the relation between one anatomical entity
-    and another.
+  slots:
+  - id
+  - criteria
+  - criteriaQualityType
+  - inRelationTo
+  - qualitativeOverlap
+  - quantitativeOverlap
   title: Anatomical entity relation

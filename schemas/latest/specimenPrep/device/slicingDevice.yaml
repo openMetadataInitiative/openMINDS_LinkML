@@ -1,46 +1,39 @@
 SlicingDevice:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDevice
+  description: null
+  slot_usage:
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/description
     deviceType:
       range: DeviceType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/deviceType
     digitalIdentifier:
       any_of:
       - range: DOI
       - range: RRID
-      description: Digital handle to identify objects or legal persons.
-      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     manufacturer:
       list_elements_unique: true
       multivalued: true
       range: Consortium
-      slot_uri: https://openminds.ebrains.eu/vocab/manufacturer
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     owner:
       list_elements_unique: true
       multivalued: true
       range: Consortium
-      slot_uri: https://openminds.ebrains.eu/vocab/owner
     serialNumber:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/serialNumber
-  class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDevice
-  description: null
+  slots:
+  - id
+  - description
+  - deviceType
+  - digitalIdentifier
+  - lookupLabel
+  - manufacturer
+  - name
+  - owner
+  - serialNumber
   title: Slicing device

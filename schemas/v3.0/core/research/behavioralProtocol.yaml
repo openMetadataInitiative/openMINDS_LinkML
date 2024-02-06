@@ -1,42 +1,34 @@
 BehavioralProtocol:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/BehavioralProtocol
+  description: Structured information about a protocol used in an experiment studying
+    human or animal behavior.
+  slot_usage:
     describedIn:
       list_elements_unique: true
       multivalued: true
       range: DOI
-      slot_uri: https://openminds.ebrains.eu/vocab/describedIn
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/description
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     stimulation:
       list_elements_unique: true
       multivalued: true
       range: StimulationApproach
-      slot_uri: https://openminds.ebrains.eu/vocab/stimulation
     stimulusType:
       list_elements_unique: true
       multivalued: true
       range: AuditoryStimulusType
-      slot_uri: https://openminds.ebrains.eu/vocab/stimulusType
-  class_uri: https://openminds.ebrains.eu/core/BehavioralProtocol
-  description: Structured information about a protocol used in an experiment studying
-    human or animal behavior.
+  slots:
+  - id
+  - describedIn
+  - description
+  - internalIdentifier
+  - name
+  - stimulation
+  - stimulusType
   title: Behavioral protocol

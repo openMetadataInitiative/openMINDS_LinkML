@@ -1,35 +1,26 @@
 LivePaperSection:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/publications/LivePaperSection
+  description: null
+  slot_usage:
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/description
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     isPartOf:
-      description: Reference to the ensemble of multiple things or beings.
       range: LivePaperVersion
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     order:
       range: int
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/order
     type:
-      description: Distinct class to which a group of entities or concepts with similar
-        characteristics or attributes belong to.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/type
-  class_uri: https://openminds.ebrains.eu/publications/LivePaperSection
-  description: null
+  slots:
+  - id
+  - description
+  - isPartOf
+  - name
+  - order
+  - type
   title: Live paper section

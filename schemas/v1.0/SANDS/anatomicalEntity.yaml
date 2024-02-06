@@ -1,30 +1,22 @@
 AnatomicalEntity:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/AnatomicalEntity
+  description: Structured information on an anatomical entity.
+  slot_usage:
     hasParent:
-      description: Reference to a parent object or legal person.
       range: AnatomicalEntity
-      slot_uri: https://openminds.ebrains.eu/vocab/hasParent
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     ontologyIdentifier:
-      description: Term or code used to identify something or someone registered within
-        a particular ontology.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     otherAnatomicalRelation:
-      description: Reference to a related anatomical structure.
       list_elements_unique: true
       multivalued: true
       range: AnatomicalEntityRelation
-      slot_uri: https://openminds.ebrains.eu/vocab/otherAnatomicalRelation
-  class_uri: https://openminds.ebrains.eu/sands/AnatomicalEntity
-  description: Structured information on an anatomical entity.
+  slots:
+  - id
+  - hasParent
+  - name
+  - ontologyIdentifier
+  - otherAnatomicalRelation
   title: Anatomical entity

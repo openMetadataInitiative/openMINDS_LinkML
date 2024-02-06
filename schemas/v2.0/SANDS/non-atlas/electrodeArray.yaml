@@ -1,26 +1,20 @@
 ElectrodeArray:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
+  description: Structured information on an electrode array.
+  slot_usage:
     electrodes:
-      description: Elements in a semiconductor device that emits or collects electrons
-        or holes or controls their movements.
       list_elements_unique: true
       multivalued: true
       range: Electrode
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/electrodes
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
-  class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
-  description: Structured information on an electrode array.
+  slots:
+  - id
+  - electrodes
+  - internalIdentifier
+  - lookupLabel
   title: Electrode array

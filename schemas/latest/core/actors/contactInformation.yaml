@@ -1,14 +1,11 @@
 ContactInformation:
-  attributes:
-    email:
-      description: Address to which or from which an electronic mail can be sent.
-      range: Email
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/email
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
   class_uri: https://openminds.ebrains.eu/core/ContactInformation
   description: Structured information about how to contact a given person or consortium.
+  slot_usage:
+    email:
+      range: Email
+      required: true
+  slots:
+  - id
+  - email
   title: Contact information

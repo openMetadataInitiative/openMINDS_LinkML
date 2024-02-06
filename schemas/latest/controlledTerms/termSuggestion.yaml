@@ -1,54 +1,37 @@
 TermSuggestion:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/controlledTerms/TermSuggestion
+  description: null
+  slot_usage:
     addExistingTerminology:
-      description: Reference to an existing terminology (distinct class to group related
-        terms).
       range: Terminology
-      slot_uri: https://openminds.ebrains.eu/vocab/addExistingTerminology
     definition:
-      description: Short, but precise statement of the meaning of a word, word group,
-        sign or a symbol.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/definition
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/description
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     interlexIdentifier:
-      description: Persistent identifier for a term registered in the InterLex project.
       range: Uri
-      slot_uri: https://openminds.ebrains.eu/vocab/interlexIdentifier
     knowledgeSpaceLink:
-      description: Persistent link to an encyclopedia entry in the Knowledge Space
-        project.
       range: Uri
-      slot_uri: https://openminds.ebrains.eu/vocab/knowledgeSpaceLink
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     preferredOntologyIdentifier:
-      description: Persistent identifier of a preferred ontological term.
       range: Uri
-      slot_uri: https://openminds.ebrains.eu/vocab/preferredOntologyIdentifier
     suggestNewTerminology:
-      description: Proposal of a new distinct class to group related terms.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/suggestNewTerminology
     synonym:
-      description: Words or expressions used in the same language that have the same
-        or nearly the same meaning in some or all senses.
       list_elements_unique: true
       multivalued: true
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/synonym
-  class_uri: https://openminds.ebrains.eu/controlledTerms/TermSuggestion
-  description: null
+  slots:
+  - id
+  - addExistingTerminology
+  - definition
+  - description
+  - interlexIdentifier
+  - knowledgeSpaceLink
+  - name
+  - preferredOntologyIdentifier
+  - suggestNewTerminology
+  - synonym
   title: Term suggestion

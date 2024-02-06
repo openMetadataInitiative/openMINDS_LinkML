@@ -1,80 +1,64 @@
 Strain:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/Strain
+  description: null
+  slot_usage:
     alternateIdentifier:
       list_elements_unique: true
       multivalued: true
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/alternateIdentifier
     backgroundStrain:
       list_elements_unique: true
       multivalued: true
       range: Strain
-      slot_uri: https://openminds.ebrains.eu/vocab/backgroundStrain
     breedingType:
       range: BreedingType
-      slot_uri: https://openminds.ebrains.eu/vocab/breedingType
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/description
     digitalIdentifier:
-      description: Digital handle to identify objects or legal persons.
       range: RRID
-      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     diseaseModel:
       list_elements_unique: true
       multivalued: true
       range: Disease
-      slot_uri: https://openminds.ebrains.eu/vocab/diseaseModel
     geneticStrainType:
       range: GeneticStrainType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/geneticStrainType
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     laboratoryCode:
       pattern: ^[A-Z]([a-z]?)+$
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/laboratoryCode
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     ontologyIdentifier:
-      description: Term or code used to identify something or someone registered within
-        a particular ontology.
       list_elements_unique: true
       multivalued: true
       range: Uri
-      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     phenotype:
-      description: Physical expression of one or more genes of an organism.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/phenotype
     species:
-      description: Category of biological classification comprising related organisms
-        or populations potentially capable of interbreeding, and being designated
-        by a binomial that consists of the name of a genus followed by a Latin or
-        latinized uncapitalized noun or adjective.
       range: Species
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/species
     stockNumber:
       inlined: true
       range: StockNumber
-      slot_uri: https://openminds.ebrains.eu/vocab/stockNumber
     synonym:
-      description: Words or expressions used in the same language that have the same
-        or nearly the same meaning in some or all senses.
       list_elements_unique: true
       multivalued: true
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/synonym
-  class_uri: https://openminds.ebrains.eu/core/Strain
-  description: null
+  slots:
+  - id
+  - alternateIdentifier
+  - backgroundStrain
+  - breedingType
+  - description
+  - digitalIdentifier
+  - diseaseModel
+  - geneticStrainType
+  - laboratoryCode
+  - name
+  - ontologyIdentifier
+  - phenotype
+  - species
+  - stockNumber
+  - synonym
   title: Strain

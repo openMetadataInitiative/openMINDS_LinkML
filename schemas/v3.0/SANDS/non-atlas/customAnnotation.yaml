@@ -1,69 +1,55 @@
 CustomAnnotation:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
+  description: null
+  slot_usage:
     anchorPoint:
       inlined: true
       multivalued: true
       range: QuantitativeValue
-      slot_uri: https://openminds.ebrains.eu/vocab/anchorPoint
     coordinateSpace:
       any_of:
       - range: CommonCoordinateSpaceVersion
       - range: CustomCoordinateSpace
-      description: Two or three dimensional geometric setting.
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/coordinateSpace
     criteria:
-      description: Aspects or standards on which a judgement or decision is based.
       range: ProtocolExecution
-      slot_uri: https://openminds.ebrains.eu/vocab/criteria
     criteriaQualityType:
-      description: Distinct class that defines how the judgement or decision was made
-        for a particular criteria.
       range: CriteriaQualityType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/criteriaQualityType
     criteriaType:
       range: AnnotationCriteriaType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/criteriaType
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     inspiredBy:
-      description: Reference to an inspiring element.
       list_elements_unique: true
       multivalued: true
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/inspiredBy
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     laterality:
-      description: Differentiation between a pair of lateral homologous parts of the
-        body.
       list_elements_unique: true
       multivalued: true
       range: Laterality
-      slot_uri: https://openminds.ebrains.eu/vocab/laterality
     preferredVisualization:
       inlined: true
       range: ViewerSpecification
-      slot_uri: https://openminds.ebrains.eu/vocab/preferredVisualization
     specification:
       any_of:
       - range: File
       - range: PropertyValueList
-      description: Detailed and precise presentation of, or proposal for something.
-      slot_uri: https://openminds.ebrains.eu/vocab/specification
     type:
-      description: Distinct class to which a group of entities or concepts with similar
-        characteristics or attributes belong to.
       range: AnnotationType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/type
-  class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
-  description: null
+  slots:
+  - id
+  - anchorPoint
+  - coordinateSpace
+  - criteria
+  - criteriaQualityType
+  - criteriaType
+  - inspiredBy
+  - internalIdentifier
+  - laterality
+  - preferredVisualization
+  - specification
+  - type
   title: Custom annotation

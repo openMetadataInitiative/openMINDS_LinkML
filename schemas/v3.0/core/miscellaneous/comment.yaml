@@ -1,5 +1,8 @@
 Comment:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/Comment
+  description: Structured information about a short text expressing an opinion on,
+    or giving information about some entity.
+  slot_usage:
     about:
       any_of:
       - range: ValidationTest
@@ -23,24 +26,19 @@ Comment:
       - range: CommonCoordinateSpace
       - range: CommonCoordinateSpaceVersion
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/about
     comment:
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/comment
     commenter:
       range: Person
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/commenter
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     timestamp:
       range: Datetime
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/timestamp
-  class_uri: https://openminds.ebrains.eu/core/Comment
-  description: Structured information about a short text expressing an opinion on,
-    or giving information about some entity.
+  slots:
+  - id
+  - about
+  - comment
+  - commenter
+  - timestamp
   title: Comment

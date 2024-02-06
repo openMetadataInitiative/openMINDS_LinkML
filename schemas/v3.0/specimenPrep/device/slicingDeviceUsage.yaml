@@ -1,56 +1,52 @@
 SlicingDeviceUsage:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
+  description: null
+  slot_usage:
     device:
-      description: Piece of equipment or mechanism (hardware) designed to serve a
-        special purpose or perform a special function.
       range: SlicingDevice
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/device
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     metadataLocation:
       list_elements_unique: true
       multivalued: true
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/metadataLocation
     oscillationAmplitude:
       inlined: true
       range: QuantitativeValue
-      slot_uri: https://openminds.ebrains.eu/vocab/oscillationAmplitude
     sliceThickness:
       any_of:
       - range: QuantitativeValue
       - range: QuantitativeValueRange
       inlined: true
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/sliceThickness
     slicingAngle:
       inlined: true
       multivalued: true
       range: QuantitativeValue
-      slot_uri: https://openminds.ebrains.eu/vocab/slicingAngle
     slicingPlane:
       range: AnatomicalPlane
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/slicingPlane
     slicingSpeed:
       inlined: true
       range: QuantitativeValue
-      slot_uri: https://openminds.ebrains.eu/vocab/slicingSpeed
     usedSpecimen:
       any_of:
       - range: SubjectState
       - range: TissueSampleState
-      slot_uri: https://openminds.ebrains.eu/vocab/usedSpecimen
     vibrationFrequency:
       inlined: true
       range: QuantitativeValue
-      slot_uri: https://openminds.ebrains.eu/vocab/vibrationFrequency
-  class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
-  description: null
+  slots:
+  - id
+  - device
+  - lookupLabel
+  - metadataLocation
+  - oscillationAmplitude
+  - sliceThickness
+  - slicingAngle
+  - slicingPlane
+  - slicingSpeed
+  - usedSpecimen
+  - vibrationFrequency
   title: Slicing device usage

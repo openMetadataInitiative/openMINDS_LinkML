@@ -1,103 +1,76 @@
 ModelValidation:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/computation/ModelValidation
+  description: Structured information about a process of validating a computational
+    model.
+  slot_usage:
     customPropertySet:
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: CustomPropertySet
-      slot_uri: https://openminds.ebrains.eu/vocab/customPropertySet
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/description
     endTime:
       any_of:
       - range: Time
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/endTime
     environment:
       any_of:
       - range: Environment
       - range: WebServiceVersion
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/environment
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     input:
-      description: Something or someone that is put into or participates in a process
-        or machine.
       list_elements_unique: true
       multivalued: true
       range: LocalFile
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/input
     launchConfiguration:
       range: LaunchConfiguration
-      slot_uri: https://openminds.ebrains.eu/vocab/launchConfiguration
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     output:
-      description: Something or someone that comes out of, is delivered or produced
-        by a process or machine.
       list_elements_unique: true
       multivalued: true
       range: LocalFile
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/output
     performedBy:
       list_elements_unique: true
       multivalued: true
       range: SoftwareAgent
-      slot_uri: https://openminds.ebrains.eu/vocab/performedBy
     recipe:
       range: WorkflowRecipeVersion
-      slot_uri: https://openminds.ebrains.eu/vocab/recipe
     resourceUsage:
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: QuantitativeValue
-      slot_uri: https://openminds.ebrains.eu/vocab/resourceUsage
     score:
       any_of:
       - int
       - float
-      slot_uri: https://openminds.ebrains.eu/vocab/score
     startTime:
       any_of:
       - range: Time
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/startTime
     startedBy:
       any_of:
       - range: SoftwareAgent
       - range: Person
-      slot_uri: https://openminds.ebrains.eu/vocab/startedBy
     status:
       range: ActionStatusType
-      slot_uri: https://openminds.ebrains.eu/vocab/status
     studyTarget:
-      description: Structure or function that was targeted within a study.
       list_elements_unique: true
       multivalued: true
       range: AuditoryStimulusType
-      slot_uri: https://openminds.ebrains.eu/vocab/studyTarget
     tag:
       list_elements_unique: true
       multivalued: true
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/tag
     technique:
-      description: Method of accomplishing a desired aim.
       list_elements_unique: true
       multivalued: true
       range: AnalysisTechnique
-      slot_uri: https://openminds.ebrains.eu/vocab/technique
     wasInformedBy:
       any_of:
       - range: DataAnalysis
@@ -107,8 +80,25 @@ ModelValidation:
       - range: Optimization
       - range: Simulation
       - range: Visualization
-      slot_uri: https://openminds.ebrains.eu/vocab/wasInformedBy
-  class_uri: https://openminds.ebrains.eu/computation/ModelValidation
-  description: Structured information about a process of validating a computational
-    model.
+  slots:
+  - id
+  - customPropertySet
+  - description
+  - endTime
+  - environment
+  - input
+  - launchConfiguration
+  - lookupLabel
+  - output
+  - performedBy
+  - recipe
+  - resourceUsage
+  - score
+  - startTime
+  - startedBy
+  - status
+  - studyTarget
+  - tag
+  - technique
+  - wasInformedBy
   title: Model validation

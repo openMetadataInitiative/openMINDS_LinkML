@@ -1,46 +1,33 @@
 Subject:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/Subject
+  description: Structured information on a subject.
+  slot_usage:
     biologicalSex:
-      description: Differentiation of individuals of most species (animals and plants)
-        based on the type of gametes they produce.
       range: BiologicalSex
-      slot_uri: https://openminds.ebrains.eu/vocab/biologicalSex
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     isPartOf:
-      description: Reference to the ensemble of multiple things or beings.
       list_elements_unique: true
       multivalued: true
       range: SubjectGroup
-      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     species:
       any_of:
       - range: Species
       - range: Strain
-      description: Category of biological classification comprising related organisms
-        or populations potentially capable of interbreeding, and being designated
-        by a binomial that consists of the name of a genus followed by a Latin or
-        latinized uncapitalized noun or adjective.
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/species
     studiedState:
-      description: Reference to a point in time at which something or someone was
-        studied in a particular mode or condition.
       list_elements_unique: true
       multivalued: true
       range: SubjectState
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/studiedState
-  class_uri: https://openminds.ebrains.eu/core/Subject
-  description: Structured information on a subject.
+  slots:
+  - id
+  - biologicalSex
+  - internalIdentifier
+  - isPartOf
+  - lookupLabel
+  - species
+  - studiedState
   title: Subject

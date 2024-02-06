@@ -1,21 +1,19 @@
 AmountOfChemical:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/chemicals/AmountOfChemical
+  description: Structured information about the amount of a given chemical that was
+    used.
+  slot_usage:
     amount:
       inlined: true
       range: QuantitativeValue
-      slot_uri: https://openminds.ebrains.eu/vocab/amount
     chemicalProduct:
       any_of:
       - range: ChemicalMixture
       - range: ChemicalSubstance
       - range: MolecularEntity
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/chemicalProduct
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-  class_uri: https://openminds.ebrains.eu/chemicals/AmountOfChemical
-  description: Structured information about the amount of a given chemical that was
-    used.
+  slots:
+  - id
+  - amount
+  - chemicalProduct
   title: Amount of chemical

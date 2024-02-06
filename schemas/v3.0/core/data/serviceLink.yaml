@@ -1,5 +1,7 @@
 ServiceLink:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/ServiceLink
+  description: null
+  slot_usage:
     dataLocation:
       any_of:
       - range: File
@@ -9,25 +11,21 @@ ServiceLink:
       - range: LivePaperResourceItem
       - range: ParcellationEntityVersion
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/dataLocation
     displayLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/displayLabel
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     openDataIn:
       range: Uri
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/openDataIn
     previewImage:
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/previewImage
     service:
       range: Service
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/service
-  class_uri: https://openminds.ebrains.eu/core/ServiceLink
-  description: null
+  slots:
+  - id
+  - dataLocation
+  - displayLabel
+  - openDataIn
+  - previewImage
+  - service
   title: Service link

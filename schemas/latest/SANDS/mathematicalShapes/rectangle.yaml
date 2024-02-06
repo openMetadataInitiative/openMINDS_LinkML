@@ -1,19 +1,17 @@
 Rectangle:
-  attributes:
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/sands/Rectangle
+  description: null
+  slot_usage:
     length:
       inlined: true
       range: QuantitativeValue
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/length
     width:
       inlined: true
       range: QuantitativeValue
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/width
-  class_uri: https://openminds.ebrains.eu/sands/Rectangle
-  description: null
+  slots:
+  - id
+  - length
+  - width
   title: Rectangle

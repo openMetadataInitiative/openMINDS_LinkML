@@ -1,41 +1,31 @@
 CustomCoordinateSpace:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
+  description: null
+  slot_usage:
     anatomicalAxesOrientation:
-      description: Relation between reference planes used in anatomy and mathematics.
       range: AnatomicalAxesOrientation
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalAxesOrientation
     axesOrigin:
-      description: Special point in a coordinate system used as a fixed point of reference
-        for the geometry of the surrounding space.
       inlined: true
       list_elements_unique: true
       multivalued: true
       range: QuantitativeValue
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/axesOrigin
     defaultImage:
-      description: Two or three dimensional image that particluarly represents a specific
-        coordinate space.
       list_elements_unique: true
       multivalued: true
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/defaultImage
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     nativeUnit:
-      description: Determinate quantity used in the original measurement.
       range: UnitOfMeasurement
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/nativeUnit
-  class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
-  description: null
+  slots:
+  - id
+  - anatomicalAxesOrientation
+  - axesOrigin
+  - defaultImage
+  - name
+  - nativeUnit
   title: Custom coordinate space

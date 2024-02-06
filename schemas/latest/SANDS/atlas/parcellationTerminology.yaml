@@ -1,27 +1,23 @@
 ParcellationTerminology:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
+  description: null
+  slot_usage:
     dataLocation:
       list_elements_unique: true
       multivalued: true
       range: File
-      slot_uri: https://openminds.ebrains.eu/vocab/dataLocation
     hasEntity:
       list_elements_unique: true
       multivalued: true
       range: ParcellationEntity
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/hasEntity
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     ontologyIdentifier:
-      description: Term or code used to identify something or someone registered within
-        a particular ontology.
       list_elements_unique: true
       multivalued: true
       range: Uri
-      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
-  class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
-  description: null
+  slots:
+  - id
+  - dataLocation
+  - hasEntity
+  - ontologyIdentifier
   title: Parcellation terminology

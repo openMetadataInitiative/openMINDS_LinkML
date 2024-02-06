@@ -1,40 +1,31 @@
 Protocol:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/Protocol
+  description: Structured information on a research project.
+  slot_usage:
     behavioralTask:
-      description: Specific set of defined activities (or their absence) that should
-        be performed (or avoided) by a subject.
       list_elements_unique: true
       multivalued: true
       range: BehavioralTask
-      slot_uri: https://openminds.ebrains.eu/vocab/behavioralTask
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/description
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     name:
-      description: Word or phrase that constitutes the distinctive designation of
-        a being or thing.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/name
     studyOption:
       list_elements_unique: true
       multivalued: true
       range: BiologicalSex
-      slot_uri: https://openminds.ebrains.eu/vocab/studyOption
     technique:
-      description: Method of accomplishing a desired aim.
       list_elements_unique: true
       multivalued: true
       range: Technique
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/technique
-  class_uri: https://openminds.ebrains.eu/core/Protocol
-  description: Structured information on a research project.
+  slots:
+  - id
+  - behavioralTask
+  - description
+  - name
+  - studyOption
+  - technique
   title: Protocol

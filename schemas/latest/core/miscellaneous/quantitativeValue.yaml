@@ -1,31 +1,25 @@
 QuantitativeValue:
-  attributes:
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
+  class_uri: https://openminds.ebrains.eu/core/QuantitativeValue
+  description: Structured information on a quantitative value.
+  slot_usage:
     typeOfUncertainty:
-      description: Distinct technique used to quantify the uncertainty of a measurement.
       range: TypeOfUncertainty
-      slot_uri: https://openminds.ebrains.eu/vocab/typeOfUncertainty
     uncertainty:
       any_of:
       - int
       - float
-      description: Quantitative value range defining the uncertainty of a measurement.
       multivalued: true
-      slot_uri: https://openminds.ebrains.eu/vocab/uncertainty
     unit:
-      description: Determinate quantity adopted as a standard of measurement.
       range: UnitOfMeasurement
-      slot_uri: https://openminds.ebrains.eu/vocab/unit
     value:
       any_of:
       - int
       - float
-      description: Entry for a property.
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/value
-  class_uri: https://openminds.ebrains.eu/core/QuantitativeValue
-  description: Structured information on a quantitative value.
+  slots:
+  - id
+  - typeOfUncertainty
+  - uncertainty
+  - unit
+  - value
   title: Quantitative value

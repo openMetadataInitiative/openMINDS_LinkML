@@ -1,28 +1,21 @@
 Consortium:
-  attributes:
-    contactInformation:
-      description: Any available way used to contact a person or business (e.g., address,
-        phone number, email address, etc.).
-      range: ContactInformation
-      slot_uri: https://openminds.ebrains.eu/vocab/contactInformation
-    fullName:
-      description: Whole, non-abbreviated name of something or somebody.
-      range: string
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/fullName
-    homepage:
-      description: Main website of something or someone.
-      range: Uri
-      slot_uri: https://openminds.ebrains.eu/vocab/homepage
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-    shortName:
-      description: Shortened or fully abbreviated name of something or somebody.
-      range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/shortName
   class_uri: https://openminds.ebrains.eu/core/Consortium
   description: Structured information about an association of two or more persons
     or organizations, with the objective of participating in a common activity.
+  slot_usage:
+    contactInformation:
+      range: ContactInformation
+    fullName:
+      range: string
+      required: true
+    homepage:
+      range: Uri
+    shortName:
+      range: string
+  slots:
+  - id
+  - contactInformation
+  - fullName
+  - homepage
+  - shortName
   title: Consortium

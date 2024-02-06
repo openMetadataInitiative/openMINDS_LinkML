@@ -1,28 +1,22 @@
 License:
-  attributes:
-    deed:
-      range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/deed
-    fullName:
-      description: Whole, non-abbreviated name of something or somebody.
-      range: string
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/fullName
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
-    legalCode:
-      description: Type of legislation that claims to cover the law system (complete
-        or parts) as it existed at the time the code was enacted.
-      range: string
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/legalCode
-    shortName:
-      description: Shortened or fully abbreviated name of something or somebody.
-      range: string
-      required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/shortName
   class_uri: https://openminds.ebrains.eu/core/License
   description: Structured information on a used license.
+  slot_usage:
+    deed:
+      range: string
+    fullName:
+      range: string
+      required: true
+    legalCode:
+      range: string
+      required: true
+    shortName:
+      range: string
+      required: true
+  slots:
+  - id
+  - deed
+  - fullName
+  - legalCode
+  - shortName
   title: License

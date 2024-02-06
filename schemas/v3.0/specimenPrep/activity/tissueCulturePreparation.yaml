@@ -1,31 +1,25 @@
 TissueCulturePreparation:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
+  description: null
+  slot_usage:
     cultureMedium:
       range: ChemicalMixture
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/cultureMedium
     cultureType:
       range: CellCultureType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/cultureType
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     input:
       any_of:
       - range: TissueSampleState
       - range: TissueSampleCollectionState
       - range: SubjectGroupState
       - range: SubjectState
-      description: Something or someone that is put into or participates in a process
-        or machine.
-      slot_uri: https://openminds.ebrains.eu/vocab/input
     output:
-      description: Something or someone that comes out of, is delivered or produced
-        by a process or machine.
       range: TissueSampleState
-      slot_uri: https://openminds.ebrains.eu/vocab/output
-  class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
-  description: null
+  slots:
+  - id
+  - cultureMedium
+  - cultureType
+  - input
+  - output
   title: Tissue culture preparation

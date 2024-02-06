@@ -1,37 +1,29 @@
 AtlasTerminology:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/sands/AtlasTerminology
+  description: null
+  slot_usage:
     anatomicalEntity:
-      description: Physical component of a body, organ, or tissue.
       list_elements_unique: true
       multivalued: true
       range: AnatomicalEntity
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalEntity
     definedIn:
-      description: Reference to a file instance in which something is stored.
       list_elements_unique: true
       multivalued: true
       range: FileInstance
-      slot_uri: https://openminds.ebrains.eu/vocab/definedIn
     fullName:
-      description: Whole, non-abbreviated name of something or somebody.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/fullName
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     ontologyIdentifier:
-      description: Term or code used to identify something or someone registered within
-        a particular ontology.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     shortName:
-      description: Shortened or fully abbreviated name of something or somebody.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/shortName
-  class_uri: https://openminds.ebrains.eu/sands/AtlasTerminology
-  description: null
+  slots:
+  - id
+  - anatomicalEntity
+  - definedIn
+  - fullName
+  - ontologyIdentifier
+  - shortName
   title: Atlas terminology

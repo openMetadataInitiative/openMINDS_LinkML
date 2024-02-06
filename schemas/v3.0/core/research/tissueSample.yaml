@@ -1,73 +1,54 @@
 TissueSample:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/TissueSample
+  description: Structured information on a tissue sample.
+  slot_usage:
     anatomicalLocation:
       list_elements_unique: true
       multivalued: true
       range: CellType
-      slot_uri: https://openminds.ebrains.eu/vocab/anatomicalLocation
     biologicalSex:
-      description: Differentiation of individuals of most species (animals and plants)
-        based on the type of gametes they produce.
       range: BiologicalSex
-      slot_uri: https://openminds.ebrains.eu/vocab/biologicalSex
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     internalIdentifier:
-      description: Term or code that identifies someone or something within a particular
-        product.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/internalIdentifier
     isPartOf:
-      description: Reference to the ensemble of multiple things or beings.
       list_elements_unique: true
       multivalued: true
       range: TissueSampleCollection
-      slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     laterality:
-      description: Differentiation between a pair of lateral homologous parts of the
-        body.
       list_elements_unique: true
       multivalued: true
       range: Laterality
-      slot_uri: https://openminds.ebrains.eu/vocab/laterality
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     origin:
       any_of:
       - range: CellType
       - range: Organ
       - range: OrganismSubstance
-      description: Source at which something begins or rises, or from which something
-        derives.
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/origin
     species:
       any_of:
       - range: Species
       - range: Strain
-      description: Category of biological classification comprising related organisms
-        or populations potentially capable of interbreeding, and being designated
-        by a binomial that consists of the name of a genus followed by a Latin or
-        latinized uncapitalized noun or adjective.
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/species
     studiedState:
-      description: Reference to a point in time at which something or someone was
-        studied in a particular mode or condition.
       list_elements_unique: true
       multivalued: true
       range: TissueSampleState
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/studiedState
     type:
-      description: Distinct class to which a group of entities or concepts with similar
-        characteristics or attributes belong to.
       range: TissueSampleType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/type
-  class_uri: https://openminds.ebrains.eu/core/TissueSample
-  description: Structured information on a tissue sample.
+  slots:
+  - id
+  - anatomicalLocation
+  - biologicalSex
+  - internalIdentifier
+  - isPartOf
+  - laterality
+  - lookupLabel
+  - origin
+  - species
+  - studiedState
+  - type
   title: Tissue sample

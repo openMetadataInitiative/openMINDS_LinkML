@@ -1,61 +1,47 @@
 Software:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/Software
+  description: Structured information on a software tool (concept level).
+  slot_usage:
     custodian:
-      description: The 'custodian' is a legal person who is responsible for the content
-        and quality of the data, metadata, and/or code of a research product.
       list_elements_unique: true
       multivalued: true
       range: Organization
-      slot_uri: https://openminds.ebrains.eu/vocab/custodian
     description:
-      description: Longer statement or account giving the characteristics of someone
-        or something.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/description
     developer:
-      description: Legal person that creates or improves products or services (e.g.,
-        software, applications, etc.).
       list_elements_unique: true
       multivalued: true
       range: Organization
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/developer
     digitalIdentifier:
       any_of:
       - range: DOI
       - range: SWHID
-      description: Digital handle to identify objects or legal persons.
-      slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     fullName:
-      description: Whole, non-abbreviated name of something or somebody.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/fullName
     hasVersion:
-      description: Reference to variants of an original.
       list_elements_unique: true
       multivalued: true
       range: SoftwareVersion
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/hasVersion
     homepage:
-      description: Main website of something or someone.
       range: URL
-      slot_uri: https://openminds.ebrains.eu/vocab/homepage
     howToCite:
-      description: Preferred format for citing a particular object or legal person.
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/howToCite
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     shortName:
-      description: Shortened or fully abbreviated name of something or somebody.
       range: string
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/shortName
-  class_uri: https://openminds.ebrains.eu/core/Software
-  description: Structured information on a software tool (concept level).
+  slots:
+  - id
+  - custodian
+  - description
+  - developer
+  - digitalIdentifier
+  - fullName
+  - hasVersion
+  - homepage
+  - howToCite
+  - shortName
   title: Software

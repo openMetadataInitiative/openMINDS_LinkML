@@ -1,20 +1,18 @@
 ContentTypePattern:
-  attributes:
+  class_uri: https://openminds.ebrains.eu/core/ContentTypePattern
+  description: null
+  slot_usage:
     contentType:
       range: ContentType
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/contentType
-    id:
-      identifier: true
-      required: true
-      slot_uri: schema:identifier
     lookupLabel:
       range: string
-      slot_uri: https://openminds.ebrains.eu/vocab/lookupLabel
     regex:
       range: ECMA262
       required: true
-      slot_uri: https://openminds.ebrains.eu/vocab/regex
-  class_uri: https://openminds.ebrains.eu/core/ContentTypePattern
-  description: null
+  slots:
+  - id
+  - contentType
+  - lookupLabel
+  - regex
   title: Content type pattern
