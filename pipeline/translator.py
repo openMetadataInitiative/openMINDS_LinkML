@@ -181,11 +181,15 @@ class LinkMLClassBuilder(object):
             for prop_name, prop_spec in self._schema_payload["properties"].items():
                 slot_name = get_short_name(prop_name)
                 self._translated_schema["slots"].append(slot_name)
-                self._translated_schema["slot_usage"][slot_name] = (
-                    self._translate_property_specifications(
-                        prop_name, prop_spec, required=prop_name in required_properties
-                    )
+                slot_usage = self._translate_property_specifications(
+                    prop_name, prop_spec, required=prop_name in required_properties
                 )
+                if "range" in slot_usage and slot_usage["range"] == self.slots[slot_name].get("range", None):
+                    slot_usage.pop("range")
+                if "any_of" in slot_usage and slot_usage["any_of"] == self.slots[slot_name].get("any_of", None):
+                    slot_usage.pop("any_of")
+                if slot_usage:
+                    self._translated_schema["slot_usage"][slot_name] = slot_usage
 
     def build(self):
         target_file = os.path.join(
@@ -320,7 +324,11 @@ class LinkMLSlotBuilder:
         if "asEdge" in property:
             target_classes = property["asEdge"]["canPointTo"].get(self.version, [])
             if len(target_classes) == 1:
-                slot["range"] = target_classes[0]
+                slot["range"] = get_short_name(target_classes[0])
             elif len(target_classes) > 1:
-                slot["any_of"] = [{"range": tc} for tc in target_classes]
+                slot["any_of"] = [{"range": get_short_name(tc)} for tc in target_classes]
+        if "asString" in property:
+            # can't do anything yet, because string can be used to represent various LinkML types
+            # todo: fix this
+            pass
         return slot
