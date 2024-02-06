@@ -5,7 +5,6 @@ Pipette:
     description:
       range: string
     deviceType:
-      range: DeviceType
       required: true
     digitalIdentifier:
       any_of:
@@ -13,10 +12,8 @@ Pipette:
       - range: RRID
     externalDiameter:
       inlined: true
-      range: QuantitativeValue
     internalDiameter:
       inlined: true
-      range: QuantitativeValue
     internalIdentifier:
       range: string
     lookupLabel:
@@ -25,11 +22,6 @@ Pipette:
       list_elements_unique: true
       multivalued: true
       range: Consortium
-    material:
-      any_of:
-      - range: ChemicalMixture
-      - range: ChemicalSubstance
-      - range: MolecularEntity
     name:
       range: string
       required: true

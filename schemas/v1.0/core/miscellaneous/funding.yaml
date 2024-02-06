@@ -9,7 +9,6 @@ Funding:
     awardTitle:
       range: string
     funder:
-      range: Organization
       required: true
   slots:
   - id

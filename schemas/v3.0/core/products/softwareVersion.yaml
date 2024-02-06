@@ -3,16 +3,13 @@ SoftwareVersion:
   description: null
   slot_usage:
     accessibility:
-      range: ProductAccessibility
       required: true
     applicationCategory:
       list_elements_unique: true
       multivalued: true
-      range: SoftwareApplicationCategory
       required: true
     copyright:
       inlined: true
-      range: Copyright
     custodian:
       list_elements_unique: true
       multivalued: true
@@ -36,20 +33,14 @@ SoftwareVersion:
     feature:
       list_elements_unique: true
       multivalued: true
-      range: SoftwareFeature
       required: true
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: WebResource
       required: true
     fullName:
       range: string
     funding:
       list_elements_unique: true
       multivalued: true
-      range: Funding
     hasPart:
       list_elements_unique: true
       multivalued: true
@@ -61,7 +52,6 @@ SoftwareVersion:
     inputFormat:
       list_elements_unique: true
       multivalued: true
-      range: ContentType
     isAlternativeVersionOf:
       list_elements_unique: true
       multivalued: true
@@ -75,7 +65,6 @@ SoftwareVersion:
     language:
       list_elements_unique: true
       multivalued: true
-      range: Language
       required: true
     license:
       list_elements_unique: true
@@ -85,21 +74,17 @@ SoftwareVersion:
     operatingSystem:
       list_elements_unique: true
       multivalued: true
-      range: OperatingSystem
       required: true
     otherContribution:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: Contribution
     outputFormat:
       list_elements_unique: true
       multivalued: true
-      range: ContentType
     programmingLanguage:
       list_elements_unique: true
       multivalued: true
-      range: ProgrammingLanguage
       required: true
     relatedPublication:
       list_elements_unique: true
@@ -108,8 +93,6 @@ SoftwareVersion:
     releaseDate:
       range: Date
       required: true
-    repository:
-      range: FileRepository
     requirement:
       list_elements_unique: true
       multivalued: true

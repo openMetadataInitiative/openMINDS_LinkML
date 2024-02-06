@@ -6,7 +6,6 @@ LivePaperResourceItem:
       range: Uri
       required: true
     hostedBy:
-      range: Organization
       required: true
     isPartOf:
       range: LivePaperSection

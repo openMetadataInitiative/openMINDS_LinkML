@@ -5,29 +5,24 @@ SubjectGroup:
     biologicalSex:
       list_elements_unique: true
       multivalued: true
-      range: BiologicalSex
       required: true
     genotype:
       list_elements_unique: true
       multivalued: true
-      range: Genotype
     internalIdentifier:
       range: string
     phenotype:
       list_elements_unique: true
       multivalued: true
-      range: Phenotype
     quantity:
       range: int
     species:
       list_elements_unique: true
       multivalued: true
-      range: Species
       required: true
     strain:
       list_elements_unique: true
       multivalued: true
-      range: Strain
     studiedState:
       list_elements_unique: true
       multivalued: true

@@ -7,7 +7,6 @@ SubjectGroup:
     biologicalSex:
       list_elements_unique: true
       multivalued: true
-      range: BiologicalSex
     internalIdentifier:
       range: string
     lookupLabel:

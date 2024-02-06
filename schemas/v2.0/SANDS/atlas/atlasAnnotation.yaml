@@ -4,11 +4,7 @@ AtlasAnnotation:
   slot_usage:
     bestViewPoint:
       inlined: true
-      range: CoordinatePoint
-    criteria:
-      range: ProtocolExecution
     criteriaQualityType:
-      range: CriteriaQualityType
       required: true
     displayColor:
       pattern: ^#[0-9A-Fa-f]{6}$
@@ -16,14 +12,12 @@ AtlasAnnotation:
     inspiredBy:
       list_elements_unique: true
       multivalued: true
-      range: File
     internalIdentifier:
       range: string
       required: true
     laterality:
       list_elements_unique: true
       multivalued: true
-      range: Laterality
     lookupLabel:
       range: string
     name:
@@ -34,8 +28,6 @@ AtlasAnnotation:
     versionInnovation:
       range: string
       required: true
-    visualizedIn:
-      range: File
   slots:
   - id
   - bestViewPoint

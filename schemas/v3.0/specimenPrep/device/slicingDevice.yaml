@@ -5,7 +5,6 @@ SlicingDevice:
     description:
       range: string
     deviceType:
-      range: DeviceType
       required: true
     digitalIdentifier:
       any_of:

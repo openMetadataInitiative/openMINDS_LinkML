@@ -17,16 +17,11 @@ ProtocolExecution:
     parameterSetting:
       list_elements_unique: true
       multivalued: true
-      range: ParameterSetting
-    preparationType:
-      range: PreparationType
     protocol:
-      range: Protocol
       required: true
     semanticallyAnchoredTo:
       list_elements_unique: true
       multivalued: true
-      range: AnatomicalEntity
     studyTarget:
       list_elements_unique: true
       multivalued: true

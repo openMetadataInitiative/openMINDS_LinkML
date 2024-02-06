@@ -3,8 +3,6 @@ Consortium:
   description: Structured information about an association of two or more persons
     or organizations, with the objective of participating in a common activity.
   slot_usage:
-    contactInformation:
-      range: ContactInformation
     fullName:
       range: string
       required: true

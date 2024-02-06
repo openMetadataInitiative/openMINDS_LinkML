@@ -2,12 +2,7 @@ Annotation:
   class_uri: https://openminds.ebrains.eu/sands/Annotation
   description: Structured information on an image annotation.
   slot_usage:
-    bestViewPoint:
-      range: CoordinatePoint
-    criteria:
-      range: ProtocolExecution
     criteriaQualityType:
-      range: CriteriaQualityType
       required: true
     displayColor:
       maximum_value: 255
@@ -16,25 +11,19 @@ Annotation:
     inspiredBy:
       list_elements_unique: true
       multivalued: true
-      range: Image
     internalIdentifier:
       range: string
       required: true
     laterality:
       list_elements_unique: true
       multivalued: true
-      range: Laterality
       required: true
     namingTerm:
       list_elements_unique: true
       multivalued: true
-      range: AnatomicalEntity
       required: true
     relatedAtlasTerm:
       multivalued: true
-      range: AnatomicalEntity
-    visualizedIn:
-      range: Image
   slots:
   - id
   - bestViewPoint

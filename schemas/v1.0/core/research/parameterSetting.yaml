@@ -9,12 +9,7 @@ ParameterSetting:
       range: string
       required: true
     relevantFor:
-      any_of:
-      - range: BehavioralTask
-      - range: Technique
       required: true
-    unit:
-      range: UnitOfMeasurement
     value:
       required: true
   slots:

@@ -11,8 +11,6 @@ Organization:
       required: true
     hasParent:
       range: Organization
-    homepage:
-      range: URL
     shortName:
       range: string
   slots:

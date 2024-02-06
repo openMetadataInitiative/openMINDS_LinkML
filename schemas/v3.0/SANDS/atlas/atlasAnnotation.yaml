@@ -5,28 +5,20 @@ AtlasAnnotation:
     anchorPoint:
       inlined: true
       multivalued: true
-      range: QuantitativeValue
-    criteria:
-      range: ProtocolExecution
     criteriaQualityType:
-      range: CriteriaQualityType
       required: true
     criteriaType:
-      range: AnnotationCriteriaType
       required: true
     inspiredBy:
       list_elements_unique: true
       multivalued: true
-      range: File
     internalIdentifier:
       range: string
     laterality:
       list_elements_unique: true
       multivalued: true
-      range: Laterality
     preferredVisualization:
       inlined: true
-      range: ViewerSpecification
     specification:
       range: File
     type:

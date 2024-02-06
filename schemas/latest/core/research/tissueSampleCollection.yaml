@@ -11,13 +11,11 @@ TissueSampleCollection:
     biologicalSex:
       list_elements_unique: true
       multivalued: true
-      range: BiologicalSex
     internalIdentifier:
       range: string
     laterality:
       list_elements_unique: true
       multivalued: true
-      range: Laterality
     lookupLabel:
       range: string
     numberOfTissueSamples:

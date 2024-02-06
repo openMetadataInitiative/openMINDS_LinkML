@@ -5,23 +5,13 @@ FileBundle:
     IRI:
       range: string
       required: true
-    format:
-      range: ContentType
-    groupedBy:
-      range: FileBundleGrouping
-    hash:
-      range: Hash
     isPartOf:
-      any_of:
-      - range: FileBundle
-      - range: FileRepository
       required: true
     name:
       range: string
       required: true
     storageSize:
       inlined: true
-      range: QuantitativeValue
   slots:
   - id
   - IRI

@@ -5,9 +5,6 @@ TissueSampleCollectionState:
     additionalRemarks:
       range: string
     age:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
     lookupLabel:
       range: string
@@ -16,9 +13,6 @@ TissueSampleCollectionState:
       multivalued: true
       range: Disease
     weight:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
   slots:
   - id

@@ -2,43 +2,22 @@ PipetteUsage:
   class_uri: https://openminds.ebrains.eu/ephys/PipetteUsage
   description: null
   slot_usage:
-    anatomicalLocation:
-      any_of:
-      - range: CellType
-      - range: Organ
-      - range: OrganismSubstance
-      - range: SubcellularEntity
-      - range: UBERONParcellation
-      - range: CustomAnatomicalEntity
-      - range: ParcellationEntity
-      - range: ParcellationEntityVersion
     chlorideReversalPotential:
       inlined: true
       multivalued: true
-      range: Measurement
     compensationCurrent:
       inlined: true
-      range: Measurement
     device:
       range: Pipette
       required: true
     endMembranePotential:
       inlined: true
-      range: Measurement
     holdingPotential:
       inlined: true
-      range: Measurement
     inputResistance:
       inlined: true
-      range: Measurement
-    labelingCompound:
-      any_of:
-      - range: ChemicalMixture
-      - range: ChemicalSubstance
-      - range: MolecularEntity
     liquidJunctionPotential:
       inlined: true
-      range: Measurement
     lookupLabel:
       range: string
     metadataLocation:
@@ -46,25 +25,17 @@ PipetteUsage:
       multivalued: true
       range: File
     pipetteResistance:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
     pipetteSolution:
-      range: ChemicalMixture
       required: true
     sealResistance:
       inlined: true
-      range: Measurement
     seriesResistance:
       inlined: true
-      range: Measurement
     spatialLocation:
       inlined: true
-      range: CoordinatePoint
     startMembranePotential:
       inlined: true
-      range: Measurement
     usedSpecimen:
       any_of:
       - range: SubjectState

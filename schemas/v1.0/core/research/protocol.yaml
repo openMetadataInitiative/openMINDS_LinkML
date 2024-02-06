@@ -5,7 +5,6 @@ Protocol:
     behavioralTask:
       list_elements_unique: true
       multivalued: true
-      range: BehavioralTask
     description:
       range: string
       required: true
@@ -19,7 +18,6 @@ Protocol:
     technique:
       list_elements_unique: true
       multivalued: true
-      range: Technique
       required: true
   slots:
   - id

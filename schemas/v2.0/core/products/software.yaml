@@ -26,8 +26,6 @@ Software:
       multivalued: true
       range: SoftwareVersion
       required: true
-    homepage:
-      range: URL
     howToCite:
       range: string
     shortName:

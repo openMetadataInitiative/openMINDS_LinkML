@@ -6,7 +6,6 @@ Channel:
       range: string
       required: true
     unit:
-      range: UnitOfMeasurement
       required: true
   slots:
   - id

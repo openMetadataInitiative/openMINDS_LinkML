@@ -2,8 +2,6 @@ Subject:
   class_uri: https://openminds.ebrains.eu/core/Subject
   description: Structured information on a subject.
   slot_usage:
-    biologicalSex:
-      range: BiologicalSex
     internalIdentifier:
       range: string
     isPartOf:
@@ -13,9 +11,6 @@ Subject:
     lookupLabel:
       range: string
     species:
-      any_of:
-      - range: Species
-      - range: Strain
       required: true
     studiedState:
       list_elements_unique: true

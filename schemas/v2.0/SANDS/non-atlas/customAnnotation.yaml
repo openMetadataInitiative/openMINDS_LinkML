@@ -4,16 +4,9 @@ CustomAnnotation:
   slot_usage:
     bestViewPoint:
       inlined: true
-      range: CoordinatePoint
     coordinateSpace:
-      any_of:
-      - range: CommonCoordinateSpace
-      - range: CustomCoordinateSpace
       required: true
-    criteria:
-      range: ProtocolExecution
     criteriaQualityType:
-      range: CriteriaQualityType
       required: true
     displayColor:
       pattern: ^#[0-9A-Fa-f]{6}$
@@ -21,20 +14,17 @@ CustomAnnotation:
     inspiredBy:
       list_elements_unique: true
       multivalued: true
-      range: File
     internalIdentifier:
       range: string
       required: true
     laterality:
       list_elements_unique: true
       multivalued: true
-      range: Laterality
     lookupLabel:
       range: string
     name:
       range: string
     visualizedIn:
-      range: File
       required: true
   slots:
   - id

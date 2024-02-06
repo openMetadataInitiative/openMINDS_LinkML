@@ -6,7 +6,6 @@ Affiliation:
     endDate:
       range: Date
     organization:
-      range: Organization
       required: true
     startDate:
       range: Date

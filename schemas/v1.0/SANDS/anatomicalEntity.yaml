@@ -12,7 +12,6 @@ AnatomicalEntity:
     otherAnatomicalRelation:
       list_elements_unique: true
       multivalued: true
-      range: AnatomicalEntityRelation
   slots:
   - id
   - hasParent

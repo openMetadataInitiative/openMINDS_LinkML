@@ -3,7 +3,6 @@ TissueSample:
   description: Structured information on a tissue sample.
   slot_usage:
     biologicalSex:
-      range: BiologicalSex
       required: true
     internalIdentifier:
       range: string
@@ -15,21 +14,12 @@ TissueSample:
     laterality:
       list_elements_unique: true
       multivalued: true
-      range: Laterality
     lookupLabel:
       range: string
     origin:
-      any_of:
-      - range: CellType
-      - range: Organ
       required: true
-    phenotype:
-      range: Phenotype
     species:
-      range: Species
       required: true
-    strain:
-      range: Strain
     studiedState:
       list_elements_unique: true
       multivalued: true

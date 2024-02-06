@@ -3,26 +3,20 @@ CoordinateSpace:
   description: Structured information on a coordinate space.
   slot_usage:
     anatomicalAxesOrientation:
-      range: AnatomicalAxesOrientation
       required: true
     axesOrigin:
       list_elements_unique: true
       multivalued: true
-      range: QuantitativeValue
       required: true
     defaultImage:
       list_elements_unique: true
       multivalued: true
-      range: Image
-    digitalIdentifier:
-      range: DigitalIdentifier
     fullName:
       range: string
       required: true
     homepage:
       range: string
     nativeUnit:
-      range: UnitOfMeasurement
       required: true
     ontologyIdentifier:
       range: string

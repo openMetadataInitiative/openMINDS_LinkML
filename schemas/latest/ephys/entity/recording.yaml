@@ -8,7 +8,6 @@ Recording:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: Channel
       required: true
     dataLocation:
       any_of:
@@ -19,18 +18,10 @@ Recording:
       range: string
     name:
       range: string
-    previousRecording:
-      range: Recording
     recordedWith:
-      any_of:
-      - range: ElectrodeArrayUsage
-      - range: ElectrodeUsage
-      - range: PipetteUsage
-      - range: SlicingDeviceUsage
       required: true
     samplingFrequency:
       inlined: true
-      range: QuantitativeValue
       required: true
   slots:
   - id

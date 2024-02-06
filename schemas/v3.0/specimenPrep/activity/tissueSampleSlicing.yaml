@@ -15,12 +15,7 @@ TissueSampleSlicing:
       multivalued: true
       range: TissueSampleCollectionState
     temperature:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
-    tissueBathSolution:
-      range: ChemicalMixture
   slots:
   - id
   - device

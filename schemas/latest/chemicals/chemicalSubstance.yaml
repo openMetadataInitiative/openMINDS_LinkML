@@ -7,14 +7,8 @@ ChemicalSubstance:
     lookupLabel:
       range: string
     molecularEntity:
-      range: MolecularEntity
       required: true
-    productSource:
-      range: ProductSource
     purity:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
   slots:
   - id

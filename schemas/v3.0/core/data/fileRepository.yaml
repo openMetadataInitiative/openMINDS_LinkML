@@ -8,23 +8,15 @@ FileRepository:
     contentTypePattern:
       list_elements_unique: true
       multivalued: true
-      range: ContentTypePattern
-    format:
-      range: ContentType
     hash:
       inlined: true
-      range: Hash
     hostedBy:
-      range: Organization
       required: true
     name:
       range: string
       required: true
     storageSize:
       inlined: true
-      range: QuantitativeValue
-    structurePattern:
-      range: FileRepositoryStructure
     type:
       range: FileRepositoryType
   slots:

@@ -7,7 +7,6 @@ Configuration:
       range: string
       required: true
     format:
-      range: ContentType
       required: true
     lookupLabel:
       range: string

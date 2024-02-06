@@ -3,10 +3,8 @@ TissueCulturePreparation:
   description: null
   slot_usage:
     cultureMedium:
-      range: ChemicalMixture
       required: true
     cultureType:
-      range: CellCultureType
       required: true
     input:
       any_of:

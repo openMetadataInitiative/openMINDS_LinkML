@@ -3,20 +3,14 @@ CranialWindowPreparation:
   description: null
   slot_usage:
     constructionType:
-      range: CranialWindowConstructionType
       required: true
     customPropertySet:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: CustomPropertySet
     description:
       range: string
     dimension:
-      any_of:
-      - range: Circle
-      - range: Ellipse
-      - range: Rectangle
       inlined: true
     endTime:
       any_of:
@@ -41,15 +35,10 @@ CranialWindowPreparation:
       list_elements_unique: true
       multivalued: true
       range: SoftwareAgent
-    preparationDesign:
-      range: PreparationType
     protocol:
       list_elements_unique: true
       multivalued: true
-      range: Protocol
       required: true
-    reinforcementType:
-      range: CranialWindowReinforcementType
     startTime:
       any_of:
       - range: Time

@@ -32,11 +32,6 @@ ValidationTest:
     referenceDataAcquisition:
       list_elements_unique: true
       multivalued: true
-      range: Technique
-    scope:
-      range: ModelScope
-    scoreType:
-      range: DifferenceMeasure
     shortName:
       range: string
       required: true

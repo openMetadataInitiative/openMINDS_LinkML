@@ -11,10 +11,7 @@ BrainAtlasVersion:
       range: string
       required: true
     hasTerminology:
-      range: parcellationTerminology
       required: true
-    homepage:
-      range: URL
     howToCite:
       range: string
     isAlternativeVersionOf:

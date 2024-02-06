@@ -6,12 +6,10 @@ FileArchive:
       range: Uri
       required: true
     format:
-      range: ContentType
       required: true
     sourceData:
       list_elements_unique: true
       multivalued: true
-      range: File
   slots:
   - id
   - IRI

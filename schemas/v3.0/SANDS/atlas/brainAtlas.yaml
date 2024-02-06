@@ -42,8 +42,6 @@ BrainAtlas:
     shortName:
       range: string
       required: true
-    usedSpecies:
-      range: Species
   slots:
   - id
   - abbreviation

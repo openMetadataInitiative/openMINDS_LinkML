@@ -10,10 +10,6 @@ CustomAnatomicalEntity:
     name:
       range: string
       required: true
-    relatedUBERONTerm:
-      any_of:
-      - range: Organ
-      - range: UBERONParcellation
     relationAssessment:
       inlined: true
       list_elements_unique: true

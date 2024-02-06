@@ -6,7 +6,6 @@ DataCopy:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: CustomPropertySet
     description:
       range: string
     endTime:
@@ -14,17 +13,12 @@ DataCopy:
       - range: Time
       range: string
     environment:
-      any_of:
-      - range: Environment
-      - range: WebServiceVersion
       required: true
     input:
       list_elements_unique: true
       multivalued: true
       range: LocalFile
       required: true
-    launchConfiguration:
-      range: LaunchConfiguration
     lookupLabel:
       range: string
     output:
@@ -36,8 +30,6 @@ DataCopy:
       list_elements_unique: true
       multivalued: true
       range: SoftwareAgent
-    recipe:
-      range: WorkflowRecipeVersion
     resourceUsage:
       inlined: true
       list_elements_unique: true
@@ -48,12 +40,6 @@ DataCopy:
       - range: Time
       range: string
       required: true
-    startedBy:
-      any_of:
-      - range: SoftwareAgent
-      - range: Person
-    status:
-      range: ActionStatusType
     studyTarget:
       list_elements_unique: true
       multivalued: true
@@ -66,15 +52,6 @@ DataCopy:
       list_elements_unique: true
       multivalued: true
       range: AnalysisTechnique
-    wasInformedBy:
-      any_of:
-      - range: DataAnalysis
-      - range: DataCopy
-      - range: GenericComputation
-      - range: ModelValidation
-      - range: Optimization
-      - range: Simulation
-      - range: Visualization
   slots:
   - id
   - customPropertySet

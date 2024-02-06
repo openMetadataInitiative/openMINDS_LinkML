@@ -3,27 +3,22 @@ ElectrodeContact:
   description: Structured information on an electrode contact.
   slot_usage:
     coordinatePoint:
-      range: CoordinatePoint
       required: true
     definedIn:
       list_elements_unique: true
       multivalued: true
-      range: FileInstance
     internalIdentifier:
       range: string
       required: true
     relatedRecording:
       list_elements_unique: true
       multivalued: true
-      range: FileInstance
     relatedStimulation:
       list_elements_unique: true
       multivalued: true
-      range: FileInstance
     visualizedIn:
       list_elements_unique: true
       multivalued: true
-      range: Image
   slots:
   - id
   - coordinatePoint

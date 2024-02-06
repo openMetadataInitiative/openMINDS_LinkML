@@ -5,22 +5,15 @@ FileRepository:
     IRI:
       range: Uri
       required: true
-    format:
-      range: ContentType
     hash:
       inlined: true
-      range: Hash
     hostedBy:
-      range: Organization
       required: true
     name:
       range: string
       required: true
-    repositoryType:
-      range: FileRepositoryType
     storageSize:
       inlined: true
-      range: QuantitativeValue
   slots:
   - id
   - IRI

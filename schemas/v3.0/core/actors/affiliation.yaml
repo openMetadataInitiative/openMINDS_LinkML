@@ -6,9 +6,6 @@ Affiliation:
     endDate:
       range: Date
     memberOf:
-      any_of:
-      - range: Consortium
-      - range: Organization
       required: true
     startDate:
       range: Date

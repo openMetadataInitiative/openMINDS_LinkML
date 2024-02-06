@@ -9,9 +9,6 @@ Strain:
     backgroundStrain:
       list_elements_unique: true
       multivalued: true
-      range: Strain
-    breedingType:
-      range: BreedingType
     description:
       range: string
     digitalIdentifier:
@@ -21,7 +18,6 @@ Strain:
       multivalued: true
       range: Disease
     geneticStrainType:
-      range: GeneticStrainType
       required: true
     laboratoryCode:
       pattern: ^[A-Z]([a-z]?)+$
@@ -40,7 +36,6 @@ Strain:
       required: true
     stockNumber:
       inlined: true
-      range: StockNumber
     synonym:
       list_elements_unique: true
       multivalued: true

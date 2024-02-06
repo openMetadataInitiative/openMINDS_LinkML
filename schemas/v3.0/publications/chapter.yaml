@@ -17,7 +17,6 @@ Chapter:
       range: DOI
     copyright:
       inlined: true
-      range: Copyright
     creationDate:
       range: Date
     custodian:
@@ -29,11 +28,9 @@ Chapter:
     editor:
       list_elements_unique: true
       multivalued: true
-      range: Person
     funding:
       list_elements_unique: true
       multivalued: true
-      range: Funding
     isPartOf:
       range: Book
       required: true
@@ -53,11 +50,6 @@ Chapter:
     publicationDate:
       range: Date
       required: true
-    publisher:
-      any_of:
-      - range: Consortium
-      - range: Organization
-      - range: Person
     versionIdentifier:
       range: string
   slots:

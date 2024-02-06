@@ -8,13 +8,8 @@ File:
       required: true
     content:
       range: string
-    fileRepository:
-      range: FileRepository
-    format:
-      range: ContentType
     hash:
       inlined: true
-      range: Hash
     isPartOf:
       list_elements_unique: true
       multivalued: true
@@ -23,11 +18,8 @@ File:
     name:
       range: string
       required: true
-    specialUsageRole:
-      range: FileUsageRole
     storageSize:
       inlined: true
-      range: QuantitativeValue
   slots:
   - id
   - IRI

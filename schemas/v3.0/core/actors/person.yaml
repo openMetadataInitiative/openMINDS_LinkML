@@ -6,7 +6,6 @@ Person:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: Affiliation
     alternateName:
       list_elements_unique: true
       multivalued: true
@@ -14,9 +13,6 @@ Person:
     associatedAccount:
       list_elements_unique: true
       multivalued: true
-      range: AccountInformation
-    contactInformation:
-      range: ContactInformation
     digitalIdentifier:
       list_elements_unique: true
       multivalued: true

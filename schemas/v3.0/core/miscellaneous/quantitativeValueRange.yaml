@@ -7,15 +7,11 @@ QuantitativeValueRange:
       - int
       - float
       required: true
-    maxValueUnit:
-      range: UnitOfMeasurement
     minValue:
       any_of:
       - int
       - float
       required: true
-    minValueUnit:
-      range: UnitOfMeasurement
   slots:
   - id
   - maxValue

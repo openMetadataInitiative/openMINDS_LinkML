@@ -2,31 +2,17 @@ Electrode:
   class_uri: https://openminds.ebrains.eu/ephys/Electrode
   description: null
   slot_usage:
-    conductorMaterial:
-      any_of:
-      - range: ChemicalMixture
-      - range: ChemicalSubstance
-      - range: MolecularEntity
     description:
       range: string
     deviceType:
-      range: DeviceType
       required: true
     digitalIdentifier:
       any_of:
       - range: DOI
       - range: RRID
-    insulatorMaterial:
-      any_of:
-      - range: ChemicalMixture
-      - range: ChemicalSubstance
-      - range: MolecularEntity
     internalIdentifier:
       range: string
     intrinsicResistance:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
     lookupLabel:
       range: string

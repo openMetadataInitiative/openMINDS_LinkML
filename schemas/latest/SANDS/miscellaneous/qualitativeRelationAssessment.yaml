@@ -2,16 +2,9 @@ QualitativeRelationAssessment:
   class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
   description: null
   slot_usage:
-    criteria:
-      range: ProtocolExecution
     inRelationTo:
-      any_of:
-      - range: CustomAnatomicalEntity
-      - range: ParcellationEntity
-      - range: ParcellationEntityVersion
       required: true
     qualitativeOverlap:
-      range: QualitativeOverlap
       required: true
   slots:
   - id

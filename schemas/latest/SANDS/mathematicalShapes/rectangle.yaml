@@ -4,11 +4,9 @@ Rectangle:
   slot_usage:
     length:
       inlined: true
-      range: QuantitativeValue
       required: true
     width:
       inlined: true
-      range: QuantitativeValue
       required: true
   slots:
   - id

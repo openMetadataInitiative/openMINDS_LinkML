@@ -2,13 +2,8 @@ FileBundle:
   class_uri: https://openminds.ebrains.eu/core/FileBundle
   description: Structured information on a bundle of file instances.
   slot_usage:
-    format:
-      range: ContentType
-    groupedBy:
-      range: FileBundleGrouping
     hash:
       inlined: true
-      range: Hash
     isPartOf:
       any_of:
       - range: FileBundle
@@ -21,7 +16,6 @@ FileBundle:
       range: string
     storageSize:
       inlined: true
-      range: QuantitativeValue
   slots:
   - id
   - format

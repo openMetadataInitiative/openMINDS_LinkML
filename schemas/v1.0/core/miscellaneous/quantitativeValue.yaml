@@ -7,8 +7,6 @@ QuantitativeValue:
       - int
       - float
       multivalued: true
-    unit:
-      range: UnitOfMeasurement
     value:
       any_of:
       - int

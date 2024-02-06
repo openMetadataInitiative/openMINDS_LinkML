@@ -17,8 +17,6 @@ Project:
       multivalued: true
       range: Dataset
       required: true
-    homepage:
-      range: URL
     shortName:
       range: string
       required: true

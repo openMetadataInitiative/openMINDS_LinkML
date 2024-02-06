@@ -2,15 +2,10 @@ QuantitativeRelationAssessment:
   class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
   description: null
   slot_usage:
-    criteria:
-      range: ProtocolExecution
     inRelationTo:
       range: ParcellationEntityVersion
       required: true
     quantitativeOverlap:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
       required: true
   slots:

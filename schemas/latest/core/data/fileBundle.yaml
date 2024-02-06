@@ -4,8 +4,6 @@ FileBundle:
   slot_usage:
     contentDescription:
       range: string
-    format:
-      range: ContentType
     groupedBy:
       list_elements_unique: true
       multivalued: true
@@ -13,10 +11,8 @@ FileBundle:
     groupingType:
       list_elements_unique: true
       multivalued: true
-      range: FileBundleGrouping
     hash:
       inlined: true
-      range: Hash
     isPartOf:
       any_of:
       - range: FileBundle
@@ -27,7 +23,6 @@ FileBundle:
       required: true
     storageSize:
       inlined: true
-      range: QuantitativeValue
   slots:
   - id
   - contentDescription

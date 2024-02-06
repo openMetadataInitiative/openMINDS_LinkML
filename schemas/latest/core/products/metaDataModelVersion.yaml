@@ -3,11 +3,9 @@ MetaDataModelVersion:
   description: null
   slot_usage:
     accessibility:
-      range: ProductAccessibility
       required: true
     copyright:
       inlined: true
-      range: Copyright
     custodian:
       list_elements_unique: true
       multivalued: true
@@ -23,17 +21,12 @@ MetaDataModelVersion:
       - range: DOI
       - range: SWHID
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: WebResource
       required: true
     fullName:
       range: string
     funding:
       list_elements_unique: true
       multivalued: true
-      range: Funding
     homepage:
       range: Uri
     howToCite:
@@ -55,7 +48,6 @@ MetaDataModelVersion:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: Contribution
     relatedPublication:
       list_elements_unique: true
       multivalued: true
@@ -63,19 +55,15 @@ MetaDataModelVersion:
     releaseDate:
       range: Date
       required: true
-    repository:
-      range: FileRepository
     serializationFormat:
       list_elements_unique: true
       multivalued: true
-      range: ContentType
     shortName:
       range: string
       required: true
     specificationFormat:
       list_elements_unique: true
       multivalued: true
-      range: ContentType
     supportChannel:
       any_of:
       - range: Uri

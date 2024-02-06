@@ -16,7 +16,6 @@ Book:
       range: DOI
     copyright:
       inlined: true
-      range: Copyright
     creationDate:
       range: Date
     custodian:
@@ -30,11 +29,9 @@ Book:
     editor:
       list_elements_unique: true
       multivalued: true
-      range: Person
     funding:
       list_elements_unique: true
       multivalued: true
-      range: Funding
     keyword:
       list_elements_unique: true
       multivalued: true
@@ -49,11 +46,6 @@ Book:
     publicationDate:
       range: Date
       required: true
-    publisher:
-      any_of:
-      - range: Consortium
-      - range: Organization
-      - range: Person
     versionIdentifier:
       range: string
   slots:

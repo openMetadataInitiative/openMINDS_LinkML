@@ -13,9 +13,7 @@ AnatomicalTargetPosition:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: CoordinatePoint
     targetIdentificationType:
-      range: AnatomicalIdentificationType
       required: true
   slots:
   - id

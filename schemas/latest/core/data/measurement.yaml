@@ -6,14 +6,7 @@ Measurement:
     additionalRemarks:
       range: string
     measuredQuantity:
-      range: MeasuredQuantity
       required: true
-    measuredWith:
-      any_of:
-      - range: ElectrodeArrayUsage
-      - range: ElectrodeUsage
-      - range: PipetteUsage
-      - range: SlicingDeviceUsage
     timestamp:
       range: Datetime
     value:

@@ -9,7 +9,6 @@ SoftwareAgent:
       range: string
       required: true
     software:
-      range: SoftwareVersion
       required: true
   slots:
   - id

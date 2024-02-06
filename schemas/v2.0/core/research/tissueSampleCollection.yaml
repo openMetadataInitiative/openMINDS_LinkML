@@ -7,14 +7,12 @@ TissueSampleCollection:
     biologicalSex:
       list_elements_unique: true
       multivalued: true
-      range: BiologicalSex
       required: true
     internalIdentifier:
       range: string
     laterality:
       list_elements_unique: true
       multivalued: true
-      range: Laterality
     lookupLabel:
       range: string
     origin:
@@ -25,18 +23,15 @@ TissueSampleCollection:
     phenotype:
       list_elements_unique: true
       multivalued: true
-      range: Phenotype
     quantity:
       range: int
     species:
       list_elements_unique: true
       multivalued: true
-      range: Species
       required: true
     strain:
       list_elements_unique: true
       multivalued: true
-      range: Strain
     studiedState:
       list_elements_unique: true
       multivalued: true

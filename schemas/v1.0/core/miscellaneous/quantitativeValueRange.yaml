@@ -4,11 +4,9 @@ QuantitativeValueRange:
   slot_usage:
     maxValue:
       inlined: true
-      range: QuantitativeValue
       required: true
     minValue:
       inlined: true
-      range: QuantitativeValue
       required: true
   slots:
   - id

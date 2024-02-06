@@ -4,11 +4,9 @@ Ellipse:
   slot_usage:
     semiMajorAxis:
       inlined: true
-      range: QuantitativeValue
       required: true
     semiMinorAxis:
       inlined: true
-      range: QuantitativeValue
       required: true
   slots:
   - id

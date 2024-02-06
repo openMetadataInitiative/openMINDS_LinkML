@@ -27,10 +27,6 @@ ParcellationEntity:
       list_elements_unique: true
       multivalued: true
       range: Uri
-    relatedUBERONTerm:
-      any_of:
-      - range: Organ
-      - range: UBERONParcellation
   slots:
   - id
   - abbreviation

@@ -12,8 +12,6 @@ ChemicalMixture:
       required: true
     name:
       range: string
-    productSource:
-      range: ProductSource
     type:
       range: ChemicalMixtureType
       required: true

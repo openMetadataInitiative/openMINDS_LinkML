@@ -13,11 +13,7 @@ SlicingDeviceUsage:
       range: File
     oscillationAmplitude:
       inlined: true
-      range: QuantitativeValue
     sliceThickness:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
       required: true
     slicingAngle:
@@ -25,18 +21,15 @@ SlicingDeviceUsage:
       multivalued: true
       range: QuantitativeValue
     slicingPlane:
-      range: AnatomicalPlane
       required: true
     slicingSpeed:
       inlined: true
-      range: QuantitativeValue
     usedSpecimen:
       any_of:
       - range: SubjectState
       - range: TissueSampleState
     vibrationFrequency:
       inlined: true
-      range: QuantitativeValue
   slots:
   - id
   - device

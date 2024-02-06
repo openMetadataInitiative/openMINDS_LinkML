@@ -5,10 +5,8 @@ CommonCoordinateSpaceVersion:
     abbreviation:
       range: string
     accessibility:
-      range: ProductAccessibility
       required: true
     anatomicalAxesOrientation:
-      range: AnatomicalAxesOrientation
       required: true
     author:
       list_elements_unique: true
@@ -18,11 +16,9 @@ CommonCoordinateSpaceVersion:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: QuantitativeValue
       required: true
     copyright:
       inlined: true
-      range: Copyright
     custodian:
       list_elements_unique: true
       multivalued: true
@@ -30,7 +26,6 @@ CommonCoordinateSpaceVersion:
     defaultImage:
       list_elements_unique: true
       multivalued: true
-      range: File
     description:
       range: string
     digitalIdentifier:
@@ -39,17 +34,12 @@ CommonCoordinateSpaceVersion:
       - range: ISBN
       - range: RRID
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: WebResource
       required: true
     fullName:
       range: string
     funding:
       list_elements_unique: true
       multivalued: true
-      range: Funding
     homepage:
       range: Uri
     howToCite:
@@ -67,7 +57,6 @@ CommonCoordinateSpaceVersion:
     license:
       range: License
     nativeUnit:
-      range: UnitOfMeasurement
       required: true
     ontologyIdentifier:
       list_elements_unique: true
@@ -77,7 +66,6 @@ CommonCoordinateSpaceVersion:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: Contribution
     relatedPublication:
       list_elements_unique: true
       multivalued: true
@@ -85,8 +73,6 @@ CommonCoordinateSpaceVersion:
     releaseDate:
       range: Date
       required: true
-    repository:
-      range: FileRepository
     shortName:
       range: string
       required: true

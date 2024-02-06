@@ -6,7 +6,6 @@ StockNumber:
       range: string
       required: true
     vendor:
-      range: Organization
       required: true
   slots:
   - id

@@ -16,8 +16,6 @@ ServiceLink:
     openDataIn:
       range: Uri
       required: true
-    previewImage:
-      range: File
     service:
       range: Service
       required: true

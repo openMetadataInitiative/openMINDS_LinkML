@@ -12,8 +12,6 @@ QuantitativeValueRange:
       - int
       - float
       required: true
-    unit:
-      range: UnitOfMeasurement
   slots:
   - id
   - maxValue

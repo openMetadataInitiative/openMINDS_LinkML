@@ -8,7 +8,6 @@ DigitalIdentifier:
       range: string
       required: true
     identifierSchema:
-      range: DigitalIdentifierSchema
       required: true
   slots:
   - id

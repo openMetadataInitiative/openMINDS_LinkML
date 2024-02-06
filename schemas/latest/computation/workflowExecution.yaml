@@ -6,16 +6,10 @@ WorkflowExecution:
       any_of:
       - range: Configuration
       - range: File
-    recipe:
-      range: WorkflowRecipeVersion
     stage:
       list_elements_unique: true
       multivalued: true
       range: DataAnalysis
-    startedBy:
-      any_of:
-      - range: SoftwareAgent
-      - range: Person
   slots:
   - id
   - configuration

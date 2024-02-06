@@ -7,10 +7,6 @@ FileInstance:
       required: true
     content:
       range: string
-    format:
-      range: ContentType
-    hash:
-      range: Hash
     isPartOf:
       list_elements_unique: true
       multivalued: true
@@ -19,11 +15,8 @@ FileInstance:
     name:
       range: string
       required: true
-    specialUsageRole:
-      range: fileUsageRole
     storageSize:
       inlined: true
-      range: QuantitativeValue
   slots:
   - id
   - IRI

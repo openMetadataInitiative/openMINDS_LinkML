@@ -7,8 +7,6 @@ WebResource:
       required: true
     contentDescription:
       range: string
-    format:
-      range: ContentType
   slots:
   - id
   - IRI

@@ -5,12 +5,8 @@ SubjectState:
     additionalRemarks:
       range: string
     age:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
     ageCategory:
-      range: AgeCategory
       required: true
     attribute:
       list_elements_unique: true
@@ -18,8 +14,6 @@ SubjectState:
       range: SubjectAttribute
     descendedFrom:
       range: SubjectState
-    handedness:
-      range: Handedness
     internalIdentifier:
       range: string
     lookupLabel:
@@ -29,14 +23,8 @@ SubjectState:
       multivalued: true
       range: Disease
     relativeTimeIndication:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
     weight:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
   slots:
   - id

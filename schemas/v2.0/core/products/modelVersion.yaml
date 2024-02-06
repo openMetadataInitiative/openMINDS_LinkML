@@ -3,11 +3,9 @@ ModelVersion:
   description: Structured information on a computational model (version level).
   slot_usage:
     accessibility:
-      range: ProductAccessibility
       required: true
     copyright:
       inlined: true
-      range: Copyright
     custodian:
       list_elements_unique: true
       multivalued: true
@@ -23,23 +21,15 @@ ModelVersion:
       - range: DOI
       - range: SWHID
     format:
-      range: ContentType
       required: true
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: URL
       required: true
     fullName:
       range: string
     funding:
       list_elements_unique: true
       multivalued: true
-      range: Funding
       required: true
-    homepage:
-      range: URL
     howToCite:
       range: string
     inputData:
@@ -59,13 +49,11 @@ ModelVersion:
     license:
       list_elements_unique: true
       multivalued: true
-      range: License
       required: true
     otherContribution:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: Contribution
     outputData:
       list_elements_unique: true
       multivalued: true
@@ -77,8 +65,6 @@ ModelVersion:
     releaseDate:
       range: Date
       required: true
-    repository:
-      range: FileRepository
     shortName:
       range: string
       required: true

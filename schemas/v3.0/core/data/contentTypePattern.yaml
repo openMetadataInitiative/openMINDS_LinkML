@@ -3,7 +3,6 @@ ContentTypePattern:
   description: null
   slot_usage:
     contentType:
-      range: ContentType
       required: true
     lookupLabel:
       range: string

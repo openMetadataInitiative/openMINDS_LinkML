@@ -11,15 +11,8 @@ ProductSource:
       range: string
       required: true
     provider:
-      any_of:
-      - range: Consortium
-      - range: Organization
-      - range: Person
       required: true
     purity:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
   slots:
   - id

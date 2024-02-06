@@ -4,7 +4,6 @@ DatasetVersion:
     or simulations (version level).
   slot_usage:
     accessibility:
-      range: ProductAccessibility
       required: true
     author:
       list_elements_unique: true
@@ -13,10 +12,8 @@ DatasetVersion:
     behavioralProtocol:
       list_elements_unique: true
       multivalued: true
-      range: BehavioralProtocol
     copyright:
       inlined: true
-      range: Copyright
     custodian:
       list_elements_unique: true
       multivalued: true
@@ -34,25 +31,18 @@ DatasetVersion:
       - range: IdentifiersDotOrgID
       required: true
     ethicsAssessment:
-      range: EthicsAssessment
       required: true
     experimentalApproach:
       list_elements_unique: true
       multivalued: true
-      range: ExperimentalApproach
       required: true
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: WebResource
       required: true
     fullName:
       range: string
     funding:
       list_elements_unique: true
       multivalued: true
-      range: Funding
     homepage:
       range: Uri
     howToCite:
@@ -72,23 +62,17 @@ DatasetVersion:
       multivalued: true
       range: ActionStatusType
     license:
-      any_of:
-      - range: License
-      - range: WebResource
       required: true
     otherContribution:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: Contribution
     preparationDesign:
       list_elements_unique: true
       multivalued: true
-      range: PreparationType
     protocol:
       list_elements_unique: true
       multivalued: true
-      range: Protocol
     relatedPublication:
       list_elements_unique: true
       multivalued: true
@@ -96,8 +80,6 @@ DatasetVersion:
     releaseDate:
       range: Date
       required: true
-    repository:
-      range: FileRepository
     shortName:
       range: string
       required: true

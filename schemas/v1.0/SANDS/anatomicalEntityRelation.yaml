@@ -3,21 +3,13 @@ AnatomicalEntityRelation:
   description: Structured information on the relation between one anatomical entity
     and another.
   slot_usage:
-    criteria:
-      range: ProtocolExecution
     criteriaQualityType:
-      range: CriteriaQualityType
       required: true
     inRelationTo:
-      range: AnatomicalEntity
       required: true
     qualitativeOverlap:
-      range: QualitativeOverlap
       required: true
     quantitativeOverlap:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
   slots:
   - id

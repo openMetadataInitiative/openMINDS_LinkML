@@ -3,16 +3,13 @@ Image:
   description: Structured information on an image.
   slot_usage:
     coordinateSpace:
-      range: CoordinateSpace
       required: true
     definedIn:
-      range: FileInstance
       required: true
     voxelSize:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: QuantitativeValue
       required: true
   slots:
   - id

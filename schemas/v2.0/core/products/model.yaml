@@ -3,7 +3,6 @@ Model:
   description: Structured information on a computational model (concept level).
   slot_usage:
     abstractionLevel:
-      range: ModelAbstractionLevel
       required: true
     custodian:
       list_elements_unique: true
@@ -29,12 +28,9 @@ Model:
       multivalued: true
       range: ModelVersion
       required: true
-    homepage:
-      range: URL
     howToCite:
       range: string
     scope:
-      range: ModelScope
       required: true
     shortName:
       range: string

@@ -5,13 +5,9 @@ BrainAtlasVersion:
     annotationSet:
       list_elements_unique: true
       multivalued: true
-      range: Annotation
       required: true
     coordinateSpace:
-      range: CoordinateSpace
       required: true
-    digitalIdentifier:
-      range: DigitalIdentifier
     fullName:
       range: string
       required: true

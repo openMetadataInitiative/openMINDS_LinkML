@@ -13,10 +13,6 @@ QuantitativeValueArray:
       - int
       - float
       multivalued: true
-    typeOfUncertainty:
-      range: TypeOfUncertainty
-    unit:
-      range: UnitOfMeasurement
     values:
       any_of:
       - int

@@ -3,16 +3,13 @@ SoftwareVersion:
   description: null
   slot_usage:
     accessibility:
-      range: ProductAccessibility
       required: true
     applicationCategory:
       list_elements_unique: true
       multivalued: true
-      range: SoftwareApplicationCategory
       required: true
     copyright:
       inlined: true
-      range: Copyright
     custodian:
       list_elements_unique: true
       multivalued: true
@@ -26,7 +23,6 @@ SoftwareVersion:
     device:
       list_elements_unique: true
       multivalued: true
-      range: OperatingDevice
       required: true
     digitalIdentifier:
       any_of:
@@ -35,33 +31,23 @@ SoftwareVersion:
     feature:
       list_elements_unique: true
       multivalued: true
-      range: SoftwareFeature
       required: true
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: URL
       required: true
     fullName:
       range: string
     funding:
       list_elements_unique: true
       multivalued: true
-      range: Funding
       required: true
     hasComponent:
       list_elements_unique: true
       multivalued: true
-      range: SoftwareVersion
-    homepage:
-      range: URL
     howToCite:
       range: string
     inputFormat:
       list_elements_unique: true
       multivalued: true
-      range: ContentType
     isAlternativeVersionOf:
       list_elements_unique: true
       multivalued: true
@@ -75,31 +61,25 @@ SoftwareVersion:
     language:
       list_elements_unique: true
       multivalued: true
-      range: Language
       required: true
     license:
       list_elements_unique: true
       multivalued: true
-      range: License
       required: true
     operatingSystem:
       list_elements_unique: true
       multivalued: true
-      range: OperatingSystem
       required: true
     otherContribution:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: Contribution
     outputFormat:
       list_elements_unique: true
       multivalued: true
-      range: ContentType
     programmingLanguage:
       list_elements_unique: true
       multivalued: true
-      range: ProgrammingLanguage
       required: true
     relatedPublication:
       list_elements_unique: true
@@ -108,8 +88,6 @@ SoftwareVersion:
     releaseDate:
       range: Date
       required: true
-    repository:
-      range: FileRepository
     requirement:
       list_elements_unique: true
       multivalued: true

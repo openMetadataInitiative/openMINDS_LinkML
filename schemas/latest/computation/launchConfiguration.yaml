@@ -7,8 +7,6 @@ LaunchConfiguration:
       range: string
     description:
       range: string
-    environmentVariable:
-      range: PropertyValueList
     executable:
       range: string
       required: true

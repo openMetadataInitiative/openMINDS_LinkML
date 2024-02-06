@@ -6,7 +6,6 @@ Software:
       range: string
       required: true
     digitalIdentifier:
-      range: DigitalIdentifier
       required: true
     fullName:
       range: string

@@ -8,7 +8,6 @@ Environment:
     description:
       range: string
     hardware:
-      range: HardwareSystem
       required: true
     name:
       range: string
@@ -16,7 +15,6 @@ Environment:
     software:
       list_elements_unique: true
       multivalued: true
-      range: SoftwareVersion
   slots:
   - id
   - configuration

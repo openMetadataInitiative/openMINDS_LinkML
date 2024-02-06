@@ -3,10 +3,8 @@ ModelVersion:
   description: Structured information on a computational model (version level).
   slot_usage:
     abstractionLevel:
-      range: ModelAbstractionLevel
       required: true
     accessibility:
-      range: ProductAccessibility
       required: true
     author:
       list_elements_unique: true
@@ -14,7 +12,6 @@ ModelVersion:
       range: Organization
     copyright:
       inlined: true
-      range: Copyright
     custodian:
       list_elements_unique: true
       multivalued: true
@@ -28,13 +25,10 @@ ModelVersion:
       range: Organization
       required: true
     digitalIdentifier:
-      range: DigitalIdentifier
       required: true
     format:
-      range: ContentType
       required: true
     fullDocumentation:
-      range: DigitalIdentifier
       required: true
     fullName:
       range: string
@@ -42,7 +36,6 @@ ModelVersion:
     funding:
       list_elements_unique: true
       multivalued: true
-      range: Funding
       required: true
     hasAlternativeVersion:
       list_elements_unique: true
@@ -54,8 +47,6 @@ ModelVersion:
       range: ModelVersion
     homepage:
       range: string
-    inputData:
-      range: DigitalIdentifier
     isNewVersionOf:
       range: ModelVersion
     keyword:
@@ -63,26 +54,19 @@ ModelVersion:
       multivalued: true
       range: string
     license:
-      range: License
       required: true
     otherContribution:
       list_elements_unique: true
       multivalued: true
-      range: Contribution
-    outputData:
-      range: DigitalIdentifier
     relatedPublication:
       list_elements_unique: true
       multivalued: true
-      range: DigitalIdentifier
     releaseDate:
       range: string
       required: true
     repository:
-      range: FileRepository
       required: true
     scope:
-      range: ModelScope
       required: true
     shortName:
       range: string

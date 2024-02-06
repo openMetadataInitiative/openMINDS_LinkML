@@ -40,7 +40,6 @@ CommonCoordinateSpace:
       range: string
       required: true
     usedSpecies:
-      range: Species
       required: true
   slots:
   - id

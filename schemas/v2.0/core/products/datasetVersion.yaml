@@ -4,7 +4,6 @@ DatasetVersion:
     or simulations (version level).
   slot_usage:
     accessibility:
-      range: ProductAccessibility
       required: true
     author:
       list_elements_unique: true
@@ -12,7 +11,6 @@ DatasetVersion:
       range: Organization
     copyright:
       inlined: true
-      range: Copyright
     custodian:
       list_elements_unique: true
       multivalued: true
@@ -23,28 +21,19 @@ DatasetVersion:
       range: DOI
       required: true
     ethicsAssessment:
-      range: EthicsAssessment
       required: true
     experimentalApproach:
       list_elements_unique: true
       multivalued: true
-      range: ExperimentalApproach
       required: true
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: URL
       required: true
     fullName:
       range: string
     funding:
       list_elements_unique: true
       multivalued: true
-      range: Funding
       required: true
-    homepage:
-      range: URL
     howToCite:
       range: string
     inputData:
@@ -62,17 +51,14 @@ DatasetVersion:
       multivalued: true
       range: string
     license:
-      range: License
       required: true
     otherContribution:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: Contribution
     protocol:
       list_elements_unique: true
       multivalued: true
-      range: Protocol
       required: true
     relatedPublication:
       list_elements_unique: true
@@ -81,8 +67,6 @@ DatasetVersion:
     releaseDate:
       range: Date
       required: true
-    repository:
-      range: FileRepository
     shortName:
       range: string
       required: true

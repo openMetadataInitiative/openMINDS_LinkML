@@ -7,15 +7,9 @@ ViewerSpecification:
     anchorPoint:
       inlined: true
       multivalued: true
-      range: QuantitativeValue
       required: true
     cameraPosition:
       inlined: true
-      range: CoordinatePoint
-    preferredDisplayColor:
-      any_of:
-      - range: Colormap
-      - range: SingleColor
   slots:
   - id
   - additionalRemarks

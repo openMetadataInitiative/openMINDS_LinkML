@@ -6,7 +6,6 @@ StimulationActivity:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: CustomPropertySet
     description:
       range: string
     endTime:
@@ -32,15 +31,10 @@ StimulationActivity:
       list_elements_unique: true
       multivalued: true
       range: SoftwareAgent
-    preparationDesign:
-      range: PreparationType
     protocol:
       list_elements_unique: true
       multivalued: true
-      range: Protocol
       required: true
-    setup:
-      range: Setup
     startTime:
       any_of:
       - range: Time

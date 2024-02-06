@@ -2,8 +2,6 @@ TermSuggestion:
   class_uri: https://openminds.ebrains.eu/controlledTerms/TermSuggestion
   description: null
   slot_usage:
-    addExistingTerminology:
-      range: Terminology
     definition:
       range: string
     description:

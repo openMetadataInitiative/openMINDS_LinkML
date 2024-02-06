@@ -3,16 +3,13 @@ TissueCulturePreparation:
   description: null
   slot_usage:
     cultureMedium:
-      range: ChemicalMixture
       required: true
     cultureType:
-      range: CellCultureType
       required: true
     customPropertySet:
       inlined: true
       list_elements_unique: true
       multivalued: true
-      range: CustomPropertySet
     description:
       range: string
     endTime:
@@ -38,12 +35,9 @@ TissueCulturePreparation:
       list_elements_unique: true
       multivalued: true
       range: SoftwareAgent
-    preparationDesign:
-      range: PreparationType
     protocol:
       list_elements_unique: true
       multivalued: true
-      range: Protocol
       required: true
     startTime:
       any_of:

@@ -5,12 +5,10 @@ AtlasTerminology:
     anatomicalEntity:
       list_elements_unique: true
       multivalued: true
-      range: AnatomicalEntity
       required: true
     definedIn:
       list_elements_unique: true
       multivalued: true
-      range: FileInstance
     fullName:
       range: string
       required: true

@@ -5,12 +5,7 @@ AmountOfChemical:
   slot_usage:
     amount:
       inlined: true
-      range: QuantitativeValue
     chemicalProduct:
-      any_of:
-      - range: ChemicalMixture
-      - range: ChemicalSubstance
-      - range: MolecularEntity
       required: true
   slots:
   - id

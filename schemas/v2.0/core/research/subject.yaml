@@ -3,7 +3,6 @@ Subject:
   description: Structured information on a subject.
   slot_usage:
     biologicalSex:
-      range: BiologicalSex
       required: true
     internalIdentifier:
       range: string
@@ -14,13 +13,8 @@ Subject:
       range: SubjectGroup
     lookupLabel:
       range: string
-    phenotype:
-      range: Phenotype
     species:
-      range: Species
       required: true
-    strain:
-      range: Strain
     studiedState:
       list_elements_unique: true
       multivalued: true

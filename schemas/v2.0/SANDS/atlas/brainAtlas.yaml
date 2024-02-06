@@ -15,8 +15,6 @@ BrainAtlas:
       multivalued: true
       range: BrainAtlasVersion
       required: true
-    homepage:
-      range: URL
     howToCite:
       range: string
     shortName:

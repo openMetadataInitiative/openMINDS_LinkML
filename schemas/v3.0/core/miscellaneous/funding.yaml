@@ -9,10 +9,6 @@ Funding:
     awardTitle:
       range: string
     funder:
-      any_of:
-      - range: Consortium
-      - range: Organization
-      - range: Person
       required: true
   slots:
   - id

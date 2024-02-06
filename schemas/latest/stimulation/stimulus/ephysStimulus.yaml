@@ -2,23 +2,10 @@ EphysStimulus:
   class_uri: https://openminds.ebrains.eu/stimulation/EphysStimulus
   description: null
   slot_usage:
-    deliveredBy:
-      any_of:
-      - range: ElectrodeArrayUsage
-      - range: ElectrodeUsage
-      - range: PipetteUsage
-      - range: SlicingDeviceUsage
     description:
       range: string
     epoch:
       inlined: true
-      range: QuantitativeValue
-    generatedBy:
-      any_of:
-      - range: ElectrodeArrayUsage
-      - range: ElectrodeUsage
-      - range: PipetteUsage
-      - range: SlicingDeviceUsage
     internalIdentifier:
       range: string
       required: true

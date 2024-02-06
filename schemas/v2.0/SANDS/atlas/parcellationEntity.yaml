@@ -17,7 +17,6 @@ ParcellationEntity:
     ontologyIdentifier:
       range: Uri
     relatedUBERONTerm:
-      range: UBERONParcellation
       required: true
     relationAssessment:
       inlined: true

@@ -4,28 +4,20 @@ LocalFile:
   slot_usage:
     contentDescription:
       range: string
-    copyOf:
-      range: File
     dataType:
       list_elements_unique: true
       multivalued: true
       range: DataType
-    format:
-      range: ContentType
     hash:
       inlined: true
-      range: Hash
     name:
       range: string
       required: true
     path:
       range: string
       required: true
-    specialUsageRole:
-      range: FileUsageRole
     storageSize:
       inlined: true
-      range: QuantitativeValue
   slots:
   - id
   - contentDescription

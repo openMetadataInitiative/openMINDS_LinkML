@@ -5,15 +5,9 @@ SubjectState:
     additionalRemarks:
       range: string
     age:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
     ageCategory:
-      range: AgeCategory
       required: true
-    handedness:
-      range: Handedness
     lookupLabel:
       range: string
     pathology:
@@ -21,9 +15,6 @@ SubjectState:
       multivalued: true
       range: Disease
     weight:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       inlined: true
   slots:
   - id

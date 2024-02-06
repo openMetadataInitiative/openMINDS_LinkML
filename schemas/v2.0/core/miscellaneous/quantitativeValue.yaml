@@ -2,15 +2,11 @@ QuantitativeValue:
   class_uri: https://openminds.ebrains.eu/core/QuantitativeValue
   description: Structured information on a quantitative value.
   slot_usage:
-    typeOfUncertainty:
-      range: TypeOfUncertainty
     uncertainty:
       any_of:
       - int
       - float
       multivalued: true
-    unit:
-      range: UnitOfMeasurement
     value:
       any_of:
       - int

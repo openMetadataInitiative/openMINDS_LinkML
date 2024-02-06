@@ -4,12 +4,10 @@ ElectrodeContact:
   slot_usage:
     coordinatePoint:
       inlined: true
-      range: CoordinatePoint
       required: true
     definedIn:
       list_elements_unique: true
       multivalued: true
-      range: File
     internalIdentifier:
       range: string
       required: true
@@ -26,7 +24,6 @@ ElectrodeContact:
     visualizedIn:
       list_elements_unique: true
       multivalued: true
-      range: File
   slots:
   - id
   - coordinatePoint
