@@ -22,75 +22,66 @@ class LinkMLBuilder(object):
         )
 
     def _resolve_string_property(self, property) -> Dict:
-        return {"range": "string"}
-        string_property_spec = {}
+        format_map = {  # see https://linkml.io/linkml-registry/
+            "iri": "Uri",  # not ideal mapping, will do for now
+            "date": "Date",
+            "date-time": "Datetime",
+            "time": "Time",
+            "email": "Email",  # need to define this type
+            "ECMA262": "ECMA262",  # need to define this type
+        }
+
+        string_property_spec = {"range": "string"}
         if "_formats" in property and property["_formats"]:
-            if len(property["_formats"]) == 1:
-                string_property_spec["format"] = property["_formats"][0]
-                string_property_spec["type"] = property["type"]
-            elif len(property["_formats"]) > 1:
-                string_property_spec["anyOf"] = []
-                for format in property["_formats"]:
-                    string_property_spec["anyOf"].append(
-                        {"type": property["type"], "format": format}
-                    )
-        else:
-            string_property_spec["type"] = property["type"]
+            if len(property["_formats"]) > 1:
+                string_property_spec["any_of"] = [
+                    {"range":  format_map[p] for p in property["_formats"]}
+                ]
+            else:
+                assert len(property["_formats"]) == 1
+                string_property_spec["range"] = format_map[property["_formats"][0]]
         if "pattern" in property and property["pattern"]:
             string_property_spec["pattern"] = property["pattern"]
-        if "minLength" in property and property["minLength"]:
-            string_property_spec["minLength"] = property["minLength"]
-        if "maxLength" in property and property["maxLength"]:
-            string_property_spec["maxLength"] = property["maxLength"]
+        # if "minLength" in property and property["minLength"]:
+        #     string_property_spec["minLength"] = property["minLength"]
+        # if "maxLength" in property and property["maxLength"]:
+        #     string_property_spec["maxLength"] = property["maxLength"]
         return string_property_spec
 
     def _resolve_number_property(self, property) -> Dict:
-        return {}
-        number_property_spec = {"type": property["type"]}
-        if "multipleOf" in property and property["multipleOf"]:
-            number_property_spec["multipleOf"] = property["multipleOf"]
+        if property["type"] == "integer":
+            number_property_spec = {"range": "int"}
+        elif property["type"] == "float":
+            number_property_spec = {"range": "float"}
+        elif property["type"] == "number":  # or perhaps define a Number type
+            number_property_spec = {"any_of": ["int", "float"]}
+        else:
+            raise ValueError()
+        # if "multipleOf" in property and property["multipleOf"]:
+        #     number_property_spec["multipleOf"] = property["multipleOf"]
         if "minimum" in property and property["minimum"]:
-            number_property_spec["minimum"] = property["minimum"]
+            number_property_spec["minimum_value"] = property["minimum"]
         if "maximum" in property and property["maximum"]:
-            number_property_spec["maximum"] = property["maximum"]
+            number_property_spec["maximum_value"] = property["maximum"]
         return number_property_spec
 
     def _resolve_object_property(self, property):
-        return {}
         object_property_spec = {}
         if "_embeddedTypes" in property and property["_embeddedTypes"]:
+            object_property_spec["inlined"] = True
             if len(property["_embeddedTypes"]) == 1:
-                object_property_spec["type"] = "object"
-                object_property_spec[
-                    "$ref"
-                ] = f"{property['_embeddedTypes'][0]}?format=json-schema"
+                object_property_spec["range"] = self._get_short_name(property["_embeddedTypes"][0])
             elif len(property["_embeddedTypes"]) > 1:
-                object_property_spec["anyOf"] = []
-                for embedded_type in property["_embeddedTypes"]:
-                    object_property_spec["anyOf"].append(
-                        {
-                            "type": "object",
-                            "$ref": f"{embedded_type}?format=json-schema",
-                        }
-                    )
+                object_property_spec["any_of"] = [
+                    {"range":self._get_short_name(_type)} for _type in property["_embeddedTypes"]
+                ]
         elif "_linkedTypes" in property and property["_linkedTypes"]:
-            object_property_spec["type"] = "object"
-            object_property_spec["if"] = {"required": ["@type"]}
-            object_property_spec["then"] = {
-                "properties": {
-                    "@id": {"type": "string", "format": "iri"},
-                    "@type": {
-                        "type": "string",
-                        "format": "iri",
-                        "enum": property["_linkedTypes"],
-                    },
-                },
-                "required": ["@id"],
-            }
-            object_property_spec["else"] = {
-                "properties": {"@id": {"type": "string", "format": "iri"}},
-                "required": ["@id"],
-            }
+            if len(property["_linkedTypes"]) == 1:
+                object_property_spec["range"] = self._get_short_name(property["_linkedTypes"][0])
+            elif len(property["_linkedTypes"]) > 1:
+                object_property_spec["any_of"] = [
+                    {"range": self._get_short_name(_type)} for _type in property["_linkedTypes"]
+                ]
 
         return object_property_spec
 
@@ -126,15 +117,14 @@ class LinkMLBuilder(object):
 
         return array_property_spec
 
-    def _translate_property_specifications(self, property_uri, property, required=False) -> Dict:
-        _translated_prop_spec = {
-            "slot_uri": property_uri
-        }
+    def _translate_property_specifications(
+        self, property_uri, property, required=False
+    ) -> Dict:
+        _translated_prop_spec = {"slot_uri": property_uri}
         if required:
             _translated_prop_spec["required"] = True
-
-        # prop_description = property["description"] if "description" in property else None
-        # _translated_prop_spec["description"] = prop_description
+        if "description" in property:
+            _translated_prop_spec["description"] = property["description"]
 
         prop_type = property["type"] if "type" in property else "object"
 
@@ -176,10 +166,14 @@ class LinkMLBuilder(object):
         self._translated_schema = {
             "class_uri": f"{self._schema_payload['_type']}",  # ?format=linkml",
             "description": description,
+            "title": self._schema_payload["label"],  # labelPlural?
             "attributes": {
-                "id": {"identifier": True, "slot_uri": "schema:identifier", "required": True}
-            }  # TODO: use slots instead
-            # "required": sorted(required_prop)
+                "id": {
+                    "identifier": True,
+                    "slot_uri": "schema:identifier",
+                    "required": True,
+                }
+            },  # TODO: use slots instead
         }
 
         if "properties" in self._schema_payload and self._schema_payload["properties"]:
