@@ -247,6 +247,55 @@ class LinkMLClassBuilder(object):
             yaml.dump({short_type: self._translated_schema}, fp)
 
 
+class LinkMLEnumBuilder(object):
+    def __init__(self, schema_file_path: str, root_path: str, instances: Dict):
+        _relative_path_without_extension = (
+            schema_file_path[len(root_path) + 1 :]
+            .replace(".schema.omi.json", "")
+            .split("/")
+        )
+        self.version = _relative_path_without_extension[0]
+        self.relative_path_without_extension = _relative_path_without_extension[1:]
+        with open(schema_file_path, "r") as schema_f:
+            self._schema_payload = json.load(schema_f)
+        self.instances = instances
+
+
+    def _target_file_without_extension(self) -> str:
+        return os.path.join(
+            self.version, "/".join(self.relative_path_without_extension)
+        )
+
+    def translate(self):
+        def build_enum(instance):
+            enum = {}
+            if "definition" in instance:
+                enum["description"] = instance["definition"]
+            "meaning"
+            return enum
+        instances_payload = self.instances[self._schema_payload["_type"]]
+        self._translated_schema = {
+            "enum_uri": self._schema_payload["_type"],
+            "title": self._schema_payload["label"],
+            "permissible_values": {
+                instance["name"]: build_enum(instance) for instance in instances_payload
+            }
+        }
+        if "description" in self._schema_payload:
+            self._translated_schema["description"] = self._schema_payload["description"]
+
+    def build(self):
+        target_file = os.path.join(
+            "target", "enums", f"{self._target_file_without_extension()}.yaml"
+        )
+        os.makedirs(os.path.dirname(target_file), exist_ok=True)
+        short_type = get_short_name(self._schema_payload["_type"])
+        self.translate()
+
+        with open(target_file, "w") as fp:
+            yaml.dump({short_type: self._translated_schema}, fp)
+
+
 class LinkMLSlotBuilder:
 
     def __init__(self, property_uri, property, version):
