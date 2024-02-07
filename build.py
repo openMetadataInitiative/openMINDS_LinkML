@@ -1,3 +1,9 @@
+"""
+
+"""
+
+# note: this code is hard to understand, and needs refactoring
+
 import os.path
 import shutil
 
@@ -33,6 +39,10 @@ for schema_version in schema_loader.get_schema_versions():
         "slot_uri": "schema:identifier",
         "required": True,
     }
+    for schema_file_path in schemas_file_paths:
+        LinkMLClassBuilder(
+            schema_file_path, schema_loader.schemas_sources, slots
+        ).update_slots()
 
     for schema_file_path in schemas_file_paths:
         # Step 4 - translate and build each openMINDS schema as a LinkML schema
