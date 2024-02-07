@@ -1,0 +1,39 @@
+OrganismSystem:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/OrganismSystem
+  permissible_values:
+    cardiovascular system:
+      description: '''The ''cardiovascular system'' is an anatomical organ system
+        where the heart pumps blood through blood vessels to and from all parts of
+        the body.'
+    central nervous system:
+      description: The 'central nervous system' is the main processing center in most
+        organisms. Its function is to take in sensory information, process information,
+        and send out motor signals.
+    cholinergic system:
+      description: The cholinergic system is composed of any molecule, protein, cell,
+        tissue or organ that is related to acetylcholine.
+    digestive system:
+      description: The 'digestive system' is an anatomical organ system composed of
+        organs devoted to the ingestion, digestion, the assimilation of food and the
+        discharge of residual wastes.
+    gabaergic system:
+      description: The gabaergic system is composed of any molecule, protein, cell,
+        tissue or organ that is related to GABA.
+    glutamatergic system:
+      description: The glutamatergic system is composed of any molecule, protein,
+        cell, tissue or organ that is related to glutamate (when in the role of a
+        neurotransmitter).
+    musculoskeletal system:
+      description: The 'musculoskeletal system' is an anatomical organ system composed
+        of organs providing the body with movement, stability, shape and support.
+    noradrenergic system:
+      description: The noradrenergic system is composed of any molecule, protein,
+        cell, tissue or organ that is related to norepinephrine (also known as noradrenaline).
+    serotonergic system:
+      description: The serotonergic system is composed of any molecule, protein, cell,
+        tissue or organ that is related to serotonin.
+    vascular system:
+      description: The 'vascular system' is an anatomical system that consists of
+        all vessels in the body, and carries blood and lymph through all parts of
+        the body.
+  title: Organism system

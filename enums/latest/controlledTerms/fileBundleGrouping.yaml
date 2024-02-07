@@ -1,0 +1,23 @@
+FileBundleGrouping:
+  description: Structured information on the grouping mechanism of a file bundle.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/FileBundleGrouping
+  permissible_values:
+    behavioral protocol:
+      description: null
+    coordinate space:
+      description: null
+    protocol:
+      description: null
+    study target:
+      description: null
+    subject:
+      description: null
+    subject group:
+      description: null
+    technique:
+      description: null
+    tissue sample:
+      description: null
+    tissue sample collection:
+      description: null
+  title: File bundle grouping

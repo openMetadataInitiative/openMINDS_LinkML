@@ -1,0 +1,10 @@
+CellCultureType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/CellCultureType
+  permissible_values:
+    primary cell culture:
+      description: A cell culture comprised of primary cultured cells and the media
+        in which they are being actively propagated or quiescently stored.
+    secondary cell culture:
+      description: A cultured cell population that is derived through one or more
+        passages in culture.
+  title: Cell culture type

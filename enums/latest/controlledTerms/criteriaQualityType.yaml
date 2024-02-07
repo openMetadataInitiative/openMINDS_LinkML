@@ -1,0 +1,12 @@
+CriteriaQualityType:
+  description: Structured information on the quality type of the defined criteria
+    for a measurement.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/CriteriaQualityType
+  permissible_values:
+    asserted:
+      description: If a criteria is 'asserted' it is based on an opinion or claim,
+        usually made by an expert.
+    processive:
+      description: If a criteria is 'processive' it is based on a repeatable and often
+        automated process.
+  title: Criteria quality type

@@ -1,0 +1,18 @@
+PreparationType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/PreparationType
+  permissible_values:
+    ex vivo:
+      description: Something happening or existing outside a living body.
+    in silico:
+      description: Conducted or produced by means of computer modelling or simulation.
+    in situ:
+      description: Something happening or being examined in the original place instead
+        of being moved to another place
+    in utero:
+      description: Something happening in, within, or while inside the uterus.
+    in vitro:
+      description: Something happening outside the body in artificial conditions (e.g.,
+        in a test tube or culture dish).
+    in vivo:
+      description: Something happening or existing inside a living body.
+  title: Preparation type

@@ -1,0 +1,13 @@
+SetupType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/SetupType
+  permissible_values:
+    acquisition system:
+      description: An 'acquisition system' is a setup type with the purpose of collecting
+        data.
+    computing system:
+      description: A 'computing system' is a setup type with the purpose of performing
+        computations.
+    stimulation system:
+      description: A 'stimulation system' is a setup type with the purpose of stimulating
+        a specimen.
+  title: Setup type

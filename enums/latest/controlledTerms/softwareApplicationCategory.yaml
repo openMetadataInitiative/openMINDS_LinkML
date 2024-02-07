@@ -1,0 +1,17 @@
+SoftwareApplicationCategory:
+  description: Structured information on the category of the software application.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareApplicationCategory
+  permissible_values:
+    application:
+      description: null
+    library:
+      description: null
+    middleware:
+      description: null
+    module:
+      description: null
+    notebook:
+      description: null
+    plugin:
+      description: null
+  title: Software application category

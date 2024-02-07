@@ -1,0 +1,9 @@
+Laterality:
+  description: Structured information on the lateral direction.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/Laterality
+  permissible_values:
+    left:
+      description: null
+    right:
+      description: null
+  title: Laterality

@@ -1,0 +1,6 @@
+ElectricalStimulusType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/ElectricalStimulusType
+  permissible_values:
+    direct current:
+      description: null
+  title: Electrical stimulus type

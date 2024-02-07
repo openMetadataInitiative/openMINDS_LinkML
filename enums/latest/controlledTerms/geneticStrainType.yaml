@@ -1,0 +1,18 @@
+GeneticStrainType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/GeneticStrainType
+  permissible_values:
+    conditional knockin ready:
+      description: null
+    conditional knockout ready:
+      description: null
+    conditional ready:
+      description: null
+    knockin:
+      description: null
+    knockout:
+      description: null
+    transgenic:
+      description: null
+    wildtype:
+      description: null
+  title: Genetic strain type

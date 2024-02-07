@@ -1,0 +1,21 @@
+QualitativeOverlap:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/QualitativeOverlap
+  permissible_values:
+    is homologous to:
+      description: A set/object (A) has the same relative position, function, or structure
+        as a set/object (B).
+    is identical to:
+      description: A set/object (A) is identical to another set/object (B) if they
+        look exactly the same.
+    is subset of:
+      description: A set/object (A) is a subset of another set/object (B) if (A) and
+        (B) are not equal, but all elements/incidents of (A) are also elements/incidents
+        of (B).
+    is superset of:
+      description: A set/object (A) is a superset of another set/object (B) if (A)
+        and (B) are not equal, but all elements/incidents of (B) are also elements/incidents
+        of (A).
+    partially overlaps with:
+      description: Two sets/objects (A and B) partially overlap when some elements/incidents
+        are part of both original objects (A and B).
+  title: Qualitative overlap

@@ -1,0 +1,14 @@
+EthicsAssessment:
+  description: Structured information on the ethics assessment of a dataset.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/EthicsAssessment
+  permissible_values:
+    EU compliant:
+      description: Data are ethically approved in compliance with EU law. No additional
+        ethics assessment was made by the data sharing initiative.
+    EU compliant +:
+      description: Data are ethically approved in compliance with EU law and an additional
+        assessment was made by the data sharing initiative.
+    not required:
+      description: An ethics assessment is 'not required' when no ethics approval
+        was needed to conduct the study.
+  title: Ethics assessment

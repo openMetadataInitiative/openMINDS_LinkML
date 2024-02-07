@@ -1,0 +1,22 @@
+ContributionType:
+  description: Structured information on the type of contribution a person or organization
+    performed.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/ContributionType
+  permissible_values:
+    coordination:
+      description: null
+    data collection:
+      description: null
+    data management:
+      description: null
+    data processing:
+      description: null
+    information technology support:
+      description: null
+    laboratory assistance:
+      description: null
+    marketing:
+      description: null
+    metadata management:
+      description: null
+  title: Contribution type

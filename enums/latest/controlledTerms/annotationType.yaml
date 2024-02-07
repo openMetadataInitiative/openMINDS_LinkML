@@ -1,0 +1,16 @@
+AnnotationType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/AnnotationType
+  permissible_values:
+    annotation contour line:
+      description: An 'annotation contour line' is a two-dimensional boundary of an
+        area of interest.
+    annotation mask:
+      description: An 'annotation mask' is a filled object masking an area or volume
+        of interest.
+    annotation point:
+      description: '''Annotation point(s)'' are individual point(s) that are annotated
+        with the same label.'
+    annotation surface:
+      description: An 'annotation surface' is a three-dimensional boundary of a volume
+        of interest.
+  title: Annotation type

@@ -8,9 +8,6 @@ ModelValidation:
       - range: Time
       range: string
     environment:
-      any_of:
-      - range: Environment
-      - range: WebServiceVersion
       required: true
     input:
       range: LocalFile

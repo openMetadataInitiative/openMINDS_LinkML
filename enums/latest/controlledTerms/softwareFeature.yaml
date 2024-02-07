@@ -1,0 +1,68 @@
+SoftwareFeature:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareFeature
+  permissible_values:
+    3D geometry data types:
+      description: null
+    3D scalar data types:
+      description: null
+    3D vector data types:
+      description: null
+    augmented reality:
+      description: null
+    commandline interface:
+      description: null
+    control:
+      description: null
+    data acquisition:
+      description: null
+    data processing:
+      description: null
+    desktop environment:
+      description: null
+    graph data types:
+      description: null
+    graphical user interface:
+      description: null
+    heterogeneous architecture:
+      description: null
+    interactive analysis:
+      description: null
+    matrix data types:
+      description: null
+    metadata data types:
+      description: null
+    mobile device:
+      description: null
+    modelling:
+      description: null
+    parallel programming:
+      description: null
+    performance measurement:
+      description: null
+    positional data types:
+      description: null
+    presentation visualisation:
+      description: null
+    profiling:
+      description: null
+    provenance:
+      description: null
+    raster image data types:
+      description: null
+    scripting interface:
+      description: null
+    simulation:
+      description: null
+    statistical data types:
+      description: null
+    tensor data types:
+      description: null
+    tiled display wall:
+      description: null
+    time series data types:
+      description: null
+    vector image data types:
+      description: null
+    virtual reality:
+      description: null
+  title: Software feature

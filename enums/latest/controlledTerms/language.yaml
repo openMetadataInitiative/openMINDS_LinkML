@@ -1,0 +1,23 @@
+Language:
+  description: Structured information on the available language setting.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/Language
+  permissible_values:
+    Dutch:
+      description: null
+    English:
+      description: null
+    French:
+      description: null
+    German:
+      description: null
+    Greek:
+      description: null
+    Italian:
+      description: null
+    Norwegian:
+      description: null
+    Spanish:
+      description: null
+    Swedish:
+      description: null
+  title: Language

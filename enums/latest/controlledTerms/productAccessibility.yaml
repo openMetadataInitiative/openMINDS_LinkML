@@ -1,0 +1,17 @@
+ProductAccessibility:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/ProductAccessibility
+  permissible_values:
+    controlled access:
+      description: With 'controlled access' selected, data and metadata are both released,
+        but data are only available for users after they logged in and authenticated
+        themselves.
+    free access:
+      description: With 'free access' selected, data and metadata are both released
+        and become immediately available without any access restrictions.
+    restricted access:
+      description: With 'restricted access' selected, metadata are released, but data
+        remain on an access restricted server.
+    under embargo:
+      description: With 'under embargo' selected, metadata are released, but data
+        remain unavailable for the public until the embargo is lifted.
+  title: Product accessibility

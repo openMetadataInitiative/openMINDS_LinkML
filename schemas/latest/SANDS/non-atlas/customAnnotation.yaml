@@ -3,6 +3,9 @@ CustomAnnotation:
   description: null
   slot_usage:
     coordinateSpace:
+      any_of:
+      - range: CommonCoordinateSpaceVersion
+      - range: CustomCoordinateSpace
       required: true
     criteriaQualityType:
       required: true

@@ -1,0 +1,6 @@
+OlfactoryStimulusType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/OlfactoryStimulusType
+  permissible_values:
+    floral odor:
+      description: Any chemical compound that smells floral.
+  title: Olfactory stimulus type

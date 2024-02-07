@@ -1,0 +1,17 @@
+LearningResourceType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/LearningResourceType
+  permissible_values:
+    developer documentation:
+      description: Documentation for the developers of a resource.
+    interactive tutorial:
+      description: A tutorial presented in an interactive format, for example a Jupyter
+        notebook.
+    slide deck:
+      description: A set of slides for a visual presentation.
+    user documentation:
+      description: Documentation for the users of a resource.
+    video presentation:
+      description: A video recorded presentation.
+    video tutorial:
+      description: A tutorial presented as a video.
+  title: Learning resource type

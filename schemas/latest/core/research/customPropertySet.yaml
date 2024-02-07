@@ -12,6 +12,11 @@ CustomPropertySet:
       - range: PropertyValueList
       required: true
     relevantFor:
+      any_of:
+      - range: AnalysisTechnique
+      - range: StimulationApproach
+      - range: StimulationTechnique
+      - range: Technique
       required: true
   slots:
   - id
