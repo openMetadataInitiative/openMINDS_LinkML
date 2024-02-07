@@ -5,13 +5,7 @@ AnatomicalEntity:
     hasParent:
       range: AnatomicalEntity
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: string
-    otherAnatomicalRelation:
-      list_elements_unique: true
-      multivalued: true
   slots:
   - id
   - hasParent

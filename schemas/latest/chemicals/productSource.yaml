@@ -5,15 +5,14 @@ ProductSource:
   slot_usage:
     digitalIdentifier:
       range: RRID
-    identifier:
-      range: string
     productName:
-      range: string
       required: true
     provider:
+      any_of:
+      - range: Consortium
+      - range: Organization
+      - range: Person
       required: true
-    purity:
-      inlined: true
   slots:
   - id
   - digitalIdentifier

@@ -3,11 +3,8 @@ FilePathPattern:
   description: null
   slot_usage:
     groupingType:
-      list_elements_unique: true
-      multivalued: true
       required: true
     regex:
-      range: ECMA262
       required: true
   slots:
   - id

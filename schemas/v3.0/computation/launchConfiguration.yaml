@@ -2,16 +2,8 @@ LaunchConfiguration:
   class_uri: https://openminds.ebrains.eu/computation/LaunchConfiguration
   description: Structured information about the launch of a computational process.
   slot_usage:
-    argument:
-      multivalued: true
-      range: string
-    description:
-      range: string
     executable:
-      range: string
       required: true
-    name:
-      range: string
   slots:
   - id
   - argument

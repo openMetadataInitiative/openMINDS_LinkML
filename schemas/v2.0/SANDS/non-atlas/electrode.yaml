@@ -3,14 +3,9 @@ Electrode:
   description: Structured information on an electrode.
   slot_usage:
     electrodeContact:
-      list_elements_unique: true
-      multivalued: true
       required: true
     internalIdentifier:
-      range: string
       required: true
-    lookupLabel:
-      range: string
   slots:
   - id
   - electrodeContact

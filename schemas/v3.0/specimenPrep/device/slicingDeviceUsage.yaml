@@ -5,31 +5,18 @@ SlicingDeviceUsage:
     device:
       range: SlicingDevice
       required: true
-    lookupLabel:
-      range: string
     metadataLocation:
-      list_elements_unique: true
-      multivalued: true
       range: File
-    oscillationAmplitude:
-      inlined: true
     sliceThickness:
-      inlined: true
       required: true
     slicingAngle:
-      inlined: true
-      multivalued: true
       range: QuantitativeValue
     slicingPlane:
       required: true
-    slicingSpeed:
-      inlined: true
     usedSpecimen:
       any_of:
       - range: SubjectState
       - range: TissueSampleState
-    vibrationFrequency:
-      inlined: true
   slots:
   - id
   - device

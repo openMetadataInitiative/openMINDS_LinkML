@@ -11,10 +11,7 @@ ServiceLink:
       - range: LivePaperResourceItem
       - range: ParcellationEntityVersion
       required: true
-    displayLabel:
-      range: string
     openDataIn:
-      range: Uri
       required: true
     service:
       range: Service

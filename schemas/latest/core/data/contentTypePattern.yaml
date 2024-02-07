@@ -4,10 +4,7 @@ ContentTypePattern:
   slot_usage:
     contentType:
       required: true
-    lookupLabel:
-      range: string
     regex:
-      range: ECMA262
       required: true
   slots:
   - id

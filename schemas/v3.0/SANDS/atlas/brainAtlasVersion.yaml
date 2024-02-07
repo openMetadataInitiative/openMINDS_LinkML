@@ -2,93 +2,55 @@ BrainAtlasVersion:
   class_uri: https://openminds.ebrains.eu/sands/BrainAtlasVersion
   description: Structured information on a brain atlas (version level).
   slot_usage:
-    abbreviation:
-      range: string
     accessibility:
       required: true
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     coordinateSpace:
       range: CommonCoordinateSpaceVersion
       required: true
-    copyright:
-      inlined: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
-    description:
-      range: string
     digitalIdentifier:
       any_of:
       - range: DOI
       - range: ISBN
       - range: RRID
     fullDocumentation:
+      any_of:
+      - range: DOI
+      - range: File
+      - range: WebResource
       required: true
-    fullName:
-      range: string
-    funding:
-      list_elements_unique: true
-      multivalued: true
     hasTerminology:
-      inlined: true
       range: ParcellationTerminologyVersion
       required: true
-    homepage:
-      range: Uri
-    howToCite:
-      range: string
     isAlternativeVersionOf:
-      list_elements_unique: true
-      multivalued: true
       range: BrainAtlasVersion
     isNewVersionOf:
       range: BrainAtlasVersion
     keyword:
-      list_elements_unique: true
-      multivalued: true
       range: ActionStatusType
     license:
       range: License
       required: true
-    majorVersionIdentifier:
-      range: string
-    ontologyIdentifier:
-      range: Uri
-    otherContribution:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
     relatedPublication:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
     releaseDate:
-      range: Date
       required: true
     shortName:
-      range: string
       required: true
     supportChannel:
       any_of:
       - range: Uri
-      list_elements_unique: true
-      multivalued: true
       range: string
     type:
       range: AtlasType
     usedSpecimen:
-      list_elements_unique: true
-      multivalued: true
       range: Subject
     versionIdentifier:
-      range: string
       required: true
     versionInnovation:
-      range: string
       required: true
   slots:
   - id

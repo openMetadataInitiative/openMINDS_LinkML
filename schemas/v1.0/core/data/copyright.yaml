@@ -3,13 +3,9 @@ Copyright:
   description: Structured information on the copyright.
   slot_usage:
     holder:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
       required: true
     year:
-      pattern: ([0-9]{4}])
-      range: string
       required: true
   slots:
   - id

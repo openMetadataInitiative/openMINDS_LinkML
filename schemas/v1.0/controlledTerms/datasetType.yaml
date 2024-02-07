@@ -2,15 +2,8 @@ DatasetType:
   class_uri: https://openminds.ebrains.eu/controlledTerms/DatasetType
   description: Structured information on the provided data type.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: string
   slots:
   - id
   - definition

@@ -3,10 +3,8 @@ Ellipse:
   description: null
   slot_usage:
     semiMajorAxis:
-      inlined: true
       required: true
     semiMinorAxis:
-      inlined: true
       required: true
   slots:
   - id

@@ -2,16 +2,9 @@ ChemicalMixture:
   class_uri: https://openminds.ebrains.eu/chemicals/ChemicalMixture
   description: Structured information about a mixture of chemical substances.
   slot_usage:
-    additionalRemarks:
-      range: string
     hasPart:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       range: AmountOfChemical
       required: true
-    name:
-      range: string
     type:
       range: ChemicalMixtureType
       required: true

@@ -7,9 +7,6 @@ Image:
     definedIn:
       required: true
     voxelSize:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       required: true
   slots:
   - id

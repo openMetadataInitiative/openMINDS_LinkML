@@ -3,10 +3,8 @@ ParameterSetting:
   description: Structured information on a used parameter setting.
   slot_usage:
     description:
-      range: string
       required: true
     name:
-      range: string
       required: true
     relevantFor:
       required: true

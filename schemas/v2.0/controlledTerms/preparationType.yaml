@@ -2,15 +2,8 @@ PreparationType:
   class_uri: https://openminds.ebrains.eu/controlledTerms/PreparationType
   description: null
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: Uri
   slots:
   - id
   - definition

@@ -3,7 +3,6 @@ StringParameter:
   description: null
   slot_usage:
     name:
-      range: string
       required: true
     value:
       range: string

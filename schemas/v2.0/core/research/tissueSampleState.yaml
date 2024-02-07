@@ -2,18 +2,8 @@ TissueSampleState:
   class_uri: https://openminds.ebrains.eu/core/TissueSampleState
   description: Structured information on a temporary state of a tissue sample.
   slot_usage:
-    additionalRemarks:
-      range: string
-    age:
-      inlined: true
-    lookupLabel:
-      range: string
     pathology:
-      list_elements_unique: true
-      multivalued: true
       range: Disease
-    weight:
-      inlined: true
   slots:
   - id
   - additionalRemarks

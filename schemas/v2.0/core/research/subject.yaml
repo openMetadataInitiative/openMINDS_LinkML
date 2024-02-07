@@ -5,19 +5,12 @@ Subject:
     biologicalSex:
       required: true
     internalIdentifier:
-      range: string
       required: true
     isPartOf:
-      list_elements_unique: true
-      multivalued: true
       range: SubjectGroup
-    lookupLabel:
-      range: string
     species:
       required: true
     studiedState:
-      list_elements_unique: true
-      multivalued: true
       range: SubjectState
       required: true
   slots:

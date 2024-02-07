@@ -11,11 +11,7 @@ TissueSampleSlicing:
       - range: TissueSampleCollectionState
       - range: TissueSampleState
     output:
-      list_elements_unique: true
-      multivalued: true
       range: TissueSampleCollectionState
-    temperature:
-      inlined: true
   slots:
   - id
   - device

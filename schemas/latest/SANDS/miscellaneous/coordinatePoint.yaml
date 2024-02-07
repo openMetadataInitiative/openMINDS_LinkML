@@ -5,8 +5,6 @@ CoordinatePoint:
     coordinateSpace:
       required: true
     coordinates:
-      inlined: true
-      multivalued: true
       required: true
   slots:
   - id

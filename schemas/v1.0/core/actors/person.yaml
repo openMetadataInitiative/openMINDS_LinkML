@@ -2,16 +2,9 @@ Person:
   class_uri: https://openminds.ebrains.eu/core/Person
   description: Structured information on a person.
   slot_usage:
-    digitalIdentifier:
-      list_elements_unique: true
-      multivalued: true
     email:
-      range: string
       required: true
-    familyName:
-      range: string
     givenName:
-      range: string
       required: true
   slots:
   - id

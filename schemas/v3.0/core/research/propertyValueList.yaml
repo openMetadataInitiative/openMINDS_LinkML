@@ -2,12 +2,7 @@ PropertyValueList:
   class_uri: https://openminds.ebrains.eu/core/PropertyValueList
   description: An identifiable list of property-value pairs.
   slot_usage:
-    lookupLabel:
-      range: string
     propertyValuePair:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       range: NumericalProperty
       required: true
   slots:

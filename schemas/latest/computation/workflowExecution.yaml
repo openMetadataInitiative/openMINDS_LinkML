@@ -7,8 +7,6 @@ WorkflowExecution:
       - range: Configuration
       - range: File
     stage:
-      list_elements_unique: true
-      multivalued: true
       range: DataAnalysis
   slots:
   - id

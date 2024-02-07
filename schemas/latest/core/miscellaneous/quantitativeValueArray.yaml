@@ -3,21 +3,7 @@ QuantitativeValueArray:
   description: A representation of an array of quantitative values, optionally with
     uncertainties.
   slot_usage:
-    negativeUncertainties:
-      any_of:
-      - int
-      - float
-      multivalued: true
-    positiveUncertainties:
-      any_of:
-      - int
-      - float
-      multivalued: true
     values:
-      any_of:
-      - int
-      - float
-      multivalued: true
       required: true
   slots:
   - id

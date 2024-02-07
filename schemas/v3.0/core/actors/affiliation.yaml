@@ -3,12 +3,11 @@ Affiliation:
   description: Structured information about a relationship between two entities, such
     as a person and their employer.
   slot_usage:
-    endDate:
-      range: Date
     memberOf:
+      any_of:
+      - range: Consortium
+      - range: Organization
       required: true
-    startDate:
-      range: Date
   slots:
   - id
   - endDate

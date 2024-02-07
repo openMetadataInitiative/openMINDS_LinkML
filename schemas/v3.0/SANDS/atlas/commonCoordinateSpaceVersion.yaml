@@ -2,95 +2,52 @@ CommonCoordinateSpaceVersion:
   class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion
   description: null
   slot_usage:
-    abbreviation:
-      range: string
     accessibility:
       required: true
     anatomicalAxesOrientation:
       required: true
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     axesOrigin:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       required: true
-    copyright:
-      inlined: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
-    defaultImage:
-      list_elements_unique: true
-      multivalued: true
-    description:
-      range: string
     digitalIdentifier:
       any_of:
       - range: DOI
       - range: ISBN
       - range: RRID
     fullDocumentation:
+      any_of:
+      - range: DOI
+      - range: File
+      - range: WebResource
       required: true
-    fullName:
-      range: string
-    funding:
-      list_elements_unique: true
-      multivalued: true
-    homepage:
-      range: Uri
-    howToCite:
-      range: string
     isAlternativeVersionOf:
-      list_elements_unique: true
-      multivalued: true
       range: CommonCoordinateSpaceVersion
     isNewVersionOf:
       range: CommonCoordinateSpaceVersion
     keyword:
-      list_elements_unique: true
-      multivalued: true
       range: ActionStatusType
     license:
       range: License
     nativeUnit:
       required: true
-    ontologyIdentifier:
-      list_elements_unique: true
-      multivalued: true
-      range: Uri
-    otherContribution:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
     relatedPublication:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
     releaseDate:
-      range: Date
       required: true
     shortName:
-      range: string
       required: true
     supportChannel:
       any_of:
       - range: Uri
-      list_elements_unique: true
-      multivalued: true
       range: string
     usedSpecimen:
-      list_elements_unique: true
-      multivalued: true
       range: Subject
     versionIdentifier:
-      range: string
       required: true
     versionInnovation:
-      range: string
       required: true
   slots:
   - id

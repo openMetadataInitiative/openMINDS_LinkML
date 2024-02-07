@@ -2,18 +2,10 @@ Organization:
   class_uri: https://openminds.ebrains.eu/core/Organization
   description: Structured information on an organization.
   slot_usage:
-    digitalIdentifier:
-      list_elements_unique: true
-      multivalued: true
     fullName:
-      range: string
       required: true
     hasParent:
       range: Organization
-    homepage:
-      range: string
-    shortName:
-      range: string
   slots:
   - id
   - digitalIdentifier

@@ -2,26 +2,10 @@ SubjectGroup:
   class_uri: https://openminds.ebrains.eu/core/SubjectGroup
   description: null
   slot_usage:
-    additionalRemarks:
-      range: string
-    biologicalSex:
-      list_elements_unique: true
-      multivalued: true
-    internalIdentifier:
-      range: string
-    lookupLabel:
-      range: string
-    numberOfSubjects:
-      minimum_value: 2
-      range: int
     species:
-      list_elements_unique: true
-      multivalued: true
       range: Species
       required: true
     studiedState:
-      list_elements_unique: true
-      multivalued: true
       range: SubjectGroupState
       required: true
   slots:

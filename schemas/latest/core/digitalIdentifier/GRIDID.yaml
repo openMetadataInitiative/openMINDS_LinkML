@@ -4,7 +4,6 @@ GRIDID:
   slot_usage:
     identifier:
       pattern: ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
-      range: string
       required: true
   slots:
   - id

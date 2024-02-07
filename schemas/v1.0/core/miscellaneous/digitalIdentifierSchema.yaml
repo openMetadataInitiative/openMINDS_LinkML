@@ -2,10 +2,6 @@ DigitalIdentifierSchema:
   class_uri: https://openminds.ebrains.eu/core/DigitalIdentifierSchema
   description: Structured information on a digital identifier schema.
   slot_usage:
-    IRI:
-      range: string
-    identifierPattern:
-      range: string
     type:
       range: string
       required: true

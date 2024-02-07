@@ -6,7 +6,6 @@ SoftwareAgent:
     environment:
       range: Environment
     name:
-      range: string
       required: true
     software:
       required: true

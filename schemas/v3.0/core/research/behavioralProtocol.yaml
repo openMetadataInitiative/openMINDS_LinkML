@@ -4,24 +4,14 @@ BehavioralProtocol:
     human or animal behavior.
   slot_usage:
     describedIn:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
     description:
-      range: string
       required: true
-    internalIdentifier:
-      range: string
     name:
-      range: string
       required: true
     stimulation:
-      list_elements_unique: true
-      multivalued: true
       range: StimulationApproach
     stimulusType:
-      list_elements_unique: true
-      multivalued: true
       range: AuditoryStimulusType
   slots:
   - id

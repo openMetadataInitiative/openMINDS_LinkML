@@ -3,7 +3,6 @@ StockNumber:
   description: null
   slot_usage:
     identifier:
-      range: string
       required: true
     vendor:
       required: true

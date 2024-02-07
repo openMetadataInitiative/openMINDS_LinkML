@@ -4,27 +4,13 @@ File:
     URL.
   slot_usage:
     IRI:
-      range: Uri
       required: true
-    contentDescription:
-      range: string
     dataType:
-      list_elements_unique: true
-      multivalued: true
       range: DataType
-    hash:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
     isPartOf:
-      list_elements_unique: true
-      multivalued: true
       range: FileBundle
     name:
-      range: string
       required: true
-    storageSize:
-      inlined: true
   slots:
   - id
   - IRI

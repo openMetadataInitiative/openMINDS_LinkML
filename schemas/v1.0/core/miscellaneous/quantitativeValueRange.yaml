@@ -3,10 +3,8 @@ QuantitativeValueRange:
   description: A representation of a range of quantitative values.
   slot_usage:
     maxValue:
-      inlined: true
       required: true
     minValue:
-      inlined: true
       required: true
   slots:
   - id

@@ -4,11 +4,8 @@ NumericalProperty:
     value is a number.
   slot_usage:
     name:
-      range: string
       required: true
     value:
-      inlined: true
-      multivalued: true
       range: QuantitativeValue
       required: true
   slots:

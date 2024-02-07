@@ -2,25 +2,12 @@ Organization:
   class_uri: https://openminds.ebrains.eu/core/Organization
   description: Structured information on an organization.
   slot_usage:
-    affiliation:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
     digitalIdentifier:
-      list_elements_unique: true
-      multivalued: true
       range: GRIDID
     fullName:
-      range: string
       required: true
     hasParent:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
-    homepage:
-      range: Uri
-    shortName:
-      range: string
   slots:
   - id
   - affiliation

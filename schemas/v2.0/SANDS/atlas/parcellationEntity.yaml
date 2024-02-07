@@ -7,27 +7,17 @@ ParcellationEntity:
     hasParent:
       range: ParcellationEntity
     isPartOf:
-      list_elements_unique: true
-      multivalued: true
       range: ParcellationTerminology
       required: true
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: Uri
     relatedUBERONTerm:
       required: true
     relationAssessment:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       range: QualitativeRelationAssessment
     versionIdentifier:
-      range: string
       required: true
     versionInnovation:
-      range: string
       required: true
   slots:
   - id

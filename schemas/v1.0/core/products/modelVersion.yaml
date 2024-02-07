@@ -7,21 +7,12 @@ ModelVersion:
     accessibility:
       required: true
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
-    copyright:
-      inlined: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
     description:
-      range: string
       required: true
     developer:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
       required: true
     digitalIdentifier:
@@ -31,56 +22,30 @@ ModelVersion:
     fullDocumentation:
       required: true
     fullName:
-      range: string
       required: true
     funding:
-      list_elements_unique: true
-      multivalued: true
       required: true
     hasAlternativeVersion:
-      list_elements_unique: true
-      multivalued: true
       range: ModelVersion
     hasSupplementVersion:
-      list_elements_unique: true
-      multivalued: true
       range: ModelVersion
-    homepage:
-      range: string
     isNewVersionOf:
       range: ModelVersion
-    keyword:
-      list_elements_unique: true
-      multivalued: true
-      range: string
     license:
       required: true
-    otherContribution:
-      list_elements_unique: true
-      multivalued: true
-    relatedPublication:
-      list_elements_unique: true
-      multivalued: true
     releaseDate:
-      range: string
       required: true
     repository:
       required: true
     scope:
       required: true
     shortName:
-      range: string
       required: true
     studyTarget:
-      list_elements_unique: true
-      multivalued: true
       range: BiologicalSex
       required: true
     versionIdentifier:
-      range: string
       required: true
-    versionInnovation:
-      range: string
   slots:
   - id
   - abstractionLevel

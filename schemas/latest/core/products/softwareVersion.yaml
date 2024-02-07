@@ -5,24 +5,12 @@ SoftwareVersion:
     accessibility:
       required: true
     applicationCategory:
-      list_elements_unique: true
-      multivalued: true
       required: true
-    copyright:
-      inlined: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
-    description:
-      range: string
     developer:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     device:
-      list_elements_unique: true
-      multivalued: true
       range: OperatingDevice
       required: true
     digitalIdentifier:
@@ -31,86 +19,43 @@ SoftwareVersion:
       - range: SWHID
       - range: RRID
     feature:
-      list_elements_unique: true
-      multivalued: true
       required: true
     fullDocumentation:
+      any_of:
+      - range: DOI
+      - range: File
+      - range: WebResource
       required: true
-    fullName:
-      range: string
-    funding:
-      list_elements_unique: true
-      multivalued: true
     hasPart:
-      list_elements_unique: true
-      multivalued: true
       range: SoftwareVersion
-    homepage:
-      range: Uri
-    howToCite:
-      range: string
-    inputFormat:
-      list_elements_unique: true
-      multivalued: true
     isAlternativeVersionOf:
-      list_elements_unique: true
-      multivalued: true
       range: SoftwareVersion
     isNewVersionOf:
       range: SoftwareVersion
     keyword:
-      list_elements_unique: true
-      multivalued: true
       range: ActionStatusType
     language:
-      list_elements_unique: true
-      multivalued: true
       required: true
     license:
-      list_elements_unique: true
-      multivalued: true
       range: License
       required: true
     operatingSystem:
-      list_elements_unique: true
-      multivalued: true
       required: true
-    otherContribution:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
-    outputFormat:
-      list_elements_unique: true
-      multivalued: true
     programmingLanguage:
-      list_elements_unique: true
-      multivalued: true
       required: true
     relatedPublication:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
     releaseDate:
-      range: Date
       required: true
-    requirement:
-      list_elements_unique: true
-      multivalued: true
-      range: string
     shortName:
-      range: string
       required: true
     supportChannel:
       any_of:
       - range: Uri
-      list_elements_unique: true
-      multivalued: true
       range: string
     versionIdentifier:
-      range: string
       required: true
     versionInnovation:
-      range: string
       required: true
   slots:
   - id

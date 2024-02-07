@@ -4,7 +4,6 @@ CustomPropertySet:
     in an openMINDS schema.
   slot_usage:
     context:
-      range: string
       required: true
     dataLocation:
       any_of:

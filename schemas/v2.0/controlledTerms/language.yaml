@@ -2,15 +2,8 @@ Language:
   class_uri: https://openminds.ebrains.eu/controlledTerms/Language
   description: Structured information on the available language setting.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: Uri
   slots:
   - id
   - definition

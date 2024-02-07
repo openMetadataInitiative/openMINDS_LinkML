@@ -6,7 +6,6 @@ AccountInformation:
       range: WebService
       required: true
     userName:
-      range: string
       required: true
   slots:
   - id

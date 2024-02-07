@@ -3,15 +3,8 @@ CriteriaQualityType:
   description: Structured information on the quality type of the defined criteria
     for a measurement.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: Uri
   slots:
   - id
   - definition

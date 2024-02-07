@@ -3,15 +3,8 @@ BehavioralTask:
   description: Structured information on the behavioral task that had to be performed
     by a subject.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: Uri
   slots:
   - id
   - definition

@@ -2,22 +2,12 @@ LocalFile:
   class_uri: https://openminds.ebrains.eu/computation/LocalFile
   description: Structured information about a file that is not accessible via a URL.
   slot_usage:
-    contentDescription:
-      range: string
     dataType:
-      list_elements_unique: true
-      multivalued: true
       range: DataType
-    hash:
-      inlined: true
     name:
-      range: string
       required: true
     path:
-      range: string
       required: true
-    storageSize:
-      inlined: true
   slots:
   - id
   - contentDescription

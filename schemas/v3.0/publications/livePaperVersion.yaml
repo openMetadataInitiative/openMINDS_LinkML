@@ -3,77 +3,46 @@ LivePaperVersion:
   description: null
   slot_usage:
     about:
-      list_elements_unique: true
-      multivalued: true
       range: DatasetVersion
     accessibility:
       required: true
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
-    copyright:
-      inlined: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
-    description:
-      range: string
     digitalIdentifier:
       range: DOI
       required: true
     fullDocumentation:
+      any_of:
+      - range: DOI
+      - range: File
+      - range: WebResource
       required: true
-    fullName:
-      range: string
-    funding:
-      list_elements_unique: true
-      multivalued: true
-    homepage:
-      range: Uri
-    howToCite:
-      range: string
     isAlternativeVersionOf:
-      list_elements_unique: true
-      multivalued: true
       range: LivePaperVersion
     isNewVersionOf:
       range: LivePaperVersion
     keyword:
-      list_elements_unique: true
-      multivalued: true
       range: ActionStatusType
     license:
       range: License
       required: true
     modificationDate:
       range: Datetime
-    otherContribution:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
     relatedPublication:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
     releaseDate:
-      range: Date
       required: true
     shortName:
-      range: string
       required: true
     supportChannel:
       any_of:
       - range: Uri
-      list_elements_unique: true
-      multivalued: true
       range: string
     versionIdentifier:
-      range: string
       required: true
     versionInnovation:
-      range: string
       required: true
   slots:
   - id

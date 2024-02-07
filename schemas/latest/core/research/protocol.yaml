@@ -2,19 +2,18 @@ Protocol:
   class_uri: https://openminds.ebrains.eu/core/Protocol
   description: Structured information on a research project.
   slot_usage:
+    describedIn:
+      any_of:
+      - range: DOI
+      - range: File
+      - range: WebResource
     description:
-      range: string
       required: true
     name:
-      range: string
       required: true
     stimulusType:
-      list_elements_unique: true
-      multivalued: true
       range: AuditoryStimulusType
     technique:
-      list_elements_unique: true
-      multivalued: true
       range: AnalysisTechnique
       required: true
   slots:

@@ -5,79 +5,40 @@ MetaDataModelVersion:
     accessibility:
       required: true
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
-    copyright:
-      inlined: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
     description:
-      range: string
       required: true
     developer:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
     digitalIdentifier:
       required: true
     fullDocumentation:
       required: true
     fullName:
-      range: string
       required: true
     funding:
-      list_elements_unique: true
-      multivalued: true
       required: true
     hasAlternativeVersion:
-      list_elements_unique: true
-      multivalued: true
       range: DatasetVersion
     hasSupplementVersion:
-      list_elements_unique: true
-      multivalued: true
       range: DatasetVersion
-    homepage:
-      range: string
     isNewVersionOf:
       range: MetaDataModelVersion
-    keyword:
-      list_elements_unique: true
-      multivalued: true
-      range: string
     license:
       required: true
-    otherContribution:
-      list_elements_unique: true
-      multivalued: true
-    relatedPublication:
-      list_elements_unique: true
-      multivalued: true
     releaseDate:
-      range: string
       required: true
     repository:
       required: true
-    serializationFormat:
-      list_elements_unique: true
-      multivalued: true
     shortName:
-      range: string
       required: true
-    specificationFormat:
-      list_elements_unique: true
-      multivalued: true
     type:
       range: MetaDataModelType
       required: true
     versionIdentifier:
-      range: string
       required: true
-    versionInnovation:
-      range: string
   slots:
   - id
   - accessibility

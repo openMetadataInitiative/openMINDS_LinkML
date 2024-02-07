@@ -4,26 +4,12 @@ Annotation:
   slot_usage:
     criteriaQualityType:
       required: true
-    displayColor:
-      maximum_value: 255
-      multivalued: true
-      range: int
-    inspiredBy:
-      list_elements_unique: true
-      multivalued: true
     internalIdentifier:
-      range: string
       required: true
     laterality:
-      list_elements_unique: true
-      multivalued: true
       required: true
     namingTerm:
-      list_elements_unique: true
-      multivalued: true
       required: true
-    relatedAtlasTerm:
-      multivalued: true
   slots:
   - id
   - bestViewPoint

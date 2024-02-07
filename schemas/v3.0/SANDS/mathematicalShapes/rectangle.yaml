@@ -3,10 +3,8 @@ Rectangle:
   description: null
   slot_usage:
     length:
-      inlined: true
       required: true
     width:
-      inlined: true
       required: true
   slots:
   - id

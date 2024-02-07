@@ -5,15 +5,8 @@ CustomCoordinateSpace:
     anatomicalAxesOrientation:
       required: true
     axesOrigin:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       required: true
-    defaultImage:
-      list_elements_unique: true
-      multivalued: true
     name:
-      range: string
       required: true
     nativeUnit:
       required: true

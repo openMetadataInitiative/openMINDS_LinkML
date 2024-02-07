@@ -3,16 +3,15 @@ Measurement:
   description: Structured information about a measurement performed during a scientific
     experiment.
   slot_usage:
-    additionalRemarks:
-      range: string
     measuredQuantity:
       required: true
-    timestamp:
-      range: Datetime
+    measuredWith:
+      any_of:
+      - range: ElectrodeArrayUsage
+      - range: ElectrodeUsage
+      - range: PipetteUsage
+      - range: SlicingDeviceUsage
     value:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       range: QuantitativeValue
       required: true
   slots:

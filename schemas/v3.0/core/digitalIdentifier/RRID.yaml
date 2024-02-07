@@ -5,7 +5,6 @@ RRID:
   slot_usage:
     identifier:
       pattern: https://scicrunch.org/resolver/RRID:([A-Za-z]+)[_:]([A-Za-z0-9_:-]+)
-      range: string
       required: true
   slots:
   - id

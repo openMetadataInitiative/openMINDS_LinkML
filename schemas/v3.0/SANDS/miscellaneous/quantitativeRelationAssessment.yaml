@@ -6,7 +6,6 @@ QuantitativeRelationAssessment:
       range: ParcellationEntityVersion
       required: true
     quantitativeOverlap:
-      inlined: true
       required: true
   slots:
   - id

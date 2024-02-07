@@ -2,12 +2,8 @@ Periodical:
   class_uri: https://openminds.ebrains.eu/publications/Periodical
   description: null
   slot_usage:
-    abbreviation:
-      range: string
     digitalIdentifier:
       range: ISSN
-    name:
-      range: string
   slots:
   - id
   - abbreviation

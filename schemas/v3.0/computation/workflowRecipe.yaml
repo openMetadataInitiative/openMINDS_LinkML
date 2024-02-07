@@ -3,33 +3,20 @@ WorkflowRecipe:
   description: Structured information about the description of a prospective workflow.
   slot_usage:
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     description:
-      range: string
       required: true
     developer:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
       required: true
     digitalIdentifier:
       range: DOI
     fullName:
-      range: string
       required: true
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: WorkflowRecipeVersion
       required: true
-    homepage:
-      range: Uri
-    howToCite:
-      range: string
     shortName:
-      range: string
       required: true
   slots:
   - id

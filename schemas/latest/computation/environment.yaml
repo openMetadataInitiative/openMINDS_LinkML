@@ -5,16 +5,10 @@ Environment:
   slot_usage:
     configuration:
       range: Configuration
-    description:
-      range: string
     hardware:
       required: true
     name:
-      range: string
       required: true
-    software:
-      list_elements_unique: true
-      multivalued: true
   slots:
   - id
   - configuration

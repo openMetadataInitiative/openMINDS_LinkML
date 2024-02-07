@@ -2,18 +2,11 @@ CommonCoordinateSpace:
   class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpace
   description: null
   slot_usage:
-    abbreviation:
-      range: string
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     description:
-      range: string
       required: true
     digitalIdentifier:
       any_of:
@@ -21,23 +14,11 @@ CommonCoordinateSpace:
       - range: ISBN
       - range: RRID
     fullName:
-      range: string
       required: true
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: CommonCoordinateSpaceVersion
       required: true
-    homepage:
-      range: Uri
-    howToCite:
-      range: string
-    ontologyIdentifier:
-      list_elements_unique: true
-      multivalued: true
-      range: Uri
     shortName:
-      range: string
       required: true
     usedSpecies:
       required: true

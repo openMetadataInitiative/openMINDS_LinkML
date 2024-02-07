@@ -3,20 +3,11 @@ FileRepository:
   description: Structured information on a file repository.
   slot_usage:
     IRI:
-      range: Uri
       required: true
-    contentTypePattern:
-      list_elements_unique: true
-      multivalued: true
-    hash:
-      inlined: true
     hostedBy:
       required: true
     name:
-      range: string
       required: true
-    storageSize:
-      inlined: true
     type:
       range: FileRepositoryType
   slots:

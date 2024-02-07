@@ -2,44 +2,17 @@ Strain:
   class_uri: https://openminds.ebrains.eu/core/Strain
   description: null
   slot_usage:
-    alternateIdentifier:
-      list_elements_unique: true
-      multivalued: true
-      range: string
-    backgroundStrain:
-      list_elements_unique: true
-      multivalued: true
-    description:
-      range: string
     digitalIdentifier:
       range: RRID
     diseaseModel:
-      list_elements_unique: true
-      multivalued: true
       range: Disease
     geneticStrainType:
       required: true
-    laboratoryCode:
-      pattern: ^[A-Z]([a-z]?)+$
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      list_elements_unique: true
-      multivalued: true
-      range: Uri
-    phenotype:
-      range: string
     species:
       range: Species
       required: true
-    stockNumber:
-      inlined: true
-    synonym:
-      list_elements_unique: true
-      multivalued: true
-      range: string
   slots:
   - id
   - alternateIdentifier

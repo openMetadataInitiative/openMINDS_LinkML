@@ -4,14 +4,33 @@ Comment:
     or giving information about some entity.
   slot_usage:
     about:
+      any_of:
+      - range: ValidationTest
+      - range: ValidationTestVersion
+      - range: WorkflowRecipe
+      - range: WorkflowRecipeVersion
+      - range: Dataset
+      - range: DatasetVersion
+      - range: MetaDataModel
+      - range: MetaDataModelVersion
+      - range: Model
+      - range: ModelVersion
+      - range: Software
+      - range: SoftwareVersion
+      - range: WebService
+      - range: WebServiceVersion
+      - range: LivePaper
+      - range: LivePaperVersion
+      - range: BrainAtlas
+      - range: BrainAtlasVersion
+      - range: CommonCoordinateSpace
+      - range: CommonCoordinateSpaceVersion
       required: true
     comment:
-      range: string
       required: true
     commenter:
       required: true
     timestamp:
-      range: Datetime
       required: true
   slots:
   - id

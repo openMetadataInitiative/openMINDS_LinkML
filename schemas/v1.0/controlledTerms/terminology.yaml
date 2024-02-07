@@ -2,15 +2,8 @@ StudyTargetType:
   class_uri: https://openminds.ebrains.eu/controlledTerms/StudyTargetType
   description: Structured information on the general type of the study target.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: string
   slots:
   - id
   - definition

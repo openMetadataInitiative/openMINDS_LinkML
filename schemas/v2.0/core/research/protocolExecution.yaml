@@ -2,32 +2,15 @@ ProtocolExecution:
   class_uri: https://openminds.ebrains.eu/core/ProtocolExecution
   description: Structured information on a protocol execution.
   slot_usage:
-    description:
-      range: string
     input:
-      list_elements_unique: true
-      multivalued: true
       range: FileBundle
       required: true
-    lookupLabel:
-      range: string
     output:
-      list_elements_unique: true
-      multivalued: true
       range: FileBundle
       required: true
-    parameterSet:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
     protocol:
       required: true
-    semanticallyAnchoredTo:
-      list_elements_unique: true
-      multivalued: true
     studyTarget:
-      list_elements_unique: true
-      multivalued: true
       range: BiologicalSex
   slots:
   - id

@@ -3,15 +3,10 @@ MetaDataModel:
   description: null
   slot_usage:
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     description:
-      range: string
       required: true
     developer:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
       required: true
     digitalIdentifier:
@@ -19,19 +14,11 @@ MetaDataModel:
       - range: DOI
       - range: SWHID
     fullName:
-      range: string
       required: true
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: MetaDataModelVersion
       required: true
-    homepage:
-      range: Uri
-    howToCite:
-      range: string
     shortName:
-      range: string
       required: true
   slots:
   - id

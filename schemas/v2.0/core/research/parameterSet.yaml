@@ -3,12 +3,8 @@ ParameterSet:
   description: Structured information on a used parameter set.
   slot_usage:
     context:
-      range: string
       required: true
     parameter:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       range: NumericalParameter
       required: true
     relevantFor:

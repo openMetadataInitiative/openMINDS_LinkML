@@ -4,85 +4,48 @@ ModelVersion:
   slot_usage:
     accessibility:
       required: true
-    copyright:
-      inlined: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
-    description:
-      range: string
     developer:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     digitalIdentifier:
       any_of:
       - range: DOI
       - range: SWHID
     format:
-      list_elements_unique: true
-      multivalued: true
       required: true
     fullDocumentation:
+      any_of:
+      - range: DOI
+      - range: File
+      - range: WebResource
       required: true
-    fullName:
-      range: string
-    funding:
-      list_elements_unique: true
-      multivalued: true
-    homepage:
-      range: Uri
-    howToCite:
-      range: string
     inputData:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
     isAlternativeVersionOf:
-      list_elements_unique: true
-      multivalued: true
       range: ModelVersion
     isNewVersionOf:
       range: ModelVersion
     keyword:
-      list_elements_unique: true
-      multivalued: true
       range: ActionStatusType
     license:
-      list_elements_unique: true
-      multivalued: true
       range: License
       required: true
-    otherContribution:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
     outputData:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
     relatedPublication:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
     releaseDate:
-      range: Date
       required: true
     shortName:
-      range: string
       required: true
     supportChannel:
       any_of:
       - range: Uri
-      list_elements_unique: true
-      multivalued: true
       range: string
     versionIdentifier:
-      range: string
       required: true
     versionInnovation:
-      range: string
       required: true
   slots:
   - id

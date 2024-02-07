@@ -8,31 +8,20 @@ BrainAtlasVersion:
     digitalIdentifier:
       range: DOI
     fullName:
-      range: string
       required: true
     hasTerminology:
       required: true
-    howToCite:
-      range: string
     isAlternativeVersionOf:
-      list_elements_unique: true
-      multivalued: true
       range: BrainAtlasVersion
     isNewVersionOf:
       range: BrainAtlasVersion
-    ontologyIdentifier:
-      range: Uri
     releaseDate:
-      range: Date
       required: true
     shortName:
-      range: string
       required: true
     versionIdentifier:
-      range: string
       required: true
     versionInnovation:
-      range: string
       required: true
   slots:
   - id

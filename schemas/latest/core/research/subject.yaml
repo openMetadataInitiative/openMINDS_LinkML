@@ -2,19 +2,11 @@ Subject:
   class_uri: https://openminds.ebrains.eu/core/Subject
   description: Structured information on a subject.
   slot_usage:
-    internalIdentifier:
-      range: string
     isPartOf:
-      list_elements_unique: true
-      multivalued: true
       range: SubjectGroup
-    lookupLabel:
-      range: string
     species:
       required: true
     studiedState:
-      list_elements_unique: true
-      multivalued: true
       range: SubjectState
       required: true
   slots:

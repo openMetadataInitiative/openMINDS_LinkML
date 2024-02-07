@@ -9,8 +9,6 @@ AnatomicalEntityRelation:
       required: true
     qualitativeOverlap:
       required: true
-    quantitativeOverlap:
-      inlined: true
   slots:
   - id
   - criteria

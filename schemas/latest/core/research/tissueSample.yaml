@@ -3,27 +3,18 @@ TissueSample:
   description: Structured information on a tissue sample.
   slot_usage:
     anatomicalLocation:
-      list_elements_unique: true
-      multivalued: true
       range: CellType
-    internalIdentifier:
-      range: string
     isPartOf:
-      list_elements_unique: true
-      multivalued: true
       range: TissueSampleCollection
-    laterality:
-      list_elements_unique: true
-      multivalued: true
-    lookupLabel:
-      range: string
     origin:
+      any_of:
+      - range: CellType
+      - range: Organ
+      - range: OrganismSubstance
       required: true
     species:
       required: true
     studiedState:
-      list_elements_unique: true
-      multivalued: true
       range: TissueSampleState
       required: true
     type:

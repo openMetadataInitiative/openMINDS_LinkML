@@ -4,31 +4,20 @@ Dataset:
     or simulations (concept level).
   slot_usage:
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
       required: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
     description:
-      range: string
       required: true
     digitalIdentifier:
       range: DOI
     fullName:
-      range: string
       required: true
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: DatasetVersion
       required: true
-    howToCite:
-      range: string
     shortName:
-      range: string
       required: true
   slots:
   - id

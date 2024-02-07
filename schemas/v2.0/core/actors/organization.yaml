@@ -3,16 +3,11 @@ Organization:
   description: Structured information on an organization.
   slot_usage:
     digitalIdentifier:
-      list_elements_unique: true
-      multivalued: true
       range: GRIDID
     fullName:
-      range: string
       required: true
     hasParent:
       range: Organization
-    shortName:
-      range: string
   slots:
   - id
   - digitalIdentifier

@@ -4,21 +4,8 @@ ElectrodeContact:
   slot_usage:
     coordinatePoint:
       required: true
-    definedIn:
-      list_elements_unique: true
-      multivalued: true
     internalIdentifier:
-      range: string
       required: true
-    relatedRecording:
-      list_elements_unique: true
-      multivalued: true
-    relatedStimulation:
-      list_elements_unique: true
-      multivalued: true
-    visualizedIn:
-      list_elements_unique: true
-      multivalued: true
   slots:
   - id
   - coordinatePoint

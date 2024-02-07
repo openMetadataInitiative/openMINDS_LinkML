@@ -3,7 +3,6 @@ SingleColor:
   description: null
   slot_usage:
     value:
-      pattern: ^#[0-9A-Fa-f]{6}$
       range: string
       required: true
   slots:

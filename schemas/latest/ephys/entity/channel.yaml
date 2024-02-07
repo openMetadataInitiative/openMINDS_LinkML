@@ -3,7 +3,6 @@ Channel:
   description: null
   slot_usage:
     internalIdentifier:
-      range: string
       required: true
     unit:
       required: true

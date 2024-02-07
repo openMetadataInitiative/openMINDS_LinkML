@@ -2,22 +2,13 @@ Protocol:
   class_uri: https://openminds.ebrains.eu/core/Protocol
   description: Structured information on a research project.
   slot_usage:
-    behavioralTask:
-      list_elements_unique: true
-      multivalued: true
     description:
-      range: string
       required: true
     name:
-      range: string
       required: true
     studyOption:
-      list_elements_unique: true
-      multivalued: true
       range: BiologicalSex
     technique:
-      list_elements_unique: true
-      multivalued: true
       required: true
   slots:
   - id

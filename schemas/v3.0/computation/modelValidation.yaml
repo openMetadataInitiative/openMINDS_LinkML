@@ -3,60 +3,43 @@ ModelValidation:
   description: Structured information about a process of validating a computational
     model.
   slot_usage:
-    customPropertySet:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
-    description:
-      range: string
     endTime:
       any_of:
       - range: Time
       range: string
     environment:
+      any_of:
+      - range: Environment
+      - range: WebServiceVersion
       required: true
     input:
-      list_elements_unique: true
-      multivalued: true
       range: LocalFile
       required: true
-    lookupLabel:
-      range: string
     output:
-      list_elements_unique: true
-      multivalued: true
       range: LocalFile
       required: true
     performedBy:
-      list_elements_unique: true
-      multivalued: true
       range: SoftwareAgent
     resourceUsage:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       range: QuantitativeValue
-    score:
-      any_of:
-      - int
-      - float
     startTime:
       any_of:
       - range: Time
       range: string
       required: true
     studyTarget:
-      list_elements_unique: true
-      multivalued: true
       range: AuditoryStimulusType
-    tag:
-      list_elements_unique: true
-      multivalued: true
-      range: string
     technique:
-      list_elements_unique: true
-      multivalued: true
       range: AnalysisTechnique
+    wasInformedBy:
+      any_of:
+      - range: DataAnalysis
+      - range: DataCopy
+      - range: GenericComputation
+      - range: ModelValidation
+      - range: Optimization
+      - range: Simulation
+      - range: Visualization
   slots:
   - id
   - customPropertySet

@@ -2,19 +2,12 @@ BrainAtlas:
   class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
   description: Structured information on a brain atlas (concept level).
   slot_usage:
-    abbreviation:
-      range: string
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
       required: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     description:
-      range: string
       required: true
     digitalIdentifier:
       any_of:
@@ -22,25 +15,14 @@ BrainAtlas:
       - range: ISBN
       - range: RRID
     fullName:
-      range: string
       required: true
     hasTerminology:
-      inlined: true
       range: ParcellationTerminology
       required: true
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: BrainAtlasVersion
       required: true
-    homepage:
-      range: Uri
-    howToCite:
-      range: string
-    ontologyIdentifier:
-      range: Uri
     shortName:
-      range: string
       required: true
   slots:
   - id

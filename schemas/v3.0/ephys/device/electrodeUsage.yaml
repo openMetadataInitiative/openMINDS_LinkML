@@ -2,19 +2,21 @@ ElectrodeUsage:
   class_uri: https://openminds.ebrains.eu/ephys/ElectrodeUsage
   description: null
   slot_usage:
-    contactResistance:
-      inlined: true
+    anatomicalLocation:
+      any_of:
+      - range: CellType
+      - range: Organ
+      - range: OrganismSubstance
+      - range: SubcellularEntity
+      - range: UBERONParcellation
+      - range: CustomAnatomicalEntity
+      - range: ParcellationEntity
+      - range: ParcellationEntityVersion
     device:
       range: Electrode
       required: true
-    lookupLabel:
-      range: string
     metadataLocation:
-      list_elements_unique: true
-      multivalued: true
       range: File
-    spatialLocation:
-      inlined: true
     usedSpecimen:
       any_of:
       - range: SubjectState

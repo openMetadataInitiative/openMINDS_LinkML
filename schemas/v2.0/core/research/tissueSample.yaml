@@ -5,24 +5,14 @@ TissueSample:
     biologicalSex:
       required: true
     internalIdentifier:
-      range: string
       required: true
     isPartOf:
-      list_elements_unique: true
-      multivalued: true
       range: TissueSampleCollection
-    laterality:
-      list_elements_unique: true
-      multivalued: true
-    lookupLabel:
-      range: string
     origin:
       required: true
     species:
       required: true
     studiedState:
-      list_elements_unique: true
-      multivalued: true
       range: TissueSampleState
       required: true
     type:

@@ -3,18 +3,11 @@ License:
   description: Structured information on a used license.
   slot_usage:
     fullName:
-      range: string
       required: true
     legalCode:
-      range: Uri
       required: true
     shortName:
-      range: string
       required: true
-    webpage:
-      list_elements_unique: true
-      multivalued: true
-      range: Uri
   slots:
   - id
   - fullName

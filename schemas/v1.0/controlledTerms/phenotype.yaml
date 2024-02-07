@@ -2,15 +2,8 @@ Phenotype:
   class_uri: https://openminds.ebrains.eu/controlledTerms/Phenotype
   description: Structured information on the phenotype of a subject.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: string
   slots:
   - id
   - definition

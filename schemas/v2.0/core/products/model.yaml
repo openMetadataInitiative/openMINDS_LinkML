@@ -5,15 +5,10 @@ Model:
     abstractionLevel:
       required: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
     description:
-      range: string
       required: true
     developer:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
       required: true
     digitalIdentifier:
@@ -21,23 +16,15 @@ Model:
       - range: DOI
       - range: SWHID
     fullName:
-      range: string
       required: true
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: ModelVersion
       required: true
-    howToCite:
-      range: string
     scope:
       required: true
     shortName:
-      range: string
       required: true
     studyTarget:
-      list_elements_unique: true
-      multivalued: true
       range: BiologicalSex
       required: true
   slots:

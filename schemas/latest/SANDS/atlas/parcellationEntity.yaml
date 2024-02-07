@@ -2,31 +2,16 @@ ParcellationEntity:
   class_uri: https://openminds.ebrains.eu/sands/ParcellationEntity
   description: null
   slot_usage:
-    abbreviation:
-      range: string
-    alternateName:
-      list_elements_unique: true
-      multivalued: true
-      range: string
-    definition:
-      range: string
     hasParent:
-      list_elements_unique: true
-      multivalued: true
       range: ParcellationEntity
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: ParcellationEntityVersion
-    lookupLabel:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      list_elements_unique: true
-      multivalued: true
-      range: Uri
+    relatedUBERONTerm:
+      any_of:
+      - range: Organ
+      - range: UBERONParcellation
   slots:
   - id
   - abbreviation

@@ -4,7 +4,6 @@ ISBN:
   slot_usage:
     identifier:
       pattern: ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
-      range: string
   slots:
   - id
   - identifier

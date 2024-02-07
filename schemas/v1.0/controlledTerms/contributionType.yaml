@@ -3,15 +3,8 @@ ContributionType:
   description: Structured information on the type of contribution a person or organization
     performed.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: string
   slots:
   - id
   - definition

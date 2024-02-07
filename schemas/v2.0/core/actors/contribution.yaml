@@ -3,8 +3,6 @@ Contribution:
   description: Structured information on the contribution made to a research product.
   slot_usage:
     contributionType:
-      list_elements_unique: true
-      multivalued: true
       required: true
     contributor:
       required: true

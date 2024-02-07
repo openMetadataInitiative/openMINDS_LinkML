@@ -2,15 +2,8 @@ ProgrammingLanguage:
   class_uri: https://openminds.ebrains.eu/controlledTerms/ProgrammingLanguage
   description: Structured information on the programming language.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: Uri
   slots:
   - id
   - definition

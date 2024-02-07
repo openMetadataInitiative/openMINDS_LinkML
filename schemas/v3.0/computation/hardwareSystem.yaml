@@ -2,13 +2,8 @@ HardwareSystem:
   class_uri: https://openminds.ebrains.eu/computation/HardwareSystem
   description: Structured information about computing hardware.
   slot_usage:
-    description:
-      range: string
     name:
-      range: string
       required: true
-    versionIdentifier:
-      range: string
   slots:
   - id
   - description

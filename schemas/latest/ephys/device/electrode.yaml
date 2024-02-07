@@ -2,33 +2,28 @@ Electrode:
   class_uri: https://openminds.ebrains.eu/ephys/Electrode
   description: null
   slot_usage:
-    description:
-      range: string
+    conductorMaterial:
+      any_of:
+      - range: ChemicalMixture
+      - range: ChemicalSubstance
+      - range: MolecularEntity
     deviceType:
       required: true
     digitalIdentifier:
       any_of:
       - range: DOI
       - range: RRID
-    internalIdentifier:
-      range: string
-    intrinsicResistance:
-      inlined: true
-    lookupLabel:
-      range: string
+    insulatorMaterial:
+      any_of:
+      - range: ChemicalMixture
+      - range: ChemicalSubstance
+      - range: MolecularEntity
     manufacturer:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     name:
-      range: string
       required: true
     owner:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
-    serialNumber:
-      range: string
   slots:
   - id
   - conductorMaterial

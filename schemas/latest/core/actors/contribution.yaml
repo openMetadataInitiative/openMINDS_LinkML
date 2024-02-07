@@ -3,10 +3,12 @@ Contribution:
   description: Structured information on the contribution made to a research product.
   slot_usage:
     contributor:
+      any_of:
+      - range: Consortium
+      - range: Organization
+      - range: Person
       required: true
     type:
-      list_elements_unique: true
-      multivalued: true
       range: ContributionType
       required: true
   slots:

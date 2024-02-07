@@ -3,15 +3,8 @@ AnatomicalAxesOrientation:
   description: Structured information on the anatomical directions of the X, Y, and
     Z axis.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: string
   slots:
   - id
   - definition

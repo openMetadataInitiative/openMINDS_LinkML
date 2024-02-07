@@ -2,31 +2,13 @@ AtlasAnnotation:
   class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
   description: null
   slot_usage:
-    bestViewPoint:
-      inlined: true
     criteriaQualityType:
       required: true
-    displayColor:
-      pattern: ^#[0-9A-Fa-f]{6}$
-      range: string
-    inspiredBy:
-      list_elements_unique: true
-      multivalued: true
     internalIdentifier:
-      range: string
       required: true
-    laterality:
-      list_elements_unique: true
-      multivalued: true
-    lookupLabel:
-      range: string
-    name:
-      range: string
     versionIdentifier:
-      range: string
       required: true
     versionInnovation:
-      range: string
       required: true
   slots:
   - id

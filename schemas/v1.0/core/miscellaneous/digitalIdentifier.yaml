@@ -2,10 +2,7 @@ DigitalIdentifier:
   class_uri: https://openminds.ebrains.eu/core/DigitalIdentifier
   description: Structured information on a digital identifier.
   slot_usage:
-    howToCite:
-      range: string
     identifier:
-      range: string
       required: true
     identifierSchema:
       required: true

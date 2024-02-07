@@ -3,15 +3,8 @@ AgeCategory:
   description: Structured information on the life cycle (semantic term) of a specific
     age group.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: string
   slots:
   - id
   - definition

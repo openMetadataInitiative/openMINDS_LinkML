@@ -6,90 +6,52 @@ DatasetVersion:
     accessibility:
       required: true
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
-    copyright:
-      inlined: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
-    description:
-      range: string
     digitalIdentifier:
       range: DOI
       required: true
     ethicsAssessment:
       required: true
     experimentalApproach:
-      list_elements_unique: true
-      multivalued: true
       required: true
     fullDocumentation:
+      any_of:
+      - range: DOI
+      - range: File
+      - range: URL
       required: true
-    fullName:
-      range: string
     funding:
-      list_elements_unique: true
-      multivalued: true
       required: true
-    howToCite:
-      range: string
     inputData:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
     isAlternativeVersionOf:
-      list_elements_unique: true
-      multivalued: true
       range: DatasetVersion
     isNewVersionOf:
       range: DatasetVersion
-    keyword:
-      list_elements_unique: true
-      multivalued: true
-      range: string
     license:
       required: true
-    otherContribution:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
     protocol:
-      list_elements_unique: true
-      multivalued: true
       required: true
     relatedPublication:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
     releaseDate:
-      range: Date
       required: true
     shortName:
-      range: string
       required: true
     studiedSpecimen:
-      list_elements_unique: true
-      multivalued: true
       range: Subject
     supportChannel:
       any_of:
       - range: Uri
-      list_elements_unique: true
-      multivalued: true
       range: string
     type:
-      list_elements_unique: true
-      multivalued: true
       range: SemanticDataType
       required: true
     versionIdentifier:
-      range: string
       required: true
     versionInnovation:
-      range: string
       required: true
   slots:
   - id

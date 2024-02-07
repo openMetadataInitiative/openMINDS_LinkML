@@ -2,44 +2,17 @@ TissueSampleCollection:
   class_uri: https://openminds.ebrains.eu/core/TissueSampleCollection
   description: null
   slot_usage:
-    additionalRemarks:
-      range: string
     biologicalSex:
-      list_elements_unique: true
-      multivalued: true
       required: true
-    internalIdentifier:
-      range: string
-    laterality:
-      list_elements_unique: true
-      multivalued: true
-    lookupLabel:
-      range: string
     origin:
-      list_elements_unique: true
-      multivalued: true
       range: CellType
       required: true
-    phenotype:
-      list_elements_unique: true
-      multivalued: true
-    quantity:
-      range: int
     species:
-      list_elements_unique: true
-      multivalued: true
       required: true
-    strain:
-      list_elements_unique: true
-      multivalued: true
     studiedState:
-      list_elements_unique: true
-      multivalued: true
       range: TissueSampleCollectionState
       required: true
     type:
-      list_elements_unique: true
-      multivalued: true
       range: TissueSampleType
       required: true
   slots:

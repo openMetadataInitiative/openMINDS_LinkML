@@ -3,21 +3,14 @@ Model:
   description: Structured information on a computational model (concept level).
   slot_usage:
     description:
-      range: string
       required: true
     digitalIdentifier:
       required: true
     fullName:
-      range: string
       required: true
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: ModelVersion
-    homepage:
-      range: string
     shortName:
-      range: string
       required: true
   slots:
   - id

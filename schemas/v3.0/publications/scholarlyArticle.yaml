@@ -2,58 +2,30 @@ ScholarlyArticle:
   class_uri: https://openminds.ebrains.eu/publications/ScholarlyArticle
   description: null
   slot_usage:
-    IRI:
-      range: Uri
-    abstract:
-      range: string
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
       required: true
     citedPublication:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
-    copyright:
-      inlined: true
-    creationDate:
-      range: Date
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     digitalIdentifier:
       range: DOI
-    editor:
-      list_elements_unique: true
-      multivalued: true
-    funding:
-      list_elements_unique: true
-      multivalued: true
     isPartOf:
       any_of:
       - range: PublicationIssue
       - range: PublicationVolume
       required: true
     keyword:
-      list_elements_unique: true
-      multivalued: true
       range: ActionStatusType
     license:
       range: License
     modificationDate:
       range: Date
     name:
-      range: string
       required: true
-    pagination:
-      range: string
     publicationDate:
-      range: Date
       required: true
-    versionIdentifier:
-      range: string
   slots:
   - id
   - IRI

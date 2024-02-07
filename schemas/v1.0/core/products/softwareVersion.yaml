@@ -5,106 +5,56 @@ SoftwareVersion:
     accessibility:
       required: true
     applicationCategory:
-      list_elements_unique: true
-      multivalued: true
       required: true
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
-    copyright:
-      inlined: true
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
     description:
-      range: string
       required: true
     developer:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
       required: true
     device:
-      list_elements_unique: true
-      multivalued: true
       required: true
     digitalIdentifier:
       required: true
     fullDocumentation:
       required: true
     fullName:
-      range: string
       required: true
     funding:
-      list_elements_unique: true
-      multivalued: true
       required: true
     hasAlternativeVersion:
-      list_elements_unique: true
-      multivalued: true
       range: SoftwareVersion
     hasFeature:
-      list_elements_unique: true
-      multivalued: true
       required: true
     hasRequirement:
-      range: string
       required: true
     hasSupplementVersion:
-      list_elements_unique: true
-      multivalued: true
       range: SoftwareVersion
-    homepage:
-      range: string
     inputFormat:
-      list_elements_unique: true
-      multivalued: true
       required: true
     isNewVersionOf:
       range: SoftwareVersion
-    keyword:
-      list_elements_unique: true
-      multivalued: true
-      range: string
     language:
-      list_elements_unique: true
-      multivalued: true
       required: true
     license:
       required: true
     operatingSystem:
-      list_elements_unique: true
-      multivalued: true
       required: true
-    otherContribution:
-      list_elements_unique: true
-      multivalued: true
     outputFormat:
-      list_elements_unique: true
-      multivalued: true
       required: true
     programmingLanguage:
-      list_elements_unique: true
-      multivalued: true
       required: true
-    relatedPublication:
-      list_elements_unique: true
-      multivalued: true
     releaseDate:
-      range: string
       required: true
     repository:
       required: true
     shortName:
-      range: string
       required: true
     versionIdentifier:
-      range: string
       required: true
-    versionInnovation:
-      range: string
   slots:
   - id
   - accessibility

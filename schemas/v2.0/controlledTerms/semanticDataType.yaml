@@ -2,15 +2,8 @@ SemanticDataType:
   class_uri: https://openminds.ebrains.eu/controlledTerms/SemanticDataType
   description: null
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: Uri
   slots:
   - id
   - definition

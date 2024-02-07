@@ -2,25 +2,8 @@ TermSuggestion:
   class_uri: https://openminds.ebrains.eu/controlledTerms/TermSuggestion
   description: null
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
-    interlexIdentifier:
-      range: Uri
-    knowledgeSpaceLink:
-      range: Uri
     name:
-      range: string
       required: true
-    preferredOntologyIdentifier:
-      range: Uri
-    suggestNewTerminology:
-      range: string
-    synonym:
-      list_elements_unique: true
-      multivalued: true
-      range: string
   slots:
   - id
   - addExistingTerminology

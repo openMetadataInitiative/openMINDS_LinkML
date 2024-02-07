@@ -3,10 +3,7 @@ WebResource:
   description: null
   slot_usage:
     IRI:
-      range: Uri
       required: true
-    contentDescription:
-      range: string
   slots:
   - id
   - IRI

@@ -3,20 +3,12 @@ FileInstance:
   description: Structured information on a file instances.
   slot_usage:
     IRI:
-      range: string
       required: true
-    content:
-      range: string
     isPartOf:
-      list_elements_unique: true
-      multivalued: true
       range: FileBundle
       required: true
     name:
-      range: string
       required: true
-    storageSize:
-      inlined: true
   slots:
   - id
   - IRI

@@ -3,38 +3,25 @@ BrainAtlasVersion:
   description: Structured information on a brain atlas (version level).
   slot_usage:
     annotationSet:
-      list_elements_unique: true
-      multivalued: true
       required: true
     coordinateSpace:
       required: true
     fullName:
-      range: string
       required: true
     hasAlternativeVersion:
-      list_elements_unique: true
-      multivalued: true
       range: BrainAtlasVersion
-    homepage:
-      range: string
     isNewVersionOf:
       range: BrainAtlasVersion
-    ontologyIdentifier:
-      range: string
     releaseDate:
-      range: string
       required: true
     shortName:
-      range: string
       required: true
     terminology:
       range: AtlasTerminology
       required: true
     versionIdentifier:
-      range: string
       required: true
     versionInnovation:
-      range: string
       required: true
   slots:
   - id

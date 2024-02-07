@@ -2,67 +2,29 @@ LearningResource:
   class_uri: https://openminds.ebrains.eu/publications/LearningResource
   description: null
   slot_usage:
-    IRI:
-      range: Uri
     about:
-      list_elements_unique: true
-      multivalued: true
       range: ValidationTest
       required: true
-    abstract:
-      range: string
     author:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     citedPublication:
-      list_elements_unique: true
-      multivalued: true
       range: DOI
-    copyright:
-      inlined: true
-    creationDate:
-      range: Date
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     digitalIdentifier:
       range: DOI
-    editor:
-      list_elements_unique: true
-      multivalued: true
-    funding:
-      list_elements_unique: true
-      multivalued: true
     keyword:
-      list_elements_unique: true
-      multivalued: true
       range: ActionStatusType
-    learningOutcome:
-      range: string
     license:
       range: License
     modificationDate:
       range: Date
     name:
-      range: string
       required: true
-    order:
-      range: int
-    prerequisite:
-      range: string
     publicationDate:
-      range: Date
       required: true
-    requiredTime:
-      inlined: true
-    topic:
-      range: string
     type:
       range: LearningResourceType
-    versionIdentifier:
-      range: string
   slots:
   - id
   - IRI

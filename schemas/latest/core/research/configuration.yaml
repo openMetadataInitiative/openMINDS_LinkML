@@ -8,8 +8,6 @@ Configuration:
       required: true
     format:
       required: true
-    lookupLabel:
-      range: string
   slots:
   - id
   - configuration

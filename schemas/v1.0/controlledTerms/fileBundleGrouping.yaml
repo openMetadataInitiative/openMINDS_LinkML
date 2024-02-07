@@ -2,15 +2,8 @@ FileBundleGrouping:
   class_uri: https://openminds.ebrains.eu/controlledTerms/FileBundleGrouping
   description: Structured information on the grouping mechanism of a file bundle.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: string
   slots:
   - id
   - definition

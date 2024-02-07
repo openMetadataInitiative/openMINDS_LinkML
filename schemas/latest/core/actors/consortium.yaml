@@ -4,12 +4,7 @@ Consortium:
     or organizations, with the objective of participating in a common activity.
   slot_usage:
     fullName:
-      range: string
       required: true
-    homepage:
-      range: Uri
-    shortName:
-      range: string
   slots:
   - id
   - contactInformation

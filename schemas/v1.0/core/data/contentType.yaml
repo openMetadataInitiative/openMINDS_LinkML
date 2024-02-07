@@ -4,22 +4,11 @@ ContentType:
     or repository.
   slot_usage:
     associatedFileExtension:
-      list_elements_unique: true
-      multivalued: true
-      range: string
       required: true
     category:
-      range: string
       required: true
     name:
-      range: string
       required: true
-    relatedMediaType:
-      range: string
-    synonym:
-      list_elements_unique: true
-      multivalued: true
-      range: string
   slots:
   - id
   - associatedFileExtension

@@ -2,16 +2,12 @@ LivePaperSection:
   class_uri: https://openminds.ebrains.eu/publications/LivePaperSection
   description: null
   slot_usage:
-    description:
-      range: string
     isPartOf:
       range: LivePaperVersion
       required: true
     name:
-      range: string
       required: true
     order:
-      range: int
       required: true
     type:
       range: string

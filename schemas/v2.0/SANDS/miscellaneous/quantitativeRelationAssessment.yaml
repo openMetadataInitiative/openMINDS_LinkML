@@ -5,7 +5,6 @@ QuantitativeRelationAssessment:
     inRelationTo:
       required: true
     quantitativeOverlap:
-      inlined: true
       required: true
   slots:
   - id

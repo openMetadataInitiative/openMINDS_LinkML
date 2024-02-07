@@ -3,22 +3,15 @@ BrainAtlas:
   description: Structured information on a brain atlas (concept level).
   slot_usage:
     description:
-      range: string
       required: true
     digitalIdentifier:
       range: DOI
     fullName:
-      range: string
       required: true
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: BrainAtlasVersion
       required: true
-    howToCite:
-      range: string
     shortName:
-      range: string
       required: true
   slots:
   - id

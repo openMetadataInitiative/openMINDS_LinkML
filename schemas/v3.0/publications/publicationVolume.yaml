@@ -6,7 +6,6 @@ PublicationVolume:
       range: Periodical
       required: true
     volumeNumber:
-      range: string
       required: true
   slots:
   - id

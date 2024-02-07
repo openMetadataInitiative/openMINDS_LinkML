@@ -4,40 +4,22 @@ ValidationTest:
     a computational model.
   slot_usage:
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     description:
-      range: string
       required: true
     developer:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
       required: true
     digitalIdentifier:
       range: DOI
     fullName:
-      range: string
       required: true
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: ValidationTestVersion
       required: true
-    homepage:
-      range: Uri
-    howToCite:
-      range: string
-    referenceDataAcquisition:
-      list_elements_unique: true
-      multivalued: true
     shortName:
-      range: string
       required: true
     studyTarget:
-      list_elements_unique: true
-      multivalued: true
       range: AuditoryStimulusType
   slots:
   - id

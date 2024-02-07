@@ -5,32 +5,18 @@ CommonCoordinateSpace:
     anatomicalAxesOrientation:
       required: true
     axesOrigin:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       required: true
-    defaultImage:
-      list_elements_unique: true
-      multivalued: true
     digitalIdentifier:
       range: DOI
     fullName:
-      range: string
       required: true
-    howToCite:
-      range: string
     nativeUnit:
       required: true
-    ontologyIdentifier:
-      range: Uri
     releaseDate:
-      range: Date
       required: true
     shortName:
-      range: string
       required: true
     versionIdentifier:
-      range: string
       required: true
   slots:
   - id

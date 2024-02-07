@@ -3,24 +3,15 @@ Project:
   description: Structured information on a research project.
   slot_usage:
     coordinator:
-      list_elements_unique: true
-      multivalued: true
       range: Consortium
     description:
-      range: string
       required: true
     fullName:
-      range: string
       required: true
     hasPart:
-      list_elements_unique: true
-      multivalued: true
       range: ValidationTest
       required: true
-    homepage:
-      range: Uri
     shortName:
-      range: string
       required: true
   slots:
   - id

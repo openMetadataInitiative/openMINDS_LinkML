@@ -3,11 +3,8 @@ ElectrodeArray:
   description: Structured information on an electrode array.
   slot_usage:
     electrodes:
-      list_elements_unique: true
-      multivalued: true
       required: true
     internalIdentifier:
-      range: string
       required: true
   slots:
   - id

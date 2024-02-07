@@ -3,10 +3,8 @@ Hash:
   description: Structured information on a hash.
   slot_usage:
     algorithm:
-      range: string
       required: true
     digest:
-      range: string
       required: true
   slots:
   - id

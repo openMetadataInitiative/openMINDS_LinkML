@@ -3,15 +3,11 @@ FileBundle:
   description: Structured information on a bundle of file instances.
   slot_usage:
     IRI:
-      range: string
       required: true
     isPartOf:
       required: true
     name:
-      range: string
       required: true
-    storageSize:
-      inlined: true
   slots:
   - id
   - IRI

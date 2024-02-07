@@ -3,7 +3,6 @@ LivePaperResourceItem:
   description: null
   slot_usage:
     IRI:
-      range: Uri
       required: true
     hostedBy:
       required: true
@@ -11,7 +10,6 @@ LivePaperResourceItem:
       range: LivePaperSection
       required: true
     name:
-      range: string
       required: true
   slots:
   - id

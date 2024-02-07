@@ -4,28 +4,11 @@ ContentType:
     or repository.
   slot_usage:
     dataType:
-      list_elements_unique: true
-      multivalued: true
       range: DataType
-    description:
-      range: string
-    displayLabel:
-      range: string
-    fileExtension:
-      list_elements_unique: true
-      multivalued: true
-      range: string
     name:
-      range: string
       required: true
-    relatedMediaType:
-      range: Uri
     specification:
       range: Uri
-    synonym:
-      list_elements_unique: true
-      multivalued: true
-      range: string
   slots:
   - id
   - dataType

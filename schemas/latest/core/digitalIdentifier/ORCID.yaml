@@ -5,7 +5,6 @@ ORCID:
   slot_usage:
     identifier:
       pattern: ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
-      range: string
       required: true
   slots:
   - id

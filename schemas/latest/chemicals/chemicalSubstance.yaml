@@ -2,14 +2,8 @@ ChemicalSubstance:
   class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
   description: Structured information about a chemical substance.
   slot_usage:
-    additionalRemarks:
-      range: string
-    lookupLabel:
-      range: string
     molecularEntity:
       required: true
-    purity:
-      inlined: true
   slots:
   - id
   - additionalRemarks

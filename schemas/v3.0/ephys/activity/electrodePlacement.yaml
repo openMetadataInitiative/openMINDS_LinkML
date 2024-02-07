@@ -2,15 +2,7 @@ ElectrodePlacement:
   class_uri: https://openminds.ebrains.eu/ephys/ElectrodePlacement
   description: null
   slot_usage:
-    customPropertySet:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
-    description:
-      range: string
     device:
-      list_elements_unique: true
-      multivalued: true
       range: ElectrodeArrayUsage
       required: true
     endTime:
@@ -18,38 +10,24 @@ ElectrodePlacement:
       - range: Time
       range: string
     input:
-      list_elements_unique: true
-      multivalued: true
       range: TissueSampleState
       required: true
     isPartOf:
       range: DatasetVersion
       required: true
-    lookupLabel:
-      range: string
     output:
-      list_elements_unique: true
-      multivalued: true
       range: TissueSampleState
       required: true
     performedBy:
-      list_elements_unique: true
-      multivalued: true
       range: SoftwareAgent
     protocol:
-      list_elements_unique: true
-      multivalued: true
       required: true
     startTime:
       any_of:
       - range: Time
       range: string
     studyTarget:
-      list_elements_unique: true
-      multivalued: true
       range: AuditoryStimulusType
-    targetPosition:
-      inlined: true
   slots:
   - id
   - customPropertySet

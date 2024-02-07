@@ -2,16 +2,11 @@ License:
   class_uri: https://openminds.ebrains.eu/core/License
   description: Structured information on a used license.
   slot_usage:
-    deed:
-      range: string
     fullName:
-      range: string
       required: true
     legalCode:
-      range: string
       required: true
     shortName:
-      range: string
       required: true
   slots:
   - id

@@ -3,35 +3,16 @@ ElectrodeArrayUsage:
   description: null
   slot_usage:
     anatomicalLocationOfArray:
-      list_elements_unique: true
-      multivalued: true
       range: CellType
     anatomicalLocationOfElectrodes:
-      list_elements_unique: true
-      multivalued: true
       range: CellType
     contactResistances:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
       range: QuantitativeValue
     device:
       range: ElectrodeArray
       required: true
-    lookupLabel:
-      range: string
     metadataLocation:
-      list_elements_unique: true
-      multivalued: true
       range: File
-    spatialLocationOfElectrodes:
-      inlined: true
-      list_elements_unique: true
-      multivalued: true
-    usedElectrode:
-      list_elements_unique: true
-      multivalued: true
-      range: string
     usedSpecimen:
       any_of:
       - range: SubjectState

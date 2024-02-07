@@ -3,15 +3,10 @@ Software:
   description: Structured information on a software tool (concept level).
   slot_usage:
     custodian:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
     description:
-      range: string
       required: true
     developer:
-      list_elements_unique: true
-      multivalued: true
       range: Organization
       required: true
     digitalIdentifier:
@@ -19,17 +14,11 @@ Software:
       - range: DOI
       - range: SWHID
     fullName:
-      range: string
       required: true
     hasVersion:
-      list_elements_unique: true
-      multivalued: true
       range: SoftwareVersion
       required: true
-    howToCite:
-      range: string
     shortName:
-      range: string
       required: true
   slots:
   - id

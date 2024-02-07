@@ -3,15 +3,11 @@ FileRepository:
   description: Structured information on a file repository.
   slot_usage:
     IRI:
-      range: string
       required: true
     hostedBy:
       required: true
     name:
-      range: string
       required: true
-    storageSize:
-      inlined: true
   slots:
   - id
   - IRI

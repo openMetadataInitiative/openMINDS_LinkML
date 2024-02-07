@@ -4,7 +4,6 @@ IdentifiersDotOrgID:
   slot_usage:
     identifier:
       pattern: ^https://identifiers.org/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)|^https://identifiers.org/([a-zA-Z0-9-_.]+)/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)
-      range: string
       required: true
   slots:
   - id

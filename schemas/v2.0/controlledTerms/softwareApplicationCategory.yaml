@@ -2,15 +2,8 @@ SoftwareApplicationCategory:
   class_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareApplicationCategory
   description: Structured information on the category of the software application.
   slot_usage:
-    definition:
-      range: string
-    description:
-      range: string
     name:
-      range: string
       required: true
-    ontologyIdentifier:
-      range: Uri
   slots:
   - id
   - definition

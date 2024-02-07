@@ -3,9 +3,11 @@ AmountOfChemical:
   description: Structured information about the amount of a given chemical that was
     used.
   slot_usage:
-    amount:
-      inlined: true
     chemicalProduct:
+      any_of:
+      - range: ChemicalMixture
+      - range: ChemicalSubstance
+      - range: MolecularEntity
       required: true
   slots:
   - id

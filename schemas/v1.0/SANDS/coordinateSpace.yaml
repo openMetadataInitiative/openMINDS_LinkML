@@ -5,29 +5,16 @@ CoordinateSpace:
     anatomicalAxesOrientation:
       required: true
     axesOrigin:
-      list_elements_unique: true
-      multivalued: true
       required: true
-    defaultImage:
-      list_elements_unique: true
-      multivalued: true
     fullName:
-      range: string
       required: true
-    homepage:
-      range: string
     nativeUnit:
       required: true
-    ontologyIdentifier:
-      range: string
     releaseDate:
-      range: string
       required: true
     shortName:
-      range: string
       required: true
     versionIdentifier:
-      range: string
       required: true
   slots:
   - id
