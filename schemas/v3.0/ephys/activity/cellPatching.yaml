@@ -2,10 +2,6 @@ CellPatching:
   class_uri: https://openminds.ebrains.eu/ephys/CellPatching
   description: null
   slot_usage:
-    bathTemperature:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
     device:
       range: ElectrodeArrayUsage
       required: true

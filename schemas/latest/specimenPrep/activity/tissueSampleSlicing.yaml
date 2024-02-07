@@ -28,10 +28,6 @@ TissueSampleSlicing:
       range: string
     studyTarget:
       range: AuditoryStimulusType
-    temperature:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
   slots:
   - id
   - customPropertySet

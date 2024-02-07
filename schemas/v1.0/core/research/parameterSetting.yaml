@@ -7,9 +7,6 @@ ParameterSetting:
     name:
       required: true
     relevantFor:
-      any_of:
-      - range: BehavioralTask
-      - range: Technique
       required: true
     value:
       required: true

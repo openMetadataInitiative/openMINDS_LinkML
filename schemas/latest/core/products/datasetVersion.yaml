@@ -22,6 +22,10 @@ DatasetVersion:
     experimentalApproach:
       required: true
     fullDocumentation:
+      any_of:
+      - range: DOI
+      - range: File
+      - range: WebResource
       required: true
     inputData:
       range: DOI
@@ -32,9 +36,6 @@ DatasetVersion:
     keyword:
       range: ActionStatusType
     license:
-      any_of:
-      - range: License
-      - range: WebResource
       required: true
     relatedPublication:
       range: DOI

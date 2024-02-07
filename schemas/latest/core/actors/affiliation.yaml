@@ -4,6 +4,9 @@ Affiliation:
     as a person and their employer.
   slot_usage:
     memberOf:
+      any_of:
+      - range: Consortium
+      - range: Organization
       required: true
   slots:
   - id

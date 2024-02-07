@@ -22,6 +22,11 @@ Book:
       required: true
     publicationDate:
       required: true
+    publisher:
+      any_of:
+      - range: Consortium
+      - range: Organization
+      - range: Person
   slots:
   - id
   - IRI

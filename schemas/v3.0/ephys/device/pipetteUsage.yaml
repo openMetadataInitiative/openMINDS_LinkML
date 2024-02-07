@@ -22,10 +22,6 @@ PipetteUsage:
       - range: MolecularEntity
     metadataLocation:
       range: File
-    pipetteResistance:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
     pipetteSolution:
       required: true
     usedSpecimen:

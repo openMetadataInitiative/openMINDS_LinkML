@@ -5,9 +5,6 @@ FileBundle:
     IRI:
       required: true
     isPartOf:
-      any_of:
-      - range: FileBundle
-      - range: FileRepository
       required: true
     name:
       required: true

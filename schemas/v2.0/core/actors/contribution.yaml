@@ -5,6 +5,9 @@ Contribution:
     contributionType:
       required: true
     contributor:
+      any_of:
+      - range: Organization
+      - range: Person
       required: true
   slots:
   - id

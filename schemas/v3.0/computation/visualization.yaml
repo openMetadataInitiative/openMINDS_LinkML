@@ -24,6 +24,10 @@ Visualization:
       - range: Time
       range: string
       required: true
+    startedBy:
+      any_of:
+      - range: SoftwareAgent
+      - range: Person
     studyTarget:
       range: AuditoryStimulusType
     technique:

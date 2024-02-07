@@ -13,6 +13,9 @@ TissueSample:
       - range: OrganismSubstance
       required: true
     species:
+      any_of:
+      - range: Species
+      - range: Strain
       required: true
     studiedState:
       range: TissueSampleState

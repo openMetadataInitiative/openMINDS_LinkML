@@ -8,9 +8,6 @@ SlicingDeviceUsage:
     metadataLocation:
       range: File
     sliceThickness:
-      any_of:
-      - range: QuantitativeValue
-      - range: QuantitativeValueRange
       required: true
     slicingAngle:
       range: QuantitativeValue

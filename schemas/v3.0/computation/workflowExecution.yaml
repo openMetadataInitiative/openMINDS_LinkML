@@ -8,6 +8,10 @@ WorkflowExecution:
       - range: File
     stage:
       range: DataAnalysis
+    startedBy:
+      any_of:
+      - range: SoftwareAgent
+      - range: Person
   slots:
   - id
   - configuration

@@ -5,6 +5,9 @@ Subject:
     isPartOf:
       range: SubjectGroup
     species:
+      any_of:
+      - range: Species
+      - range: Strain
       required: true
     studiedState:
       range: SubjectState
