@@ -69,15 +69,20 @@ for schema_version in schema_loader.get_schema_versions():
                 schema_loader.schemas_sources,
                 instances_for_version,
             ).build()
+            imports.append(
+                os.path.relpath(
+                    schema_file_path, start=f"_instances/instances/{schema_version}"
+                ).replace(".schema.omi.json", "")
+            )
         else:
             LinkMLClassBuilder(
                 schema_file_path, schema_loader.schemas_sources, slots
             ).build()
-        imports.append(
-            os.path.relpath(
-                schema_file_path, start=f"sources/schemas/{schema_version}"
-            ).replace(".schema.omi.json", "")
-        )
+            imports.append(
+                os.path.relpath(
+                    schema_file_path, start=f"_sources/schemas/{schema_version}"
+                ).replace(".schema.omi.json", "")
+            )
 
     # Step 6 - write slots file
     with open(
