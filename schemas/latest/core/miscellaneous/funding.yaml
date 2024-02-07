@@ -3,10 +3,6 @@ Funding:
   description: Structured information on used funding.
   slot_usage:
     funder:
-      any_of:
-      - range: Consortium
-      - range: Organization
-      - range: Person
       required: true
   slots:
   - id

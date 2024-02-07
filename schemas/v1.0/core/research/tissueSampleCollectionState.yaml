@@ -2,8 +2,16 @@ TissueSampleCollectionState:
   class_uri: https://openminds.ebrains.eu/core/TissueSampleCollectionState
   description: null
   slot_usage:
+    age:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
     pathology:
       range: Disease
+    weight:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
   slots:
   - id
   - additionalRemarks

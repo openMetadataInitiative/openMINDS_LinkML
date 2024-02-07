@@ -15,10 +15,6 @@ ModelVersion:
     format:
       required: true
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: WebResource
       required: true
     inputData:
       range: DOI

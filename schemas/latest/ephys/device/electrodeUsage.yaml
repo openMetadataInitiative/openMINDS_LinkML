@@ -12,6 +12,10 @@ ElectrodeUsage:
       - range: CustomAnatomicalEntity
       - range: ParcellationEntity
       - range: ParcellationEntityVersion
+    contactResistance:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
     device:
       range: Electrode
       required: true

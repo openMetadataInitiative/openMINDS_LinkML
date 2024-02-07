@@ -18,10 +18,6 @@ CommonCoordinateSpaceVersion:
       - range: ISBN
       - range: RRID
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: WebResource
       required: true
     isAlternativeVersionOf:
       range: CommonCoordinateSpaceVersion

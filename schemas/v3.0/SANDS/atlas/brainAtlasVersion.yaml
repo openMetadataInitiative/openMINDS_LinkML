@@ -17,10 +17,6 @@ BrainAtlasVersion:
       - range: ISBN
       - range: RRID
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: WebResource
       required: true
     hasTerminology:
       range: ParcellationTerminologyVersion

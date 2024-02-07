@@ -12,6 +12,10 @@ TissueSampleSlicing:
       - range: TissueSampleState
     output:
       range: TissueSampleCollectionState
+    temperature:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
   slots:
   - id
   - device

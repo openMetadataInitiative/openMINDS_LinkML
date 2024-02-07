@@ -4,6 +4,10 @@ ChemicalSubstance:
   slot_usage:
     molecularEntity:
       required: true
+    purity:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
   slots:
   - id
   - additionalRemarks

@@ -6,6 +6,10 @@ CustomAnatomicalEntity:
       range: CustomAnnotation
     name:
       required: true
+    relatedUBERONTerm:
+      any_of:
+      - range: Organ
+      - range: UBERONParcellation
     relationAssessment:
       range: QualitativeRelationAssessment
   slots:

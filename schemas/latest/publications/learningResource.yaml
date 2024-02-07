@@ -23,11 +23,10 @@ LearningResource:
       required: true
     publicationDate:
       required: true
-    publisher:
+    requiredTime:
       any_of:
-      - range: Consortium
-      - range: Organization
-      - range: Person
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
     type:
       range: LearningResourceType
   slots:

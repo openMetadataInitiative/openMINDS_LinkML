@@ -2,6 +2,10 @@ SubjectState:
   class_uri: https://openminds.ebrains.eu/core/SubjectState
   description: Structured information on a temporary state of a subject.
   slot_usage:
+    age:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
     ageCategory:
       required: true
     attribute:
@@ -10,6 +14,14 @@ SubjectState:
       range: SubjectState
     pathology:
       range: Disease
+    relativeTimeIndication:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
+    weight:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
   slots:
   - id
   - additionalRemarks

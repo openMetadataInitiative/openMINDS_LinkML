@@ -5,6 +5,9 @@ QuantitativeRelationAssessment:
     inRelationTo:
       required: true
     quantitativeOverlap:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
       required: true
   slots:
   - id

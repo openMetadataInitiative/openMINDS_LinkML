@@ -3,9 +3,6 @@ CoordinatePoint:
   description: Structured information on a coordinate point.
   slot_usage:
     coordinateSpace:
-      any_of:
-      - range: CommonCoordinateSpaceVersion
-      - range: CustomCoordinateSpace
       required: true
     coordinates:
       required: true

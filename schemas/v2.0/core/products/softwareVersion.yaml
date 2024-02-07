@@ -19,10 +19,6 @@ SoftwareVersion:
     feature:
       required: true
     fullDocumentation:
-      any_of:
-      - range: DOI
-      - range: File
-      - range: URL
       required: true
     funding:
       required: true

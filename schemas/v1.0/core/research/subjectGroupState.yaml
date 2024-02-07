@@ -2,10 +2,18 @@ SubjectGroupState:
   class_uri: https://openminds.ebrains.eu/core/SubjectGroupState
   description: null
   slot_usage:
+    age:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
     ageCategory:
       required: true
     pathology:
       range: Disease
+    weight:
+      any_of:
+      - range: QuantitativeValue
+      - range: QuantitativeValueRange
   slots:
   - id
   - additionalRemarks

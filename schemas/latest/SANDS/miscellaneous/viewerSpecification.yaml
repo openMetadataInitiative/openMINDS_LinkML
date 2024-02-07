@@ -4,10 +4,6 @@ ViewerSpecification:
   slot_usage:
     anchorPoint:
       required: true
-    preferredDisplayColor:
-      any_of:
-      - range: Colormap
-      - range: SingleColor
   slots:
   - id
   - additionalRemarks
