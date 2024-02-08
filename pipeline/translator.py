@@ -55,7 +55,9 @@ class LinkMLClassBuilder(object):
         elif property["type"] == "float":
             number_property_spec = {"range": "float"}
         elif property["type"] == "number":  # or perhaps define a Number type
-            number_property_spec = {"any_of": [{"range": "integer"}, {"range": "float"}]}
+            number_property_spec = {
+                "any_of": [{"range": "integer"}, {"range": "float"}]
+            }
         else:
             raise ValueError(property["type"])
         # if "multipleOf" in property and property["multipleOf"]:
@@ -277,6 +279,9 @@ class LinkMLEnumBuilder(object):
             "meaning"
             return enum
 
+        def get_instance_name(instance):
+            return instance.get("name", instance.get("shortName"))
+
         instances_payload = self.instances[self._schema_payload["_type"]]
         self._translated_schema = {
             "enum_uri": self._schema_payload["_type"],
@@ -285,7 +290,8 @@ class LinkMLEnumBuilder(object):
         if "description" in self._schema_payload:
             self._translated_schema["description"] = self._schema_payload["description"]
         self._translated_schema["permissible_values"] = {
-            instance["name"]: build_enum(instance) for instance in instances_payload
+            get_instance_name(instance): build_enum(instance)
+            for instance in instances_payload
         }
 
     def build(self):

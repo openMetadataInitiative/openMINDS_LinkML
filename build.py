@@ -15,6 +15,9 @@ from pipeline.utils import clone_sources, SchemaLoader, InstanceLoader, get_shor
 
 
 terms_as_enums = True
+licenses_as_enums = True
+content_types_as_enums = True
+graph_structures_as_enums = True
 
 print("********************************************************")
 print(f"Triggering the generation of LinkML models for openMINDS")
@@ -69,10 +72,17 @@ for schema_version in schema_loader.get_schema_versions():
         )
         module = relative_path.split(os.path.sep)[0]
         instances_for_version = instances.get(schema_version, None)
-        if (
-            terms_as_enums
-            and instances_for_version
-            and "controlled" in schema_file_path
+        if instances_for_version and any(
+            [
+                terms_as_enums and "controlled" in schema_file_path,
+                licenses_as_enums and "license" in schema_file_path,
+                content_types_as_enums and "contentType" in schema_file_path,
+                graph_structures_as_enums
+                and (
+                    "parcellationEntity" in schema_file_path
+                    or "commonCoordinateSpace" in schema_file_path
+                ),
+            ]
         ):
             LinkMLEnumBuilder(
                 schema_file_path,
@@ -144,7 +154,7 @@ for schema_version in schema_loader.get_schema_versions():
         },
         "default_prefix": "omi",
         "imports": ["linkml:types"],
-        "slots": slots
+        "slots": slots,
     }
     with open(
         os.path.join("target", "schemas", schema_version, f"slots.yaml"),
@@ -172,21 +182,18 @@ for schema_version in schema_loader.get_schema_versions():
                 "repr": "str",
                 "base": "str",
                 "description": "A correctly formatted e-mail address",
-                "exact_mappings": ["schema:email"]
+                "exact_mappings": ["schema:email"],
             },
             "ECMA262": {
                 "uri": "linkml:ECMA262",
                 "repr": "str",
                 "base": "str",
-                "description": "Text which is syntactically valid ECMAScript code"
-            }
-
-        }
+                "description": "Text which is syntactically valid ECMAScript code",
+            },
+        },
     }
     with open(
-        os.path.join(
-            "target", "schemas", schema_version, f"types.yaml"
-        ),
+        os.path.join("target", "schemas", schema_version, f"types.yaml"),
         "w",
     ) as fp:
         yaml.dump(types_metadata, fp, sort_keys=False)
