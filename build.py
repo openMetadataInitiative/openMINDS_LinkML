@@ -63,16 +63,23 @@ for schema_version in schema_loader.get_schema_versions():
     for schema_file_path in schemas_file_paths:
         # Step 5 - translate and build each openMINDS schema as a LinkML schema
         instances_for_version = instances.get(schema_version, None)
-        if terms_as_enums and instances_for_version and "controlled" in schema_file_path:
+        if (
+            terms_as_enums
+            and instances_for_version
+            and "controlled" in schema_file_path
+        ):
             LinkMLEnumBuilder(
                 schema_file_path,
                 schema_loader.schemas_sources,
                 instances_for_version,
             ).build()
             imports.append(
-                os.path.relpath(
-                    schema_file_path, start=f"_instances/instances/{schema_version}"
-                ).replace(".schema.omi.json", "")
+                os.path.join(
+                    "enums",
+                    os.path.relpath(
+                        schema_file_path, start=f"_sources/schemas/{schema_version}"
+                    ).replace(".schema.omi.json", ""),
+                )
             )
         else:
             LinkMLClassBuilder(

@@ -21,7 +21,7 @@ class LinkMLClassBuilder(object):
 
     def _target_file_without_extension(self) -> str:
         return os.path.join(
-            self.version, "/".join(self.relative_path_without_extension)
+            self.version, *self.relative_path_without_extension
         )
 
     def _resolve_string_property(self, property) -> Dict:
@@ -263,7 +263,7 @@ class LinkMLEnumBuilder(object):
 
     def _target_file_without_extension(self) -> str:
         return os.path.join(
-            self.version, "/".join(self.relative_path_without_extension)
+            *self.relative_path_without_extension
         )
 
     def translate(self):
@@ -286,7 +286,7 @@ class LinkMLEnumBuilder(object):
 
     def build(self):
         target_file = os.path.join(
-            "target", "enums", f"{self._target_file_without_extension()}.yaml"
+            "target", "schemas", self.version, "enums", f"{self._target_file_without_extension()}.yaml"
         )
         os.makedirs(os.path.dirname(target_file), exist_ok=True)
         short_type = get_short_name(self._schema_payload["_type"])
