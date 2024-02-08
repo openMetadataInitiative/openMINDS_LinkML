@@ -173,9 +173,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -470,9 +467,6 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -879,10 +873,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - QuantitativeValueRange:
     class_uri: https://openminds.ebrains.eu/core/QuantitativeValueRange
     description: A representation of a range of quantitative values.
@@ -1701,10 +1691,6 @@ classes:
     slot_usage:
       contributor:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
       type:
         required: true
         range: ContributionType

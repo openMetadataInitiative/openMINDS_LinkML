@@ -1,3 +1,16 @@
+id: https://openminds.ebrains.eu/schemas/latest/slots?format=linkml
+name: openMINDS-slots
+title: OpenMINDS properties as LinkML slots, version "v3.0"
+description: Slots for the LinkML representation of the openMINDS metadata framework,
+  version "v3.0"
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+imports:
+- linkml:types
 slots:
   IRI:
     slot_uri: https://openminds.ebrains.eu/vocab/IRI
@@ -13,26 +26,26 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/about
     description: null
     any_of:
-    - range: ValidationTestVersion
-    - range: SoftwareVersion
-    - range: Model
-    - range: ModelVersion
-    - range: WebServiceVersion
-    - range: MetaDataModel
-    - range: CommonCoordinateSpaceVersion
-    - range: ValidationTest
     - range: WorkflowRecipe
-    - range: WebService
-    - range: LivePaper
-    - range: BrainAtlasVersion
-    - range: DatasetVersion
-    - range: Software
-    - range: LivePaperVersion
-    - range: BrainAtlas
-    - range: WorkflowRecipeVersion
     - range: CommonCoordinateSpace
-    - range: Dataset
+    - range: DatasetVersion
+    - range: ValidationTest
+    - range: LivePaperVersion
+    - range: LivePaper
+    - range: WebServiceVersion
     - range: MetaDataModelVersion
+    - range: Dataset
+    - range: SoftwareVersion
+    - range: CommonCoordinateSpaceVersion
+    - range: BrainAtlas
+    - range: MetaDataModel
+    - range: Software
+    - range: WebService
+    - range: ValidationTestVersion
+    - range: BrainAtlasVersion
+    - range: Model
+    - range: WorkflowRecipeVersion
+    - range: ModelVersion
     multivalued: true
     list_elements_unique: true
   abstract:
@@ -114,12 +127,12 @@ slots:
     description: null
     any_of:
     - range: Organ
+    - range: ParcellationEntity
     - range: OrganismSubstance
+    - range: SubcellularEntity
     - range: CellType
     - range: UBERONParcellation
     - range: ParcellationEntityVersion
-    - range: SubcellularEntity
-    - range: ParcellationEntity
     - range: CustomAnatomicalEntity
     multivalued: true
     list_elements_unique: true
@@ -270,8 +283,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/chemicalProduct
     description: null
     any_of:
-    - range: ChemicalSubstance
     - range: ChemicalMixture
+    - range: ChemicalSubstance
     - range: MolecularEntity
   chlorideReversalPotential:
     slot_uri: https://openminds.ebrains.eu/vocab/chlorideReversalPotential
@@ -304,17 +317,17 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/conductorMaterial
     description: null
     any_of:
-    - range: ChemicalSubstance
     - range: ChemicalMixture
+    - range: ChemicalSubstance
     - range: MolecularEntity
   configuration:
     slot_uri: https://openminds.ebrains.eu/vocab/configuration
     description: null
     any_of:
-    - range: PropertyValueList
     - range: File
-    - range: Configuration
     - range: WebResource
+    - range: Configuration
+    - range: PropertyValueList
     - range: string
   constructionType:
     slot_uri: https://openminds.ebrains.eu/vocab/constructionType
@@ -363,9 +376,9 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Person
     - range: Consortium
     - range: Organization
+    - range: Person
   coordinateSpace:
     slot_uri: https://openminds.ebrains.eu/vocab/coordinateSpace
     description: Two or three dimensional geometric setting.
@@ -449,14 +462,14 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/dataLocation
     description: null
     any_of:
-    - range: FileBundle
+    - range: File
+    - range: PropertyValueList
     - range: Configuration
+    - range: FileBundle
     - range: FileArchive
     - range: LivePaperResourceItem
-    - range: ModelVersion
     - range: ParcellationEntityVersion
-    - range: PropertyValueList
-    - range: File
+    - range: ModelVersion
     multivalued: true
     list_elements_unique: true
   dataType:
@@ -493,9 +506,9 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/describedIn
     description: null
     any_of:
+    - range: WebResource
     - range: File
     - range: DOI
-    - range: WebResource
     multivalued: true
     list_elements_unique: true
   description:
@@ -541,24 +554,24 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: DOI
     - range: RORID
-    - range: GRIDID
-    - range: IdentifiersDotOrgID
-    - range: ORCID
-    - range: RRID
+    - range: DOI
     - range: ISBN
     - range: SWHID
+    - range: RRID
     - range: ISSN
+    - range: GRIDID
+    - range: ORCID
+    - range: IdentifiersDotOrgID
     multivalued: true
     list_elements_unique: true
   dimension:
     slot_uri: https://openminds.ebrains.eu/vocab/dimension
     description: null
     any_of:
+    - range: Ellipse
     - range: Circle
     - range: Rectangle
-    - range: Ellipse
     inlined: true
   diseaseModel:
     slot_uri: https://openminds.ebrains.eu/vocab/diseaseModel
@@ -605,8 +618,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/endTime
     description: null
     any_of:
-    - range: string
     - range: Time
+    - range: string
   entryPoint:
     slot_uri: https://openminds.ebrains.eu/vocab/entryPoint
     description: null
@@ -680,9 +693,9 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
+    - range: WebResource
     - range: File
     - range: DOI
-    - range: WebResource
   fullName:
     slot_uri: https://openminds.ebrains.eu/vocab/fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -691,9 +704,9 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Person
     - range: Consortium
     - range: Organization
+    - range: Person
   funding:
     slot_uri: https://openminds.ebrains.eu/vocab/funding
     description: Money provided by a legal person for a particular purpose.
@@ -919,27 +932,27 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/inRelationTo
     description: Reference to a related element.
     any_of:
-    - range: ParcellationEntity
     - range: CustomAnatomicalEntity
+    - range: ParcellationEntity
     - range: ParcellationEntityVersion
   input:
     slot_uri: https://openminds.ebrains.eu/vocab/input
     description: Something or someone that is put into or participates in a process
       or machine.
     any_of:
-    - range: FileBundle
-    - range: SubjectState
-    - range: ValidationTestVersion
-    - range: SubjectGroupState
-    - range: SoftwareVersion
-    - range: TissueSampleState
-    - range: ModelVersion
-    - range: DatasetVersion
-    - range: BrainAtlasVersion
-    - range: LocalFile
     - range: CommonCoordinateSpaceVersion
+    - range: ValidationTestVersion
+    - range: SubjectState
     - range: File
+    - range: BrainAtlasVersion
+    - range: DatasetVersion
+    - range: FileBundle
+    - range: SubjectGroupState
+    - range: LocalFile
     - range: TissueSampleCollectionState
+    - range: TissueSampleState
+    - range: SoftwareVersion
+    - range: ModelVersion
     multivalued: true
     list_elements_unique: true
   inputData:
@@ -977,8 +990,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/insulatorMaterial
     description: null
     any_of:
-    - range: ChemicalSubstance
     - range: ChemicalMixture
+    - range: ChemicalSubstance
     - range: MolecularEntity
   interlexIdentifier:
     slot_uri: https://openminds.ebrains.eu/vocab/interlexIdentifier
@@ -1037,17 +1050,17 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
+    - range: Periodical
+    - range: PublicationIssue
+    - range: LivePaperVersion
+    - range: DatasetVersion
     - range: FileBundle
+    - range: FileRepository
+    - range: LivePaperSection
     - range: SubjectGroup
     - range: TissueSampleCollection
-    - range: LivePaperSection
-    - range: Book
-    - range: DatasetVersion
     - range: PublicationVolume
-    - range: LivePaperVersion
-    - range: PublicationIssue
-    - range: FileRepository
-    - range: Periodical
+    - range: Book
     multivalued: true
     list_elements_unique: true
   issueNumber:
@@ -1147,8 +1160,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/labelingCompound
     description: null
     any_of:
-    - range: ChemicalSubstance
     - range: ChemicalMixture
+    - range: ChemicalSubstance
     - range: MolecularEntity
   laboratoryCode:
     slot_uri: https://openminds.ebrains.eu/vocab/laboratoryCode
@@ -1226,8 +1239,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/material
     description: null
     any_of:
-    - range: ChemicalSubstance
     - range: ChemicalMixture
+    - range: ChemicalSubstance
     - range: MolecularEntity
   maxValue:
     slot_uri: https://openminds.ebrains.eu/vocab/maxValue
@@ -1247,8 +1260,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/measuredWith
     description: null
     any_of:
-    - range: SlicingDeviceUsage
     - range: PipetteUsage
+    - range: SlicingDeviceUsage
     - range: ElectrodeUsage
     - range: ElectrodeArrayUsage
   memberOf:
@@ -1343,9 +1356,9 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
+    - range: Organ
     - range: OrganismSubstance
     - range: CellType
-    - range: Organ
     multivalued: true
     list_elements_unique: true
   oscillationAmplitude:
@@ -1519,9 +1532,9 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/provider
     description: null
     any_of:
-    - range: Person
     - range: Consortium
     - range: Organization
+    - range: Person
   publicationDate:
     slot_uri: https://openminds.ebrains.eu/vocab/publicationDate
     description: null
@@ -1530,9 +1543,9 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/publisher
     description: null
     any_of:
-    - range: Person
     - range: Consortium
     - range: Organization
+    - range: Person
   purity:
     slot_uri: https://openminds.ebrains.eu/vocab/purity
     description: null
@@ -1566,8 +1579,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/recordedWith
     description: null
     any_of:
-    - range: SlicingDeviceUsage
     - range: PipetteUsage
+    - range: SlicingDeviceUsage
     - range: ElectrodeUsage
     - range: ElectrodeArrayUsage
   referenceData:
@@ -1617,8 +1630,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/relatedUBERONTerm
     description: null
     any_of:
-    - range: UBERONParcellation
     - range: Organ
+    - range: UBERONParcellation
   relationAssessment:
     slot_uri: https://openminds.ebrains.eu/vocab/relationAssessment
     description: null
@@ -1644,8 +1657,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: AnalysisTechnique
     - range: StimulationTechnique
+    - range: AnalysisTechnique
     - range: StimulationApproach
     - range: Technique
   repository:
@@ -1800,17 +1813,17 @@ slots:
       a binomial that consists of the name of a genus followed by a Latin or latinized
       uncapitalized noun or adjective.
     any_of:
-    - range: Strain
     - range: Species
+    - range: Strain
     multivalued: true
     list_elements_unique: true
   specification:
     slot_uri: https://openminds.ebrains.eu/vocab/specification
     description: Detailed and precise presentation of, or proposal for something.
     any_of:
-    - range: PropertyValueList
     - range: Uri
     - range: File
+    - range: PropertyValueList
   specificationFormat:
     slot_uri: https://openminds.ebrains.eu/vocab/specificationFormat
     description: Form in which a particular data structure or object state is specified
@@ -1844,14 +1857,14 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/startTime
     description: null
     any_of:
-    - range: string
     - range: Time
+    - range: string
   startedBy:
     slot_uri: https://openminds.ebrains.eu/vocab/startedBy
     description: null
     any_of:
-    - range: SoftwareAgent
     - range: Person
+    - range: SoftwareAgent
   status:
     slot_uri: https://openminds.ebrains.eu/vocab/status
     description: null
@@ -2061,12 +2074,12 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/usedSpecimen
     description: null
     any_of:
-    - range: Subject
     - range: SubjectState
+    - range: Subject
+    - range: TissueSample
+    - range: TissueSampleState
     - range: SubjectGroup
     - range: TissueSampleCollection
-    - range: TissueSampleState
-    - range: TissueSample
     multivalued: true
     list_elements_unique: true
   userName:
@@ -2077,11 +2090,11 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/value
     description: Entry for a property.
     any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
     - range: float
     - range: int
-    - range: QuantitativeValue
     - range: string
-    - range: QuantitativeValueRange
     multivalued: true
     inlined: true
     list_elements_unique: true
@@ -2124,12 +2137,12 @@ slots:
     description: null
     any_of:
     - range: DataCopy
+    - range: Visualization
     - range: Optimization
-    - range: GenericComputation
+    - range: DataAnalysis
     - range: Simulation
     - range: ModelValidation
-    - range: Visualization
-    - range: DataAnalysis
+    - range: GenericComputation
   webpage:
     slot_uri: https://openminds.ebrains.eu/vocab/webpage
     description: Hypertext document (block of information) found on the World Wide

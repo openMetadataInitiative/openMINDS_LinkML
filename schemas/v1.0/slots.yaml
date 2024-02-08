@@ -1,3 +1,16 @@
+id: https://openminds.ebrains.eu/schemas/latest/slots?format=linkml
+name: openMINDS-slots
+title: OpenMINDS properties as LinkML slots, version "v1.0"
+description: Slots for the LinkML representation of the openMINDS metadata framework,
+  version "v1.0"
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+imports:
+- linkml:types
 slots:
   IRI:
     slot_uri: https://openminds.ebrains.eu/vocab/IRI
@@ -133,8 +146,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Person
     - range: Organization
+    - range: Person
   coordinatePoint:
     slot_uri: https://openminds.ebrains.eu/vocab/coordinatePoint
     description: Pair or triplet of numbers defining the position in a particular
@@ -542,8 +555,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: CellType
     - range: Organ
+    - range: CellType
     multivalued: true
     list_elements_unique: true
   otherAnatomicalRelation:

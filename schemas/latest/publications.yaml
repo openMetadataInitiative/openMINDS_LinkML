@@ -115,10 +115,6 @@ classes:
         required: true
       hostedBy:
         required: true
-        any_of:
-        - range: Organization
-        - range: WebService
-        - range: Service
       isPartOf:
         required: true
         range: LivePaperSection
@@ -177,11 +173,6 @@ classes:
         required: true
       publicationDate:
         required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
       requiredTime:
         any_of:
         - range: QuantitativeValue
@@ -254,11 +245,6 @@ classes:
         required: true
       publicationDate:
         required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - PublicationIssue:
     class_uri: https://openminds.ebrains.eu/publications/PublicationIssue
     description: null
@@ -353,11 +339,6 @@ classes:
         required: true
       publicationDate:
         required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - ScholarlyArticle:
     class_uri: https://openminds.ebrains.eu/publications/ScholarlyArticle
     description: null
@@ -408,11 +389,6 @@ classes:
         required: true
       publicationDate:
         required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - PublicationVolume:
     class_uri: https://openminds.ebrains.eu/publications/PublicationVolume
     description: null

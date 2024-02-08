@@ -263,11 +263,6 @@ classes:
     - owner
     - serialNumber
     slot_usage:
-      conductorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
       deviceType:
         required: true
       digitalIdentifier:
@@ -276,11 +271,6 @@ classes:
         - range: RRID
       electrodeIdentifier:
         required: true
-      insulatorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
       intrinsicResistance:
         any_of:
         - range: QuantitativeValue
@@ -312,22 +302,12 @@ classes:
     - owner
     - serialNumber
     slot_usage:
-      conductorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
       deviceType:
         required: true
       digitalIdentifier:
         any_of:
         - range: DOI
         - range: RRID
-      insulatorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
       intrinsicResistance:
         any_of:
         - range: QuantitativeValue
@@ -376,11 +356,6 @@ classes:
       device:
         required: true
         range: Pipette
-      labelingCompound:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
       metadataLocation:
         range: File
       pipetteResistance:
@@ -420,11 +395,6 @@ classes:
         - range: RRID
       manufacturer:
         range: Consortium
-      material:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
       name:
         required: true
       owner:

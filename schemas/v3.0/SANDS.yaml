@@ -80,10 +80,6 @@ classes:
         range: CustomAnnotation
       name:
         required: true
-      relatedUBERONTerm:
-        any_of:
-        - range: Organ
-        - range: UBERONParcellation
       relationAssessment:
         range: QualitativeRelationAssessment
 - SingleColor:
@@ -151,10 +147,6 @@ classes:
     slot_usage:
       inRelationTo:
         required: true
-        any_of:
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
 - QuantitativeRelationAssessment:
@@ -379,10 +371,6 @@ classes:
         range: ParcellationEntityVersion
       name:
         required: true
-      relatedUBERONTerm:
-        any_of:
-        - range: Organ
-        - range: UBERONParcellation
 - AtlasAnnotation:
     class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
     description: null

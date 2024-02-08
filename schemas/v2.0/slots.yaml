@@ -1,3 +1,16 @@
+id: https://openminds.ebrains.eu/schemas/latest/slots?format=linkml
+name: openMINDS-slots
+title: OpenMINDS properties as LinkML slots, version "v2.0"
+description: Slots for the LinkML representation of the openMINDS metadata framework,
+  version "v2.0"
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+imports:
+- linkml:types
 slots:
   IRI:
     slot_uri: https://openminds.ebrains.eu/vocab/IRI
@@ -137,8 +150,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Person
     - range: Organization
+    - range: Person
   coordinatePoint:
     slot_uri: https://openminds.ebrains.eu/vocab/coordinatePoint
     description: Pair or triplet of numbers defining the position in a particular
@@ -238,11 +251,11 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: DOI
     - range: RORID
+    - range: DOI
+    - range: SWHID
     - range: GRIDID
     - range: ORCID
-    - range: SWHID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -314,8 +327,8 @@ slots:
       particular product.
     any_of:
     - range: URL
-    - range: DOI
     - range: File
+    - range: DOI
   fullName:
     slot_uri: https://openminds.ebrains.eu/vocab/fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -324,8 +337,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Person
     - range: Organization
+    - range: Person
   funding:
     slot_uri: https://openminds.ebrains.eu/vocab/funding
     description: Money provided by a legal person for a particular purpose.
@@ -507,10 +520,10 @@ slots:
     description: Reference to the ensemble of multiple things or beings.
     any_of:
     - range: FileBundle
+    - range: FileRepository
+    - range: ParcellationTerminology
     - range: SubjectGroup
     - range: TissueSampleCollection
-    - range: ParcellationTerminology
-    - range: FileRepository
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -592,8 +605,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: CellType
     - range: Organ
+    - range: CellType
     multivalued: true
     list_elements_unique: true
   otherContribution:
@@ -952,11 +965,11 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/value
     description: Entry for a property.
     any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
     - range: float
     - range: int
-    - range: QuantitativeValue
     - range: string
-    - range: QuantitativeValueRange
     multivalued: true
     inlined: true
   versionIdentifier:

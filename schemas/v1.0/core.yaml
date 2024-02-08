@@ -270,6 +270,9 @@ classes:
         required: true
       origin:
         required: true
+        any_of:
+        - range: CellType
+        - range: Organ
       species:
         required: true
       studiedState:
@@ -947,6 +950,3 @@ classes:
         required: true
       contributor:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
