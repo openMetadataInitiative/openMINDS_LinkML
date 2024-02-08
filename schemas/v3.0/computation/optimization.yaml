@@ -8,6 +8,9 @@ Optimization:
       - range: Time
       range: string
     environment:
+      any_of:
+      - range: Environment
+      - range: WebServiceVersion
       required: true
     input:
       range: LocalFile
@@ -24,10 +27,6 @@ Optimization:
       - range: Time
       range: string
       required: true
-    startedBy:
-      any_of:
-      - range: SoftwareAgent
-      - range: Person
     studyTarget:
       range: AuditoryStimulusType
     technique:

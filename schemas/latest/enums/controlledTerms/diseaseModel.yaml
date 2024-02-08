@@ -1,0 +1,28 @@
+DiseaseModel:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/DiseaseModel
+  permissible_values:
+    Alzheimer's disease model:
+      description: An animal or cell displaying all or some of the pathological processes
+        that are observed in the actual human or animal Alzheimer's disease.
+    Huntington's disease model:
+      description: An animal or cell displaying all or some of the pathological processes
+        that are observed in the actual human or animal Huntington's disease.
+    Parkinson's disease model:
+      description: An animal or cell displaying all or some of the pathological processes
+        that are observed in the actual human or animal Parkinson's disease.
+    Williams-Beuren syndrome model:
+      description: An animal or cell displaying all or some of the pathological processes
+        that are observed in the actual human or animal Williams-Beuren syndrome.
+    autism spectrum disorder model:
+      description: An animal or cell displaying all or some of the pathological processes
+        that are observed in the actual human or animal autism sprectrum disorder.
+    epilepsy model:
+      description: An animal or cell displaying all or some of the pathological processes
+        that are observed for epilepsy in humans or animals.
+    fragile X syndrome model:
+      description: An animal or cell displaying all or some of the pathological processes
+        that are observed in the actual human or animal fragile X syndrome.
+    stroke model:
+      description: An animal or cell displaying all or some of the pathological processes
+        that are observed during stroke in humans or animals.
+  title: Disease model

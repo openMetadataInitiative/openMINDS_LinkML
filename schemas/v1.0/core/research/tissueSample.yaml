@@ -7,6 +7,9 @@ TissueSample:
     internalIdentifier:
       required: true
     origin:
+      any_of:
+      - range: CellType
+      - range: Organ
       required: true
     species:
       required: true

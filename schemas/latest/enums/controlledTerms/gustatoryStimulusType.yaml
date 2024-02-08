@@ -1,0 +1,12 @@
+GustatoryStimulusType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/GustatoryStimulusType
+  permissible_values:
+    bitter substance:
+      description: Any chemical compound that tastes bitter.
+    salty substance:
+      description: Any chemical compound that tastes salty.
+    sour substance:
+      description: Any chemical compound that tastes sour.
+    sweet substance:
+      description: Any chemical compound that tastes sweet.
+  title: Gustatory stimulus type

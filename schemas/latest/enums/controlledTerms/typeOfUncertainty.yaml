@@ -1,0 +1,8 @@
+TypeOfUncertainty:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/TypeOfUncertainty
+  permissible_values:
+    standard deviation:
+      description: null
+    standard error:
+      description: null
+  title: Type of uncertainty

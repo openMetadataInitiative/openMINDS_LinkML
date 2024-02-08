@@ -1,0 +1,23 @@
+OperatingSystem:
+  description: Structured information on the operating system.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/OperatingSystem
+  permissible_values:
+    Android:
+      description: null
+    Linux:
+      description: null
+    MacOS:
+      description: null
+    Solaris:
+      description: null
+    Unix:
+      description: null
+    Windows:
+      description: null
+    Windows Phone:
+      description: null
+    iOS:
+      description: null
+    platform independent:
+      description: null
+  title: Operating system

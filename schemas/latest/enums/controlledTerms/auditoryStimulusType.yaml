@@ -1,0 +1,8 @@
+AuditoryStimulusType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/AuditoryStimulusType
+  permissible_values:
+    real spoken word:
+      description: A speech sound or series of speech sounds that symbolizes and communicates
+        a meaning (usually) without being divisible into smaller units capable of
+        independent use. [adapted from [Merriam-Webster](https://www.merriam-webster.com/dictionary/word)]
+  title: Auditory stimulus type

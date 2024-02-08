@@ -1,0 +1,45 @@
+ProgrammingLanguage:
+  description: Structured information on the programming language.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/ProgrammingLanguage
+  permissible_values:
+    AMPL:
+      description: null
+    Bash:
+      description: null
+    C:
+      description: null
+    C#:
+      description: null
+    C++:
+      description: null
+    Fortran:
+      description: null
+    GLSL:
+      description: null
+    HTML:
+      description: null
+    Java:
+      description: null
+    JavaScript:
+      description: null
+    MATLAB:
+      description: null
+    PHP:
+      description: null
+    Pascal:
+      description: null
+    Python:
+      description: null
+    R:
+      description: null
+    Ruby:
+      description: null
+    Scala:
+      description: null
+    Shell:
+      description: null
+    T-SQL:
+      description: null
+    TypeScript:
+      description: null
+  title: Programming language

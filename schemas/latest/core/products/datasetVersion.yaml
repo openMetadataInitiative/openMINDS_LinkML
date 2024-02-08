@@ -36,6 +36,9 @@ DatasetVersion:
     keyword:
       range: ActionStatusType
     license:
+      any_of:
+      - range: License
+      - range: WebResource
       required: true
     relatedPublication:
       range: DOI

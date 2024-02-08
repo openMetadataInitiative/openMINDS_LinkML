@@ -1,0 +1,26 @@
+ModelScope:
+  description: Structured information on the scope of the computational model.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/ModelScope
+  permissible_values:
+    network:
+      description: A model of a neuronal network
+    'network: brain region':
+      description: A model of one or more brain regions
+    'network: microcircuit':
+      description: A model of a neuronal microcircuit
+    'network: whole brain':
+      description: A model of an entire brain
+    single cell:
+      description: A model of a single cell
+    subcellular:
+      description: A model of an entity or process contained within a cell
+    'subcellular: ion channel':
+      description: A model of an ion channel
+    'subcellular: molecular':
+      description: A model of the structure or behaviour of molecules
+    'subcellular: signalling':
+      description: A model of sub-cellular signalling pathways
+    'subcellular: spine':
+      description: A model of a dendritic spine, or of a dendritic region containing
+        several spines
+  title: Model scope

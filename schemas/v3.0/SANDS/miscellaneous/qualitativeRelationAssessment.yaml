@@ -3,6 +3,10 @@ QualitativeRelationAssessment:
   description: null
   slot_usage:
     inRelationTo:
+      any_of:
+      - range: CustomAnatomicalEntity
+      - range: ParcellationEntity
+      - range: ParcellationEntityVersion
       required: true
     qualitativeOverlap:
       required: true

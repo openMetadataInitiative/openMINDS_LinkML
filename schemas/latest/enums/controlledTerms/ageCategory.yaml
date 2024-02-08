@@ -1,0 +1,39 @@
+AgeCategory:
+  description: Structured information on the life cycle (semantic term) of a specific
+    age group.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/AgeCategory
+  permissible_values:
+    adolescent:
+      description: '''Adolescent'' categorizes a transitional life cycle stage of
+        growth and development between childhood and adulthood, often described as
+        ''puberty''.'
+    adult:
+      description: '''Adult'' categorizes the life cycle stage of an animal or human
+        that reached sexual maturity.'
+    embryo:
+      description: '''Embryo'' categorizes the life cycle stage of an animal or human
+        that starts with fertilitzation and ends with the fully formed embryo.'
+    infant:
+      description: '''Infant'' categorizes the life cycle stage of mammals (animal
+        or human) that follows the neonate stage and ends at weaning.'
+    juvenile:
+      description: '''Juvenile'' categorizes the life cycle stage of an animal or
+        human that starts with the independence of the nest and/or caregivers and
+        ends with sexual maturity.'
+    late adult:
+      description: '''Late adult'' categorizes the life cycle stage of an animal or
+        human that follows the prime adult stage.'
+    neonate:
+      description: '''Neonate'' categorizes the life cycle stage of an animal or human
+        that immediately follows birth.'
+    perinatal:
+      description: '''Perinatal'' categorizes the life cycle stage of an animal or
+        human that starts right before birth and ends right after birth.'
+    prime adult:
+      description: '''Prime adult'' categorizes the life cycle stage of an animal
+        or human that starts at the onset of sexual maturity or the cessation of growth,
+        whichever comes last, and ends before senescence.'
+    young adult:
+      description: '''Young adult'' categorizes the early adult stage of an animal
+        or human when sexual maturity has been reached, but not the cessation of growth.'
+  title: Age category

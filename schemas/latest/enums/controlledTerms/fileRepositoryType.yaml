@@ -1,0 +1,26 @@
+FileRepositoryType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/FileRepositoryType
+  permissible_values:
+    Amazon S3 repository:
+      description: An S3 repository uses the cloud storage of the Amazon S3 service.
+    FTP repository:
+      description: A 'FTP repository' is located on a server that uses the file transfer
+        protocol (FTP), a standard internet communication protocol which allows the
+        transfer of files between clients and a server.
+    GPFS repository:
+      description: GPFS, short for General Parallel File System is a high-performance
+        clustered file system developed by IBM
+    Git repository:
+      description: A Git repository offers version control and source code management
+        functionalities.
+    Seafile repository:
+      description: Seafile is an open source file sync&share solution designed for
+        high reliability, performance and productivity.
+    Swift repository:
+      description: A Swift repository uses the long-term cloud storage of the OpenStack
+        Object Store project which is particularly designed for retrieving and updating
+        large amounts of static data without the need of a central point of control.
+    git-annex repository:
+      description: git-annex allows managing large files with git, without storing
+        the file contents in git.
+  title: File repository type

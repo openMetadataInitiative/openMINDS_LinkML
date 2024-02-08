@@ -1,0 +1,15 @@
+CranialWindowReinforcementType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/CranialWindowReinforcementType
+  permissible_values:
+    GRIN lens-based cranial window:
+      description: A cranial window reinforced by an implanted GRIN lens.
+    crystalline-based cranial window:
+      description: A cranial window reinforced by an implantation of a crystalline
+        material.
+    glass coverslip cranial window:
+      description: A cranial window reinforced by an implantation of a glass coverslip.
+    polymer-based cranial window:
+      description: A cranial window reinforced by an implantation of a polymer material.
+    prism-based cranial window:
+      description: A cranial window reinforced by an implanted prism.
+  title: Cranial window reinforcement type

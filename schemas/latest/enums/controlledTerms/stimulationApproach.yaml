@@ -1,0 +1,16 @@
+StimulationApproach:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/StimulationApproach
+  permissible_values:
+    auditory stimulation:
+      description: A stimulation of the auditory (hearing) system.
+    gustatory stimulation:
+      description: A stimulation of the gustatory (taste and flavor perception) system.
+    interoceptive stimulation:
+      description: A stimulation that arises from inside an organism.
+    olfactory stimulation:
+      description: A stimulation of the olfactory (smelling) system.
+    tactile stimulation:
+      description: A stimulation of the tactile (touch) system.
+    visual stimulation:
+      description: A stimulation of the visual (sight) system.
+  title: Stimulation approach

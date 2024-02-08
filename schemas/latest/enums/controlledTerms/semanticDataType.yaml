@@ -1,0 +1,12 @@
+SemanticDataType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/SemanticDataType
+  permissible_values:
+    derived data:
+      description: null
+    experimental data:
+      description: null
+    raw data:
+      description: null
+    simulated data:
+      description: null
+  title: Semantic data type

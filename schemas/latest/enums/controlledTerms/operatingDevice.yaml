@@ -1,0 +1,21 @@
+OperatingDevice:
+  description: Structured information on the operating device.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/OperatingDevice
+  permissible_values:
+    desktop:
+      description: null
+    embedded system:
+      description: null
+    high-performance computer:
+      description: null
+    mobile:
+      description: null
+    neuromorphic computer:
+      description: Very-large-scale integration (VLSI) systems containing electronic
+        circuits used to mimic neuro-biological architectures present in the nervous
+        system.
+    server:
+      description: null
+    web:
+      description: null
+  title: Operating device

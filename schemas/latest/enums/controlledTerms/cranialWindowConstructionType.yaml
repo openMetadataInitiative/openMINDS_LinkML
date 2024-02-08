@@ -1,0 +1,13 @@
+CranialWindowConstructionType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/CranialWindowConstructionType
+  permissible_values:
+    cleared skull cranial window:
+      description: A cranial window that is constructed by clearing a small region
+        of the skull.
+    thinned skull cranial window:
+      description: A cranial window that is constructed by thinning a small region
+        of the skull.
+    transcranial window:
+      description: A cranial window that is constructed by removal of a small region
+        of the skull.
+  title: Cranial window construction type

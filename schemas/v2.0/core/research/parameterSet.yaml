@@ -8,6 +8,9 @@ ParameterSet:
       range: NumericalParameter
       required: true
     relevantFor:
+      any_of:
+      - range: BehavioralTask
+      - range: Technique
       required: true
   slots:
   - id

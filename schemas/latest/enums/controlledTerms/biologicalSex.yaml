@@ -1,0 +1,14 @@
+BiologicalSex:
+  description: Structured information on the biological sex of a subject.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalSex
+  permissible_values:
+    female:
+      description: Biological sex that produces egg cells (ova).
+    hermaphrodite:
+      description: Biological sex with both male and female reproductive organs.
+    male:
+      description: Biological sex that produces sperm cells (spermatozoa).
+    not detectable:
+      description: Can be stated if the biological sex in visually not detectable
+        at a specific point in time.
+  title: Biological sex

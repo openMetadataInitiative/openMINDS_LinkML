@@ -5,6 +5,10 @@ LivePaperResourceItem:
     IRI:
       required: true
     hostedBy:
+      any_of:
+      - range: Organization
+      - range: WebService
+      - range: Service
       required: true
     isPartOf:
       range: LivePaperSection

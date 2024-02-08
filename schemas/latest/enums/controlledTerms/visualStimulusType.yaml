@@ -1,0 +1,20 @@
+VisualStimulusType:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/VisualStimulusType
+  permissible_values:
+    moving checkerboard:
+      description: null
+    moving grating:
+      description: null
+    moving symbol:
+      description: null
+    natural movie:
+      description: null
+    natural scene:
+      description: null
+    static checkerboard:
+      description: null
+    static grating:
+      description: null
+    static symbol:
+      description: null
+  title: Visual stimulus type

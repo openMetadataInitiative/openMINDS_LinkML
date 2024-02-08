@@ -147,8 +147,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/coordinatePoint
   coordinateSpace:
     any_of:
-    - range: CustomCoordinateSpace
     - range: CommonCoordinateSpace
+    - range: CustomCoordinateSpace
     description: Two or three dimensional geometric setting.
     slot_uri: https://openminds.ebrains.eu/vocab/coordinateSpace
   coordinates:
@@ -236,11 +236,11 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/digest
   digitalIdentifier:
     any_of:
-    - range: GRIDID
-    - range: DOI
-    - range: RORID
-    - range: ORCID
     - range: SWHID
+    - range: ORCID
+    - range: RORID
+    - range: DOI
+    - range: GRIDID
     description: Digital handle to identify objects or legal persons.
     list_elements_unique: true
     multivalued: true
@@ -310,9 +310,9 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/format
   fullDocumentation:
     any_of:
-    - range: URL
-    - range: DOI
     - range: File
+    - range: DOI
+    - range: URL
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     slot_uri: https://openminds.ebrains.eu/vocab/fullDocumentation
@@ -508,10 +508,10 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/isNewVersionOf
   isPartOf:
     any_of:
-    - range: FileBundle
+    - range: ParcellationTerminology
     - range: TissueSampleCollection
     - range: FileRepository
-    - range: ParcellationTerminology
+    - range: FileBundle
     - range: SubjectGroup
     description: Reference to the ensemble of multiple things or beings.
     list_elements_unique: true
@@ -593,8 +593,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/organization
   origin:
     any_of:
-    - range: CellType
     - range: Organ
+    - range: CellType
     description: Source at which something begins or rises, or from which something
       derives.
     list_elements_unique: true
@@ -763,8 +763,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
   relevantFor:
     any_of:
-    - range: BehavioralTask
     - range: Technique
+    - range: BehavioralTask
     description: Reference to what or whom something or someone bears significance.
     slot_uri: https://openminds.ebrains.eu/vocab/relevantFor
   repository:
@@ -908,8 +908,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/suggestNewTerminology
   supportChannel:
     any_of:
-    - range: string
     - range: Uri
+    - range: string
     description: Way of communication used to interact with users or customers.
     list_elements_unique: true
     multivalued: true
@@ -954,10 +954,10 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/unit
   value:
     any_of:
-    - range: float
-    - range: int
     - range: QuantitativeValueRange
+    - range: float
     - range: string
+    - range: int
     - range: QuantitativeValue
     description: Entry for a property.
     inlined: true

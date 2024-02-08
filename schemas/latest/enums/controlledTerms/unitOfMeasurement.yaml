@@ -1,0 +1,143 @@
+UnitOfMeasurement:
+  description: Structured information on the unit of measurement.
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement
+  permissible_values:
+    ampere:
+      description: An electric current unit which is equal to the constant current
+        which, if maintained in two straight parallel conductors of infinite length,
+        of negligible circular cross-section, and placed 1 m apart in vacuum, would
+        produce between these conductors a force equal to 2 x 10^[-7] newton per meter
+        of length.
+    arcdegree:
+      description: An arcdegree is a measurement of a plane angle in which one full
+        rotation is 360 degrees.
+    bit:
+      description: null
+    byte:
+      description: null
+    centimeter:
+      description: null
+    core-hour:
+      description: Usage of a computer processor core for one hour
+    day:
+      description: null
+    degree Celsius:
+      description: "The 'degree Celsius' is a unit of temperature on the Celsius scale\
+        \ where the freezing point of water is at 0 \xB0C and the boiling point of\
+        \ water is at 100 \xB0C under standard atmospheric pressure."
+    degree Fahrenheit:
+      description: "The 'degree Fahrenheit' is a unit of temperature on the Fahrenheit\
+        \ scale where the freezing point of water is at 32 \xB0F and the boiling point\
+        \ of water is at 212 \xB0F under standard atmospheric pressure."
+    degree Rankine:
+      description: "The 'degree Rankine' is a unit of temperature on the Rankine scale\
+        \ where the freezing point of water is at 491.67 \xB0R and the boiling point\
+        \ of water is at 671.64102 \xB0R under standard atmospheric pressure."
+    embryonic day:
+      description: '''Embryonic day'' is a specific unit to measure the developmental
+        stage of an embryo, starting with fertilization (1st embryonic day).'
+    gigabyte:
+      description: null
+    gigaohm:
+      description: null
+    gram:
+      description: null
+    hertz:
+      description: Unit of frequency equivalent to one event per second
+    hour:
+      description: null
+    kilobyte:
+      description: null
+    kilogram:
+      description: null
+    liter:
+      description: null
+    megabyte:
+      description: null
+    megaohm:
+      description: null
+    meter:
+      description: null
+    microampere:
+      description: An electric current unit current which is equal to one millionth
+        of an ampere or 10^[-6] A.
+    microgram per milliliter:
+      description: null
+    micrometer:
+      description: null
+    micromolar:
+      description: Micromolar is a decimal fraction of molar concentration describing
+        the amount of substance (measured in micromole) in one liter solution.
+    milligram per kilogram body weight:
+      description: A milligram of a substance per kilogram of the body weight of the
+        subject taking the substance.
+    milligram per milliliter:
+      description: null
+    milliliter:
+      description: null
+    millimeter:
+      description: null
+    millimolar:
+      description: Millimolar is a decimal fraction of molar concentration that describes
+        a solution as millimole per one liter of a solution.
+    millisecond:
+      description: null
+    millisiemens:
+      description: An electrical conduction unit which is equal to one thousandth
+        of a siemen or 10^[-3] siemens.
+    millivolt:
+      description: An electric potential difference unit which is equal to one thousandth
+        of a volt or 10^[-3] V.
+    minute:
+      description: null
+    molar:
+      description: Molar is a measure of concentration that describes a solution as
+        moles of solute per one liter of a solution.
+    month:
+      description: null
+    nanoampere:
+      description: An electric current unit current which is equal to one thousand
+        millionth of an ampere or 10^[-9] A.
+    nanomolar:
+      description: Nanomolar is a decimal fraction of molar concentration describing
+        the amount of substance (measured in nanomole) in one liter solution.
+    ohm:
+      description: The SI derived unit of electrical resistance, named after German
+        physicist Georg Ohm, equal to 1 V/A
+    percent:
+      description: A 'percentage' (from Latin per centum 'by a hundred') is a quantity
+        expressed as a fraction of 100 (amount of something in each hundred).
+    picoampere:
+      description: An electric current unit current which is equal to one trillionth
+        of an ampere or 10^[-12] A.
+    radian:
+      description: A 'radian' is the SI unit for measuring angles. One 'radian' defines
+        the arc of a circle with the same length as the radius of that circle.
+    second:
+      description: null
+    siemens:
+      description: An electrical conduction unit which is equal to A/V.
+    terabyte:
+      description: null
+    volt:
+      description: An electric potential difference unit which is equal to the work
+        per unit charge. One volt is the potential difference required to move one
+        coulomb of charge between two points in a circuit while using one joule of
+        energy.
+    volume per volume percentage:
+      description: Percentage of volume of one liquid dissolved in another liquid,
+        where the volume of both liquids have the same unit
+    wafer-hour:
+      description: Usage of one wafer of a wafer-scale computing system for one hour
+    week:
+      description: null
+    weight per volume percentage:
+      description: Percentage of weight or mass of a dissolved, solid substance in
+        a total volume of a solution. As per definition, the volume of a liquid is
+        expressed in milliliter (ml) and the mass of a solute in grams (g)
+    weight per weight percentage:
+      description: The percentage of a particular substance within a mixture, as measured
+        by weight or mass and expressed in the same unit
+    year:
+      description: null
+  title: Unit of measurement

@@ -1,0 +1,253 @@
+Colormap:
+  enum_uri: https://openminds.ebrains.eu/controlledTerms/Colormap
+  permissible_values:
+    matplotlib.colormaps.Accent:
+      description: The colormap 'Accent' is a qualitative colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Blues:
+      description: The colormap 'Blues' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.BrBG:
+      description: The colormap 'BrBG' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.BuGn:
+      description: The colormap 'BuGn' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.BuPu:
+      description: The colormap 'BuPu' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.CMRmap:
+      description: The colormap 'CMRmap' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.Dark2:
+      description: The colormap 'Dark2' is a qualitative colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.GnBu:
+      description: The colormap 'GnBu' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Greens:
+      description: The colormap 'Greens' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Greys:
+      description: The colormap 'Greys' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.OrRd:
+      description: The colormap 'OrRd' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Oranges:
+      description: The colormap 'Oranges' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.PRGn:
+      description: The colormap 'PRGn' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Paired:
+      description: The colormap 'Paired' is a qualitative colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Pastel1:
+      description: The colormap 'Pastel1' is a qualitative colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.Pastel2:
+      description: The colormap 'Pastel2' is a qualitative colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.PiYG:
+      description: The colormap 'PiYG' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.PuBu:
+      description: The colormap 'PuBu' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.PuBuGn:
+      description: The colormap 'PuBuGn' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.PuOr:
+      description: The colormap 'PuOr' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.PuRd:
+      description: The colormap 'PuRd' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Purples:
+      description: The colormap 'Purples' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.RdBu:
+      description: The colormap 'RdBu' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.RdGy:
+      description: The colormap 'RdGy' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.RdPu:
+      description: The colormap 'RdPu' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.RdYlBu:
+      description: The colormap 'RdYlBu' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.RdYlGn:
+      description: The colormap 'RdYlGn' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Reds:
+      description: The colormap 'Reds' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Set1:
+      description: The colormap 'Set1' is a qualitative colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Set2:
+      description: The colormap 'Set2' is a qualitative colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Set3:
+      description: The colormap 'Set3' is a qualitative colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Spectral:
+      description: The colormap 'Spectral' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.Wistia:
+      description: The colormap 'Wistia' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.YlGn:
+      description: The colormap 'YlGn' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.YlGnBu:
+      description: The colormap 'YlGnBu' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.YlOrBr:
+      description: The colormap 'YlOrBr' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.YlOrRd:
+      description: The colormap 'YlOrRd' is a sequential colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.afmhot:
+      description: The colormap 'afmhot' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.autumn:
+      description: The colormap 'autumn' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.binary:
+      description: The colormap 'binary' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.bone:
+      description: The colormap 'bone' is a sequential (type 2) colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.brg:
+      description: The colormap 'brg' is a miscellaneous colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.bwr:
+      description: The colormap 'bwr' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.cividis:
+      description: The colormap 'cividis' is a perceptually uniform sequential colormap
+        of the Python plotting library Matplotlib.
+    matplotlib.colormaps.cool:
+      description: The colormap 'cool' is a sequential (type 2) colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.coolwarm:
+      description: The colormap 'coolwarm' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.copper:
+      description: The colormap 'copper' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.cubehelix:
+      description: The colormap 'cubehelix' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.flag:
+      description: The colormap 'flag' is a miscellaneous colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.gist_earth:
+      description: The colormap 'gist_earth' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.gist_gray:
+      description: The colormap 'gist_gray' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.gist_heat:
+      description: The colormap 'gist_heat' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.gist_ncar:
+      description: The colormap 'gist_ncar' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.gist_rainbow:
+      description: The colormap 'gist_rainbow' is a miscellaneous colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.gist_stern:
+      description: The colormap 'gist_stern' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.gist_yarg:
+      description: The colormap 'gist_yarg' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.gnuplot:
+      description: The colormap 'gnuplot' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.gnuplot2:
+      description: The colormap 'gnuplot2' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.gray:
+      description: The colormap 'gray' is a sequential (type 2) colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.hot:
+      description: The colormap 'hot' is a sequential (type 2) colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.hsv:
+      description: The colormap 'hsv' is a cyclic colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.inferno:
+      description: The colormap 'inferno' is a perceptually uniform sequential colormap
+        of the Python plotting library Matplotlib.
+    matplotlib.colormaps.jet:
+      description: The colormap 'jet' is a miscellaneous colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.magma:
+      description: The colormap 'magma' is a perceptually uniform sequential colormap
+        of the Python plotting library Matplotlib.
+    matplotlib.colormaps.nipy_spectral:
+      description: The colormap 'nipy_spectral' is a miscellaneous colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.ocean:
+      description: The colormap 'ocean' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.pink:
+      description: The colormap 'pink' is a sequential (type 2) colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.plasma:
+      description: The colormap 'plasma' is a perceptually uniform sequential colormap
+        of the Python plotting library Matplotlib.
+    matplotlib.colormaps.prism:
+      description: The colormap 'prism' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.rainbow:
+      description: The colormap 'rainbow' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.seismic:
+      description: The colormap 'seismic' is a diverging colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.spring:
+      description: The colormap 'spring' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.summer:
+      description: The colormap 'summer' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+    matplotlib.colormaps.tab10:
+      description: The colormap 'tab10' is a qualitative colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.tab20:
+      description: The colormap 'tab20' is a qualitative colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.tab20b:
+      description: The colormap 'tab20b' is a qualitative colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.tab20c:
+      description: The colormap 'tab20c' is a qualitative colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.terrain:
+      description: The colormap 'terrain' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.turbo:
+      description: The colormap 'turbo' is a miscellaneous colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.twilight:
+      description: The colormap 'twilight' is a cyclic colormap of the Python plotting
+        library Matplotlib.
+    matplotlib.colormaps.twilight_shifted:
+      description: The colormap 'twilight_shifted' is a cyclic colormap of the Python
+        plotting library Matplotlib.
+    matplotlib.colormaps.viridis:
+      description: The colormap 'viridis' is a perceptually uniform sequential colormap
+        of the Python plotting library Matplotlib.
+    matplotlib.colormaps.winter:
+      description: The colormap 'winter' is a sequential (type 2) colormap of the
+        Python plotting library Matplotlib.
+  title: Colormap
