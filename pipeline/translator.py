@@ -24,12 +24,12 @@ class LinkMLClassBuilder(object):
 
     def _resolve_string_property(self, property) -> Dict:
         format_map = {  # see https://linkml.io/linkml-registry/
-            "iri": "Uri",  # not ideal mapping, will do for now
-            "date": "Date",
-            "date-time": "Datetime",
-            "time": "Time",
-            "email": "Email",  # need to define this type
-            "ECMA262": "ECMA262",  # need to define this type
+            "iri": "uri",  # not ideal mapping, will do for now
+            "date": "date",
+            "date-time": "datetime",
+            "time": "time",
+            "email": "Email",
+            "ECMA262": "ECMA262",
         }
 
         string_property_spec = {"range": "string"}
@@ -51,11 +51,11 @@ class LinkMLClassBuilder(object):
 
     def _resolve_number_property(self, property) -> Dict:
         if property["type"] == "integer":
-            number_property_spec = {"range": "int"}
+            number_property_spec = {"range": "integer"}
         elif property["type"] == "float":
             number_property_spec = {"range": "float"}
         elif property["type"] == "number":  # or perhaps define a Number type
-            number_property_spec = {"any_of": [{"range": "int"}, {"range": "float"}]}
+            number_property_spec = {"any_of": [{"range": "integer"}, {"range": "float"}]}
         else:
             raise ValueError(property["type"])
         # if "multipleOf" in property and property["multipleOf"]:

@@ -152,6 +152,45 @@ for schema_version in schema_loader.get_schema_versions():
     ) as fp:
         yaml.dump(slots_schema, fp, sort_keys=False)
 
+    # Step 7 - write types file
+    types_metadata = {
+        "id": f"https://openminds.ebrains.eu/schemas/latest/types/?format=linkml",
+        "name": "openMINDS-types",
+        "title": f'Types for OpenMINDS version "{schema_version}"',
+        "description": f'Types for the LinkML representation of the openMINDS metadata framework, version "{schema_version}"',
+        "license": "https://spdx.org/licenses/MIT.html",
+        "imports": ["linkml:types"],
+        "prefixes": {
+            "linkml": "https://w3id.org/linkml/",
+            "schema": "http://schema.org/",
+            "omi": "https://openminds.ebrains.eu",
+        },
+        "default_prefix": "omi",
+        "types": {
+            "Email": {
+                "uri": "linkml:email",
+                "repr": "str",
+                "base": "str",
+                "description": "A correctly formatted e-mail address",
+                "exact_mappings": ["schema:email"]
+            },
+            "ECMA262": {
+                "uri": "linkml:ECMA262",
+                "repr": "str",
+                "base": "str",
+                "description": "Text which is syntactically valid ECMAScript code"
+            }
+
+        }
+    }
+    with open(
+        os.path.join(
+            "target", "schemas", schema_version, f"types.yaml"
+        ),
+        "w",
+    ) as fp:
+        yaml.dump(types_metadata, fp, sort_keys=False)
+
     # Step 7 - create overall schema file
     schema_metadata = {
         "id": f"https://openminds.ebrains.eu/schemas/latest/?format=linkml",
@@ -159,7 +198,7 @@ for schema_version in schema_loader.get_schema_versions():
         "title": f'OpenMINDS version "{schema_version}"',
         "description": f'The complete collection of schemas for all metadata models of the openMINDS metadata framework, version "{schema_version}"',
         "license": "https://spdx.org/licenses/MIT.html",
-        "imports": ["linkml:types", "slots"] + imports,
+        "imports": ["linkml:types", "slots", "types", "enums"] + imports,
         "prefixes": {
             "linkml": "https://w3id.org/linkml/",
             "schema": "http://schema.org/",
@@ -169,7 +208,7 @@ for schema_version in schema_loader.get_schema_versions():
     }
     with open(
         os.path.join(
-            "target", "schemas", schema_version, f"openMINDS-{schema_version}.yml"
+            "target", "schemas", schema_version, f"openMINDS-{schema_version}.yaml"
         ),
         "w",
     ) as fp:
