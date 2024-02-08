@@ -147,6 +147,10 @@ classes:
     slot_usage:
       inRelationTo:
         required: true
+        any_of:
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
 - QuantitativeRelationAssessment:
@@ -310,7 +314,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       type:
         range: AtlasType
       usedSpecimen:
@@ -474,7 +478,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       usedSpecimen:
         range: Subject
       versionIdentifier:

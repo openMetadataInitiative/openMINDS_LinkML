@@ -199,7 +199,7 @@ classes:
       endTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       input:
         required: true
         range: File
@@ -216,7 +216,7 @@ classes:
       startTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       studyTarget:
         range: AuditoryStimulusType
 - TissueSampleCollection:
@@ -461,10 +461,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
-        - range: OrganismSubstance
       species:
         required: true
       studiedState:
@@ -575,7 +571,7 @@ classes:
       name:
         required: true
       specification:
-        range: Uri
+        range: uri
 - Measurement:
     class_uri: https://openminds.ebrains.eu/core/Measurement
     description: Structured information about a measurement performed during a scientific
@@ -916,7 +912,7 @@ classes:
       value:
         required: true
         any_of:
-        - range: int
+        - range: integer
         - range: float
 - Comment:
     class_uri: https://openminds.ebrains.eu/core/Comment
@@ -1079,7 +1075,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       versionIdentifier:
         required: true
       versionInnovation:
@@ -1238,7 +1234,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       versionIdentifier:
         required: true
       versionInnovation:
@@ -1316,7 +1312,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       versionIdentifier:
         required: true
       versionInnovation:
@@ -1422,7 +1418,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       type:
         required: true
         range: MetaDataModelType
@@ -1562,7 +1558,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       technique:
         required: true
         range: AnalysisTechnique

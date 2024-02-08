@@ -43,7 +43,7 @@ classes:
       endTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       environment:
         required: true
         any_of:
@@ -63,11 +63,7 @@ classes:
         required: true
         range: string
         any_of:
-        - range: Time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
+        - range: time
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -98,10 +94,6 @@ classes:
         - range: File
       stage:
         range: DataAnalysis
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
 - GenericComputation:
     class_uri: https://openminds.ebrains.eu/computation/GenericComputation
     description: Structured information about a computation whose type is unknown
@@ -131,7 +123,7 @@ classes:
       endTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       environment:
         required: true
         any_of:
@@ -151,11 +143,7 @@ classes:
         required: true
         range: string
         any_of:
-        - range: Time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
+        - range: time
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -198,7 +186,7 @@ classes:
       endTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       environment:
         required: true
         any_of:
@@ -218,11 +206,7 @@ classes:
         required: true
         range: string
         any_of:
-        - range: Time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
+        - range: time
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -304,7 +288,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       versionIdentifier:
         required: true
       versionInnovation:
@@ -378,7 +362,7 @@ classes:
       endTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       environment:
         required: true
         any_of:
@@ -398,11 +382,7 @@ classes:
         required: true
         range: string
         any_of:
-        - range: Time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
+        - range: time
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -457,7 +437,7 @@ classes:
       endTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       environment:
         required: true
         any_of:
@@ -477,11 +457,7 @@ classes:
         required: true
         range: string
         any_of:
-        - range: Time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
+        - range: time
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -579,7 +555,7 @@ classes:
       endTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       environment:
         required: true
         any_of:
@@ -599,11 +575,7 @@ classes:
         required: true
         range: string
         any_of:
-        - range: Time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
+        - range: time
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -646,7 +618,7 @@ classes:
       endTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       environment:
         required: true
         any_of:
@@ -666,11 +638,7 @@ classes:
         required: true
         range: string
         any_of:
-        - range: Time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
+        - range: time
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -777,7 +745,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       versionIdentifier:
         required: true
       versionInnovation:

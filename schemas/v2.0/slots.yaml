@@ -17,11 +17,11 @@ slots:
     description: Stands for Internationalized Resource Identifier which is an internet
       protocol standard that builds on the URI protocol, extending the set of permitted
       characters to include Unicode/ISO 10646.
-    range: Uri
+    range: uri
   URL:
     slot_uri: https://openminds.ebrains.eu/vocab/URL
     description: null
-    range: Uri
+    range: uri
   abstractionLevel:
     slot_uri: https://openminds.ebrains.eu/vocab/abstractionLevel
     description: Extent of simplification of physical, spatial, or temporal details
@@ -252,9 +252,9 @@ slots:
     description: Digital handle to identify objects or legal persons.
     any_of:
     - range: RORID
-    - range: DOI
-    - range: SWHID
     - range: GRIDID
+    - range: SWHID
+    - range: DOI
     - range: ORCID
     multivalued: true
     list_elements_unique: true
@@ -284,7 +284,7 @@ slots:
   endDate:
     slot_uri: https://openminds.ebrains.eu/vocab/endDate
     description: Date in the Gregorian calendar at which something terminates in time.
-    range: Date
+    range: date
   ethicsAssessment:
     slot_uri: https://openminds.ebrains.eu/vocab/ethicsAssessment
     description: Judgment about the applied principles of conduct governing an individual
@@ -327,8 +327,8 @@ slots:
       particular product.
     any_of:
     - range: URL
-    - range: File
     - range: DOI
+    - range: File
   fullName:
     slot_uri: https://openminds.ebrains.eu/vocab/fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -520,10 +520,10 @@ slots:
     description: Reference to the ensemble of multiple things or beings.
     any_of:
     - range: FileBundle
-    - range: FileRepository
-    - range: ParcellationTerminology
-    - range: SubjectGroup
     - range: TissueSampleCollection
+    - range: ParcellationTerminology
+    - range: FileRepository
+    - range: SubjectGroup
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -551,7 +551,7 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/legalCode
     description: Type of legislation that claims to cover the law system (complete
       or parts) as it existed at the time the code was enacted.
-    range: Uri
+    range: uri
   license:
     slot_uri: https://openminds.ebrains.eu/vocab/license
     description: Grant by a party to another party as an element of an agreement between
@@ -567,13 +567,13 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/maxValue
     description: Greatest quantity attained or allowed.
     any_of:
-    - range: int
+    - range: integer
     - range: float
   minValue:
     slot_uri: https://openminds.ebrains.eu/vocab/minValue
     description: Smallest quantity attained or allowed.
     any_of:
-    - range: int
+    - range: integer
     - range: float
   name:
     slot_uri: https://openminds.ebrains.eu/vocab/name
@@ -588,7 +588,7 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     description: Term or code used to identify something or someone registered within
       a particular ontology.
-    range: Uri
+    range: uri
   operatingSystem:
     slot_uri: https://openminds.ebrains.eu/vocab/operatingSystem
     description: Software that controls the operation of a computer and directs the
@@ -605,8 +605,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: Organ
     - range: CellType
+    - range: Organ
     multivalued: true
     list_elements_unique: true
   otherContribution:
@@ -720,12 +720,12 @@ slots:
   quantity:
     slot_uri: https://openminds.ebrains.eu/vocab/quantity
     description: Total amount or number of things or beings.
-    range: int
+    range: integer
   relatedMediaType:
     slot_uri: https://openminds.ebrains.eu/vocab/relatedMediaType
     description: Reference to an official two-part identifier for file formats and
       format contents.
-    range: Uri
+    range: uri
   relatedPublication:
     slot_uri: https://openminds.ebrains.eu/vocab/relatedPublication
     description: Reference to something that was made available for the general public
@@ -769,7 +769,7 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
     description: Fixed date on which a product is due to become or was made available
       for the general public to see or buy
-    range: Date
+    range: date
   relevantFor:
     slot_uri: https://openminds.ebrains.eu/vocab/relevantFor
     description: Reference to what or whom something or someone bears significance.
@@ -829,7 +829,7 @@ slots:
   specification:
     slot_uri: https://openminds.ebrains.eu/vocab/specification
     description: Detailed and precise presentation of, or proposal for something.
-    range: Uri
+    range: uri
   specificationFormat:
     slot_uri: https://openminds.ebrains.eu/vocab/specificationFormat
     description: Form in which a particular data structure or object state is specified
@@ -840,7 +840,7 @@ slots:
   startDate:
     slot_uri: https://openminds.ebrains.eu/vocab/startDate
     description: Date in the Gregorian calendar at which something begins in time
-    range: Date
+    range: date
   storageSize:
     slot_uri: https://openminds.ebrains.eu/vocab/storageSize
     description: Quantitative value defining how much disk space is used by an object
@@ -920,7 +920,7 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: Uri
+    - range: uri
     - range: string
     list_elements_unique: true
   synonym:
@@ -955,7 +955,7 @@ slots:
     description: Quantitative value range defining the uncertainty of a measurement.
     multivalued: true
     any_of:
-    - range: int
+    - range: integer
     - range: float
   unit:
     slot_uri: https://openminds.ebrains.eu/vocab/unit
@@ -965,11 +965,11 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/value
     description: Entry for a property.
     any_of:
-    - range: QuantitativeValueRange
-    - range: QuantitativeValue
     - range: float
-    - range: int
     - range: string
+    - range: integer
+    - range: QuantitativeValue
+    - range: QuantitativeValueRange
     multivalued: true
     inlined: true
   versionIdentifier:
@@ -992,7 +992,7 @@ slots:
     description: Hypertext document (block of information) found on the World Wide
       Web.
     multivalued: true
-    range: Uri
+    range: uri
     list_elements_unique: true
   weight:
     slot_uri: https://openminds.ebrains.eu/vocab/weight

@@ -1,0 +1,19 @@
+id: https://openminds.ebrains.eu/schemas/latest/?format=linkml
+name: openMINDS
+title: OpenMINDS version "v2.0"
+description: The complete collection of schemas for all metadata models of the openMINDS
+  metadata framework, version "v2.0"
+license: https://spdx.org/licenses/MIT.html
+imports:
+- linkml:types
+- slots
+- types
+- enums
+- core
+- SANDS
+- controlledTerms
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi

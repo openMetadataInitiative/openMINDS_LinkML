@@ -48,7 +48,7 @@ classes:
       endTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       input:
         required: true
         range: SubjectGroupState
@@ -65,7 +65,7 @@ classes:
       startTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       stimulus:
         required: true
       studyTarget:

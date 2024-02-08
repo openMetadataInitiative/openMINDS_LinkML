@@ -308,9 +308,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
       species:
         required: true
       studiedState:
@@ -526,7 +523,7 @@ classes:
       value:
         required: true
         any_of:
-        - range: int
+        - range: integer
         - range: float
 - SWHID:
     class_uri: https://openminds.ebrains.eu/core/SWHID
@@ -701,7 +698,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       versionIdentifier:
         required: true
       versionInnovation:
@@ -778,7 +775,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       versionIdentifier:
         required: true
       versionInnovation:
@@ -883,7 +880,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       type:
         required: true
         range: MetaDataModelType
@@ -1014,7 +1011,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       type:
         required: true
         range: SemanticDataType

@@ -17,7 +17,7 @@ slots:
     description: Stands for Internationalized Resource Identifier which is an internet
       protocol standard that builds on the URI protocol, extending the set of permitted
       characters to include Unicode/ISO 10646.
-    range: Uri
+    range: uri
   abbreviation:
     slot_uri: https://openminds.ebrains.eu/vocab/abbreviation
     description: null
@@ -26,26 +26,26 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/about
     description: null
     any_of:
-    - range: WorkflowRecipe
-    - range: CommonCoordinateSpace
-    - range: DatasetVersion
-    - range: ValidationTest
-    - range: LivePaperVersion
-    - range: LivePaper
-    - range: WebServiceVersion
-    - range: MetaDataModelVersion
-    - range: Dataset
     - range: SoftwareVersion
-    - range: CommonCoordinateSpaceVersion
-    - range: BrainAtlas
-    - range: MetaDataModel
-    - range: Software
-    - range: WebService
+    - range: WorkflowRecipe
     - range: ValidationTestVersion
+    - range: MetaDataModelVersion
+    - range: CommonCoordinateSpaceVersion
+    - range: CommonCoordinateSpace
+    - range: Software
+    - range: LivePaperVersion
+    - range: WebService
+    - range: MetaDataModel
+    - range: DatasetVersion
+    - range: WebServiceVersion
+    - range: ModelVersion
     - range: BrainAtlasVersion
     - range: Model
+    - range: LivePaper
+    - range: ValidationTest
     - range: WorkflowRecipeVersion
-    - range: ModelVersion
+    - range: BrainAtlas
+    - range: Dataset
     multivalued: true
     list_elements_unique: true
   abstract:
@@ -126,13 +126,13 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/anatomicalLocation
     description: null
     any_of:
-    - range: Organ
-    - range: ParcellationEntity
-    - range: OrganismSubstance
-    - range: SubcellularEntity
-    - range: CellType
-    - range: UBERONParcellation
     - range: ParcellationEntityVersion
+    - range: UBERONParcellation
+    - range: Organ
+    - range: SubcellularEntity
+    - range: OrganismSubstance
+    - range: CellType
+    - range: ParcellationEntity
     - range: CustomAnatomicalEntity
     multivalued: true
     list_elements_unique: true
@@ -283,8 +283,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/chemicalProduct
     description: null
     any_of:
-    - range: ChemicalMixture
     - range: ChemicalSubstance
+    - range: ChemicalMixture
     - range: MolecularEntity
   chlorideReversalPotential:
     slot_uri: https://openminds.ebrains.eu/vocab/chlorideReversalPotential
@@ -317,17 +317,17 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/conductorMaterial
     description: null
     any_of:
-    - range: ChemicalMixture
     - range: ChemicalSubstance
+    - range: ChemicalMixture
     - range: MolecularEntity
   configuration:
     slot_uri: https://openminds.ebrains.eu/vocab/configuration
     description: null
     any_of:
-    - range: File
     - range: WebResource
-    - range: Configuration
     - range: PropertyValueList
+    - range: File
+    - range: Configuration
     - range: string
   constructionType:
     slot_uri: https://openminds.ebrains.eu/vocab/constructionType
@@ -419,7 +419,7 @@ slots:
   creationDate:
     slot_uri: https://openminds.ebrains.eu/vocab/creationDate
     description: null
-    range: Date
+    range: date
   criteria:
     slot_uri: https://openminds.ebrains.eu/vocab/criteria
     description: Aspects or standards on which a judgement or decision is based.
@@ -462,14 +462,14 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/dataLocation
     description: null
     any_of:
-    - range: File
+    - range: ParcellationEntityVersion
     - range: PropertyValueList
+    - range: LivePaperResourceItem
     - range: Configuration
     - range: FileBundle
-    - range: FileArchive
-    - range: LivePaperResourceItem
-    - range: ParcellationEntityVersion
     - range: ModelVersion
+    - range: File
+    - range: FileArchive
     multivalued: true
     list_elements_unique: true
   dataType:
@@ -507,8 +507,8 @@ slots:
     description: null
     any_of:
     - range: WebResource
-    - range: File
     - range: DOI
+    - range: File
     multivalued: true
     list_elements_unique: true
   description:
@@ -555,23 +555,23 @@ slots:
     description: Digital handle to identify objects or legal persons.
     any_of:
     - range: RORID
-    - range: DOI
-    - range: ISBN
-    - range: SWHID
-    - range: RRID
     - range: ISSN
+    - range: ISBN
     - range: GRIDID
-    - range: ORCID
+    - range: SWHID
+    - range: DOI
     - range: IdentifiersDotOrgID
+    - range: ORCID
+    - range: RRID
     multivalued: true
     list_elements_unique: true
   dimension:
     slot_uri: https://openminds.ebrains.eu/vocab/dimension
     description: null
     any_of:
-    - range: Ellipse
     - range: Circle
     - range: Rectangle
+    - range: Ellipse
     inlined: true
   diseaseModel:
     slot_uri: https://openminds.ebrains.eu/vocab/diseaseModel
@@ -608,7 +608,7 @@ slots:
   endDate:
     slot_uri: https://openminds.ebrains.eu/vocab/endDate
     description: Date in the Gregorian calendar at which something terminates in time.
-    range: Date
+    range: date
   endMembranePotential:
     slot_uri: https://openminds.ebrains.eu/vocab/endMembranePotential
     description: null
@@ -618,8 +618,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/endTime
     description: null
     any_of:
-    - range: Time
     - range: string
+    - range: time
   entryPoint:
     slot_uri: https://openminds.ebrains.eu/vocab/entryPoint
     description: null
@@ -694,8 +694,8 @@ slots:
       particular product.
     any_of:
     - range: WebResource
-    - range: File
     - range: DOI
+    - range: File
   fullName:
     slot_uri: https://openminds.ebrains.eu/vocab/fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -901,7 +901,7 @@ slots:
   homepage:
     slot_uri: https://openminds.ebrains.eu/vocab/homepage
     description: Main website of something or someone.
-    range: Uri
+    range: uri
   hostedBy:
     slot_uri: https://openminds.ebrains.eu/vocab/hostedBy
     description: Reference to an organization that provides facilities and services
@@ -932,27 +932,27 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/inRelationTo
     description: Reference to a related element.
     any_of:
-    - range: CustomAnatomicalEntity
-    - range: ParcellationEntity
     - range: ParcellationEntityVersion
+    - range: ParcellationEntity
+    - range: CustomAnatomicalEntity
   input:
     slot_uri: https://openminds.ebrains.eu/vocab/input
     description: Something or someone that is put into or participates in a process
       or machine.
     any_of:
-    - range: CommonCoordinateSpaceVersion
-    - range: ValidationTestVersion
-    - range: SubjectState
-    - range: File
-    - range: BrainAtlasVersion
-    - range: DatasetVersion
-    - range: FileBundle
+    - range: SoftwareVersion
     - range: SubjectGroupState
+    - range: TissueSampleState
+    - range: FileBundle
+    - range: ValidationTestVersion
+    - range: CommonCoordinateSpaceVersion
+    - range: ModelVersion
+    - range: BrainAtlasVersion
+    - range: SubjectState
     - range: LocalFile
     - range: TissueSampleCollectionState
-    - range: TissueSampleState
-    - range: SoftwareVersion
-    - range: ModelVersion
+    - range: DatasetVersion
+    - range: File
     multivalued: true
     list_elements_unique: true
   inputData:
@@ -990,13 +990,13 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/insulatorMaterial
     description: null
     any_of:
-    - range: ChemicalMixture
     - range: ChemicalSubstance
+    - range: ChemicalMixture
     - range: MolecularEntity
   interlexIdentifier:
     slot_uri: https://openminds.ebrains.eu/vocab/interlexIdentifier
     description: Persistent identifier for a term registered in the InterLex project.
-    range: Uri
+    range: uri
   internalDiameter:
     slot_uri: https://openminds.ebrains.eu/vocab/internalDiameter
     description: null
@@ -1051,16 +1051,16 @@ slots:
     description: Reference to the ensemble of multiple things or beings.
     any_of:
     - range: Periodical
+    - range: PublicationVolume
+    - range: FileBundle
+    - range: Book
     - range: PublicationIssue
     - range: LivePaperVersion
-    - range: DatasetVersion
-    - range: FileBundle
-    - range: FileRepository
     - range: LivePaperSection
-    - range: SubjectGroup
     - range: TissueSampleCollection
-    - range: PublicationVolume
-    - range: Book
+    - range: DatasetVersion
+    - range: FileRepository
+    - range: SubjectGroup
     multivalued: true
     list_elements_unique: true
   issueNumber:
@@ -1155,13 +1155,13 @@ slots:
   knowledgeSpaceLink:
     slot_uri: https://openminds.ebrains.eu/vocab/knowledgeSpaceLink
     description: Persistent link to an encyclopedia entry in the Knowledge Space project.
-    range: Uri
+    range: uri
   labelingCompound:
     slot_uri: https://openminds.ebrains.eu/vocab/labelingCompound
     description: null
     any_of:
-    - range: ChemicalMixture
     - range: ChemicalSubstance
+    - range: ChemicalMixture
     - range: MolecularEntity
   laboratoryCode:
     slot_uri: https://openminds.ebrains.eu/vocab/laboratoryCode
@@ -1194,7 +1194,7 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/legalCode
     description: Type of legislation that claims to cover the law system (complete
       or parts) as it existed at the time the code was enacted.
-    range: Uri
+    range: uri
   length:
     slot_uri: https://openminds.ebrains.eu/vocab/length
     description: null
@@ -1239,14 +1239,14 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/material
     description: null
     any_of:
-    - range: ChemicalMixture
     - range: ChemicalSubstance
+    - range: ChemicalMixture
     - range: MolecularEntity
   maxValue:
     slot_uri: https://openminds.ebrains.eu/vocab/maxValue
     description: Greatest quantity attained or allowed.
     any_of:
-    - range: int
+    - range: integer
     - range: float
   maxValueUnit:
     slot_uri: https://openminds.ebrains.eu/vocab/maxValueUnit
@@ -1260,10 +1260,10 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/measuredWith
     description: null
     any_of:
-    - range: PipetteUsage
-    - range: SlicingDeviceUsage
     - range: ElectrodeUsage
+    - range: PipetteUsage
     - range: ElectrodeArrayUsage
+    - range: SlicingDeviceUsage
   memberOf:
     slot_uri: https://openminds.ebrains.eu/vocab/memberOf
     description: null
@@ -1282,7 +1282,7 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/minValue
     description: Smallest quantity attained or allowed.
     any_of:
-    - range: int
+    - range: integer
     - range: float
   minValueUnit:
     slot_uri: https://openminds.ebrains.eu/vocab/minValueUnit
@@ -1292,8 +1292,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/modificationDate
     description: null
     any_of:
-    - range: Datetime
-    - range: Date
+    - range: datetime
+    - range: date
   molecularEntity:
     slot_uri: https://openminds.ebrains.eu/vocab/molecularEntity
     description: null
@@ -1312,34 +1312,34 @@ slots:
     description: null
     multivalued: true
     any_of:
-    - range: int
+    - range: integer
     - range: float
   numberOfElectrodes:
     slot_uri: https://openminds.ebrains.eu/vocab/numberOfElectrodes
     description: null
-    range: int
+    range: integer
     minimum_value: 2
   numberOfSubjects:
     slot_uri: https://openminds.ebrains.eu/vocab/numberOfSubjects
     description: null
-    range: int
+    range: integer
     minimum_value: 2
   numberOfTissueSamples:
     slot_uri: https://openminds.ebrains.eu/vocab/numberOfTissueSamples
     description: null
-    range: int
+    range: integer
     minimum_value: 2
   ontologyIdentifier:
     slot_uri: https://openminds.ebrains.eu/vocab/ontologyIdentifier
     description: Term or code used to identify something or someone registered within
       a particular ontology.
     multivalued: true
-    range: Uri
+    range: uri
     list_elements_unique: true
   openDataIn:
     slot_uri: https://openminds.ebrains.eu/vocab/openDataIn
     description: null
-    range: Uri
+    range: uri
   operatingSystem:
     slot_uri: https://openminds.ebrains.eu/vocab/operatingSystem
     description: Software that controls the operation of a computer and directs the
@@ -1350,15 +1350,15 @@ slots:
   order:
     slot_uri: https://openminds.ebrains.eu/vocab/order
     description: null
-    range: int
+    range: integer
   origin:
     slot_uri: https://openminds.ebrains.eu/vocab/origin
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
+    - range: CellType
     - range: Organ
     - range: OrganismSubstance
-    - range: CellType
     multivalued: true
     list_elements_unique: true
   oscillationAmplitude:
@@ -1462,7 +1462,7 @@ slots:
     description: null
     multivalued: true
     any_of:
-    - range: int
+    - range: integer
     - range: float
   preferredDisplayColor:
     slot_uri: https://openminds.ebrains.eu/vocab/preferredDisplayColor
@@ -1473,7 +1473,7 @@ slots:
   preferredOntologyIdentifier:
     slot_uri: https://openminds.ebrains.eu/vocab/preferredOntologyIdentifier
     description: Persistent identifier of a preferred ontological term.
-    range: Uri
+    range: uri
   preferredVisualization:
     slot_uri: https://openminds.ebrains.eu/vocab/preferredVisualization
     description: null
@@ -1538,7 +1538,7 @@ slots:
   publicationDate:
     slot_uri: https://openminds.ebrains.eu/vocab/publicationDate
     description: null
-    range: Date
+    range: date
   publisher:
     slot_uri: https://openminds.ebrains.eu/vocab/publisher
     description: null
@@ -1579,10 +1579,10 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/recordedWith
     description: null
     any_of:
-    - range: PipetteUsage
-    - range: SlicingDeviceUsage
     - range: ElectrodeUsage
+    - range: PipetteUsage
     - range: ElectrodeArrayUsage
+    - range: SlicingDeviceUsage
   referenceData:
     slot_uri: https://openminds.ebrains.eu/vocab/referenceData
     description: null
@@ -1611,7 +1611,7 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/relatedMediaType
     description: Reference to an official two-part identifier for file formats and
       format contents.
-    range: Uri
+    range: uri
   relatedPublication:
     slot_uri: https://openminds.ebrains.eu/vocab/relatedPublication
     description: Reference to something that was made available for the general public
@@ -1652,15 +1652,15 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/releaseDate
     description: Fixed date on which a product is due to become or was made available
       for the general public to see or buy
-    range: Date
+    range: date
   relevantFor:
     slot_uri: https://openminds.ebrains.eu/vocab/relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: StimulationTechnique
     - range: AnalysisTechnique
-    - range: StimulationApproach
     - range: Technique
+    - range: StimulationApproach
+    - range: StimulationTechnique
   repository:
     slot_uri: https://openminds.ebrains.eu/vocab/repository
     description: Place, room, or container where something is deposited or stored.
@@ -1701,7 +1701,7 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/score
     description: null
     any_of:
-    - range: int
+    - range: integer
     - range: float
   scoreType:
     slot_uri: https://openminds.ebrains.eu/vocab/scoreType
@@ -1821,9 +1821,9 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/specification
     description: Detailed and precise presentation of, or proposal for something.
     any_of:
-    - range: Uri
-    - range: File
     - range: PropertyValueList
+    - range: uri
+    - range: File
   specificationFormat:
     slot_uri: https://openminds.ebrains.eu/vocab/specificationFormat
     description: Form in which a particular data structure or object state is specified
@@ -1847,7 +1847,7 @@ slots:
   startDate:
     slot_uri: https://openminds.ebrains.eu/vocab/startDate
     description: Date in the Gregorian calendar at which something begins in time
-    range: Date
+    range: date
   startMembranePotential:
     slot_uri: https://openminds.ebrains.eu/vocab/startMembranePotential
     description: null
@@ -1857,14 +1857,14 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/startTime
     description: null
     any_of:
-    - range: Time
     - range: string
+    - range: time
   startedBy:
     slot_uri: https://openminds.ebrains.eu/vocab/startedBy
     description: null
     any_of:
-    - range: Person
     - range: SoftwareAgent
+    - range: Person
   status:
     slot_uri: https://openminds.ebrains.eu/vocab/status
     description: null
@@ -1973,7 +1973,7 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: Uri
+    - range: uri
     - range: string
     list_elements_unique: true
   synonym:
@@ -2018,7 +2018,7 @@ slots:
   timestamp:
     slot_uri: https://openminds.ebrains.eu/vocab/timestamp
     description: null
-    range: Datetime
+    range: datetime
   tissueBathSolution:
     slot_uri: https://openminds.ebrains.eu/vocab/tissueBathSolution
     description: null
@@ -2054,7 +2054,7 @@ slots:
     description: Quantitative value range defining the uncertainty of a measurement.
     multivalued: true
     any_of:
-    - range: int
+    - range: integer
     - range: float
   unit:
     slot_uri: https://openminds.ebrains.eu/vocab/unit
@@ -2074,12 +2074,12 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/usedSpecimen
     description: null
     any_of:
-    - range: SubjectState
-    - range: Subject
-    - range: TissueSample
     - range: TissueSampleState
-    - range: SubjectGroup
+    - range: Subject
+    - range: SubjectState
     - range: TissueSampleCollection
+    - range: TissueSample
+    - range: SubjectGroup
     multivalued: true
     list_elements_unique: true
   userName:
@@ -2090,11 +2090,11 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/value
     description: Entry for a property.
     any_of:
-    - range: QuantitativeValueRange
-    - range: QuantitativeValue
     - range: float
-    - range: int
     - range: string
+    - range: integer
+    - range: QuantitativeValue
+    - range: QuantitativeValueRange
     multivalued: true
     inlined: true
     list_elements_unique: true
@@ -2104,7 +2104,7 @@ slots:
     description: null
     multivalued: true
     any_of:
-    - range: int
+    - range: integer
     - range: float
   variation:
     slot_uri: https://openminds.ebrains.eu/vocab/variation
@@ -2136,19 +2136,19 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/wasInformedBy
     description: null
     any_of:
-    - range: DataCopy
-    - range: Visualization
-    - range: Optimization
-    - range: DataAnalysis
-    - range: Simulation
-    - range: ModelValidation
     - range: GenericComputation
+    - range: Visualization
+    - range: ModelValidation
+    - range: Simulation
+    - range: DataCopy
+    - range: DataAnalysis
+    - range: Optimization
   webpage:
     slot_uri: https://openminds.ebrains.eu/vocab/webpage
     description: Hypertext document (block of information) found on the World Wide
       Web.
     multivalued: true
-    range: Uri
+    range: uri
     list_elements_unique: true
   weight:
     slot_uri: https://openminds.ebrains.eu/vocab/weight

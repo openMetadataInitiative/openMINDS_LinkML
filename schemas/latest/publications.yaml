@@ -85,7 +85,7 @@ classes:
         required: true
         range: License
       modificationDate:
-        range: Datetime
+        range: datetime
       relatedPublication:
         range: DOI
       releaseDate:
@@ -95,7 +95,7 @@ classes:
       supportChannel:
         range: string
         any_of:
-        - range: Uri
+        - range: uri
       versionIdentifier:
         required: true
       versionInnovation:
@@ -115,6 +115,10 @@ classes:
         required: true
       hostedBy:
         required: true
+        any_of:
+        - range: Organization
+        - range: WebService
+        - range: Service
       isPartOf:
         required: true
         range: LivePaperSection
@@ -168,7 +172,7 @@ classes:
       license:
         range: License
       modificationDate:
-        range: Date
+        range: date
       name:
         required: true
       publicationDate:
@@ -240,7 +244,7 @@ classes:
       license:
         range: License
       modificationDate:
-        range: Date
+        range: date
       name:
         required: true
       publicationDate:
@@ -334,7 +338,7 @@ classes:
       license:
         range: License
       modificationDate:
-        range: Date
+        range: date
       name:
         required: true
       publicationDate:
@@ -384,7 +388,7 @@ classes:
       license:
         range: License
       modificationDate:
-        range: Date
+        range: date
       name:
         required: true
       publicationDate:

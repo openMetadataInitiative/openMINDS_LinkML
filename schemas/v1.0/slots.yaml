@@ -246,7 +246,7 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/displayColor
     description: Preferred coloring.
     multivalued: true
-    range: int
+    range: integer
     maximum_value: 255
   electrodeContact:
     slot_uri: https://openminds.ebrains.eu/vocab/electrodeContact
@@ -470,8 +470,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileBundle
     - range: FileRepository
+    - range: FileBundle
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -555,8 +555,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: Organ
     - range: CellType
+    - range: Organ
     multivalued: true
     list_elements_unique: true
   otherAnatomicalRelation:
@@ -659,7 +659,7 @@ slots:
   quantity:
     slot_uri: https://openminds.ebrains.eu/vocab/quantity
     description: Total amount or number of things or beings.
-    range: int
+    range: integer
   relatedAtlasTerm:
     slot_uri: https://openminds.ebrains.eu/vocab/relatedAtlasTerm
     description: Reference to a related naming term of an anatomical structure that
@@ -826,7 +826,7 @@ slots:
     description: Quantitative value range defining the uncertainty of a measurement.
     multivalued: true
     any_of:
-    - range: int
+    - range: integer
     - range: float
   unit:
     slot_uri: https://openminds.ebrains.eu/vocab/unit
@@ -836,7 +836,7 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/value
     description: Entry for a property.
     any_of:
-    - range: int
+    - range: integer
     - range: float
   versionIdentifier:
     slot_uri: https://openminds.ebrains.eu/vocab/versionIdentifier

@@ -270,9 +270,6 @@ classes:
         required: true
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
       species:
         required: true
       studiedState:
@@ -348,6 +345,9 @@ classes:
         required: true
       isPartOf:
         required: true
+        any_of:
+        - range: FileBundle
+        - range: FileRepository
       name:
         required: true
 - FileInstance:

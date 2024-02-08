@@ -69,7 +69,7 @@ classes:
       endTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       input:
         required: true
         range: SubjectState
@@ -86,7 +86,7 @@ classes:
       startTime:
         range: string
         any_of:
-        - range: Time
+        - range: time
       studyTarget:
         range: AuditoryStimulusType
 - TissueSampleSlicing:
