@@ -226,10 +226,6 @@ classes:
         required: true
       qualitativeOverlap:
         required: true
-      quantitativeOverlap:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - AnatomicalEntity:
     class_uri: https://openminds.ebrains.eu/sands/AnatomicalEntity
     description: Structured information on an anatomical entity.

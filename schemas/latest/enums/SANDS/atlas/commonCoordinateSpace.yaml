@@ -1,0 +1,23 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/CommonCoordinateSpace?format=linkml
+name: openMINDS-enums-CommonCoordinateSpace
+title: OpenMINDS enum for CommonCoordinateSpace
+description: OpenMINDS enum for CommonCoordinateSpace
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  CommonCoordinateSpace:
+    enum_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpace
+    title: Common coordinate space
+    permissible_values:
+      BigBrain Model: {}
+      MEBRAINS brain template: {}
+      MNI Colin27 Average Brain: {}
+      MNI ICBM152: {}
+      FsAverage Surface Space: {}
+      Allen Mouse Brain CCF: {}
+      WHS of the SD Rat Brain: {}
+      fsLR Surface Space: {}

@@ -111,10 +111,6 @@ classes:
         - range: TissueSampleState
       output:
         range: TissueSampleCollectionState
-      temperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - SlicingDeviceUsage:
     class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
     description: null
@@ -139,9 +135,6 @@ classes:
         range: File
       sliceThickness:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       slicingAngle:
         range: QuantitativeValue
       slicingPlane:

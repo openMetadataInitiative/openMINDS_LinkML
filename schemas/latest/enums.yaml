@@ -11,6 +11,13 @@ prefixes:
 default_prefix: omi
 imports:
 - linkml:types
+- enums/core/data/license
+- enums/core/data/contentType
+- enums/core/data/contentTypePattern
+- enums/SANDS/atlas/parcellationEntityVersion
+- enums/SANDS/atlas/parcellationEntity
+- enums/SANDS/atlas/commonCoordinateSpaceVersion
+- enums/SANDS/atlas/commonCoordinateSpace
 - enums/controlledTerms/patchClampVariation
 - enums/controlledTerms/actionStatusType
 - enums/controlledTerms/organismSystem

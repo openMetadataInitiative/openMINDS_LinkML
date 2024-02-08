@@ -30,24 +30,12 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - Strain:
     class_uri: https://openminds.ebrains.eu/core/Strain
     description: null
@@ -136,10 +124,6 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -148,14 +132,6 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - Subject:
     class_uri: https://openminds.ebrains.eu/core/Subject
     description: Structured information on a subject.
@@ -281,10 +257,6 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -293,14 +265,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - TissueSampleState:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleState
     description: Structured information on a temporary state of a tissue sample.
@@ -317,24 +281,12 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - Configuration:
     class_uri: https://openminds.ebrains.eu/core/Configuration
     description: Structured information about the properties or parameters of an entity
@@ -461,6 +413,10 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
+        any_of:
+        - range: CellType
+        - range: Organ
+        - range: OrganismSubstance
       species:
         required: true
       studiedState:
@@ -493,23 +449,6 @@ classes:
     - lookupLabel
     slot_usage:
       filePathPattern:
-        required: true
-- License:
-    class_uri: https://openminds.ebrains.eu/core/License
-    description: Structured information on a used license.
-    title: License
-    slots:
-    - id
-    - fullName
-    - legalCode
-    - shortName
-    - webpage
-    slot_usage:
-      fullName:
-        required: true
-      legalCode:
-        required: true
-      shortName:
         required: true
 - FilePathPattern:
     class_uri: https://openminds.ebrains.eu/core/FilePathPattern
@@ -550,28 +489,6 @@ classes:
       service:
         required: true
         range: Service
-- ContentType:
-    class_uri: https://openminds.ebrains.eu/core/ContentType
-    description: Structured information on the content type of a file instance, bundle
-      or repository.
-    title: Content type
-    slots:
-    - id
-    - dataType
-    - description
-    - displayLabel
-    - fileExtension
-    - name
-    - relatedMediaType
-    - specification
-    - synonym
-    slot_usage:
-      dataType:
-        range: DataType
-      name:
-        required: true
-      specification:
-        range: uri
 - Measurement:
     class_uri: https://openminds.ebrains.eu/core/Measurement
     description: Structured information about a measurement performed during a scientific
@@ -587,12 +504,6 @@ classes:
     slot_usage:
       measuredQuantity:
         required: true
-      measuredWith:
-        any_of:
-        - range: ElectrodeArrayUsage
-        - range: ElectrodeUsage
-        - range: PipetteUsage
-        - range: SlicingDeviceUsage
       value:
         required: true
         range: QuantitativeValue
@@ -632,20 +543,6 @@ classes:
         - range: FileBundle
         - range: FileRepository
       name:
-        required: true
-- ContentTypePattern:
-    class_uri: https://openminds.ebrains.eu/core/ContentTypePattern
-    description: null
-    title: Content type pattern
-    slots:
-    - id
-    - contentType
-    - lookupLabel
-    - regex
-    slot_usage:
-      contentType:
-        required: true
-      regex:
         required: true
 - FileRepository:
     class_uri: https://openminds.ebrains.eu/core/FileRepository

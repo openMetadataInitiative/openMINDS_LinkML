@@ -56,8 +56,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   ageCategory:
     slot_uri: https://openminds.ebrains.eu/vocab/ageCategory
@@ -251,9 +251,9 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: RORID
-    - range: GRIDID
     - range: SWHID
+    - range: GRIDID
+    - range: RORID
     - range: DOI
     - range: ORCID
     multivalued: true
@@ -326,9 +326,9 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
+    - range: File
     - range: URL
     - range: DOI
-    - range: File
   fullName:
     slot_uri: https://openminds.ebrains.eu/vocab/fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -519,11 +519,11 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileBundle
-    - range: TissueSampleCollection
+    - range: SubjectGroup
     - range: ParcellationTerminology
     - range: FileRepository
-    - range: SubjectGroup
+    - range: FileBundle
+    - range: TissueSampleCollection
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -605,8 +605,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: CellType
     - range: Organ
+    - range: CellType
     multivalued: true
     list_elements_unique: true
   otherContribution:
@@ -714,8 +714,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   quantity:
     slot_uri: https://openminds.ebrains.eu/vocab/quantity
@@ -966,8 +966,8 @@ slots:
     description: Entry for a property.
     any_of:
     - range: float
-    - range: string
     - range: integer
+    - range: string
     - range: QuantitativeValue
     - range: QuantitativeValueRange
     multivalued: true
@@ -998,8 +998,8 @@ slots:
     slot_uri: https://openminds.ebrains.eu/vocab/weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   year:
     slot_uri: https://openminds.ebrains.eu/vocab/year

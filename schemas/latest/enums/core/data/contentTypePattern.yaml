@@ -1,0 +1,15 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/ContentTypePattern?format=linkml
+name: openMINDS-enums-ContentTypePattern
+title: OpenMINDS enum for ContentTypePattern
+description: OpenMINDS enum for ContentTypePattern
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ContentTypePattern:
+    enum_uri: https://openminds.ebrains.eu/core/ContentTypePattern
+    title: Content type pattern
+    permissible_values: {}

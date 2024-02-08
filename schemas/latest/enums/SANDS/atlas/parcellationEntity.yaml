@@ -1,0 +1,1611 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/ParcellationEntity?format=linkml
+name: openMINDS-enums-ParcellationEntity
+title: OpenMINDS enum for ParcellationEntity
+description: OpenMINDS enum for ParcellationEntity
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ParcellationEntity:
+    enum_uri: https://openminds.ebrains.eu/sands/ParcellationEntity
+    title: Parcellation entity
+    permissible_values:
+      Area 4a (PreCG):
+        description: null
+      Area Id4 (Insula):
+        description: null
+      Frontal-to-Occipital (GapMap:
+        description: null
+      DG (Hippocampus):
+        description: null
+      Ventral Dentate Nucleus (Cerebellum):
+        description: null
+      cerebral cortex:
+        description: null
+      Area hIP5 (IPS):
+        description: null
+      Area Op8 (Frontal Operculum):
+        description: null
+      CM (Amygdala):
+        description: null
+      LB.La (Amygdala):
+        description: null
+      dorsal occipital cortex:
+        description: null
+      Area 8d1 (SFG):
+        description: null
+      Area Ia3 (Insula):
+        description: null
+      Area 5L (SPL):
+        description: null
+      Area Fo5 (OFC):
+        description: null
+      olfactory cortex:
+        description: null
+      Area p30 (retrosplenial):
+        description: null
+      magnocellular group:
+        description: null
+      Area Fo2 (OFC):
+        description: null
+      Area hOc6 (POS):
+        description: null
+      Area Ia2 (Insula):
+        description: null
+      Area SFS2 (SFS):
+        description: null
+      Area hIP2 (IPS):
+        description: null
+      parietal operculum:
+        description: null
+      Area Op5 (Frontal Operculum):
+        description: null
+      SF (Amygdala):
+        description: null
+      Area Id2 (Insula):
+        description: null
+      occipital lobe:
+        description: null
+      Area p24c.pd24cv (pACC):
+        description: null
+      cerebral nuclei:
+        description: null
+      Area Op9 (Frontal Operculum):
+        description: null
+      CGM.CGMm (Metathalamus):
+        description: null
+      Area 1 (PostCG):
+        description: null
+      Area Ph3 (PhG):
+        description: null
+      Area TE 2.2 (STG):
+        description: null
+      Area Id9 (Insula):
+        description: null
+      CGL.lam5 (Metathalamus):
+        description: null
+      Area FG1 (FusG):
+        description: null
+      superior temporal gyrus:
+        description: null
+      Dorsal Dentate Nucleus (Cerebellum):
+        description: null
+      Interposed Nucleus (Cerebellum):
+        description: null
+      superior temporal sulcus:
+        description: null
+      LB.Bm (Amygdala):
+        description: null
+      medial orbitofrontal cortex:
+        description: null
+      intraparietal sulcus:
+        description: null
+      MF.icm (Amygdala):
+        description: null
+      ventral occipital cortex:
+        description: null
+      CGL.lam4 (Metathalamus):
+        description: null
+      fusiform gyrus:
+        description: null
+      Area 45 (IFG):
+        description: null
+      Area 25.25p (sACC):
+        description: null
+      Subiculum.Sub (Hippocampus):
+        description: null
+      Area hOc4d (Cuneus):
+        description: null
+      Area IFS4 (IFS):
+        description: null
+      Area p24ab (pACC):
+        description: null
+      superior frontal sulcus:
+        description: null
+      superior frontal gyrus:
+        description: null
+      Area Op6 (Frontal Operculum):
+        description: null
+      Area PGa (IPL):
+        description: null
+      Area 7PC (SPL):
+        description: null
+      Area hIP6 (IPS):
+        description: null
+      Area Fo6 (OFC):
+        description: null
+      CGL.lam3 (Metathalamus):
+        description: null
+      IF (Amygdala):
+        description: null
+      Temporal-to-Parietal (GapMap):
+        description: null
+      metencephalon:
+        description: null
+      CGL.lam1 (Metathalamus):
+        description: null
+      Area hPO1 (POS):
+        description: null
+      Frontal-II (GapMap):
+        description: null
+      middle frontal gyrus:
+        description: null
+      LB (Amygdala):
+        description: null
+      insula:
+        description: null
+      limbic lobe:
+        description: null
+      Area s24 (sACC):
+        description: null
+      CA (Hippocampus):
+        description: null
+      Frontal-I (GapMap):
+        description: null
+      basal ganglia:
+        description: null
+      Area 6d2 (PreCG):
+        description: null
+      Subiculum.ProS (Hippocampus):
+        description: null
+      Area hOc3d (Cuneus):
+        description: null
+      frontal cingulate:
+        description: null
+      Area hOc2 (V2, 18):
+        description: null
+      Area Fp1 (FPole):
+        description: null
+      Area TPJ (STG/SMG):
+        description: null
+      Area PFop (IPL):
+        description: null
+      AcbM (Medial Accumbens, Ventral Striatum):
+        description: null
+      CM.Me (Amygdala):
+        description: null
+      Area hOc3v (LingG):
+        description: null
+      Area TI (STG):
+        description: null
+      agranular insula:
+        description: null
+      Area hOc4la (LOC):
+        description: null
+      Area TE 1.0 (HESCHL):
+        description: null
+      HATA (Hippocampus):
+        description: null
+      lateral orbitofrontal cortex:
+        description: null
+      Area 33 (ACC):
+        description: null
+      Area p24c.pd24cd (pACC):
+        description: null
+      AcbL (Lateral Accumbens, Ventral Striatum):
+        description: null
+      Area Ig2 (Insula):
+        description: null
+      Area 2 (PostCS):
+        description: null
+      fiber masses:
+        description: null
+      Area s32 (sACC):
+        description: null
+      BST (Bed Nucleus):
+        description: null
+      Area 8v2 (MFG):
+        description: null
+      Area IFS3 (IFS):
+        description: null
+      Area p24c.pv24c (pACC):
+        description: null
+      CM.AAA (Amygdala):
+        description: null
+      Area 6d3 (SFS):
+        description: null
+      hippocampal formation:
+        description: null
+      Frontal-to-Temporal-I (GapMap):
+        description: null
+      SF.VCo (Amygdala):
+        description: null
+      frontal operculum:
+        description: null
+      LB.Pl (Amygdala):
+        description: null
+      Ch 4 (Basal Forebrain):
+        description: null
+      Area a30 (retrosplenial):
+        description: null
+      Area 44 (IFG):
+        description: null
+      CA1 (Hippocampus):
+        description: null
+      Tuberculum (Basal Forebrain):
+        description: null
+      Area Id5 (Insula):
+        description: null
+      metathalamus:
+        description: null
+      parietal lobe:
+        description: null
+      Area Id8 (Insula):
+        description: null
+      Frontal-to-Temporal (GapMap):
+        description: null
+      Area STS1 (STS):
+        description: null
+      Area STS2 (STS):
+        description: null
+      Area TE 3 (STG):
+        description: null
+      Area CoS1 (CoS):
+        description: null
+      Terminal islands (Basal Forebrain):
+        description: null
+      Area p24ab.p24a (pACC):
+        description: null
+      inferior frontal gyrus:
+        description: null
+      Area a29 (retrosplenial):
+        description: null
+      IF.iol (Amygdala):
+        description: null
+      parahippocampal gyrus:
+        description: null
+      Area OP4 (POperc):
+        description: null
+      Area Id3 (Insula):
+        description: null
+      dysgranular insula:
+        description: null
+      thalamus:
+        description: null
+      Area OP1 (POperc):
+        description: null
+      Area 6ma (preSMA, mesial SFG):
+        description: null
+      basal forebrain:
+        description: null
+      frontal lobe:
+        description: null
+      fronto-marginal sulcus:
+        description: null
+      Area PFm (IPL):
+        description: null
+      Area TE 1.1 (HESCHL):
+        description: null
+      LB.Bl (Amygdala):
+        description: null
+      CGM.CGMv (Metathalamus):
+        description: null
+      CGL.lam6 (Metathalamus):
+        description: null
+      Area Ig3 (Insula):
+        description: null
+      Area OP3 (POperc):
+        description: null
+      Subiculum.PaS (Hippocampus):
+        description: null
+      CGL (Metathalamus):
+        description: null
+      Area FG3 (FusG):
+        description: null
+      VP (Ventral Pallidum):
+        description: null
+      Area 7M (SPL):
+        description: null
+      Area TeI (STG):
+        description: null
+      Area Op7 (Frontal Operculum):
+        description: null
+      Area Fo7 (OFC):
+        description: null
+      Area 6mp (SMA, mesial SFG):
+        description: null
+      mesial precentral gyrus:
+        description: null
+      Area 8v1 (MFG):
+        description: null
+      Area i29 (retrosplenial):
+        description: null
+      Area IFS1 (IFS):
+        description: null
+      CGL.lam2 (Metathalamus):
+        description: null
+      Area hOc4lp (LOC):
+        description: null
+      retrosplenial part:
+        description: null
+      IF.ld (Amygdala):
+        description: null
+      frontal pole:
+        description: null
+      dorsal precentral gyrus:
+        description: null
+      telencephalon:
+        description: null
+      occipital cortex:
+        description: null
+      sublenticular part:
+        description: null
+      Area hIP7 (IPS):
+        description: null
+      inferior parietal lobule:
+        description: null
+      Area TE 1.2 (HESCHL):
+        description: null
+      MF (Amygdala):
+        description: null
+      Area Fp2 (FPole):
+        description: null
+      Subiculum (Hippocampus):
+        description: null
+      Area Fo3 (OFC):
+        description: null
+      Area 7P (SPL):
+        description: null
+      Area Fo1 (OFC):
+        description: null
+      Area 3a (PostCG):
+        description: null
+      temporal insula:
+        description: null
+      Area p32 (pACC):
+        description: null
+      Area hOc4v (LingG):
+        description: null
+      Area Id7 (Insula):
+        description: null
+      subthalamus:
+        description: null
+      dentate nucleus:
+        description: null
+      SF.AHi (Amygdala):
+        description: null
+      cingulate gyrus:
+        description: null
+      Area hOc1 (V1, 17, CalcS):
+        description: null
+      Area Id1 (Insula):
+        description: null
+      CA3 (Hippocampus):
+        description: null
+      Area TE 2.1 (STG):
+        description: null
+      FuP (Fundus of Putamen, Ventral Striatum):
+        description: null
+      CGM.CGMd (Metathalamus):
+        description: null
+      Area hIP4 (IPS):
+        description: null
+      Area p24ab.p24b (pACC):
+        description: null
+      CGM (Metathalamus):
+        description: null
+      Area Fo4 (OFC):
+        description: null
+      precentral gyrus:
+        description: null
+      Subiculum.PreS (Hippocampus):
+        description: null
+      SF.APir (Amygdala):
+        description: null
+      Area IFS2 (IFS):
+        description: null
+      collateral sulcus:
+        description: null
+      Area s24.s24b (sACC):
+        description: null
+      diencephalon:
+        description: null
+      Fastigial Nucleus (Cerebellum):
+        description: null
+      Frontal-to-Temporal-II (GapMap):
+        description: null
+      inferior frontal sulcus:
+        description: null
+      VTM (Amygdala):
+        description: null
+      amygdala:
+        description: null
+      FuCd (Fundus of Caudate Nucleus, Ventral Striatum):
+        description: null
+      Area MFG1 (MFG):
+        description: null
+      Area Id10 (Insula):
+        description: null
+      CM.Ce (Amygdala):
+        description: null
+      Area 3b (PostCG):
+        description: null
+      HC-Transsubiculum (Hippocampus):
+        description: null
+      brain:
+        description: null
+      Area 8d2 (SFG):
+        description: null
+      Area 5M (SPL):
+        description: null
+      lateral occipital cortex:
+        description: null
+      Area hIP3 (IPS):
+        description: null
+      Area 25 (sACC):
+        description: null
+      Area hIP8 (IPS):
+        description: null
+      temporo-parietal junction:
+        description: null
+      Area MFG2 (MFG):
+        description: null
+      granular insula:
+        description: null
+      posterior medial superior frontal gyrus:
+        description: null
+      Area hIP1 (IPS):
+        description: null
+      cerebellum:
+        description: null
+      Area IFJ2 (IFS,PreCS):
+        description: null
+      Area PFcm (IPL):
+        description: null
+      Area p24c (pACC):
+        description: null
+      Area s24.s24a (sACC):
+        description: null
+      Area Id6 (Insula):
+        description: null
+      Area Ph1 (PhG):
+        description: null
+      Area IFJ1 (IFS,PreCS):
+        description: null
+      Area Ia1 (Insula):
+        description: null
+      amygdaloid groups:
+        description: null
+      Area Ph2 (PhG):
+        description: null
+      Area Ia (Insula):
+        description: null
+      Entorhinal Cortex:
+        description: null
+      IF.ice (Amygdala):
+        description: null
+      Area PF (IPL):
+        description: null
+      Area 7A (SPL):
+        description: null
+      parieto-occipital sulcus:
+        description: null
+      cerebellar nuclei:
+        description: null
+      Area p29 (retrosplenial):
+        description: null
+      Area 5Ci (SPL):
+        description: null
+      Area 25.25a (sACC:
+        description: null
+      postcentral gyrus:
+        description: null
+      Area hOc5 (LOC):
+        description: null
+      Area OP2 (POperc):
+        description: null
+      Area Ig1 (Insula):
+        description: null
+      Area 4p (PreCG):
+        description: null
+      Area SFS1 (SFS):
+        description: null
+      Area 6d1 (PreCG):
+        description: null
+      Area PGp (IPL):
+        description: null
+      Area i30 (retrosplenial):
+        description: null
+      Ch 123 (Basal Forebrain):
+        description: null
+      CA2 (Hippocampus):
+        description: null
+      "Heschl\u2019s gyrus":
+        description: null
+      superior parietal lobule:
+        description: null
+      Area PFt (IPL):
+        description: null
+      ventral striatum:
+        description: null
+      Area FG2 (FusG):
+        description: null
+      MF.lm (Amygdala):
+        description: null
+      Area FG4 (FusG):
+        description: null
+      STN (Subthalamus):
+        description: null
+      IP-SP_1:
+        description: null
+      RAC-SF_1:
+        description: null
+      PoCi-PrCu_1:
+        description: null
+      CAC-PoCi_0:
+        description: null
+      SM-Ins_0:
+        description: null
+      IP-MT_0:
+        description: null
+      PoC-SM_1:
+        description: null
+      LO-SP_0:
+        description: null
+      MT-ST_0:
+        description: null
+      RMF-SF_1:
+        description: null
+      PoC-PrC_0:
+        description: null
+      CMF-PrC_1:
+        description: null
+      IP-LO_1:
+        description: null
+      PrC-SF_0:
+        description: null
+      Or-Ins_0:
+        description: null
+      PoC-SM_0:
+        description: null
+      PoC-SP_0:
+        description: null
+      IP-IT_0:
+        description: null
+      PoCi-PrCu_2:
+        description: null
+      PrC-SP_0:
+        description: null
+      CMF-Op_0:
+        description: null
+      LOF-RMF_0:
+        description: null
+      MT-SM_0:
+        description: null
+      SP-SM_0:
+        description: null
+      LOF-MOF_0:
+        description: null
+      CMF-SF_1:
+        description: null
+      PoC-PrC_1:
+        description: null
+      RMF-SF_0:
+        description: null
+      CMF-PoC_0:
+        description: null
+      IP-SM_0:
+        description: null
+      IP-SP_0:
+        description: null
+      IT-MT_1:
+        description: null
+      PoC-PrC_2:
+        description: null
+      Cu-Li_0:
+        description: null
+      ST-Ins_0:
+        description: null
+      Op-Tr_0:
+        description: null
+      PoCi-SF_0:
+        description: null
+      PoC-PrC_3:
+        description: null
+      Fu-LO_1:
+        description: null
+      MOF-ST_0:
+        description: null
+      PoC-SP_1:
+        description: null
+      PoC-Ins_0:
+        description: null
+      Op-PrC_0:
+        description: null
+      ST-TT_0:
+        description: null
+      CMF-PrC_0:
+        description: null
+      IT-MT_2:
+        description: null
+      LOF-Or_0:
+        description: null
+      Tr-Ins_0:
+        description: null
+      Tr-SF_0:
+        description: null
+      CMF-SF_0:
+        description: null
+      IC-PrCu_0:
+        description: null
+      CMF-RMF_0:
+        description: null
+      IP-LO_0:
+        description: null
+      PrC-Ins_0:
+        description: null
+      IT-MT_0:
+        description: null
+      Fu-LO_0:
+        description: null
+      PoCi-PrCu_0:
+        description: null
+      LOF-RMF_1:
+        description: null
+      RAC-SF_0:
+        description: null
+      PoCi-RAC_0:
+        description: null
+      PrC-SM_0:
+        description: null
+      CAC-PrCu_0:
+        description: null
+      Op-Ins_0:
+        description: null
+      Op-SF_0:
+        description: null
+      superficial white matter:
+        description: null
+      LOF-ST_0:
+        description: null
+      pallidum:
+        description: null
+      cerebellum white matter:
+        description: null
+      cerebrospinal fluid:
+        description: null
+      putamen:
+        description: null
+      lateral ventricle:
+        description: null
+      accumbens area:
+        description: null
+      cerebral white matter:
+        description: null
+      unknown:
+        description: null
+      brain stem:
+        description: null
+      vessel:
+        description: null
+      cerebellum cortex:
+        description: null
+      lesion:
+        description: null
+      hippocampus:
+        description: null
+      ventral diencephalon:
+        description: null
+      inferior lateral ventricle:
+        description: null
+      caudate:
+        description: null
+      third ventricle:
+        description: null
+      fourth ventricle:
+        description: null
+      'temporal pole: middle temporal gyrus':
+        description: null
+      lenticular nucleus, pallidum:
+        description: null
+      superior frontal gyrus, orbital part:
+        description: null
+      lenticular nucleus, putamen:
+        description: null
+      gyrus rectus:
+        description: null
+      calcarine fissure and surrounding cortex:
+        description: null
+      supramarginal gyrus:
+        description: null
+      paracentral lobule:
+        description: null
+      subcortical gray nuclei:
+        description: null
+      median cingulate and paracingulate gyri:
+        description: null
+      inferior frontal gyrus, orbital part:
+        description: null
+      anterior cingulate and paracingulate gyri:
+        description: null
+      lingual gyrus:
+        description: null
+      angular gyrus:
+        description: null
+      superior frontal gyrus, medial:
+        description: null
+      ? 'inferior parietal, but supramarginal and
+
+        angular gyri'
+      : description: null
+      temporal lobe:
+        description: null
+      cuneus:
+        description: null
+      Heschl gyrus:
+        description: null
+      inferior temporal gyrus:
+        description: null
+      superior occipital gyrus:
+        description: null
+      superior parietal gyrus:
+        description: null
+      middle occipital gyrus:
+        description: null
+      superior frontal gyrus, dorsolateral:
+        description: null
+      inferior frontal gyrus, triangular part:
+        description: null
+      supplementary motor area:
+        description: null
+      central region:
+        description: null
+      middle frontal gyrus, orbital part:
+        description: null
+      precuneus:
+        description: null
+      inferior frontal gyrus, opercular part:
+        description: null
+      superior frontal gyrus, medial orbital:
+        description: null
+      rolandic operculum:
+        description: null
+      posterior cingulate gyrus:
+        description: null
+      inferior occipital gyrus:
+        description: null
+      'temporal pole: superior temporal gyrus':
+        description: null
+      caudate nucleus:
+        description: null
+      middle temporal gyrus:
+        description: null
+      long cingulate fibres:
+        description: null
+      inferior longitudinal fasciculus:
+        description: null
+      uncinate fasciculus:
+        description: null
+      anterior segment of arcuate fasciculus:
+        description: null
+      temporal cingulate fibres:
+        description: null
+      fornix:
+        description: null
+      arcuate fasciculus:
+        description: null
+      corticospinal tract:
+        description: null
+      cingulum:
+        description: null
+      inferior fronto-occipital fasciculus:
+        description: null
+      deep white matter:
+        description: null
+      direct segment of arcuate fasciculus:
+        description: null
+      short cingulate fibres:
+        description: null
+      posterior segment of arcuate fasciculus:
+        description: null
+      inferior parietal cortex:
+        description: null
+      caudal anterior cingulate cortex:
+        description: null
+      cingulate cortex:
+        description: null
+      corpus callosum:
+        description: null
+      transverse temporal cortex:
+        description: null
+      banks superior temporal sulcus:
+        description: null
+      isthmus of cingulate cortex:
+        description: null
+      banks of superior temporal sulcus:
+        description: null
+      cuneus cortex:
+        description: null
+      pericalcarine cortex:
+        description: null
+      temporal lobe - medial aspect:
+        description: null
+      rostral anterior cingulate cortex:
+        description: null
+      caudal middle frontal gyrus:
+        description: null
+      precuneus cortex:
+        description: null
+      temporal pole:
+        description: null
+      orbitofrontal cortex:
+        description: null
+      superior parietal cortex:
+        description: null
+      rostral middle frontal gyrus:
+        description: null
+      posterior cingulate cortex:
+        description: null
+      anterior cingulate cortex:
+        description: null
+      entorhinal cortex:
+        description: null
+      pars orbitalis:
+        description: null
+      temporal lobe - lateral aspect:
+        description: null
+      pars triangularis:
+        description: null
+      pars opercularis:
+        description: null
+      Brodmann area 19:
+        description: null
+      Brodmann area 1:
+        description: null
+      Brodmann area 8a:
+        description: null
+      Brodmann area 6:
+        description: null
+      Brodmann area 7:
+        description: null
+      Brodmann area 21:
+        description: null
+      Brodmann area 44:
+        description: null
+      Brodmann area 16:
+        description: null
+      Brodmann area 34:
+        description: null
+      Brodmann area 15:
+        description: null
+      Brodmann area 35:
+        description: null
+      Brodmann area 46:
+        description: null
+      Brodmann area 37:
+        description: null
+      Brodmann area 36:
+        description: null
+      Brodmann area 11:
+        description: null
+      Brodmann area 26:
+        description: null
+      Brodmann area 2:
+        description: null
+      Brodmann area 9:
+        description: null
+      Brodmann area 52:
+        description: null
+      Brodmann area 24:
+        description: null
+      Brodmann area 13:
+        description: null
+      Brodmann area 3:
+        description: null
+      Brodmann area 22:
+        description: null
+      Brodmann area 43:
+        description: null
+      Brodmann area 47:
+        description: null
+      Brodmann area 41:
+        description: null
+      Brodmann area 17:
+        description: null
+      Brodmann area 42:
+        description: null
+      Brodmann area 29:
+        description: null
+      Brodmann area 38:
+        description: null
+      Brodmann area 14:
+        description: null
+      Brodmann area 45:
+        description: null
+      Brodmann area 39:
+        description: null
+      Brodmann area 20:
+        description: null
+      Brodmann area 27:
+        description: null
+      Brodmann area 5:
+        description: null
+      Brodmann area 30:
+        description: null
+      Brodmann area 4:
+        description: null
+      Brodmann area 10:
+        description: null
+      Brodmann area 32:
+        description: null
+      Brodmann area 25:
+        description: null
+      Brodmann area 40:
+        description: null
+      Brodmann area 48:
+        description: null
+      Brodmann cerebral cortex:
+        description: null
+      Brodmann area 18:
+        description: null
+      Brodmann area 33:
+        description: null
+      Brodmann area 31:
+        description: null
+      Brodmann area 8:
+        description: null
+      Brodmann area 28:
+        description: null
+      Brodmann area 12:
+        description: null
+      Brodmann area 23:
+        description: null
+      nuclei of the lateral lemniscus:
+        description: null
+      brachium of the superior colliculus:
+        description: null
+      amygdaloid area, unspecified:
+        description: null
+      piriform cortex, layer 1:
+        description: null
+      cingulate region:
+        description: null
+      cornu ammonis 3:
+        description: null
+      zona incerta, dorsal part:
+        description: null
+      ventral nuclei of the dorsal thalamus:
+        description: null
+      fasciola cinereum:
+        description: null
+      frontal association area 3:
+        description: null
+      parafascicular thalamic nucleus:
+        description: null
+      substantia nigra, lateral part:
+        description: null
+      medial geniculate body, marginal zone:
+        description: null
+      substantia nigra, reticular part:
+        description: null
+      nucleus of the stria medullaris:
+        description: null
+      piriform cortex, layer 2:
+        description: null
+      cerebellar and precerebellar white matter:
+        description: null
+      substantia nigra, compact part:
+        description: null
+      lateral lemniscus, dorsal nucleus:
+        description: null
+      primary somatosensory area, forelimb representation:
+        description: null
+      lateral posterior (pulvinar) complex of the dorsal thalamus:
+        description: null
+      supraoptic decussation:
+        description: null
+      ventral orbital area:
+        description: null
+      hippocampal formation, unspecified:
+        description: null
+      medial lemniscus, unspecified:
+        description: null
+      paracentral thalamic nucleus:
+        description: null
+      cornu ammonis 2:
+        description: null
+      fields of Forel:
+        description: null
+      mesencephalon:
+        description: null
+      parietal region:
+        description: null
+      infralimbic area:
+        description: null
+      agranular insular cortex, ventral area:
+        description: null
+      primary somatosensory area, barrel field:
+        description: null
+      parasubiculum:
+        description: null
+      central lateral thalamic nucleus:
+        description: null
+      perirhinal area 36:
+        description: null
+      ventrolateral thalamic nucleus:
+        description: null
+      facial nerve:
+        description: null
+      facial nerve, unspecified:
+        description: null
+      occipital region:
+        description: null
+      reticular (pre)thalamic nucleus, unspecified:
+        description: null
+      primary somatosensory cortex:
+        description: null
+      ventral striatal region, unspecified:
+        description: null
+      frontal association cortex:
+        description: null
+      brainstem:
+        description: null
+      tectum:
+        description: null
+      medulla oblongata:
+        description: null
+      interbrain:
+        description: null
+      pretectum:
+        description: null
+      ventral-intermediate entorhinal area:
+        description: null
+      ventral posterior thalamic nucleus:
+        description: null
+      anterior commissure, intrabulbar part:
+        description: null
+      prelimbic area:
+        description: null
+      olfactory bulb:
+        description: null
+      posterior parietal cortex:
+        description: null
+      dorsal-lateral entorhinal area:
+        description: null
+      inferior olive:
+        description: null
+      mediodorsal thalamic nucleus, lateral part:
+        description: null
+      anteroventral thalamic nucleus, ventrolateral part:
+        description: null
+      cochlear nucleus, dorsal part:
+        description: null
+      external medullary lamina:
+        description: null
+      ventral hippocampal commissure:
+        description: null
+      superior olivary complex:
+        description: null
+      subparafascicular nucleus:
+        description: null
+      frontal region:
+        description: null
+      spinal trigeminal tract:
+        description: null
+      dorsal-intermediate entorhinal area:
+        description: null
+      stria terminalis:
+        description: null
+      cingulate area 1:
+        description: null
+      isocortex:
+        description: null
+      primary somatosensory area, face representation:
+        description: null
+      hippocampal region:
+        description: null
+      prethalamus:
+        description: null
+      inferior colliculus, dorsal cortex:
+        description: null
+      acoustic striae:
+        description: null
+      corticofugal tract and corona radiata:
+        description: null
+      glomerular layer of the accessory olfactory bulb:
+        description: null
+      ascending fibers of the facial nerve:
+        description: null
+      superficial gray layer of the superior colliculus:
+        description: null
+      angular thalamic nucleus:
+        description: null
+      fimbria of the hippocampus:
+        description: null
+      medial superior olive:
+        description: null
+      basal forebrain region, unspecified:
+        description: null
+      reticular (pre)thalamic nucleus, auditory segment:
+        description: null
+      thalamic tracts:
+        description: null
+      temporal region:
+        description: null
+      hypothalamic region, unspecified:
+        description: null
+      cochlear nucleus, ventral part:
+        description: null
+      retrosplenial granular area:
+        description: null
+      pons:
+        description: null
+      secondary auditory area:
+        description: null
+      mediodorsal thalamic nucleus, medial part:
+        description: null
+      basal forebrain region:
+        description: null
+      external medullary lamina, unspecified:
+        description: null
+      pineal gland:
+        description: null
+      dorsal lateral geniculate nucleus:
+        description: null
+      thalamus, unspecified:
+        description: null
+      inferior cerebellar peduncle:
+        description: null
+      non-laminated pallium:
+        description: null
+      agranular insular cortex, posterior area:
+        description: null
+      ventricular system:
+        description: null
+      inferior colliculus, brachium:
+        description: null
+      hippocampal white matter:
+        description: null
+      cerebellum, unspecified:
+        description: null
+      white matter:
+        description: null
+      neocortex, unspecified:
+        description: null
+      primary somatosensory area, trunk representation:
+        description: null
+      trapezoid body:
+        description: null
+      retrosplenial cortex:
+        description: null
+      medial orbital area:
+        description: null
+      dentate gyrus:
+        description: null
+      caudate putamen:
+        description: null
+      ventral posterior nucleus of the thalamus, parvicellular part:
+        description: null
+      white matter of the brainstem:
+        description: null
+      dysgranular insular cortex:
+        description: null
+      midbrain:
+        description: null
+      ventral tegmental area:
+        description: null
+      laterodorsal thalamic nuclei of the dorsal thalamus:
+        description: null
+      secondary visual area, medial part:
+        description: null
+      ventral posterolateral thalamic nucleus:
+        description: null
+      entopeduncular nucleus:
+        description: null
+      mammillotegmental tract:
+        description: null
+      agranular insular cortex dorsal area:
+        description: null
+      dorsal cochlear nucleus, deep core:
+        description: null
+      nucleus accumbens:
+        description: null
+      superior colliculus:
+        description: null
+      lateral lemniscus:
+        description: null
+      auditory cortex:
+        description: null
+      habenular commissure:
+        description: null
+      optic nerve:
+        description: null
+      medial geniculate complex of the dorsal thalamus:
+        description: null
+      secondary motor area:
+        description: null
+      ventral posteromedial thalamic nucleus:
+        description: null
+      ventral cochlear nucleus, anterior part:
+        description: null
+      inferior colliculus, external cortex:
+        description: null
+      optic tract and optic chiasm:
+        description: null
+      insular region:
+        description: null
+      cochlear nerve:
+        description: null
+      primary somatosensory area, dysgranular zone:
+        description: null
+      secondary somatosensory area:
+        description: null
+      parietal association cortex, medial area:
+        description: null
+      periventricular gray:
+        description: null
+      laterodorsal thalamic nucleus, dorsomedial part:
+        description: null
+      olfactory white matter:
+        description: null
+      central medial thalamic nucleus:
+        description: null
+      corticofugal pathways:
+        description: null
+      nucleus sagulum:
+        description: null
+      lateral habenular nucleus:
+        description: null
+      intermediodorsal thalamic nucleus:
+        description: null
+      posterior complex of the dorsal thalamus:
+        description: null
+      laterodorsal thalamic nucleus, ventrolateral part:
+        description: null
+      4th ventricle:
+        description: null
+      reticular (pre)thalamic nucleus:
+        description: null
+      anterior nuclei of the dorsal thalamus:
+        description: null
+      lateral lemniscus, commissure:
+        description: null
+      primary somatosensory area, hindlimb representation:
+        description: null
+      mediodorsal thalamic nucleus, central part:
+        description: null
+      genu of the facial nerve:
+        description: null
+      inferior colliculus:
+        description: null
+      superior cerebellar peduncle and prerubral field:
+        description: null
+      mediodorsal nucleus of the dorsal thalamus:
+        description: null
+      zona incerta, ventral part:
+        description: null
+      lateral posterior thalamic nucleus, lateral part:
+        description: null
+      cornu ammonis 1:
+        description: null
+      lateral entorhinal cortex:
+        description: null
+      optic fiber system and supraoptic decussation:
+        description: null
+      cerebrum:
+        description: null
+      intramedullary thalamic area:
+        description: null
+      vestibular apparatus:
+        description: null
+      superior periolivary region:
+        description: null
+      primary visual area:
+        description: null
+      inferior colliculus, central nucleus:
+        description: null
+      parietal association cortex, lateral area:
+        description: null
+      agranular insular cortex:
+        description: null
+      medial geniculate body, medial division:
+        description: null
+      ventral cochlear nucleus, posterior part:
+        description: null
+      lateral lemniscus, unspecified:
+        description: null
+      lateral lemniscus, intermediate nucleus:
+        description: null
+      brainstem, unspecified:
+        description: null
+      myelencephalon:
+        description: null
+      zona incerta, A11 dopamine cells:
+        description: null
+      medial habenular nucleus:
+        description: null
+      xiphoid thalamic nucleus:
+        description: null
+      spinal trigeminal nucleus:
+        description: null
+      spiral ganglion:
+        description: null
+      laminated pallium:
+        description: null
+      superior paraolivary nucleus:
+        description: null
+      cerebral cortex including the neocortex and the hippocampus:
+        description: null
+      anteroventral thalamic nucleus, dorsomedial part:
+        description: null
+      perirhinal area 35:
+        description: null
+      alveus of the hippocampus:
+        description: null
+      lateral olfactory tract:
+        description: null
+      ventral pallidum:
+        description: null
+      subthalamic nucleus:
+        description: null
+      inner ear:
+        description: null
+      transverse fibers of the pons:
+        description: null
+      pregeniculate nucleus:
+        description: null
+      intergeniculate leaflet:
+        description: null
+      ventral midline group of the dorsal thalamus:
+        description: null
+      medial lemniscus:
+        description: null
+      cingulate area 2:
+        description: null
+      parahippocampal region:
+        description: null
+      medial geniculate body, dorsal division:
+        description: null
+      tegmentum:
+        description: null
+      secondary visual area, lateral part:
+        description: null
+      posterior thalamic nucleus:
+        description: null
+      ventral cochlear nucleus, cap area:
+        description: null
+      subgeniculate nucleus:
+        description: null
+      subpallium:
+        description: null
+      anterior commissure:
+        description: null
+      globus pallidus external:
+        description: null
+      vestibular nerve:
+        description: null
+      hypothalamus:
+        description: null
+      epithalamus:
+        description: null
+      pretectothalamic lamina:
+        description: null
+      striatum:
+        description: null
+      dorsal cochlear nucleus, molecular layer:
+        description: null
+      interanteromedial thalamic nucleus:
+        description: null
+      commissural stria terminalis:
+        description: null
+      ventromedial thalamic nucleus:
+        description: null
+      motor cortex:
+        description: null
+      cornu ammonis:
+        description: null
+      reuniens thalamic nucleus:
+        description: null
+      cortical subplate:
+        description: null
+      parietal association cortex, posterior area:
+        description: null
+      submedius thalamic nucleus:
+        description: null
+      lateral posterior thalamic nucleus, mediocaudal part:
+        description: null
+      temporal association cortex:
+        description: null
+      internal medullary lamina:
+        description: null
+      ventrolateral orbital area:
+        description: null
+      medial entorhinal field:
+        description: null
+      globus pallidus external, medial part:
+        description: null
+      claustrum:
+        description: null
+      endopiriform nucleus:
+        description: null
+      mediofrontal cortex:
+        description: null
+      parataenial thalamic nucleus:
+        description: null
+      paraventricular thalamic nuclei (anterior and posterior):
+        description: null
+      nucleus accumbens, core:
+        description: null
+      lateral superior olive:
+        description: null
+      piriform cortex:
+        description: null
+      inferior colliculus, commissure:
+        description: null
+      olfactory bulb, unspecified:
+        description: null
+      pyramidal decussation:
+        description: null
+      somatosensory cortex:
+        description: null
+      piriform cortex, layer 3:
+        description: null
+      lateral posterior thalamic nucleus, mediorostral part:
+        description: null
+      medial geniculate body, suprageniculate nucleus:
+        description: null
+      anterodorsal thalamic nucleus:
+        description: null
+      retrosplenial dysgranular area:
+        description: null
+      white matter of the tectum:
+        description: null
+      interpeduncular nucleus:
+        description: null
+      ethmoid-Limitans nucleus:
+        description: null
+      dorsal-caudal midline group of the dorsal thalamus:
+        description: null
+      ventral anterior thalamic nucleus:
+        description: null
+      subiculum:
+        description: null
+      globus pallidus external, lateral part:
+        description: null
+      anterior commissure, anterior limb:
+        description: null
+      visual cortex:
+        description: null
+      pretectal region:
+        description: null
+      nucleus of the lateral olfactory tract:
+        description: null
+      glomerular layer of the olfactory bulb:
+        description: null
+      rhombencephalon:
+        description: null
+      primary motor area:
+        description: null
+      secondary auditory area, dorsal part:
+        description: null
+      fasciculus retroflexus:
+        description: null
+      hindbrain:
+        description: null
+      pontine nuclei:
+        description: null
+      zona incerta:
+        description: null
+      zona incerta, A13 dopamine cells:
+        description: null
+      zona incerta, caudal part:
+        description: null
+      presubiculum:
+        description: null
+      nucleus accumbens, shell:
+        description: null
+      dorsal thalamus:
+        description: null
+      nucleus of the trapezoid body:
+        description: null
+      cortical plate:
+        description: null
+      medial lemniscus decussation:
+        description: null
+      lateral lemniscus, ventral nucleus:
+        description: null
+      retroreuniens thalamic nucleus:
+        description: null
+      secondary auditory area, ventral part:
+        description: null
+      external medullary lamina, auditory radiation:
+        description: null
+      medial geniculate body, ventral division:
+        description: null
+      corpus callosum and associated subcortical white matter:
+        description: null
+      deeper layers of the superior colliculus:
+        description: null
+      central canal:
+        description: null
+      dorsal cochlear nucleus, fusiform and granule layer:
+        description: null
+      rhomboid thalamic nucleus:
+        description: null
+      peripeduncular nucleus:
+        description: null
+      septal region:
+        description: null
+      postrhinal cortex:
+        description: null
+      ventricular system, unspecified:
+        description: null
+      ventral periolivary nuclei:
+        description: null
+      substantia nigra:
+        description: null
+      anteromedial thalamic nucleus:
+        description: null
+      posterior commissure:
+        description: null
+      granular insular cortex:
+        description: null
+      molecular cell layer of the cerebellum:
+        description: null
+      secondary visual cortex:
+        description: null
+      bed nucleus of the stria terminalis:
+        description: null
+      posterior intralaminar nucleus:
+        description: null
+      spinal cord:
+        description: null
+      zona incerta, rostral part:
+        description: null
+      middle cerebellar peduncle:
+        description: null
+      anteroventral thalamic nucleus:
+        description: null
+      anterior commissure, posterior limb:
+        description: null
+      commissure of the superior colliculus:
+        description: null
+      perirhinal cortex:
+        description: null
+      cochlea:
+        description: null
+      lateral orbital area:
+        description: null
+      dorsolateral orbital area:
+        description: null
+      intralaminar nuclei of the dorsal thalamus:
+        description: null
+      primary auditory area:
+        description: null
+      ventral cochlear nucleus, granule cell layer:
+        description: null
+      posterior thalamic nuclear group, triangular part:
+        description: null
+      caudal entorhinal field:
+        description: null
+      medial entorhinal cortex:
+        description: null
+      stria medullaris thalami:
+        description: null
+      gray matter:
+        description: null
+      periaqueductal gray:
+        description: null
