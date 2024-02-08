@@ -2,6 +2,11 @@
 
 Complete collection of schemas for the metadata models of the openMINDS metadata framework. All schemas are formatted in [LinkML](https://linkml.io) (*.yaml).
 
+**Warning: these schemas are auto-generated.
+In case of any discrepancy between the LinkML representation of the schemas
+and the original openMINDS schema definitions,
+the original openMINDS schema definitions should be considered as the correct reference.**
+
 To learn more about the openMINDS metadata framework please go to :arrow_right: [**ReadTheDocs**](https://openminds-documentation.readthedocs.io).
 
 

@@ -20,9 +20,7 @@ class LinkMLClassBuilder(object):
         self.slots = slots
 
     def _target_file_without_extension(self) -> str:
-        return os.path.join(
-            self.version, *self.relative_path_without_extension
-        )
+        return os.path.join(self.version, *self.relative_path_without_extension)
 
     def _resolve_string_property(self, property) -> Dict:
         format_map = {  # see https://linkml.io/linkml-registry/
@@ -141,7 +139,7 @@ class LinkMLClassBuilder(object):
             "float": self._resolve_number_property,
             "integer": self._resolve_number_property,
             "object": self._resolve_object_property,
-            "array": self._resolve_array_property
+            "array": self._resolve_array_property,
         }
 
         if isinstance(prop_type, list):
@@ -207,44 +205,52 @@ class LinkMLClassBuilder(object):
                         if value != slot_definition["range"]:
                             slot_definition["any_of"] = [
                                 {"range": slot_definition.pop("range")},
-                                {"range": value}
+                                {"range": value},
                             ]
                     elif "any_of" in slot_definition:
-                        allowed_values = [item["range"] for item in slot_definition["any_of"]]
+                        allowed_values = [
+                            item["range"] for item in slot_definition["any_of"]
+                        ]
                         if value not in allowed_values:
                             slot_definition["any_of"].append({"range": value})
                     else:
                         slot_definition["range"] = value
                 elif key == "any_of":
                     if "range" in slot_definition:
-                        slot_definition["any_of"] = value + [{"range": slot_definition.pop("range")}]
+                        slot_definition["any_of"] = value + [
+                            {"range": slot_definition.pop("range")}
+                        ]
                     elif "any_of" in slot_definition:
-                        allowed_values = [item["range"] for item in slot_definition["any_of"]]
+                        allowed_values = [
+                            item["range"] for item in slot_definition["any_of"]
+                        ]
                         used_values = [item["range"] for item in slot_usage["any_of"]]
-                        slot_definition["any_of"] = [{"range": item} for item in set(allowed_values + used_values)]
+                        slot_definition["any_of"] = [
+                            {"range": item}
+                            for item in set(allowed_values + used_values)
+                        ]
                     else:
                         slot_definition["any_of"] = value
                 else:
                     if key in slot_definition:
-                        if isinstance(slot_definition[key], dict) and "ALTERNATES" in slot_definition[key]:
+                        if (
+                            isinstance(slot_definition[key], dict)
+                            and "ALTERNATES" in slot_definition[key]
+                        ):
                             slot_definition[key]["ALTERNATES"].append(value)
                         elif slot_definition[key] == value:
                             pass
                         else:
-                            slot_definition[key] = {"ALTERNATES": [slot_definition[key], value]}
+                            slot_definition[key] = {
+                                "ALTERNATES": [slot_definition[key], value]
+                            }
                     else:
                         slot_definition[key] = value
 
     def build(self):
-        target_file = os.path.join(
-            "target", "schemas", f"{self._target_file_without_extension()}.yaml"
-        )
-        os.makedirs(os.path.dirname(target_file), exist_ok=True)
         short_type = get_short_name(self._schema_payload["_type"])
         self.translate()
-
-        with open(target_file, "w") as fp:
-            yaml.dump({short_type: self._translated_schema}, fp)
+        return {short_type: self._translated_schema}
 
 
 class LinkMLEnumBuilder(object):
@@ -260,11 +266,8 @@ class LinkMLEnumBuilder(object):
             self._schema_payload = json.load(schema_f)
         self.instances = instances
 
-
     def _target_file_without_extension(self) -> str:
-        return os.path.join(
-            *self.relative_path_without_extension
-        )
+        return os.path.join(*self.relative_path_without_extension)
 
     def translate(self):
         def build_enum(instance):
@@ -273,27 +276,47 @@ class LinkMLEnumBuilder(object):
                 enum["description"] = instance["definition"]
             "meaning"
             return enum
+
         instances_payload = self.instances[self._schema_payload["_type"]]
         self._translated_schema = {
             "enum_uri": self._schema_payload["_type"],
             "title": self._schema_payload["label"],
-            "permissible_values": {
-                instance["name"]: build_enum(instance) for instance in instances_payload
-            }
         }
         if "description" in self._schema_payload:
             self._translated_schema["description"] = self._schema_payload["description"]
+        self._translated_schema["permissible_values"] = {
+            instance["name"]: build_enum(instance) for instance in instances_payload
+        }
 
     def build(self):
         target_file = os.path.join(
-            "target", "schemas", self.version, "enums", f"{self._target_file_without_extension()}.yaml"
+            "target",
+            "schemas",
+            self.version,
+            "enums",
+            f"{self._target_file_without_extension()}.yaml",
         )
         os.makedirs(os.path.dirname(target_file), exist_ok=True)
         short_type = get_short_name(self._schema_payload["_type"])
         self.translate()
 
+        enum_schema = {
+            "id": f"https://openminds.ebrains.eu/schemas/latest/enums/{short_type}?format=linkml",
+            "name": f"openMINDS-enums-{short_type}",
+            "title": f"OpenMINDS enum for {short_type}",
+            "description": f"OpenMINDS enum for {short_type}",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "prefixes": {
+                "linkml": "https://w3id.org/linkml/",
+                "schema": "http://schema.org/",
+                "omi": "https://openminds.ebrains.eu",
+            },
+            "default_prefix": "omi",
+            "enums": {short_type: self._translated_schema},
+        }
+
         with open(target_file, "w") as fp:
-            yaml.dump({short_type: self._translated_schema}, fp)
+            yaml.dump(enum_schema, fp, sort_keys=False)
 
 
 class LinkMLSlotBuilder:
@@ -315,7 +338,9 @@ class LinkMLSlotBuilder:
                 slot["range"] = get_short_name(target_classes[0])
             elif len(target_classes) > 1:
                 assert "range" not in slot
-                slot["any_of"] = [{"range": get_short_name(tc)} for tc in target_classes]
+                slot["any_of"] = [
+                    {"range": get_short_name(tc)} for tc in target_classes
+                ]
         if "asString" in property:
             # can't do anything yet, because string can be used to represent various LinkML types
             # todo: fix this
