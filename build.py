@@ -131,11 +131,26 @@ for schema_version in schema_loader.get_schema_versions():
             yaml.dump(module_schema, fp, sort_keys=False)
 
     # Step 6 - write slots file
+    slots_schema = {
+        "id": f"https://openminds.ebrains.eu/schemas/latest/slots?format=linkml",
+        "name": "openMINDS-slots",
+        "title": f'OpenMINDS properties as LinkML slots, version "{schema_version}"',
+        "description": f'Slots for the LinkML representation of the openMINDS metadata framework, version "{schema_version}"',
+        "license": "https://spdx.org/licenses/MIT.html",
+        "prefixes": {
+            "linkml": "https://w3id.org/linkml/",
+            "schema": "http://schema.org/",
+            "omi": "https://openminds.ebrains.eu",
+        },
+        "default_prefix": "omi",
+        "imports": ["linkml:types"],
+        "slots": slots
+    }
     with open(
         os.path.join("target", "schemas", schema_version, f"slots.yaml"),
         "w",
     ) as fp:
-        yaml.dump({"slots": slots}, fp, sort_keys=False)
+        yaml.dump(slots_schema, fp, sort_keys=False)
 
     # Step 7 - create overall schema file
     schema_metadata = {
