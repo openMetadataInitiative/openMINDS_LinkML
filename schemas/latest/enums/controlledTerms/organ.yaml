@@ -1,16 +1,27 @@
-Organ:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/Organ
-  permissible_values:
-    brain:
-      description: '''Brain'' is part of the central nervous system.'
-    heart:
-      description: '''Heart'' is part of the cardiovascular system'
-    liver:
-      description: '''Liver'' is an organ that is part of the digestive system of
-        vertebrate animals.'
-    muscle:
-      description: '''Muscle'' is part of the musculoskeletal system.'
-    skin:
-      description: '''Skin'' is the organ covering the body that consists of the dermis
-        and epidermis.'
-  title: Organ
+id: https://openminds.ebrains.eu/schemas/latest/enums/Organ?format=linkml
+name: openMINDS-enums-Organ
+title: OpenMINDS enum for Organ
+description: OpenMINDS enum for Organ
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  Organ:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/Organ
+    title: Organ
+    permissible_values:
+      brain:
+        description: '''Brain'' is part of the central nervous system.'
+      liver:
+        description: '''Liver'' is an organ that is part of the digestive system of
+          vertebrate animals.'
+      heart:
+        description: '''Heart'' is part of the cardiovascular system'
+      muscle:
+        description: '''Muscle'' is part of the musculoskeletal system.'
+      skin:
+        description: '''Skin'' is the organ covering the body that consists of the
+          dermis and epidermis.'

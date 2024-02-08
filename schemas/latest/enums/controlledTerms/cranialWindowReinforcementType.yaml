@@ -1,15 +1,26 @@
-CranialWindowReinforcementType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/CranialWindowReinforcementType
-  permissible_values:
-    GRIN lens-based cranial window:
-      description: A cranial window reinforced by an implanted GRIN lens.
-    crystalline-based cranial window:
-      description: A cranial window reinforced by an implantation of a crystalline
-        material.
-    glass coverslip cranial window:
-      description: A cranial window reinforced by an implantation of a glass coverslip.
-    polymer-based cranial window:
-      description: A cranial window reinforced by an implantation of a polymer material.
-    prism-based cranial window:
-      description: A cranial window reinforced by an implanted prism.
-  title: Cranial window reinforcement type
+id: https://openminds.ebrains.eu/schemas/latest/enums/CranialWindowReinforcementType?format=linkml
+name: openMINDS-enums-CranialWindowReinforcementType
+title: OpenMINDS enum for CranialWindowReinforcementType
+description: OpenMINDS enum for CranialWindowReinforcementType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  CranialWindowReinforcementType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/CranialWindowReinforcementType
+    title: Cranial window reinforcement type
+    permissible_values:
+      GRIN lens-based cranial window:
+        description: A cranial window reinforced by an implanted GRIN lens.
+      polymer-based cranial window:
+        description: A cranial window reinforced by an implantation of a polymer material.
+      prism-based cranial window:
+        description: A cranial window reinforced by an implanted prism.
+      crystalline-based cranial window:
+        description: A cranial window reinforced by an implantation of a crystalline
+          material.
+      glass coverslip cranial window:
+        description: A cranial window reinforced by an implantation of a glass coverslip.

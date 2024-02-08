@@ -1,12 +1,23 @@
-CriteriaQualityType:
-  description: Structured information on the quality type of the defined criteria
-    for a measurement.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/CriteriaQualityType
-  permissible_values:
-    asserted:
-      description: If a criteria is 'asserted' it is based on an opinion or claim,
-        usually made by an expert.
-    processive:
-      description: If a criteria is 'processive' it is based on a repeatable and often
-        automated process.
-  title: Criteria quality type
+id: https://openminds.ebrains.eu/schemas/latest/enums/CriteriaQualityType?format=linkml
+name: openMINDS-enums-CriteriaQualityType
+title: OpenMINDS enum for CriteriaQualityType
+description: OpenMINDS enum for CriteriaQualityType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  CriteriaQualityType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/CriteriaQualityType
+    title: Criteria quality type
+    description: Structured information on the quality type of the defined criteria
+      for a measurement.
+    permissible_values:
+      processive:
+        description: If a criteria is 'processive' it is based on a repeatable and
+          often automated process.
+      asserted:
+        description: If a criteria is 'asserted' it is based on an opinion or claim,
+          usually made by an expert.

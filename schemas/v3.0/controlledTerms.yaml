@@ -1,0 +1,1271 @@
+id: https://openminds.ebrains.eu/schemas/latest/controlledTerms?format=linkml
+name: openMINDS-controlledTerms
+title: OpenMINDS controlledTerms module, version "v3.0"
+description: Schemas for the controlledTerms module of the openMINDS metadata framework,
+  version "v3.0"
+license: https://spdx.org/licenses/MIT.html
+imports:
+- linkml:types
+- slots
+- enums
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+classes:
+- PatchClampVariation:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/PatchClampVariation
+    description: null
+    title: Patch clamp variation
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- ActionStatusType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ActionStatusType
+    description: Structured information about the status of an action.
+    title: Action status type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- OrganismSystem:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/OrganismSystem
+    description: null
+    title: Organism system
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- CellType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/CellType
+    description: null
+    title: Cell type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- OperatingDevice:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/OperatingDevice
+    description: Structured information on the operating device.
+    title: Operating device
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- Organ:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Organ
+    description: null
+    title: Organ
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- Laterality:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Laterality
+    description: Structured information on the lateral direction.
+    title: Laterality
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- OperatingSystem:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/OperatingSystem
+    description: Structured information on the operating system.
+    title: Operating system
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- MolecularEntity:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/MolecularEntity
+    description: null
+    title: Molecular entity
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- CranialWindowConstructionType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/CranialWindowConstructionType
+    description: null
+    title: Cranial window construction type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- GeneticStrainType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/GeneticStrainType
+    description: null
+    title: Genetic strain type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- AnatomicalIdentificationType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/AnatomicalIdentificationType
+    description: null
+    title: Anatomical identification type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- CranialWindowReinforcementType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/CranialWindowReinforcementType
+    description: null
+    title: Cranial window reinforcement type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- Handedness:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Handedness
+    description: null
+    title: Handedness
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- TissueSampleType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/TissueSampleType
+    description: Structured information on the general type of the tissue sample.
+    title: Tissue sample type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- CriteriaQualityType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/CriteriaQualityType
+    description: Structured information on the quality type of the defined criteria
+      for a measurement.
+    title: Criteria quality type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- FileRepositoryType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/FileRepositoryType
+    description: null
+    title: File repository type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- ModelScope:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ModelScope
+    description: Structured information on the scope of the computational model.
+    title: Model scope
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- ModelAbstractionLevel:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ModelAbstractionLevel
+    description: Structured information on abstraction level of the computational
+      model.
+    title: Model abstraction level
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- Language:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Language
+    description: Structured information on the available language setting.
+    title: Language
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- DeviceType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/DeviceType
+    description: null
+    title: Device type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- TissueSampleAttribute:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/TissueSampleAttribute
+    description: null
+    title: Tissue sample attribute
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- AnnotationCriteriaType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/AnnotationCriteriaType
+    description: null
+    title: Annotation criteria type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- LearningResourceType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/LearningResourceType
+    description: null
+    title: Learning resource type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- AnalysisTechnique:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/AnalysisTechnique
+    description: null
+    title: Analysis technique
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- SemanticDataType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/SemanticDataType
+    description: null
+    title: Semantic data type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- FileBundleGrouping:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/FileBundleGrouping
+    description: Structured information on the grouping mechanism of a file bundle.
+    title: File bundle grouping
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- SetupType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/SetupType
+    description: null
+    title: Setup type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- BiologicalProcess:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalProcess
+    description: null
+    title: Biological process
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- BiologicalSex:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalSex
+    description: Structured information on the biological sex of a subject.
+    title: Biological sex
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- MetaDataModelType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/MetaDataModelType
+    description: null
+    title: Meta data model type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- UBERONParcellation:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/UBERONParcellation
+    description: null
+    title: Uberonparcellation
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- BiologicalOrder:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalOrder
+    description: null
+    title: Biological order
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- AnnotationType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/AnnotationType
+    description: null
+    title: Annotation type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- UnitOfMeasurement:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement
+    description: Structured information on the unit of measurement.
+    title: Unit of measurement
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- OlfactoryStimulusType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/OlfactoryStimulusType
+    description: null
+    title: Olfactory stimulus type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- DataType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/DataType
+    description: null
+    title: Data type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- GustatoryStimulusType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/GustatoryStimulusType
+    description: null
+    title: Gustatory stimulus type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- EducationalLevel:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/EducationalLevel
+    description: null
+    title: Educational level
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- ProductAccessibility:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ProductAccessibility
+    description: null
+    title: Product accessibility
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- Terminology:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Terminology
+    description: null
+    title: Terminology
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- MeasuredQuantity:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/MeasuredQuantity
+    description: null
+    title: Measured quantity
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- TermSuggestion:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/TermSuggestion
+    description: null
+    title: Term suggestion
+    slots:
+    - id
+    - addExistingTerminology
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - suggestNewTerminology
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- FileUsageRole:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/FileUsageRole
+    description: Structured information on the usage role of a file instance or bundle.
+    title: File usage role
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- PreparationType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/PreparationType
+    description: null
+    title: Preparation type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- AuditoryStimulusType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/AuditoryStimulusType
+    description: null
+    title: Auditory stimulus type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- SubcellularEntity:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/SubcellularEntity
+    description: null
+    title: Subcellular entity
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- MeasuredSignalType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/MeasuredSignalType
+    description: null
+    title: Measured signal type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- ExperimentalApproach:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ExperimentalApproach
+    description: null
+    title: Experimental approach
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- Disease:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Disease
+    description: Structured information on a disease.
+    title: Disease
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- TactileStimulusType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/TactileStimulusType
+    description: null
+    title: Tactile stimulus type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- OpticalStimulusType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/OpticalStimulusType
+    description: null
+    title: Optical stimulus type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- DifferenceMeasure:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/DifferenceMeasure
+    description: null
+    title: Difference measure
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- Colormap:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Colormap
+    description: null
+    title: Colormap
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- DiseaseModel:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/DiseaseModel
+    description: null
+    title: Disease model
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- ElectricalStimulusType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ElectricalStimulusType
+    description: null
+    title: Electrical stimulus type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- AtlasType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/AtlasType
+    description: null
+    title: Atlas type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- Species:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Species
+    description: Structured information on the species.
+    title: Species
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- QualitativeOverlap:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/QualitativeOverlap
+    description: null
+    title: Qualitative overlap
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- ProgrammingLanguage:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ProgrammingLanguage
+    description: Structured information on the programming language.
+    title: Programming language
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- CellCultureType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/CellCultureType
+    description: null
+    title: Cell culture type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- VisualStimulusType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/VisualStimulusType
+    description: null
+    title: Visual stimulus type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- SoftwareApplicationCategory:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareApplicationCategory
+    description: Structured information on the category of the software application.
+    title: Software application category
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- AnatomicalAxesOrientation:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/AnatomicalAxesOrientation
+    description: Structured information on the anatomical directions of the X, Y,
+      and Z axis.
+    title: Anatomical axes orientation
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- BreedingType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/BreedingType
+    description: null
+    title: Breeding type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- AgeCategory:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/AgeCategory
+    description: Structured information on the life cycle (semantic term) of a specific
+      age group.
+    title: Age category
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- AnatomicalPlane:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/AnatomicalPlane
+    description: null
+    title: Anatomical plane
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- EthicsAssessment:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/EthicsAssessment
+    description: Structured information on the ethics assessment of a dataset.
+    title: Ethics assessment
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- SubjectAttribute:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/SubjectAttribute
+    description: null
+    title: Subject attribute
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- ContributionType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ContributionType
+    description: Structured information on the type of contribution a person or organization
+      performed.
+    title: Contribution type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- Service:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Service
+    description: null
+    title: Service
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- StimulationApproach:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/StimulationApproach
+    description: null
+    title: Stimulation approach
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- TypeOfUncertainty:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/TypeOfUncertainty
+    description: null
+    title: Type of uncertainty
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- ChemicalMixtureType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ChemicalMixtureType
+    description: null
+    title: Chemical mixture type
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- StimulationTechnique:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/StimulationTechnique
+    description: null
+    title: Stimulation technique
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- Technique:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Technique
+    description: Structured information on the technique.
+    title: Technique
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- SoftwareFeature:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareFeature
+    description: null
+    title: Software feature
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true
+- OrganismSubstance:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/OrganismSubstance
+    description: null
+    title: Organism substance
+    slots:
+    - id
+    - definition
+    - description
+    - interlexIdentifier
+    - knowledgeSpaceLink
+    - name
+    - preferredOntologyIdentifier
+    - synonym
+    slot_usage:
+      name:
+        required: true

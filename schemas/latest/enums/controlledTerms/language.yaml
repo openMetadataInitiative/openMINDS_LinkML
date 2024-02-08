@@ -1,23 +1,34 @@
-Language:
-  description: Structured information on the available language setting.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/Language
-  permissible_values:
-    Dutch:
-      description: null
-    English:
-      description: null
-    French:
-      description: null
-    German:
-      description: null
-    Greek:
-      description: null
-    Italian:
-      description: null
-    Norwegian:
-      description: null
-    Spanish:
-      description: null
-    Swedish:
-      description: null
-  title: Language
+id: https://openminds.ebrains.eu/schemas/latest/enums/Language?format=linkml
+name: openMINDS-enums-Language
+title: OpenMINDS enum for Language
+description: OpenMINDS enum for Language
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  Language:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/Language
+    title: Language
+    description: Structured information on the available language setting.
+    permissible_values:
+      Greek:
+        description: null
+      Italian:
+        description: null
+      Swedish:
+        description: null
+      German:
+        description: null
+      Dutch:
+        description: null
+      Spanish:
+        description: null
+      Norwegian:
+        description: null
+      French:
+        description: null
+      English:
+        description: null

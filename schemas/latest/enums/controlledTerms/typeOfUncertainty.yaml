@@ -1,8 +1,19 @@
-TypeOfUncertainty:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/TypeOfUncertainty
-  permissible_values:
-    standard deviation:
-      description: null
-    standard error:
-      description: null
-  title: Type of uncertainty
+id: https://openminds.ebrains.eu/schemas/latest/enums/TypeOfUncertainty?format=linkml
+name: openMINDS-enums-TypeOfUncertainty
+title: OpenMINDS enum for TypeOfUncertainty
+description: OpenMINDS enum for TypeOfUncertainty
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  TypeOfUncertainty:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/TypeOfUncertainty
+    title: Type of uncertainty
+    permissible_values:
+      standard error:
+        description: null
+      standard deviation:
+        description: null

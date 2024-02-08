@@ -1,68 +1,79 @@
-SoftwareFeature:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareFeature
-  permissible_values:
-    3D geometry data types:
-      description: null
-    3D scalar data types:
-      description: null
-    3D vector data types:
-      description: null
-    augmented reality:
-      description: null
-    commandline interface:
-      description: null
-    control:
-      description: null
-    data acquisition:
-      description: null
-    data processing:
-      description: null
-    desktop environment:
-      description: null
-    graph data types:
-      description: null
-    graphical user interface:
-      description: null
-    heterogeneous architecture:
-      description: null
-    interactive analysis:
-      description: null
-    matrix data types:
-      description: null
-    metadata data types:
-      description: null
-    mobile device:
-      description: null
-    modelling:
-      description: null
-    parallel programming:
-      description: null
-    performance measurement:
-      description: null
-    positional data types:
-      description: null
-    presentation visualisation:
-      description: null
-    profiling:
-      description: null
-    provenance:
-      description: null
-    raster image data types:
-      description: null
-    scripting interface:
-      description: null
-    simulation:
-      description: null
-    statistical data types:
-      description: null
-    tensor data types:
-      description: null
-    tiled display wall:
-      description: null
-    time series data types:
-      description: null
-    vector image data types:
-      description: null
-    virtual reality:
-      description: null
-  title: Software feature
+id: https://openminds.ebrains.eu/schemas/latest/enums/SoftwareFeature?format=linkml
+name: openMINDS-enums-SoftwareFeature
+title: OpenMINDS enum for SoftwareFeature
+description: OpenMINDS enum for SoftwareFeature
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  SoftwareFeature:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareFeature
+    title: Software feature
+    permissible_values:
+      scripting interface:
+        description: null
+      provenance:
+        description: null
+      parallel programming:
+        description: null
+      augmented reality:
+        description: null
+      tensor data types:
+        description: null
+      metadata data types:
+        description: null
+      3D vector data types:
+        description: null
+      3D geometry data types:
+        description: null
+      time series data types:
+        description: null
+      vector image data types:
+        description: null
+      graphical user interface:
+        description: null
+      tiled display wall:
+        description: null
+      performance measurement:
+        description: null
+      modelling:
+        description: null
+      presentation visualisation:
+        description: null
+      3D scalar data types:
+        description: null
+      commandline interface:
+        description: null
+      statistical data types:
+        description: null
+      data processing:
+        description: null
+      data acquisition:
+        description: null
+      simulation:
+        description: null
+      mobile device:
+        description: null
+      graph data types:
+        description: null
+      matrix data types:
+        description: null
+      desktop environment:
+        description: null
+      raster image data types:
+        description: null
+      positional data types:
+        description: null
+      virtual reality:
+        description: null
+      control:
+        description: null
+      interactive analysis:
+        description: null
+      profiling:
+        description: null
+      heterogeneous architecture:
+        description: null

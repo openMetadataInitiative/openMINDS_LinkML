@@ -1,4 +1,15 @@
-TermSuggestion:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/TermSuggestion
-  permissible_values: {}
-  title: Term suggestion
+id: https://openminds.ebrains.eu/schemas/latest/enums/TermSuggestion?format=linkml
+name: openMINDS-enums-TermSuggestion
+title: OpenMINDS enum for TermSuggestion
+description: OpenMINDS enum for TermSuggestion
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  TermSuggestion:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/TermSuggestion
+    title: Term suggestion
+    permissible_values: {}

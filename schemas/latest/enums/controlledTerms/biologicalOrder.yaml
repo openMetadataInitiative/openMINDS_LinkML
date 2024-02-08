@@ -1,22 +1,33 @@
-BiologicalOrder:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalOrder
-  permissible_values:
-    Carnivora:
-      description: The biological order *Carnivora* (carnivore) belongs to the class
-        *Mammalia* (mammals).
-    Cypriniformes:
-      description: The biological order *Cypriniformes* belongs to the class *Actinopterygii*
-        (ray-finned fishes).
-    Didelphimorphia:
-      description: The biological order *Didelphimorphia* (opossums) belongs to the
-        class *Mammalia* (mammals).
-    Nudibranchia:
-      description: The biological order *Nudibranchia* (nudibranchs) belongs to the
-        class *Gastropoda* (gastropods).
-    Primates:
-      description: The biological order *Primates* belongs to the class *Mammalia*
-        (mammals).
-    Rodentia:
-      description: The biological order *Rodentia* (rodents) belongs to the class
-        *Mammalia* (mammals).
-  title: Biological order
+id: https://openminds.ebrains.eu/schemas/latest/enums/BiologicalOrder?format=linkml
+name: openMINDS-enums-BiologicalOrder
+title: OpenMINDS enum for BiologicalOrder
+description: OpenMINDS enum for BiologicalOrder
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  BiologicalOrder:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalOrder
+    title: Biological order
+    permissible_values:
+      Didelphimorphia:
+        description: The biological order *Didelphimorphia* (opossums) belongs to
+          the class *Mammalia* (mammals).
+      Primates:
+        description: The biological order *Primates* belongs to the class *Mammalia*
+          (mammals).
+      Nudibranchia:
+        description: The biological order *Nudibranchia* (nudibranchs) belongs to
+          the class *Gastropoda* (gastropods).
+      Carnivora:
+        description: The biological order *Carnivora* (carnivore) belongs to the class
+          *Mammalia* (mammals).
+      Rodentia:
+        description: The biological order *Rodentia* (rodents) belongs to the class
+          *Mammalia* (mammals).
+      Cypriniformes:
+        description: The biological order *Cypriniformes* belongs to the class *Actinopterygii*
+          (ray-finned fishes).

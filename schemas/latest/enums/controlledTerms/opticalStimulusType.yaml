@@ -1,9 +1,20 @@
-OpticalStimulusType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/OpticalStimulusType
-  permissible_values:
-    infrared neural stimulus:
-      description: "An 'infrared neural stimulus' is a pulsed IR light (between the\
-        \ wavelength of 1400\u20132100\u2009nm) used to generate a highly controlled\
-        \ temperature transients in neurons (dT/dz or dT/dt), leading them to fire\
-        \ action potentials. [adapted from [Horv\xE1th et al., (2020)](https://doi.org/10.1038/s41378-020-0153-3)]"
-  title: Optical stimulus type
+id: https://openminds.ebrains.eu/schemas/latest/enums/OpticalStimulusType?format=linkml
+name: openMINDS-enums-OpticalStimulusType
+title: OpenMINDS enum for OpticalStimulusType
+description: OpenMINDS enum for OpticalStimulusType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  OpticalStimulusType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/OpticalStimulusType
+    title: Optical stimulus type
+    permissible_values:
+      infrared neural stimulus:
+        description: "An 'infrared neural stimulus' is a pulsed IR light (between\
+          \ the wavelength of 1400\u20132100\u2009nm) used to generate a highly controlled\
+          \ temperature transients in neurons (dT/dz or dT/dt), leading them to fire\
+          \ action potentials. [adapted from [Horv\xE1th et al., (2020)](https://doi.org/10.1038/s41378-020-0153-3)]"

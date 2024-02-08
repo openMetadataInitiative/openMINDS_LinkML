@@ -1,0 +1,179 @@
+id: https://openminds.ebrains.eu/schemas/latest/specimenPrep?format=linkml
+name: openMINDS-specimenPrep
+title: OpenMINDS specimenPrep module, version "v3.0"
+description: Schemas for the specimenPrep module of the openMINDS metadata framework,
+  version "v3.0"
+license: https://spdx.org/licenses/MIT.html
+imports:
+- linkml:types
+- slots
+- enums
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+classes:
+- TissueCulturePreparation:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
+    description: null
+    title: Tissue culture preparation
+    slots:
+    - id
+    - cultureMedium
+    - cultureType
+    - input
+    - output
+    slot_usage:
+      cultureMedium:
+        required: true
+      cultureType:
+        required: true
+      input:
+        any_of:
+        - range: TissueSampleState
+        - range: TissueSampleCollectionState
+        - range: SubjectGroupState
+        - range: SubjectState
+      output:
+        range: TissueSampleState
+- CranialWindowPreparation:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/CranialWindowPreparation
+    description: null
+    title: Cranial window preparation
+    slots:
+    - id
+    - constructionType
+    - customPropertySet
+    - description
+    - dimension
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - reinforcementType
+    - startTime
+    - studyTarget
+    slot_usage:
+      constructionType:
+        required: true
+      dimension:
+        any_of:
+        - range: Circle
+        - range: Ellipse
+        - range: Rectangle
+      endTime:
+        range: string
+        any_of:
+        - range: Time
+      input:
+        required: true
+        range: SubjectState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: SubjectState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: Time
+      studyTarget:
+        range: AuditoryStimulusType
+- TissueSampleSlicing:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing
+    description: null
+    title: Tissue sample slicing
+    slots:
+    - id
+    - device
+    - input
+    - output
+    - temperature
+    - tissueBathSolution
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDeviceUsage
+      input:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleCollectionState
+        - range: TissueSampleState
+      output:
+        range: TissueSampleCollectionState
+      temperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- SlicingDeviceUsage:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
+    description: null
+    title: Slicing device usage
+    slots:
+    - id
+    - device
+    - lookupLabel
+    - metadataLocation
+    - oscillationAmplitude
+    - sliceThickness
+    - slicingAngle
+    - slicingPlane
+    - slicingSpeed
+    - usedSpecimen
+    - vibrationFrequency
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDevice
+      metadataLocation:
+        range: File
+      sliceThickness:
+        required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      slicingAngle:
+        range: QuantitativeValue
+      slicingPlane:
+        required: true
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
+- SlicingDevice:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDevice
+    description: null
+    title: Slicing device
+    slots:
+    - id
+    - description
+    - deviceType
+    - digitalIdentifier
+    - lookupLabel
+    - manufacturer
+    - name
+    - owner
+    - serialNumber
+    slot_usage:
+      deviceType:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: RRID
+      manufacturer:
+        range: Consortium
+      name:
+        required: true
+      owner:
+        range: Consortium

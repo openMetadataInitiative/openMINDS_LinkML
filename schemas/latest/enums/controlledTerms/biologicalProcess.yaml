@@ -1,4 +1,15 @@
-BiologicalProcess:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalProcess
-  permissible_values: {}
-  title: Biological process
+id: https://openminds.ebrains.eu/schemas/latest/enums/BiologicalProcess?format=linkml
+name: openMINDS-enums-BiologicalProcess
+title: OpenMINDS enum for BiologicalProcess
+description: OpenMINDS enum for BiologicalProcess
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  BiologicalProcess:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalProcess
+    title: Biological process
+    permissible_values: {}

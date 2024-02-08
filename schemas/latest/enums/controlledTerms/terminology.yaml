@@ -1,178 +1,189 @@
-Terminology:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/Terminology
-  permissible_values:
-    (meta)data model type:
-      description: null
-    UBERON parcellation:
-      description: null
-    action status type:
-      description: null
-    age category:
-      description: The age category describes a specific spatiotemporal part of the
-        life cycle of an organism.
-    analysis technique:
-      description: null
-    anatomical axes orientation:
-      description: null
-    anatomical identification type:
-      description: The type of identiciation that was used to determine an anatomical
-        location.
-    anatomical plane:
-      description: A flat anatomical 2D surface that bisects an anatomical structure
-        or an anatomical space.
-    annotation criteria type:
-      description: General classification of how data were annotated.
-    annotation type:
-      description: Geometrical classification of annotations into types.
-    atlas type:
-      description: null
-    auditory stimulus type:
-      description: An 'auditory stimulus type' groups similar auditory stimuli used
-        across auditory stimulation techniques.
-    biological order:
-      description: null
-    biological sex:
-      description: null
-    breeding type:
-      description: The breeding type describes how plants or animals have been sexually
-        propagated.
-    cell culture type:
-      description: The type of a cell culture (e.g. primary, secondary)
-    cell type:
-      description: null
-    chemicalMixtureType:
-      description: A 'chemical mixture type' groups all mixtures with the same chemical
-        and physical characteristics under a general term.
-    colormap:
-      description: A colormap is a lookup table specifying the colors to be used in
-        rendering a palettized image, [adapted from [Wiktionary](https://en.wiktionary.org/wiki/colormap)].
-    contribution type:
-      description: null
-    cranial window construction type:
-      description: The construction type of a cranial window.
-    cranial window reinforcement type:
-      description: The reinforcement type of a cranial window.
-    criteria quality type:
-      description: null
-    data type:
-      description: null
-    device type:
-      description: null
-    difference measure:
-      description: A measure of the difference between two things
-    disease:
-      description: null
-    disease model:
-      description: null
-    educational level:
-      description: 'An ''educational level'' defines the developmental stage of a
-        student and how learning environments are structured. '
-    electrical stimulus type:
-      description: An 'electrical stimulus type' groups similar electrical stimuli
-        used across electrical stimulation techniques.
-    ethics assessment:
-      description: null
-    experimental approach:
-      description: null
-    file bundle grouping:
-      description: null
-    file repository type:
-      description: null
-    file usage role:
-      description: null
-    genetic strain type:
-      description: The genetic strain type describes the genetic background type of
-        a strain.
-    gustatory stimulus type:
-      description: A 'gustatory stimulus type' groups similar gustatory stimuli used
-        across gustatory stimulation techniques.
-    handedness:
-      description: null
-    language:
-      description: null
-    laterality:
-      description: null
-    learning resource type:
-      description: A 'learning resource type' groups persistent resources that explicitly
-        entail learning activities or learning experiences in a certain format (e.g.,
-        in a physical or digital presentation).
-    measured quantity:
-      description: A qualified physical quantity that was measured/recorded
-    model abstraction level:
-      description: null
-    model scope:
-      description: null
-    molecular entity:
-      description: Any constitutionally or isotopically distinct atom, molecule, ion,
-        ion pair, radical, radical ion, complex, conformer etc., identifiable as a
-        separately distinguishable entity.
-    olfactory stimulus type:
-      description: An 'olfactory stimulus type' groups similar olfactory stimuli used
-        across olfactory stimulation techniques.
-    operating device:
-      description: null
-    operating system:
-      description: null
-    optical stimulus type:
-      description: An 'optical stimulus type' groups similar optical stimuli used
-        across optical stimulation techniques.
-    organ:
-      description: Anatomical structure that performs a specific function or group
-        of functions.
-    organism substance:
-      description: Any material anatomical entity in a gaseous, liquid, semisolid
-        or solid state produced by or derived from an organism or parts of an organism.
-    organism system:
-      description: Any anatomical or functional system in an organism, regardless
-        of scale.
-    patch clamp variation:
-      description: A variation of the patch clamp technique
-    preparation type:
-      description: null
-    product accessibility:
-      description: null
-    programming language:
-      description: null
-    qualitative overlap:
-      description: null
-    semantic data type:
-      description: null
-    service:
-      description: null
-    setup type:
-      description: The setup type describes the overall purpose of arranging equipment
-        in a certain way (setup).
-    software application category:
-      description: null
-    software feature:
-      description: null
-    species:
-      description: null
-    stimulation approach:
-      description: null
-    stimulation technique:
-      description: null
-    subcellular entity:
-      description: Entity derived from a cell or cells. The anatomical scale of these
-        objects roughly corresponds to that which would be visible in high resolution
-        light microscopy or conventional electron microscopy, e.g., nanometers to
-        microns
-    subject attribute:
-      description: null
-    tactile stimulus type:
-      description: A 'tactile stimulus type' groups similar tactile stimuli used across
-        tactile stimulation techniques.
-    technique:
-      description: null
-    tissue sample attribute:
-      description: null
-    tissue sample type:
-      description: null
-    type of uncertainty:
-      description: null
-    unit of measurement:
-      description: null
-    visual stimulus type:
-      description: A 'visual stimulus type' groups similar visual stimuli used across
-        visual stimulation techniques.
-  title: Terminology
+id: https://openminds.ebrains.eu/schemas/latest/enums/Terminology?format=linkml
+name: openMINDS-enums-Terminology
+title: OpenMINDS enum for Terminology
+description: OpenMINDS enum for Terminology
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  Terminology:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/Terminology
+    title: Terminology
+    permissible_values:
+      action status type:
+        description: null
+      organ:
+        description: Anatomical structure that performs a specific function or group
+          of functions.
+      UBERON parcellation:
+        description: null
+      auditory stimulus type:
+        description: An 'auditory stimulus type' groups similar auditory stimuli used
+          across auditory stimulation techniques.
+      organism system:
+        description: Any anatomical or functional system in an organism, regardless
+          of scale.
+      electrical stimulus type:
+        description: An 'electrical stimulus type' groups similar electrical stimuli
+          used across electrical stimulation techniques.
+      breeding type:
+        description: The breeding type describes how plants or animals have been sexually
+          propagated.
+      disease:
+        description: null
+      file bundle grouping:
+        description: null
+      setup type:
+        description: The setup type describes the overall purpose of arranging equipment
+          in a certain way (setup).
+      disease model:
+        description: null
+      programming language:
+        description: null
+      type of uncertainty:
+        description: null
+      device type:
+        description: null
+      chemicalMixtureType:
+        description: A 'chemical mixture type' groups all mixtures with the same chemical
+          and physical characteristics under a general term.
+      qualitative overlap:
+        description: null
+      handedness:
+        description: null
+      anatomical plane:
+        description: A flat anatomical 2D surface that bisects an anatomical structure
+          or an anatomical space.
+      anatomical identification type:
+        description: The type of identiciation that was used to determine an anatomical
+          location.
+      contribution type:
+        description: null
+      service:
+        description: null
+      cranial window construction type:
+        description: The construction type of a cranial window.
+      technique:
+        description: null
+      language:
+        description: null
+      cell culture type:
+        description: The type of a cell culture (e.g. primary, secondary)
+      model scope:
+        description: null
+      subject attribute:
+        description: null
+      stimulation approach:
+        description: null
+      subcellular entity:
+        description: Entity derived from a cell or cells. The anatomical scale of
+          these objects roughly corresponds to that which would be visible in high
+          resolution light microscopy or conventional electron microscopy, e.g., nanometers
+          to microns
+      cranial window reinforcement type:
+        description: The reinforcement type of a cranial window.
+      biological order:
+        description: null
+      atlas type:
+        description: null
+      anatomical axes orientation:
+        description: null
+      tissue sample type:
+        description: null
+      educational level:
+        description: 'An ''educational level'' defines the developmental stage of
+          a student and how learning environments are structured. '
+      olfactory stimulus type:
+        description: An 'olfactory stimulus type' groups similar olfactory stimuli
+          used across olfactory stimulation techniques.
+      age category:
+        description: The age category describes a specific spatiotemporal part of
+          the life cycle of an organism.
+      organism substance:
+        description: Any material anatomical entity in a gaseous, liquid, semisolid
+          or solid state produced by or derived from an organism or parts of an organism.
+      experimental approach:
+        description: null
+      data type:
+        description: null
+      model abstraction level:
+        description: null
+      stimulation technique:
+        description: null
+      tactile stimulus type:
+        description: A 'tactile stimulus type' groups similar tactile stimuli used
+          across tactile stimulation techniques.
+      gustatory stimulus type:
+        description: A 'gustatory stimulus type' groups similar gustatory stimuli
+          used across gustatory stimulation techniques.
+      learning resource type:
+        description: A 'learning resource type' groups persistent resources that explicitly
+          entail learning activities or learning experiences in a certain format (e.g.,
+          in a physical or digital presentation).
+      molecular entity:
+        description: Any constitutionally or isotopically distinct atom, molecule,
+          ion, ion pair, radical, radical ion, complex, conformer etc., identifiable
+          as a separately distinguishable entity.
+      tissue sample attribute:
+        description: null
+      criteria quality type:
+        description: null
+      species:
+        description: null
+      colormap:
+        description: A colormap is a lookup table specifying the colors to be used
+          in rendering a palettized image, [adapted from [Wiktionary](https://en.wiktionary.org/wiki/colormap)].
+      patch clamp variation:
+        description: A variation of the patch clamp technique
+      software application category:
+        description: null
+      ethics assessment:
+        description: null
+      software feature:
+        description: null
+      biological sex:
+        description: null
+      preparation type:
+        description: null
+      file usage role:
+        description: null
+      measured quantity:
+        description: A qualified physical quantity that was measured/recorded
+      file repository type:
+        description: null
+      annotation criteria type:
+        description: General classification of how data were annotated.
+      semantic data type:
+        description: null
+      optical stimulus type:
+        description: An 'optical stimulus type' groups similar optical stimuli used
+          across optical stimulation techniques.
+      cell type:
+        description: null
+      operating device:
+        description: null
+      unit of measurement:
+        description: null
+      product accessibility:
+        description: null
+      laterality:
+        description: null
+      operating system:
+        description: null
+      visual stimulus type:
+        description: A 'visual stimulus type' groups similar visual stimuli used across
+          visual stimulation techniques.
+      analysis technique:
+        description: null
+      difference measure:
+        description: A measure of the difference between two things
+      annotation type:
+        description: Geometrical classification of annotations into types.
+      (meta)data model type:
+        description: null
+      genetic strain type:
+        description: The genetic strain type describes the genetic background type
+          of a strain.

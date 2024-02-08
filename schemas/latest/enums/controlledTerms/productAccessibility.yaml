@@ -1,17 +1,28 @@
-ProductAccessibility:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/ProductAccessibility
-  permissible_values:
-    controlled access:
-      description: With 'controlled access' selected, data and metadata are both released,
-        but data are only available for users after they logged in and authenticated
-        themselves.
-    free access:
-      description: With 'free access' selected, data and metadata are both released
-        and become immediately available without any access restrictions.
-    restricted access:
-      description: With 'restricted access' selected, metadata are released, but data
-        remain on an access restricted server.
-    under embargo:
-      description: With 'under embargo' selected, metadata are released, but data
-        remain unavailable for the public until the embargo is lifted.
-  title: Product accessibility
+id: https://openminds.ebrains.eu/schemas/latest/enums/ProductAccessibility?format=linkml
+name: openMINDS-enums-ProductAccessibility
+title: OpenMINDS enum for ProductAccessibility
+description: OpenMINDS enum for ProductAccessibility
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ProductAccessibility:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/ProductAccessibility
+    title: Product accessibility
+    permissible_values:
+      restricted access:
+        description: With 'restricted access' selected, metadata are released, but
+          data remain on an access restricted server.
+      under embargo:
+        description: With 'under embargo' selected, metadata are released, but data
+          remain unavailable for the public until the embargo is lifted.
+      controlled access:
+        description: With 'controlled access' selected, data and metadata are both
+          released, but data are only available for users after they logged in and
+          authenticated themselves.
+      free access:
+        description: With 'free access' selected, data and metadata are both released
+          and become immediately available without any access restrictions.

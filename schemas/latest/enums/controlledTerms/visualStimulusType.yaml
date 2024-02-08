@@ -1,20 +1,31 @@
-VisualStimulusType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/VisualStimulusType
-  permissible_values:
-    moving checkerboard:
-      description: null
-    moving grating:
-      description: null
-    moving symbol:
-      description: null
-    natural movie:
-      description: null
-    natural scene:
-      description: null
-    static checkerboard:
-      description: null
-    static grating:
-      description: null
-    static symbol:
-      description: null
-  title: Visual stimulus type
+id: https://openminds.ebrains.eu/schemas/latest/enums/VisualStimulusType?format=linkml
+name: openMINDS-enums-VisualStimulusType
+title: OpenMINDS enum for VisualStimulusType
+description: OpenMINDS enum for VisualStimulusType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  VisualStimulusType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/VisualStimulusType
+    title: Visual stimulus type
+    permissible_values:
+      natural movie:
+        description: null
+      moving grating:
+        description: null
+      static grating:
+        description: null
+      static checkerboard:
+        description: null
+      moving symbol:
+        description: null
+      natural scene:
+        description: null
+      moving checkerboard:
+        description: null
+      static symbol:
+        description: null

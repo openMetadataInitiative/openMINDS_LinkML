@@ -1,14 +1,25 @@
-EthicsAssessment:
-  description: Structured information on the ethics assessment of a dataset.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/EthicsAssessment
-  permissible_values:
-    EU compliant:
-      description: Data are ethically approved in compliance with EU law. No additional
-        ethics assessment was made by the data sharing initiative.
-    EU compliant +:
-      description: Data are ethically approved in compliance with EU law and an additional
-        assessment was made by the data sharing initiative.
-    not required:
-      description: An ethics assessment is 'not required' when no ethics approval
-        was needed to conduct the study.
-  title: Ethics assessment
+id: https://openminds.ebrains.eu/schemas/latest/enums/EthicsAssessment?format=linkml
+name: openMINDS-enums-EthicsAssessment
+title: OpenMINDS enum for EthicsAssessment
+description: OpenMINDS enum for EthicsAssessment
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  EthicsAssessment:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/EthicsAssessment
+    title: Ethics assessment
+    description: Structured information on the ethics assessment of a dataset.
+    permissible_values:
+      EU compliant +:
+        description: Data are ethically approved in compliance with EU law and an
+          additional assessment was made by the data sharing initiative.
+      EU compliant:
+        description: Data are ethically approved in compliance with EU law. No additional
+          ethics assessment was made by the data sharing initiative.
+      not required:
+        description: An ethics assessment is 'not required' when no ethics approval
+          was needed to conduct the study.

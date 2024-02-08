@@ -1,18 +1,29 @@
-GeneticStrainType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/GeneticStrainType
-  permissible_values:
-    conditional knockin ready:
-      description: null
-    conditional knockout ready:
-      description: null
-    conditional ready:
-      description: null
-    knockin:
-      description: null
-    knockout:
-      description: null
-    transgenic:
-      description: null
-    wildtype:
-      description: null
-  title: Genetic strain type
+id: https://openminds.ebrains.eu/schemas/latest/enums/GeneticStrainType?format=linkml
+name: openMINDS-enums-GeneticStrainType
+title: OpenMINDS enum for GeneticStrainType
+description: OpenMINDS enum for GeneticStrainType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  GeneticStrainType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/GeneticStrainType
+    title: Genetic strain type
+    permissible_values:
+      conditional knockout ready:
+        description: null
+      conditional knockin ready:
+        description: null
+      wildtype:
+        description: null
+      knockin:
+        description: null
+      knockout:
+        description: null
+      conditional ready:
+        description: null
+      transgenic:
+        description: null

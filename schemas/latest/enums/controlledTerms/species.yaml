@@ -1,60 +1,71 @@
-Species:
-  description: Structured information on the species.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/Species
-  permissible_values:
-    Berghia stephanieae:
-      description: The species *Berghia stephanieae* belongs to the family of *aeolidiidae*
-        (family of sea slugs, shell-less marine gastropod molluscs).
-    Callithrix jacchus:
-      description: The species *Callithrix jacchus* (common marmoset) belongs to the
-        family of *callitrichidae* (new world monkeys).
-    Chlorocebus aethiops sabaeus:
-      description: The species *Chlorocebus aethiops sabaeus* (green monkey) belongs
-        to the family of *cercopithecidae* (old world monkeys).
-    Chlorocebus pygerythrus:
-      description: The species *Chlorocebus pygerythrus* (vervet marmoset) belongs
-        to the family of *cercopithecidae* (old world monkeys).
-    Danio rerio:
-      description: The species *Danio rerio* (zebrafish) belongs to the family of
-        *cyprinidae* (cyprinids, freshwater fish).
-    Felis catus:
-      description: The species *Felis catus* (domestic cat) belongs to the family
-        of *Felidae*, subfamily *Felinae*.
-    Homo sapiens:
-      description: The species *Homo sapiens* (humans) belongs to the family of *hominidae*
-        (great apes).
-    Macaca fascicularis:
-      description: The species *Macaca fascicularis* (crab-eating macaque) belongs
-        to the family of *cercopithecidae* (old world monkeys).
-    Macaca fuscata:
-      description: The species *Macaca fuscata* (Japanese macaque) belongs to the
-        family of *cercopithecidae* (old world monkeys).
-    Macaca mulatta:
-      description: The species *Macaca mulatta* (rhesus macaque) belongs to the family
-        of *cercopithecidae* (old world monkeys).
-    Monodelphis domestica:
-      description: The species *Monodelphis domestica* (gray short-tailed opossum)
-        belongs to the family of *didelphidae* (American possums).
-    Mus musculus:
-      description: The species *Mus musculus* (house mouse) belongs to the family
-        of *muridae* (murids).
-    Mustela putorius:
-      description: The species *Mustela putorius* (European polecat) belongs to the
-        family of *mustelidae* (mustelids).
-    Mustela putorius furo:
-      description: The species *Mustela putorius furo* (domestic ferret) belongs to
-        the family of *mustelidae* (mustelids).
-    Ovis aries:
-      description: The species *Ovis aries* (domestic sheep) belongs to the family
-        of bovidae (bovids).
-    Rattus norvegicus:
-      description: The species *Rattus norvegicus* (brown rat) belongs to the family
-        of *muridae* (murids).
-    Sus scrofa domesticus:
-      description: The species *Sus scrofa domesticus* (domestic pig) belongs to the
-        family of suidae (suids).
-    Trachemys scripta elegans:
-      description: The red-eared slider or red-eared terrapin (Trachemys scripta elegans)
-        is a subspecies of the pond slider (Trachemys scripta), a semiaquatic turtle
-        belonging to the family Emydidae ([Wikipedia](https://en.wikipedia.org/wiki/Red-eared_slider)).
-  title: Species
+id: https://openminds.ebrains.eu/schemas/latest/enums/Species?format=linkml
+name: openMINDS-enums-Species
+title: OpenMINDS enum for Species
+description: OpenMINDS enum for Species
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  Species:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/Species
+    title: Species
+    description: Structured information on the species.
+    permissible_values:
+      Callithrix jacchus:
+        description: The species *Callithrix jacchus* (common marmoset) belongs to
+          the family of *callitrichidae* (new world monkeys).
+      Sus scrofa domesticus:
+        description: The species *Sus scrofa domesticus* (domestic pig) belongs to
+          the family of suidae (suids).
+      Homo sapiens:
+        description: The species *Homo sapiens* (humans) belongs to the family of
+          *hominidae* (great apes).
+      Mustela putorius:
+        description: The species *Mustela putorius* (European polecat) belongs to
+          the family of *mustelidae* (mustelids).
+      Monodelphis domestica:
+        description: The species *Monodelphis domestica* (gray short-tailed opossum)
+          belongs to the family of *didelphidae* (American possums).
+      Macaca fuscata:
+        description: The species *Macaca fuscata* (Japanese macaque) belongs to the
+          family of *cercopithecidae* (old world monkeys).
+      Mustela putorius furo:
+        description: The species *Mustela putorius furo* (domestic ferret) belongs
+          to the family of *mustelidae* (mustelids).
+      Danio rerio:
+        description: The species *Danio rerio* (zebrafish) belongs to the family of
+          *cyprinidae* (cyprinids, freshwater fish).
+      Macaca mulatta:
+        description: The species *Macaca mulatta* (rhesus macaque) belongs to the
+          family of *cercopithecidae* (old world monkeys).
+      Macaca fascicularis:
+        description: The species *Macaca fascicularis* (crab-eating macaque) belongs
+          to the family of *cercopithecidae* (old world monkeys).
+      Felis catus:
+        description: The species *Felis catus* (domestic cat) belongs to the family
+          of *Felidae*, subfamily *Felinae*.
+      Rattus norvegicus:
+        description: The species *Rattus norvegicus* (brown rat) belongs to the family
+          of *muridae* (murids).
+      Berghia stephanieae:
+        description: The species *Berghia stephanieae* belongs to the family of *aeolidiidae*
+          (family of sea slugs, shell-less marine gastropod molluscs).
+      Mus musculus:
+        description: The species *Mus musculus* (house mouse) belongs to the family
+          of *muridae* (murids).
+      Chlorocebus aethiops sabaeus:
+        description: The species *Chlorocebus aethiops sabaeus* (green monkey) belongs
+          to the family of *cercopithecidae* (old world monkeys).
+      Ovis aries:
+        description: The species *Ovis aries* (domestic sheep) belongs to the family
+          of bovidae (bovids).
+      Chlorocebus pygerythrus:
+        description: The species *Chlorocebus pygerythrus* (vervet marmoset) belongs
+          to the family of *cercopithecidae* (old world monkeys).
+      Trachemys scripta elegans:
+        description: The red-eared slider or red-eared terrapin (Trachemys scripta
+          elegans) is a subspecies of the pond slider (Trachemys scripta), a semiaquatic
+          turtle belonging to the family Emydidae ([Wikipedia](https://en.wikipedia.org/wiki/Red-eared_slider)).

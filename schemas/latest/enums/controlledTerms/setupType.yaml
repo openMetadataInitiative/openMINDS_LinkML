@@ -1,13 +1,24 @@
-SetupType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/SetupType
-  permissible_values:
-    acquisition system:
-      description: An 'acquisition system' is a setup type with the purpose of collecting
-        data.
-    computing system:
-      description: A 'computing system' is a setup type with the purpose of performing
-        computations.
-    stimulation system:
-      description: A 'stimulation system' is a setup type with the purpose of stimulating
-        a specimen.
-  title: Setup type
+id: https://openminds.ebrains.eu/schemas/latest/enums/SetupType?format=linkml
+name: openMINDS-enums-SetupType
+title: OpenMINDS enum for SetupType
+description: OpenMINDS enum for SetupType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  SetupType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/SetupType
+    title: Setup type
+    permissible_values:
+      stimulation system:
+        description: A 'stimulation system' is a setup type with the purpose of stimulating
+          a specimen.
+      computing system:
+        description: A 'computing system' is a setup type with the purpose of performing
+          computations.
+      acquisition system:
+        description: An 'acquisition system' is a setup type with the purpose of collecting
+          data.

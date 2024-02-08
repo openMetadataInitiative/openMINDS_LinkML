@@ -1,23 +1,34 @@
-OperatingSystem:
-  description: Structured information on the operating system.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/OperatingSystem
-  permissible_values:
-    Android:
-      description: null
-    Linux:
-      description: null
-    MacOS:
-      description: null
-    Solaris:
-      description: null
-    Unix:
-      description: null
-    Windows:
-      description: null
-    Windows Phone:
-      description: null
-    iOS:
-      description: null
-    platform independent:
-      description: null
-  title: Operating system
+id: https://openminds.ebrains.eu/schemas/latest/enums/OperatingSystem?format=linkml
+name: openMINDS-enums-OperatingSystem
+title: OpenMINDS enum for OperatingSystem
+description: OpenMINDS enum for OperatingSystem
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  OperatingSystem:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/OperatingSystem
+    title: Operating system
+    description: Structured information on the operating system.
+    permissible_values:
+      Windows Phone:
+        description: null
+      Windows:
+        description: null
+      Unix:
+        description: null
+      MacOS:
+        description: null
+      Solaris:
+        description: null
+      Android:
+        description: null
+      Linux:
+        description: null
+      iOS:
+        description: null
+      platform independent:
+        description: null

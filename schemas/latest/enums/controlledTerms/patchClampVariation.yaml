@@ -1,22 +1,33 @@
-PatchClampVariation:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/PatchClampVariation
-  permissible_values:
-    cell-attached patch:
-      description: A variation of the patch-clamp technique in which the cell membrane
-        remains intact.
-    inside-out patch:
-      description: A variation of the patch-clamp technique in which a patch of membrane
-        is excised and the cytosolic surface exposed.
-    loose patch:
-      description: A variation of the patch-clamp technique involving a seal with
-        low electrical resistance.
-    outside-out patch:
-      description: A variation of the patch-clamp technique in which a patch of membrane
-        is excised and the external surface exposed.
-    perforated patch:
-      description: A variation of the patch-clamp technique in which the cell membrane
-        is perforated.
-    whole-cell patch:
-      description: A variation of the patch-clamp technique in which the patch is
-        ruptured, giving access to the intracellular space.
-  title: Patch clamp variation
+id: https://openminds.ebrains.eu/schemas/latest/enums/PatchClampVariation?format=linkml
+name: openMINDS-enums-PatchClampVariation
+title: OpenMINDS enum for PatchClampVariation
+description: OpenMINDS enum for PatchClampVariation
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  PatchClampVariation:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/PatchClampVariation
+    title: Patch clamp variation
+    permissible_values:
+      inside-out patch:
+        description: A variation of the patch-clamp technique in which a patch of
+          membrane is excised and the cytosolic surface exposed.
+      whole-cell patch:
+        description: A variation of the patch-clamp technique in which the patch is
+          ruptured, giving access to the intracellular space.
+      perforated patch:
+        description: A variation of the patch-clamp technique in which the cell membrane
+          is perforated.
+      cell-attached patch:
+        description: A variation of the patch-clamp technique in which the cell membrane
+          remains intact.
+      outside-out patch:
+        description: A variation of the patch-clamp technique in which a patch of
+          membrane is excised and the external surface exposed.
+      loose patch:
+        description: A variation of the patch-clamp technique involving a seal with
+          low electrical resistance.

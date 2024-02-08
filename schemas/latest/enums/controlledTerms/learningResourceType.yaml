@@ -1,17 +1,28 @@
-LearningResourceType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/LearningResourceType
-  permissible_values:
-    developer documentation:
-      description: Documentation for the developers of a resource.
-    interactive tutorial:
-      description: A tutorial presented in an interactive format, for example a Jupyter
-        notebook.
-    slide deck:
-      description: A set of slides for a visual presentation.
-    user documentation:
-      description: Documentation for the users of a resource.
-    video presentation:
-      description: A video recorded presentation.
-    video tutorial:
-      description: A tutorial presented as a video.
-  title: Learning resource type
+id: https://openminds.ebrains.eu/schemas/latest/enums/LearningResourceType?format=linkml
+name: openMINDS-enums-LearningResourceType
+title: OpenMINDS enum for LearningResourceType
+description: OpenMINDS enum for LearningResourceType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  LearningResourceType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/LearningResourceType
+    title: Learning resource type
+    permissible_values:
+      video tutorial:
+        description: A tutorial presented as a video.
+      user documentation:
+        description: Documentation for the users of a resource.
+      interactive tutorial:
+        description: A tutorial presented in an interactive format, for example a
+          Jupyter notebook.
+      slide deck:
+        description: A set of slides for a visual presentation.
+      video presentation:
+        description: A video recorded presentation.
+      developer documentation:
+        description: Documentation for the developers of a resource.

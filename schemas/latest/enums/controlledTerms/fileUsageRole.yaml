@@ -1,19 +1,30 @@
-FileUsageRole:
-  description: Structured information on the usage role of a file instance or bundle.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/FileUsageRole
-  permissible_values:
-    data descriptor:
-      description: A 'data descriptor' describes the provenance, the structure, the
-        applied quality assessment, and possible (re)usage of the data. It should
-        not present hypotheses tests, new interpretations, new methods or in-depth
-        analyses.
-    logo:
-      description: 'A logo is a graphic used to aid and promote public identification
-        and recognition.used to aid and promote public identification and recognition. '
-    preview:
-      description: A preview is a representative image or short movie used to peak
-        interest for a product.
-    screenshot:
-      description: A screenshot is an image of the content displayed on the screen
-        of a computer or mobile device.
-  title: File usage role
+id: https://openminds.ebrains.eu/schemas/latest/enums/FileUsageRole?format=linkml
+name: openMINDS-enums-FileUsageRole
+title: OpenMINDS enum for FileUsageRole
+description: OpenMINDS enum for FileUsageRole
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  FileUsageRole:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/FileUsageRole
+    title: File usage role
+    description: Structured information on the usage role of a file instance or bundle.
+    permissible_values:
+      preview:
+        description: A preview is a representative image or short movie used to peak
+          interest for a product.
+      data descriptor:
+        description: A 'data descriptor' describes the provenance, the structure,
+          the applied quality assessment, and possible (re)usage of the data. It should
+          not present hypotheses tests, new interpretations, new methods or in-depth
+          analyses.
+      logo:
+        description: 'A logo is a graphic used to aid and promote public identification
+          and recognition.used to aid and promote public identification and recognition. '
+      screenshot:
+        description: A screenshot is an image of the content displayed on the screen
+          of a computer or mobile device.

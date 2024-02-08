@@ -1,0 +1,13 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums?format=linkml
+name: openMINDS-enums
+title: OpenMINDS instance library as LinkML enums, version "v2.0"
+description: Enums for the LinkML representation of openMINDS metadata framework,
+  version "v2.0"
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+imports:
+- linkml:types

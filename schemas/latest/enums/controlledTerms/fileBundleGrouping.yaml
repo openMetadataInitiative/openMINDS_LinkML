@@ -1,23 +1,34 @@
-FileBundleGrouping:
-  description: Structured information on the grouping mechanism of a file bundle.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/FileBundleGrouping
-  permissible_values:
-    behavioral protocol:
-      description: null
-    coordinate space:
-      description: null
-    protocol:
-      description: null
-    study target:
-      description: null
-    subject:
-      description: null
-    subject group:
-      description: null
-    technique:
-      description: null
-    tissue sample:
-      description: null
-    tissue sample collection:
-      description: null
-  title: File bundle grouping
+id: https://openminds.ebrains.eu/schemas/latest/enums/FileBundleGrouping?format=linkml
+name: openMINDS-enums-FileBundleGrouping
+title: OpenMINDS enum for FileBundleGrouping
+description: OpenMINDS enum for FileBundleGrouping
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  FileBundleGrouping:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/FileBundleGrouping
+    title: File bundle grouping
+    description: Structured information on the grouping mechanism of a file bundle.
+    permissible_values:
+      protocol:
+        description: null
+      technique:
+        description: null
+      study target:
+        description: null
+      behavioral protocol:
+        description: null
+      coordinate space:
+        description: null
+      subject group:
+        description: null
+      tissue sample:
+        description: null
+      tissue sample collection:
+        description: null
+      subject:
+        description: null

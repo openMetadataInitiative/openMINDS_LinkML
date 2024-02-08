@@ -1,21 +1,32 @@
-OperatingDevice:
-  description: Structured information on the operating device.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/OperatingDevice
-  permissible_values:
-    desktop:
-      description: null
-    embedded system:
-      description: null
-    high-performance computer:
-      description: null
-    mobile:
-      description: null
-    neuromorphic computer:
-      description: Very-large-scale integration (VLSI) systems containing electronic
-        circuits used to mimic neuro-biological architectures present in the nervous
-        system.
-    server:
-      description: null
-    web:
-      description: null
-  title: Operating device
+id: https://openminds.ebrains.eu/schemas/latest/enums/OperatingDevice?format=linkml
+name: openMINDS-enums-OperatingDevice
+title: OpenMINDS enum for OperatingDevice
+description: OpenMINDS enum for OperatingDevice
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  OperatingDevice:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/OperatingDevice
+    title: Operating device
+    description: Structured information on the operating device.
+    permissible_values:
+      high-performance computer:
+        description: null
+      neuromorphic computer:
+        description: Very-large-scale integration (VLSI) systems containing electronic
+          circuits used to mimic neuro-biological architectures present in the nervous
+          system.
+      desktop:
+        description: null
+      mobile:
+        description: null
+      server:
+        description: null
+      embedded system:
+        description: null
+      web:
+        description: null

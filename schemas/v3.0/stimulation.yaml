@@ -1,0 +1,72 @@
+id: https://openminds.ebrains.eu/schemas/latest/stimulation?format=linkml
+name: openMINDS-stimulation
+title: OpenMINDS stimulation module, version "v3.0"
+description: Schemas for the stimulation module of the openMINDS metadata framework,
+  version "v3.0"
+license: https://spdx.org/licenses/MIT.html
+imports:
+- linkml:types
+- slots
+- enums
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+classes:
+- EphysStimulus:
+    class_uri: https://openminds.ebrains.eu/stimulation/EphysStimulus
+    description: null
+    title: Ephys stimulus
+    slots:
+    - id
+    - type
+    slot_usage:
+      type:
+        range: ElectricalStimulusType
+- StimulationActivity:
+    class_uri: https://openminds.ebrains.eu/stimulation/StimulationActivity
+    description: null
+    title: Stimulation activity
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - setup
+    - startTime
+    - stimulus
+    - studyTarget
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: Time
+      input:
+        required: true
+        range: SubjectGroupState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: SubjectGroupState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: Time
+      stimulus:
+        required: true
+      studyTarget:
+        range: AuditoryStimulusType

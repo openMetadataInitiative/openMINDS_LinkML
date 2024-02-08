@@ -1,21 +1,32 @@
-QualitativeOverlap:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/QualitativeOverlap
-  permissible_values:
-    is homologous to:
-      description: A set/object (A) has the same relative position, function, or structure
-        as a set/object (B).
-    is identical to:
-      description: A set/object (A) is identical to another set/object (B) if they
-        look exactly the same.
-    is subset of:
-      description: A set/object (A) is a subset of another set/object (B) if (A) and
-        (B) are not equal, but all elements/incidents of (A) are also elements/incidents
-        of (B).
-    is superset of:
-      description: A set/object (A) is a superset of another set/object (B) if (A)
-        and (B) are not equal, but all elements/incidents of (B) are also elements/incidents
-        of (A).
-    partially overlaps with:
-      description: Two sets/objects (A and B) partially overlap when some elements/incidents
-        are part of both original objects (A and B).
-  title: Qualitative overlap
+id: https://openminds.ebrains.eu/schemas/latest/enums/QualitativeOverlap?format=linkml
+name: openMINDS-enums-QualitativeOverlap
+title: OpenMINDS enum for QualitativeOverlap
+description: OpenMINDS enum for QualitativeOverlap
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  QualitativeOverlap:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/QualitativeOverlap
+    title: Qualitative overlap
+    permissible_values:
+      is identical to:
+        description: A set/object (A) is identical to another set/object (B) if they
+          look exactly the same.
+      partially overlaps with:
+        description: Two sets/objects (A and B) partially overlap when some elements/incidents
+          are part of both original objects (A and B).
+      is homologous to:
+        description: A set/object (A) has the same relative position, function, or
+          structure as a set/object (B).
+      is superset of:
+        description: A set/object (A) is a superset of another set/object (B) if (A)
+          and (B) are not equal, but all elements/incidents of (B) are also elements/incidents
+          of (A).
+      is subset of:
+        description: A set/object (A) is a subset of another set/object (B) if (A)
+          and (B) are not equal, but all elements/incidents of (A) are also elements/incidents
+          of (B).

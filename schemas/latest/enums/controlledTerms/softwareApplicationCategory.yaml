@@ -1,17 +1,28 @@
-SoftwareApplicationCategory:
-  description: Structured information on the category of the software application.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareApplicationCategory
-  permissible_values:
-    application:
-      description: null
-    library:
-      description: null
-    middleware:
-      description: null
-    module:
-      description: null
-    notebook:
-      description: null
-    plugin:
-      description: null
-  title: Software application category
+id: https://openminds.ebrains.eu/schemas/latest/enums/SoftwareApplicationCategory?format=linkml
+name: openMINDS-enums-SoftwareApplicationCategory
+title: OpenMINDS enum for SoftwareApplicationCategory
+description: OpenMINDS enum for SoftwareApplicationCategory
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  SoftwareApplicationCategory:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareApplicationCategory
+    title: Software application category
+    description: Structured information on the category of the software application.
+    permissible_values:
+      middleware:
+        description: null
+      notebook:
+        description: null
+      module:
+        description: null
+      application:
+        description: null
+      library:
+        description: null
+      plugin:
+        description: null

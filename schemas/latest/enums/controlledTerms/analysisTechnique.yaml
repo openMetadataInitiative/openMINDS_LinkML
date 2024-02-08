@@ -1,9 +1,21 @@
-AnalysisTechnique:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/AnalysisTechnique
-  permissible_values:
-    Ward clustering:
-      description: '''Ward clustering'' is a general agglomerative hierarchical clustering
-        procedure, where the criterion for choosing the pair of clusters to merge
-        at each step is based on the optimal value of an objective function (typically
-        aiming to minimize the total within-cluster variance). [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Ward%27s_method)]'
-  title: Analysis technique
+id: https://openminds.ebrains.eu/schemas/latest/enums/AnalysisTechnique?format=linkml
+name: openMINDS-enums-AnalysisTechnique
+title: OpenMINDS enum for AnalysisTechnique
+description: OpenMINDS enum for AnalysisTechnique
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  AnalysisTechnique:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/AnalysisTechnique
+    title: Analysis technique
+    permissible_values:
+      Ward clustering:
+        description: '''Ward clustering'' is a general agglomerative hierarchical
+          clustering procedure, where the criterion for choosing the pair of clusters
+          to merge at each step is based on the optimal value of an objective function
+          (typically aiming to minimize the total within-cluster variance). [adapted
+          from [Wikipedia](https://en.wikipedia.org/wiki/Ward%27s_method)]'

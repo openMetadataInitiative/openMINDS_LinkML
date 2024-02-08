@@ -1,16 +1,28 @@
-AnatomicalPlane:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/AnatomicalPlane
-  permissible_values:
-    axial plane:
-      description: The 'axial plane' is always perpendicular to the longitudinal and
-        the frontal plane of an organism, extremity or organ, dividing it into a dorsal,
-        superior, above or top part, and a ventral, inferior, below or bottom part.
-    frontal plane:
-      description: The 'frontal plane' is always perpendicular to the axial and longitudinal
-        plane of an organism, extremity or organ, dividing it into an anterior, rostral
-        or front part, and a posterior, caudal or back part.
-    longitudinal plane:
-      description: The 'longitudinal plane' is always perpendicular to the axial and
-        frontal plane of an organism, extremity or organ, running parallel to the
-        'median plane' and dividing it into a left and right part.
-  title: Anatomical plane
+id: https://openminds.ebrains.eu/schemas/latest/enums/AnatomicalPlane?format=linkml
+name: openMINDS-enums-AnatomicalPlane
+title: OpenMINDS enum for AnatomicalPlane
+description: OpenMINDS enum for AnatomicalPlane
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  AnatomicalPlane:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/AnatomicalPlane
+    title: Anatomical plane
+    permissible_values:
+      axial plane:
+        description: The 'axial plane' is always perpendicular to the longitudinal
+          and the frontal plane of an organism, extremity or organ, dividing it into
+          a dorsal, superior, above or top part, and a ventral, inferior, below or
+          bottom part.
+      frontal plane:
+        description: The 'frontal plane' is always perpendicular to the axial and
+          longitudinal plane of an organism, extremity or organ, dividing it into
+          an anterior, rostral or front part, and a posterior, caudal or back part.
+      longitudinal plane:
+        description: The 'longitudinal plane' is always perpendicular to the axial
+          and frontal plane of an organism, extremity or organ, running parallel to
+          the 'median plane' and dividing it into a left and right part.

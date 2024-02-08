@@ -1,12 +1,23 @@
-SemanticDataType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/SemanticDataType
-  permissible_values:
-    derived data:
-      description: null
-    experimental data:
-      description: null
-    raw data:
-      description: null
-    simulated data:
-      description: null
-  title: Semantic data type
+id: https://openminds.ebrains.eu/schemas/latest/enums/SemanticDataType?format=linkml
+name: openMINDS-enums-SemanticDataType
+title: OpenMINDS enum for SemanticDataType
+description: OpenMINDS enum for SemanticDataType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  SemanticDataType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/SemanticDataType
+    title: Semantic data type
+    permissible_values:
+      simulated data:
+        description: null
+      experimental data:
+        description: null
+      raw data:
+        description: null
+      derived data:
+        description: null

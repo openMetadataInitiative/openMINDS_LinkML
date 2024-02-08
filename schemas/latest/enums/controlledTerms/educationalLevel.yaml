@@ -1,11 +1,22 @@
-EducationalLevel:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/EducationalLevel
-  permissible_values:
-    advanced:
-      description: The learner has extensive knowledge of the given topic.
-    beginner:
-      description: The learner has no or minimal knowledge or experience of the given
-        topic.
-    intermediate:
-      description: The learner has knowledge of the given topic, but is not an expert.
-  title: Educational level
+id: https://openminds.ebrains.eu/schemas/latest/enums/EducationalLevel?format=linkml
+name: openMINDS-enums-EducationalLevel
+title: OpenMINDS enum for EducationalLevel
+description: OpenMINDS enum for EducationalLevel
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  EducationalLevel:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/EducationalLevel
+    title: Educational level
+    permissible_values:
+      beginner:
+        description: The learner has no or minimal knowledge or experience of the
+          given topic.
+      intermediate:
+        description: The learner has knowledge of the given topic, but is not an expert.
+      advanced:
+        description: The learner has extensive knowledge of the given topic.

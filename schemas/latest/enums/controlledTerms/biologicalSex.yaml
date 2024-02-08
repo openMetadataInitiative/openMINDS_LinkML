@@ -1,14 +1,25 @@
-BiologicalSex:
-  description: Structured information on the biological sex of a subject.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalSex
-  permissible_values:
-    female:
-      description: Biological sex that produces egg cells (ova).
-    hermaphrodite:
-      description: Biological sex with both male and female reproductive organs.
-    male:
-      description: Biological sex that produces sperm cells (spermatozoa).
-    not detectable:
-      description: Can be stated if the biological sex in visually not detectable
-        at a specific point in time.
-  title: Biological sex
+id: https://openminds.ebrains.eu/schemas/latest/enums/BiologicalSex?format=linkml
+name: openMINDS-enums-BiologicalSex
+title: OpenMINDS enum for BiologicalSex
+description: OpenMINDS enum for BiologicalSex
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  BiologicalSex:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalSex
+    title: Biological sex
+    description: Structured information on the biological sex of a subject.
+    permissible_values:
+      not detectable:
+        description: Can be stated if the biological sex in visually not detectable
+          at a specific point in time.
+      male:
+        description: Biological sex that produces sperm cells (spermatozoa).
+      female:
+        description: Biological sex that produces egg cells (ova).
+      hermaphrodite:
+        description: Biological sex with both male and female reproductive organs.

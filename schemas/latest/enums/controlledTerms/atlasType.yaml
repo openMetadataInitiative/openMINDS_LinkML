@@ -1,14 +1,25 @@
-AtlasType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/AtlasType
-  permissible_values:
-    deterministic atlas:
-      description: A 'deterministic atlas' is an anatomical or anatomopathological
-        atlases based on a definite composite of a single specimen.
-    parcellation scheme:
-      description: A 'parcellation scheme' is a set of parcels occupying a part or
-        all of an anatomical entity that has been delineated or annotated using a
-        common approach or set of criteria.
-    probabilistic atlas:
-      description: A 'probabilistic atlas' is an anatomical or anatomopathological
-        atlases based on statistically-weighted composites of many specimens.
-  title: Atlas type
+id: https://openminds.ebrains.eu/schemas/latest/enums/AtlasType?format=linkml
+name: openMINDS-enums-AtlasType
+title: OpenMINDS enum for AtlasType
+description: OpenMINDS enum for AtlasType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  AtlasType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/AtlasType
+    title: Atlas type
+    permissible_values:
+      parcellation scheme:
+        description: A 'parcellation scheme' is a set of parcels occupying a part
+          or all of an anatomical entity that has been delineated or annotated using
+          a common approach or set of criteria.
+      probabilistic atlas:
+        description: A 'probabilistic atlas' is an anatomical or anatomopathological
+          atlases based on statistically-weighted composites of many specimens.
+      deterministic atlas:
+        description: A 'deterministic atlas' is an anatomical or anatomopathological
+          atlases based on a definite composite of a single specimen.

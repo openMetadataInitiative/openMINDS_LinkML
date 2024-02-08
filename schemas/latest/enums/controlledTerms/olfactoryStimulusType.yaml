@@ -1,6 +1,17 @@
-OlfactoryStimulusType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/OlfactoryStimulusType
-  permissible_values:
-    floral odor:
-      description: Any chemical compound that smells floral.
-  title: Olfactory stimulus type
+id: https://openminds.ebrains.eu/schemas/latest/enums/OlfactoryStimulusType?format=linkml
+name: openMINDS-enums-OlfactoryStimulusType
+title: OpenMINDS enum for OlfactoryStimulusType
+description: OpenMINDS enum for OlfactoryStimulusType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  OlfactoryStimulusType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/OlfactoryStimulusType
+    title: Olfactory stimulus type
+    permissible_values:
+      floral odor:
+        description: Any chemical compound that smells floral.

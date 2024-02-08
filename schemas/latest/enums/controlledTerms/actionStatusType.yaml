@@ -1,21 +1,32 @@
-ActionStatusType:
-  description: Structured information about the status of an action.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/ActionStatusType
-  permissible_values:
-    active:
-      description: An in-progress action.
-    completed:
-      description: An action that has already taken place with a successful outcome.
-    failed:
-      description: An action that failed to complete or completed but produced an
-        error.
-    inactive:
-      description: A pending or suspended action.
-    paused:
-      description: A temporarily stopped action that can be resumed at a later point
-        in time.
-    pending:
-      description: An action which is awaiting execution.
-    potential:
-      description: A description of an action that is supported.
-  title: Action status type
+id: https://openminds.ebrains.eu/schemas/latest/enums/ActionStatusType?format=linkml
+name: openMINDS-enums-ActionStatusType
+title: OpenMINDS enum for ActionStatusType
+description: OpenMINDS enum for ActionStatusType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ActionStatusType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/ActionStatusType
+    title: Action status type
+    description: Structured information about the status of an action.
+    permissible_values:
+      active:
+        description: An in-progress action.
+      pending:
+        description: An action which is awaiting execution.
+      paused:
+        description: A temporarily stopped action that can be resumed at a later point
+          in time.
+      failed:
+        description: An action that failed to complete or completed but produced an
+          error.
+      potential:
+        description: A description of an action that is supported.
+      inactive:
+        description: A pending or suspended action.
+      completed:
+        description: An action that has already taken place with a successful outcome.

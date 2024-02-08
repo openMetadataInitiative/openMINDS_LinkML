@@ -1,57 +1,70 @@
-StimulationTechnique:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/StimulationTechnique
-  permissible_values:
-    Gestalt visual stimulation:
-      description: null
-    abstract image visual stimulation:
-      description: In an 'abstract image visual stimulation' a subject is visually
-        stimulated with a static image that does not show a natural scene but reduced
-        information or forms (e.g., colored symbols or outlines of faces).
-    checkerboard visual stimulation:
-      description: Stimulation technique that uses a checkerboard as visual stimulus.
-    current step stimulation:
-      description: Current step stimulation is a technique in which an amount of current
-        is applied in predefined steps, whilst measuring changes in neural/muscular
-        activity.
-    drifting grating visual stimulation:
-      description: null
-    electrical stimulation:
-      description: A technique used to elicit a reaction by an electrical stimulus.
-    figure-ground visual stimulation:
-      description: null
-    microstimulation:
-      description: null
-    natural image visual stimulation:
-      description: In a 'natural image visual stimulation' a subject is visually stimulated
-        with a static image that shows a natural scene (e.g., landscape or a person).
-    natural sound auditory stimulation:
-      description: null
-    optogenetic stimulation:
-      description: Using light of a particular wavelength, 'optogenetic stimulation'
-        increases or inhibits the activity of neuron populations that express (typically
-        due to genetic manipulation) light-sensitive ion channels, pumps or enzymes.
-    photon stimulation:
-      description: null
-    random dot motion stimulation:
-      description: "In a 'random dot motion stimulation' a subject is visually stimulated\
-        \ with a video where simulated randomly distributed dot(s) are re-positioned\
-        \ at a new random location with each video frame [[Newsome & Par\xE9, 1988](https://doi.org/10.1523/jneurosci.08-06-02201.1988)."
-    single pulse electrical stimulation:
-      description: A 'single pulse electrical stimulation' is a cortical stimulation
-        technique typically used in the field of epilepsy surgery.
-    static grating visual stimulation:
-      description: null
-    subliminal stimulation:
-      description: '''Subliminal stimulation'' is a technique providing any sensory
-        stimuli below an individual''s threshold for conscious perception (adapted
-        from [wikipedia](https://en.wikipedia.org/wiki/Subliminal_stimuli))'
-    subliminal visual simulation:
-      description: '''Subliminal visual simulation'' is a technique providing visual
-        stimuli below an indivdual''s threshold for conscious perception [adapted
-        from [wikipedia](https://en.wikipedia.org/wiki/Subliminal_stimuli)]'
-    transcranial magnetic stimulation:
-      description: null
-    whisker stimulation:
-      description: '''Whisker stimulation'' comprises all stimulation techniques in
-        which a single whisker or a group of whiskers is deflected in repeatable manner.'
-  title: Stimulation technique
+id: https://openminds.ebrains.eu/schemas/latest/enums/StimulationTechnique?format=linkml
+name: openMINDS-enums-StimulationTechnique
+title: OpenMINDS enum for StimulationTechnique
+description: OpenMINDS enum for StimulationTechnique
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  StimulationTechnique:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/StimulationTechnique
+    title: Stimulation technique
+    permissible_values:
+      subliminal visual simulation:
+        description: '''Subliminal visual simulation'' is a technique providing visual
+          stimuli below an indivdual''s threshold for conscious perception [adapted
+          from [wikipedia](https://en.wikipedia.org/wiki/Subliminal_stimuli)]'
+      microstimulation:
+        description: null
+      natural image visual stimulation:
+        description: In a 'natural image visual stimulation' a subject is visually
+          stimulated with a static image that shows a natural scene (e.g., landscape
+          or a person).
+      static grating visual stimulation:
+        description: null
+      electrical stimulation:
+        description: A technique used to elicit a reaction by an electrical stimulus.
+      figure-ground visual stimulation:
+        description: null
+      current step stimulation:
+        description: Current step stimulation is a technique in which an amount of
+          current is applied in predefined steps, whilst measuring changes in neural/muscular
+          activity.
+      single pulse electrical stimulation:
+        description: A 'single pulse electrical stimulation' is a cortical stimulation
+          technique typically used in the field of epilepsy surgery.
+      whisker stimulation:
+        description: '''Whisker stimulation'' comprises all stimulation techniques
+          in which a single whisker or a group of whiskers is deflected in repeatable
+          manner.'
+      drifting grating visual stimulation:
+        description: null
+      natural sound auditory stimulation:
+        description: null
+      random dot motion stimulation:
+        description: "In a 'random dot motion stimulation' a subject is visually stimulated\
+          \ with a video where simulated randomly distributed dot(s) are re-positioned\
+          \ at a new random location with each video frame [[Newsome & Par\xE9, 1988](https://doi.org/10.1523/jneurosci.08-06-02201.1988)."
+      optogenetic stimulation:
+        description: Using light of a particular wavelength, 'optogenetic stimulation'
+          increases or inhibits the activity of neuron populations that express (typically
+          due to genetic manipulation) light-sensitive ion channels, pumps or enzymes.
+      subliminal stimulation:
+        description: '''Subliminal stimulation'' is a technique providing any sensory
+          stimuli below an individual''s threshold for conscious perception (adapted
+          from [wikipedia](https://en.wikipedia.org/wiki/Subliminal_stimuli))'
+      transcranial magnetic stimulation:
+        description: null
+      photon stimulation:
+        description: null
+      Gestalt visual stimulation:
+        description: null
+      abstract image visual stimulation:
+        description: In an 'abstract image visual stimulation' a subject is visually
+          stimulated with a static image that does not show a natural scene but reduced
+          information or forms (e.g., colored symbols or outlines of faces).
+      checkerboard visual stimulation:
+        description: Stimulation technique that uses a checkerboard as visual stimulus.

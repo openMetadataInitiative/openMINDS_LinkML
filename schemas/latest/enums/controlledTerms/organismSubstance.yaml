@@ -1,16 +1,27 @@
-OrganismSubstance:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/OrganismSubstance
-  permissible_values:
-    arterial blood:
-      description: '''Arterial blood'' is the oxygenated portion of blood which occupies
-        the pulmonary vein, the left chambers of the heart, and the arteries of the
-        circulatory system.'
-    blood:
-      description: '''''Blood'' is a body fluid in the circulatory system of vertebrates
-        that transports substances to and from cells (e.g. nutrients, oxygen or metabolic
-        waste products). [[adapted from Wikipedia](https://en.wikipedia.org/wiki/Blood)]'
-    venous blood:
-      description: '''Venous blood'' is deoxygenated blood which travels from the
-        peripheral vessels, through the venous system into the right atrium of the
-        heart.'
-  title: Organism substance
+id: https://openminds.ebrains.eu/schemas/latest/enums/OrganismSubstance?format=linkml
+name: openMINDS-enums-OrganismSubstance
+title: OpenMINDS enum for OrganismSubstance
+description: OpenMINDS enum for OrganismSubstance
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  OrganismSubstance:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/OrganismSubstance
+    title: Organism substance
+    permissible_values:
+      venous blood:
+        description: '''Venous blood'' is deoxygenated blood which travels from the
+          peripheral vessels, through the venous system into the right atrium of the
+          heart.'
+      arterial blood:
+        description: '''Arterial blood'' is the oxygenated portion of blood which
+          occupies the pulmonary vein, the left chambers of the heart, and the arteries
+          of the circulatory system.'
+      blood:
+        description: '''''Blood'' is a body fluid in the circulatory system of vertebrates
+          that transports substances to and from cells (e.g. nutrients, oxygen or
+          metabolic waste products). [[adapted from Wikipedia](https://en.wikipedia.org/wiki/Blood)]'

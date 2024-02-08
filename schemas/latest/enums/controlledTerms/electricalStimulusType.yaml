@@ -1,6 +1,17 @@
-ElectricalStimulusType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/ElectricalStimulusType
-  permissible_values:
-    direct current:
-      description: null
-  title: Electrical stimulus type
+id: https://openminds.ebrains.eu/schemas/latest/enums/ElectricalStimulusType?format=linkml
+name: openMINDS-enums-ElectricalStimulusType
+title: OpenMINDS enum for ElectricalStimulusType
+description: OpenMINDS enum for ElectricalStimulusType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ElectricalStimulusType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/ElectricalStimulusType
+    title: Electrical stimulus type
+    permissible_values:
+      direct current:
+        description: null

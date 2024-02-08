@@ -1,22 +1,33 @@
-ContributionType:
-  description: Structured information on the type of contribution a person or organization
-    performed.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/ContributionType
-  permissible_values:
-    coordination:
-      description: null
-    data collection:
-      description: null
-    data management:
-      description: null
-    data processing:
-      description: null
-    information technology support:
-      description: null
-    laboratory assistance:
-      description: null
-    marketing:
-      description: null
-    metadata management:
-      description: null
-  title: Contribution type
+id: https://openminds.ebrains.eu/schemas/latest/enums/ContributionType?format=linkml
+name: openMINDS-enums-ContributionType
+title: OpenMINDS enum for ContributionType
+description: OpenMINDS enum for ContributionType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ContributionType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/ContributionType
+    title: Contribution type
+    description: Structured information on the type of contribution a person or organization
+      performed.
+    permissible_values:
+      data management:
+        description: null
+      data collection:
+        description: null
+      laboratory assistance:
+        description: null
+      marketing:
+        description: null
+      data processing:
+        description: null
+      metadata management:
+        description: null
+      information technology support:
+        description: null
+      coordination:
+        description: null

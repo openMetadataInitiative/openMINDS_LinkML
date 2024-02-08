@@ -1,21 +1,32 @@
-DifferenceMeasure:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/DifferenceMeasure
-  permissible_values:
-    Kolmogorov-Smirnov statistic:
-      description: Quantification of a distance between the empirical distribution
-        function of the sample and the cumulative distribution function of the reference
-        distribution, or between the empirical distribution functions of two samples.
-    Kullback-Leibler divergence:
-      description: A measure of how one probability distribution is different from
-        a second, reference probability distribution.
-    chi-squared statistic:
-      description: Test statistic resulting from a chi-squared test.
-    mean squared error:
-      description: The mean squared difference between two series of values.
-    t-statistic:
-      description: The ratio of the departure of the estimated value of a parameter
-        from its hypothesized value to its standard error.
-    z-score:
-      description: The number of standard deviations by which an observed value is
-        above or below the mean value.
-  title: Difference measure
+id: https://openminds.ebrains.eu/schemas/latest/enums/DifferenceMeasure?format=linkml
+name: openMINDS-enums-DifferenceMeasure
+title: OpenMINDS enum for DifferenceMeasure
+description: OpenMINDS enum for DifferenceMeasure
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  DifferenceMeasure:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/DifferenceMeasure
+    title: Difference measure
+    permissible_values:
+      z-score:
+        description: The number of standard deviations by which an observed value
+          is above or below the mean value.
+      t-statistic:
+        description: The ratio of the departure of the estimated value of a parameter
+          from its hypothesized value to its standard error.
+      Kullback-Leibler divergence:
+        description: A measure of how one probability distribution is different from
+          a second, reference probability distribution.
+      chi-squared statistic:
+        description: Test statistic resulting from a chi-squared test.
+      Kolmogorov-Smirnov statistic:
+        description: Quantification of a distance between the empirical distribution
+          function of the sample and the cumulative distribution function of the reference
+          distribution, or between the empirical distribution functions of two samples.
+      mean squared error:
+        description: The mean squared difference between two series of values.

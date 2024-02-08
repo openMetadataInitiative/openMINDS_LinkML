@@ -1,16 +1,27 @@
-ChemicalMixtureType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/ChemicalMixtureType
-  permissible_values:
-    colloid:
-      description: A 'colloid' is a heterogeneous mixture in which one substance consisting
-        of microscopically dispersed insoluble particles is suspended throughout another
-        substance. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Colloid)]
-    solution:
-      description: A 'solution' is a special type of homogeneous mixture where at
-        least one substance, called solute, is fully dissolved in another substance,
-        known as a solvent. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Solution_(chemistry))
-    suspension:
-      description: A 'suspension' is a heterogeneous mixture of a fluid that contains
-        solid particles sufficiently large for sedimentation and may even be visible
-        to the naked eye. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Suspension_(chemistry))]
-  title: Chemical mixture type
+id: https://openminds.ebrains.eu/schemas/latest/enums/ChemicalMixtureType?format=linkml
+name: openMINDS-enums-ChemicalMixtureType
+title: OpenMINDS enum for ChemicalMixtureType
+description: OpenMINDS enum for ChemicalMixtureType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ChemicalMixtureType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/ChemicalMixtureType
+    title: Chemical mixture type
+    permissible_values:
+      solution:
+        description: A 'solution' is a special type of homogeneous mixture where at
+          least one substance, called solute, is fully dissolved in another substance,
+          known as a solvent. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Solution_(chemistry))
+      colloid:
+        description: A 'colloid' is a heterogeneous mixture in which one substance
+          consisting of microscopically dispersed insoluble particles is suspended
+          throughout another substance. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Colloid)]
+      suspension:
+        description: A 'suspension' is a heterogeneous mixture of a fluid that contains
+          solid particles sufficiently large for sedimentation and may even be visible
+          to the naked eye. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Suspension_(chemistry))]

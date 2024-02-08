@@ -1,137 +1,151 @@
-ExperimentalApproach:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/ExperimentalApproach
-  permissible_values:
-    anatomy:
-      description: Any experimental approach focused on the bodily structure of living
-        organisms.
-    behavior:
-      description: Any experimental approach focused on the mechanical activity or
-        cognitive processes underlying mechanical activity of living organisms often
-        in response to external sensory stimuli.
-    biophysics:
-      description: '''Biophysics'' covers any experimental approach that is traditionally
-        used in physics, but applied and modified to study biological phenomena. [adapted
-        from [wikipedia](https://en.wikipedia.org/wiki/Biophysics)]'
-    cell biology:
-      description: Any experimental approach focused on structure, function, multiplication,
-        pathology, and life history of biological cells.
-    cell morphology:
-      description: Any experimental approach focused on the shape and structure of
-        individual cells.
-    cell population characterization:
-      description: Any experimental approach focused on biochemical, molecular and/or
-        physiological characteristics of populations of cells as opposed to individual
-        cells.
-    cell population imaging:
-      description: Any experimental approach focused on imaging biochemical, molecular,
-        or physiological characteristics of populations of cells.
-    cell population manipulation:
-      description: Any experimental approach focused on manipulation of biochemical,
-        molecular, or physiological characteristics of populations of cells.
-    chemogenetics:
-      description: Any experimental approach focused on using genetically encoded
-        chemically sensitive proteins in combination with a specific agonist delivered
-        systemically in order to manipulate the behavior of populations of cells.
-    clinical research:
-      description: Any experimental approach focused on medical observation, treatment,
-        or testing of patients.
-    computational modeling:
-      description: Any experimental approach focused on creating or characterizing
-        computational models or simulations of experimentally observed phenomena.
-    developmental biology:
-      description: Any experimental approach focused on life cycle, development, or
-        developmental history of an organism.
-    ecology:
-      description: Any experimental approach focused on interrelationship of organisms
-        and their environments, including causes and consequences.
-    electrophysiology:
-      description: Any experimental approach focused on electrical phenomena associated
-        with living systems, most notably the nervous system, cardiac system, and
-        musculoskeletal system.
-    epidemiology:
-      description: Any experimental approach focused on incidence, distribution, and
-        possible control of diseases and other factors relating to health.
-    epigenomics:
-      description: Any experimental approach focused on processes that modulate transcription
-        but that do not directly alter the primary sequences of an organism's DNA.
-    ethology:
-      description: Any experimental approach focused on natural unmanipulated human
-        or animal behavior and social organization from a biological, life history,
-        and often evolutionary perspective.
-    evolutionary biology:
-      description: Any experimental approach focused on heritable characteristics
-        of biological populations and their variation through the modification of
-        developmental process to produce new forms and species.
-    expression:
-      description: Any experimental approach focused on driving or detecting expression
-        of genes in cells or tissues.
-    expression characterization:
-      description: Any experimental approach focused on the cellular, anatomical,
-        or morphological distribution of gene expression.
-    genetics:
-      description: Experimental approach that measures or manipulates some aspect
-        of the genetic material of an organism.
-    genomics:
-      description: Any experimental approach focused on structure, function, evolution,
-        and mapping of genomes, the entiretiy of the genetic material of a single
-        organism.
-    histology:
-      description: Any experimental approach focused on structure of biological tissue.
-    informatics:
-      description: Any experimental approach focused on collection, classification,
-        storage, retrieval, analysis, visualization, and dissemination of recorded
-        knowledge in computational systems.
-    metabolomics:
-      description: Any experimental approach focused on chemical processes involving
-        metabolites, the small molecule substrates, intermediates and products of
-        cell metabolism.
-    microscopy:
-      description: Any experimental approach focused on using differential contrast
-        of microscopic structures to form an image.
-    morphology:
-      description: Any experimental approach focused on the shape and structure of
-        living organisms or their parts.
-    multimodal research:
-      description: Any experimental approach that employs multiple experimental approaches
-        in significant ways.
-    multiomics:
-      description: Any experimental approach that employs multiple omics approaches
-        in significant ways.
-    neural connectivity:
-      description: Any experimental approach focused on functional or anatomical connections
-        between single neurons or populations of neurons in defined anatomical regions.
-    neuroimaging:
-      description: Any experimental approach focused on the non-invasive direct or
-        indirect imaging of the structure, function, or pharmacology of the nervous
-        system.
-    omics:
-      description: Any experimental approach focused on characterization and quantification
-        of biological molecules that give rise to the structure, function, and dynamics
-        of organisms or their parts.
-    optogenetics:
-      description: Any experimental approach focused on using genetically encoded
-        light-sensitive proteins in combination with targeted delivery of light in
-        order to manipulate the behavior of populations of cells.
-    pharmacology:
-      description: '''Pharmacology'' is an experimental approach in which the composition,
-        properties, functions, sources, synthesis and design of drugs (any artificial,
-        natural, or endogenous molecule) and their biochemical or physiological effect
-        (normal or abnormal) on a cell, tissue, organ, or organism are studied. [adapted
-        from [wikipedia](https://en.wikipedia.org/wiki/Pharmacology)]'
-    physiology:
-      description: Any experimental approach focused on normal functions of living
-        organisms and their parts.
-    proteomics:
-      description: Any experimental approach focused on the composition, structure,
-        and activity of an entire set of proteins in organisms or their parts.
-    radiology:
-      description: Any experimental approach focused on using non-invasive techniques
-        that use intrinsic or induced contrast to form images. Also covers purely
-        clinical domains such as nuclear medicine.
-    spatial transcriptomics:
-      description: Any experimental approach focused on mapping the spatial location
-        of gene activity in biological tissue.
-    transcriptomics:
-      description: Any experimental approach focused on the transcriptome (all RNA
-        transcripts) of one or more cells, tissues, or organisms.
-  title: Experimental approach
+id: https://openminds.ebrains.eu/schemas/latest/enums/ExperimentalApproach?format=linkml
+name: openMINDS-enums-ExperimentalApproach
+title: OpenMINDS enum for ExperimentalApproach
+description: OpenMINDS enum for ExperimentalApproach
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ExperimentalApproach:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/ExperimentalApproach
+    title: Experimental approach
+    permissible_values:
+      cell morphology:
+        description: Any experimental approach focused on the shape and structure
+          of individual cells.
+      cell population manipulation:
+        description: Any experimental approach focused on manipulation of biochemical,
+          molecular, or physiological characteristics of populations of cells.
+      physiology:
+        description: Any experimental approach focused on normal functions of living
+          organisms and their parts.
+      omics:
+        description: Any experimental approach focused on characterization and quantification
+          of biological molecules that give rise to the structure, function, and dynamics
+          of organisms or their parts.
+      optogenetics:
+        description: Any experimental approach focused on using genetically encoded
+          light-sensitive proteins in combination with targeted delivery of light
+          in order to manipulate the behavior of populations of cells.
+      transcriptomics:
+        description: Any experimental approach focused on the transcriptome (all RNA
+          transcripts) of one or more cells, tissues, or organisms.
+      cell population characterization:
+        description: Any experimental approach focused on biochemical, molecular and/or
+          physiological characteristics of populations of cells as opposed to individual
+          cells.
+      proteomics:
+        description: Any experimental approach focused on the composition, structure,
+          and activity of an entire set of proteins in organisms or their parts.
+      neural connectivity:
+        description: Any experimental approach focused on functional or anatomical
+          connections between single neurons or populations of neurons in defined
+          anatomical regions.
+      morphology:
+        description: Any experimental approach focused on the shape and structure
+          of living organisms or their parts.
+      informatics:
+        description: Any experimental approach focused on collection, classification,
+          storage, retrieval, analysis, visualization, and dissemination of recorded
+          knowledge in computational systems.
+      metabolomics:
+        description: Any experimental approach focused on chemical processes involving
+          metabolites, the small molecule substrates, intermediates and products of
+          cell metabolism.
+      pharmacology:
+        description: '''Pharmacology'' is an experimental approach in which the composition,
+          properties, functions, sources, synthesis and design of drugs (any artificial,
+          natural, or endogenous molecule) and their biochemical or physiological
+          effect (normal or abnormal) on a cell, tissue, organ, or organism are studied.
+          [adapted from [wikipedia](https://en.wikipedia.org/wiki/Pharmacology)]'
+      spatial transcriptomics:
+        description: Any experimental approach focused on mapping the spatial location
+          of gene activity in biological tissue.
+      expression characterization:
+        description: Any experimental approach focused on the cellular, anatomical,
+          or morphological distribution of gene expression.
+      electrophysiology:
+        description: Any experimental approach focused on electrical phenomena associated
+          with living systems, most notably the nervous system, cardiac system, and
+          musculoskeletal system.
+      genomics:
+        description: Any experimental approach focused on structure, function, evolution,
+          and mapping of genomes, the entiretiy of the genetic material of a single
+          organism.
+      chemogenetics:
+        description: Any experimental approach focused on using genetically encoded
+          chemically sensitive proteins in combination with a specific agonist delivered
+          systemically in order to manipulate the behavior of populations of cells.
+      radiology:
+        description: Any experimental approach focused on using non-invasive techniques
+          that use intrinsic or induced contrast to form images. Also covers purely
+          clinical domains such as nuclear medicine.
+      biophysics:
+        description: '''Biophysics'' covers any experimental approach that is traditionally
+          used in physics, but applied and modified to study biological phenomena.
+          [adapted from [wikipedia](https://en.wikipedia.org/wiki/Biophysics)]'
+      anatomy:
+        description: Any experimental approach focused on the bodily structure of
+          living organisms.
+      neuroimaging:
+        description: Any experimental approach focused on the non-invasive direct
+          or indirect imaging of the structure, function, or pharmacology of the nervous
+          system.
+      multiomics:
+        description: Any experimental approach that employs multiple omics approaches
+          in significant ways.
+      epigenomics:
+        description: Any experimental approach focused on processes that modulate
+          transcription but that do not directly alter the primary sequences of an
+          organism's DNA.
+      clinical research:
+        description: Any experimental approach focused on medical observation, treatment,
+          or testing of patients.
+      epidemiology:
+        description: Any experimental approach focused on incidence, distribution,
+          and possible control of diseases and other factors relating to health.
+      ecology:
+        description: Any experimental approach focused on interrelationship of organisms
+          and their environments, including causes and consequences.
+      histology:
+        description: Any experimental approach focused on structure of biological
+          tissue.
+      microscopy:
+        description: Any experimental approach focused on using differential contrast
+          of microscopic structures to form an image.
+      expression:
+        description: Any experimental approach focused on driving or detecting expression
+          of genes in cells or tissues.
+      cell biology:
+        description: Any experimental approach focused on structure, function, multiplication,
+          pathology, and life history of biological cells.
+      computational modeling:
+        description: Any experimental approach focused on creating or characterizing
+          computational models or simulations of experimentally observed phenomena.
+      cell population imaging:
+        description: Any experimental approach focused on imaging biochemical, molecular,
+          or physiological characteristics of populations of cells.
+      developmental biology:
+        description: Any experimental approach focused on life cycle, development,
+          or developmental history of an organism.
+      ethology:
+        description: Any experimental approach focused on natural unmanipulated human
+          or animal behavior and social organization from a biological, life history,
+          and often evolutionary perspective.
+      behavior:
+        description: Any experimental approach focused on the mechanical activity
+          or cognitive processes underlying mechanical activity of living organisms
+          often in response to external sensory stimuli.
+      evolutionary biology:
+        description: Any experimental approach focused on heritable characteristics
+          of biological populations and their variation through the modification of
+          developmental process to produce new forms and species.
+      multimodal research:
+        description: Any experimental approach that employs multiple experimental
+          approaches in significant ways.
+      genetics:
+        description: Experimental approach that measures or manipulates some aspect
+          of the genetic material of an organism.

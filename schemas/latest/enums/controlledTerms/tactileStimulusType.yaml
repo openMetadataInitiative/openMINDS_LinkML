@@ -1,10 +1,21 @@
-TactileStimulusType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/TactileStimulusType
-  permissible_values:
-    textured surface:
-      description: null
-    vibrating object:
-      description: null
-    vibrating surface:
-      description: null
-  title: Tactile stimulus type
+id: https://openminds.ebrains.eu/schemas/latest/enums/TactileStimulusType?format=linkml
+name: openMINDS-enums-TactileStimulusType
+title: OpenMINDS enum for TactileStimulusType
+description: OpenMINDS enum for TactileStimulusType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  TactileStimulusType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/TactileStimulusType
+    title: Tactile stimulus type
+    permissible_values:
+      textured surface:
+        description: null
+      vibrating object:
+        description: null
+      vibrating surface:
+        description: null

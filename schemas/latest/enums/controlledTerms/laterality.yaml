@@ -1,9 +1,20 @@
-Laterality:
-  description: Structured information on the lateral direction.
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/Laterality
-  permissible_values:
-    left:
-      description: null
-    right:
-      description: null
-  title: Laterality
+id: https://openminds.ebrains.eu/schemas/latest/enums/Laterality?format=linkml
+name: openMINDS-enums-Laterality
+title: OpenMINDS enum for Laterality
+description: OpenMINDS enum for Laterality
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  Laterality:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/Laterality
+    title: Laterality
+    description: Structured information on the lateral direction.
+    permissible_values:
+      right:
+        description: null
+      left:
+        description: null

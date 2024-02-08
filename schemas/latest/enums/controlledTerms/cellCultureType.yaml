@@ -1,10 +1,21 @@
-CellCultureType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/CellCultureType
-  permissible_values:
-    primary cell culture:
-      description: A cell culture comprised of primary cultured cells and the media
-        in which they are being actively propagated or quiescently stored.
-    secondary cell culture:
-      description: A cultured cell population that is derived through one or more
-        passages in culture.
-  title: Cell culture type
+id: https://openminds.ebrains.eu/schemas/latest/enums/CellCultureType?format=linkml
+name: openMINDS-enums-CellCultureType
+title: OpenMINDS enum for CellCultureType
+description: OpenMINDS enum for CellCultureType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  CellCultureType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/CellCultureType
+    title: Cell culture type
+    permissible_values:
+      secondary cell culture:
+        description: A cultured cell population that is derived through one or more
+          passages in culture.
+      primary cell culture:
+        description: A cell culture comprised of primary cultured cells and the media
+          in which they are being actively propagated or quiescently stored.

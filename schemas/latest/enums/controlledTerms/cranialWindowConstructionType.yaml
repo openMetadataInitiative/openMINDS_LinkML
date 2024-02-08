@@ -1,13 +1,24 @@
-CranialWindowConstructionType:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/CranialWindowConstructionType
-  permissible_values:
-    cleared skull cranial window:
-      description: A cranial window that is constructed by clearing a small region
-        of the skull.
-    thinned skull cranial window:
-      description: A cranial window that is constructed by thinning a small region
-        of the skull.
-    transcranial window:
-      description: A cranial window that is constructed by removal of a small region
-        of the skull.
-  title: Cranial window construction type
+id: https://openminds.ebrains.eu/schemas/latest/enums/CranialWindowConstructionType?format=linkml
+name: openMINDS-enums-CranialWindowConstructionType
+title: OpenMINDS enum for CranialWindowConstructionType
+description: OpenMINDS enum for CranialWindowConstructionType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  CranialWindowConstructionType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/CranialWindowConstructionType
+    title: Cranial window construction type
+    permissible_values:
+      thinned skull cranial window:
+        description: A cranial window that is constructed by thinning a small region
+          of the skull.
+      transcranial window:
+        description: A cranial window that is constructed by removal of a small region
+          of the skull.
+      cleared skull cranial window:
+        description: A cranial window that is constructed by clearing a small region
+          of the skull.

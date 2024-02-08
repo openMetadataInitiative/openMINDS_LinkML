@@ -1,0 +1,784 @@
+id: https://openminds.ebrains.eu/schemas/latest/computation?format=linkml
+name: openMINDS-computation
+title: OpenMINDS computation module, version "v3.0"
+description: Schemas for the computation module of the openMINDS metadata framework,
+  version "v3.0"
+license: https://spdx.org/licenses/MIT.html
+imports:
+- linkml:types
+- slots
+- enums
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+classes:
+- Visualization:
+    class_uri: https://openminds.ebrains.eu/computation/Visualization
+    description: Structured information about a process of visualizing a computational
+      model, a computational process, or a dataset.
+    title: Visualization
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - environment
+    - input
+    - launchConfiguration
+    - lookupLabel
+    - output
+    - performedBy
+    - recipe
+    - resourceUsage
+    - startTime
+    - startedBy
+    - status
+    - studyTarget
+    - tag
+    - technique
+    - wasInformedBy
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: Time
+      environment:
+        required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
+      input:
+        required: true
+        range: LocalFile
+      output:
+        required: true
+        range: LocalFile
+      performedBy:
+        range: SoftwareAgent
+      resourceUsage:
+        range: QuantitativeValue
+      startTime:
+        required: true
+        range: string
+        any_of:
+        - range: Time
+      studyTarget:
+        range: AuditoryStimulusType
+      technique:
+        range: AnalysisTechnique
+      wasInformedBy:
+        any_of:
+        - range: DataAnalysis
+        - range: DataCopy
+        - range: GenericComputation
+        - range: ModelValidation
+        - range: Optimization
+        - range: Simulation
+        - range: Visualization
+- WorkflowExecution:
+    class_uri: https://openminds.ebrains.eu/computation/WorkflowExecution
+    description: Structured information about an execution of a computational workflow.
+    title: Workflow execution
+    slots:
+    - id
+    - configuration
+    - recipe
+    - stage
+    - startedBy
+    slot_usage:
+      configuration:
+        any_of:
+        - range: Configuration
+        - range: File
+      stage:
+        range: DataAnalysis
+- GenericComputation:
+    class_uri: https://openminds.ebrains.eu/computation/GenericComputation
+    description: Structured information about a computation whose type is unknown
+      or unspecified.
+    title: Generic computation
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - environment
+    - input
+    - launchConfiguration
+    - lookupLabel
+    - output
+    - performedBy
+    - recipe
+    - resourceUsage
+    - startTime
+    - startedBy
+    - status
+    - studyTarget
+    - tag
+    - technique
+    - wasInformedBy
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: Time
+      environment:
+        required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
+      input:
+        required: true
+        range: LocalFile
+      output:
+        required: true
+        range: LocalFile
+      performedBy:
+        range: SoftwareAgent
+      resourceUsage:
+        range: QuantitativeValue
+      startTime:
+        required: true
+        range: string
+        any_of:
+        - range: Time
+      studyTarget:
+        range: AuditoryStimulusType
+      technique:
+        range: AnalysisTechnique
+      wasInformedBy:
+        any_of:
+        - range: DataAnalysis
+        - range: DataCopy
+        - range: GenericComputation
+        - range: ModelValidation
+        - range: Optimization
+        - range: Simulation
+        - range: Visualization
+- Simulation:
+    class_uri: https://openminds.ebrains.eu/computation/Simulation
+    description: Structured information about a process of running simulations of
+      a computational model.
+    title: Simulation
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - environment
+    - input
+    - launchConfiguration
+    - lookupLabel
+    - output
+    - performedBy
+    - recipe
+    - resourceUsage
+    - startTime
+    - startedBy
+    - status
+    - studyTarget
+    - tag
+    - technique
+    - wasInformedBy
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: Time
+      environment:
+        required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
+      input:
+        required: true
+        range: LocalFile
+      output:
+        required: true
+        range: LocalFile
+      performedBy:
+        range: SoftwareAgent
+      resourceUsage:
+        range: QuantitativeValue
+      startTime:
+        required: true
+        range: string
+        any_of:
+        - range: Time
+      studyTarget:
+        range: AuditoryStimulusType
+      technique:
+        range: AnalysisTechnique
+      wasInformedBy:
+        any_of:
+        - range: DataAnalysis
+        - range: DataCopy
+        - range: GenericComputation
+        - range: ModelValidation
+        - range: Optimization
+        - range: Simulation
+        - range: Visualization
+- WorkflowRecipeVersion:
+    class_uri: https://openminds.ebrains.eu/computation/WorkflowRecipeVersion
+    description: Structured information about a specific implemented version of a
+      workflow recipe.
+    title: Workflow recipe version
+    slots:
+    - id
+    - accessibility
+    - copyright
+    - custodian
+    - description
+    - developer
+    - digitalIdentifier
+    - format
+    - fullDocumentation
+    - fullName
+    - funding
+    - hasPart
+    - homepage
+    - howToCite
+    - isAlternativeVersionOf
+    - isNewVersionOf
+    - keyword
+    - license
+    - otherContribution
+    - relatedPublication
+    - releaseDate
+    - repository
+    - shortName
+    - supportChannel
+    - versionIdentifier
+    - versionInnovation
+    slot_usage:
+      accessibility:
+        required: true
+      custodian:
+        range: Consortium
+      developer:
+        range: Consortium
+      digitalIdentifier:
+        range: DOI
+      format:
+        required: true
+      fullDocumentation:
+        required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
+      hasPart:
+        range: WorkflowRecipeVersion
+      isAlternativeVersionOf:
+        range: WorkflowRecipeVersion
+      isNewVersionOf:
+        range: WorkflowRecipeVersion
+      keyword:
+        range: ActionStatusType
+      license:
+        range: License
+      relatedPublication:
+        range: DOI
+      releaseDate:
+        required: true
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: Uri
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- ValidationTest:
+    class_uri: https://openminds.ebrains.eu/computation/ValidationTest
+    description: Structured information about the definition of a process for validating
+      a computational model.
+    title: Validation test
+    slots:
+    - id
+    - custodian
+    - description
+    - developer
+    - digitalIdentifier
+    - fullName
+    - hasVersion
+    - homepage
+    - howToCite
+    - referenceDataAcquisition
+    - scope
+    - scoreType
+    - shortName
+    - studyTarget
+    slot_usage:
+      custodian:
+        range: Consortium
+      description:
+        required: true
+      developer:
+        required: true
+        range: Consortium
+      digitalIdentifier:
+        range: DOI
+      fullName:
+        required: true
+      hasVersion:
+        required: true
+        range: ValidationTestVersion
+      shortName:
+        required: true
+      studyTarget:
+        range: AuditoryStimulusType
+- ModelValidation:
+    class_uri: https://openminds.ebrains.eu/computation/ModelValidation
+    description: Structured information about a process of validating a computational
+      model.
+    title: Model validation
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - environment
+    - input
+    - launchConfiguration
+    - lookupLabel
+    - output
+    - performedBy
+    - recipe
+    - resourceUsage
+    - score
+    - startTime
+    - startedBy
+    - status
+    - studyTarget
+    - tag
+    - technique
+    - wasInformedBy
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: Time
+      environment:
+        required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
+      input:
+        required: true
+        range: LocalFile
+      output:
+        required: true
+        range: LocalFile
+      performedBy:
+        range: SoftwareAgent
+      resourceUsage:
+        range: QuantitativeValue
+      startTime:
+        required: true
+        range: string
+        any_of:
+        - range: Time
+      studyTarget:
+        range: AuditoryStimulusType
+      technique:
+        range: AnalysisTechnique
+      wasInformedBy:
+        any_of:
+        - range: DataAnalysis
+        - range: DataCopy
+        - range: GenericComputation
+        - range: ModelValidation
+        - range: Optimization
+        - range: Simulation
+        - range: Visualization
+- HardwareSystem:
+    class_uri: https://openminds.ebrains.eu/computation/HardwareSystem
+    description: Structured information about computing hardware.
+    title: Hardware system
+    slots:
+    - id
+    - description
+    - name
+    - versionIdentifier
+    slot_usage:
+      name:
+        required: true
+- DataAnalysis:
+    class_uri: https://openminds.ebrains.eu/computation/DataAnalysis
+    description: Structured information on inspecting, cleansing, transforming, and
+      modelling data.
+    title: Data analysis
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - environment
+    - input
+    - launchConfiguration
+    - lookupLabel
+    - output
+    - performedBy
+    - recipe
+    - resourceUsage
+    - startTime
+    - startedBy
+    - status
+    - studyTarget
+    - tag
+    - technique
+    - wasInformedBy
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: Time
+      environment:
+        required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
+      input:
+        required: true
+        range: LocalFile
+      output:
+        required: true
+        range: LocalFile
+      performedBy:
+        range: SoftwareAgent
+      resourceUsage:
+        range: QuantitativeValue
+      startTime:
+        required: true
+        range: string
+        any_of:
+        - range: Time
+      studyTarget:
+        range: AuditoryStimulusType
+      technique:
+        range: AnalysisTechnique
+      wasInformedBy:
+        any_of:
+        - range: DataAnalysis
+        - range: DataCopy
+        - range: GenericComputation
+        - range: ModelValidation
+        - range: Optimization
+        - range: Simulation
+        - range: Visualization
+- Environment:
+    class_uri: https://openminds.ebrains.eu/computation/Environment
+    description: Structured information on the computer system or set of systems in
+      which a computation is deployed and executed.
+    title: Environment
+    slots:
+    - id
+    - configuration
+    - description
+    - hardware
+    - name
+    - software
+    slot_usage:
+      configuration:
+        range: Configuration
+      hardware:
+        required: true
+      name:
+        required: true
+- LocalFile:
+    class_uri: https://openminds.ebrains.eu/computation/LocalFile
+    description: Structured information about a file that is not accessible via a
+      URL.
+    title: Local file
+    slots:
+    - id
+    - contentDescription
+    - copyOf
+    - dataType
+    - format
+    - hash
+    - name
+    - path
+    - specialUsageRole
+    - storageSize
+    slot_usage:
+      dataType:
+        range: DataType
+      name:
+        required: true
+      path:
+        required: true
+- LaunchConfiguration:
+    class_uri: https://openminds.ebrains.eu/computation/LaunchConfiguration
+    description: Structured information about the launch of a computational process.
+    title: Launch configuration
+    slots:
+    - id
+    - argument
+    - description
+    - environmentVariable
+    - executable
+    - name
+    slot_usage:
+      executable:
+        required: true
+- DataCopy:
+    class_uri: https://openminds.ebrains.eu/computation/DataCopy
+    description: null
+    title: Data copy
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - environment
+    - input
+    - launchConfiguration
+    - lookupLabel
+    - output
+    - performedBy
+    - recipe
+    - resourceUsage
+    - startTime
+    - startedBy
+    - status
+    - studyTarget
+    - tag
+    - technique
+    - wasInformedBy
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: Time
+      environment:
+        required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
+      input:
+        required: true
+        range: LocalFile
+      output:
+        required: true
+        range: LocalFile
+      performedBy:
+        range: SoftwareAgent
+      resourceUsage:
+        range: QuantitativeValue
+      startTime:
+        required: true
+        range: string
+        any_of:
+        - range: Time
+      studyTarget:
+        range: AuditoryStimulusType
+      technique:
+        range: AnalysisTechnique
+      wasInformedBy:
+        any_of:
+        - range: DataAnalysis
+        - range: DataCopy
+        - range: GenericComputation
+        - range: ModelValidation
+        - range: Optimization
+        - range: Simulation
+        - range: Visualization
+- Optimization:
+    class_uri: https://openminds.ebrains.eu/computation/Optimization
+    description: Structured information about a process of optimizing a model or a
+      piece of code.
+    title: Optimization
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - environment
+    - input
+    - launchConfiguration
+    - lookupLabel
+    - output
+    - performedBy
+    - recipe
+    - resourceUsage
+    - startTime
+    - startedBy
+    - status
+    - studyTarget
+    - tag
+    - technique
+    - wasInformedBy
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: Time
+      environment:
+        required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
+      input:
+        required: true
+        range: LocalFile
+      output:
+        required: true
+        range: LocalFile
+      performedBy:
+        range: SoftwareAgent
+      resourceUsage:
+        range: QuantitativeValue
+      startTime:
+        required: true
+        range: string
+        any_of:
+        - range: Time
+      studyTarget:
+        range: AuditoryStimulusType
+      technique:
+        range: AnalysisTechnique
+      wasInformedBy:
+        any_of:
+        - range: DataAnalysis
+        - range: DataCopy
+        - range: GenericComputation
+        - range: ModelValidation
+        - range: Optimization
+        - range: Simulation
+        - range: Visualization
+- SoftwareAgent:
+    class_uri: https://openminds.ebrains.eu/computation/SoftwareAgent
+    description: Structured information about a piece of software or web service that
+      can perform a task autonomously.
+    title: Software agent
+    slots:
+    - id
+    - environment
+    - name
+    - software
+    slot_usage:
+      environment:
+        range: Environment
+      name:
+        required: true
+      software:
+        required: true
+- ValidationTestVersion:
+    class_uri: https://openminds.ebrains.eu/computation/ValidationTestVersion
+    description: Structured information about a specific implementation of a validation
+      test.
+    title: Validation test version
+    slots:
+    - id
+    - accessibility
+    - configuration
+    - copyright
+    - custodian
+    - description
+    - developer
+    - digitalIdentifier
+    - entryPoint
+    - format
+    - fullDocumentation
+    - fullName
+    - funding
+    - homepage
+    - howToCite
+    - isAlternativeVersionOf
+    - isNewVersionOf
+    - keyword
+    - license
+    - otherContribution
+    - referenceData
+    - relatedPublication
+    - releaseDate
+    - repository
+    - shortName
+    - supportChannel
+    - versionIdentifier
+    - versionInnovation
+    slot_usage:
+      accessibility:
+        required: true
+      configuration:
+        any_of:
+        - range: Configuration
+        - range: File
+        - range: PropertyValueList
+        - range: WebResource
+      custodian:
+        range: Consortium
+      developer:
+        range: Consortium
+      digitalIdentifier:
+        range: DOI
+      format:
+        required: true
+      fullDocumentation:
+        required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
+      isAlternativeVersionOf:
+        range: ValidationTestVersion
+      isNewVersionOf:
+        range: ValidationTestVersion
+      keyword:
+        range: ActionStatusType
+      license:
+        range: License
+      referenceData:
+        range: DOI
+      relatedPublication:
+        range: DOI
+      releaseDate:
+        required: true
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: Uri
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- WorkflowRecipe:
+    class_uri: https://openminds.ebrains.eu/computation/WorkflowRecipe
+    description: Structured information about the description of a prospective workflow.
+    title: Workflow recipe
+    slots:
+    - id
+    - custodian
+    - description
+    - developer
+    - digitalIdentifier
+    - fullName
+    - hasVersion
+    - homepage
+    - howToCite
+    - shortName
+    slot_usage:
+      custodian:
+        range: Consortium
+      description:
+        required: true
+      developer:
+        required: true
+        range: Consortium
+      digitalIdentifier:
+        range: DOI
+      fullName:
+        required: true
+      hasVersion:
+        required: true
+        range: WorkflowRecipeVersion
+      shortName:
+        required: true

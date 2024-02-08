@@ -1,0 +1,91 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums?format=linkml
+name: openMINDS-enums
+title: OpenMINDS instance library as LinkML enums, version "latest"
+description: Enums for the LinkML representation of openMINDS metadata framework,
+  version "latest"
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+imports:
+- linkml:types
+- enums/controlledTerms/patchClampVariation
+- enums/controlledTerms/actionStatusType
+- enums/controlledTerms/organismSystem
+- enums/controlledTerms/cellType
+- enums/controlledTerms/operatingDevice
+- enums/controlledTerms/organ
+- enums/controlledTerms/laterality
+- enums/controlledTerms/operatingSystem
+- enums/controlledTerms/molecularEntity
+- enums/controlledTerms/cranialWindowConstructionType
+- enums/controlledTerms/geneticStrainType
+- enums/controlledTerms/anatomicalIdentificationType
+- enums/controlledTerms/cranialWindowReinforcementType
+- enums/controlledTerms/handedness
+- enums/controlledTerms/tissueSampleType
+- enums/controlledTerms/criteriaQualityType
+- enums/controlledTerms/fileRepositoryType
+- enums/controlledTerms/modelScope
+- enums/controlledTerms/modelAbstractionLevel
+- enums/controlledTerms/language
+- enums/controlledTerms/deviceType
+- enums/controlledTerms/tissueSampleAttribute
+- enums/controlledTerms/annotationCriteriaType
+- enums/controlledTerms/learningResourceType
+- enums/controlledTerms/analysisTechnique
+- enums/controlledTerms/semanticDataType
+- enums/controlledTerms/fileBundleGrouping
+- enums/controlledTerms/setupType
+- enums/controlledTerms/biologicalProcess
+- enums/controlledTerms/biologicalSex
+- enums/controlledTerms/metaDataModelType
+- enums/controlledTerms/UBERONParcellation
+- enums/controlledTerms/biologicalOrder
+- enums/controlledTerms/annotationType
+- enums/controlledTerms/unitOfMeasurement
+- enums/controlledTerms/olfactoryStimulusType
+- enums/controlledTerms/dataType
+- enums/controlledTerms/gustatoryStimulusType
+- enums/controlledTerms/educationalLevel
+- enums/controlledTerms/productAccessibility
+- enums/controlledTerms/terminology
+- enums/controlledTerms/measuredQuantity
+- enums/controlledTerms/termSuggestion
+- enums/controlledTerms/fileUsageRole
+- enums/controlledTerms/preparationType
+- enums/controlledTerms/auditoryStimulusType
+- enums/controlledTerms/subcellularEntity
+- enums/controlledTerms/measuredSignalType
+- enums/controlledTerms/experimentalApproach
+- enums/controlledTerms/disease
+- enums/controlledTerms/tactileStimulusType
+- enums/controlledTerms/opticalStimulusType
+- enums/controlledTerms/differenceMeasure
+- enums/controlledTerms/colormap
+- enums/controlledTerms/diseaseModel
+- enums/controlledTerms/electricalStimulusType
+- enums/controlledTerms/atlasType
+- enums/controlledTerms/species
+- enums/controlledTerms/qualitativeOverlap
+- enums/controlledTerms/programmingLanguage
+- enums/controlledTerms/cellCultureType
+- enums/controlledTerms/visualStimulusType
+- enums/controlledTerms/softwareApplicationCategory
+- enums/controlledTerms/anatomicalAxesOrientation
+- enums/controlledTerms/breedingType
+- enums/controlledTerms/ageCategory
+- enums/controlledTerms/anatomicalPlane
+- enums/controlledTerms/ethicsAssessment
+- enums/controlledTerms/subjectAttribute
+- enums/controlledTerms/contributionType
+- enums/controlledTerms/service
+- enums/controlledTerms/stimulationApproach
+- enums/controlledTerms/typeOfUncertainty
+- enums/controlledTerms/chemicalMixtureType
+- enums/controlledTerms/stimulationTechnique
+- enums/controlledTerms/technique
+- enums/controlledTerms/softwareFeature
+- enums/controlledTerms/organismSubstance

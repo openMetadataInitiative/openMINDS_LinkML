@@ -1,0 +1,576 @@
+id: https://openminds.ebrains.eu/schemas/latest/SANDS?format=linkml
+name: openMINDS-SANDS
+title: OpenMINDS SANDS module, version "v3.0"
+description: Schemas for the SANDS module of the openMINDS metadata framework, version
+  "v3.0"
+license: https://spdx.org/licenses/MIT.html
+imports:
+- linkml:types
+- slots
+- enums
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+classes:
+- CustomAnnotation:
+    class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
+    description: null
+    title: Custom annotation
+    slots:
+    - id
+    - anchorPoint
+    - coordinateSpace
+    - criteria
+    - criteriaQualityType
+    - criteriaType
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - preferredVisualization
+    - specification
+    - type
+    slot_usage:
+      coordinateSpace:
+        required: true
+      criteriaQualityType:
+        required: true
+      criteriaType:
+        required: true
+      specification:
+        any_of:
+        - range: File
+        - range: PropertyValueList
+      type:
+        required: true
+        range: AnnotationType
+- CustomCoordinateSpace:
+    class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
+    description: null
+    title: Custom coordinate space
+    slots:
+    - id
+    - anatomicalAxesOrientation
+    - axesOrigin
+    - defaultImage
+    - name
+    - nativeUnit
+    slot_usage:
+      anatomicalAxesOrientation:
+        required: true
+      axesOrigin:
+        required: true
+      name:
+        required: true
+      nativeUnit:
+        required: true
+- CustomAnatomicalEntity:
+    class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
+    description: null
+    title: Custom anatomical entity
+    slots:
+    - id
+    - hasAnnotation
+    - name
+    - relatedUBERONTerm
+    - relationAssessment
+    slot_usage:
+      hasAnnotation:
+        range: CustomAnnotation
+      name:
+        required: true
+      relatedUBERONTerm:
+        any_of:
+        - range: Organ
+        - range: UBERONParcellation
+      relationAssessment:
+        range: QualitativeRelationAssessment
+- SingleColor:
+    class_uri: https://openminds.ebrains.eu/sands/SingleColor
+    description: null
+    title: Single color
+    slots:
+    - id
+    - value
+    slot_usage:
+      value:
+        required: true
+        range: string
+- ViewerSpecification:
+    class_uri: https://openminds.ebrains.eu/sands/ViewerSpecification
+    description: null
+    title: Viewer specification
+    slots:
+    - id
+    - additionalRemarks
+    - anchorPoint
+    - cameraPosition
+    - preferredDisplayColor
+    slot_usage:
+      anchorPoint:
+        required: true
+- AnatomicalTargetPosition:
+    class_uri: https://openminds.ebrains.eu/sands/AnatomicalTargetPosition
+    description: null
+    title: Anatomical target position
+    slots:
+    - id
+    - additionalRemarks
+    - anatomicalTarget
+    - spatialLocation
+    - targetIdentificationType
+    slot_usage:
+      anatomicalTarget:
+        required: true
+        range: CellType
+      targetIdentificationType:
+        required: true
+- CoordinatePoint:
+    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
+    description: Structured information on a coordinate point.
+    title: Coordinate point
+    slots:
+    - id
+    - coordinateSpace
+    - coordinates
+    slot_usage:
+      coordinateSpace:
+        required: true
+      coordinates:
+        required: true
+- QualitativeRelationAssessment:
+    class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
+    description: null
+    title: Qualitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - qualitativeOverlap
+    slot_usage:
+      inRelationTo:
+        required: true
+        any_of:
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
+      qualitativeOverlap:
+        required: true
+- QuantitativeRelationAssessment:
+    class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
+    description: null
+    title: Quantitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - quantitativeOverlap
+    slot_usage:
+      inRelationTo:
+        required: true
+        range: ParcellationEntityVersion
+      quantitativeOverlap:
+        required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- Circle:
+    class_uri: https://openminds.ebrains.eu/sands/Circle
+    description: null
+    title: Circle
+    slots:
+    - id
+    - radius
+    slot_usage:
+      radius:
+        required: true
+- Ellipse:
+    class_uri: https://openminds.ebrains.eu/sands/Ellipse
+    description: null
+    title: Ellipse
+    slots:
+    - id
+    - semiMajorAxis
+    - semiMinorAxis
+    slot_usage:
+      semiMajorAxis:
+        required: true
+      semiMinorAxis:
+        required: true
+- Rectangle:
+    class_uri: https://openminds.ebrains.eu/sands/Rectangle
+    description: null
+    title: Rectangle
+    slots:
+    - id
+    - length
+    - width
+    slot_usage:
+      length:
+        required: true
+      width:
+        required: true
+- ParcellationEntityVersion:
+    class_uri: https://openminds.ebrains.eu/sands/ParcellationEntityVersion
+    description: null
+    title: Parcellation entity version
+    slots:
+    - id
+    - abbreviation
+    - additionalRemarks
+    - alternateName
+    - correctedName
+    - hasAnnotation
+    - hasParent
+    - lookupLabel
+    - name
+    - ontologyIdentifier
+    - relationAssessment
+    - versionIdentifier
+    - versionInnovation
+    slot_usage:
+      hasAnnotation:
+        range: AtlasAnnotation
+      hasParent:
+        range: ParcellationEntity
+      name:
+        required: true
+      relationAssessment:
+        range: QualitativeRelationAssessment
+      versionIdentifier:
+        required: true
+- BrainAtlasVersion:
+    class_uri: https://openminds.ebrains.eu/sands/BrainAtlasVersion
+    description: Structured information on a brain atlas (version level).
+    title: Brain atlas version
+    slots:
+    - id
+    - abbreviation
+    - accessibility
+    - author
+    - coordinateSpace
+    - copyright
+    - custodian
+    - description
+    - digitalIdentifier
+    - fullDocumentation
+    - fullName
+    - funding
+    - hasTerminology
+    - homepage
+    - howToCite
+    - isAlternativeVersionOf
+    - isNewVersionOf
+    - keyword
+    - license
+    - majorVersionIdentifier
+    - ontologyIdentifier
+    - otherContribution
+    - relatedPublication
+    - releaseDate
+    - repository
+    - shortName
+    - supportChannel
+    - type
+    - usedSpecimen
+    - versionIdentifier
+    - versionInnovation
+    slot_usage:
+      accessibility:
+        required: true
+      author:
+        range: Consortium
+      coordinateSpace:
+        required: true
+        range: CommonCoordinateSpaceVersion
+      custodian:
+        range: Consortium
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      fullDocumentation:
+        required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
+      hasTerminology:
+        required: true
+        range: ParcellationTerminologyVersion
+      isAlternativeVersionOf:
+        range: BrainAtlasVersion
+      isNewVersionOf:
+        range: BrainAtlasVersion
+      keyword:
+        range: ActionStatusType
+      license:
+        required: true
+        range: License
+      relatedPublication:
+        range: DOI
+      releaseDate:
+        required: true
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: Uri
+      type:
+        range: AtlasType
+      usedSpecimen:
+        range: Subject
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- ParcellationTerminologyVersion:
+    class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminologyVersion
+    description: null
+    title: Parcellation terminology version
+    slots:
+    - id
+    - dataLocation
+    - hasEntity
+    - ontologyIdentifier
+    slot_usage:
+      dataLocation:
+        range: File
+      hasEntity:
+        required: true
+        range: ParcellationEntityVersion
+- ParcellationTerminology:
+    class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
+    description: null
+    title: Parcellation terminology
+    slots:
+    - id
+    - dataLocation
+    - hasEntity
+    - ontologyIdentifier
+    slot_usage:
+      dataLocation:
+        range: File
+      hasEntity:
+        required: true
+        range: ParcellationEntity
+- ParcellationEntity:
+    class_uri: https://openminds.ebrains.eu/sands/ParcellationEntity
+    description: null
+    title: Parcellation entity
+    slots:
+    - id
+    - abbreviation
+    - alternateName
+    - definition
+    - hasParent
+    - hasVersion
+    - lookupLabel
+    - name
+    - ontologyIdentifier
+    - relatedUBERONTerm
+    slot_usage:
+      hasParent:
+        range: ParcellationEntity
+      hasVersion:
+        range: ParcellationEntityVersion
+      name:
+        required: true
+      relatedUBERONTerm:
+        any_of:
+        - range: Organ
+        - range: UBERONParcellation
+- AtlasAnnotation:
+    class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
+    description: null
+    title: Atlas annotation
+    slots:
+    - id
+    - anchorPoint
+    - criteria
+    - criteriaQualityType
+    - criteriaType
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - preferredVisualization
+    - specification
+    - type
+    slot_usage:
+      criteriaQualityType:
+        required: true
+      criteriaType:
+        required: true
+      specification:
+        range: File
+      type:
+        required: true
+        range: AnnotationType
+- CommonCoordinateSpaceVersion:
+    class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion
+    description: null
+    title: Common coordinate space version
+    slots:
+    - id
+    - abbreviation
+    - accessibility
+    - anatomicalAxesOrientation
+    - author
+    - axesOrigin
+    - copyright
+    - custodian
+    - defaultImage
+    - description
+    - digitalIdentifier
+    - fullDocumentation
+    - fullName
+    - funding
+    - homepage
+    - howToCite
+    - isAlternativeVersionOf
+    - isNewVersionOf
+    - keyword
+    - license
+    - nativeUnit
+    - ontologyIdentifier
+    - otherContribution
+    - relatedPublication
+    - releaseDate
+    - repository
+    - shortName
+    - supportChannel
+    - usedSpecimen
+    - versionIdentifier
+    - versionInnovation
+    slot_usage:
+      accessibility:
+        required: true
+      anatomicalAxesOrientation:
+        required: true
+      author:
+        range: Consortium
+      axesOrigin:
+        required: true
+      custodian:
+        range: Consortium
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      fullDocumentation:
+        required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
+      isAlternativeVersionOf:
+        range: CommonCoordinateSpaceVersion
+      isNewVersionOf:
+        range: CommonCoordinateSpaceVersion
+      keyword:
+        range: ActionStatusType
+      license:
+        range: License
+      nativeUnit:
+        required: true
+      relatedPublication:
+        range: DOI
+      releaseDate:
+        required: true
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: Uri
+      usedSpecimen:
+        range: Subject
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- BrainAtlas:
+    class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
+    description: Structured information on a brain atlas (concept level).
+    title: Brain atlas
+    slots:
+    - id
+    - abbreviation
+    - author
+    - custodian
+    - description
+    - digitalIdentifier
+    - fullName
+    - hasTerminology
+    - hasVersion
+    - homepage
+    - howToCite
+    - ontologyIdentifier
+    - shortName
+    - usedSpecies
+    slot_usage:
+      author:
+        required: true
+        range: Consortium
+      custodian:
+        range: Consortium
+      description:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      fullName:
+        required: true
+      hasTerminology:
+        required: true
+        range: ParcellationTerminology
+      hasVersion:
+        required: true
+        range: BrainAtlasVersion
+      shortName:
+        required: true
+- CommonCoordinateSpace:
+    class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpace
+    description: null
+    title: Common coordinate space
+    slots:
+    - id
+    - abbreviation
+    - author
+    - custodian
+    - description
+    - digitalIdentifier
+    - fullName
+    - hasVersion
+    - homepage
+    - howToCite
+    - ontologyIdentifier
+    - shortName
+    - usedSpecies
+    slot_usage:
+      author:
+        range: Consortium
+      custodian:
+        range: Consortium
+      description:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      fullName:
+        required: true
+      hasVersion:
+        required: true
+        range: CommonCoordinateSpaceVersion
+      shortName:
+        required: true
+      usedSpecies:
+        required: true

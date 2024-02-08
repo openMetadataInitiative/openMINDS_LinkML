@@ -1,25 +1,36 @@
-MeasuredQuantity:
-  enum_uri: https://openminds.ebrains.eu/controlledTerms/MeasuredQuantity
-  permissible_values:
-    chloride reversal potential:
-      description: The reversal potential for chloride ions.
-    compensation current:
-      description: Current injected into a cell to maintain the membrane potential
-        at a target value.
-    holding potential:
-      description: Measured membrane potential during a voltage-clamp protocol.
-    input resistance:
-      description: Total resistance observed by the amplifier during an electrophysiological
-        recording.
-    liquid junction potential:
-      description: A potential difference that develops when two solutions of electrolytes
-        of different concentrations are in contact with each other.
-    membrane potential:
-      description: A quality inhering in a cell's plasma membrane by virtue of the
-        electric potential difference across it.
-    seal resistance:
-      description: Resistance of the seal between the pipette tip and cell membrane
-        in patch-clamp recording.
-    series resistance:
-      description: Resistance of the electrode during an electrophysiological recording.
-  title: Measured quantity
+id: https://openminds.ebrains.eu/schemas/latest/enums/MeasuredQuantity?format=linkml
+name: openMINDS-enums-MeasuredQuantity
+title: OpenMINDS enum for MeasuredQuantity
+description: OpenMINDS enum for MeasuredQuantity
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  MeasuredQuantity:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/MeasuredQuantity
+    title: Measured quantity
+    permissible_values:
+      holding potential:
+        description: Measured membrane potential during a voltage-clamp protocol.
+      input resistance:
+        description: Total resistance observed by the amplifier during an electrophysiological
+          recording.
+      chloride reversal potential:
+        description: The reversal potential for chloride ions.
+      series resistance:
+        description: Resistance of the electrode during an electrophysiological recording.
+      liquid junction potential:
+        description: A potential difference that develops when two solutions of electrolytes
+          of different concentrations are in contact with each other.
+      seal resistance:
+        description: Resistance of the seal between the pipette tip and cell membrane
+          in patch-clamp recording.
+      membrane potential:
+        description: A quality inhering in a cell's plasma membrane by virtue of the
+          electric potential difference across it.
+      compensation current:
+        description: Current injected into a cell to maintain the membrane potential
+          at a target value.
