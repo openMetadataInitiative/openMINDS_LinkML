@@ -3,7 +3,7 @@ import yaml
 import os.path
 from typing import List, Optional, Dict
 
-from pipeline.utils import get_short_name
+from pipeline.utils import get_short_name, get_short_namespace
 
 
 class LinkMLClassBuilder(object):
@@ -304,10 +304,11 @@ class LinkMLEnumBuilder(object):
         )
         os.makedirs(os.path.dirname(target_file), exist_ok=True)
         short_type = get_short_name(self._schema_payload["_type"])
+        short_namespace = get_short_namespace(self._schema_payload["_type"])
         self.translate()
 
         enum_schema = {
-            "id": f"https://openminds.ebrains.eu/schemas/latest/enums/{short_type}?format=linkml",
+            "id": f"{short_namespace}/schemas/latest/enums/{short_type}?format=linkml",
             "name": f"openMINDS-enums-{short_type}",
             "title": f"OpenMINDS enum for {short_type}",
             "description": f"OpenMINDS enum for {short_type}",
@@ -315,7 +316,7 @@ class LinkMLEnumBuilder(object):
             "prefixes": {
                 "linkml": "https://w3id.org/linkml/",
                 "schema": "http://schema.org/",
-                "omi": "https://openminds.ebrains.eu",
+                "omi": f"{short_namespace}",
             },
             "default_prefix": "omi",
             "enums": {short_type: self._translated_schema},

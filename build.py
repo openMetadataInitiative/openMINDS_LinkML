@@ -11,7 +11,7 @@ import json
 import yaml
 
 from pipeline.translator import LinkMLClassBuilder, LinkMLSlotBuilder, LinkMLEnumBuilder
-from pipeline.utils import clone_sources, SchemaLoader, InstanceLoader, get_short_name
+from pipeline.utils import clone_sources, SchemaLoader, InstanceLoader, get_short_name, get_short_namespace
 
 
 terms_as_enums = True
@@ -43,6 +43,7 @@ for version in instance_loader.get_instance_versions():
 
 for schema_version in schema_loader.get_schema_versions():
     imports = []
+    short_namespace = get_short_namespace(schema_loader.get_namespaces_version(schema_version)['props'])
 
     # Step 3 - find all involved schemas for the current version
     schemas_file_paths = schema_loader.find_schemas(schema_version)
@@ -98,7 +99,7 @@ for schema_version in schema_loader.get_schema_versions():
             ).build()
             linkml_classes[module].append(linkml_class)
     enum_schema = {
-        "id": f"https://openminds.ebrains.eu/schemas/latest/enums?format=linkml",
+        "id": f"{short_namespace}/schemas/latest/enums?format=linkml",
         "name": "openMINDS-enums",
         "title": f'OpenMINDS instance library as LinkML enums, version "{schema_version}"',
         "description": f'Enums for the LinkML representation of openMINDS metadata framework, version "{schema_version}"',
@@ -106,7 +107,7 @@ for schema_version in schema_loader.get_schema_versions():
         "prefixes": {
             "linkml": "https://w3id.org/linkml/",
             "schema": "http://schema.org/",
-            "omi": "https://openminds.ebrains.eu",
+            "omi": f"{short_namespace}",
         },
         "default_prefix": "omi",
         "imports": ["linkml:types"] + linkml_enum_imports,
@@ -122,7 +123,7 @@ for schema_version in schema_loader.get_schema_versions():
         )
         os.makedirs(os.path.dirname(target_file), exist_ok=True)
         module_schema = {
-            "id": f"https://openminds.ebrains.eu/schemas/latest/{module_name}?format=linkml",
+            "id": f"{short_namespace}/schemas/latest/{module_name}?format=linkml",
             "name": f"openMINDS-{module_name}",
             "title": f'OpenMINDS {module_name} module, version "{schema_version}"',
             "description": f'Schemas for the {module_name} module of the openMINDS metadata framework, version "{schema_version}"',
@@ -131,7 +132,7 @@ for schema_version in schema_loader.get_schema_versions():
             "prefixes": {
                 "linkml": "https://w3id.org/linkml/",
                 "schema": "http://schema.org/",
-                "omi": "https://openminds.ebrains.eu",
+                "omi": f"{short_namespace}",
             },
             "default_prefix": "omi",
             "classes": class_list,
@@ -142,7 +143,7 @@ for schema_version in schema_loader.get_schema_versions():
 
     # Step 6 - write slots file
     slots_schema = {
-        "id": f"https://openminds.ebrains.eu/schemas/latest/slots?format=linkml",
+        "id": f"{short_namespace}/schemas/latest/slots?format=linkml",
         "name": "openMINDS-slots",
         "title": f'OpenMINDS properties as LinkML slots, version "{schema_version}"',
         "description": f'Slots for the LinkML representation of the openMINDS metadata framework, version "{schema_version}"',
@@ -150,7 +151,7 @@ for schema_version in schema_loader.get_schema_versions():
         "prefixes": {
             "linkml": "https://w3id.org/linkml/",
             "schema": "http://schema.org/",
-            "omi": "https://openminds.ebrains.eu",
+            "omi": f"{short_namespace}",
         },
         "default_prefix": "omi",
         "imports": ["linkml:types"],
@@ -164,7 +165,7 @@ for schema_version in schema_loader.get_schema_versions():
 
     # Step 7 - write types file
     types_metadata = {
-        "id": f"https://openminds.ebrains.eu/schemas/latest/types/?format=linkml",
+        "id": f"{short_namespace}/schemas/latest/types/?format=linkml",
         "name": "openMINDS-types",
         "title": f'Types for OpenMINDS version "{schema_version}"',
         "description": f'Types for the LinkML representation of the openMINDS metadata framework, version "{schema_version}"',
@@ -173,7 +174,7 @@ for schema_version in schema_loader.get_schema_versions():
         "prefixes": {
             "linkml": "https://w3id.org/linkml/",
             "schema": "http://schema.org/",
-            "omi": "https://openminds.ebrains.eu",
+            "omi": f"{short_namespace}",
         },
         "default_prefix": "omi",
         "types": {
@@ -200,7 +201,7 @@ for schema_version in schema_loader.get_schema_versions():
 
     # Step 7 - create overall schema file
     schema_metadata = {
-        "id": f"https://openminds.ebrains.eu/schemas/latest/?format=linkml",
+        "id": f"{short_namespace}/schemas/latest/?format=linkml",
         "name": "openMINDS",
         "title": f'OpenMINDS version "{schema_version}"',
         "description": f'The complete collection of schemas for all metadata models of the openMINDS metadata framework, version "{schema_version}"',
@@ -209,7 +210,7 @@ for schema_version in schema_loader.get_schema_versions():
         "prefixes": {
             "linkml": "https://w3id.org/linkml/",
             "schema": "http://schema.org/",
-            "omi": "https://openminds.ebrains.eu",
+            "omi": f"{short_namespace}",
         },
         "default_prefix": "omi",
     }
