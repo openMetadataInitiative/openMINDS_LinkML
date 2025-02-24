@@ -6,6 +6,15 @@ on:
       branches:
         - pipeline
   workflow_dispatch: # This triggers the workflow when a webhook is received
+    inputs:
+      branch:
+        description: 'The branch of the submodule the workflow was triggered for'
+        required: true
+        type: string
+      repository:
+        description: 'The repository of the submodule the workflow was triggered for'
+        required: true
+        type: string
 
 
 jobs:
