@@ -1,6 +1,7 @@
 import glob
 import json
 import os
+import re
 import shutil
 from typing import List
 
@@ -13,6 +14,14 @@ def clone_sources():
     Repo.clone_from(
         "https://github.com/openMetadataInitiative/openMINDS.git",
         to_path="_sources",
+        depth=1
+    )
+    if os.path.exists("_sources_pipeline"):
+        shutil.rmtree("_sources_pipeline")
+    Repo.clone_from(
+        "https://github.com/openMetadataInitiative/openMINDS.git",
+        to_path="_sources_pipeline",
+        branch="pipeline",
         depth=1,
     )
     if os.path.exists("_instances"):
@@ -26,6 +35,10 @@ def clone_sources():
 
 def get_short_name(uri):
     return uri.split("/")[-1]
+
+def get_short_namespace(uri):
+    match = re.match(r'^(https?:\/\/[^\/]+)', uri)
+    return match.group(1) if match else None
 
 
 class SchemaLoader(object):
@@ -46,6 +59,11 @@ class SchemaLoader(object):
             all_properties = json.load(fp)
         return {name: p for name, p in all_properties.items() if version in p["usedIn"]}
 
+    def get_namespaces_version(self, version:str):
+        path = os.path.join(self._root_directory, "_sources_pipeline", "versions.json")
+        with open(path) as fp:
+            all_namespaces = json.load(fp)
+        return all_namespaces[version]["namespaces"]
 
 
 class InstanceLoader:
