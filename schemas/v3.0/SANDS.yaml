@@ -260,10 +260,6 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
-      preferredDisplayColor:
-        any_of:
-        - range: Colormap
-        - range: SingleColor
 - QuantitativeRelationAssessment:
     class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
     description: null
@@ -279,9 +275,6 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - QualitativeRelationAssessment:
     class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
     description: null
@@ -311,9 +304,6 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
-        any_of:
-        - range: CommonCoordinateSpaceVersion
-        - range: CustomCoordinateSpace
       coordinates:
         required: true
 - AnatomicalTargetPosition:
@@ -347,10 +337,6 @@ classes:
         range: CustomAnnotation
       name:
         required: true
-      relatedUBERONTerm:
-        any_of:
-        - range: Organ
-        - range: UBERONParcellation
       relationAssessment:
         range: QualitativeRelationAssessment
 - CustomCoordinateSpace:
@@ -393,9 +379,6 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
-        any_of:
-        - range: CommonCoordinateSpaceVersion
-        - range: CustomCoordinateSpace
       criteriaQualityType:
         required: true
       criteriaType:
