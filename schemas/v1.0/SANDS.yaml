@@ -108,6 +108,10 @@ classes:
         required: true
       qualitativeOverlap:
         required: true
+      quantitativeOverlap:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Electrode:
     class_uri: https://openminds.ebrains.eu/sands/Electrode
     description: Structured information on an electrode.

@@ -183,8 +183,16 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - SubjectGroupState:
     class_uri: https://openminds.ebrains.eu/core/SubjectGroupState
     description: null
@@ -199,10 +207,18 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - TissueSample:
     class_uri: https://openminds.ebrains.eu/core/TissueSample
     description: Structured information on a tissue sample.
@@ -252,8 +268,16 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - SubjectState:
     class_uri: https://openminds.ebrains.eu/core/SubjectState
     description: Structured information on a temporary state of a subject.
@@ -268,10 +292,18 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ParameterSet:
     class_uri: https://openminds.ebrains.eu/core/ParameterSet
     description: Structured information on a used parameter set.

@@ -68,10 +68,6 @@ classes:
       stage:
         required: true
         range: DataAnalysis
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
 - HardwareSystem:
     class_uri: https://openminds.ebrains.eu/computation/HardwareSystem
     description: Structured information about computing hardware.
@@ -135,10 +131,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -255,10 +247,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -396,10 +384,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -463,10 +447,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -643,10 +623,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -710,10 +686,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -800,10 +772,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:

@@ -56,8 +56,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValue
     - range: QuantitativeValueRange
+    - range: QuantitativeValue
     inlined: true
   ageCategory:
     slot_uri: ageCategory
@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
+    - range: SWHID
     - range: ORCID
+    - range: RORID
     - range: GRIDID
     - range: DOI
-    - range: RORID
-    - range: SWHID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -326,9 +326,9 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: URL
     - range: File
     - range: DOI
+    - range: URL
   fullName:
     slot_uri: fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -519,11 +519,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: TissueSampleCollection
-    - range: FileBundle
-    - range: SubjectGroup
-    - range: FileRepository
     - range: ParcellationTerminology
+    - range: FileRepository
+    - range: TissueSampleCollection
+    - range: SubjectGroup
+    - range: FileBundle
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -714,8 +714,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValue
     - range: QuantitativeValueRange
+    - range: QuantitativeValue
     inlined: true
   quantity:
     slot_uri: quantity
@@ -920,8 +920,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: uri
     - range: string
+    - range: uri
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -965,11 +965,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: integer
     - range: string
-    - range: QuantitativeValue
-    - range: QuantitativeValueRange
     - range: float
+    - range: QuantitativeValue
+    - range: integer
+    - range: QuantitativeValueRange
     multivalued: true
     inlined: true
   versionIdentifier:
@@ -998,8 +998,8 @@ slots:
     slot_uri: weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValue
     - range: QuantitativeValueRange
+    - range: QuantitativeValue
     inlined: true
   year:
     slot_uri: year
