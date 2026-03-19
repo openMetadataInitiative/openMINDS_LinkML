@@ -1,0 +1,29 @@
+id: https://openminds.om-i.org/schemas/latest/enums/SpatialEncoding?format=linkml
+name: openMINDS-enums-SpatialEncoding
+title: OpenMINDS enum for SpatialEncoding
+description: OpenMINDS enum for SpatialEncoding
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  SpatialEncoding:
+    enum_uri: https://openminds.om-i.org/types/SpatialEncoding
+    title: Spatial encoding
+    permissible_values:
+      one-dimensional phase encoding:
+        description: A spatial encoding method in which position along a single dimension
+          is represented by controlled phase shifts of the signal.
+      three-dimensional frequency-phase-phase encoding:
+        description: A spatial encoding method in which position in three dimensions
+          is represented using frequency encoding along one axis and phase encoding
+          along two orthogonal axes.
+      two-dimensional frequency-phase encoding:
+        description: A spatial encoding method in which position in two dimensions
+          is represented using frequency encoding along one axis and phase encoding
+          along a second axis.
+      one-dimensional frequency encoding:
+        description: A spatial encoding method in which position along a single dimension
+          is represented by differences in signal frequency.

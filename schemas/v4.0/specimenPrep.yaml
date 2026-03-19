@@ -1,0 +1,225 @@
+id: https://openminds.om-i.org/schemas/latest/specimenPrep?format=linkml
+name: openMINDS-specimenPrep
+title: OpenMINDS specimenPrep module, version "v4.0"
+description: Schemas for the specimenPrep module of the openMINDS metadata framework,
+  version "v4.0"
+license: https://spdx.org/licenses/MIT.html
+imports:
+- linkml:types
+- slots
+- enums
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+classes:
+- SlicingDeviceUsage:
+    class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
+    description: null
+    title: Slicing device usage
+    slots:
+    - id
+    - device
+    - lookupLabel
+    - metadataLocation
+    - oscillationAmplitude
+    - sliceThickness
+    - slicingAngle
+    - slicingPlane
+    - slicingSpeed
+    - usedSpecimen
+    - vibrationFrequency
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDevice
+      metadataLocation:
+        range: File
+      sliceThickness:
+        required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      slicingAngle:
+        range: QuantitativeValue
+      slicingPlane:
+        required: true
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
+- SlicingDevice:
+    class_uri: https://openminds.om-i.org/types/SlicingDevice
+    description: null
+    title: Slicing device
+    slots:
+    - id
+    - description
+    - deviceType
+    - digitalIdentifier
+    - lookupLabel
+    - manufacturer
+    - name
+    - owner
+    - serialNumber
+    slot_usage:
+      deviceType:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: RRID
+      manufacturer:
+        range: Consortium
+      name:
+        required: true
+      owner:
+        range: Consortium
+- CranialWindowPreparation:
+    class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
+    description: null
+    title: Cranial window preparation
+    slots:
+    - id
+    - constructionType
+    - customPropertySet
+    - description
+    - dimension
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - reinforcementType
+    - startTime
+    - studyTarget
+    slot_usage:
+      constructionType:
+        required: true
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: SubjectState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
+- TissueCulturePreparation:
+    class_uri: https://openminds.om-i.org/types/TissueCulturePreparation
+    description: null
+    title: Tissue culture preparation
+    slots:
+    - id
+    - cultureMedium
+    - cultureType
+    - customPropertySet
+    - description
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    slot_usage:
+      cultureMedium:
+        required: true
+      cultureType:
+        required: true
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: TissueSampleState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
+- TissueSampleSlicing:
+    class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
+    description: null
+    title: Tissue sample slicing
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - temperature
+    - tissueBathSolution
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDeviceUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleCollectionState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
+      temperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange

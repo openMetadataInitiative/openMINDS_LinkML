@@ -1,0 +1,30 @@
+id: https://openminds.om-i.org/schemas/latest/enums/ModificationConsentRequirement?format=linkml
+name: openMINDS-enums-ModificationConsentRequirement
+title: OpenMINDS enum for ModificationConsentRequirement
+description: OpenMINDS enum for ModificationConsentRequirement
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  ModificationConsentRequirement:
+    enum_uri: https://openminds.om-i.org/types/ModificationConsentRequirement
+    title: Modification consent requirement
+    permissible_values:
+      advance consent:
+        description: Modification is permitted based on prior standing consent given
+          in the original agreement.
+      mutual consent:
+        description: Modification requires contemporaneous agreement of all primary
+          parties.
+      single party consent:
+        description: Modification may be made by one designated party only.
+      regulatory consent:
+        description: Modification requires approval by an external regulatory authority.
+      unanimous consent:
+        description: Modification requires agreement of all signatories in a multi-party
+          agreement.
+      delegated consent:
+        description: Modification may be made by one designated party only.

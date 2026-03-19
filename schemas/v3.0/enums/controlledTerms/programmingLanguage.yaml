@@ -1,0 +1,60 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/ProgrammingLanguage?format=linkml
+name: openMINDS-enums-ProgrammingLanguage
+title: OpenMINDS enum for ProgrammingLanguage
+description: OpenMINDS enum for ProgrammingLanguage
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ProgrammingLanguage:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/ProgrammingLanguage
+    title: Programming language
+    description: Structured information on the programming language.
+    permissible_values:
+      IGOR Pro:
+        description: C-like programming language of the correspondent scientific data
+          analysis software and numerical computing environment IGOR Pro available
+          for Windows or Mac operating systems.
+      TypeScript:
+        description: null
+      AMPL:
+        description: null
+      JavaScript:
+        description: null
+      R:
+        description: null
+      C++:
+        description: null
+      HTML:
+        description: null
+      Python:
+        description: null
+      Shell:
+        description: null
+      Scala:
+        description: null
+      C:
+        description: null
+      Fortran:
+        description: null
+      T-SQL:
+        description: null
+      Pascal:
+        description: null
+      Ruby:
+        description: null
+      Java:
+        description: null
+      PHP:
+        description: null
+      C#:
+        description: null
+      MATLAB:
+        description: null
+      Bash:
+        description: null
+      GLSL:
+        description: null

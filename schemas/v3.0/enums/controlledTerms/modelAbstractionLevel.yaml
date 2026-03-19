@@ -1,0 +1,54 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/ModelAbstractionLevel?format=linkml
+name: openMINDS-enums-ModelAbstractionLevel
+title: OpenMINDS enum for ModelAbstractionLevel
+description: OpenMINDS enum for ModelAbstractionLevel
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ModelAbstractionLevel:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/ModelAbstractionLevel
+    title: Model abstraction level
+    description: Structured information on abstraction level of the computational
+      model.
+    permissible_values:
+      'population modelling: neural mass':
+        description: Modelling neural populations using the approximation of neural
+          masses
+      algorithm:
+        description: Modelling of a neural structure or process as an algorithm
+      'systems biology: flux balance':
+        description: Systems biology modelling using flux balance analysis
+      'spiking neurons: biophysical':
+        description: Modelling neural networks in which individual neurons are represented
+          by models with detailed morphology and biophysical models of ion channels
+      protein structure:
+        description: Modelling of protein structure
+      'systems biology: continuous':
+        description: Systems biology modelling using concentrations
+      systems biology:
+        description: Modelling of neural systems below the level of individual neurons
+      'spiking neurons: point neuron':
+        description: Modelling neural networks in which individual neurons are represented
+          by point neuron models
+      cognitive modelling:
+        description: Modelling of cognitive processes
+      spiking neurons:
+        description: Modelling neural networks in which the action potentials of individual
+          neurons are represented
+      'systems biology: discrete':
+        description: Systems biology modelling using representations of individual
+          particles
+      statistical model:
+        description: Statistical modelling of neural data generation
+      'population modelling: neural field':
+        description: Modelling neural populations using the approximation of a neural
+          field
+      rate neurons:
+        description: Modelling neural networks in which individual neurons are represented
+          by their firing rate
+      population modelling:
+        description: Modelling of neural circuits at the population level

@@ -1,0 +1,101 @@
+id: https://openminds.om-i.org/schemas/latest/stimulation?format=linkml
+name: openMINDS-stimulation
+title: OpenMINDS stimulation module, version "v5.0"
+description: Schemas for the stimulation module of the openMINDS metadata framework,
+  version "v5.0"
+license: https://spdx.org/licenses/MIT.html
+imports:
+- linkml:types
+- slots
+- enums
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+classes:
+- EphysStimulus:
+    class_uri: https://openminds.om-i.org/types/EphysStimulus
+    description: null
+    title: Ephys stimulus
+    slots:
+    - id
+    - deliveredBy
+    - description
+    - epoch
+    - generatedBy
+    - internalIdentifier
+    - lookupLabel
+    - specification
+    - type
+    slot_usage:
+      deliveredBy:
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: MRICoilUsage
+        - range: MRIScannerUsage
+        - range: SlicingDeviceUsage
+      generatedBy:
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: MRICoilUsage
+        - range: MRIScannerUsage
+        - range: SlicingDeviceUsage
+      internalIdentifier:
+        required: true
+      specification:
+        range: Configuration
+      type:
+        required: true
+        range: ElectricalStimulusType
+- StimulationActivity:
+    class_uri: https://openminds.om-i.org/types/StimulationActivity
+    description: null
+    title: Stimulation activity
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - setup
+    - startTime
+    - stimulus
+    - studyTarget
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectGroupState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: File
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      stimulus:
+        required: true
+      studyTarget:
+        range: AnatomicalCavity

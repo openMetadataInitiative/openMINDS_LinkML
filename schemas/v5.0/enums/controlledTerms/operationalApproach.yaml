@@ -1,0 +1,15 @@
+id: https://openminds.om-i.org/schemas/latest/enums/OperationalApproach?format=linkml
+name: openMINDS-enums-OperationalApproach
+title: OpenMINDS enum for OperationalApproach
+description: OpenMINDS enum for OperationalApproach
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  OperationalApproach:
+    enum_uri: https://openminds.om-i.org/types/OperationalApproach
+    title: Operational approach
+    permissible_values: {}

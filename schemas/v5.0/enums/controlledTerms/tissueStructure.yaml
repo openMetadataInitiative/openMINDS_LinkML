@@ -1,0 +1,18 @@
+id: https://openminds.om-i.org/schemas/latest/enums/TissueStructure?format=linkml
+name: openMINDS-enums-TissueStructure
+title: OpenMINDS enum for TissueStructure
+description: OpenMINDS enum for TissueStructure
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  TissueStructure:
+    enum_uri: https://openminds.om-i.org/types/TissueStructure
+    title: Tissue structure
+    permissible_values:
+      dura mater:
+        description: Is a meninx. [auto-generated from 'is_a' property of the [UBERON
+          ontology term](http://purl.obolibrary.org/obo/UBERON_0002363)]

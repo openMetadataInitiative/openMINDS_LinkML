@@ -1,0 +1,23 @@
+id: https://openminds.om-i.org/schemas/latest/enums/ProjectType?format=linkml
+name: openMINDS-enums-ProjectType
+title: OpenMINDS enum for ProjectType
+description: OpenMINDS enum for ProjectType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  ProjectType:
+    enum_uri: https://openminds.om-i.org/types/ProjectType
+    title: Project type
+    permissible_values:
+      research project:
+        description: A science-driven project defined primarily by a coherent research
+          question and systematic investigation aimed at generating new knowledge,
+          methods, or insights, regardless of its funding source.
+      grant project:
+        description: A time-limited, externally funded project defined primarily by
+          the formal objectives, conditions, and reporting requirements of a sponsoring
+          organization.

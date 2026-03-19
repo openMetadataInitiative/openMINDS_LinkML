@@ -1,0 +1,18 @@
+id: https://openminds.om-i.org/schemas/latest/enums/AnatomicalCavity?format=linkml
+name: openMINDS-enums-AnatomicalCavity
+title: OpenMINDS enum for AnatomicalCavity
+description: OpenMINDS enum for AnatomicalCavity
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  AnatomicalCavity:
+    enum_uri: https://openminds.om-i.org/types/AnatomicalCavity
+    title: Anatomical cavity
+    permissible_values:
+      basal cistern:
+        description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004047)]

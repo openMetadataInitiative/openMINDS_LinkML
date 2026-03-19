@@ -1,0 +1,34 @@
+id: https://openminds.om-i.org/schemas/latest/enums/PulseShape?format=linkml
+name: openMINDS-enums-PulseShape
+title: OpenMINDS enum for PulseShape
+description: OpenMINDS enum for PulseShape
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  PulseShape:
+    enum_uri: https://openminds.om-i.org/types/PulseShape
+    title: Pulse shape
+    permissible_values:
+      Gaussian-Hanning pulse:
+        description: A composite pulse formed by applying a Hanning window to a Gaussian
+          pulse envelope.
+      sinc-Gaussian pulse:
+        description: A composite pulse formed by modulating a sinc pulse with a Gaussian
+          envelope.
+      sinc-Hanning pulse:
+        description: A composite pulse formed by modulating a sinc pulse with a Hanning
+          window.
+      Fermi pulse:
+        description: A pulse whose amplitude envelope follows a Fermi (logistic) function.
+      sinc pulse:
+        description: A pulse whose amplitude envelope follows a sinc function in time.
+      Gaussian pulse:
+        description: A pulse whose amplitude envelope follows a Gaussian function
+          over time.
+      rectangular pulse:
+        description: A pulse with constant amplitude over its duration and abrupt
+          onset and offset transitions.

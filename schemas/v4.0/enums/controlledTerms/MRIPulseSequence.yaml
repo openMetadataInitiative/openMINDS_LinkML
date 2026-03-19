@@ -1,0 +1,15 @@
+id: https://openminds.om-i.org/schemas/latest/enums/MRIPulseSequence?format=linkml
+name: openMINDS-enums-MRIPulseSequence
+title: OpenMINDS enum for MRIPulseSequence
+description: OpenMINDS enum for MRIPulseSequence
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  MRIPulseSequence:
+    enum_uri: https://openminds.om-i.org/types/MRIPulseSequence
+    title: Mripulse sequence
+    permissible_values: {}

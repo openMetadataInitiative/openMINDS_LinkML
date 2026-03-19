@@ -1,0 +1,26 @@
+id: https://openminds.om-i.org/schemas/latest/types/?format=linkml
+name: openMINDS-types
+title: Types for OpenMINDS version "v4.0"
+description: Types for the LinkML representation of the openMINDS metadata framework,
+  version "v4.0"
+license: https://spdx.org/licenses/MIT.html
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+types:
+  Email:
+    uri: linkml:email
+    repr: str
+    base: str
+    description: A correctly formatted e-mail address
+    exact_mappings:
+    - schema:email
+  ECMA262:
+    uri: linkml:ECMA262
+    repr: str
+    base: str
+    description: Text which is syntactically valid ECMAScript code

@@ -1,0 +1,32 @@
+id: https://openminds.om-i.org/schemas/latest/enums/DeploymentEnvironmentType?format=linkml
+name: openMINDS-enums-DeploymentEnvironmentType
+title: OpenMINDS enum for DeploymentEnvironmentType
+description: OpenMINDS enum for DeploymentEnvironmentType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  DeploymentEnvironmentType:
+    enum_uri: https://openminds.om-i.org/types/DeploymentEnvironmentType
+    title: Deployment environment type
+    permissible_values:
+      production:
+        description: The live environment where an application is fully deployed and
+          accessed by end users; it requires high stability, performance, and monitoring.
+      pre-production:
+        description: A near-final environment used to validate releases before moving
+          to production; typically mirrors the production setup closely and is used
+          for final checks.
+      development:
+        description: A working environment for developers to build, test, and debug
+          new features or changes; usually more flexible and less restricted than
+          other environments.
+      integration:
+        description: An environment in which multiple components or services are integrated
+          and tested together to ensure interoperability and to detect issues early.
+      staging:
+        description: An isolated environment that replicates the production environment
+          for final integration and validation; often used for release candidate testing.

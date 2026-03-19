@@ -1,4 +1,4 @@
-id: https://openminds.ebrains.eu/schemas/latest/SANDS?format=linkml
+id: https://openminds.om-i.org/schemas/latest/SANDS?format=linkml
 name: openMINDS-SANDS
 title: OpenMINDS SANDS module, version "latest"
 description: Schemas for the SANDS module of the openMINDS metadata framework, version
@@ -11,17 +11,280 @@ imports:
 prefixes:
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
-  omi: https://openminds.ebrains.eu
+  omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- CustomAnnotation:
-    class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
+- CommonCoordinateFrameworkVersion:
+    class_uri: https://openminds.om-i.org/types/CommonCoordinateFrameworkVersion
     description: null
-    title: Custom annotation
+    title: Common coordinate framework version
     slots:
     - id
-    - anchorPoint
-    - coordinateSpace
+    - abbreviation
+    - accessibility
+    - anatomicalAxesOrientation
+    - axesOrigin
+    - contribution
+    - contributorAffiliation
+    - copyright
+    - defaultImage
+    - description
+    - digitalIdentifier
+    - documentation
+    - fullName
+    - funding
+    - homepage
+    - howToCite
+    - isPrecededBy
+    - isVariantOf
+    - isVersionOf
+    - keyword
+    - nativeUnit
+    - ontologyIdentifier
+    - publicationStatus
+    - relatedPublication
+    - releaseDate
+    - repository
+    - shortName
+    - supportChannel
+    - usageCondition
+    - usedSpecimen
+    - versionIdentifier
+    - versionSpecification
+    slot_usage:
+      accessibility:
+        required: true
+      anatomicalAxesOrientation:
+        required: true
+      axesOrigin:
+        required: true
+      contribution:
+        required: true
+        range: Contribution
+      description:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      documentation:
+        required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
+      fullName:
+        required: true
+      howToCite:
+        required: true
+      isPrecededBy:
+        range: CommonCoordinateFrameworkVersion
+      isVariantOf:
+        range: CommonCoordinateFrameworkVersion
+      isVersionOf:
+        required: true
+        range: CommonCoordinateFramework
+      keyword:
+        range: AccessChannel
+      nativeUnit:
+        required: true
+      relatedPublication:
+        range: DOI
+      releaseDate:
+        required: true
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
+      usageCondition:
+        range: License
+      usedSpecimen:
+        range: Subject
+      versionIdentifier:
+        required: true
+      versionSpecification:
+        required: true
+- ParcellationTerminologyVersion:
+    class_uri: https://openminds.om-i.org/types/ParcellationTerminologyVersion
+    description: null
+    title: Parcellation terminology version
+    slots:
+    - id
+    - dataLocation
+    - digitalIdentifier
+    - hasEntity
+    - ontologyIdentifier
+    slot_usage:
+      dataLocation:
+        range: File
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      hasEntity:
+        required: true
+        range: ParcellationEntityVersion
+- AnatomicalAtlasVersion:
+    class_uri: https://openminds.om-i.org/types/AnatomicalAtlasVersion
+    description: null
+    title: Anatomical atlas version
+    slots:
+    - id
+    - abbreviation
+    - accessibility
+    - contribution
+    - contributorAffiliation
+    - coordinateFramework
+    - copyright
+    - description
+    - digitalIdentifier
+    - documentation
+    - fullName
+    - funding
+    - hasTerminology
+    - homepage
+    - howToCite
+    - isPrecededBy
+    - isVariantOf
+    - isVersionOf
+    - keyword
+    - majorVersionIdentifier
+    - ontologyIdentifier
+    - publicationStatus
+    - relatedPublication
+    - releaseDate
+    - repository
+    - shortName
+    - supportChannel
+    - type
+    - usageCondition
+    - usedSpecimen
+    - versionIdentifier
+    - versionSpecification
+    slot_usage:
+      accessibility:
+        required: true
+      contribution:
+        required: true
+        range: Contribution
+      coordinateFramework:
+        range: CommonCoordinateFrameworkVersion
+      description:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      documentation:
+        required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
+      fullName:
+        required: true
+      hasTerminology:
+        required: true
+        range: ParcellationTerminologyVersion
+      howToCite:
+        required: true
+      isPrecededBy:
+        range: AnatomicalAtlasVersion
+      isVariantOf:
+        range: AnatomicalAtlasVersion
+      isVersionOf:
+        required: true
+        range: AnatomicalAtlas
+      keyword:
+        range: AccessChannel
+      relatedPublication:
+        range: DOI
+      releaseDate:
+        required: true
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
+      type:
+        required: true
+        range: AtlasType
+      usageCondition:
+        range: License
+      usedSpecimen:
+        range: Subject
+      versionIdentifier:
+        required: true
+      versionSpecification:
+        required: true
+- CommonCoordinateFramework:
+    class_uri: https://openminds.om-i.org/types/CommonCoordinateFramework
+    description: null
+    title: Common coordinate framework
+    slots:
+    - id
+    - abbreviation
+    - contribution
+    - contributorAffiliation
+    - description
+    - digitalIdentifier
+    - documentation
+    - fullName
+    - homepage
+    - howToCite
+    - keyword
+    - ontologyIdentifier
+    - relatedPublication
+    - shortName
+    - supportChannel
+    - usedTaxon
+    slot_usage:
+      contribution:
+        required: true
+        range: Contribution
+      description:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
+      fullName:
+        required: true
+      howToCite:
+        required: true
+      keyword:
+        range: AccessChannel
+      relatedPublication:
+        range: DOI
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
+      usedTaxon:
+        required: true
+- AtlasAnnotation:
+    class_uri: https://openminds.om-i.org/types/AtlasAnnotation
+    description: null
+    title: Atlas annotation
+    slots:
+    - id
     - criteria
     - criteriaQualityType
     - criteriaType
@@ -32,26 +295,520 @@ classes:
     - specification
     - type
     slot_usage:
-      coordinateSpace:
-        required: true
-        any_of:
-        - range: CommonCoordinateSpaceVersion
-        - range: CustomCoordinateSpace
       criteriaQualityType:
         required: true
       criteriaType:
         required: true
       specification:
-        any_of:
-        - range: File
-        - range: PropertyValueList
+        range: File
       type:
         required: true
         range: AnnotationType
-- CustomCoordinateSpace:
-    class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
+- ParcellationTerminology:
+    class_uri: https://openminds.om-i.org/types/ParcellationTerminology
     description: null
-    title: Custom coordinate space
+    title: Parcellation terminology
+    slots:
+    - id
+    - dataLocation
+    - digitalIdentifier
+    - hasEntity
+    - ontologyIdentifier
+    slot_usage:
+      dataLocation:
+        range: File
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      hasEntity:
+        required: true
+        range: ParcellationEntity
+- AnatomicalAtlas:
+    class_uri: https://openminds.om-i.org/types/AnatomicalAtlas
+    description: null
+    title: Anatomical atlas
+    slots:
+    - id
+    - abbreviation
+    - contribution
+    - contributorAffiliation
+    - description
+    - digitalIdentifier
+    - documentation
+    - fullName
+    - hasTerminology
+    - homepage
+    - howToCite
+    - keyword
+    - ontologyIdentifier
+    - relatedPublication
+    - shortName
+    - supportChannel
+    - usedTaxon
+    slot_usage:
+      contribution:
+        required: true
+        range: Contribution
+      description:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
+      fullName:
+        required: true
+      hasTerminology:
+        required: true
+        range: ParcellationTerminology
+      howToCite:
+        required: true
+      keyword:
+        range: AccessChannel
+      relatedPublication:
+        range: DOI
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
+      usedTaxon:
+        required: true
+- SingleColor:
+    class_uri: https://openminds.om-i.org/types/SingleColor
+    description: null
+    title: Single color
+    slots:
+    - id
+    - value
+    slot_usage:
+      value:
+        required: true
+        range: string
+- ViewerSpecification:
+    class_uri: https://openminds.om-i.org/types/ViewerSpecification
+    description: null
+    title: Viewer specification
+    slots:
+    - id
+    - additionalRemarks
+    - anchorPoint
+    - cameraPosition
+    - preferredDisplayColor
+    slot_usage:
+      anchorPoint:
+        required: true
+      preferredDisplayColor:
+        any_of:
+        - range: Colormap
+        - range: SingleColor
+- QuantitativeRelationAssessment:
+    class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
+    description: null
+    title: Quantitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - quantitativeOverlap
+    slot_usage:
+      inRelationTo:
+        required: true
+        range: ParcellationEntityVersion
+      quantitativeOverlap:
+        required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- QualitativeRelationAssessment:
+    class_uri: https://openminds.om-i.org/types/QualitativeRelationAssessment
+    description: null
+    title: Qualitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - qualitativeOverlap
+    slot_usage:
+      inRelationTo:
+        required: true
+        any_of:
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
+      qualitativeOverlap:
+        required: true
+- CoordinatePoint:
+    class_uri: https://openminds.om-i.org/types/CoordinatePoint
+    description: null
+    title: Coordinate point
+    slots:
+    - id
+    - coordinateFramework
+    - coordinates
+    slot_usage:
+      coordinateFramework:
+        required: true
+      coordinates:
+        required: true
+- AnatomicalTargetPosition:
+    class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
+    description: null
+    title: Anatomical target position
+    slots:
+    - id
+    - additionalRemarks
+    - anatomicalTarget
+    - spatialLocation
+    - targetIdentificationType
+    slot_usage:
+      anatomicalTarget:
+        required: true
+        range: AnatomicalCavity
+      targetIdentificationType:
+        required: true
+- Cube:
+    class_uri: https://openminds.om-i.org/types/Cube
+    description: null
+    title: Cube
+    slots:
+    - id
+    - sideLength
+    slot_usage:
+      sideLength:
+        required: true
+- Parallelogram:
+    class_uri: https://openminds.om-i.org/types/Parallelogram
+    description: null
+    title: Parallelogram
+    slots:
+    - id
+    - baseDistance
+    - baseLength
+    - interiorAngle
+    slot_usage:
+      baseDistance:
+        required: true
+      baseLength:
+        required: true
+      interiorAngle:
+        required: true
+- RegularPolygon:
+    class_uri: https://openminds.om-i.org/types/RegularPolygon
+    description: null
+    title: Regular polygon
+    slots:
+    - id
+    - circumradius
+    - numberOfSides
+    slot_usage:
+      circumradius:
+        required: true
+      numberOfSides:
+        required: true
+- Kite:
+    class_uri: https://openminds.om-i.org/types/Kite
+    description: null
+    title: Kite
+    slots:
+    - id
+    - legLengths
+    - symmetryDiagonalLength
+    slot_usage:
+      legLengths:
+        required: true
+      symmetryDiagonalLength:
+        required: true
+- Trapezoid:
+    class_uri: https://openminds.om-i.org/types/Trapezoid
+    description: null
+    title: Trapezoid
+    slots:
+    - id
+    - baseDistance
+    - baseLengths
+    slot_usage:
+      baseDistance:
+        required: true
+      baseLengths:
+        required: true
+- CircularSector:
+    class_uri: https://openminds.om-i.org/types/CircularSector
+    description: null
+    title: Circular sector
+    slots:
+    - id
+    - centralAngle
+    - radius
+    slot_usage:
+      centralAngle:
+        required: true
+      radius:
+        required: true
+- IsoscelesTriangle:
+    class_uri: https://openminds.om-i.org/types/IsoscelesTriangle
+    description: null
+    title: Isosceles triangle
+    slots:
+    - id
+    - apexAngle
+    - legLength
+    slot_usage:
+      apexAngle:
+        required: true
+      legLength:
+        required: true
+- RightPrism:
+    class_uri: https://openminds.om-i.org/types/RightPrism
+    description: null
+    title: Right prism
+    slots:
+    - id
+    - baseDistance
+    - baseShape
+    slot_usage:
+      baseDistance:
+        required: true
+      baseShape:
+        required: true
+        any_of:
+        - range: EquilateralTriangle
+        - range: IsoscelesTriangle
+        - range: Kite
+        - range: Parallelogram
+        - range: Rectangle
+        - range: RegularPolygon
+        - range: Rhombus
+        - range: RightTriangle
+        - range: Square
+        - range: Trapezoid
+        - range: Triangle
+- Rectangle:
+    class_uri: https://openminds.om-i.org/types/Rectangle
+    description: null
+    title: Rectangle
+    slots:
+    - id
+    - majorSideLength
+    - minorSideLength
+    slot_usage:
+      majorSideLength:
+        required: true
+      minorSideLength:
+        required: true
+- EquilateralTriangle:
+    class_uri: https://openminds.om-i.org/types/EquilateralTriangle
+    description: null
+    title: Equilateral triangle
+    slots:
+    - id
+    - sideLength
+    slot_usage:
+      sideLength:
+        required: true
+- Triangle:
+    class_uri: https://openminds.om-i.org/types/Triangle
+    description: null
+    title: Triangle
+    slots:
+    - id
+    - apexAngle
+    - legLengths
+    slot_usage:
+      apexAngle:
+        required: true
+      legLengths:
+        required: true
+- Spheroid:
+    class_uri: https://openminds.om-i.org/types/Spheroid
+    description: null
+    title: Spheroid
+    slots:
+    - id
+    - equatorialDiameter
+    - polarDiameter
+    slot_usage:
+      equatorialDiameter:
+        required: true
+      polarDiameter:
+        required: true
+- Square:
+    class_uri: https://openminds.om-i.org/types/Square
+    description: null
+    title: Square
+    slots:
+    - id
+    - sideLength
+    slot_usage:
+      sideLength:
+        required: true
+- Sphere:
+    class_uri: https://openminds.om-i.org/types/Sphere
+    description: null
+    title: Sphere
+    slots:
+    - id
+    - radius
+    slot_usage:
+      radius:
+        required: true
+- CentroidalPyramid:
+    class_uri: https://openminds.om-i.org/types/CentroidalPyramid
+    description: null
+    title: Centroidal pyramid
+    slots:
+    - id
+    - apexBaseDistance
+    - baseShape
+    slot_usage:
+      apexBaseDistance:
+        required: true
+      baseShape:
+        required: true
+        any_of:
+        - range: EquilateralTriangle
+        - range: IsoscelesTriangle
+        - range: Kite
+        - range: Parallelogram
+        - range: Rectangle
+        - range: RegularPolygon
+        - range: Rhombus
+        - range: RightTriangle
+        - range: Square
+        - range: Trapezoid
+        - range: Triangle
+- RightCylinder:
+    class_uri: https://openminds.om-i.org/types/RightCylinder
+    description: null
+    title: Right cylinder
+    slots:
+    - id
+    - baseDistance
+    - baseShape
+    slot_usage:
+      baseDistance:
+        required: true
+      baseShape:
+        required: true
+        any_of:
+        - range: Circle
+        - range: Ellipse
+- RightTriangle:
+    class_uri: https://openminds.om-i.org/types/RightTriangle
+    description: null
+    title: Right triangle
+    slots:
+    - id
+    - perpendicularLegLengths
+    slot_usage:
+      perpendicularLegLengths:
+        required: true
+- Frustum:
+    class_uri: https://openminds.om-i.org/types/Frustum
+    description: null
+    title: Frustum
+    slots:
+    - id
+    - baseDistance
+    - majorBaseShape
+    - minorBaseScale
+    slot_usage:
+      baseDistance:
+        required: true
+      majorBaseShape:
+        required: true
+        any_of:
+        - range: Circle
+        - range: CircularSector
+        - range: Ellipse
+        - range: EquilateralTriangle
+        - range: IsoscelesTriangle
+        - range: Kite
+        - range: Parallelogram
+        - range: Rectangle
+        - range: RegularPolygon
+        - range: Rhombus
+        - range: RightTriangle
+        - range: Square
+        - range: Trapezoid
+        - range: Triangle
+      minorBaseScale:
+        required: true
+- RightCone:
+    class_uri: https://openminds.om-i.org/types/RightCone
+    description: null
+    title: Right cone
+    slots:
+    - id
+    - apexBaseDistance
+    - baseShape
+    slot_usage:
+      apexBaseDistance:
+        required: true
+      baseShape:
+        required: true
+        any_of:
+        - range: Circle
+        - range: Ellipse
+- Rhombus:
+    class_uri: https://openminds.om-i.org/types/Rhombus
+    description: null
+    title: Rhombus
+    slots:
+    - id
+    - diagonalLengths
+    slot_usage:
+      diagonalLengths:
+        required: true
+- Ellipse:
+    class_uri: https://openminds.om-i.org/types/Ellipse
+    description: null
+    title: Ellipse
+    slots:
+    - id
+    - diameters
+    slot_usage:
+      diameters:
+        required: true
+- Circle:
+    class_uri: https://openminds.om-i.org/types/Circle
+    description: null
+    title: Circle
+    slots:
+    - id
+    - radius
+    slot_usage:
+      radius:
+        required: true
+- Ellipsoid:
+    class_uri: https://openminds.om-i.org/types/Ellipsoid
+    description: null
+    title: Ellipsoid
+    slots:
+    - id
+    - intermediateDiameter
+    - majorDiameter
+    - minorDiameter
+    slot_usage:
+      intermediateDiameter:
+        required: true
+      majorDiameter:
+        required: true
+      minorDiameter:
+        required: true
+- CustomCoordinateFramework:
+    class_uri: https://openminds.om-i.org/types/CustomCoordinateFramework
+    description: null
+    title: Custom coordinate framework
     slots:
     - id
     - anatomicalAxesOrientation
@@ -69,271 +826,42 @@ classes:
       nativeUnit:
         required: true
 - CustomAnatomicalEntity:
-    class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
+    class_uri: https://openminds.om-i.org/types/CustomAnatomicalEntity
     description: null
     title: Custom anatomical entity
     slots:
     - id
     - hasAnnotation
     - name
-    - relatedUBERONTerm
+    - relatedInterspeciesAnatomy
     - relationAssessment
     slot_usage:
       hasAnnotation:
         range: CustomAnnotation
       name:
         required: true
+      relatedInterspeciesAnatomy:
+        any_of:
+        - range: AnatomicalCavity
+        - range: ExternalBodyRegion
+        - range: MuscularStructure
+        - range: NervousSystemStructure
+        - range: Organ
+        - range: OrganSystemStructure
+        - range: OrganismSubstance
+        - range: OrganismSystem
+        - range: SkeletalStructure
+        - range: TissueStructure
+        - range: VascularStructure
       relationAssessment:
         range: QualitativeRelationAssessment
-- SingleColor:
-    class_uri: https://openminds.ebrains.eu/sands/SingleColor
+- CustomAnnotation:
+    class_uri: https://openminds.om-i.org/types/CustomAnnotation
     description: null
-    title: Single color
+    title: Custom annotation
     slots:
     - id
-    - value
-    slot_usage:
-      value:
-        required: true
-        range: string
-- ViewerSpecification:
-    class_uri: https://openminds.ebrains.eu/sands/ViewerSpecification
-    description: null
-    title: Viewer specification
-    slots:
-    - id
-    - additionalRemarks
-    - anchorPoint
-    - cameraPosition
-    - preferredDisplayColor
-    slot_usage:
-      anchorPoint:
-        required: true
-- AnatomicalTargetPosition:
-    class_uri: https://openminds.ebrains.eu/sands/AnatomicalTargetPosition
-    description: null
-    title: Anatomical target position
-    slots:
-    - id
-    - additionalRemarks
-    - anatomicalTarget
-    - spatialLocation
-    - targetIdentificationType
-    slot_usage:
-      anatomicalTarget:
-        required: true
-        range: CellType
-      targetIdentificationType:
-        required: true
-- CoordinatePoint:
-    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
-    description: Structured information on a coordinate point.
-    title: Coordinate point
-    slots:
-    - id
-    - coordinateSpace
-    - coordinates
-    slot_usage:
-      coordinateSpace:
-        required: true
-        any_of:
-        - range: CommonCoordinateSpaceVersion
-        - range: CustomCoordinateSpace
-      coordinates:
-        required: true
-- QualitativeRelationAssessment:
-    class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
-    description: null
-    title: Qualitative relation assessment
-    slots:
-    - id
-    - criteria
-    - inRelationTo
-    - qualitativeOverlap
-    slot_usage:
-      inRelationTo:
-        required: true
-        any_of:
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
-      qualitativeOverlap:
-        required: true
-- QuantitativeRelationAssessment:
-    class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
-    description: null
-    title: Quantitative relation assessment
-    slots:
-    - id
-    - criteria
-    - inRelationTo
-    - quantitativeOverlap
-    slot_usage:
-      inRelationTo:
-        required: true
-        range: ParcellationEntityVersion
-      quantitativeOverlap:
-        required: true
-- Circle:
-    class_uri: https://openminds.ebrains.eu/sands/Circle
-    description: null
-    title: Circle
-    slots:
-    - id
-    - radius
-    slot_usage:
-      radius:
-        required: true
-- Ellipse:
-    class_uri: https://openminds.ebrains.eu/sands/Ellipse
-    description: null
-    title: Ellipse
-    slots:
-    - id
-    - semiMajorAxis
-    - semiMinorAxis
-    slot_usage:
-      semiMajorAxis:
-        required: true
-      semiMinorAxis:
-        required: true
-- Rectangle:
-    class_uri: https://openminds.ebrains.eu/sands/Rectangle
-    description: null
-    title: Rectangle
-    slots:
-    - id
-    - length
-    - width
-    slot_usage:
-      length:
-        required: true
-      width:
-        required: true
-- BrainAtlasVersion:
-    class_uri: https://openminds.ebrains.eu/sands/BrainAtlasVersion
-    description: Structured information on a brain atlas (version level).
-    title: Brain atlas version
-    slots:
-    - id
-    - abbreviation
-    - accessibility
-    - author
-    - coordinateSpace
-    - copyright
-    - custodian
-    - description
-    - digitalIdentifier
-    - fullDocumentation
-    - fullName
-    - funding
-    - hasTerminology
-    - homepage
-    - howToCite
-    - isAlternativeVersionOf
-    - isNewVersionOf
-    - keyword
-    - license
-    - majorVersionIdentifier
-    - ontologyIdentifier
-    - otherContribution
-    - relatedPublication
-    - releaseDate
-    - repository
-    - shortName
-    - supportChannel
-    - type
-    - usedSpecimen
-    - versionIdentifier
-    - versionInnovation
-    slot_usage:
-      accessibility:
-        required: true
-      author:
-        range: Consortium
-      coordinateSpace:
-        required: true
-        range: CommonCoordinateSpaceVersion
-      custodian:
-        range: Consortium
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: ISBN
-        - range: RRID
-      fullDocumentation:
-        required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
-      hasTerminology:
-        required: true
-        range: ParcellationTerminologyVersion
-      isAlternativeVersionOf:
-        range: BrainAtlasVersion
-      isNewVersionOf:
-        range: BrainAtlasVersion
-      keyword:
-        range: ActionStatusType
-      license:
-        required: true
-        range: License
-      relatedPublication:
-        range: DOI
-      releaseDate:
-        required: true
-      shortName:
-        required: true
-      supportChannel:
-        range: string
-        any_of:
-        - range: uri
-      type:
-        range: AtlasType
-      usedSpecimen:
-        range: Subject
-      versionIdentifier:
-        required: true
-      versionInnovation:
-        required: true
-- ParcellationTerminologyVersion:
-    class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminologyVersion
-    description: null
-    title: Parcellation terminology version
-    slots:
-    - id
-    - dataLocation
-    - hasEntity
-    - ontologyIdentifier
-    slot_usage:
-      dataLocation:
-        range: File
-      hasEntity:
-        required: true
-        range: ParcellationEntityVersion
-- ParcellationTerminology:
-    class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
-    description: null
-    title: Parcellation terminology
-    slots:
-    - id
-    - dataLocation
-    - hasEntity
-    - ontologyIdentifier
-    slot_usage:
-      dataLocation:
-        range: File
-      hasEntity:
-        required: true
-        range: ParcellationEntity
-- AtlasAnnotation:
-    class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
-    description: null
-    title: Atlas annotation
-    slots:
-    - id
-    - anchorPoint
+    - coordinateFramework
     - criteria
     - criteriaQualityType
     - criteriaType
@@ -344,54 +872,16 @@ classes:
     - specification
     - type
     slot_usage:
+      coordinateFramework:
+        required: true
       criteriaQualityType:
         required: true
       criteriaType:
         required: true
       specification:
-        range: File
+        any_of:
+        - range: File
+        - range: PropertyValueList
       type:
         required: true
         range: AnnotationType
-- BrainAtlas:
-    class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
-    description: Structured information on a brain atlas (concept level).
-    title: Brain atlas
-    slots:
-    - id
-    - abbreviation
-    - author
-    - custodian
-    - description
-    - digitalIdentifier
-    - fullName
-    - hasTerminology
-    - hasVersion
-    - homepage
-    - howToCite
-    - ontologyIdentifier
-    - shortName
-    - usedSpecies
-    slot_usage:
-      author:
-        required: true
-        range: Consortium
-      custodian:
-        range: Consortium
-      description:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: ISBN
-        - range: RRID
-      fullName:
-        required: true
-      hasTerminology:
-        required: true
-        range: ParcellationTerminology
-      hasVersion:
-        required: true
-        range: BrainAtlasVersion
-      shortName:
-        required: true

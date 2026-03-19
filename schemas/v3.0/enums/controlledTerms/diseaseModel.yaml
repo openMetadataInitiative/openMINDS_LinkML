@@ -1,0 +1,41 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/DiseaseModel?format=linkml
+name: openMINDS-enums-DiseaseModel
+title: OpenMINDS enum for DiseaseModel
+description: OpenMINDS enum for DiseaseModel
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  DiseaseModel:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/DiseaseModel
+    title: Disease model
+    permissible_values:
+      fragile X syndrome model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal fragile X syndrome.
+      epilepsy model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed for epilepsy in humans or animals.
+      autism spectrum disorder model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal autism sprectrum
+          disorder.
+      Williams-Beuren syndrome model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal Williams-Beuren
+          syndrome.
+      Huntington's disease model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal Huntington's disease.
+      stroke model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed during stroke in humans or animals.
+      Alzheimer's disease model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal Alzheimer's disease.
+      Parkinson's disease model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal Parkinson's disease.

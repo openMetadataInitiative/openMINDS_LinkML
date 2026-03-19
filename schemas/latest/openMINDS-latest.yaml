@@ -1,4 +1,4 @@
-id: https://openminds.ebrains.eu/schemas/latest/?format=linkml
+id: https://openminds.om-i.org/schemas/latest/?format=linkml
 name: openMINDS
 title: OpenMINDS version "latest"
 description: The complete collection of schemas for all metadata models of the openMINDS
@@ -9,16 +9,17 @@ imports:
 - slots
 - types
 - enums
-- publications
-- chemicals
 - computation
+- neuroimaging
+- specimenPrep
+- publications
+- SANDS
+- chemicals
 - core
 - stimulation
-- specimenPrep
 - ephys
-- SANDS
 prefixes:
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
-  omi: https://openminds.ebrains.eu
+  omi: https://openminds.om-i.org
 default_prefix: omi

@@ -1,0 +1,87 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/SoftwareFeature?format=linkml
+name: openMINDS-enums-SoftwareFeature
+title: OpenMINDS enum for SoftwareFeature
+description: OpenMINDS enum for SoftwareFeature
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  SoftwareFeature:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareFeature
+    title: Software feature
+    permissible_values:
+      modelling:
+        description: null
+      scripting interface:
+        description: null
+      provenance:
+        description: null
+      mobile device:
+        description: null
+      statistical data types:
+        description: null
+      desktop environment:
+        description: null
+      virtual reality:
+        description: null
+      control:
+        description: null
+      parallel programming:
+        description: null
+      simulation:
+        description: null
+      heterogeneous architecture:
+        description: null
+      tiled display wall:
+        description: null
+      3D scalar data types:
+        description: null
+      graphical user interface:
+        description: A visual system that enables users to interact with a computer
+          or software through graphical elements like windows, icons, and menus, allowing
+          them to perform specific tasks or operations.
+      augmented reality:
+        description: null
+      3D geometry data types:
+        description: null
+      tensor data types:
+        description: null
+      metadata data types:
+        description: null
+      data processing:
+        description: null
+      data acquisition:
+        description: null
+      presentation visualisation:
+        description: null
+      profiling:
+        description: null
+      command line interface:
+        description: A text-based system that enables users to interact with a computer
+          or software by entering commands, allowing them to perform specific tasks
+          or operations.
+      interactive analysis:
+        description: null
+      graph data types:
+        description: null
+      positional data types:
+        description: null
+      application programming interface:
+        description: A set of rules and protocols that allows different software applications
+          to communicate with each other, enabling them to access specific functions
+          or data.
+      3D vector data types:
+        description: null
+      performance measurement:
+        description: null
+      raster image data types:
+        description: null
+      time series data types:
+        description: null
+      vector image data types:
+        description: null
+      matrix data types:
+        description: null

@@ -1,0 +1,29 @@
+id: https://openminds.om-i.org/schemas/latest/enums/ExternalBodyRegion?format=linkml
+name: openMINDS-enums-ExternalBodyRegion
+title: OpenMINDS enum for ExternalBodyRegion
+description: OpenMINDS enum for ExternalBodyRegion
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  ExternalBodyRegion:
+    enum_uri: https://openminds.om-i.org/types/ExternalBodyRegion
+    title: External body region
+    permissible_values:
+      face:
+        description: Is a subdivision of the head. [auto-generated from properties
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001456)
+          ('is_a' and 'relationship')]
+      neck:
+        description: Is a subdivision of organism connecting the head to the trunk.
+          Is part of the anterior region of the body. [auto-generated from properties
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000974)
+          ('is_a' and 'relationship')]
+      head:
+        description: Is a subdivision of organism along the main body axis. Is part
+          of the anterior region of the body and the craniocervical region. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000033)
+          ('is_a' and 'relationship')]

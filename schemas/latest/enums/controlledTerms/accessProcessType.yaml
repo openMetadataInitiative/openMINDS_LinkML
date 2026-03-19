@@ -1,0 +1,25 @@
+id: https://openminds.om-i.org/schemas/latest/enums/AccessProcessType?format=linkml
+name: openMINDS-enums-AccessProcessType
+title: OpenMINDS enum for AccessProcessType
+description: OpenMINDS enum for AccessProcessType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  AccessProcessType:
+    enum_uri: https://openminds.om-i.org/types/AccessProcessType
+    title: Access process type
+    permissible_values:
+      registered access:
+        description: Access requires registration but no authentication.
+      immediate access:
+        description: Automatic access upon acceptance of the applicable terms.
+      authorized access:
+        description: Access granted following an explicit authorisation decision based
+          on assessment of the access request and, where applicable, acceptance or
+          negotiation of relevant usage conditions.
+      authenticated access:
+        description: Access following authentication through an account.

@@ -1,0 +1,32 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/ActionStatusType?format=linkml
+name: openMINDS-enums-ActionStatusType
+title: OpenMINDS enum for ActionStatusType
+description: OpenMINDS enum for ActionStatusType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ActionStatusType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/ActionStatusType
+    title: Action status type
+    description: Structured information about the status of an action.
+    permissible_values:
+      potential:
+        description: A description of an action that is supported.
+      inactive:
+        description: A pending or suspended action.
+      pending:
+        description: An action which is awaiting execution.
+      failed:
+        description: An action that failed to complete or completed but produced an
+          error.
+      paused:
+        description: A temporarily stopped action that can be resumed at a later point
+          in time.
+      completed:
+        description: An action that has already taken place with a successful outcome.
+      active:
+        description: An in-progress action.

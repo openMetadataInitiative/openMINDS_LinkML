@@ -1,4 +1,4 @@
-id: https://openminds.ebrains.eu/schemas/latest/stimulation?format=linkml
+id: https://openminds.om-i.org/schemas/latest/stimulation?format=linkml
 name: openMINDS-stimulation
 title: OpenMINDS stimulation module, version "latest"
 description: Schemas for the stimulation module of the openMINDS metadata framework,
@@ -11,11 +11,11 @@ imports:
 prefixes:
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
-  omi: https://openminds.ebrains.eu
+  omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
 - EphysStimulus:
-    class_uri: https://openminds.ebrains.eu/stimulation/EphysStimulus
+    class_uri: https://openminds.om-i.org/types/EphysStimulus
     description: null
     title: Ephys stimulus
     slots:
@@ -29,14 +29,31 @@ classes:
     - specification
     - type
     slot_usage:
+      deliveredBy:
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: MRICoilUsage
+        - range: MRIScannerUsage
+        - range: SlicingDeviceUsage
+      generatedBy:
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: MRICoilUsage
+        - range: MRIScannerUsage
+        - range: SlicingDeviceUsage
       internalIdentifier:
         required: true
       specification:
         range: Configuration
       type:
+        required: true
         range: ElectricalStimulusType
 - StimulationActivity:
-    class_uri: https://openminds.ebrains.eu/stimulation/StimulationActivity
+    class_uri: https://openminds.om-i.org/types/StimulationActivity
     description: null
     title: Stimulation activity
     slots:
@@ -68,11 +85,12 @@ classes:
         range: DatasetVersion
       output:
         required: true
-        range: SubjectGroupState
+        range: File
       performedBy:
         range: SoftwareAgent
       protocol:
         required: true
+        range: Protocol
       startTime:
         range: string
         any_of:
@@ -80,4 +98,4 @@ classes:
       stimulus:
         required: true
       studyTarget:
-        range: AuditoryStimulusType
+        range: AnatomicalCavity

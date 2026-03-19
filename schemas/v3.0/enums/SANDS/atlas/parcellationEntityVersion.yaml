@@ -1,0 +1,3370 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/ParcellationEntityVersion?format=linkml
+name: openMINDS-enums-ParcellationEntityVersion
+title: OpenMINDS enum for ParcellationEntityVersion
+description: OpenMINDS enum for ParcellationEntityVersion
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ParcellationEntityVersion:
+    enum_uri: https://openminds.ebrains.eu/sands/ParcellationEntityVersion
+    title: Parcellation entity version
+    permissible_values:
+      Area PFt (IPL): {}
+      DG (Hippocampus): {}
+      Area PGp (IPL): {}
+      Subiculum.PreS (Hippocampus): {}
+      Area 5M (SPL): {}
+      Area s24 (sACC): {}
+      Area PFm (IPL): {}
+      Area Fo7 (OFC): {}
+      Area FG2 (FusG): {}
+      Area FG4 (FusG): {}
+      Area 6d1 (PreCG): {}
+      Area 3a (PostCG): {}
+      CM (Amygdala): {}
+      Entorhinal Cortex: {}
+      Interposed Nucleus (Cerebellum): {}
+      Area Ia (Insula): {}
+      Subiculum.Sub (Hippocampus): {}
+      Area PGa (IPL): {}
+      Area Id2 (Insula): {}
+      Area p24ab (pACC): {}
+      Area TE 2.1 (STG): {}
+      Area TI (STG): {}
+      Area STS2 (STS): {}
+      Area 44 (IFG): {}
+      Area hOc6 (POS): {}
+      Area Fo5 (OFC): {}
+      Area 4a (PreCG): {}
+      Area hOc4lp (LOC): {}
+      Area hIP5 (IPS): {}
+      Area hIP6 (IPS): {}
+      Area hIP4 (IPS): {}
+      Area OP2 (POperc): {}
+      Area TE 3 (STG): {}
+      SF (Amygdala): {}
+      Area Fo4 (OFC): {}
+      Area PF (IPL): {}
+      Area TE 1.1 (HESCHL): {}
+      Area 7P (SPL): {}
+      HATA (Hippocampus): {}
+      Area p32 (pACC): {}
+      Area hIP2 (IPS): {}
+      Area PFcm (IPL): {}
+      Area Fp2 (FPole): {}
+      Area 6ma (preSMA, mesial SFG): {}
+      Area 5Ci (SPL): {}
+      Area Id7 (Insula): {}
+      Area TE 1.2 (HESCHL): {}
+      Area PFop (IPL): {}
+      Area Ig1 (Insula): {}
+      CA1 (Hippocampus): {}
+      Area hOc4v (LingG): {}
+      Area TeI (STG): {}
+      Area OP3 (POperc): {}
+      Area hOc3v (LingG): {}
+      Area Fo6 (OFC): {}
+      Area TE 1.0 (HESCHL): {}
+      Area 6mp (SMA, mesial SFG): {}
+      Area hOc4d (Cuneus): {}
+      Area 7PC (SPL): {}
+      Frontal-to-Temporal (GapMap): {}
+      CA3 (Hippocampus): {}
+      Frontal-I (GapMap): {}
+      Area hOc5 (LOC): {}
+      CA2 (Hippocampus): {}
+      Area Id6 (Insula): {}
+      Area Ig3 (Insula): {}
+      Area hIP1 (IPS): {}
+      Area 6d2 (PreCG): {}
+      Area hOc3d (Cuneus): {}
+      Area Ig2 (Insula): {}
+      Area hIP3 (IPS): {}
+      Area hIP8 (IPS): {}
+      Area Id4 (Insula): {}
+      Area hOc1 (V1, 17, CalcS): {}
+      Area Op8 (Frontal Operculum): {}
+      Area Op6 (Frontal Operculum): {}
+      Area 7M (SPL): {}
+      Area Fo2 (OFC): {}
+      Area TE 2.2 (STG): {}
+      Ch 4 (Basal Forebrain): {}
+      Dorsal Dentate Nucleus (Cerebellum): {}
+      Subiculum.PaS (Hippocampus): {}
+      Area 45 (IFG): {}
+      Area hOc4la (LOC): {}
+      Area Id1 (Insula): {}
+      HC-Transsubiculum (Hippocampus): {}
+      Subiculum.ProS (Hippocampus): {}
+      Area 33 (ACC): {}
+      Area Op9 (Frontal Operculum): {}
+      Area Op5 (Frontal Operculum): {}
+      Area Fp1 (FPole): {}
+      IF (Amygdala): {}
+      Area 25 (sACC): {}
+      Area 3b (PostCG): {}
+      Frontal-II (GapMap): {}
+      Area STS1 (STS): {}
+      Ch 123 (Basal Forebrain): {}
+      Area Fo3 (OFC): {}
+      Area p24c (pACC): {}
+      Area Id3 (Insula): {}
+      Area Op7 (Frontal Operculum): {}
+      Area FG3 (FusG): {}
+      Area FG1 (FusG): {}
+      Ventral Dentate Nucleus (Cerebellum): {}
+      Area 2 (PostCS): {}
+      Area Id5 (Insula): {}
+      VTM (Amygdala): {}
+      Frontal-to-Occipital (GapMap: {}
+      Fastigial Nucleus (Cerebellum): {}
+      Temporal-to-Parietal (GapMap): {}
+      Area hPO1 (POS): {}
+      MF (Amygdala): {}
+      Area 4p (PreCG): {}
+      Area Fo1 (OFC): {}
+      Area s32 (sACC): {}
+      Area 1 (PostCG): {}
+      Area hOc2 (V2, 18): {}
+      Area hIP7 (IPS): {}
+      Area OP4 (POperc): {}
+      Area 6d3 (SFS): {}
+      Area 5L (SPL): {}
+      LB (Amygdala): {}
+      Area OP1 (POperc): {}
+      Area 7A (SPL): {}
+      Terminal islands (Basal Forebrain): {}
+      Area MFG1 (MFG): {}
+      LB.La (Amygdala): {}
+      MF.icm (Amygdala): {}
+      IF.ld (Amygdala): {}
+      Area IFS3 (IFS): {}
+      Area 8d1 (SFG): {}
+      Frontal-to-Temporal-I (GapMap): {}
+      Area p24c.pd24cd (pACC): {}
+      Area Ph3 (PhG): {}
+      Area s24.s24a (sACC): {}
+      Area Id10 (Insula): {}
+      Area 8v2 (MFG): {}
+      Area TPJ (STG/SMG): {}
+      AcbM (Medial Accumbens, Ventral Striatum): {}
+      Area Id8 (Insula): {}
+      SF.VCo (Amygdala): {}
+      SF.AHi (Amygdala): {}
+      SF.APir (Amygdala): {}
+      Area Ia3 (Insula): {}
+      Area Id9 (Insula): {}
+      Frontal-to-Temporal-II (GapMap): {}
+      CM.Ce (Amygdala): {}
+      Area p24ab.p24b (pACC): {}
+      Area s24.s24b (sACC): {}
+      FuP (Fundus of Putamen, Ventral Striatum): {}
+      CM.AAA (Amygdala): {}
+      Area p24c.pd24cv (pACC): {}
+      Area IFJ2 (IFS,PreCS): {}
+      Area Ia1 (Insula): {}
+      BST (Bed Nucleus): {}
+      IF.ice (Amygdala): {}
+      LB.Pl (Amygdala): {}
+      CGL (Metathalamus): {}
+      VP (Ventral Pallidum): {}
+      Area p24ab.p24a (pACC): {}
+      Area IFS2 (IFS): {}
+      Area p24c.pv24c (pACC): {}
+      LB.Bl (Amygdala): {}
+      Area SFS2 (SFS): {}
+      Area IFS4 (IFS): {}
+      MF.lm (Amygdala): {}
+      Area IFS1 (IFS): {}
+      FuCd (Fundus of Caudate Nucleus, Ventral Striatum): {}
+      Area SFS1 (SFS): {}
+      IF.iol (Amygdala): {}
+      Tuberculum (Basal Forebrain): {}
+      Area 25.25a (sACC: {}
+      Area IFJ1 (IFS,PreCS): {}
+      LB.Bm (Amygdala): {}
+      CM.Me (Amygdala): {}
+      AcbL (Lateral Accumbens, Ventral Striatum): {}
+      Area MFG2 (MFG): {}
+      Area 8v1 (MFG): {}
+      Area CoS1 (CoS): {}
+      Area Ia2 (Insula): {}
+      Area Ph1 (PhG): {}
+      CGM (Metathalamus): {}
+      Area 25.25p (sACC): {}
+      Area Ph2 (PhG): {}
+      Area 8d2 (SFG): {}
+      STN (Subthalamus): {}
+      spinal nucleus of the trigeminal, oral part, ventrolateral part: {}
+      somatomotor areas, layer 6a: {}
+      pontine reticular nucleus, ventral part: {}
+      dorsal peduncular area: {}
+      orbital area, medial part: {}
+      dorsal longitudinal fascicle: {}
+      taenia tecta, ventral part, layer 1: {}
+      retrosplenial area, lateral agranular part, layer 2/3: {}
+      paramedian reticular nucleus: {}
+      juxtarestiform body: {}
+      orbital area, medial part, layer 5: {}
+      prelimbic area, layer 2: {}
+      copula pyramidis, Purkinje layer: {}
+      cerebrum related: {}
+      rhinal incisure: {}
+      entorhinal area, lateral part: {}
+      dentate gyrus crest, polymorph layer: {}
+      orbital area, medial part, layer 2/3: {}
+      posterior auditory area, layer 4: {}
+      nucleus of Roller: {}
+      corticotectal tract: {}
+      mediomedial posterior visual area: {}
+      agranular insular area, dorsal part, layer 6b: {}
+      striatum ventral region: {}
+      bed nucleus of the accessory olfactory tract: {}
+      lobule IV, granular layer: {}
+      medial forebrain bundle system: {}
+      superior olivary complex: {}
+      lateral group of the dorsal thalamus: {}
+      gracile fascicle: {}
+      hypothalamic lateral zone: {}
+      main olfactory bulb, outer plexiform layer: {}
+      parafascicular nucleus: {}
+      anteromedial visual area, layer 1: {}
+      paraflocculus, Purkinje layer: {}
+      ventral posterolateral nucleus of the thalamus: {}
+      auditory radiation: {}
+      interstitial nucleus of the vestibular nerve: {}
+      red nucleus: {}
+      orbital area, ventral part: {}
+      primary visual area, layer 1: {}
+      abducens nucleus: {}
+      trochlear nerve: {}
+      parasubiculum, layer 1: {}
+      precommissural nucleus: {}
+      posterior auditory area, layer 6b: {}
+      anterodorsal preoptic nucleus: {}
+      cortical amygdalar area, posterior part, lateral zone, layer 3: {}
+      primary somatosensory area, mouth, layer 1: {}
+      fundus of striatum: {}
+      brachium of the superior colliculus: {}
+      gustatory areas, layer 4: {}
+      intermediate acoustic stria: {}
+      somatosensory areas, layer 1: {}
+      laterolateral anterior visual area: {}
+      agranular insular area, posterior part, layer 1: {}
+      paraventricular hypothalamic nucleus, magnocellular division, medial magnocellular part: {}
+      primary somatosensory area, nose, layer 4: {}
+      anteromedial visual area: {}
+      median preoptic nucleus: {}
+      parabrachial nucleus, medial division, external medial part: {}
+      anterior area, layer 6a: {}
+      entorhinal area, lateral part, layer 6a: {}
+      medullary reticular nucleus, ventral part: {}
+      primary somatosensory area: {}
+      spinal nucleus of the trigeminal, oral part: {}
+      dorsal part of the lateral geniculate complex: {}
+      cerebellum related fiber tracts: {}
+      cerebellar cortex: {}
+      endopiriform nucleus, ventral part: {}
+      folium-tuber vermis (VII), Purkinje layer: {}
+      external capsule: {}
+      rostral linear nucleus raphe: {}
+      principal sensory nucleus of the trigeminal: {}
+      laterodorsal tegmental nucleus: {}
+      ventral tegmental decussation: {}
+      vagus nerve: {}
+      paraventricular hypothalamic nucleus, descending division, medial parvicellular part, ventral zone: {}
+      propriohypothalamic pathways, lateral: {}
+      entorhinal area, medial part, dorsal zone, layer 2b: {}
+      anterolateral visual area, layer 6b: {}
+      anterior area, layer 6b: {}
+      field CA3, stratum lucidum: {}
+      nucleus of the optic tract: {}
+      field CA2, pyramidal layer: {}
+      tuberomammillary nucleus, dorsal part: {}
+      terminal nerve: {}
+      columns of the fornix: {}
+      supragenual nucleus: {}
+      inferior colliculus commissure: {}
+      posteromedial visual area, layer 5: {}
+      mammillary peduncle: {}
+      primary auditory area, layer 5: {}
+      basomedial amygdalar nucleus, anterior part: {}
+      induseum griseum: {}
+      ventral auditory area, layer 1: {}
+      superior colliculus, motor related, deep gray layer: {}
+      periventricular hypothalamic nucleus, anterior part: {}
+      ventral spinocerebellar tract: {}
+      taenia tecta, ventral part: {}
+      field CA2, stratum oriens: {}
+      dorsal auditory area, layer 6b: {}
+      dorsal column nuclei: {}
+      lobule V: {}
+      lateral hypothalamic area: {}
+      crossed tectospinal pathway: {}
+      subparaventricular zone: {}
+      primary auditory area: {}
+      periaqueductal gray: {}
+      medial preoptic nucleus, central part: {}
+      medial mammillary nucleus: {}
+      postrhinal area: {}
+      perirhinal area, layer 6b: {}
+      supramammillary decussation: {}
+      basolateral amygdalar nucleus, posterior part: {}
+      lateral visual area, layer 6b: {}
+      nucleus of the brachium of the inferior colliculus: {}
+      root: {}
+      medial amygdalar nucleus, posteroventral part: {}
+      basomedial amygdalar nucleus: {}
+      nucleus of the lateral olfactory tract, molecular layer: {}
+      mediomedial posterior visual area, layer 6a: {}
+      agranular insular area: {}
+      hemispheric regions: {}
+      pons, sensory related: {}
+      field CA1, stratum radiatum: {}
+      doral tegmental decussation: {}
+      agranular insular area, posterior part, layer 2/3: {}
+      orbital area, ventrolateral part, layer 5: {}
+      parabrachial nucleus, lateral division, dorsal lateral part: {}
+      primary visual area: {}
+      pons: {}
+      anterior area, layer 4: {}
+      genu of corpus callosum: {}
+      presubiculum, layer 2: {}
+      nodular fissure: {}
+      central lateral nucleus of the thalamus: {}
+      rostrolateral lateral visual area, layer 4: {}
+      agranular insular area, posterior part, layer 6a: {}
+      lateral septal nucleus, caudal (caudodorsal) part: {}
+      corpus callosum: {}
+      retrohippocampal region: {}
+      ventral premammillary nucleus: {}
+      nucleus of the lateral olfactory tract, layer 3: {}
+      ventral cochlear nucleus: {}
+      postsubiculum: {}
+      corpus callosum, posterior forceps: {}
+      Ammon's horn: {}
+      parabigeminal nucleus: {}
+      supplemental somatosensory area, layer 6a: {}
+      medial pretectal area: {}
+      lobule V, molecular layer: {}
+      lobule IV: {}
+      cuneiform nucleus: {}
+      declive (VI), molecular layer: {}
+      retrosplenial area, ventral part, layer 6a: {}
+      interanterodorsal nucleus of the thalamus: {}
+      posterior parietal association areas, layer 6a: {}
+      mediomedial anterior visual area, layer 6b: {}
+      anterolateral visual area, layer 5: {}
+      magnocellular reticular nucleus: {}
+      periventricular zone: {}
+      agranular insular area, ventral part, layer 5: {}
+      posterior parietal association areas, layer 5: {}
+      rostrolateral area, layer 6b: {}
+      primary auditory area, layer 1: {}
+      lobule V, Purkinje layer: {}
+      primary visual area, layer 5: {}
+      ventral spinothalamic tract: {}
+      agranular insular area, ventral part, layer 1: {}
+      dorsal thalamus related: {}
+      posteromedial visual area: {}
+      dentate gyrus crest, molecular layer: {}
+      intercrural fissure: {}
+      posterior parietal association areas, layer 1: {}
+      superior olivary complex, lateral part: {}
+      mediomedial posterior visual area, layer 1: {}
+      agranular insular area, posterior part, layer 6b: {}
+      suprachiasmatic nucleus: {}
+      interbrain: {}
+      inferior salivatory nucleus: {}
+      bed nuclei of the stria terminalis, posterior division, dorsal nucleus: {}
+      cortical amygdalar area, posterior part, medial zone: {}
+      main olfactory bulb, inner plexiform layer: {}
+      superior vestibular nucleus: {}
+      cuneate fascicle: {}
+      central amygdalar nucleus, medial part: {}
+      posterior amygdalar nucleus: {}
+      main olfactory bulb, mitral layer: {}
+      superior central nucleus raphe, medial part: {}
+      dorsomedial nucleus of the hypothalamus, posterior part: {}
+      medial visual area, layer 2/3: {}
+      entorhinal area, lateral part, layer 2: {}
+      cerebellar peduncles: {}
+      hypoglossal nerve: {}
+      primary auditory area, layer 6a: {}
+      posterior parietal association areas: {}
+      entorhinal area, medial part, dorsal zone, layer 2a: {}
+      anterior cingulate area, ventral part: {}
+      lobules IV-V: {}
+      spinal nucleus of the trigeminal, oral part, caudal dorsomedial part: {}
+      primary somatosensory area, mouth, layer 6a: {}
+      anterior pretectal nucleus: {}
+      orbital area, lateral part, layer 1: {}
+      piriform-amygdalar area: {}
+      supraoptic nucleus: {}
+      anterior olfactory nucleus, layer 1: {}
+      somatosensory areas, layer 6b: {}
+      grooves of the cerebellar cortex: {}
+      dorsal roots: {}
+      substantia nigra, compact part: {}
+      dorsomedial nucleus of the hypothalamus: {}
+      cortical amygdalar area, posterior part, medial zone, layer 3: {}
+      mediomedial posterior visual area,layer 5: {}
+      frontal pole, layer 2/3: {}
+      dorsal part of the lateral geniculate complex, core: {}
+      pallidotegmental fascicle: {}
+      primary somatosensory area, trunk, layer 6a: {}
+      anterior amygdalar area: {}
+      dorsal part of the lateral geniculate complex, shell: {}
+      claustrum: {}
+      gracile nucleus: {}
+      agranular insular area, dorsal part, layer 6a: {}
+      somatomotor areas, layer 2/3: {}
+      subparafascicular area: {}
+      entorhinal area, lateral part, layer 2/3: {}
+      anteromedial visual area, layer 6a: {}
+      retrosplenial area, dorsal part: {}
+      rostrolateral lateral visual area, layer 6a: {}
+      subiculum, dorsal part, pyramidal layer: {}
+      prelimbic area, layer 1: {}
+      ventral posteromedial nucleus of the thalamus, parvicellular part: {}
+      folium-tuber vermis (VII), molecular layer: {}
+      nodulus (X): {}
+      primary somatosensory area, barrel field, layer 6a: {}
+      lingula (I), granular layer: {}
+      propriohypothalamic pathways: {}
+      parataenial nucleus: {}
+      periventricular bundle of the hypothalamus: {}
+      visual areas, layer 5: {}
+      postsubiculum, layer 3: {}
+      principal mammillary tract: {}
+      lateral visual area, layer 5: {}
+      anteromedial nucleus, dorsal part: {}
+      spinovestibular pathway: {}
+      posteromedial visual area, layer 1: {}
+      lateral visual area: {}
+      intermediate reticular nucleus: {}
+      anterior cingulate area, dorsal part: {}
+      orbital area, ventrolateral part, layer 6a: {}
+      primary somatosensory area, barrel field, layer 5: {}
+      field CA3, stratum lacunosum-moleculare: {}
+      rubroreticular tract: {}
+      anterior hypothalamic area: {}
+      trigeminocerebellar tract: {}
+      intralaminar nuclei of the dorsal thalamus: {}
+      propriohypothalamic pathways, dorsal: {}
+      fiber tracts: {}
+      cortical amygdalar area, posterior part, medial zone, layer 2: {}
+      ventral roots: {}
+      dentate gyrus lateral blade, polymorph layer: {}
+      periventricular region: {}
+      posteromedial visual area, layer 4: {}
+      mediodorsal nucleus of the thalamus, lateral part: {}
+      supraoptic commissures, ventral: {}
+      ventral medial nucleus of the thalamus: {}
+      paraventricular hypothalamic nucleus, parvicellular division, medial parvicellular part, dorsal zone: {}
+      pallidum: {}
+      vascular organ of the lamina terminalis: {}
+      ventromedial hypothalamic nucleus, central part: {}
+      spinotectal pathway: {}
+      accessory spinal nerve: {}
+      medial amygdalar nucleus, anterodorsal part: {}
+      parabrachial nucleus, lateral division, ventral lateral part: {}
+      lateral recess: {}
+      cortical subplate: {}
+      retrosplenial area, ventral part, layer 5: {}
+      orbital area, lateral part, layer 6b: {}
+      corpus callosum, anterior forceps: {}
+      dentate gyrus medial blade: {}
+      periventricular hypothalamic nucleus, preoptic part: {}
+      retrosplenial area, ventral part: {}
+      zona incerta: {}
+      primary somatosensory area, trunk: {}
+      piriform-amygdalar area, layers 1-3: {}
+      uvula (IX): {}
+      gustatory areas: {}
+      medial terminal nucleus of the accessory optic tract: {}
+      anteromedial visual area, layer 6b: {}
+      paraventricular nucleus of the thalamus: {}
+      cortical amygdalar area, posterior part, medial zone, layers 1-3: {}
+      perirhinal area, layer 2/3: {}
+      nucleus ambiguus, ventral division: {}
+      trapezoid body: {}
+      lobule II, Purkinje layer: {}
+      primary somatosensory area, nose, layer 1: {}
+      cerebral aqueduct: {}
+      pyramid: {}
+      orbital area, layer 5: {}
+      optic chiasm: {}
+      nucleus z: {}
+      posterior auditory area: {}
+      piriform-amygdalar area, pyramidal layer: {}
+      primary somatosensory area, unassigned, layer 1: {}
+      lingula (I): {}
+      paraventricular hypothalamic nucleus, descending division, lateral parvicellular part: {}
+      oculomotor nerve: {}
+      external cuneate nucleus: {}
+      anterior olfactory nucleus, layer 2: {}
+      lateral spinothalamic tract: {}
+      medial amygdalar nucleus, posterodorsal part: {}
+      perirhinal area, layer 5: {}
+      dorsal peduncular area, layer 6a: {}
+      supplemental somatosensory area, layer 5: {}
+      taenia tecta, dorsal part, layer 2: {}
+      midbrain reticular nucleus, retrorubral area: {}
+      supraoptic commissures, anterior: {}
+      dorsal auditory area, layer 6a: {}
+      optic tract: {}
+      anteromedial visual area, layer 2/3: {}
+      retriculospinal tract, lateral part: {}
+      pedunculopontine nucleus: {}
+      agranular insular area, dorsal part, layer 1: {}
+      diagonal band nucleus: {}
+      primary visual area, layer 6a: {}
+      ventral posterolateral nucleus of the thalamus, parvicellular part: {}
+      gustatory areas, layer 6b: {}
+      facial nerve: {}
+      entorhinal area, medial part, dorsal zone: {}
+      dorsomedial nucleus of the hypothalamus, ventral part: {}
+      edinger-Westphal nucleus: {}
+      optic radiation: {}
+      piriform area: {}
+      ventromedial hypothalamic nucleus: {}
+      primary somatosensory area, upper limb, layer 4: {}
+      rostrolateral lateral visual area: {}
+      posterolateral visual area, layer 6b: {}
+      primary somatosensory area, unassigned: {}
+      subgeniculate nucleus: {}
+      visual areas: {}
+      spinal nucleus of the trigeminal, interpolar part: {}
+      ventral part of the lateral geniculate complex, medial zone: {}
+      tuberomammillary nucleus: {}
+      primary somatosensory area, lower limb, layer 6b: {}
+      tectospinal pathway: {}
+      lateral amygdalar nucleus: {}
+      mediomedial anterior visual area: {}
+      parasubiculum, layer 3: {}
+      olfactory areas: {}
+      bed nuclei of the stria terminalis, anterior division, rhomboid nucleus: {}
+      dentate gyrus medial blade, polymorph layer: {}
+      anterior hypothalamic nucleus, central part: {}
+      dorsal motor nucleus of the vagus nerve: {}
+      dorsal peduncular area, layer 2: {}
+      temporal association areas, layer 4: {}
+      anterior olfactory nucleus, posteroventral part: {}
+      solitary tract: {}
+      anterior area, layer 2/3: {}
+      accessory optic tract: {}
+      midline group of the dorsal thalamus: {}
+      cerebellar commissure: {}
+      orbital area, lateral part, layer 6a: {}
+      superior colliculus, motor related, intermediate gray layer, sublayer b: {}
+      subiculum, ventral part, molecular layer: {}
+      accessory olfactory bulb: {}
+      intermediodorsal nucleus of the thalamus: {}
+      cortical amygdalar area, posterior part, medial zone, layer 1: {}
+      lateral lemniscus: {}
+      entorhinal area, medial part, dorsal zone, layer 5/6: {}
+      retrosplenial area, dorsal part, layer 4: {}
+      primary motor area, layer 1: {}
+      anterior olfactory nucleus: {}
+      paraventricular hypothalamic nucleus, parvicellular division: {}
+      culmen: {}
+      septohippocampal nucleus: {}
+      laterointermediate area, layer 5: {}
+      reticular nucleus of the thalamus: {}
+      Barrington's nucleus: {}
+      spinothalamic tract: {}
+      cortical amygdalar area, posterior part, lateral zone, layer 1: {}
+      major island of Calleja: {}
+      bed nuclei of the stria terminalis, anterior division, ventral nucleus: {}
+      parabrachial nucleus, medial division, medial medial part: {}
+      simple lobule, granular layer: {}
+      dorsal terminal nucleus of the accessory optic tract: {}
+      posterior limiting nucleus of the thalamus: {}
+      midbrain, behavioral state related: {}
+      rubrospinal tract: {}
+      subiculum, ventral part, stratum radiatum: {}
+      supraoptic commissures: {}
+      paraventricular hypothalamic nucleus: {}
+      nigrothalamic fibers: {}
+      prepyramidal fissure: {}
+      medial visual area, layer 4: {}
+      paracentral nucleus: {}
+      subthalamic nucleus: {}
+      ventricular systems: {}
+      supplemental somatosensory area, layer 4: {}
+      postpiriform transition area, layers 1: {}
+      crus 2, Purkinje layer: {}
+      motor nucleus of trigeminal: {}
+      mediomedial posterior visual area, layer 6b: {}
+      spinoreticular pathway: {}
+      accessory abducens nucleus: {}
+      medial geniculate complex, medial part: {}
+      cortical amygdalar area, posterior part, lateral zone: {}
+      parasolitary nucleus: {}
+      dorsal premammillary nucleus: {}
+      secondary motor area, layer 2/3: {}
+      geniculate group, dorsal thalamus: {}
+      dentate gyrus: {}
+      primary visual area, layer 4: {}
+      nucleus of Darkschewitsch: {}
+      midbrain tract of the trigeminal nerve: {}
+      mammilothalmic tract: {}
+      primary visual area, layer 2/3: {}
+      simple fissure: {}
+      retrosplenial area, lateral agranular part: {}
+      parvicellular reticular nucleus: {}
+      central amygdalar nucleus, lateral part: {}
+      posterior auditory area, layer 1: {}
+      bed nuclei of the stria terminalis, posterior division, strial extension: {}
+      nucleus of the solitary tract, gelatinous part: {}
+      pontine central gray: {}
+      retrosplenial area, lateral agranular part, layer 6a: {}
+      intercalated amygdalar nucleus: {}
+      corpus callosum, splenium: {}
+      corticospinal tract: {}
+      anterior cingulate area, dorsal part, layer 1: {}
+      main olfactory bulb, glomerular layer: {}
+      bed nucleus of the anterior commissure: {}
+      retriculospinal tract, medial part: {}
+      primary somatosensory area, mouth, layer 5: {}
+      main olfactory bulb: {}
+      field CA2, stratum lacunosum-moleculare: {}
+      prelimbic area, layer 2/3: {}
+      flocculus, molecular layer: {}
+      paragigantocellular reticular nucleus: {}
+      piriform area, pyramidal layer: {}
+      anterolateral visual area, layer 6a: {}
+      gigantocellular reticular nucleus: {}
+      lateral septal nucleus, ventral part: {}
+      midbrain reticular nucleus, parvicellular part: {}
+      interpeduncular fossa: {}
+      dorsomedial nucleus of the hypothalamus, anterior part: {}
+      prelimbic area, layer 5: {}
+      prosubiculum, ventral part, stratum radiatum: {}
+      medullary reticular nucleus, dorsal part: {}
+      laterointermediate area, layer 2/3: {}
+      nucleus of the lateral lemniscus: {}
+      dorsal hippocampal commissure: {}
+      anterior cingulate area, dorsal part, layer 6b: {}
+      anterior olfactory nucleus, external part: {}
+      secondary motor area: {}
+      lobules IV-V, molecular layer: {}
+      ansiform lobule: {}
+      ventral auditory area, layer 6a: {}
+      retrosplenial area, lateral agranular part, layer 6b: {}
+      taenia tecta, ventral part, layers 1-3: {}
+      lobules IV-V, granular layer: {}
+      entorhinal area, lateral part, layer 6b: {}
+      ansa peduncularis: {}
+      substantia innominata: {}
+      oculomotor nucleus: {}
+      entorhinal area, medial part, ventral zone, layer 5/6: {}
+      pons, motor related: {}
+      ventromedial hypothalamic nucleus, anterior part: {}
+      cortical amygdalar area, anterior part: {}
+      field CA1, stratum lacunosum-moleculare: {}
+      anterior commissure, temporal limb: {}
+      cervicothalamic tract: {}
+      nucleus raphe pontis: {}
+      subparafascicular nucleus, parvicellular part: {}
+      field CA1, stratum oriens: {}
+      secondary motor area, layer 1: {}
+      posterior auditory area, layer 2/3: {}
+      nucleus y: {}
+      dentate gyrus lateral blade: {}
+      posteromedial visual area, layer 6a: {}
+      supplemental somatosensory area, layer 6b: {}
+      laterolateral anterior visual area, layer 1: {}
+      cerebral cortex: {}
+      medial septal nucleus: {}
+      copula pyramidis, granular layer: {}
+      nodulus (X), granular layer: {}
+      anterior cingulate area, dorsal part, layer 2/3: {}
+      precommissural fornix, general: {}
+      bed nuclei of the stria terminalis, anterior division, magnocellular nucleus: {}
+      thalamic peduncles: {}
+      prelimbic area, layer 6a: {}
+      ventrolateral preoptic nucleus: {}
+      posterior parietal association areas, layer 4: {}
+      medial visual area: {}
+      interventricular foramen: {}
+      lateral reticular nucleus, magnocellular part: {}
+      orbital area, ventrolateral part, layer 1: {}
+      nucleus incertus: {}
+      spinocerebellar tract: {}
+      corticorubral tract: {}
+      middle cerebellar peduncle: {}
+      pallidum, caudal region: {}
+      sublaterodorsal nucleus: {}
+      primary somatosensory area, nose, layer 2/3: {}
+      prosubiculum, ventral part: {}
+      visceral area, layer 6a: {}
+      midbrain: {}
+      inferior colliculus, dorsal nucleus: {}
+      laterointermediate area, layer 4: {}
+      anterior cingulate area, ventral part, layer 2/3: {}
+      cortical plate: {}
+      bed nuclei of the stria terminalis, anterior division, anteromedial area: {}
+      declive (VI), Purkinje layer: {}
+      medial septal complex: {}
+      trochlear nerve decussation: {}
+      crus 2, molecular layer: {}
+      ventromedial hypothalamic nucleus, dorsomedial part: {}
+      medial group of the dorsal thalamus: {}
+      temporal association areas, layer 6b: {}
+      primary somatosensory area, nose, layer 5: {}
+      orbital area, layer 6b: {}
+      ventral auditory area, layer 5: {}
+      efferent vestibular nucleus: {}
+      parabrachial nucleus, lateral division: {}
+      peripeduncular nucleus: {}
+      midbrain, motor related: {}
+      medial amygdalar nucleus, anteroventral part: {}
+      basic cell groups and regions: {}
+      piriform-amygdalar area, molecular layer: {}
+      cuneocerebellar tract: {}
+      field CA2: {}
+      rostrolateral area, layer 2/3: {}
+      posterodorsal preoptic nucleus: {}
+      entorhinal area, medial part, ventral zone: {}
+      median eminence: {}
+      retrosplenial area, ventral part, layer 6b: {}
+      primary somatosensory area, nose, layer 6a: {}
+      posteromedial visual area, layer 2/3: {}
+      basolateral amygdalar nucleus: {}
+      nodulus (X), Purkinje layer: {}
+      prelimbic area, layer 6b: {}
+      medial forebrain bundle: {}
+      anterior tegmental nucleus: {}
+      paraventricular hypothalamic nucleus, parvicellular division, anterior parvicellular part: {}
+      thalamus, sensory-motor cortex related: {}
+      triangular nucleus of septum: {}
+      superior colliculus, sensory related: {}
+      posterolateral visual area, layer 4: {}
+      cortical amygdalar area, posterior part: {}
+      third ventricle: {}
+      accessory olfactory tract: {}
+      extrapyramidal fiber systems: {}
+      primary somatosensory area, barrel field, layer 6b: {}
+      postsubiculum, layer 2: {}
+      temporal association areas, layer 6a: {}
+      declive (VI), granular layer: {}
+      rostrolateral area, layer 4: {}
+      supplemental somatosensory area: {}
+      cerebellar cortex, Purkinje layer: {}
+      primary motor area, layer 6a: {}
+      efferent cochleovestibular bundle: {}
+      lateral forebrain bundle system: {}
+      inferior colliculus, central nucleus: {}
+      anterior cingulate area, layer 6a: {}
+      nucleus intercalatus: {}
+      central canal, spinal cord/medulla: {}
+      cochlear nucleus, subpedunclular granular region: {}
+      alveus: {}
+      dorsal peduncular area, layer 5: {}
+      primary somatosensory area, upper limb, layer 2/3: {}
+      entorhinal area, lateral part, layer 3: {}
+      rostrolateral lateral visual area,layer 5: {}
+      nucleus of the solitary tract, medial part: {}
+      anterior olfactory nucleus, medial part: {}
+      posterior hypothalamic nucleus: {}
+      periventricular bundle of the thalamus: {}
+      precommissural fornix diagonal band: {}
+      pontine reticular nucleus: {}
+      optic nerve: {}
+      paraventricular hypothalamic nucleus, magnocellular division: {}
+      nucleus x: {}
+      spinohypothalamic pathway: {}
+      lobule II, granular layer: {}
+      tectothalamic pathway: {}
+      lobule IV, molecular layer: {}
+      uvula (IX), Purkinje layer: {}
+      orbital area, ventrolateral part: {}
+      secondary fissure: {}
+      nucleus raphe pallidus: {}
+      ventral tegmental area: {}
+      medial vestibular nucleus: {}
+      primary somatosensory area, upper limb: {}
+      pons, behavioral state related: {}
+      taenia tecta: {}
+      nucleus ambiguus: {}
+      septofimbrial nucleus: {}
+      primary somatosensory area, trunk, layer 5: {}
+      perihypoglossal nuclei: {}
+      somatosensory areas, layer 6a: {}
+      superior colliculus, motor related, intermediate gray layer, sublayer a: {}
+      nucleus of the solitary tract, commissural part: {}
+      primary somatosensory area, layer 4: {}
+      piriform area, layers 1-3: {}
+      spino-olivary pathway: {}
+      posterior auditory area, layer 5: {}
+      laterolateral anterior visual area, layer 6a: {}
+      mediomedial posterior visual area, layer 4: {}
+      accessory olfactory bulb, glomerular layer: {}
+      primary somatosensory area, mouth: {}
+      lobule IV, Purkinje layer: {}
+      entorhinal area, lateral part, layer 4/5: {}
+      laterointermediate area: {}
+      flocculus, granular layer: {}
+      entorhinal area, lateral part, layer 4: {}
+      superior central nucleus raphe, lateral part: {}
+      subiculum, ventral part, pyramidal layer: {}
+      postpiriform transition area, layers 1-3: {}
+      supraoptic commissures, dorsal: {}
+      prosubiculum, dorsal part, pyramidal layer: {}
+      anterolateral visual area, layer 4: {}
+      ventral part of the lateral geniculate complex, lateral zone: {}
+      lobule III, granular layer: {}
+      visceral area, layer 2/3: {}
+      ventral auditory area: {}
+      medulla: {}
+      pineal stalk: {}
+      islands of Calleja: {}
+      postcommissural fornix: {}
+      paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part, medial zone: {}
+      prosubiculum, ventral part, pyramidal layer: {}
+      locus ceruleus: {}
+      lateral visual area, layer 1: {}
+      nucleus of the lateral olfactory tract: {}
+      agranular insular area, dorsal part, layer 2/3: {}
+      nucleus of the trapezoid body: {}
+      primary somatosensory area, lower limb, layer 1: {}
+      anteroventral nucleus of thalamus: {}
+      perirhinal area: {}
+      lobule III, Purkinje layer: {}
+      nucleus of the solitary tract: {}
+      grooves of the cerebral cortex: {}
+      inferior cerebellar peduncle: {}
+      supramammillary nucleus: {}
+      cochlear nerve: {}
+      dentate gyrus, polymorph layer: {}
+      cerebrum: {}
+      ectorhinal area/layer 6b: {}
+      secondary motor area, layer 6b: {}
+      primary somatosensory area, lower limb, layer 4: {}
+      corpus callosum, body: {}
+      facial motor nucleus: {}
+      medial habenula: {}
+      temporal association areas, layer 2/3: {}
+      field CA3: {}
+      posterior complex of the thalamus: {}
+      superior olivary complex, medial part: {}
+      visceral area, layer 4: {}
+      entorhinal area, medial part, ventral zone, layer 2: {}
+      direct tectospinal pathway: {}
+      accessory facial motor nucleus: {}
+      orbital area, lateral part: {}
+      paragigantocellular reticular nucleus, lateral part: {}
+      rostrolateral lateral visual area, layer 6b: {}
+      agranular insular area, posterior part: {}
+      vestibular nuclei: {}
+      lingula (I), molecular layer: {}
+      dorsal peduncular area, layer 2/3: {}
+      subiculum, dorsal part, stratum radiatum: {}
+      ventral hippocampal commissure: {}
+      paraventricular hypothalamic nucleus, descending division: {}
+      vestibular nerve: {}
+      bed nuclei of the stria terminalis, posterior division, interfascicular nucleus: {}
+      primary somatosensory area, barrel field: {}
+      cerebellar cortex, granular layer: {}
+      anterior olfactory nucleus, dorsal part: {}
+      bed nuclei of the stria terminalis, anterior division, dorsomedial nucleus: {}
+      entorhinal area, medial part, dorsal zone, layer 1: {}
+      paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part: {}
+      parabrachial nucleus, medial division, ventral medial part: {}
+      dentate gyrus crest, granule cell layer: {}
+      retina: {}
+      parapyramidal nucleus, deep part: {}
+      presubiculum, layer 3: {}
+      cerebellum: {}
+      corpus callosum, rostrum: {}
+      anterior area: {}
+      anteroventral preoptic nucleus: {}
+      preoptic commissure: {}
+      orbital area, medial part, layer 1: {}
+      prosubiculum, dorsal part, molecular layer: {}
+      epithalamus related: {}
+      midbrain reticular nucleus: {}
+      lobule V, granular layer: {}
+      dorsal acoustic stria: {}
+      copula pyramidis: {}
+      hypothalamohypophysial tract: {}
+      olfactory nerve: {}
+      supratrigeminal nucleus: {}
+      suprachiasmatic preoptic nucleus: {}
+      medulla, behavioral state related: {}
+      parasubiculum, layer 2: {}
+      dentate gyrus, subgranular zone: {}
+      dentate gyrus medial blade, molecular layer: {}
+      ansoparamedian fissure: {}
+      periventricular hypothalamic nucleus, intermediate part: {}
+      anterodorsal nucleus: {}
+      folium-tuber vermis (VII): {}
+      magnocellular nucleus: {}
+      rhinal fissure: {}
+      pontine gray: {}
+      accessory supraoptic group: {}
+      midbrain raphe nuclei: {}
+      midbrain, sensory related: {}
+      gustatory areas, layer 1: {}
+      nucleus ambiguus, dorsal division: {}
+      posterior superior fissure: {}
+      mediomedial anterior visual area, layer 6a: {}
+      vestibulocochlear nerve: {}
+      retrosplenial area, dorsal part, layer 5: {}
+      copula pyramidis, molecular layer: {}
+      rostrolateral lateral visual area, layer 2/3: {}
+      retrosplenial area, lateral agranular part, layer 1: {}
+      pyramus (VIII): {}
+      flocculus, Purkinje layer: {}
+      cortical amygdalar area: {}
+      ventral auditory area, layer 2/3: {}
+      agranular insular area, ventral part: {}
+      nucleus accumbens: {}
+      prosubiculum, ventral part, molecular layer: {}
+      pallidum, ventral region: {}
+      efferent cochlear group: {}
+      perirhinal area, layer 6a: {}
+      dorsal part of the lateral geniculate complex, ipsilateral zone: {}
+      internal capsule: {}
+      ectorhinal area/layer 5: {}
+      dorsal auditory area, layer 2/3: {}
+      midbrain reticular nucleus, magnocellular part: {}
+      dentate nucleus: {}
+      anterior cingulate area, ventral part, layer 1: {}
+      mammillotegmental tract: {}
+      orbital area, layer 1: {}
+      dorsal tegmental nucleus: {}
+      primary somatosensory area, trunk, layer 4: {}
+      primary somatosensory area, nose, layer 6b: {}
+      postrhinal area, layer 4: {}
+      habenular commissure: {}
+      anterior olfactory nucleus, lateral part: {}
+      choroid plexus: {}
+      anterolateral visual area, layer 1: {}
+      orbital area: {}
+      primary somatosensory area, nose: {}
+      medial preoptic area: {}
+      postrhinal area, layer 2/3: {}
+      midbrain trigeminal nucleus: {}
+      nucleus sagulum: {}
+      parabrachial nucleus: {}
+      cerebellar cortex, molecular layer: {}
+      central tegmental bundle: {}
+      superior colliculus, motor related, intermediate gray layer: {}
+      cortical amygdalar area, anterior part, layer 3: {}
+      nodulus (X), molecular layer: {}
+      ectorhinal area: {}
+      medial amygdalar nucleus, posterodorsal part, sublayer a: {}
+      posterolateral visual area, layer 5: {}
+      ventral posteromedial nucleus of the thalamus: {}
+      olivary pretectal nucleus: {}
+      internal medullary lamina of the thalamus: {}
+      agranular insular area, ventral part, layer 6a: {}
+      interposed nucleus: {}
+      bed nuclei of the stria terminalis, posterior division: {}
+      piriform area, molecular layer: {}
+      preparasubthalamic nucleus: {}
+      simple lobule: {}
+      precentral fissure: {}
+      hippocampal formation: {}
+      retrosplenial area, ventral part, layer 1: {}
+      olfactory tubercle, layers 1-3: {}
+      visceral area, layer 5: {}
+      crus 2: {}
+      choroid fissure: {}
+      superior cerebellar peduncle decussation: {}
+      area postrema: {}
+      lateral terminal nucleus of the accessory optic tract: {}
+      anterior cingulate area, layer 5: {}
+      posterior parietal association areas, layer 2/3: {}
+      stria terminalis: {}
+      frontal pole, layer 1: {}
+      interstitial nucleus of Cajal: {}
+      posterolateral visual area, layer 6a: {}
+      anterolateral visual area: {}
+      primary motor area, layer 5: {}
+      primary auditory area, layer 2/3: {}
+      hippocampal fissure: {}
+      olfactory tubercle: {}
+      cochlear nuclei: {}
+      superior central nucleus raphe: {}
+      cortical amygdalar area, posterior part, lateral zone, layer 2: {}
+      primary somatosensory area, upper limb, layer 5: {}
+      rostrolateral area, layer 1: {}
+      nucleus of the solitary tract, central part: {}
+      visual areas, layer 4: {}
+      entorhinal area, medial part, dorsal zone, layer 2: {}
+      endopiriform nucleus, dorsal part: {}
+      fourth ventricle: {}
+      primary somatosensory area, trunk, layer 2/3: {}
+      corpus callosum, extreme capsule: {}
+      supplemental somatosensory area, layer 2/3: {}
+      medial lemniscus: {}
+      interpeduncular nucleus: {}
+      internal arcuate fibers: {}
+      bed nuclei of the stria terminalis, posterior division, transverse nucleus: {}
+      visual areas, layer 6b: {}
+      taenia tecta, dorsal part, layer 3: {}
+      posteromedial visual area, layer 6b: {}
+      vermal regions: {}
+      cortical amygdalar area, posterior part, lateral zone, layers 1-2: {}
+      infralimbic area, layer 2/3: {}
+      pyramidal decussation: {}
+      infralimbic area, layer 6a: {}
+      orbital area, medial part, layer 2: {}
+      olivocerebellar tract: {}
+      cingulum bundle: {}
+      medial visual area, layer 1: {}
+      primary fissure: {}
+      entorhinal area, lateral part, layer 2a: {}
+      nucleus of reunions: {}
+      superior colliculus, motor related, intermediate gray layer, sublayer c: {}
+      superior cerebelar peduncles: {}
+      dentate gyrus lateral blade, granule cell layer: {}
+      entorhinal area, medial part, ventral zone, layer 1: {}
+      taenia tecta, ventral part, layer 3: {}
+      crus 1, molecular layer: {}
+      spinal nucleus of the trigeminal, oral part, middle dorsomedial part, ventral zone: {}
+      medial amygdalar nucleus: {}
+      olfactory tubercle, polymorph layer: {}
+      parabrachial nucleus, medial division: {}
+      superior salivatory nucleus: {}
+      lobule II: {}
+      paramedian lobule: {}
+      rostrolateral area, layer 6a: {}
+      prosubiculum, dorsal part, stratum radiatum: {}
+      dopaminergic A13 group: {}
+      primary auditory area, layer 4: {}
+      pallidothalmic pathway: {}
+      middle thalamic commissure: {}
+      infralimbic area, layer 5: {}
+      nucleus of the lateral lemniscus, ventral part: {}
+      prosubiculum: {}
+      parabrachial nucleus, lateral division, external lateral part: {}
+      dorsal tegmental tract: {}
+      medial corticohypothalmic tract: {}
+      thalamus related: {}
+      thalamus: {}
+      paramedian lobule, Purkinje layer: {}
+      propriohypothalamic pathways, medial: {}
+      primary somatosensory area, unassigned, layer 4: {}
+      primary somatosensory area, unassigned, layer 2/3: {}
+      retrosplenial area, dorsal part, layer 6a: {}
+      hypoglossal nucleus: {}
+      tegmental reticular nucleus: {}
+      globus pallidus, external segment: {}
+      spinal nucleus of the trigeminal, caudal part: {}
+      nucleus circularis: {}
+      superior colliculus, motor related: {}
+      mediomedial anterior visual area, layer 1: {}
+      subependymal zone: {}
+      taenia tecta, dorsal part, layers 1-4: {}
+      anterior hypothalamic nucleus, dorsal part: {}
+      postrhinal area, layer 6a: {}
+      somatosensory areas, layer 2/3: {}
+      laterointermediate area, layer 6b: {}
+      bed nuclei of the stria terminalis, anterior division, anterolateral area: {}
+      postsubiculum, layer 1: {}
+      grooves: {}
+      retrosplenial area, ventral part, layer 2/3: {}
+      inferior colliculus, external nucleus: {}
+      rostrolateral area, layer 5: {}
+      anterior cingulate area, ventral part, layer 5: {}
+      hypothalamus related: {}
+      gustatory areas, layer 2/3: {}
+      primary somatosensory area, mouth, layer 6b: {}
+      glossopharyngeal nerve: {}
+      ventral commissure of the spinal cord: {}
+      posterolateral fissure: {}
+      trigeminal nerve: {}
+      superior colliculus, zonal layer: {}
+      pyramus (VIII), granular layer: {}
+      primary somatosensory area, lower limb, layer 6a: {}
+      primary somatosensory area, unassigned, layer 6b: {}
+      lateral vestibular nucleus: {}
+      field CA1: {}
+      field CA1, pyramidal layer: {}
+      dorsal auditory area, layer 1: {}
+      anterior cingulate area, ventral part, 6b: {}
+      interfascicular nucleus raphe: {}
+      laterointermediate area, layer 6a: {}
+      nucleus of the posterior commissure: {}
+      gustatory areas, layer 5: {}
+      inferior olivary complex: {}
+      dentate gyrus, granule cell layer: {}
+      main olfactory bulb, granule layer: {}
+      angular path: {}
+      pallidum, dorsal region: {}
+      somatosensory areas, layer 4: {}
+      medial geniculate complex, ventral part: {}
+      hypothalamic medial zone: {}
+      spinal vestibular nucleus: {}
+      agranular insular area, ventral part, layer 2/3: {}
+      parasubthalamic nucleus: {}
+      external medullary lamina of the thalamus: {}
+      anterior hypothalamic nucleus, posterior part: {}
+      agranular insular area, posterior part, layer 5: {}
+      anterolateral visual area, layer 2/3: {}
+      paramedian sulcus: {}
+      striatum: {}
+      paraflocculus, granular layer: {}
+      entorhinal area, medial part, dorsal zone, layer 5: {}
+      dorsal spinocerebellar tract: {}
+      lateral dorsal nucleus of thalamus: {}
+      anterior area, layer 1: {}
+      laterolateral anterior visual area,layer 5: {}
+      primary somatosensory area, upper limb, layer 6b: {}
+      vomeronasal nerve: {}
+      olfactory tubercle, molecular layer: {}
+      postpiriform transition area, layers 2: {}
+      cortical amygdalar area, posterior part, lateral zone, layers 1-3: {}
+      pretectal region: {}
+      orbital area, medial part, layer 6a: {}
+      tuberomammillary nucleus, ventral part: {}
+      brachium of the inferior colliculus: {}
+      medullary reticular nucleus: {}
+      infralimbic area, layer 6b: {}
+      perirhinal area, layer 1: {}
+      posterior auditory area, layer 6a: {}
+      orbital area, layer 6a: {}
+      lobule II, molecular layer: {}
+      accessory olfactory bulb, mitral layer: {}
+      arcuate hypothalamic nucleus: {}
+      lateral reticular nucleus, parvicellular part: {}
+      pontine reticular nucleus, caudal part: {}
+      crus 1, Purkinje layer: {}
+      posterior parietal association areas, layer 6b: {}
+      abducens nerve: {}
+      lateral habenula: {}
+      amygdalar capsule: {}
+      ectorhinal area/layer 6a: {}
+      temporal association areas: {}
+      primary somatosensory area, lower limb: {}
+      medial mammillary nucleus, median part: {}
+      ectorhinal area/layer 2/3: {}
+      hindbrain: {}
+      linear nucleus of the medulla: {}
+      retrosplenial area, dorsal part, layer 2/3: {}
+      basomedial amygdalar nucleus, posterior part: {}
+      dorsal commissure of the spinal cord: {}
+      secondary motor area, layer 5: {}
+      retriculospinal tract: {}
+      superior colliculus, motor related, intermediate white layer: {}
+      inferior colliculus: {}
+      lateral preoptic area: {}
+      entorhinal area, medial part, ventral zone, layer 3: {}
+      medulla, motor related: {}
+      lateral visual area, layer 2/3: {}
+      medial visual area,layer 5: {}
+      retrochiasmatic area: {}
+      periventricular hypothalamic nucleus, posterior part: {}
+      laterointermediate area, layer 1: {}
+      substantia nigra, lateral part: {}
+      presubiculum: {}
+      nigrostriatal tract: {}
+      dorsal nucleus raphe: {}
+      piriform area, polymorph layer: {}
+      primary somatosensory area, mouth, layer 4: {}
+      secondary motor area, layer 6a: {}
+      anterior cingulate area, dorsal part, layer 5: {}
+      motor root of the trigeminal nerve: {}
+      intermediate nerve: {}
+      primary somatosensory area, upper limb, layer 6a: {}
+      posterolateral visual area, layer 1: {}
+      intergeniculate leaflet of the lateral geniculate complex: {}
+      bulbocerebellar tract: {}
+      retrosplenial area, ventral part, layer 2: {}
+      commissural branch of stria terminalis: {}
+      somatomotor areas, layer 5: {}
+      geniculate group, ventral thalamus: {}
+      medial amygdalar nucleus, posterodorsal part, sublayer b: {}
+      central linear nucleus raphe: {}
+      subiculum, dorsal part: {}
+      posterolateral visual area, layer 2/3: {}
+      epithalamus: {}
+      spinal nucleus of the trigeminal, oral part, middle dorsomedial part, dorsal zone: {}
+      entorhinal area, lateral part, layer 2b: {}
+      mediomedial posterior visual area, layer 2/3: {}
+      infralimbic area: {}
+      parasubiculum: {}
+      ventral posterior complex of the thalamus: {}
+      superior olivary complex, periolivary region: {}
+      rostrolateral lateral visual area, layer 1: {}
+      corticobulbar tract: {}
+      central medial nucleus of the thalamus: {}
+      primary somatosensory area, trunk, layer 1: {}
+      visceral area, layer 1: {}
+      paraventricular hypothalamic nucleus, parvicellular division, periventricular part: {}
+      parastrial nucleus: {}
+      pyramus (VIII), Purkinje layer: {}
+      paraventricular hypothalamic nucleus, magnocellular division, anterior magnocellular part: {}
+      bed nuclei of the stria terminalis, anterior division, oval nucleus: {}
+      visual areas, layer 2/3: {}
+      nucleus of the lateral lemniscus, horizontal part: {}
+      lateral septal nucleus, rostral (rostroventral) part: {}
+      retrosplenial area, dorsal part, layer 6b: {}
+      lateral tegmental nucleus: {}
+      ectorhinal area/layer 1: {}
+      striatum-like amygdalar nuclei: {}
+      dorsal limb: {}
+      somatomotor areas, layer 1: {}
+      anteromedial visual area, layer 5: {}
+      crus 2, granular layer: {}
+      simple lobule, Purkinje layer: {}
+      nucleus raphe obscurus: {}
+      dorsolateral fascicle: {}
+      somatomotor areas, layer 6b: {}
+      interanteromedial nucleus of the thalamus: {}
+      subceruleus nucleus: {}
+      somatomotor areas: {}
+      nucleus of the solitary tract, lateral part: {}
+      anterior hypothalamic nucleus: {}
+      medial longitudinal fascicle: {}
+      somatosensory areas: {}
+      anterior area, layer 5: {}
+      anteromedial nucleus, ventral part: {}
+      central lobule: {}
+      thalamus, polymodal association cortex related: {}
+      infralimbic area, layer 2: {}
+      superior colliculus, motor related, deep white layer: {}
+      primary somatosensory area, layer 5: {}
+      subparafascicular nucleus, magnocellular part: {}
+      Koelliker-Fuse subnucleus: {}
+      lateral visual area, layer 4: {}
+      arbor vitae: {}
+      isocortex: {}
+      mediodorsal nucleus of the thalamus, central part: {}
+      anteromedial visual area, layer 4: {}
+      frontal pole, cerebral cortex: {}
+      taenia tecta, dorsal part, layer 4: {}
+      striatum dorsal region: {}
+      ventral group of the dorsal thalamus: {}
+      cerebellar nuclei: {}
+      dorsal peduncular area, layer 1: {}
+      taenia tecta, ventral part, layer 2: {}
+      subiculum, dorsal part, molecular layer: {}
+      fimbria: {}
+      fornix system: {}
+      paraventricular hypothalamic nucleus, descending division, forniceal part: {}
+      anterior cingulate area: {}
+      folium-tuber vermis (VII), granular layer: {}
+      uvula (IX), granular layer: {}
+      orbital area, ventrolateral part, layer 2/3: {}
+      flocculus: {}
+      submedial nucleus of the thalamus: {}
+      ventral part of the lateral geniculate complex: {}
+      nucleus raphe magnus: {}
+      mammillary body: {}
+      lateral olfactory tract, general: {}
+      crus 1: {}
+      cortical amygdalar area, posterior part, medial zone, layers 1-2: {}
+      declive (VI): {}
+      paramedian lobule, molecular layer: {}
+      sensory root of the trigeminal nerve: {}
+      pineal body: {}
+      dorsal auditory area: {}
+      parafloccular sulcus: {}
+      subiculum, ventral part: {}
+      nucleus prepositus: {}
+      corticopontine tract: {}
+      postpiriform transition area, layers 3: {}
+      entorhinal area, lateral part, layer 5/6: {}
+      dorsal auditory area, layer 5: {}
+      anterior commissure, olfactory limb: {}
+      visceral area, layer 6b: {}
+      hippocampal commissures: {}
+      mediodorsal nucleus of thalamus: {}
+      lateral reticular nucleus: {}
+      cerebal peduncle: {}
+      mammillary related: {}
+      lateral septal complex: {}
+      medial preoptic nucleus: {}
+      cerebral nuclei related: {}
+      dorsal cochlear nucleus: {}
+      spinal nucleus of the trigeminal, oral part, rostral dorsomedial part: {}
+      medial geniculate complex, dorsal part: {}
+      medial visual area, layer 6b: {}
+      anterior cingulate area, layer 1: {}
+      superior colliculus commissure: {}
+      subthalamic fascicle: {}
+      superior colliculus, optic layer: {}
+      bed nuclei of the stria terminalis, anterior division, fusiform nucleus: {}
+      perireunensis nucleus: {}
+      temporal association areas, layer 1: {}
+      entorhinal area, lateral part, layer 5: {}
+      primary somatosensory area, upper limb, layer 1: {}
+      postpiriform transition area: {}
+      taenia tecta, dorsal part, layer 1: {}
+      corticospinal tract, crossed: {}
+      retrosplenial area: {}
+      somatosensory areas, layer 5: {}
+      lobules IV-V, Purkinje layer: {}
+      medulla, sensory related: {}
+      fastigial nucleus: {}
+      visceral area: {}
+      olfactory nerve layer of main olfactory bulb: {}
+      retrosplenial area, lateral agranular part, layer 5: {}
+      hypothalamus: {}
+      entorhinal area: {}
+      posterior pretectal nucleus: {}
+      medial geniculate complex: {}
+      paraflocculus, molecular layer: {}
+      ventral auditory area, layer 6b: {}
+      spinocervical tract: {}
+      anteromedial nucleus: {}
+      parapyramidal nucleus: {}
+      dorsal fornix: {}
+      primary motor area: {}
+      medial preoptic nucleus, medial part: {}
+      supramammillary nucleus, lateral part: {}
+      corticospinal tract, uncrossed: {}
+      dorsal auditory area, layer 4: {}
+      perforant path: {}
+      paragigantocellular reticular nucleus, dorsal part: {}
+      spinotelenchephalic pathway: {}
+      fields of Forel: {}
+      agranular insular area, dorsal part: {}
+      mediomedial anterior visual area,layer 5: {}
+      agranular insular area, dorsal part, layer 5: {}
+      premammillary commissure: {}
+      ventromedial hypothalamic nucleus, ventrolateral part: {}
+      midbrain related: {}
+      dorsal column: {}
+      primary somatosensory area, mouth, layer 2/3: {}
+      longitudinal association bundle: {}
+      paraflocculus: {}
+      primary somatosensory area, layer 6b: {}
+      spinal tract of the trigeminal nerve: {}
+      midbrain reticular nucleus, magnocellular part, general: {}
+      infralimbic area, layer 1: {}
+      endorhinal groove: {}
+      entorhinal area, medial part, dorsal zone, layer 3: {}
+      genu of the facial nerve: {}
+      vestibulospinal pathway: {}
+      olfactory tubercle, pyramidal layer: {}
+      primary somatosensory area, barrel field, layer 2/3: {}
+      pyramus (VIII), molecular layer: {}
+      preculminate fissure: {}
+      intraparafloccular fissure: {}
+      anterior cingulate area, dorsal part, layer 6a: {}
+      laterolateral anterior visual area, layer 6b: {}
+      suprageniculate nucleus: {}
+      accessory olfactory bulb, granular layer: {}
+      ventral tegmental nucleus: {}
+      dentate gyrus lateral blade, molecular layer: {}
+      field CA3, stratum radiatum: {}
+      caudoputamen: {}
+      supra-callosal cerebral white matter: {}
+      posterior commissure: {}
+      entorhinal area, medial part, dorsal zone, layer 4: {}
+      ventral anterior-lateral complex of the thalamus: {}
+      lateral olfactory tract, body: {}
+      bed nuclei of the stria terminalis, anterior division: {}
+      primary somatosensory area, layer 2/3: {}
+      cranial nerves: {}
+      basolateral amygdalar nucleus, anterior part: {}
+      primary somatosensory area, layer 1: {}
+      anterior cingulate area, layer 6b: {}
+      entorhinal area, medial part, dorsal zone, layer 6: {}
+      reticulocerebellar tract: {}
+      primary somatosensory area, lower limb, layer 2/3: {}
+      piriform-amygdalar area, polymorph layer: {}
+      nucleus of the lateral olfactory tract, layers 1-3: {}
+      laterolateral anterior visual area, layer 2/3: {}
+      crus 1, granular layer: {}
+      cerebral nuclei: {}
+      lobule III, molecular layer: {}
+      orbital area, lateral part, layer 2/3: {}
+      anterior cingulate area, layer 2/3: {}
+      trochlear nucleus: {}
+      lateral visual area, layer 6a: {}
+      presubiculum, layer 1: {}
+      primary somatosensory area, lower limb, layer 5: {}
+      ventrolateral hypothalamic tract: {}
+      visual areas, layer 1: {}
+      substantia nigra, reticular part: {}
+      orbital area, lateral part, layer 5: {}
+      field CA3, stratum oriens: {}
+      primary motor area, layer 6b: {}
+      infracerebellar nucleus: {}
+      fasciculus retroflexus: {}
+      tuberal nucleus: {}
+      postrhinal area, layer 1: {}
+      lateral septal nucleus: {}
+      parabrachial nucleus, lateral division, central lateral part: {}
+      primary somatosensory area, barrel field, layer 1: {}
+      anterior group of the dorsal thalamus: {}
+      simple lobule, molecular layer: {}
+      bed nuclei of the stria terminalis: {}
+      nucleus of the lateral lemniscus, dorsal part: {}
+      ventral auditory area, layer 4: {}
+      uvula (IX), molecular layer: {}
+      orbital area, ventrolateral part, layer 6b: {}
+      cortical amygdalar area, anterior part, layer 1: {}
+      area prostriata: {}
+      gustatory areas, layer 6a: {}
+      striatonigral pathway: {}
+      prelimbic area: {}
+      dentate gyrus medial blade, granule cell layer: {}
+      pallidum, medial region: {}
+      entorhinal area, lateral part, layer 1: {}
+      lingula (I), Purkinje layer: {}
+      subparafascicular nucleus: {}
+      primary visual area, layer 6b: {}
+      layer 6b, isocortex: {}
+      mediodorsal nucleus of the thalamus, medial part: {}
+      mediomedial anterior visual area, layer 2/3: {}
+      auditory areas: {}
+      brain stem: {}
+      taenia tecta, dorsal part: {}
+      central amygdalar nucleus: {}
+      central amygdalar nucleus, capsular part: {}
+      subiculum: {}
+      orbital area, layer 2/3: {}
+      cuneate nucleus: {}
+      dentate gyrus, molecular layer: {}
+      primary somatosensory area, layer 6a: {}
+      lateral ventricle: {}
+      basolateral amygdalar nucleus, ventral part: {}
+      supramammillary nucleus, medial part: {}
+      propriohypothalamic pathways, ventral: {}
+      stria medullaris: {}
+      lateral mammillary nucleus: {}
+      field CA3, pyramidal layer: {}
+      endopiriform nucleus: {}
+      anteroventral periventricular nucleus: {}
+      lateral posterior nucleus of the thalamus: {}
+      posterolateral visual area: {}
+      primary somatosensory area, barrel field, layer 4: {}
+      postrhinal area, layer 6b: {}
+      entorhinal area, medial part, ventral zone, layer 4: {}
+      laterolateral anterior visual area, layer 4: {}
+      visual areas, layer 6a: {}
+      medial visual area, layer 6a: {}
+      primary somatosensory area, unassigned, layer 5: {}
+      postrhinal area, layer 5: {}
+      retrosplenial area, dorsal part, layer 1: {}
+      supplemental somatosensory area, layer 1: {}
+      primary somatosensory area, unassigned, layer 6a: {}
+      rhomboid nucleus: {}
+      subfornical organ: {}
+      temporal association areas, layer 5: {}
+      agranular insular area, ventral part, layer 6b: {}
+      hippocampal region: {}
+      cortical amygdalar area, anterior part, layer 2: {}
+      parapyramidal nucleus, superficial part: {}
+      medial preoptic nucleus, lateral part: {}
+      nucleus of the lateral olfactory tract, pyramidal layer: {}
+      parabrachial nucleus, lateral division, superior lateral part: {}
+      bed nuclei of the stria terminalis, anterior division, juxtacapsular nucleus: {}
+      fasciculus proprius: {}
+      fasciola cinerea: {}
+      anterior cingulate area, ventral part, 6a: {}
+      field CA2, stratum radiatum: {}
+      anterior hypothalamic nucleus, anterior part: {}
+      superior colliculus, superficial gray layer: {}
+      globus pallidus, internal segment: {}
+      rhinocele: {}
+      primary somatosensory area, trunk, layer 6b: {}
+      rostrolateral visual area: {}
+      uncinate fascicle: {}
+      paramedian lobule, granular layer: {}
+      mediomedial anterior visual area, layer 4: {}
+      primary motor area, layer 2/3: {}
+      bed nuclei of the stria terminalis, posterior division, principal nucleus: {}
+      dentate gyrus crest: {}
+      medial amygdalar nucleus, posterodorsal part, sublayer c: {}
+      granular lamina of the cochlear nuclei: {}
+      lobule III: {}
+      paraventricular hypothalamic nucleus, descending division, dorsal parvicellular part: {}
+      paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part, lateral zone: {}
+      primary auditory area, layer 6b: {}
+      prosubiculum, dorsal part: {}
+      CGM.CGMv (Metathalamus): {}
+      CGL.lam3 (Metathalamus): {}
+      CGL.lam1 (Metathalamus): {}
+      CGL.lam5 (Metathalamus): {}
+      CGL.lam4 (Metathalamus): {}
+      CGM.CGMd (Metathalamus): {}
+      CGM.CGMm (Metathalamus): {}
+      CGL.lam2 (Metathalamus): {}
+      CGL.lam6 (Metathalamus): {}
+      Subiculum (Hippocampus): {}
+      Area a29 (retrosplenial): {}
+      Area p30 (retrosplenial): {}
+      Area i29 (retrosplenial): {}
+      Area i30 (retrosplenial): {}
+      Area p29 (retrosplenial): {}
+      Area a30 (retrosplenial): {}
+      ascending fibers of the facial nerve: {}
+      superficial gray layer of the superior colliculus: {}
+      4th ventricle: {}
+      ventral cochlear nucleus, granule cell layer: {}
+      molecular layer of the cerebellum: {}
+      deeper layers of the superior colliculus: {}
+      acoustic striae: {}
+      perirhinal area 35: {}
+      neocortex: {}
+      ventral cochlear nucleus, cap area: {}
+      inferior colliculus, brachium: {}
+      nucleus of the stria medullaris: {}
+      spinal trigeminal tract: {}
+      inferior colliculus, commissure: {}
+      lateral lemniscus, dorsal nucleus: {}
+      vestibular apparatus: {}
+      anterior commissure, anterior part: {}
+      lateral lemniscus, ventral nucleus: {}
+      substantia nigra: {}
+      cornu ammonis 1: {}
+      transverse fibers of the pons: {}
+      periventricular gray: {}
+      frontal association cortex: {}
+      spinal trigeminal nucleus: {}
+      medial superior olive: {}
+      medial geniculate body, medial division: {}
+      supraoptic decussation: {}
+      dorsal cochlear nucleus, molecular layer: {}
+      descending corticofugal pathways: {}
+      medial geniculate body, dorsal division: {}
+      dorsal cochlear nucleus, deep core: {}
+      ventricular system: {}
+      lateral lemniscus, intermediate nucleus: {}
+      cingulate cortex, area 2: {}
+      postrhinal cortex: {}
+      fimbria of the hippocampus: {}
+      spinal cord: {}
+      mammillothalamic tract: {}
+      olfactory bulb: {}
+      cochlea: {}
+      central canal: {}
+      hypothalamic region: {}
+      cornu ammonis 3: {}
+      alveus of the hippocampus: {}
+      dorsal cochlear nucleus, fusiform and granule layer: {}
+      secondary auditory cortex, dorsal area: {}
+      granule cell level of the cerebellum: {}
+      reticular thalamic nucleus, auditory segment: {}
+      optic tract and optic chiasm: {}
+      ventral cochlear nucleus, anterior part: {}
+      ventral cochlear nucleus, posterior part: {}
+      globus pallidus: {}
+      secondary auditory cortex, ventral area: {}
+      commissural stria terminalis: {}
+      commissure of the superior colliculus: {}
+      septal region: {}
+      stria medullaris of the thalamus: {}
+      lateral lemniscus, commissure: {}
+      lateral entorhinal cortex: {}
+      fasciola cinereum: {}
+      entopeduncular nucleus: {}
+      inferior colliculus, dorsal cortex: {}
+      fornix: {}
+      inferior colliculus, external cortex: {}
+      ventral periolivary nuclei: {}
+      spiral ganglion: {}
+      bed nucleus of the stria terminalis: {}
+      medial geniculate body, ventral division: {}
+      medial lemniscus decussation: {}
+      corpus callosum and associated subcortical white matter: {}
+      pontine nuclei: {}
+      perirhinal area 36: {}
+      lateral superior olive: {}
+      brainstem: {}
+      pineal gland: {}
+      cornu ammonis 2: {}
+      glomerular layer of the accessory olfactory bulb: {}
+      primary auditory cortex: {}
+      superior periolivary region: {}
+      medial geniculate body, marginal zone: {}
+      inferior olive: {}
+      entorhinal cortex: {}
+      anterior commissure, posterior part: {}
+      superior paraolivary nucleus: {}
+      glomerular layer of the olfactory bulb: {}
+      basal forebrain region: {}
+      anterior commissure: {}
+      temporal area TF: {}
+      areas 1 and 2 of cortex: {}
+      area 11 of cortex: {}
+      amygdalopiriform transition area: {}
+      area 47 (old 12) of cortex lateral part: {}
+      temporoparietal transitional area: {}
+      area 25 of cortex: {}
+      visual area 6 (dorsomedial area): {}
+      area 23c of cortex: {}
+      area 3a of cortex (somatosensory): {}
+      temporal area TE3 (inferior temporal cortex): {}
+      occipito-parietal transitional area of cortex: {}
+      area 32 of cortex ventral part: {}
+      temporal area TE occipital part: {}
+      granular insular cortex: {}
+      area 46 of cortex dorsal part: {}
+      parainsular cortex lateral part: {}
+      area 13b of cortex: {}
+      area 30 of cortex: {}
+      area 6 of cortex ventral part a: {}
+      auditory cortex rostrotemporal medial area: {}
+      area 4 of cortex part c (primary motor): {}
+      area 29d of cortex: {}
+      area 13a of cortex: {}
+      ventral intraparietal area of cortex: {}
+      area 14 of cortex caudal part: {}
+      retroinsular area (cortex): {}
+      visual area 2: {}
+      parietal area PFG (cortex): {}
+      area 3b of cortex (somatosensory): {}
+      insular proisocortex: {}
+      secondary somatosensory cortex parietal rostral area: {}
+      auditory cortex caudolateral area: {}
+      parietal area PG: {}
+      area 24b of cortex: {}
+      temporal area TE1 (inferior temporal cortex): {}
+      auditory cortex caudal parabelt area: {}
+      auditory cortex rostrotemporal: {}
+      parietal area PF (cortex): {}
+      temporal area TF occipital part: {}
+      parietal areas PGa and IPa (fundus of superior temporal ventral area): {}
+      orbital proisocortex: {}
+      visual area 4 transitional part (middle temporal crescent): {}
+      secondary somatosensory cortex parietal ventral area: {}
+      area 23 of cortex ventral part: {}
+      orbital periallocortex: {}
+      area 14 of cortex rostral part: {}
+      auditory cortex middle lateral area: {}
+      area 47 (old 12) of cortex orbital part: {}
+      area 29a-c of cortex: {}
+      parainsular cortex medial part: {}
+      auditory cortex rostrotemporal lateral area: {}
+      area 8a of cortex ventral part: {}
+      visual area 5 (middle temporal area): {}
+      superior temporal rostral area (cortex): {}
+      area 13 of cortex medial part: {}
+      area 24c of cortex: {}
+      area 23b of cortex: {}
+      temporopolar proisocortex: {}
+      visual area 3A (dorsoanterior area): {}
+      area 8 of cortex caudal part: {}
+      area 47 (old 12) of cortex medial part: {}
+      temporal area TL occipital part: {}
+      auditory cortex caudomedial area: {}
+      parietal area PE: {}
+      dysgranular insular cortex: {}
+      anterior intraparietal area of cortex: {}
+      temporal proisocortex: {}
+      area 32 of cortex: {}
+      secondary somatosensory cortex internal part: {}
+      area 24d of cortex: {}
+      medial intraparietal area of cortex: {}
+      fundus of superior temporal sulcus area of cortex: {}
+      gustatory cortex: {}
+      lateral intraparietal area of cortex: {}
+      auditory cortex anterolateral area: {}
+      area 6 of cortex ventral part b: {}
+      temporal area TH: {}
+      auditory cortex rostral parabelt: {}
+      piriform cortex: {}
+      agranular insular cortex: {}
+      medial superior temporal area of cortex: {}
+      area 13 of cortex lateral part: {}
+      secondary somatosensory cortex external part: {}
+      auditory cortex primary area: {}
+      proisocortical motor region (precentral opercular cortex): {}
+      visual area 4 (ventrolatereral anterior area): {}
+      area 45 of cortex: {}
+      area 23a of cortex: {}
+      area 6 of cortex dorsocaudal part: {}
+      area 35 of cortex: {}
+      primary visual cortex: {}
+      area 36 of cortex: {}
+      visual area 6A (posterior parietal medial area): {}
+      area 8a of cortex dorsal part: {}
+      area 9 of cortex: {}
+      area 10 of cortex: {}
+      area 4 of cortex parts a and b (primary motor): {}
+      area 6 of cortex dorsorostral part: {}
+      auditory cortex rostromedial area: {}
+      area 19 of cortex medial part: {}
+      area 31 of cortex: {}
+      area 6 of cortex medial (supplementary motor) part: {}
+      area 46 of cortex ventral part: {}
+      area 24a of cortex: {}
+      parietal area PE caudal part: {}
+      auditory cortex rostral area: {}
+      temporo-parieto-occipital association area (superior temporal polysensory cortex): {}
+      area 8b of cortex: {}
+      area 19 of cortex dorsointermediate part: {}
+      prostriate area: {}
+      visual area 3 (ventrolateral posterior area): {}
+      temporal area TL: {}
+      temporal area TE2 (inferior temporal cortex): {}
+      parietal area PG medial part (cortex): {}
+      commissure of the inferior colliculus: {}
+      inner ear: {}
+      inferior fronto-occipital fasciculus: {}
+      uncinate fasciculus: {}
+      posterior segment of arcuate fasciculus: {}
+      inferior longitudinal fasciculus: {}
+      short cingulate fibres: {}
+      anterior segment of arcuate fasciculus: {}
+      temporal cingulate fibres: {}
+      long cingulate fibres: {}
+      direct segment of arcuate fasciculus: {}
+      subcommissural organ: {}
+      nucleus of reuniens: {}
+      posterodorsal tegmental nucleus: {}
+      posterior triangular thalamic nucleus: {}
+      intercollicular nucleus: {}
+      medial mammillary nucleus, medial part: {}
+      accessory trigeminal nucleus: {}
+      retroethmoid nucleus: {}
+      parvicellular motor 5 nucleus: {}
+      interpeduncular nucleus, apical: {}
+      medial mammillary nucleus, dorsal part: {}
+      peritrigeminal zone: {}
+      perifornical nucleus: {}
+      paranigral nucleus: {}
+      hippocampo-amygdalar transition area: {}
+      paratrochlear nucleus: {}
+      frontal pole, layer 5: {}
+      paratrigeminal nucleus: {}
+      orbital area, medial part, layer 6b: {}
+      frontal pole, layer 6a: {}
+      vestibulocerebellar nucleus: {}
+      interpeduncular nucleus, dorsolateral: {}
+      medial mammillary nucleus, posterior part: {}
+      intertrigeminal nucleus: {}
+      xiphoid thalamic nucleus: {}
+      ethmoid nucleus of the thalamus: {}
+      interpeduncular nucleus, rostrolateral: {}
+      retroparafascicular nucleus: {}
+      interpeduncular nucleus, dorsomedial: {}
+      lateral strip of striatum: {}
+      medial corticohypothalamic tract: {}
+      frontal pole, layer 6b: {}
+      ventromedial preoptic nucleus: {}
+      interpeduncular nucleus, intermediate: {}
+      medial accessory oculomotor nucleus: {}
+      interpeduncular nucleus, caudal: {}
+      intermediate geniculate nucleus: {}
+      posterior intralaminar thalamic nucleus: {}
+      interpeduncular nucleus, rostral: {}
+      supraoculomotor periaqueductal gray: {}
+      pallidothalamic pathway: {}
+      medial mammillary nucleus, lateral part: {}
+      interpeduncular nucleus, lateral: {}
+      CA (Hippocampus): {}
+      spinal nucleus of the trigeminal, oral part, middle dorsomedial region, dorsal zone: {}
+      supraoptic commissures, dorsal [Meynert]: {}
+      periaqueductal gray, rostromedial division: {}
+      reticulospinal tract: {}
+      median eminence, external lamina: {}
+      lateral hypothalamic area, juxtaventromedial region: {}
+      paraventricular hypothalamic nucleus, neuroendocrine component: {}
+      ventral anterior-lateral complex thalamus: {}
+      lateral hypothalamic area, anterior region, ventral zone: {}
+      cochlear nuclei, subpeduncular granular region: {}
+      third ventricle, infundibular recess: {}
+      interstitial nucleus vestibular nerve: {}
+      medial lemniscus [Reil]: {}
+      lateral septal nucleus, rostral part, medial zone, ventral region, caudal domain: {}
+      supraoptic commissures, ventral [Gudden]: {}
+      zona limitans: {}
+      pelvic ganglion: {}
+      nervous system: {}
+      reticular nucleus spinal cord: {}
+      accessory olfactory bulb, granule cell layer: {}
+      distal glossopharyngeovagal placode: {}
+      simple lobule, sublobules a,b: {}
+      periventricular region, hypothalamus: {}
+      preoptic level, hypothalamus [Edinger]: {}
+      superior colliculus, intermediate white layer: {}
+      superior cerebellar peduncle [Wernekinck]: {}
+      anteromedial nucleus thalamus, dorsal part: {}
+      lateral propriohypothalamic pathways: {}
+      postcommissural fornix [Elliot Smith]: {}
+      lateral septal nucleus, caudal part, ventral zone: {}
+      spinal cord, coccygeal level, segments 1-3: {}
+      lateral hypothalamic area, anterior region: {}
+      interpeduncular nucleus, rostral subnucleus: {}
+      interpeduncular nucleus, intermediate subnucleus: {}
+      ventral thalamus: {}
+      parabrachial nucleus, central lateral part: {}
+      abducens nerve [Eustachius]: {}
+      proximal glossopharyngeal ganglion: {}
+      dentate gyrus, medial blade: {}
+      ventral funiculus: {}
+      central tegmental bundle [Bechterew]: {}
+      inferior cerebellar peduncle [Ridley]: {}
+      bed nuclei stria terminalis, anterior division, juxtacapsular nucleus: {}
+      basal nucleus of the dorsal horn: {}
+      motor nucleus of the trigeminal nerve, parvicellular part: {}
+      lateral septal nucleus, rostral part, dorsolateral zone, lateral region: {}
+      cortical amygdalar nucleus, anterior part: {}
+      somatic nervous system: {}
+      thoracic spinal ganglia, 1-13: {}
+      paraventricular hypothalamic nucleus [Malone]: {}
+      cortical amygdalar nucleus, posterior part, medial zone: {}
+      triangular nucleus septum [Cajal]: {}
+      paraventricular hypothalamic nucleus, medial parvicellular part, ventral zone: {}
+      paraventricular hypothalamic nucleus, medial parvicellular part: {}
+      dorsal terminal nucleus accessory optic tract: {}
+      dura: {}
+      motoneuron groups: {}
+      alveus [Burdach]: {}
+      paravertebral sympathetic ganglia: {}
+      dorsomedial hypothalamic nucleus: {}
+      lateral septal nucleus, rostral part, dorsolateral zone, lateral region, ventral domain: {}
+      ventral posterolateral nucleus thalamus, parvicellular part: {}
+      cerebral cortex, cortical plate: {}
+      cortical amygdalar nucleus: {}
+      field CA1, stratum oriens [Sala]: {}
+      premammillary commissure [Risold et al.]: {}
+      dentate gyrus [Tarin]: {}
+      arachnoid: {}
+      lateral mammillary nucleus [Gudden]: {}
+      ventral posterolateral nucleus thalamus, general: {}
+      mediolateral visual area: {}
+      lateral septal nucleus, rostral part, dorsolateral zone, lateral region, dorsal domain: {}
+      cerebellum [Herophilus, Erasistratus]: {}
+      dorsal propriohypothalamic pathways: {}
+      isocortex, granular layer: {}
+      "field CA1, Ammon\u2019s horn [Lorente de N\xF3]": {}
+      pituitary gland, neural lobe: {}
+      lateral geniculate complex, ventral part, medial zone: {}
+      periaqueductal gray, medial division [Beitz]: {}
+      perireuniens nucleus: {}
+      dorsal spinocerebellar tract [Flechsig]: {}
+      major island of Calleja (olfactory tubercle): {}
+      medial propriohypothalamic pathways: {}
+      retina, outer plexiform layer: {}
+      preganglionic autonomic pools: {}
+      endopiriform nucleus [Loo]: {}
+      isocortex, superficial supragranular pyramidal layer: {}
+      pontine reticular nucleus, rostral part: {}
+      intermediolateral spinal column, thoracolumbar division: {}
+      preoptic periventricular nucleus: {}
+      "raph\xE9 nuclei": {}
+      otic ganglion [Arnold]: {}
+      paraventricular hypothalamic nucleus, anterior magnocellular part: {}
+      paraventricular hypothalamic nucleus, lateral parvicellular part: {}
+      bed nuclei stria terminalis, posterior division, dorsal nucleus: {}
+      dentate gyrus, crest-polymorph layer: {}
+      bed nucleus anterior commissure [Gurdjian]: {}
+      nucleus reuniens, caudal division, dorsal part: {}
+      sensory system, visceral: {}
+      accessory facial nucleus: {}
+      "corticospinal tract, uncrossed [Burdach, T\xFCrck]": {}
+      secondary somatomotor areas: {}
+      mammillary body [Gall-Spurzheim]: {}
+      lateral septal nucleus, caudal part, ventral zone, medial region, dorsal domain: {}
+      bed nuclei stria terminalis, anterior division, subcommissural zone: {}
+      cortical amygdalar nucleus, posterior part, lateral zone: {}
+      pineal gland [Galen]: {}
+      lateral cervical nucleus [Rexed-Brodal]: {}
+      bed nuclei stria terminalis, anterior division, ventral nucleus: {}
+      ansa peduncularis [Gratiolet]: {}
+      dentate nucleus, magnocellular part: {}
+      lateral septal nucleus, rostral part, ventrolateral zone: {}
+      olfactory cortex: {}
+      intermediodorsal nucleus thalamus: {}
+      subparaventricular zone hypothalamus: {}
+      extrapyramidal fiber systems, cerebral nuclei related: {}
+      isocortex, infragranular pyramidal layer: {}
+      middle commissure of the thalamus: {}
+      dorsal nucleus spinal cord [Stilling, Clarke]: {}
+      lateral septal nucleus, rostral part, medial zone, ventral region: {}
+      interpeduncular nucleus, lateral subnucleus, intermediate part: {}
+      gracile nucleus, principal part: {}
+      retina, ganglion cell layer: {}
+      dentate gyrus, crest-molecular layer: {}
+      anterior olfactory nucleus, dorsal part, molecular layer: {}
+      paraventricular hypothalamic nucleus, posterior magnocellular part, lateral zone: {}
+      subparafascicular nucleus thalamus, parvicellular part, medial division: {}
+      midline nuclei, dorsal thalamus: {}
+      visceral sensory-motor areas: {}
+      phrenic nucleus: {}
+      subiculum [Burdach]: {}
+      forebrain: {}
+      myenteric plexus [Auerbach]: {}
+      posterior amygdalar nucleus [Canteras-Swanson]: {}
+      lateral septal nucleus, caudal part, ventral zone, medial region, ventral domain: {}
+      trigeminal ganglion [Vieussens, Gasser]: {}
+      paraventricular hypothalamic nucleus, periventricular part: {}
+      pretectal region [Edinger]: {}
+      anterior olfactory nucleus, lateral part, pyramidal layer: {}
+      sacral parasympathetic ganglia: {}
+      cervical plexus: {}
+      tenia tecta: {}
+      posterior complex thalamus: {}
+      paraventricular hypothalamic nucleus, posterior magnocellular part: {}
+      tuberal nucleus, lateral part: {}
+      mediodorsal nucleus thalamus, medial part: {}
+      lateral septal nucleus, caudal part, dorsal zone, dorsal region: {}
+      sympathetic system: {}
+      middle cervical ganglion: {}
+      nerve fibers: {}
+      inferior olivary complex, principal olive: {}
+      "dentate nucleus [Vicq d\u2019Azyr]": {}
+      cerebral aqueduct, general: {}
+      intermediolateral visual area: {}
+      fasciola cinerea [Reil, Arnold]: {}
+      ventral roots [Coiter]: {}
+      cuneiform nucleus [Castaldi]: {}
+      superior colliculus, deep white layer: {}
+      "anterior olfactory nucleus [K\xF6lliker]": {}
+      periaqueductal gray, ventrolateral division [Beitz]: {}
+      induseum griseum [Valentin]: {}
+      "interfascicular nucleus raph\xE9": {}
+      intermediomedial spinal column: {}
+      parasympathetic plexuses: {}
+      lateral septal nucleus, caudal part, ventral zone, lateral region: {}
+      parabrachial nucleus, extreme lateral part: {}
+      lateral septal nucleus, rostral part, dorsolateral zone, medial region: {}
+      third ventricle, preoptic recess [Edinger]: {}
+      central lobule, lobule II, sublobules a,b: {}
+      paraventricular hypothalamic nucleus, anterior parvicellular part: {}
+      spinothalamic tract [Thiele-Horsley]: {}
+      field CA3, stratum lucidum [Honegger]: {}
+      flocculonodular lobe cerebellum: {}
+      spinal cord, thoracic level, segments 1-13: {}
+      subparafascicular nucleus thalamus, magnocellular part: {}
+      isocortex, deep supragranular pyramidal layer: {}
+      accessory olfactory nerve: {}
+      bed nucleus of the stria medullaris [Cajal]: {}
+      retrochiasmatic area, lateral hypothalamic area: {}
+      lateral hypothalamic area [Nissl]: {}
+      rostral neuropore: {}
+      dentate gyrus, crest-granule cell layer: {}
+      pyramid [Willis]: {}
+      crus 1, fissures 1-3: {}
+      parasympathetic system: {}
+      nucleus of the solitary tract, commissural part [Cajal]: {}
+      lateral hypothalamic area, subfornical region, premammillary zone: {}
+      field CA1, pyramidal layer, superficial: {}
+      primary somatomotor area: {}
+      cerebral peduncle: {}
+      lateral septal nucleus, rostral part, ventrolateral zone, dorsal region: {}
+      commissural nucleus, periaqueductal gray [Paxinos-Watson]: {}
+      enteric nervous system [Langley]: {}
+      sympathetic plexuses: {}
+      superior olivary complex [Schroeder van der Kolk]: {}
+      autonomic ganglia: {}
+      rhinal region: {}
+      anteroventral nucleus thalamus: {}
+      dorsal commissure, spinal cord: {}
+      supramammillary nucleus [Cajal]: {}
+      primary somatosensory area, upper limb region: {}
+      spiral ganglion [Corti]: {}
+      anterior commissure [Riolan]: {}
+      entorhinal area, lateral part, layers 1-6: {}
+      external cuneate nucleus [Monakow, Blumenau]: {}
+      dorsomedial hypothalamic nucleus, anterior part: {}
+      parabrachial nucleus, ventral medial part: {}
+      tectospinal pathway, direct: {}
+      tegmental reticular nucleus, pontine gray [Bechterew]: {}
+      lateral septal nucleus, rostral part, medial zone: {}
+      "substantia nigra [Soemmerring, Vicq d\u2019Azyr]": {}
+      ventral horn spinal cord, general: {}
+      linear nucleus medulla: {}
+      anterior level, hypothalamus: {}
+      cochlear nuclei, granular lamina: {}
+      cingulum bundle [Reil]: {}
+      prefrontal region: {}
+      ventromedial nucleus hypothalamus, ventrolateral part: {}
+      medial forebrain bundle system, hypothalamus related: {}
+      intermediate acoustic stria [Held]: {}
+      frontal region: {}
+      field CA1, pyramidal layer, deep: {}
+      medial forebrain bundle system, thalamus related: {}
+      occipital pole, cerebral cortex: {}
+      neuroendocrine motor zone: {}
+      third ventricle, mammillary recess: {}
+      inferior olivary complex [Vieussens]: {}
+      bed nucleus accessory olfactory tract: {}
+      infundibulum, internal lamina: {}
+      temporal pole, cerebral cortex: {}
+      spinal nerves: {}
+      intermediate gray spinal cord, general: {}
+      dorsal motor nucleus vagus nerve: {}
+      ganglia: {}
+      choroid fissure, fourth ventricle: {}
+      interpeduncular nucleus, apical subnucleus: {}
+      "supraoptic nucleus, general [Lenhoss\xE9k]": {}
+      postsubiculum, layers 1-6: {}
+      anterior olfactory nucleus, posteroventral part, pyramidal layer: {}
+      inferior olivary complex, dorsal accessory olive: {}
+      occipital region: {}
+      dorsolateral fascicle [Lissauer]: {}
+      nucleus proprius of the spinal cord: {}
+      dorsal thalamus, sensory-motor cortex related: {}
+      superior colliculus, intermediate gray layer, sublayer b: {}
+      choroid fissure, third ventricle: {}
+      parabrachial nucleus, internal lateral part: {}
+      central lobule, lobule III, sublobules a,b: {}
+      central gray: {}
+      coccygeal sympathetic ganglion: {}
+      tuberal nucleus, subventricular part: {}
+      fasciculus retroflexus [Meynert]: {}
+      ventral posteromedial nucleus thalamus, principal part: {}
+      "principal mammillary tract [K\xF6lliker]": {}
+      pituitary gland, anterior lobe: {}
+      ventral posteromedial nucleus thalamus, parvicellular part: {}
+      lateral septal nucleus, rostral part, medial zone, dorsal region: {}
+      cerebrum (cerebral hemispheres, endbrain, telencephalon): {}
+      stratum zonale, thalamus: {}
+      dentate gyrus, lateral blade: {}
+      ventral commissure, spinal cord: {}
+      reticular nucleus thalamus [Arnold]: {}
+      corpus callosum [Galen]: {}
+      interpeduncular nucleus, lateral subnucleus, rostral part: {}
+      interpeduncular nucleus [Gudden]: {}
+      "superior central nucleus raph\xE9, medial part": {}
+      hippocampal fissure [Gratiolet]: {}
+      paraventricular hypothalamic nucleus, dorsal parvicellular part: {}
+      bed nuclei stria terminalis, anterior division, dorsomedial nucleus: {}
+      dentate gyrus, medial blade-granule cell layer: {}
+      lateral hypothalamic area, magnocellular nucleus: {}
+      spinal plexuses: {}
+      entorhinal area, medial part, ventral zone [Haug]: {}
+      lateral hypothalamic area, juxtadorsomedial region: {}
+      tectospinal pathway, crossed [Edinger]: {}
+      dentate gyrus, lateral blade-polymorph layer: {}
+      temporal region: {}
+      bed nuclei stria terminalis, anterior division, anteromedial area: {}
+      spinal sensory ganglia: {}
+      sacral sympathetic ganglia, 1-4: {}
+      dorsal roots [Coiter]: {}
+      tenia tecta, dorsal part, layers 1-4: {}
+      ventral nuclei, dorsal thalamus: {}
+      dorsal acoustic stria [Monakow]: {}
+      lateral posterior nucleus thalamus: {}
+      corpus callosum, genu: {}
+      interpeduncular nucleus, lateral subnucleus: {}
+      retina, outer nuclear layer: {}
+      lateral septal nucleus, caudal part, ventral zone, lateral region, ventral domain: {}
+      suprachiasmatic nucleus, ventrolateral part: {}
+      lateral hypothalamic area, motor related: {}
+      cerebral cortex, subplate region: {}
+      lateral forebrain bundle: {}
+      "field CA3, Ammon\u2019s horn [Lorente de N\xF3]": {}
+      extreme capsule: {}
+      lateral forebrain bundle system, thalamus related: {}
+      sensory system, gustatory: {}
+      cerebral cortex, polymodal association cortex: {}
+      anterior olfactory nucleus, external part, molecular layer: {}
+      interposed nucleus, main part: {}
+      bed nuclei stria terminalis, posterior division, cell-sparse zone: {}
+      fourth ventricle, lateral recess: {}
+      ansiform lobule, crus 2, sublobules a,b: {}
+      gracile nucleus, general [Goll]: {}
+      paraventricular hypothalamic nucleus, posterior magnocellular part, medial zone: {}
+      lateral septal nucleus, caudal part, ventral zone, medial region: {}
+      parasubthalamic nucleus [Zhang-Wang]: {}
+      "dorsal tegmental tract [Lindvall-Bj\xF6rklund]": {}
+      subthalamic nucleus [Luys]: {}
+      primary somatosensory area, mouth region: {}
+      external medullary lamina thalamus [Burdach]: {}
+      interpeduncular nucleus, central subnucleus: {}
+      nucleus reuniens, caudal division, posterior part: {}
+      choroid plexus, fourth ventricle: {}
+      lateral septal complex [Risold-Swanson]: {}
+      external capsule [Burdach]: {}
+      "dorsal longitudinal fascicle [Sch\xFCtz]": {}
+      preganglionic autonomic pools, parasympathetic: {}
+      dorsal nucleus spinal cord, general: {}
+      hypothalamic lateral zone, state related: {}
+      medial septal nucleus [Cajal]: {}
+      main olfactory bulb [Soemmerring]: {}
+      cerebral cortex, sensory-motor cortex: {}
+      preoptic commissure [Risold et al.]: {}
+      precentral fissure a: {}
+      submedial nucleus thalamus: {}
+      bed nuclei stria terminalis, anterior division, fusiform nucleus: {}
+      ventromedial nucleus hypothalamus, central part: {}
+      dentate gyrus, medial blade-polymorph layer: {}
+      retrosplenial area, lateral agranular part [Risold-Swanson]: {}
+      nucleus reuniens, caudal division, median part [Gurdjian]: {}
+      "nucleus raph\xE9 pontis": {}
+      superior vestibular nucleus [Bechterew]: {}
+      zona incerta, dopaminergic group: {}
+      dorsal auditory areas: {}
+      dorsal thalamus, polymodal association cortex relate: {}
+      medial habenula, ventral part: {}
+      superior colliculus, deep gray layer: {}
+      ventral posterior complex thalamus: {}
+      suprachiasmatic nucleus [Spiegel-Zwieg]: {}
+      hippocampal region [Aranzi]: {}
+      lateral nuclei, dorsal thalamus: {}
+      nucleus of the bulbocavernosus: {}
+      lateral hypothalamic area, suprafornical region: {}
+      lateral septal nucleus, caudal part, dorsal zone, ventral region: {}
+      parabrachial nucleus, external lateral part: {}
+      bed nuclei stria terminalis, anterior division, magnocellular nucleus: {}
+      "rostral linear nucleus raph\xE9": {}
+      intermediate gray spinal cord proper: {}
+      tuberal nucleus [Malone]: {}
+      coccygeal spinal ganglia, 1-3: {}
+      "central linear nucleus raph\xE9": {}
+      neuroendocrine motor zone, parvicellular: {}
+      lateral hypothalamic area, juxtaventromedial region, dorsal zone: {}
+      sympathetic ganglia: {}
+      lateral hypothalamic area, ventral region, medial zone: {}
+      medial mammillary nucleus, body: {}
+      dorsal horn, spinal cord: {}
+      posterior septal complex: {}
+      ventral median fissure: {}
+      medial mammillary nucleus, general [Gudden]: {}
+      primary somatosensory area, lower limb region: {}
+      paraventricular thalamic nucleus: {}
+      tuberal nucleus, intermediate part: {}
+      phrenic nerve: {}
+      ventromedial nucleus hypothalamus, anterior part: {}
+      parietal region: {}
+      lateral hypothalamic area, juxtaventromedial region, ventral zone: {}
+      substantia innominata [Reil, Reichert]: {}
+      third ventricle, pineal recess: {}
+      mammillotegmental tract [Gudden]: {}
+      nerve plexuses: {}
+      central cervical nucleus: {}
+      lateral hypothalamic area, subfornical region, rostral zone: {}
+      parabigeminal nucleus [Bechterew]: {}
+      anterior olfactory nucleus, external part, pyramidal layer: {}
+      spinocerebellar tracts: {}
+      facial nucleus: {}
+      lumbar spinal ganglia, 1-6: {}
+      intralaminar nuclei, dorsal thalamus: {}
+      spinotelencephalic pathway: {}
+      stellate ganglion: {}
+      cerebral aqueduct proper [Sylvius]: {}
+      pia: {}
+      presubiculum, layers 1-6 [Cajal]: {}
+      corpus callosum, splenium [Burdach]: {}
+      fimbria [Vieussens]: {}
+      cerebral cortex grooves: {}
+      fourth ventricle, general: {}
+      brain: {}
+      lateral geniculate complex [Santorini]: {}
+      amygdala [Burdach]: {}
+      claustrum [Burdach]: {}
+      cranial sensory ganglia: {}
+      tenia tecta, ventral part, layers 1-3: {}
+      submandibular ganglion: {}
+      nucleus reuniens, rostral division, ventral part: {}
+      "dorsal nucleus raph\xE9": {}
+      angular bundle: {}
+      corpus callosum, posterior forceps [Arnold]: {}
+      medial forebrain bundle system, mammillary related: {}
+      dentate gyrus, medial blade-molecular layer: {}
+      medial forebrain bundle [Edinger]: {}
+      retrosplenial area, ventral part, zone a: {}
+      cerebellar cortex, granule cell layer (inner): {}
+      distal glossopharyngeal ganglion [Andersch]: {}
+      periventricular bundle hypothalamus: {}
+      lateral aperture, fourth ventricle [Luschka]: {}
+      marginal zone spinal cord [Waldeyer]: {}
+      precentral fissure b: {}
+      intercalated amygdalar nuclei: {}
+      medial habenula [Nissl]: {}
+      bed nuclei stria terminalis, anterior division, anterolateral area: {}
+      interstitial nucleus auditory nerve: {}
+      medial habenula, dorsal part: {}
+      laterolateral visual area: {}
+      ventral tegmental decussation [Forel]: {}
+      lateral septal nucleus, rostral part, ventrolateral zone, dorsal region, lateral domain: {}
+      mediodorsal nucleus thalamus, central part: {}
+      intracentral fissure 2: {}
+      choroid plexus, third ventricle: {}
+      supraoptic commissures, anterior [Ganser]: {}
+      third ventricle, periventricular recess: {}
+      proximal glossopharyngeovagal placode: {}
+      inferior olivary complex, medial accessory olive: {}
+      hypothalamic lateral zone, motor related: {}
+      bed nuclei stria terminalis, anterior division, oval nucleus: {}
+      anteromedial nucleus thalamus, ventral part: {}
+      dorsomedial hypothalamic nucleus, posterior part: {}
+      central nervous system: {}
+      nucleus incertus, compact part: {}
+      median preoptic nucleus [Loo]: {}
+      thoracic sympathetic ganglia, 3-13: {}
+      medial terminal nucleus accessory optic tract [Edinger]: {}
+      pudental plexus: {}
+      brachial plexus: {}
+      intraculminate fissure 1: {}
+      superior cervical ganglion: {}
+      bed nuclei stria terminalis, posterior division: {}
+      nucleus reuniens, rostral division, anterior part: {}
+      mammillothalamic tract [Vicq d'Azyr]: {}
+      dorsal columns: {}
+      field CA1, stratum radiatum [Meynert]: {}
+      central lateral nucleus thalamus: {}
+      paracentral nucleus thalamus: {}
+      parabrachial nucleus, dorsal lateral part: {}
+      spinal central gray: {}
+      substantia gelatinosa spinal cord [Rolando]: {}
+      lateral geniculate complex, ventral part: {}
+      nucleus incertus [Streeter]: {}
+      post- and precerebellar nuclei: {}
+      lateral geniculate complex, ventral part, lateral zone: {}
+      bed nuclei stria terminalis, posterior division, principal nucleus: {}
+      nucleus reuniens, rostral division, dorsal part: {}
+      declival fissure 2: {}
+      parasubiculum, layers 1-6: {}
+      medial forebrain bundle system, epithalamus related: {}
+      lateral hypothalamic area, subfornical region, posterior zone: {}
+      "superior central nucleus raph\xE9 [Bechterew]": {}
+      choroid fissure, lateral ventricle: {}
+      superior mesenteric ganglion: {}
+      interpeduncular nucleus, dorsomedial subnucleus: {}
+      lateral septal nucleus, rostral part, dorsolateral zone, medial region, ventral domain: {}
+      "Ammon\u2019s horn [Noguez]": {}
+      lateral hypothalamic area, parvicellular region: {}
+      deep cerebellar nuclei: {}
+      ventromedial nucleus hypothalamus, dorsomedial part: {}
+      "nucleus raph\xE9 magnus": {}
+      lateral geniculate complex, intergeniculate leaflet: {}
+      interventricular foramen [Monro]: {}
+      interpeduncular nucleus, lateral subnucleus, ventral part: {}
+      pons [Varolio]: {}
+      choroidal fissure (eye): {}
+      anterodorsal nucleus thalamus: {}
+      dorsal commissural nucleus of the spinal cord: {}
+      bed nuclei stria terminalis, posterior division, strial extension: {}
+      ventral auditory areas: {}
+      nucleus intercalatus [Staderini]: {}
+      ventral tegmental nucleus [Gudden]: {}
+      lateral septal nucleus, rostral part, dorsolateral zone, medial region, dorsal domain: {}
+      suprachiasmatic nucleus, dorsomedial part: {}
+      sacral spinal ganglia, 1-4: {}
+      "K\xF6lliker-Fuse subnucleus (of PB)": {}
+      superior colliculus: {}
+      central medial nucleus thalamus: {}
+      diagonal band nucleus [Broca]: {}
+      prevertebral sympathetic ganglia: {}
+      pituitary gland [Galen]: {}
+      anterior laterolateral visual area: {}
+      ciliary nerve: {}
+      pituitary gland, intermediate lobe: {}
+      paramedian reticular nucleus [Mislawsky]: {}
+      parabrachial nucleus, medial medial part: {}
+      superior colliculus, intermediate gray layer, sublayer c: {}
+      third ventricle, thalamic part: {}
+      cuneate nucleus [Burdach]: {}
+      spinal cord, cervical level, segments 1-8: {}
+      ventral horn spinal cord: {}
+      crus 2 fissure: {}
+      medial forebrain bundle system, midbrain related: {}
+      paraventricular hypothalamic nucleus, forniceal part: {}
+      lateral septal nucleus, caudal part, dorsal zone, rostral region: {}
+      "Barrington\u2019s nucleus": {}
+      superior colliculus, intermediate gray layer, sublayer a: {}
+      internal capsule [Burdach]: {}
+      telencephalon: {}
+      "superior central nucleus raph\xE9, lateral part": {}
+      fornix system [Galen]: {}
+      rhomboid nucleus [Cajal]: {}
+      internuclear area, hypothalamic periventricular region: {}
+      spinal cord, sacral level, segments 1-4: {}
+      neuroendocrine motor zone, magnocellular: {}
+      "nucleus raph\xE9 pallidus": {}
+      terminal ganglion: {}
+      bed nuclei stria terminalis, anterior division, rhomboid nucleus: {}
+      sensory system, humorosensory: {}
+      olfactory tubercle [Ganser]: {}
+      somatomotor motoneuron pools: {}
+      paraventricular hypothalamic nucleus, medial magnocellular part: {}
+      posterior limiting nucleus thalamus: {}
+      lateral septal nucleus, caudal part, ventral zone, lateral region, dorsal domain: {}
+      retina, inner nuclear layer: {}
+      nucleus reuniens, rostral division, lateral part: {}
+      zona incerta, general: {}
+      motor nucleus of the trigeminal nerve: {}
+      periaqueductal gray, dorsal division [Beitz]: {}
+      lateral habenula [Nissl]: {}
+      cingulate region [Burdach]: {}
+      anterior nuclei, dorsal thalamus [Nissl]: {}
+      accessory spinal nerve [Willis]: {}
+      mammillary peduncle [Meynert]: {}
+      "locus ceruleus [Vicq d\u2019Azyr]": {}
+      nucleus x [Brodal-Pompeiano]: {}
+      sensory system, auditory: {}
+      lumbar sympathetic ganglia, 1-6: {}
+      anterior olfactory nucleus, medial part, pyramidal layer: {}
+      anterior lobe cerebellum: {}
+      peripheral nervous system: {}
+      geniculate ganglion: {}
+      parasympathetic ganglia: {}
+      tegmentum: {}
+      lateral olfactory tract, dorsal limb: {}
+      cuneate fascicle [Burdach]: {}
+      central gray brain: {}
+      rubrospinal tract [Monakow]: {}
+      pterygopalatine ganglion [Meckel]: {}
+      bed nuclei stria terminalis, anterior division: {}
+      corpus callosum, anterior forceps [Arnold]: {}
+      medial accessory oculomotor nucleus [Bechterew]: {}
+      precommissural fornix [Elliot Smith]: {}
+      cervical spinal ganglia, 1-8: {}
+      periaqueductal gray, rostrolateral division: {}
+      nucleus incertus, diffuse part: {}
+      subfornical organ [Pines]: {}
+      distal vagal ganglion: {}
+      dorsal median septum: {}
+      mediodorsal nucleus thalamus: {}
+      dentate nucleus, parvicellular part: {}
+      pyramidal fissure: {}
+      ansiform lobule, crus 1, sublobules a-d: {}
+      lateral geniculate complex, dorsal part: {}
+      periventricular bundle thalamus: {}
+      ventral medial nucleus thalamus: {}
+      nucleus y [Brodal-Pompeiano]: {}
+      medial nuclei, dorsal thalamus: {}
+      globus pallidus [Burdach]: {}
+      field CA1, stratum lacunosum-moleculare [Meynert]: {}
+      midline group, dorsal thalamus: {}
+      vagal commissure: {}
+      paraventricular hypothalamic nucleus, medial parvicellular part, dorsal zone: {}
+      Edinger-Westphal nucleus: {}
+      red nucleus [Burdach]: {}
+      parabrachial nucleus, external medial part: {}
+      spinal cord grooves: {}
+      nucleus reuniens [Malone]: {}
+      "reticular formation [J. Lenhoss\xE9k]": {}
+      posterior lobe cerebellum: {}
+      median aperture, fourth ventricle [Magendie]: {}
+      nucleus reuniens, rostral division, median part [Gurdjian]: {}
+      lateral funiculus: {}
+      superior cerebellar peduncle: {}
+      parabrachial nucleus, ventral lateral part: {}
+      cerebrospinal trunk: {}
+      interanterodorsal nucleus thalamus: {}
+      anterior olfactory nucleus, dorsal part, pyramidal layer: {}
+      nucleus z [Brodal-Pompeiano]: {}
+      median eminence, internal lamina: {}
+      ciliary ganglion: {}
+      hippocampal commissures [David]: {}
+      decussation of the trochlear nerve: {}
+      primary somatosensory area, nose region: {}
+      filum terminale: {}
+      anterior olfactory nucleus, lateral part, molecular layer: {}
+      lateral hypothalamic area, ventral region: {}
+      vermal regions, cerebellum: {}
+      nucleus reuniens, caudal division, caudal part: {}
+      culmen, lobules IV,V: {}
+      cranial parasympathetic ganglia: {}
+      pontine gray, general: {}
+      interposed nucleus, parvicellular part: {}
+      dorsal tegmental decussation [Meynert]: {}
+      anteroventral periventricular nucleus hypothalamus: {}
+      autonomic nervous system [Langley]: {}
+      paratenial nucleus: {}
+      hemispheric region, cerebellum: {}
+      islands of Calleja (olfactory tubercle): {}
+      accessory olfactory bulb [Balogh]: {}
+      subparafascicular nucleus thalamus: {}
+      medial vestibular nucleus [Schwalbe]: {}
+      motor nucleus of the trigeminal, magnocellular part: {}
+      habenular commissure [Haller]: {}
+      submucosal plexus [Meissner]: {}
+      medial forebrain bundle system, cerebrum related: {}
+      intermediolateral spinal column: {}
+      behavior control column: {}
+      lateral hypothalamic area, anterior region, dorsal zone: {}
+      reticulospinal tract , lateral part: {}
+      meninges: {}
+      stria terminalis [Wenzel-Wenzel]: {}
+      arcuate hypothalamic nucleus [Clark]: {}
+      spinal nucleus of the trigeminal: {}
+      splanchnic nerves: {}
+      lateral spinal nucleus: {}
+      diagonal band [Broca]: {}
+      rostral medullary velum [Vieussens]: {}
+      bed nuclei stria terminalis [Johnston]: {}
+      ventral spinocerebellar tract [Gowers]: {}
+      dentate gyrus, crest: {}
+      declive (VI), sublobules a-d: {}
+      dorsomedial hypothalamic nucleus, ventral part: {}
+      ventral posteromedial nucleus thalamus, general: {}
+      entorhinal area, medial part, dorsal zone, layers 1-6: {}
+      uvular fissure 1: {}
+      isocortex, molecular layer: {}
+      tuberal nucleus, terete subnucleus: {}
+      bed nuclei stria terminalis, posterior division, premedullary nucleus: {}
+      primary somatosensory area, trunk region: {}
+      bed nuclei stria terminalis, posterior division, interfascicular nucleus: {}
+      cranial plexuses: {}
+      lateral terminal nucleus accessory optic tract: {}
+      lateral septal nucleus, caudal part, dorsal zone, lateral region: {}
+      sensory ganglia: {}
+      pyramidal decussation [Pourfour du Petit]: {}
+      sensory system: {}
+      vestibular ganglion [Scarpa]: {}
+      interanteromedial nucleus thalamus: {}
+      dentate gyrus, lateral blade-molecular layer: {}
+      lateral septal nucleus [Cajal]: {}
+      anterior olfactory nucleus, medial part, molecular layer: {}
+      intermediate nerve [Wrisberg]: {}
+      lateral lemniscus [Reil]: {}
+      dorsal thalamus: {}
+      lateral septal nucleus, rostral part, ventrolateral zone, ventral region: {}
+      nucleus of the lateral lemniscus [Bechterew]: {}
+      lateral septal nucleus, rostral part, medial zone, ventral region, rostral domain: {}
+      choroid plexus, lateral ventricle: {}
+      uncinate fascicle [Russell]: {}
+      intercalated nucleus of the spinal cord: {}
+      spinal nucleus of the trigeminal, oral part, middle dorsomedial region, ventral zone: {}
+      medial amygdalar nucleus, posterodorsal part, sublayers a-c: {}
+      sympathetic chain: {}
+      ventral tegmental area [Tsai]: {}
+      motor system: {}
+      interpeduncular nucleus, lateral subnucleus, dorsal part: {}
+      pontine central gray, general: {}
+      lateral hypothalamic area, posterior region: {}
+      periaqueductal gray, dorsolateral division [Beitz]: {}
+      inferior mesenteric ganglia: {}
+      diencephalon: {}
+      cerebral aqueduct, collicular recess: {}
+      nucleus of the spinal accessory nerve: {}
+      sensory system, visual: {}
+      anterior olfactory nucleus, posteroventral part, molecular layer: {}
+      sensory system, somatosensory: {}
+      preganglionic autonomic pools, sympathetic: {}
+      lumbosacral plexus: {}
+      supraoptic nucleus, retrochiasmatic part: {}
+      proximal vagal ganglion [Ehrenritter]: {}
+      nucleus of the lateral olfactory tract, dorsal cap: {}
+      fourth ventricle proper: {}
+      mediodorsal nucleus thalamus, lateral part: {}
+      basal nucleus of the dorsal horn, general: {}
+      cerebrospinal fluid: {}
+      tectum: {}
+      insular region: {}
+      internal medullary lamina thalamus [Burdach]: {}
+      cortical amygdalar nucleus, posterior part: {}
+      lateral hypothalamic area, dorsal region: {}
+      hypothalamus [His]: {}
+      lateral vestibular nucleus [Deiters]: {}
+      nodulus (X), sublobules a,b: {}
+      "field CA2, Ammon\u2019s horn [Lorente de N\xF3]": {}
+      lateral septal nucleus, ventral part [Risold-Swanson]: {}
+      precommissural nucleus, periaqueductal gray [Paxinos-Watson]: {}
+      isocortex, polymorph layer: {}
+      lateral hypothalamic area, ventral region, lateral zone: {}
+      cerebellar cortex grooves: {}
+      nucleus brachium inferior colliculus: {}
+      parafascicular nucleus [Vogt]: {}
+      intermediolateral spinal column, sacral division: {}
+      geniculate group of the ventral thalamus: {}
+      ventral posterolateral nucleus thalamus, principal part: {}
+      caudal intracentral fissure: {}
+      spinal nucleus of the trigeminal, oral part, caudal dorsomedial region: {}
+      retrosplenial area, ventral part, zone b/c: {}
+      main olfactory bulb, granule cell layer: {}
+      third ventricle, hypothalamic part: {}
+      lateral septal nucleus, rostral part, dorsolateral zone: {}
+      bed nuclei stria terminalis, posterior division, transverse nucleus: {}
+      reticulospinal tract, medial part: {}
+      copula pyramidis, sublobules a,b: {}
+      retina, inner plexiform layer: {}
+      nucleus reuniens, rostral division: {}
+      gustatory area: {}
+      celiac ganglion: {}
+      trapezoid body [Treviranus]: {}
+      dorsal nucleus spinal cord, caudal part [Stilling]: {}
+      lateral dorsal nucleus thalamus: {}
+      central nervous system white matter: {}
+      supraoptic nucleus, proper: {}
+      pyramus (VIII), sublobules a,b: {}
+      nucleus of the lateral olfactory tract [Ganser]: {}
+      central nervous system gray matter: {}
+      vestibulomotor regions: {}
+      periolivary region: {}
+      lateral hypothalamic area, anterior region, intermediate zone: {}
+      nucleus prepositus [Marburg]: {}
+      "supragenual nucleus [Meessen-Olszewsk\xED]": {}
+      magnocellular nucleus [Loo]: {}
+      anteromedial nucleus thalamus: {}
+      lateral hypothalamic area, juxtaparaventricular region: {}
+      posterior commissure [Lieutaud]: {}
+      gracile fascicle [Goll]: {}
+      lateral septal nucleus, caudal part, ventral zone, intermediate region: {}
+      dorsal tegmental nucleus [Gudden]: {}
+      striatal fundus: {}
+      lateral septal nucleus, rostral part, ventrolateral zone, dorsal region, medial domain: {}
+      infundibulum, external lamina: {}
+      posterodorsal intraculminate fissure: {}
+      parietal region, posterior association areas: {}
+      uvula (IX), sublobules ab,c: {}
+      behavioral state system: {}
+      septal region [Meynert]: {}
+      "Onuf\u2019s nucleus": {}
+      "nucleus raph\xE9 obscurus": {}
+      nerves: {}
+      geniculate group of the dorsal thalamus: {}
+      subparafascicular nucleus thalamus, parvicellular part, lateral division: {}
+      gracile nucleus, median part [Bischoff]: {}
+      lateral septal nucleus, caudal part, dorsal zone: {}
+      parabrachial nucleus, superior lateral part: {}
+      dentate gyrus, lateral blade-granule cell layer: {}
+      hypothalamic periventricular region: {}
+      infundibulum [Galen]: {}
+      spinal nucleus of the trigeminal oral part, rostral dorsomedial region: {}
+      telencephalic roof plate: {}
+      spinal cord, lumbar level, segments 1-6: {}
+      fusiform gyrus: {}
+      'temporal pole: superior temporal gyrus': {}
+      gyrus rectus: {}
+      lenticular nucleus, putamen: {}
+      postcentral gyrus: {}
+      precentral gyrus: {}
+      parahippocampal gyrus: {}
+      precuneus: {}
+      inferior occipital gyrus: {}
+      amygdala: {}
+      superior frontal gyrus, dorsolateral: {}
+      middle frontal gyrus: {}
+      superior frontal gyrus, medial: {}
+      superior temporal gyrus: {}
+      Heschl gyrus: {}
+      caudate nucleus: {}
+      lenticular nucleus, pallidum: {}
+      superior occipital gyrus: {}
+      cuneus: {}
+      middle occipital gyrus: {}
+      ? 'inferior parietal, but supramarginal and
+
+        angular gyri'
+      : {}
+      inferior frontal gyrus, opercular part: {}
+      superior frontal gyrus, medial orbital: {}
+      median cingulate and paracingulate gyri: {}
+      middle temporal gyrus: {}
+      lingual gyrus: {}
+      superior parietal gyrus: {}
+      angular gyrus: {}
+      middle frontal gyrus, orbital part: {}
+      supplementary motor area: {}
+      insula: {}
+      anterior cingulate and paracingulate gyri: {}
+      superior frontal gyrus, orbital part: {}
+      'temporal pole: middle temporal gyrus': {}
+      inferior frontal gyrus, triangular part: {}
+      paracentral lobule: {}
+      calcarine fissure and surrounding cortex: {}
+      posterior cingulate gyrus: {}
+      inferior temporal gyrus: {}
+      supramarginal gyrus: {}
+      hippocampus: {}
+      rolandic operculum: {}
+      inferior frontal gyrus, orbital part: {}
+      Brodmann area 45: {}
+      Brodmann area 2: {}
+      Brodmann area 8: {}
+      Brodmann area 40: {}
+      Brodmann area 7: {}
+      Brodmann area 16: {}
+      Brodmann area 33: {}
+      Brodmann area 26: {}
+      Brodmann area 31: {}
+      Brodmann area 9: {}
+      Brodmann area 30: {}
+      Brodmann area 38: {}
+      Brodmann area 5: {}
+      Brodmann area 15: {}
+      Brodmann area 21: {}
+      Brodmann area 35: {}
+      Brodmann area 52: {}
+      Brodmann area 24: {}
+      Brodmann area 28: {}
+      Brodmann area 17: {}
+      Brodmann area 23: {}
+      Brodmann area 32: {}
+      Brodmann area 18: {}
+      Brodmann area 42: {}
+      Brodmann area 13: {}
+      Brodmann area 12: {}
+      Brodmann area 4: {}
+      Brodmann area 6: {}
+      Brodmann area 29: {}
+      Brodmann area 43: {}
+      Brodmann area 37: {}
+      Brodmann area 20: {}
+      Brodmann area 41: {}
+      Brodmann area 1: {}
+      Brodmann area 8a: {}
+      Brodmann area 39: {}
+      Brodmann area 14: {}
+      Brodmann area 3: {}
+      Brodmann area 48: {}
+      Brodmann area 27: {}
+      Brodmann area 47: {}
+      Brodmann area 36: {}
+      Brodmann area 19: {}
+      Brodmann area 22: {}
+      Brodmann area 44: {}
+      Brodmann area 25: {}
+      Brodmann area 46: {}
+      Brodmann area 34: {}
+      Brodmann area 10: {}
+      Brodmann area 11: {}
+      thalamus, unspecified: {}
+      neocortex, unspecified: {}
+      deeper cerebellum: {}
+      molecular cell layer of the cerebellum: {}
+      anterior commissure, intrabulbar part: {}
+      brainstem, unspecified: {}
+      ventricular system, unspecified: {}
+      basal forebrain region, unspecified: {}
+      medial entorhinal cortex: {}
+      ventral periolivary nucleus: {}
+      perirhinal cortex: {}
+      medial entorhinal field: {}
+      ventral-intermediate entorhinal area: {}
+      dorsal-intermediate entorhinal area: {}
+      caudal entorhinal field: {}
+      dorsal-lateral entorhinal area: {}
+      anteroventral thalamic nucleus, dorsomedial part: {}
+      lateral posterior thalamic nucleus, lateral part: {}
+      secondary somatosensory area: {}
+      agranular insular cortex, posterior area: {}
+      external medullary lamina, unspecified: {}
+      lateral orbital area: {}
+      zona incerta, rostral part: {}
+      reuniens thalamic nucleus: {}
+      central lateral thalamic nucleus: {}
+      secondary auditory area, ventral part: {}
+      agranular insular cortex dorsal area: {}
+      pregeniculate nucleus: {}
+      mediodorsal thalamic nucleus, medial part: {}
+      zona incerta, caudal part: {}
+      lateral olfactory tract: {}
+      laterodorsal thalamic nucleus, ventrolateral part: {}
+      nucleus accumbens, core: {}
+      ventral posterior nucleus of the thalamus, parvicellular part: {}
+      lateral habenular nucleus: {}
+      medial geniculate body, suprageniculate nucleus: {}
+      secondary visual area, medial part: {}
+      piriform cortex, layer 3: {}
+      anterior commissure, posterior limb: {}
+      facial nerve, unspecified: {}
+      retrosplenial dysgranular area: {}
+      parietal association cortex, posterior area: {}
+      mediodorsal thalamic nucleus, lateral part: {}
+      external medullary lamina, auditory radiation: {}
+      interanteromedial thalamic nucleus: {}
+      primary somatosensory area, trunk representation: {}
+      retroreuniens thalamic nucleus: {}
+      ventral posteromedial thalamic nucleus: {}
+      zona incerta, A13 dopamine cells: {}
+      globus pallidus external, lateral part: {}
+      cingulate area 1: {}
+      primary somatosensory area, face representation: {}
+      submedius thalamic nucleus: {}
+      medial orbital area: {}
+      nucleus accumbens, shell: {}
+      ventrolateral thalamic nucleus: {}
+      parietal association cortex, lateral area: {}
+      hypothalamic region, unspecified: {}
+      lateral posterior thalamic nucleus, mediorostral part: {}
+      dorsolateral orbital area: {}
+      primary somatosensory area, hindlimb representation: {}
+      cerebellum, unspecified: {}
+      superior cerebellar peduncle and prerubral field: {}
+      reticular (pre)thalamic nucleus, unspecified: {}
+      amygdaloid area, unspecified: {}
+      secondary auditory area, dorsal part: {}
+      ventral striatal region, unspecified: {}
+      ventral posterolateral thalamic nucleus: {}
+      caudate putamen: {}
+      medial habenular nucleus: {}
+      posterior thalamic nucleus: {}
+      secondary visual area, lateral part: {}
+      ventral pallidum: {}
+      piriform cortex, layer 2: {}
+      central medial thalamic nucleus: {}
+      internal medullary lamina: {}
+      rhomboid thalamic nucleus: {}
+      parafascicular thalamic nucleus: {}
+      ethmoid-Limitans nucleus: {}
+      ventral orbital area: {}
+      anteromedial thalamic nucleus: {}
+      parietal association cortex, medial area: {}
+      laterodorsal thalamic nucleus, dorsomedial part: {}
+      primary somatosensory area, dysgranular zone: {}
+      lateral posterior thalamic nucleus, mediocaudal part: {}
+      ventrolateral orbital area: {}
+      anteroventral thalamic nucleus, ventrolateral part: {}
+      intramedullary thalamic area: {}
+      intermediodorsal thalamic nucleus: {}
+      pretectothalamic lamina: {}
+      zona incerta, A11 dopamine cells: {}
+      agranular insular cortex, ventral area: {}
+      angular thalamic nucleus: {}
+      retrosplenial granular area: {}
+      medial lemniscus, unspecified: {}
+      mediodorsal thalamic nucleus, central part: {}
+      stria medullaris thalami: {}
+      intergeniculate leaflet: {}
+      primary somatosensory area, forelimb representation: {}
+      anterodorsal thalamic nucleus: {}
+      corticofugal tract and corona radiata: {}
+      olfactory bulb, unspecified: {}
+      ventromedial thalamic nucleus: {}
+      temporal association cortex: {}
+      cingulate area 2: {}
+      posterior intralaminar nucleus: {}
+      paracentral thalamic nucleus: {}
+      globus pallidus external, medial part: {}
+      ventral anterior thalamic nucleus: {}
+      lateral lemniscus, unspecified: {}
+      piriform cortex, layer 1: {}
+      reticular (pre)thalamic nucleus, auditory segment: {}
+      parataenial thalamic nucleus: {}
+      zona incerta, dorsal part: {}
+      frontal association area 3: {}
+      paraventricular thalamic nuclei (anterior and posterior): {}
+      anterior commissure, anterior limb: {}
+      posterior thalamic nuclear group, triangular part: {}
+      dorsal lateral geniculate nucleus: {}
+      zona incerta, ventral part: {}
+      subcoeruleus nucleus, dorsal part: {}
+      external medullary lamina: {}
+      pontine reticular nucleus, oral part: {}
+      facial nucleus, dorsolateral subnucleus: {}
+      anterior commissural nucleus: {}
+      dorsal 3rd ventricle: {}
+      simplex fissure: {}
+      cuneate fasciculus: {}
+      lambdoid septal zone: {}
+      facial nucleus, lateral subnucleus: {}
+      posterior lobe of pituitary: {}
+      motor trigeminal nucleus, mylohyoid part: {}
+      caudomedial entothinal cortex: {}
+      primary somatosensory cortex, dysgranular zone: {}
+      lateral amygdaloid nucleus, ventrolateral part: {}
+      crus 2 of the ansiform lobule: {}
+      stigmoid hypothalamic nucleus: {}
+      trigeminal transition zone: {}
+      submedius thalamic nucleus, ventral part: {}
+      ventral intermediate entorhinal cortex: {}
+      ventral spinocerebellar tract decussation: {}
+      vestibulocochlear ganglion: {}
+      indusium griseum: {}
+      pontine raphe nucleus: {}
+      lateral reticular nucleus, subtrigeminal part: {}
+      isthmic reticular formation: {}
+      nucleus of the solitary tract, ventrolateral part: {}
+      interstitial nucleus of the medulla: {}
+      posterior hypothalamic area: {}
+      vestibulospinal tract: {}
+      medial (fastigial) cerebellar nucleus: {}
+      secondary motor cortex: {}
+      central amygdaloid nucleus, lateral division: {}
+      decussation of the superior cerebellar peduncle: {}
+      subparafascicular thalamic nucleus, parvicellular part: {}
+      bed nucleus of the stria terminalis, medial division: {}
+      dorsomedial hypothalamic nucleus, dorsal part: {}
+      ventromedial nucleus of the hypothalamus shell: {}
+      central amygdaloid nucleus: {}
+      9th cerebellar lobule: {}
+      circular nucleus: {}
+      mesencephalic reticular formation: {}
+      layer 4 of cortex: {}
+      arcuate hypothalamic nucleus, dorsal part: {}
+      cortex-amygdala transition zone, layer 1: {}
+      2nd cerebellar lobule: {}
+      splenium of the corpus callosum: {}
+      retrorubral field: {}
+      amygdalohippocampal area, posteromedial part: {}
+      anterior hypothalamic area, central part: {}
+      interstitial nucleus of Cajal. shell region: {}
+      rostral linear nucleus of the raphe: {}
+      mitral cell layer of the accessory olfactory bulb: {}
+      parietal cortex, posterior area, caudal part: {}
+      subbrachial nucleus: {}
+      medial vestibular nucleus, parvicellular part: {}
+      secondary visual cortex, lateral area: {}
+      bed nucleus of the stria terminalis, medial division, posterointermediate part: {}
+      central amygdaloid nucleus, medial division: {}
+      9th cerebellar lobule, c: {}
+      dorsolateral periaqueductal gray: {}
+      medial orbitofrontal artery: {}
+      lateral amygdaloid nucleus, ventromedial part: {}
+      interpeduncular nucleus, caudal subnucleus: {}
+      central amygdaloid nucleus, capsular part: {}
+      parietal cortex, posterior area, dorsal part: {}
+      paraventricular hypothalamic nucleus, ventral part: {}
+      infralimbic cortex: {}
+      raphe magnus nucleus: {}
+      inferior olive, subnucleus A of medial nucleus: {}
+      mediodorsal thalamic nucleus: {}
+      lateral (dentate) cerebellar nucleus: {}
+      deep white layer of the superior colliculus: {}
+      layer 6a of cortex: {}
+      nucleus Y: {}
+      "medial forebrain bundle, \u2018b\u2019 component": {}
+      vestibular root of the vestibulocochlear nerve: {}
+      rhabdoid nucleus: {}
+      dorsomedial hypothalamic nucleus, compact part: {}
+      A11dopamine cells: {}
+      strial part of the preoptic area: {}
+      nucleus of the horizontal limb of the diagonal band: {}
+      basomedial amygdaloid nucleus, anterior part: {}
+      subparaventricular zone of the hypothalamus: {}
+      dorsolateral orbital cortex: {}
+      dorsal endopiriform nucleus: {}
+      central nucleus of the inferior colliculus: {}
+      inferior cerebellar peduncle decussation: {}
+      frontal cortex, area 3: {}
+      vertebral artery: {}
+      basal nucleus (Meynert): {}
+      facial nucleus, ventral intermediate subnucleus: {}
+      bed nucleus of the stria terminalis, lateral division, posterior part: {}
+      layer 3 of cortex: {}
+      field CA1 of the hippocampus: {}
+      paraventricular thalamic nucleus, posterior part: {}
+      caudal interstitial nucleus of the medial longitudinal fasciculus: {}
+      lateral parabrachial nucleus, crescent part: {}
+      retrosplenial granular cortex, c region: {}
+      commissural nucleus of the inferior colliculus: {}
+      10th cerebellar lobule (nodule): {}
+      anterior pretectal nucleus, dorsal part: {}
+      anterior hypothalamic area, posterior part: {}
+      mammillary recess of the 3rd ventricle: {}
+      prelimbic cortex: {}
+      reticluostrial nucleus: {}
+      lithoid nucleus: {}
+      gelatinous layer of the caudal spinal trigeminal nucleus: {}
+      basilar artery: {}
+      retrosplenial granular cortex, b region: {}
+      accessory nerve nucleus: {}
+      subiculum, transition area: {}
+      tectospinal tract: {}
+      dorsal motor nucleus of vagus: {}
+      interanterodorsal thalamic nucleus: {}
+      peduncular part of lateral hypothalamus: {}
+      rostral amygdalopiriform area: {}
+      accessory abducens/facial nucleus: {}
+      anterior pretectal nucleus, ventral part: {}
+      laterodorsal tegmental nucleus, ventral part: {}
+      caudal periolivary nucleus: {}
+      parvicellular reticular nucleus, alpha part: {}
+      suprageniculate thalamic nucleus: {}
+      infundibular recess: {}
+      juxtaolivary nucleus: {}
+      bed nucleus of the stria terminalis, medial division, anteromedial part: {}
+      anteromedial thalamic nucleus, ventral part: {}
+      anteroventral thalamic nucleus: {}
+      dorsal intermediate entorhinal cortex: {}
+      dorsal transition zone: {}
+      intercalated amygdaloid nucleus, main part: {}
+      cochlear root of the vestibulocochlear nerve: {}
+      dorsal tegmental decussation: {}
+      anterior hypothalamic area, anterior part: {}
+      alar nucleus: {}
+      zonal layer of the superior colliculus: {}
+      submammillothalamic nucleus: {}
+      secondary visual cortex, mediolateral area: {}
+      parietal cortex, posterior area, rostral part: {}
+      nucleus of the solitary tract, intermediate part: {}
+      episupraoptic nucleus: {}
+      vestibulomesencephalic tract: {}
+      subincertal nucleus: {}
+      medial parabrachial nucleus external part: {}
+      granular layer of the dentate gyrus: {}
+      dorsomedial tegmental area: {}
+      uncinate fasciculus of the cerebellum: {}
+      substantia nigra, compacta part, ventral tier: {}
+      interposed cerebellar nucleus, anterior part: {}
+      nucleus X: {}
+      4th cerebellar lobule: {}
+      primary somatosensory cortex: {}
+      accessory neurosecretory nuclei: {}
+      posterior cerebral artery: {}
+      epifascicular nucleus: {}
+      r2 reticular formation: {}
+      accumbens nucleus, core: {}
+      paraventricular hypothalamic nucleus, dorsal cap: {}
+      internal plexiform layer of the olfactory bulb: {}
+      central gray of the pons: {}
+      bed nucleus of the stria terminalis, intermediate division: {}
+      inferior olive, dorsomedial cell group: {}
+      dorsal cochlear nucleus, granular layer: {}
+      external cortex of the inferior colliculus: {}
+      mesencephalic trigeminal nucleus: {}
+      substantia innominata, basal part: {}
+      molecular layer of the dentate gyrus: {}
+      scaphoid thalamic nucleus: {}
+      primary somatosensory cortex, trunk region: {}
+      epilemniscal nucleus: {}
+      lacunosum moleculare layer of the hippocampus: {}
+      septohypothalamic nucleus: {}
+      secondary visual cortex, mediomedial area: {}
+      dorsal tuberomammillary nucleus: {}
+      cortex-amygdala transition zone: {}
+      region where VA and VL overlap: {}
+      ependyma and subependymal layer: {}
+      granule cell layer of cochlear nuclei: {}
+      spinal trigeminal nucleus, oral part: {}
+      interstitial nucleus of the posterior limb of the anterior commissure, lateral part: {}
+      external cortex of the inferior colliculus, layer 1: {}
+      paraxiphoid nucleus of thalamus: {}
+      layer 2 of cortex: {}
+      spinal trigeminal nucleus, caudal part: {}
+      lateral paragigantocellular nucleus, alpha part: {}
+      2b cerebellar lobule: {}
+      posterolateral cortical amygdaloid nucleus: {}
+      medial amygdaloid nucleus: {}
+      hypoglossal nucleus, geniohyoid part: {}
+      subparafascicular thalamic nucleus: {}
+      bed nucleus of the stria terminalis, lateral division, dorsal part: {}
+      medial geniculate nucleus: {}
+      paralambdoid septal nucleus: {}
+      interstitial nucleus of the vestibulocochlear nerve: {}
+      lat amygdaloid nucleus: {}
+      inferior olive, beta subnucleus: {}
+      interstitial nucleus of the posterior limb of the anterior commissure: {}
+      primary motor cortex: {}
+      premammillary nucleus, ventral part: {}
+      principal sensory trigeminal nucleus, ventrolateral part: {}
+      retroendopiriform nucleus: {}
+      1st cerebellar lobule (lingula): {}
+      cuneiform nucleus, dorsal part: {}
+      laterodorsal thalamic nucleus: {}
+      dorsal cortex of the inferior colliculus: {}
+      ventral tegmental area, rostral part: {}
+      facial nucleus, dorsal intermediate subnucleus: {}
+      ventral geniculate nucleus, layer 1: {}
+      hilus of the dentate gyrus: {}
+      central cervical nucleus of the spinal cord: {}
+      nucleus of the solitary tract, interstitial part: {}
+      primary somatosensory cortex, forelimb region: {}
+      inferior olive, subnucleus C of medial nucleus: {}
+      polymorph layer of the dentate gyrus: {}
+      primary somatosensory cortex, upper lip region: {}
+      nucleus of the solitary tract, rostrolateral part: {}
+      superior cerebellar peduncle (brachium conjunctivum): {}
+      submedius thalamic nucleus, dorsal part: {}
+      3rd cerebellar lobule: {}
+      lateral habenular nucleus, lateral part: {}
+      trigeminothalamic tract: {}
+      retrouniens area: {}
+      nucleus of the commissural stria terminalis: {}
+      accumbens nucleus: {}
+      perifacial zone: {}
+      posterior thalamic nuclear group: {}
+      bed nucleus of the stria terminalis, medial division, posteromedial part: {}
+      sublenticular extended amygdala, central part: {}
+      agranular insular cortex, ventral part: {}
+      lateral cerebellar nucleus, parvicellular part: {}
+      interfascicular nucleus: {}
+      dorsal hypothalamic area: {}
+      marginal zone of the medial geniculate: {}
+      lateral parietal association cortex: {}
+      interposed cerebellar nucleus, posterior part: {}
+      aqueduct: {}
+      9th cerebellar lobule, a and b: {}
+      external plexiform layer of the olfactory bulb: {}
+      ectorhinal cortex: {}
+      ventral tenia tecta: {}
+      genu of the corpus callosum: {}
+      artery: {}
+      oculomotor nucleus, parvicellular part: {}
+      lateral accumbens shell: {}
+      cuneiform nucleus, ventral part: {}
+      primary somatosensory cortex, hindlimb region: {}
+      cell bridges of the ventral striatum: {}
+      parabrachial pigmented nucleus of the VTA: {}
+      anterior perifornical nucleus: {}
+      epirubrospinal nucleus: {}
+      vein: {}
+      molecular layer of the subiculum: {}
+      A2 noradrenaline cells: {}
+      medial amygdaloid nucleus, ant dorsal: {}
+      anterior lobe of pituitary: {}
+      dorsolateral entorhinal cortex: {}
+      periventricular hypothalamic nucleus, anterior parvicellular part: {}
+      C1 adrenaline cells: {}
+      cuneiform nucleus, intermediate part: {}
+      primary somatosensory cortex, shoulder region: {}
+      medial orbital cortex: {}
+      ambiguus nucleus, subcompact part: {}
+      basomedial amygdaloid nucleus, posterior part: {}
+      ambiguus nucleus: {}
+      medial eminence, internal layer: {}
+      ventral orbital cortex: {}
+      ethmoid thalamic nucleus: {}
+      lateral septal nucleus, intermediate part: {}
+      azygous anterior cerebral artery: {}
+      lateral septal nucleus, dorsal part: {}
+      forceps minor of the corpus callosum: {}
+      olfactory ventricle (olfactory part of lateral ventricle): {}
+      gemini hypothalamic nucleus: {}
+      terete hypothalamic nucleus: {}
+      commissure of the lateral lemniscus: {}
+      uncinate fasciculus decussation: {}
+      decussation of the trapezoid body: {}
+      intermediate reticular nucleus, alpha part: {}
+      B9 serotonin cells: {}
+      paracochlear glial substance: {}
+      interstitial nucleus of the posterior limb of the anterior commissure, medial part: {}
+      paramedian raphe nucleus: {}
+      bed nucleus of the stria terminalis, lateral division, ventral part: {}
+      ventral subiculum: {}
+      nervus intermedius component of the facial nerve: {}
+      prerubral field: {}
+      bed nucleus of the stria terminalis, intraamygdaloid division: {}
+      retroambiguus nucleus: {}
+      lateral parabrachial nucleus, dorsal part: {}
+      granular cell layer of the olfactory bulb: {}
+      ventral endopiriform nucleus: {}
+      cuneate nucleus, rotundus part: {}
+      striohypothalamic nucleus: {}
+      lateral parabrachial nucleus, external part: {}
+      dorsal raphe nucleus: {}
+      dorsal tenia tecta layer 1: {}
+      ambiguus nucleus, loose part: {}
+      dorsal tegmental nucleus, central part: {}
+      intermediate endopiriform nucleus: {}
+      A1 noradrenaline cells: {}
+      intermediolateral cell column of the spinal cord: {}
+      lateral parabrachial nucleus, internal part: {}
+      bed nucleus of the stria terminalis, medial division, posterolateral part: {}
+      subpostrema area: {}
+      magnocellular preoptic nucleus: {}
+      parainterfascicular nucleus of the VTA: {}
+      stratum lucidum of the hippocampus: {}
+      6c cerebellar lobule: {}
+      8th cerebellar lobule: {}
+      paralemniscal nucleus: {}
+      pararubral nucleus: {}
+      dorsal corticospinal tract: {}
+      root of abducens nerve: {}
+      magnocellular nucleus of the posterior commissure: {}
+      dorsal nucleus of the lateral lemniscus: {}
+      motor trigeminal nucleus: {}
+      arcuate hypothalamic nucleus, lateral part: {}
+      ectotrigeminal nucleus: {}
+      paraventricular hypothalamic nucleus, posterior part: {}
+      bed nucleus of the stria terminalis, lateral division, juxtacapsular part: {}
+      facial nucleus, ventromedial subnucleus: {}
+      anterior amygdaloid area: {}
+      nucleus of the vertical limb of the diagonal band: {}
+      trigeminal-solitary transition zone: {}
+      solitary nucleus, dorsolateral part: {}
+      2nd and 3rd cerebellar lobules: {}
+      paraventricular thalamic nucleus, anterior part: {}
+      nucleus of the central acoustic tract: {}
+      substantia nigra, compact part, medial tier: {}
+      C1 adrenaline cells and A1 noradrenaline cells: {}
+      lateroventral periolivary nucleus: {}
+      medial geniculate nucleus, medial part: {}
+      paraabducens nucleus: {}
+      cingulum: {}
+      bed nucleus of the stria terminalis, lateral division: {}
+      paraterete nucleus: {}
+      medial amygdaloid nucleus, posteroventral part: {}
+      medial cerebellar nucleus, lateral part: {}
+      field CA2 of the hippocampus: {}
+      posterior limitans thalamic nucleus: {}
+      dorsal spinocerebellar tract and olivocerebellar tract: {}
+      lateral amygdaloid nucleus, dorsolateral part: {}
+      central gray, alpha part: {}
+      dorsal paragigantocellular nucleus: {}
+      caudal linear nucleus of the raphe: {}
+      deep cerebral white matter: {}
+      suprachiasmatic nucleus, dorsolateral part: {}
+      lemina terminalis: {}
+      motor trigeminal nucleus, tensor tympani part: {}
+      ventral linear nucleus of the thalamus: {}
+      bed nucleus of the stria terminalis, lateral division, intermediate part: {}
+      suprachiasmatic nucleus, ventromedial part: {}
+      secondary somatosensory cortex: {}
+      sublenticular extended amygdala: {}
+      medial cerebellar nucleus, caudomedial part: {}
+      lateral parabrachial nucleus, central part: {}
+      medial parabrachial nucleus: {}
+      layer 5b of cortex: {}
+      rostral interstitial nucleus of medial longitudinal fasciculus: {}
+      lateroanterior hypothalamic nucleus: {}
+      gracile fasciculus: {}
+      paracommissural nucleus of the posterior commissure: {}
+      posteromedian thalamic nucleus: {}
+      anterior olfactory nucleus, ventral part: {}
+      bed nucleus of stria terminalis, supracapsular division: {}
+      dorsal part of claustrum: {}
+      cerebellar white matter: {}
+      simple lobule A: {}
+      principal sensory trigeminal nucleus, dorsomedial part: {}
+      lateral stripe of the striatum: {}
+      superior thalamic radiation: {}
+      intermediate nucleus of the lateral lemniscus: {}
+      lateral paragigantocellular nucleus: {}
+      A7 noradrenaline cells: {}
+      Botzinger complex: {}
+      basolateral amygdaloid nucleus, anterior part: {}
+      C3 adrenaline cells: {}
+      dorsal raphe nucleus, lateral part: {}
+      lateral posterior thalamic nucleus: {}
+      red nucleus, parvicellular part: {}
+      ventral cochlear nucleus, capsular part: {}
+      inferior olive, cap of Kooy of the medial nucleus: {}
+      layer 5a of cortex: {}
+      epipeduncular nucleus: {}
+      intermediate gray layer of the superior colliculus: {}
+      lateral habenular nucleus, medial part: {}
+      centrolateral thalamic nucleus: {}
+      dorsal peduncular pontine nucleus: {}
+      raphe obscurus nucleus: {}
+      infundibular stem: {}
+      subcoeruleus nucleus, ventral part: {}
+      inferior olive, principal nucleus: {}
+      ventral cochlear nucleus, posterior part, octopus cell area: {}
+      arcuate hypothalamic nucleus, medial posterior part: {}
+      Purkinje cell layer of the cerebellum: {}
+      interpeduncular nucleus, dorsolateral subnucleus: {}
+      basolateral amygdaloid nucleus, ventral part: {}
+      medial amygdaloid nucleus, anteroventral part: {}
+      ambiguus nucleus, compact part: {}
+      middle cerebral artery: {}
+      mitral cell layer of the olfactory bulb: {}
+      6a cerebellar lobule: {}
+      "K\xEElliker-Fuse nucleus": {}
+      reticulotegmental nucleus of the pons, pericentral part: {}
+      lateral parabrachial nucleus: {}
+      islands of Calleja, major island: {}
+      intercalated nuclei of the amygdala: {}
+      5th cerebellar lobule: {}
+      layer 1b of cortex: {}
+      primary somatosensory cortex, oral dysgranular zone: {}
+      nigrostriatal bundle: {}
+      bed nucleus of the stria terminalis, medial division, ventral part: {}
+      bed nucleus of stria terminalis, supracapsular division, medial part: {}
+      root of accessory nerve: {}
+      lateral parabrachial nucleus, ventral part: {}
+      6th cerebellar lobule: {}
+      red nucleus, magnocellular part: {}
+      anterior olfactory nucleus, posterior part: {}
+      sphenoid nucleus: {}
+      accumbens nucleus, shell: {}
+      dorsal raphe nucleus, caudal part: {}
+      oriens layer of the hippocampus: {}
+      primary visual cortex, monocular area: {}
+      tuberal region of lateral hypothalamus: {}
+      perifornical part of lateral hypothalamus: {}
+      ventrolateral hypothalamic nucleus: {}
+      motor trigeminal nucleus, temporalis part: {}
+      trigeminal ganglion: {}
+      9th cerebellar lobule, b: {}
+      forceps major of the corpus callosum: {}
+      intercalated nucleus of the medulla: {}
+      lateral recess of the 4th ventricle: {}
+      paraventricular hypoth nucleus: {}
+      central gray, gamma part: {}
+      caudate putamen (striatum): {}
+      dorsal raphe nucleus, dorsal part: {}
+      ventral tenia tecta, layer 1: {}
+      dorsal periolivary region: {}
+      substantia nigra, compact part, dorsal tier: {}
+      external plexiform layer of the accessory olfactory bulb: {}
+      dorsal nucleus of the spinal cord: {}
+      anterior cortical amygdaloid nucleus: {}
+      dorsal cochlear nucleus, fusiform layer: {}
+      medial geniculate nucleus, ventral part: {}
+      trochlear nuclues shell region: {}
+      precuneiform area: {}
+      central gray, beta part: {}
+      "medial forebrain bundle, \u2018a\u2019 component": {}
+      anterior olfactory nucleus, ventroposterior part: {}
+      medial amygdaloid nucleus, posterodorsal part: {}
+      ventral geniculate nucleus: {}
+      primary somatosensory cortex, barrel field: {}
+      layer 6 of cortex: {}
+      pleomorphic part of periaqueductai gray: {}
+      magnocellular nucleus of the lateral hypothalamus: {}
+      rostrum of the corpus callosum: {}
+      median raphe nucleus: {}
+      ventral part of claustrum: {}
+      medial pretectal nucleus: {}
+      posterior hypothalamic area, dorsal part: {}
+      anterovent thalamic nucleus, dorsomedial part: {}
+      reticulotegmental nucleus of the pons: {}
+      rostral ventral respiratory group: {}
+      interposed cerebellar nucleus, posterior parvicellular part: {}
+      ependymal and subendymal layer/olfactory ventricle: {}
+      microcellular tegmental nucleus: {}
+      nucleus of the solitary tract, dorsomedial part: {}
+      lateral paragigantocellular nucleus, external part: {}
+      spinal trigeminal nucleus, interpolar part: {}
+      intermediate white layer of the superior colliculus: {}
+      3rd ventricle: {}
+      subpeduncular tegmental nucleus: {}
+      7th cerebellar lobule: {}
+      layer 5 of cortex: {}
+      superior cerebellar peduncle, descending limb: {}
+      medial amygdaloid nucleus, anterior part: {}
+      median accessory nucleus of the medulla: {}
+      amygdaloid intramedullary gray: {}
+      conterminal nucleus: {}
+      olfactory nerve layer: {}
+      posterolateral cortical amygdaloid nucleus, layer 1: {}
+      basolateral amygdaloid nucleus, posterior part: {}
+      A13 dopamine cells: {}
+      solitary nucleus, ventral part: {}
+      amygdalostriatal transition area: {}
+      deep gray layer of the superior colliculus: {}
+      agranular insular cortex, dorsal part: {}
+      6b cerebellar lobule: {}
+      olivocochlear bundle: {}
+      premammillary nucleus, dorsal part: {}
+      isthmic periaqueductal gray: {}
+      periolivary horn: {}
+      gigantocellular reticular nucleus, alpha part: {}
+      amygdaloid fissure: {}
+      dorsal tegmental nucleus, pericentral part: {}
+      pyramidal cell layer of the hippocampus: {}
+      retrosplenial granular cortex, a region: {}
+      raphe pallidus nucleus: {}
+      triangular nucleus, lateral lemniscus: {}
+      dorsomedial spinal trigeminal nucleus: {}
+      medial cerebellar nucleus, dorsolateral protuberance: {}
+      anterior spinal artery: {}
+      inferior cerebellar peduncle (restiform body): {}
+      bed nucleus of stria terminalis, supracapsular division, lateralpart: {}
+      medial tuberal nucleus: {}
+      lateral orbitofrontal artery: {}
+      central gray, nucleus O: {}
+      navicular nucleus of the basal forebrain: {}
+      frontal assocn cortex: {}
+      retrolemniscal nucleus: {}
+      motor trigeminal nucleus, anterior digastric part: {}
+      amygdalohippocampal area, anterolateral part: {}
+      lateral cervical nucleus of the spinal cord: {}
+      medial geniculate nucleus, dorsal part: {}
+      nucleus of the lateral olfactory tract, layer 1: {}
+      dorsal tenia tecta: {}
+      lateral periaqueductal gray: {}
+      intergeniculate leaf: {}
+      reticular thalamic nucleus: {}
+      bed nucleus of the stria terminalis, medial division, anterolateral part: {}
+      ventral reuniens thalamic nucleus: {}
+      nucleus of the ansa lenticularis: {}
+      sagulum nucleus: {}
+      paraventricular hypothalamic nucleus, lateral magnocellular part: {}
+      vomeronasal nerve layer: {}
+      optic nerve layer of the superior colliculus: {}
+      medial entorhinal cortex, ventral part: {}
+      ventral tuberomammillary nucleus: {}
+      inferior olive, subnucleus B of medial nucleus: {}
+      arcuate hypothalamic nucleus, medial part: {}
+      medial parietal association cortex: {}
+      intermediate lobe of pituitary: {}
+      granule cell layer of the accessory olfactory bulb: {}
+      matrix region of the medulla: {}
+      perilemniscal nucleus, ventral part: {}
+      medial eminence, external layer: {}
+      caudoventrolateral reticular nucleus: {}
+      medial longitudinal fasciculus: {}
+      pre-Edinger-Westphal nucleus: {}
+      basal nucleus, compact part: {}
+      nucleus Z: {}
+      granule cell layer of the cerebellum: {}
+      motor trigeminal nucleus, masseter part: {}
+      juxtaparaventricular part of lateral hypothalamus: {}
+      lateral orbital cortex: {}
+      medial vestibular nucleus, magnocellular part: {}
+      9th cerebellar lobule, a: {}
+      A1 noradrenaline cells/C1 adrenaline cells: {}
+      intermedioventral thalamic commissure: {}
+      dorsal peduncular cortex: {}
+      C2 adrenaline cells: {}
+      amygdalohippocampal area, posterolateral: {}
+      amygdalohippocampal area: {}
+      layer 1 of cortex: {}
+      oval paracentral thalamic nucleus: {}
+      principal sensory trigeminal nucleus: {}
+      retrosplenial dysgranular cortex: {}
+      4th and 5th cerebellar lobules: {}
+      primary visual cortex, binocular area: {}
+      preoptic recess of the 3rd ventricle: {}
+      ventral nucleus of the lat lemniscus: {}
+      internal carotid artery: {}
+      dorsal raphe nucleus, ventral part: {}
+      dorsal lateral olfactory tract: {}
+      triangular septal nucleus: {}
+      rostroventrolateral reticular nucleus: {}
+      bed nucleus of stria terminalis, fusiform part: {}
+      3rd and 4th cerebellar lobules: {}
+      primary somatosensory cortex, jaw region: {}
+      interstitial nucleus of the decussation of the superior cerebellar peduncle: {}
+      copula of the pyramis: {}
+      lateral parabrachial nucleus, superior part: {}
+      retrorubral nucleus: {}
+      longitudinal fasciculus of the pons: {}
+      recess of the inferior colliculus: {}
+      retrosplenial granular cortex: {}
+      dorsal subiculum: {}
+      layer 6b of cortex: {}
+      agranular insular cortex, posterior part: {}
+      periventricular hypothalamic nucleus: {}
+      prepositus nucleus: {}
+      medial paralemniscial nucleus: {}
+      temporal associatin cortex: {}
+      obex: {}
+      p1 periaqueductal gray: {}
+      nucleus of the fields of Forel: {}
+      basolateral amygdaloid nucleus: {}
+      posteromedial cortical amygdaloid nucleus: {}
+      F cell group of the vestibular complex: {}
+      lateral posterior thalamic nucleus, laterorostral part: {}
+      radiatum layer of the hippocampus: {}
+      posterodorsal raphe nucleus: {}
+      crus 1 of the ansiform lobule: {}
+      nucleus of origin of efferents of the vestibular nerve: {}
+      field CA3 of the hippocampus: {}
+      bed nucleus of the stria terminalis, medial division, posterior part: {}
+      lateral posterior thalamic nucleus, laterocaudal part: {}
+      pre-Botzinger complex: {}
+      superior medullary velum: {}
+      reticulotegmental nucleus of the pons, lateral part: {}
+      facial nucleus, dorsomedial subnucleus: {}
+      lateral parabrachial nucleus, medial part: {}
+      abducens nucleus, retractor bulbi part: {}
+      cingulate cortex, area 1: {}
+      inferior olive, dorsal nucleus: {}
+      bed nucleus of the stria terminalis, medial division, anterior part: {}
+      azygous pericallosal artery: {}
+      arcuate hypothalamic nucleus, lateroposterior part: {}
+      intermediate interstitial nucleus of the medial longitudinal fasciculus: {}
+      root of hypoglossal nerve: {}
+      paranigral nucleus of the VTA: {}
+      gigantocellular reticular nucleus, ventral part: {}
+      inferior olive, medial nucleus: {}
+      A5 noradrenaline cells: {}
+      inferior olive, ventrolateral protrusion: {}
+      intermedius nucleus of the medulla: {}
+      raphe interpositus nucleus: {}
+      retrochiasmatic area, lateral part: {}
+      paratenial thalamic nucleus: {}
+      facial nucleus, stylohyoid part: {}
+      pedunculopontine tegmental nucleus: {}
+      r3 reticular formation: {}
+      medioventral periolivary nucleus: {}
+      dorsomedial periaqueductal gray: {}
+      interposed cerebellar nucleus, dorsomedial crest: {}
+      supraoculomotor cap: {}
+      mesencephalic trigeminal tract: {}
+      simple lobule B: {}
+      interposed cerebellar nucleus, dorsolateral hump: {}
+      ventrolateral periaqueductal gray: {}
+      r1 reticular formation: {}
+      pyramidal tract: {}
+      sublenticular extended amygdala, medial part: {}
+      anterior cerebral artery: {}
+      subcoeruleus nucleus, alpha part: {}
+      locus coeruleus: {}

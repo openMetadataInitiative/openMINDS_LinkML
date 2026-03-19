@@ -1,0 +1,2952 @@
+id: https://openminds.om-i.org/schemas/latest/slots?format=linkml
+name: openMINDS-slots
+title: OpenMINDS properties as LinkML slots, version "v5.0"
+description: Slots for the LinkML representation of the openMINDS metadata framework,
+  version "v5.0"
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+imports:
+- linkml:types
+slots:
+  IRI:
+    slot_uri: IRI
+    description: Stands for Internationalized Resource Identifier which is an internet
+      protocol standard that builds on the URI protocol, extending the set of permitted
+      characters to include Unicode/ISO 10646.
+    range: uri
+  MRIWeighting:
+    slot_uri: MRIWeighting
+    description: null
+    range: MRIWeighting
+  MTPulseShape:
+    slot_uri: MTPulseShape
+    description: null
+    range: PulseShape
+  abbreviation:
+    slot_uri: abbreviation
+    description: null
+    range: string
+  about:
+    slot_uri: about
+    description: null
+    any_of:
+    - range: LivePaperVersion
+    - range: MetaDataModel
+    - range: MetaDataModelVersion
+    - range: CommonCoordinateFrameworkVersion
+    - range: ModelVersion
+    - range: SoftwareVersion
+    - range: AnatomicalAtlasVersion
+    - range: WorkflowRecipeVersion
+    - range: WorkflowRecipe
+    - range: CommonCoordinateFramework
+    - range: AnatomicalAtlas
+    - range: ValidationTestVersion
+    - range: DatasetVersion
+    - range: Model
+    - range: Interface
+    - range: Dataset
+    - range: InterfaceVersion
+    - range: ValidationTest
+    - range: LivePaper
+    - range: Software
+    multivalued: true
+    list_elements_unique: true
+  abstract:
+    slot_uri: abstract
+    description: null
+    range: string
+  abstractionLevel:
+    slot_uri: abstractionLevel
+    description: Extent of simplification of physical, spatial, or temporal details
+      or attributes in the study of objects or systems.
+    range: ModelAbstractionLevel
+  accelerationFactor:
+    slot_uri: accelerationFactor
+    description: null
+    range: integer
+    minimum_value: 1
+  accessibility:
+    slot_uri: accessibility
+    description: Level to which something is accessible to someone or something.
+    range: Accessibility
+  acknowledgement:
+    slot_uri: acknowledgement
+    description: Official declaration or avowal of appreciation of an act or achievement.
+    range: string
+  acronym:
+    slot_uri: acronym
+    description: null
+    range: string
+  activeElement:
+    slot_uri: activeElement
+    description: null
+    multivalued: true
+    range: string
+    list_elements_unique: true
+  addExistingTerminology:
+    slot_uri: addExistingTerminology
+    description: Reference to an existing terminology (distinct class to group related
+      terms).
+    range: Terminology
+  additionalRemarks:
+    slot_uri: additionalRemarks
+    description: Mention of what deserves additional attention or notice.
+    range: string
+  address:
+    slot_uri: address
+    description: null
+    range: string
+  age:
+    slot_uri: age
+    description: Time of life or existence at which some particular qualification,
+      capacity or event arises.
+    any_of:
+    - range: SpecimenAge
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  ageCategory:
+    slot_uri: ageCategory
+    description: Distinct life cycle class that is defined by a similar age or age
+      range (developmental stage) within a group of individual beings.
+    range: AgeCategory
+    multivalued: true
+    list_elements_unique: true
+  algorithm:
+    slot_uri: algorithm
+    description: Procedure for solving a mathematical problem in a finite number of
+      steps. Can involve repetition of an operation.
+    range: string
+  alternateIdentifier:
+    slot_uri: alternateIdentifier
+    description: null
+    multivalued: true
+    range: string
+    list_elements_unique: true
+  alternateName:
+    slot_uri: alternateName
+    description: null
+    multivalued: true
+    range: string
+    list_elements_unique: true
+  amount:
+    slot_uri: amount
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  anatomicalAxesOrientation:
+    slot_uri: anatomicalAxesOrientation
+    description: Relation between reference planes used in anatomy and mathematics.
+    range: AnatomicalAxesOrientation
+  anatomicalLocation:
+    slot_uri: anatomicalLocation
+    description: null
+    any_of:
+    - range: CellType
+    - range: NervousSystemStructure
+    - range: AnatomicalCavity
+    - range: TissueStructure
+    - range: SubcellularEntity
+    - range: CustomAnatomicalEntity
+    - range: MuscularStructure
+    - range: OrganismSystem
+    - range: OrganSystemStructure
+    - range: ParcellationEntity
+    - range: ParcellationEntityVersion
+    - range: VascularStructure
+    - range: OrganismSubstance
+    - range: ExternalBodyRegion
+    - range: Organ
+    - range: SkeletalStructure
+    multivalued: true
+    list_elements_unique: true
+  anatomicalLocationOfArray:
+    slot_uri: anatomicalLocationOfArray
+    description: null
+    any_of:
+    - range: AnatomicalCavity
+    - range: CellType
+    - range: CustomAnatomicalEntity
+    - range: ExternalBodyRegion
+    - range: MuscularStructure
+    - range: NervousSystemStructure
+    - range: Organ
+    - range: OrganSystemStructure
+    - range: OrganismSubstance
+    - range: OrganismSystem
+    - range: ParcellationEntity
+    - range: ParcellationEntityVersion
+    - range: SkeletalStructure
+    - range: SubcellularEntity
+    - range: TissueStructure
+    - range: VascularStructure
+    multivalued: true
+    list_elements_unique: true
+  anatomicalLocationOfElectrodes:
+    slot_uri: anatomicalLocationOfElectrodes
+    description: null
+    any_of:
+    - range: AnatomicalCavity
+    - range: CellType
+    - range: CustomAnatomicalEntity
+    - range: ExternalBodyRegion
+    - range: MuscularStructure
+    - range: NervousSystemStructure
+    - range: Organ
+    - range: OrganSystemStructure
+    - range: OrganismSubstance
+    - range: OrganismSystem
+    - range: ParcellationEntity
+    - range: ParcellationEntityVersion
+    - range: SkeletalStructure
+    - range: SubcellularEntity
+    - range: TissueStructure
+    - range: VascularStructure
+    multivalued: true
+    list_elements_unique: true
+  anatomicalTarget:
+    slot_uri: anatomicalTarget
+    description: null
+    any_of:
+    - range: AnatomicalCavity
+    - range: CellType
+    - range: CustomAnatomicalEntity
+    - range: ExternalBodyRegion
+    - range: MuscularStructure
+    - range: NervousSystemStructure
+    - range: Organ
+    - range: OrganSystemStructure
+    - range: OrganismSubstance
+    - range: OrganismSystem
+    - range: ParcellationEntity
+    - range: ParcellationEntityVersion
+    - range: SkeletalStructure
+    - range: SubcellularEntity
+    - range: TissueStructure
+    - range: VascularStructure
+    multivalued: true
+    list_elements_unique: true
+  anchorPoint:
+    slot_uri: anchorPoint
+    description: null
+    range: QuantitativeValue
+    multivalued: true
+    inlined: true
+  apexAngle:
+    slot_uri: apexAngle
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  apexBaseDistance:
+    slot_uri: apexBaseDistance
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  argument:
+    slot_uri: argument
+    description: null
+    multivalued: true
+    range: string
+  associatedAccount:
+    slot_uri: associatedAccount
+    description: null
+    range: AccountInformation
+    multivalued: true
+    list_elements_unique: true
+  associatedProtocol:
+    slot_uri: associatedProtocol
+    description: null
+    any_of:
+    - range: BehavioralProtocol
+    - range: Protocol
+    multivalued: true
+    list_elements_unique: true
+  attribute:
+    slot_uri: attribute
+    description: null
+    any_of:
+    - range: SubjectAttribute
+    - range: TissueSampleAttribute
+    multivalued: true
+    list_elements_unique: true
+  authoringParty:
+    slot_uri: authoringParty
+    description: null
+    any_of:
+    - range: Organization
+    - range: Person
+    multivalued: true
+    list_elements_unique: true
+  awardNumber:
+    slot_uri: awardNumber
+    description: Machine-readable identifier for a benefit that is conferred or bestowed
+      on the basis of merit or need.
+    range: string
+  awardTitle:
+    slot_uri: awardTitle
+    description: Human-readable identifier for a benefit that is conferred or bestowed
+      on the basis of merit or need.
+    range: string
+  axesOrigin:
+    slot_uri: axesOrigin
+    description: Special point in a coordinate system used as a fixed point of reference
+      for the geometry of the surrounding space.
+    range: QuantitativeValue
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  backgroundStrain:
+    slot_uri: backgroundStrain
+    description: null
+    range: Strain
+    multivalued: true
+    list_elements_unique: true
+  baseDistance:
+    slot_uri: baseDistance
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  baseLength:
+    slot_uri: baseLength
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  baseLengths:
+    slot_uri: baseLengths
+    description: null
+    range: QuantitativeValue
+    multivalued: true
+    inlined: true
+  baseShape:
+    slot_uri: baseShape
+    description: null
+    any_of:
+    - range: Circle
+    - range: RightTriangle
+    - range: EquilateralTriangle
+    - range: IsoscelesTriangle
+    - range: Rectangle
+    - range: Square
+    - range: Trapezoid
+    - range: Rhombus
+    - range: Ellipse
+    - range: RegularPolygon
+    - range: Kite
+    - range: Parallelogram
+    - range: Triangle
+    inlined: true
+  bathTemperature:
+    slot_uri: bathTemperature
+    description: null
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  behavioralProtocol:
+    slot_uri: behavioralProtocol
+    description: null
+    range: BehavioralProtocol
+    multivalued: true
+    list_elements_unique: true
+  biologicalSex:
+    slot_uri: biologicalSex
+    description: Differentiation of individuals of most species (animals and plants)
+      based on the type of gametes they produce.
+    range: BiologicalSex
+    multivalued: true
+    list_elements_unique: true
+  breedingType:
+    slot_uri: breedingType
+    description: null
+    range: BreedingType
+  cameraPosition:
+    slot_uri: cameraPosition
+    description: null
+    range: CoordinatePoint
+    inlined: true
+  centralAngle:
+    slot_uri: centralAngle
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  channel:
+    slot_uri: channel
+    description: null
+    range: AccessChannel
+  chemicalProduct:
+    slot_uri: chemicalProduct
+    description: null
+    any_of:
+    - range: ChemicalSubstance
+    - range: MolecularEntity
+    - range: ChemicalMixture
+  chlorideReversalPotential:
+    slot_uri: chlorideReversalPotential
+    description: null
+    range: Measurement
+    multivalued: true
+    inlined: true
+  circumradius:
+    slot_uri: circumradius
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  citedPublication:
+    slot_uri: citedPublication
+    description: null
+    any_of:
+    - range: DOI
+    - range: ISBN
+    multivalued: true
+    list_elements_unique: true
+  comment:
+    slot_uri: comment
+    description: null
+    range: string
+  commenter:
+    slot_uri: commenter
+    description: null
+    range: Person
+  communicationProtocol:
+    slot_uri: communicationProtocol
+    description: null
+    range: CommunicationProtocol
+  compensationCurrent:
+    slot_uri: compensationCurrent
+    description: null
+    range: Measurement
+    inlined: true
+  conductorMaterial:
+    slot_uri: conductorMaterial
+    description: null
+    any_of:
+    - range: ChemicalSubstance
+    - range: MolecularEntity
+    - range: ChemicalMixture
+  configuration:
+    slot_uri: configuration
+    description: null
+    any_of:
+    - range: PropertyValueList
+    - range: WebResource
+    - range: Configuration
+    - range: File
+    - range: string
+  constructionType:
+    slot_uri: constructionType
+    description: null
+    range: CranialWindowConstructionType
+  contactInformation:
+    slot_uri: contactInformation
+    description: Any available way used to contact a person or business (e.g., address,
+      phone number, email address, etc.).
+    range: ContactInformation
+  contactResistance:
+    slot_uri: contactResistance
+    description: null
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  contactResistances:
+    slot_uri: contactResistances
+    description: null
+    any_of:
+    - range: QuantitativeValue
+    - range: QuantitativeValueRange
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  contentDescription:
+    slot_uri: contentDescription
+    description: null
+    range: string
+  contentType:
+    slot_uri: contentType
+    description: null
+    range: ContentType
+  contentTypePattern:
+    slot_uri: contentTypePattern
+    description: null
+    range: ContentTypePattern
+    multivalued: true
+    list_elements_unique: true
+  context:
+    slot_uri: context
+    description: null
+    range: string
+  contrastAgent:
+    slot_uri: contrastAgent
+    description: null
+    range: AmountOfChemical
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  contribution:
+    slot_uri: contribution
+    description: null
+    any_of:
+    - range: Contribution
+    - range: Organization
+    - range: Person
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  contributor:
+    slot_uri: contributor
+    description: Legal person that gave or supplied something as a part or share.
+    any_of:
+    - range: Consortium
+    - range: Organization
+    - range: Person
+    multivalued: true
+    list_elements_unique: true
+  contributorAffiliation:
+    slot_uri: contributorAffiliation
+    description: null
+    range: Affiliation
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  coordinateFramework:
+    slot_uri: coordinateFramework
+    description: null
+    any_of:
+    - range: CommonCoordinateFrameworkVersion
+    - range: CustomCoordinateFramework
+  coordinates:
+    slot_uri: coordinates
+    description: Pair or triplet of numbers defining a location in a given coordinate
+      space.
+    range: QuantitativeValue
+    multivalued: true
+    inlined: true
+  copyOf:
+    slot_uri: copyOf
+    description: null
+    range: File
+  copyright:
+    slot_uri: copyright
+    description: Exclusive and assignable legal right of an originator to reproduce,
+      publish, sell, or distribute the matter and form of a creative work for a defined
+      time period.
+    range: Copyright
+    inlined: true
+  correctedName:
+    slot_uri: correctedName
+    description: null
+    range: string
+  country:
+    slot_uri: country
+    description: null
+    range: SovereignState
+  countryOfFormation:
+    slot_uri: countryOfFormation
+    description: null
+    range: SovereignState
+  creationDate:
+    slot_uri: creationDate
+    description: null
+    range: date
+  criteria:
+    slot_uri: criteria
+    description: Aspects or standards on which a judgement or decision is based.
+    range: ProtocolExecution
+  criteriaQualityType:
+    slot_uri: criteriaQualityType
+    description: Distinct class that defines how the judgement or decision was made
+      for a particular criteria.
+    range: CriteriaQualityType
+  criteriaType:
+    slot_uri: criteriaType
+    description: null
+    range: AnnotationCriteriaType
+  cultureMedium:
+    slot_uri: cultureMedium
+    description: null
+    range: ChemicalMixture
+  cultureType:
+    slot_uri: cultureType
+    description: null
+    range: CellCultureType
+  customPropertySet:
+    slot_uri: customPropertySet
+    description: null
+    range: CustomPropertySet
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  customUsageClause:
+    slot_uri: customUsageClause
+    description: null
+    range: string
+  dataLocation:
+    slot_uri: dataLocation
+    description: null
+    any_of:
+    - range: PropertyValueList
+    - range: WebResource
+    - range: Configuration
+    - range: ModelVersion
+    - range: File
+    - range: FileArchive
+    - range: FileBundle
+    - range: ParcellationEntityVersion
+    - range: LivePaperResourceItem
+    multivalued: true
+    list_elements_unique: true
+  dataType:
+    slot_uri: dataType
+    description: null
+    any_of:
+    - range: DataType
+    - range: SemanticDataType
+    multivalued: true
+    list_elements_unique: true
+  defaultImage:
+    slot_uri: defaultImage
+    description: Two or three dimensional image that particluarly represents a specific
+      coordinate space.
+    range: File
+    multivalued: true
+    list_elements_unique: true
+  definingSource:
+    slot_uri: definingSource
+    description: null
+    multivalued: true
+    range: uri
+    list_elements_unique: true
+  definition:
+    slot_uri: definition
+    description: Short, but precise statement of the meaning of a word, word group,
+      sign or a symbol.
+    range: string
+  delayTime:
+    slot_uri: delayTime
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  deliveredBy:
+    slot_uri: deliveredBy
+    description: null
+    any_of:
+    - range: MRIScannerUsage
+    - range: ElectrodeArrayUsage
+    - range: PipetteUsage
+    - range: SlicingDeviceUsage
+    - range: ElectrodeUsage
+    - range: MRICoilUsage
+  dependency:
+    slot_uri: dependency
+    description: null
+    range: Dependency
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  dependsOn:
+    slot_uri: dependsOn
+    description: null
+    any_of:
+    - range: AnatomicalAtlasVersion
+    - range: CommonCoordinateFrameworkVersion
+    - range: DatasetVersion
+    - range: MetaDataModelVersion
+    - range: ModelVersion
+    - range: SoftwareVersion
+    - range: WorkflowRecipeVersion
+    multivalued: true
+    list_elements_unique: true
+  deploymentType:
+    slot_uri: deploymentType
+    description: null
+    range: DeploymentEnvironmentType
+  descendedFrom:
+    slot_uri: descendedFrom
+    description: null
+    any_of:
+    - range: SubjectGroupState
+    - range: SubjectState
+    - range: TissueSampleCollectionState
+    - range: TissueSampleState
+    multivalued: true
+    list_elements_unique: true
+  describedIn:
+    slot_uri: describedIn
+    description: null
+    any_of:
+    - range: DOI
+    - range: File
+    - range: WebResource
+    multivalued: true
+    list_elements_unique: true
+  description:
+    slot_uri: description
+    description: Longer statement or account giving the characteristics of someone
+      or something.
+    range: string
+  device:
+    slot_uri: device
+    description: Piece of equipment or mechanism (hardware) designed to serve a special
+      purpose or perform a special function.
+    any_of:
+    - range: Electrode
+    - range: ElectrodeArray
+    - range: ElectrodeArrayUsage
+    - range: ElectrodeUsage
+    - range: MRICoil
+    - range: MRICoilUsage
+    - range: MRIScannerUsage
+    - range: Pipette
+    - range: PipetteUsage
+    - range: SlicingDevice
+    - range: SlicingDeviceUsage
+    multivalued: true
+    list_elements_unique: true
+  diagonalLengths:
+    slot_uri: diagonalLengths
+    description: null
+    range: QuantitativeValue
+    multivalued: true
+    inlined: true
+  diameters:
+    slot_uri: diameters
+    description: null
+    range: QuantitativeValue
+    multivalued: true
+    inlined: true
+  diffusionEncodingParameters:
+    slot_uri: diffusionEncodingParameters
+    description: null
+    range: File
+    multivalued: true
+  digest:
+    slot_uri: digest
+    description: Summation or condensation of a body of information.
+    range: string
+  digitalIdentifier:
+    slot_uri: digitalIdentifier
+    description: Digital handle to identify objects or legal persons.
+    any_of:
+    - range: GenericIdentifier
+    - range: IdentifiersDotOrgID
+    - range: RRID
+    - range: ISSN
+    - range: ISBN
+    - range: LEI
+    - range: ORCID
+    - range: SWHID
+    - range: DOI
+    - range: RORID
+    - range: ISNI
+    - range: string
+    multivalued: true
+    list_elements_unique: true
+  dimension:
+    slot_uri: dimension
+    description: null
+    any_of:
+    - range: Circle
+    - range: RightCone
+    - range: Square
+    - range: Frustum
+    - range: RegularPolygon
+    - range: Kite
+    - range: Sphere
+    - range: CircularSector
+    - range: CentroidalPyramid
+    - range: Trapezoid
+    - range: Rhombus
+    - range: Parallelogram
+    - range: RightTriangle
+    - range: EquilateralTriangle
+    - range: Cube
+    - range: IsoscelesTriangle
+    - range: RightCylinder
+    - range: Ellipse
+    - range: Ellipsoid
+    - range: RightPrism
+    - range: Rectangle
+    - range: Spheroid
+    - range: Triangle
+    - range: integer
+    inlined: true
+    multivalued: true
+  diseaseModel:
+    slot_uri: diseaseModel
+    description: null
+    any_of:
+    - range: Disease
+    - range: DiseaseModel
+    multivalued: true
+    list_elements_unique: true
+  displayLabel:
+    slot_uri: displayLabel
+    description: null
+    range: string
+  distortionCorrection:
+    slot_uri: distortionCorrection
+    description: null
+    range: File
+    multivalued: true
+    list_elements_unique: true
+  documentation:
+    slot_uri: documentation
+    description: null
+    any_of:
+    - range: WebResource
+    - range: DOI
+    - range: File
+    - range: ISBN
+  dwellTime:
+    slot_uri: dwellTime
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  echoTime:
+    slot_uri: echoTime
+    description: null
+    range: QuantitativeValue
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  educationalLevel:
+    slot_uri: educationalLevel
+    description: null
+    range: EducationalLevel
+  electrodeIdentifier:
+    slot_uri: electrodeIdentifier
+    description: null
+    multivalued: true
+    range: string
+    list_elements_unique: true
+  elementCount:
+    slot_uri: elementCount
+    description: null
+    range: integer
+    minimum_value: 1
+  elevation:
+    slot_uri: elevation
+    description: null
+    any_of:
+    - range: integer
+    - range: float
+  eligibility:
+    slot_uri: eligibility
+    description: null
+    range: AccessEligibilityType
+  email:
+    slot_uri: email
+    description: Address to which or from which an electronic mail can be sent.
+    multivalued: true
+    range: Email
+    list_elements_unique: true
+  emitter:
+    slot_uri: emitter
+    description: null
+    range: Organization
+  endDate:
+    slot_uri: endDate
+    description: Date in the Gregorian calendar at which something terminates in time.
+    range: date
+  endMembranePotential:
+    slot_uri: endMembranePotential
+    description: null
+    range: Measurement
+    inlined: true
+  endTime:
+    slot_uri: endTime
+    description: null
+    any_of:
+    - range: datetime
+    - range: string
+    - range: time
+  entryPoint:
+    slot_uri: entryPoint
+    description: null
+    any_of:
+    - range: WebResource
+    - range: string
+  environment:
+    slot_uri: environment
+    description: null
+    any_of:
+    - range: Service
+    - range: Environment
+  environmentVariable:
+    slot_uri: environmentVariable
+    description: null
+    range: PropertyValueList
+  epoch:
+    slot_uri: epoch
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  equatorialDiameter:
+    slot_uri: equatorialDiameter
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  ethicsJurisdiction:
+    slot_uri: ethicsJurisdiction
+    description: null
+    any_of:
+    - range: SovereignState
+    - range: SupranationalBody
+  executable:
+    slot_uri: executable
+    description: null
+    range: string
+  experimentalApproach:
+    slot_uri: experimentalApproach
+    description: null
+    range: ExperimentalApproach
+    multivalued: true
+    list_elements_unique: true
+  externalDefinitionOfName:
+    slot_uri: externalDefinitionOfName
+    description: null
+    range: uri
+  externalDiameter:
+    slot_uri: externalDiameter
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  failureImpact:
+    slot_uri: failureImpact
+    description: null
+    range: DependencyImpact
+    multivalued: true
+    list_elements_unique: true
+  familyName:
+    slot_uri: familyName
+    description: Name borne in common by members of a family.
+    range: string
+  fatSuppressionTechnique:
+    slot_uri: fatSuppressionTechnique
+    description: null
+    range: MRIFatSuppressionTechnique
+  fieldOfView:
+    slot_uri: fieldOfView
+    description: null
+  fileExtension:
+    slot_uri: fileExtension
+    description: String of characters attached as suffix to the names of files of
+      a particular format.
+    multivalued: true
+    range: string
+    list_elements_unique: true
+  filePathPattern:
+    slot_uri: filePathPattern
+    description: null
+    range: FilePathPattern
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  fileRepository:
+    slot_uri: fileRepository
+    description: null
+    range: FileRepository
+  flipAngle:
+    slot_uri: flipAngle
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  form:
+    slot_uri: form
+    description: null
+    range: AccessForm
+  format:
+    slot_uri: format
+    description: Method of digitally organizing and structuring data or information.
+    range: ContentType
+    multivalued: true
+    list_elements_unique: true
+  fulfilledBy:
+    slot_uri: fulfilledBy
+    description: null
+    any_of:
+    - range: WebResource
+    - range: Configuration
+    - range: File
+    - range: SoftwareVersion
+    - range: InterfaceVersion
+  fullName:
+    slot_uri: fullName
+    description: Whole, non-abbreviated name of something or somebody.
+    range: string
+  funder:
+    slot_uri: funder
+    description: Legal person that provides money for a particular purpose.
+    any_of:
+    - range: Person
+    - range: Organization
+  funding:
+    slot_uri: funding
+    description: Money provided by a legal person for a particular purpose.
+    range: Funding
+    multivalued: true
+    list_elements_unique: true
+  generatedBy:
+    slot_uri: generatedBy
+    description: null
+    any_of:
+    - range: MRIScannerUsage
+    - range: ElectrodeArrayUsage
+    - range: PipetteUsage
+    - range: SlicingDeviceUsage
+    - range: ElectrodeUsage
+    - range: MRICoilUsage
+  geneticStrainType:
+    slot_uri: geneticStrainType
+    description: null
+    range: GeneticStrainType
+  geoCoordinates:
+    slot_uri: geoCoordinates
+    description: null
+    range: GeoCoordinates
+    inlined: true
+  givenName:
+    slot_uri: givenName
+    description: Name given to a person, including all potential middle names, but
+      excluding the family name.
+    range: string
+  gradientCorrection:
+    slot_uri: gradientCorrection
+    description: null
+    range: AnalysisTechnique
+  groupedBy:
+    slot_uri: groupedBy
+    description: Reference to the aspect used to group something.
+    any_of:
+    - range: AnalysisTechnique
+    - range: AnatomicalCavity
+    - range: AuditoryStimulusType
+    - range: BehavioralProtocol
+    - range: BiologicalOrder
+    - range: BiologicalSex
+    - range: BreedingType
+    - range: CellCultureType
+    - range: CellType
+    - range: CommonCoordinateFramework
+    - range: CommonCoordinateFrameworkVersion
+    - range: CustomAnatomicalEntity
+    - range: CustomCoordinateFramework
+    - range: DeviceType
+    - range: Disease
+    - range: DiseaseModel
+    - range: ElectricalStimulusType
+    - range: ExternalBodyRegion
+    - range: File
+    - range: FileBundle
+    - range: GeneticStrainType
+    - range: GustatoryStimulusType
+    - range: Handedness
+    - range: LocalFile
+    - range: MRIPulseSequence
+    - range: MRIWeighting
+    - range: MolecularEntity
+    - range: MuscularStructure
+    - range: NervousSystemStructure
+    - range: OlfactoryStimulusType
+    - range: OpticalStimulusType
+    - range: Organ
+    - range: OrganSystemStructure
+    - range: OrganismSubstance
+    - range: OrganismSystem
+    - range: ParcellationEntity
+    - range: ParcellationEntityVersion
+    - range: SkeletalStructure
+    - range: Species
+    - range: StimulationApproach
+    - range: StimulationTechnique
+    - range: SubcellularEntity
+    - range: Subject
+    - range: SubjectGroup
+    - range: SubjectGroupState
+    - range: SubjectState
+    - range: TactileStimulusType
+    - range: Technique
+    - range: TermSuggestion
+    - range: TissueSample
+    - range: TissueSampleCollection
+    - range: TissueSampleCollectionState
+    - range: TissueSampleState
+    - range: TissueSampleType
+    - range: TissueStructure
+    - range: VascularStructure
+    - range: VisualStimulusType
+    multivalued: true
+    list_elements_unique: true
+  groupingType:
+    slot_uri: groupingType
+    description: null
+    range: FileBundleGrouping
+    multivalued: true
+    list_elements_unique: true
+  handedness:
+    slot_uri: handedness
+    description: Degree to which an organism prefers one hand or foot over the other
+      hand or foot during the performance of a task.
+    range: Handedness
+    multivalued: true
+    list_elements_unique: true
+  hardware:
+    slot_uri: hardware
+    description: null
+    range: HardwareSystem
+  hasAnnotation:
+    slot_uri: hasAnnotation
+    description: null
+    any_of:
+    - range: AtlasAnnotation
+    - range: CustomAnnotation
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  hasEntity:
+    slot_uri: hasEntity
+    description: null
+    any_of:
+    - range: ParcellationEntity
+    - range: ParcellationEntityVersion
+    multivalued: true
+    list_elements_unique: true
+  hasParent:
+    slot_uri: hasParent
+    description: Reference to a parent object or legal person.
+    any_of:
+    - range: Organization
+    - range: ParcellationEntity
+    - range: ParcellationEntityVersion
+    multivalued: true
+    list_elements_unique: true
+  hasPart:
+    slot_uri: hasPart
+    description: null
+    any_of:
+    - range: AmountOfChemical
+    - range: AnatomicalAtlas
+    - range: AnatomicalAtlasVersion
+    - range: CommonCoordinateFramework
+    - range: CommonCoordinateFrameworkVersion
+    - range: Dataset
+    - range: DatasetVersion
+    - range: Electrode
+    - range: ElectrodeArray
+    - range: File
+    - range: FileBundle
+    - range: Interface
+    - range: InterfaceVersion
+    - range: LivePaper
+    - range: LivePaperVersion
+    - range: MRICoil
+    - range: MRIScanner
+    - range: MetaDataModel
+    - range: MetaDataModelVersion
+    - range: Model
+    - range: ModelVersion
+    - range: Pipette
+    - range: Setup
+    - range: SlicingDevice
+    - range: Software
+    - range: SoftwareVersion
+    - range: ValidationTest
+    - range: ValidationTestVersion
+    - range: WorkflowRecipe
+    - range: WorkflowRecipeVersion
+    multivalued: true
+    list_elements_unique: true
+    inlined: true
+  hasTerminology:
+    slot_uri: hasTerminology
+    description: null
+    any_of:
+    - range: ParcellationTerminology
+    - range: ParcellationTerminologyVersion
+    inlined: true
+  hash:
+    slot_uri: hash
+    description: Term used for the process of converting any data into a single value.
+      Often also directly refers to the resulting single value.
+    range: Hash
+    inlined: true
+    multivalued: true
+    list_elements_unique: true
+  holder:
+    slot_uri: holder
+    description: Legal person in possession of something.
+    any_of:
+    - range: Organization
+    - range: Person
+    multivalued: true
+    list_elements_unique: true
+  holdingPotential:
+    slot_uri: holdingPotential
+    description: null
+    range: Measurement
+    inlined: true
+  homepage:
+    slot_uri: homepage
+    description: Main website of something or someone.
+    range: uri
+  hostedBy:
+    slot_uri: hostedBy
+    description: Reference to an organization that provides facilities and services
+      for something.
+    any_of:
+    - range: Service
+    - range: Organization
+  howToCite:
+    slot_uri: howToCite
+    description: Preferred format for citing a particular object or legal person.
+    range: string
+  identifier:
+    slot_uri: identifier
+    description: Term or code used to identify something or someone.
+    range: string
+    pattern:
+      ALTERNATES:
+      - https://scicrunch.org/resolver/RRID:([A-Za-z]+)[_:]([A-Za-z0-9_:-]+)
+      - ^[0-9]{4}-[0-9]{3}[0-9X]$
+      - ^http://hdl.handle.net/[.0-9A-Za-z]+/[.0-9A-Za-z]+
+      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
+      - ^https://lei.global/LEI/[A-Z0-9]{18}\d{2}$
+      - ^https?://(www.)?isni.org/(isni/)?\d{15}[\dX]$)
+      - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
+      - ^https://identifiers.org/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)|^https://identifiers.org/([a-zA-Z0-9-_.]+)/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)
+      - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
+        \ \t\r\n\f]+)*$"
+      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
+      - ^(?=(?:\d-?){9}-[\dX]$)[\d]{1,5}-[\d]{2,7}-[\d]{1,6}-[\dX]$|^(?=(?:\d-?){13}$)97[89]-[\d]{1,5}-[\d]{1,7}-[\d]{1,6}-[\d]$
+  implements:
+    slot_uri: implements
+    description: null
+    range: InterfaceVersion
+    multivalued: true
+    list_elements_unique: true
+  inRelationTo:
+    slot_uri: inRelationTo
+    description: Reference to a related element.
+    any_of:
+    - range: ParcellationEntity
+    - range: CustomAnatomicalEntity
+    - range: ParcellationEntityVersion
+  input:
+    slot_uri: input
+    description: Something or someone that is put into or participates in a process
+      or machine.
+    any_of:
+    - range: AnatomicalAtlasVersion
+    - range: CommonCoordinateFrameworkVersion
+    - range: DatasetVersion
+    - range: File
+    - range: FileBundle
+    - range: LocalFile
+    - range: ModelVersion
+    - range: SoftwareVersion
+    - range: SubjectGroupState
+    - range: SubjectState
+    - range: TissueSampleCollectionState
+    - range: TissueSampleState
+    - range: ValidationTestVersion
+    multivalued: true
+    list_elements_unique: true
+  inputData:
+    slot_uri: inputData
+    description: Data that is put into a process or machine.
+    any_of:
+    - range: AnatomicalAtlas
+    - range: AnatomicalAtlasVersion
+    - range: CommonCoordinateFramework
+    - range: CommonCoordinateFrameworkVersion
+    - range: DOI
+    - range: File
+    - range: FileBundle
+    - range: WebResource
+    multivalued: true
+    list_elements_unique: true
+  inputFormat:
+    slot_uri: inputFormat
+    description: Format of data that is put into a process or machine.
+    range: ContentType
+    multivalued: true
+    list_elements_unique: true
+  inputResistance:
+    slot_uri: inputResistance
+    description: null
+    range: Measurement
+    inlined: true
+  inspiredBy:
+    slot_uri: inspiredBy
+    description: Reference to an inspiring element.
+    range: File
+    multivalued: true
+    list_elements_unique: true
+  insulatorMaterial:
+    slot_uri: insulatorMaterial
+    description: null
+    any_of:
+    - range: ChemicalSubstance
+    - range: MolecularEntity
+    - range: ChemicalMixture
+  intendedMountingLocation:
+    slot_uri: intendedMountingLocation
+    description: null
+    range: ExternalBodyRegion
+  interface:
+    slot_uri: interface
+    description: null
+    range: InterfaceVersion
+  interfaceType:
+    slot_uri: interfaceType
+    description: null
+    range: CommunicationInterfaceType
+  interiorAngle:
+    slot_uri: interiorAngle
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  intermediateDiameter:
+    slot_uri: intermediateDiameter
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  internalDiameter:
+    slot_uri: internalDiameter
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  internalIdentifier:
+    slot_uri: internalIdentifier
+    description: Term or code that identifies someone or something within a particular
+      product.
+    range: string
+  intrinsicResistance:
+    slot_uri: intrinsicResistance
+    description: null
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  inversionTime:
+    slot_uri: inversionTime
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  isBasedOn:
+    slot_uri: isBasedOn
+    description: null
+    range: ContentType
+    multivalued: true
+    list_elements_unique: true
+  isPartOf:
+    slot_uri: isPartOf
+    description: Reference to the ensemble of multiple things or beings.
+    any_of:
+    - range: SubjectGroup
+    - range: PublicationIssue
+    - range: LivePaperVersion
+    - range: LivePaperSection
+    - range: TissueSampleCollection
+    - range: DatasetVersion
+    - range: FileBundle
+    - range: FileRepository
+    - range: PublicationVolume
+    - range: Book
+    - range: Periodical
+    multivalued: true
+    list_elements_unique: true
+  isPrecededBy:
+    slot_uri: isPrecededBy
+    description: null
+    any_of:
+    - range: AnatomicalAtlasVersion
+    - range: CommonCoordinateFrameworkVersion
+    - range: DatasetVersion
+    - range: InterfaceVersion
+    - range: LivePaperVersion
+    - range: MetaDataModelVersion
+    - range: ModelVersion
+    - range: SoftwareVersion
+    - range: ValidationTestVersion
+    - range: WorkflowRecipeVersion
+  isVariantOf:
+    slot_uri: isVariantOf
+    description: null
+    any_of:
+    - range: AnatomicalAtlasVersion
+    - range: CommonCoordinateFrameworkVersion
+    - range: DatasetVersion
+    - range: InterfaceVersion
+    - range: LivePaperVersion
+    - range: MetaDataModelVersion
+    - range: ModelVersion
+    - range: SoftwareVersion
+    - range: ValidationTestVersion
+    - range: WorkflowRecipeVersion
+    multivalued: true
+    list_elements_unique: true
+  isVersionOf:
+    slot_uri: isVersionOf
+    description: null
+    any_of:
+    - range: AnatomicalAtlas
+    - range: CommonCoordinateFramework
+    - range: Dataset
+    - range: Interface
+    - range: LivePaper
+    - range: MetaDataModel
+    - range: Model
+    - range: ParcellationEntity
+    - range: Software
+    - range: ValidationTest
+    - range: WorkflowRecipe
+  issueNumber:
+    slot_uri: issueNumber
+    description: null
+    range: string
+  jurisdiction:
+    slot_uri: jurisdiction
+    description: null
+    any_of:
+    - range: SovereignState
+    - range: SupranationalBody
+  keyword:
+    slot_uri: keyword
+    description: Significant word or concept that are representative of something
+      or someone.
+    any_of:
+    - range: AccessChannel
+    - range: AccessEligibilityType
+    - range: AccessForm
+    - range: AccessProcessType
+    - range: ActionStatusType
+    - range: AgeCategory
+    - range: AgeReference
+    - range: AnalysisTechnique
+    - range: AnatomicalAxesOrientation
+    - range: AnatomicalCavity
+    - range: AnatomicalIdentificationType
+    - range: AnatomicalPlane
+    - range: AnnotationCriteriaType
+    - range: AnnotationType
+    - range: AtlasType
+    - range: AuditoryStimulusType
+    - range: BiologicalOrder
+    - range: BiologicalProcess
+    - range: BiologicalSex
+    - range: BreedingType
+    - range: CellCultureType
+    - range: CellType
+    - range: ChemicalMixtureType
+    - range: Colormap
+    - range: CommunicationInterfaceType
+    - range: CommunicationProtocol
+    - range: ContributionType
+    - range: CranialWindowConstructionType
+    - range: CranialWindowReinforcementType
+    - range: CriteriaQualityType
+    - range: DataType
+    - range: DependencyImpact
+    - range: DeploymentEnvironmentType
+    - range: DeviceMountingType
+    - range: DeviceType
+    - range: DifferenceMeasure
+    - range: Disease
+    - range: DiseaseModel
+    - range: EducationalLevel
+    - range: ElectricalStimulusType
+    - range: ExperimentalApproach
+    - range: ExternalBodyRegion
+    - range: FileBundleGrouping
+    - range: FileRepositoryType
+    - range: FileUsageRole
+    - range: GeneticStrainType
+    - range: GustatoryStimulusType
+    - range: Handedness
+    - range: Language
+    - range: Laterality
+    - range: LearningResourceType
+    - range: MRIFatSuppressionTechnique
+    - range: MRIParallelAcquisitionTechnique
+    - range: MRIPulseSequence
+    - range: MRISpoilingTechnique
+    - range: MRIWeighting
+    - range: MeasuredQuantity
+    - range: MeasuredSignalType
+    - range: MetaDataModelType
+    - range: ModelAbstractionLevel
+    - range: ModelScope
+    - range: ModificationConsentRequirement
+    - range: ModificationConstraint
+    - range: ModificationForm
+    - range: ModificationScope
+    - range: MolecularEntity
+    - range: MuscularStructure
+    - range: NervousSystemStructure
+    - range: OlfactoryStimulusType
+    - range: OperatingDevice
+    - range: OperatingSystem
+    - range: OperationalApproach
+    - range: OpticalStimulusType
+    - range: Organ
+    - range: OrganSystemStructure
+    - range: OrganismSubstance
+    - range: OrganismSystem
+    - range: OrganizationType
+    - range: PatchClampVariation
+    - range: PaymentModelType
+    - range: PreparationType
+    - range: ProgrammingLanguage
+    - range: ProjectType
+    - range: PublicationStatus
+    - range: PulseShape
+    - range: QualitativeOverlap
+    - range: SemanticDataType
+    - range: SetupType
+    - range: SignalDirectionality
+    - range: SkeletalStructure
+    - range: SoftwareApplicationCategory
+    - range: SoftwareFeature
+    - range: SovereignState
+    - range: SpatialEncoding
+    - range: Species
+    - range: StimulationApproach
+    - range: StimulationTechnique
+    - range: SubcellularEntity
+    - range: SubjectAttribute
+    - range: SupranationalBody
+    - range: TactileStimulusType
+    - range: Technique
+    - range: TermSuggestion
+    - range: Terminology
+    - range: TissueSampleAttribute
+    - range: TissueSampleType
+    - range: TissueStructure
+    - range: TypeOfUncertainty
+    - range: UnitOfMeasurement
+    - range: VascularStructure
+    - range: VisualStimulusType
+    - range: WeightType
+    multivalued: true
+    list_elements_unique: true
+  labelingCompound:
+    slot_uri: labelingCompound
+    description: null
+    any_of:
+    - range: ChemicalSubstance
+    - range: MolecularEntity
+    - range: ChemicalMixture
+  laboratoryCode:
+    slot_uri: laboratoryCode
+    description: null
+    range: string
+    pattern: ^[A-Z]([a-z]?)+$
+  language:
+    slot_uri: language
+    description: System of communication (words, their pronunciation, and the methods
+      of combining them) used and understood by a particular community.
+    range: Language
+    multivalued: true
+    list_elements_unique: true
+  laterality:
+    slot_uri: laterality
+    description: Differentiation between a pair of lateral homologous parts of the
+      body.
+    range: Laterality
+    multivalued: true
+    list_elements_unique: true
+  latitude:
+    slot_uri: latitude
+    description: null
+    any_of:
+    - range: integer
+    - range: float
+  launchConfiguration:
+    slot_uri: launchConfiguration
+    description: null
+    range: LaunchConfiguration
+  learningOutcome:
+    slot_uri: learningOutcome
+    description: null
+    range: string
+  legLength:
+    slot_uri: legLength
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  legLengths:
+    slot_uri: legLengths
+    description: null
+    range: QuantitativeValue
+    multivalued: true
+    inlined: true
+  legalCode:
+    slot_uri: legalCode
+    description: Type of legislation that claims to cover the law system (complete
+      or parts) as it existed at the time the code was enacted.
+    range: uri
+  liquidJunctionPotential:
+    slot_uri: liquidJunctionPotential
+    description: null
+    range: Measurement
+    inlined: true
+  location:
+    slot_uri: location
+    description: null
+    inlined: true
+    any_of:
+    - range: Location
+    - range: string
+  longitude:
+    slot_uri: longitude
+    description: null
+    any_of:
+    - range: integer
+    - range: float
+  lookupLabel:
+    slot_uri: lookupLabel
+    description: null
+    range: string
+  magneticFieldStrength:
+    slot_uri: magneticFieldStrength
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  majorBaseShape:
+    slot_uri: majorBaseShape
+    description: null
+    any_of:
+    - range: Circle
+    - range: RightTriangle
+    - range: EquilateralTriangle
+    - range: IsoscelesTriangle
+    - range: Rectangle
+    - range: Square
+    - range: Trapezoid
+    - range: Rhombus
+    - range: Ellipse
+    - range: RegularPolygon
+    - range: Kite
+    - range: CircularSector
+    - range: Parallelogram
+    - range: Triangle
+    inlined: true
+  majorDiameter:
+    slot_uri: majorDiameter
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  majorSideLength:
+    slot_uri: majorSideLength
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  majorVersionIdentifier:
+    slot_uri: majorVersionIdentifier
+    description: null
+    range: string
+  manufacturer:
+    slot_uri: manufacturer
+    description: null
+    any_of:
+    - range: Organization
+    - range: Person
+    multivalued: true
+    list_elements_unique: true
+  material:
+    slot_uri: material
+    description: null
+    any_of:
+    - range: ChemicalSubstance
+    - range: MolecularEntity
+    - range: ChemicalMixture
+  matrixSize:
+    slot_uri: matrixSize
+    description: null
+    multivalued: true
+    range: integer
+  maxValue:
+    slot_uri: maxValue
+    description: Greatest quantity attained or allowed.
+    any_of:
+    - range: integer
+    - range: float
+  maxValueUnit:
+    slot_uri: maxValueUnit
+    description: null
+    range: UnitOfMeasurement
+  measuredQuantity:
+    slot_uri: measuredQuantity
+    description: null
+    range: MeasuredQuantity
+  member:
+    slot_uri: member
+    description: null
+    any_of:
+    - range: Person
+    - range: Organization
+    - range: Consortium
+  membership:
+    slot_uri: membership
+    description: null
+    range: Membership
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  memberships:
+    slot_uri: memberships
+    description: null
+    range: Membership
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  metadataLocation:
+    slot_uri: metadataLocation
+    description: null
+    any_of:
+    - range: File
+    - range: FileBundle
+    multivalued: true
+    list_elements_unique: true
+  minValue:
+    slot_uri: minValue
+    description: Smallest quantity attained or allowed.
+    any_of:
+    - range: integer
+    - range: float
+  minValueUnit:
+    slot_uri: minValueUnit
+    description: null
+    range: UnitOfMeasurement
+  minorBaseScale:
+    slot_uri: minorBaseScale
+    description: null
+    any_of:
+    - range: integer
+    - range: float
+  minorDiameter:
+    slot_uri: minorDiameter
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  minorSideLength:
+    slot_uri: minorSideLength
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  modificationDate:
+    slot_uri: modificationDate
+    description: null
+    any_of:
+    - range: date
+    - range: datetime
+  modificationProfile:
+    slot_uri: modificationProfile
+    description: null
+    any_of:
+    - range: ModificationConsentRequirement
+    - range: ModificationConstraint
+    - range: ModificationForm
+    - range: ModificationScope
+    multivalued: true
+    list_elements_unique: true
+  molecularEntity:
+    slot_uri: molecularEntity
+    description: null
+    range: MolecularEntity
+  motionCorrection:
+    slot_uri: motionCorrection
+    description: null
+    range: File
+    multivalued: true
+    list_elements_unique: true
+  mountingLocation:
+    slot_uri: mountingLocation
+    description: null
+    range: ExternalBodyRegion
+  mountingType:
+    slot_uri: mountingType
+    description: null
+    range: DeviceMountingType
+  name:
+    slot_uri: name
+    description: Word or phrase that constitutes the distinctive designation of a
+      being or thing.
+    range: string
+  nativeUnit:
+    slot_uri: nativeUnit
+    description: Determinate quantity used in the original measurement.
+    range: UnitOfMeasurement
+  negativeUncertainties:
+    slot_uri: negativeUncertainties
+    description: null
+    multivalued: true
+    any_of:
+    - range: integer
+    - range: float
+  numberOfDiscardedVolumes:
+    slot_uri: numberOfDiscardedVolumes
+    description: null
+    range: integer
+  numberOfElectrodes:
+    slot_uri: numberOfElectrodes
+    description: null
+    range: integer
+    minimum_value: 2
+  numberOfExcitations:
+    slot_uri: numberOfExcitations
+    description: null
+    range: integer
+  numberOfImages:
+    slot_uri: numberOfImages
+    description: null
+    range: integer
+    minimum_value: 2
+  numberOfPlanes:
+    slot_uri: numberOfPlanes
+    description: null
+    range: integer
+  numberOfSides:
+    slot_uri: numberOfSides
+    description: null
+    range: integer
+    minimum_value: 3
+  numberOfSlices:
+    slot_uri: numberOfSlices
+    description: null
+    range: integer
+  numberOfSubjects:
+    slot_uri: numberOfSubjects
+    description: null
+    range: integer
+    minimum_value: 2
+  numberOfTissueSamples:
+    slot_uri: numberOfTissueSamples
+    description: null
+    range: integer
+    minimum_value: 2
+  numberOfVolumes:
+    slot_uri: numberOfVolumes
+    description: null
+    range: integer
+    minimum_value: 2
+  obtainedWith:
+    slot_uri: obtainedWith
+    description: null
+    any_of:
+    - range: MRIScannerUsage
+    - range: ElectrodeArrayUsage
+    - range: PipetteUsage
+    - range: SlicingDeviceUsage
+    - range: ElectrodeUsage
+    - range: MRICoilUsage
+  ontologyIdentifier:
+    slot_uri: ontologyIdentifier
+    description: Term or code used to identify something or someone registered within
+      a particular ontology.
+    multivalued: true
+    range: uri
+    list_elements_unique: true
+  openDataIn:
+    slot_uri: openDataIn
+    description: null
+    range: uri
+  operatingDevice:
+    slot_uri: operatingDevice
+    description: null
+    range: OperatingDevice
+    multivalued: true
+    list_elements_unique: true
+  operatingSystem:
+    slot_uri: operatingSystem
+    description: Software that controls the operation of a computer and directs the
+      processing of programs.
+    range: OperatingSystem
+    multivalued: true
+    list_elements_unique: true
+  order:
+    slot_uri: order
+    description: null
+    range: integer
+  organization:
+    slot_uri: organization
+    description: Legally accountable, administrative and functional structure.
+    range: Organization
+    multivalued: true
+    list_elements_unique: true
+  origin:
+    slot_uri: origin
+    description: Source at which something begins or rises, or from which something
+      derives.
+    any_of:
+    - range: OrganismSubstance
+    - range: CellType
+    - range: Organ
+    multivalued: true
+    list_elements_unique: true
+  oscillationAmplitude:
+    slot_uri: oscillationAmplitude
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  otherCrossReference:
+    slot_uri: otherCrossReference
+    description: null
+    multivalued: true
+    range: uri
+    list_elements_unique: true
+  otherOntologyIdentifier:
+    slot_uri: otherOntologyIdentifier
+    description: null
+    multivalued: true
+    range: uri
+    list_elements_unique: true
+  output:
+    slot_uri: output
+    description: Something or someone that comes out of, is delivered or produced
+      by a process or machine.
+    any_of:
+    - range: File
+    - range: FileArchive
+    - range: FileBundle
+    - range: LocalFile
+    - range: ModelVersion
+    - range: SubjectGroupState
+    - range: SubjectState
+    - range: TissueSampleCollectionState
+    - range: TissueSampleState
+    multivalued: true
+    list_elements_unique: true
+  outputData:
+    slot_uri: outputData
+    description: Data that comes out of, is delivered or produced by a process or
+      machine.
+    any_of:
+    - range: DOI
+    - range: File
+    - range: FileBundle
+    - range: WebResource
+    multivalued: true
+    list_elements_unique: true
+  outputFormat:
+    slot_uri: outputFormat
+    description: Format of data that comes out of, is delivered or produced by a process
+      or machine.
+    range: ContentType
+    multivalued: true
+    list_elements_unique: true
+  pagination:
+    slot_uri: pagination
+    description: null
+    range: string
+  parallelAcquisitionTechnique:
+    slot_uri: parallelAcquisitionTechnique
+    description: null
+    range: MRIParallelAcquisitionTechnique
+  path:
+    slot_uri: path
+    description: null
+    range: string
+  pathology:
+    slot_uri: pathology
+    description: Structural and functional deviation from the normal that constitutes
+      a disease or characterizes a particular disease.
+    any_of:
+    - range: Disease
+    - range: DiseaseModel
+    multivalued: true
+    list_elements_unique: true
+  paymentModel:
+    slot_uri: paymentModel
+    description: null
+    range: PaymentModelType
+    multivalued: true
+    list_elements_unique: true
+  performedBy:
+    slot_uri: performedBy
+    description: null
+    any_of:
+    - range: Person
+    - range: SoftwareAgent
+    multivalued: true
+    list_elements_unique: true
+  perpendicularLegLengths:
+    slot_uri: perpendicularLegLengths
+    description: null
+    range: QuantitativeValue
+    multivalued: true
+    inlined: true
+  person:
+    slot_uri: person
+    description: null
+    range: Person
+  phaseEncodingDirection:
+    slot_uri: phaseEncodingDirection
+    description: null
+    multivalued: true
+    range: integer
+  phenotype:
+    slot_uri: phenotype
+    description: Physical expression of one or more genes of an organism.
+    range: string
+  pipetteResistance:
+    slot_uri: pipetteResistance
+    description: null
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  pipetteSolution:
+    slot_uri: pipetteSolution
+    description: null
+    range: ChemicalMixture
+  pixelSize:
+    slot_uri: pixelSize
+    description: null
+    range: QuantitativeValue
+    multivalued: true
+    inlined: true
+  polarDiameter:
+    slot_uri: polarDiameter
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  positiveUncertainties:
+    slot_uri: positiveUncertainties
+    description: null
+    multivalued: true
+    any_of:
+    - range: integer
+    - range: float
+  preferredCrossReference:
+    slot_uri: preferredCrossReference
+    description: null
+    range: uri
+  preferredDisplayColor:
+    slot_uri: preferredDisplayColor
+    description: null
+    any_of:
+    - range: SingleColor
+    - range: Colormap
+  preferredName:
+    slot_uri: preferredName
+    description: null
+    range: string
+  preferredOntologyIdentifier:
+    slot_uri: preferredOntologyIdentifier
+    description: Persistent identifier of a preferred ontological term.
+    range: uri
+  preferredVisualization:
+    slot_uri: preferredVisualization
+    description: null
+    range: ViewerSpecification
+    inlined: true
+  preparationDesign:
+    slot_uri: preparationDesign
+    description: null
+    range: PreparationType
+  preparationType:
+    slot_uri: preparationType
+    description: Distinct class of actions or processes that make something ready
+      for use or service.
+    range: PreparationType
+    multivalued: true
+    list_elements_unique: true
+  prerequisite:
+    slot_uri: prerequisite
+    description: null
+    range: string
+  previewImage:
+    slot_uri: previewImage
+    description: null
+    range: File
+  process:
+    slot_uri: process
+    description: null
+    range: AccessProcessType
+  productName:
+    slot_uri: productName
+    description: null
+    range: string
+  productSource:
+    slot_uri: productSource
+    description: null
+    range: ProductSource
+  programmingLanguage:
+    slot_uri: programmingLanguage
+    description: Distinct set of instructions for computer programs in order to produce
+      various kinds of output.
+    range: ProgrammingLanguage
+    multivalued: true
+    list_elements_unique: true
+  propertyValuePair:
+    slot_uri: propertyValuePair
+    description: null
+    any_of:
+    - range: NumericalProperty
+    - range: StringProperty
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  protocol:
+    slot_uri: protocol
+    description: Plan that describes the process of a scientific or medical experiment,
+      treatment, or procedure.
+    any_of:
+    - range: BehavioralProtocol
+    - range: Protocol
+    multivalued: true
+    list_elements_unique: true
+  provider:
+    slot_uri: provider
+    description: null
+    any_of:
+    - range: Person
+    - range: Organization
+  provides:
+    slot_uri: provides
+    description: null
+    range: DeployedInterface
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  publicationDate:
+    slot_uri: publicationDate
+    description: null
+    range: date
+  publicationStatus:
+    slot_uri: publicationStatus
+    description: null
+    range: PublicationStatus
+  purity:
+    slot_uri: purity
+    description: null
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  qualitativeOverlap:
+    slot_uri: qualitativeOverlap
+    description: Semantic characterization of how much two things occupy the same
+      space.
+    range: QualitativeOverlap
+  quantitativeOverlap:
+    slot_uri: quantitativeOverlap
+    description: Numerical characterization of how much two things occupy the same
+      space.
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  radius:
+    slot_uri: radius
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  receiverBandwidth:
+    slot_uri: receiverBandwidth
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  recipe:
+    slot_uri: recipe
+    description: null
+    range: WorkflowRecipeVersion
+  reference:
+    slot_uri: reference
+    description: null
+    range: AgeReference
+  referenceData:
+    slot_uri: referenceData
+    description: null
+    any_of:
+    - range: DOI
+    - range: File
+    - range: FileBundle
+    - range: WebResource
+    multivalued: true
+    list_elements_unique: true
+  referenceDataAcquisition:
+    slot_uri: referenceDataAcquisition
+    description: null
+    range: Technique
+    multivalued: true
+    list_elements_unique: true
+  regex:
+    slot_uri: regex
+    description: null
+    range: ECMA262
+  registrationData:
+    slot_uri: registrationData
+    description: null
+    range: File
+    multivalued: true
+    list_elements_unique: true
+  reinforcementType:
+    slot_uri: reinforcementType
+    description: null
+    range: CranialWindowReinforcementType
+  relatedInterspeciesAnatomy:
+    slot_uri: relatedInterspeciesAnatomy
+    description: null
+    any_of:
+    - range: NervousSystemStructure
+    - range: AnatomicalCavity
+    - range: TissueStructure
+    - range: MuscularStructure
+    - range: OrganismSystem
+    - range: OrganSystemStructure
+    - range: VascularStructure
+    - range: OrganismSubstance
+    - range: ExternalBodyRegion
+    - range: Organ
+    - range: SkeletalStructure
+  relatedPublication:
+    slot_uri: relatedPublication
+    description: Reference to something that was made available for the general public
+      to see or buy.
+    any_of:
+    - range: Book
+    - range: Chapter
+    - range: DOI
+    - range: GenericIdentifier
+    - range: HANDLE
+    - range: ISBN
+    - range: ISSN
+    - range: ScholarlyArticle
+    multivalued: true
+    list_elements_unique: true
+  relationAssessment:
+    slot_uri: relationAssessment
+    description: null
+    any_of:
+    - range: QualitativeRelationAssessment
+    - range: QuantitativeRelationAssessment
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  relativeTimeIndication:
+    slot_uri: relativeTimeIndication
+    description: null
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  releaseDate:
+    slot_uri: releaseDate
+    description: Fixed date on which a product is due to become or was made available
+      for the general public to see or buy
+    range: date
+  relevantFor:
+    slot_uri: relevantFor
+    description: Reference to what or whom something or someone bears significance.
+    any_of:
+    - range: MRISpoilingTechnique
+    - range: AnalysisTechnique
+    - range: MRIFatSuppressionTechnique
+    - range: Technique
+    - range: MRIWeighting
+    - range: StimulationTechnique
+    - range: StimulationApproach
+    - range: MRIPulseSequence
+    - range: SpatialEncoding
+    - range: MRIParallelAcquisitionTechnique
+  repetitionTime:
+    slot_uri: repetitionTime
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  repository:
+    slot_uri: repository
+    description: Place, room, or container where something is deposited or stored.
+    range: FileRepository
+  requiredTime:
+    slot_uri: requiredTime
+    description: null
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  resourceUsage:
+    slot_uri: resourceUsage
+    description: null
+    any_of:
+    - range: QuantitativeValue
+    - range: QuantitativeValueRange
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  scope:
+    slot_uri: scope
+    description: Extent of something.
+    any_of:
+    - range: AnalysisTechnique
+    - range: ContributionType
+    - range: DataType
+    - range: ExperimentalApproach
+    - range: ModelScope
+    - range: OperationalApproach
+    - range: SoftwareApplicationCategory
+    - range: SoftwareFeature
+    - range: Technique
+    - range: TermSuggestion
+    multivalued: true
+    list_elements_unique: true
+  score:
+    slot_uri: score
+    description: null
+    any_of:
+    - range: integer
+    - range: float
+  scoreType:
+    slot_uri: scoreType
+    description: null
+    range: DifferenceMeasure
+  sealResistance:
+    slot_uri: sealResistance
+    description: null
+    range: Measurement
+    inlined: true
+  serialNumber:
+    slot_uri: serialNumber
+    description: null
+    range: string
+  serializationFormat:
+    slot_uri: serializationFormat
+    description: Form in which a particular data structure or object state is translated
+      to for storage.
+    range: ContentType
+    multivalued: true
+    list_elements_unique: true
+  seriesResistance:
+    slot_uri: seriesResistance
+    description: null
+    range: Measurement
+    inlined: true
+  service:
+    slot_uri: service
+    description: null
+    any_of:
+    - range: Interface
+    - range: InterfaceVersion
+    - range: Service
+    - range: WebResource
+    multivalued: true
+    list_elements_unique: true
+  setup:
+    slot_uri: setup
+    description: null
+    range: Setup
+  shortName:
+    slot_uri: shortName
+    description: Shortened or fully abbreviated name of something or somebody.
+    range: string
+  sideLength:
+    slot_uri: sideLength
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  signalDirectionality:
+    slot_uri: signalDirectionality
+    description: null
+    range: SignalDirectionality
+  sliceAngulation:
+    slot_uri: sliceAngulation
+    description: null
+    multivalued: true
+    any_of:
+    - range: integer
+    - range: float
+  sliceGap:
+    slot_uri: sliceGap
+    description: null
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  sliceOrientation:
+    slot_uri: sliceOrientation
+    description: null
+    range: AnatomicalPlane
+  sliceThickness:
+    slot_uri: sliceThickness
+    description: null
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  sliceTiming:
+    slot_uri: sliceTiming
+    description: null
+    range: QuantitativeValueArray
+    inlined: true
+  slicingAngle:
+    slot_uri: slicingAngle
+    description: null
+    any_of:
+    - range: NumericalProperty
+    - range: QuantitativeValue
+    multivalued: true
+    inlined: true
+  slicingPlane:
+    slot_uri: slicingPlane
+    description: null
+    range: AnatomicalPlane
+  slicingSpeed:
+    slot_uri: slicingSpeed
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  software:
+    slot_uri: software
+    description: null
+    range: SoftwareVersion
+    multivalued: true
+    list_elements_unique: true
+  source:
+    slot_uri: source
+    description: null
+    any_of:
+    - range: License
+    - range: UsageAgreement
+    multivalued: true
+    list_elements_unique: true
+  sourceData:
+    slot_uri: sourceData
+    description: null
+    range: File
+    multivalued: true
+    list_elements_unique: true
+  spatialEncoding:
+    slot_uri: spatialEncoding
+    description: null
+    range: SpatialEncoding
+  spatialLocation:
+    slot_uri: spatialLocation
+    description: null
+    range: CoordinatePoint
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  spatialLocationOfElectrodes:
+    slot_uri: spatialLocationOfElectrodes
+    description: null
+    range: CoordinatePoint
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  specialUsageRole:
+    slot_uri: specialUsageRole
+    description: Particular function of something when it is used.
+    range: FileUsageRole
+  species:
+    slot_uri: species
+    description: Category of biological classification comprising related organisms
+      or populations potentially capable of interbreeding, and being designated by
+      a binomial that consists of the name of a genus followed by a Latin or latinized
+      uncapitalized noun or adjective.
+    any_of:
+    - range: Strain
+    - range: Species
+    multivalued: true
+    list_elements_unique: true
+  specification:
+    slot_uri: specification
+    description: Detailed and precise presentation of, or proposal for something.
+    any_of:
+    - range: PropertyValueList
+    - range: WebResource
+    - range: Configuration
+    - range: File
+    - range: FileBundle
+    - range: uri
+    multivalued: true
+    list_elements_unique: true
+  specificationFormat:
+    slot_uri: specificationFormat
+    description: Form in which a particular data structure or object state is specified
+      in.
+    range: ContentType
+    multivalued: true
+    list_elements_unique: true
+  specimenOrientation:
+    slot_uri: specimenOrientation
+    description: null
+    range: AnatomicalAxesOrientation
+  spoilingTechnique:
+    slot_uri: spoilingTechnique
+    description: null
+    range: MRISpoilingTechnique
+  stage:
+    slot_uri: stage
+    description: null
+    any_of:
+    - range: DataAnalysis
+    - range: DataCopy
+    - range: GenericComputation
+    - range: ModelValidation
+    - range: Optimization
+    - range: Simulation
+    - range: Visualization
+    multivalued: true
+    list_elements_unique: true
+  startDate:
+    slot_uri: startDate
+    description: Date in the Gregorian calendar at which something begins in time
+    range: date
+  startMembranePotential:
+    slot_uri: startMembranePotential
+    description: null
+    range: Measurement
+    inlined: true
+  startTime:
+    slot_uri: startTime
+    description: null
+    any_of:
+    - range: datetime
+    - range: string
+    - range: time
+  startedBy:
+    slot_uri: startedBy
+    description: null
+    any_of:
+    - range: Person
+    - range: SoftwareAgent
+  status:
+    slot_uri: status
+    description: null
+    range: ActionStatusType
+  stimulation:
+    slot_uri: stimulation
+    description: null
+    any_of:
+    - range: StimulationApproach
+    - range: StimulationTechnique
+    multivalued: true
+    list_elements_unique: true
+  stimulus:
+    slot_uri: stimulus
+    description: null
+    range: EphysStimulus
+    multivalued: true
+    list_elements_unique: true
+  stimulusType:
+    slot_uri: stimulusType
+    description: null
+    any_of:
+    - range: AuditoryStimulusType
+    - range: ElectricalStimulusType
+    - range: GustatoryStimulusType
+    - range: OlfactoryStimulusType
+    - range: OpticalStimulusType
+    - range: TactileStimulusType
+    - range: VisualStimulusType
+    multivalued: true
+    list_elements_unique: true
+  stockNumber:
+    slot_uri: stockNumber
+    description: null
+    range: StockNumber
+    inlined: true
+  storageSize:
+    slot_uri: storageSize
+    description: Quantitative value defining how much disk space is used by an object
+      on a computer system.
+    range: QuantitativeValue
+    inlined: true
+  structurePattern:
+    slot_uri: structurePattern
+    description: null
+    range: FileRepositoryStructure
+  studiedSpecimen:
+    slot_uri: studiedSpecimen
+    description: null
+    any_of:
+    - range: Subject
+    - range: SubjectGroup
+    - range: SubjectGroupState
+    - range: SubjectState
+    - range: TissueSample
+    - range: TissueSampleCollection
+    - range: TissueSampleCollectionState
+    - range: TissueSampleState
+    multivalued: true
+    list_elements_unique: true
+  studiedState:
+    slot_uri: studiedState
+    description: Reference to a point in time at which something or someone was studied
+      in a particular mode or condition.
+    any_of:
+    - range: SubjectGroupState
+    - range: SubjectState
+    - range: TissueSampleCollectionState
+    - range: TissueSampleState
+    multivalued: true
+    list_elements_unique: true
+  studyTarget:
+    slot_uri: studyTarget
+    description: Structure or function that was targeted within a study.
+    any_of:
+    - range: AnatomicalCavity
+    - range: AuditoryStimulusType
+    - range: BiologicalOrder
+    - range: BiologicalSex
+    - range: BreedingType
+    - range: CellCultureType
+    - range: CellType
+    - range: CustomAnatomicalEntity
+    - range: DeviceType
+    - range: Disease
+    - range: DiseaseModel
+    - range: ElectricalStimulusType
+    - range: ExternalBodyRegion
+    - range: GeneticStrainType
+    - range: GustatoryStimulusType
+    - range: Handedness
+    - range: MolecularEntity
+    - range: MuscularStructure
+    - range: NervousSystemStructure
+    - range: OlfactoryStimulusType
+    - range: OpticalStimulusType
+    - range: Organ
+    - range: OrganSystemStructure
+    - range: OrganismSubstance
+    - range: OrganismSystem
+    - range: ParcellationEntity
+    - range: ParcellationEntityVersion
+    - range: SkeletalStructure
+    - range: Species
+    - range: SubcellularEntity
+    - range: TactileStimulusType
+    - range: TermSuggestion
+    - range: TissueSampleType
+    - range: TissueStructure
+    - range: VascularStructure
+    - range: VisualStimulusType
+    multivalued: true
+    list_elements_unique: true
+  suggestNewTerminology:
+    slot_uri: suggestNewTerminology
+    description: Proposal of a new distinct class to group related terms.
+    range: string
+  supportChannel:
+    slot_uri: supportChannel
+    description: Way of communication used to interact with users or customers.
+    multivalued: true
+    any_of:
+    - range: string
+    - range: uri
+    list_elements_unique: true
+  symmetryDiagonalLength:
+    slot_uri: symmetryDiagonalLength
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  synonym:
+    slot_uri: synonym
+    description: Words or expressions used in the same language that have the same
+      or nearly the same meaning in some or all senses.
+    multivalued: true
+    range: string
+    list_elements_unique: true
+  tag:
+    slot_uri: tag
+    description: null
+    multivalued: true
+    range: string
+    list_elements_unique: true
+  targetAnatomy:
+    slot_uri: targetAnatomy
+    description: null
+    any_of:
+    - range: CellType
+    - range: NervousSystemStructure
+    - range: AnatomicalCavity
+    - range: TissueStructure
+    - range: SubcellularEntity
+    - range: CustomAnatomicalEntity
+    - range: MuscularStructure
+    - range: OrganismSystem
+    - range: OrganSystemStructure
+    - range: ParcellationEntity
+    - range: ParcellationEntityVersion
+    - range: VascularStructure
+    - range: OrganismSubstance
+    - range: ExternalBodyRegion
+    - range: Organ
+    - range: SkeletalStructure
+  targetIdentificationType:
+    slot_uri: targetIdentificationType
+    description: null
+    range: AnatomicalIdentificationType
+  targetPosition:
+    slot_uri: targetPosition
+    description: null
+    range: AnatomicalTargetPosition
+    inlined: true
+  technique:
+    slot_uri: technique
+    description: Method of accomplishing a desired aim.
+    any_of:
+    - range: AnalysisTechnique
+    - range: MRIFatSuppressionTechnique
+    - range: MRIParallelAcquisitionTechnique
+    - range: MRIPulseSequence
+    - range: MRISpoilingTechnique
+    - range: MRIWeighting
+    - range: SpatialEncoding
+    - range: StimulationApproach
+    - range: StimulationTechnique
+    - range: Technique
+    multivalued: true
+    list_elements_unique: true
+  temperature:
+    slot_uri: temperature
+    description: null
+    any_of:
+    - range: QuantitativeValueRange
+    - range: QuantitativeValue
+    inlined: true
+  template:
+    slot_uri: template
+    description: null
+    range: WebResource
+  temporalSamplingFrequency:
+    slot_uri: temporalSamplingFrequency
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  timestamp:
+    slot_uri: timestamp
+    description: null
+    range: datetime
+  tissueBathSolution:
+    slot_uri: tissueBathSolution
+    description: null
+    range: ChemicalMixture
+  topic:
+    slot_uri: topic
+    description: null
+    range: string
+  totalReadOutTime:
+    slot_uri: totalReadOutTime
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  transmitterBandwidth:
+    slot_uri: transmitterBandwidth
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  type:
+    slot_uri: type
+    description: Distinct class to which a group of entities or concepts with similar
+      characteristics or attributes belong to.
+    any_of:
+    - range: WeightType
+    - range: OrganizationType
+    - range: AtlasType
+    - range: ContributionType
+    - range: ChemicalMixtureType
+    - range: ProjectType
+    - range: TissueSampleType
+    - range: HardwareProduct
+    - range: ElectricalStimulusType
+    - range: SetupType
+    - range: AnnotationType
+    - range: MetaDataModelType
+    - range: string
+    - range: FileRepositoryType
+    - range: LearningResourceType
+    - range: DeviceType
+    multivalued: true
+    list_elements_unique: true
+  typeOfUncertainty:
+    slot_uri: typeOfUncertainty
+    description: Distinct technique used to quantify the uncertainty of a measurement.
+    range: TypeOfUncertainty
+  uncertainty:
+    slot_uri: uncertainty
+    description: Quantitative value range defining the uncertainty of a measurement.
+    multivalued: true
+    any_of:
+    - range: integer
+    - range: float
+  unit:
+    slot_uri: unit
+    description: Determinate quantity adopted as a standard of measurement.
+    range: UnitOfMeasurement
+  usageCondition:
+    slot_uri: usageCondition
+    description: null
+    any_of:
+    - range: License
+    - range: UsageAgreement
+    multivalued: true
+    list_elements_unique: true
+  usedCoils:
+    slot_uri: usedCoils
+    description: null
+    any_of:
+    - range: DeviceType
+    - range: MRICoilUsage
+    multivalued: true
+  usedElectrode:
+    slot_uri: usedElectrode
+    description: null
+    multivalued: true
+    range: string
+    list_elements_unique: true
+  usedSpecimen:
+    slot_uri: usedSpecimen
+    description: null
+    any_of:
+    - range: Subject
+    - range: SubjectGroup
+    - range: TissueSampleCollection
+    - range: TissueSample
+    - range: SubjectState
+    - range: TissueSampleState
+    multivalued: true
+    list_elements_unique: true
+  usedTaxon:
+    slot_uri: usedTaxon
+    description: null
+    any_of:
+    - range: BiologicalOrder
+    - range: Species
+  userName:
+    slot_uri: userName
+    description: null
+    range: string
+  uses:
+    slot_uri: uses
+    description: null
+    any_of:
+    - range: AnatomicalAtlasVersion
+    - range: CommonCoordinateFrameworkVersion
+    - range: DatasetVersion
+    - range: MetaDataModelVersion
+    - range: ModelVersion
+    - range: WebResource
+    - range: WorkflowRecipeVersion
+    multivalued: true
+    list_elements_unique: true
+  value:
+    slot_uri: value
+    description: Entry for a property.
+    any_of:
+    - range: QuantitativeValueRange
+    - range: integer
+    - range: QuantitativeValue
+    - range: string
+    - range: float
+    pattern: ^#[0-9A-Fa-f]{6}$
+    multivalued: true
+    inlined: true
+    list_elements_unique: true
+  values:
+    slot_uri: values
+    description: null
+    multivalued: true
+    any_of:
+    - range: integer
+    - range: float
+  variation:
+    slot_uri: variation
+    description: null
+    range: PatchClampVariation
+  vendor:
+    slot_uri: vendor
+    description: null
+    range: Organization
+  versionIdentifier:
+    slot_uri: versionIdentifier
+    description: Term or code used to identify the version of something.
+    range: string
+  versionInnovation:
+    slot_uri: versionInnovation
+    description: Documentation on what changed in comparison to a previously published
+      form of something.
+    range: string
+  versionSpecification:
+    slot_uri: versionSpecification
+    description: null
+    range: string
+  vibrationFrequency:
+    slot_uri: vibrationFrequency
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  volumeAcquisitionTime:
+    slot_uri: volumeAcquisitionTime
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  volumeNumber:
+    slot_uri: volumeNumber
+    description: null
+    range: string
+  volumeTiming:
+    slot_uri: volumeTiming
+    description: null
+    range: QuantitativeValueArray
+    inlined: true
+  voxelSize:
+    slot_uri: voxelSize
+    description: Extent of the discrete elements comprising a three-dimensional entity.
+    any_of:
+    - range: QuantitativeValue
+    - range: QuantitativeValueArray
+    inlined: true
+    multivalued: true
+  wasInformedBy:
+    slot_uri: wasInformedBy
+    description: null
+    any_of:
+    - range: Simulation
+    - range: Optimization
+    - range: DataCopy
+    - range: ModelValidation
+    - range: DataAnalysis
+    - range: GenericComputation
+    - range: Visualization
+  webpage:
+    slot_uri: webpage
+    description: Hypertext document (block of information) found on the World Wide
+      Web.
+    multivalued: true
+    range: uri
+    list_elements_unique: true
+  weight:
+    slot_uri: weight
+    description: Amount that a thing or being weighs.
+    any_of:
+    - range: QuantitativeValueRange
+    - range: SpecimenWeight
+    - range: QuantitativeValue
+    inlined: true
+  year:
+    slot_uri: year
+    description: Cycle in the Gregorian calendar specified by a number and comprised
+      of 365 or 366 days divided into 12 months beginning with January and ending
+      with December.
+    multivalued: true
+    range: string
+    pattern: ([0-9]{4})
+    list_elements_unique: true
+  z-stepSize:
+    slot_uri: z-stepSize
+    description: null
+    range: QuantitativeValue
+    inlined: true
+  id:
+    identifier: true
+    slot_uri: schema:identifier
+    required: true

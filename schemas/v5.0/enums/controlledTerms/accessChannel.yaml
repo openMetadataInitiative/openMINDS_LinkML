@@ -1,0 +1,24 @@
+id: https://openminds.om-i.org/schemas/latest/enums/AccessChannel?format=linkml
+name: openMINDS-enums-AccessChannel
+title: OpenMINDS enum for AccessChannel
+description: OpenMINDS enum for AccessChannel
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  AccessChannel:
+    enum_uri: https://openminds.om-i.org/types/AccessChannel
+    title: Access channel
+    permissible_values:
+      virtual access:
+        description: Refers to the ability of users to connect to, interact with,
+          and utilize resources, systems, or other individuals remotely via digital
+          interfaces.
+      physical access:
+        description: Access requires physical presence at a specific location.
+      hybrid access:
+        description: Access is provided both remotely through digital means and at
+          a specific physical location.

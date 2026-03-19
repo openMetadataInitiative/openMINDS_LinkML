@@ -1,0 +1,23 @@
+id: https://openminds.om-i.org/schemas/latest/enums/AccessEligibilityType?format=linkml
+name: openMINDS-enums-AccessEligibilityType
+title: OpenMINDS enum for AccessEligibilityType
+description: OpenMINDS enum for AccessEligibilityType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  AccessEligibilityType:
+    enum_uri: https://openminds.om-i.org/types/AccessEligibilityType
+    title: Access eligibility type
+    permissible_values:
+      restricted access:
+        description: Access limited to authenticated and specifically authorised users
+          meeting enhanced legal, ethical, contractual, or governance requirements.
+      open access:
+        description: Access without prior registration, authentication, or authorisation.
+      controlled access:
+        description: Access limited to registered and/or authenticated users meeting
+          defined eligibility criteria.

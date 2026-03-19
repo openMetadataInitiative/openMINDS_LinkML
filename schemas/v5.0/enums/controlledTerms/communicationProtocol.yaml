@@ -1,0 +1,31 @@
+id: https://openminds.om-i.org/schemas/latest/enums/CommunicationProtocol?format=linkml
+name: openMINDS-enums-CommunicationProtocol
+title: OpenMINDS enum for CommunicationProtocol
+description: OpenMINDS enum for CommunicationProtocol
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  CommunicationProtocol:
+    enum_uri: https://openminds.om-i.org/types/CommunicationProtocol
+    title: Communication protocol
+    permissible_values:
+      HTTP:
+        description: A network communication protocol used for exchanging hypermedia
+          documents, primarily between web servers and browsers.
+      SSH:
+        description: A network communication protocol that enables secure remote login
+          and command execution over unsecured networks.
+      WebSocket:
+        description: A computer communications protocol, providing a bidirectional
+          communication channel over a single Transmission Control Protocol (TCP)
+          connection.
+      HTTPS:
+        description: A network communication protocol that secures HTTP traffic by
+          encrypting it using SSL/TLS.
+      TCP/IP:
+        description: A network communication protocol suite that defines how data
+          is transmitted across interconnected networks.

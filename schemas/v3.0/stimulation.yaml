@@ -20,8 +20,19 @@ classes:
     title: Ephys stimulus
     slots:
     - id
+    - deliveredBy
+    - description
+    - epoch
+    - generatedBy
+    - internalIdentifier
+    - lookupLabel
+    - specification
     - type
     slot_usage:
+      internalIdentifier:
+        required: true
+      specification:
+        range: Configuration
       type:
         range: ElectricalStimulusType
 - StimulationActivity:
@@ -57,7 +68,7 @@ classes:
         range: DatasetVersion
       output:
         required: true
-        range: SubjectGroupState
+        range: File
       performedBy:
         range: SoftwareAgent
       protocol:

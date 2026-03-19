@@ -14,103 +14,6 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
-- TissueCulturePreparation:
-    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
-    description: null
-    title: Tissue culture preparation
-    slots:
-    - id
-    - cultureMedium
-    - cultureType
-    - input
-    - output
-    slot_usage:
-      cultureMedium:
-        required: true
-      cultureType:
-        required: true
-      input:
-        any_of:
-        - range: TissueSampleState
-        - range: TissueSampleCollectionState
-        - range: SubjectGroupState
-        - range: SubjectState
-      output:
-        range: TissueSampleState
-- CranialWindowPreparation:
-    class_uri: https://openminds.ebrains.eu/specimenPrep/CranialWindowPreparation
-    description: null
-    title: Cranial window preparation
-    slots:
-    - id
-    - constructionType
-    - customPropertySet
-    - description
-    - dimension
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - reinforcementType
-    - startTime
-    - studyTarget
-    slot_usage:
-      constructionType:
-        required: true
-      dimension:
-        any_of:
-        - range: Circle
-        - range: Ellipse
-        - range: Rectangle
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: SubjectState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: SubjectState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
-- TissueSampleSlicing:
-    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing
-    description: null
-    title: Tissue sample slicing
-    slots:
-    - id
-    - device
-    - input
-    - output
-    - temperature
-    - tissueBathSolution
-    slot_usage:
-      device:
-        required: true
-        range: SlicingDeviceUsage
-      input:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleCollectionState
-        - range: TissueSampleState
-      output:
-        range: TissueSampleCollectionState
 - SlicingDeviceUsage:
     class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
     description: null
@@ -135,6 +38,9 @@ classes:
         range: File
       sliceThickness:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       slicingAngle:
         range: QuantitativeValue
       slicingPlane:
@@ -170,3 +76,99 @@ classes:
         required: true
       owner:
         range: Consortium
+- CranialWindowPreparation:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/CranialWindowPreparation
+    description: null
+    title: Cranial window preparation
+    slots:
+    - id
+    - constructionType
+    - customPropertySet
+    - description
+    - dimension
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - reinforcementType
+    - startTime
+    - studyTarget
+    slot_usage:
+      constructionType:
+        required: true
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: SubjectState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
+- TissueCulturePreparation:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
+    description: null
+    title: Tissue culture preparation
+    slots:
+    - id
+    - cultureMedium
+    - cultureType
+    - input
+    - output
+    slot_usage:
+      cultureMedium:
+        required: true
+      cultureType:
+        required: true
+      input:
+        any_of:
+        - range: TissueSampleState
+        - range: TissueSampleCollectionState
+        - range: SubjectGroupState
+        - range: SubjectState
+      output:
+        range: TissueSampleState
+- TissueSampleSlicing:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing
+    description: null
+    title: Tissue sample slicing
+    slots:
+    - id
+    - device
+    - input
+    - output
+    - temperature
+    - tissueBathSolution
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDeviceUsage
+      input:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleCollectionState
+        - range: TissueSampleState
+      output:
+        range: TissueSampleCollectionState
+      temperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange

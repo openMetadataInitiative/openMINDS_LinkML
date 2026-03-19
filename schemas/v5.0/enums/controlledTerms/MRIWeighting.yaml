@@ -1,0 +1,39 @@
+id: https://openminds.om-i.org/schemas/latest/enums/MRIWeighting?format=linkml
+name: openMINDS-enums-MRIWeighting
+title: OpenMINDS enum for MRIWeighting
+description: OpenMINDS enum for MRIWeighting
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  MRIWeighting:
+    enum_uri: https://openminds.om-i.org/types/MRIWeighting
+    title: Mriweighting
+    permissible_values:
+      PD weighting:
+        description: Image processing technique that specifically enhances the signal-to-noise
+          ratio of density of protons (hydrogen atoms).
+      T2-star weighting:
+        description: Image processing technique that specifically enhances the signal-to-noise
+          ratio of the observed spin-spin relaxation (T2-star relaxation time) which
+          includes field inhomogeneities.
+      T1 weighting:
+        description: Image processing technique that specifically enhances the signal-to-noise
+          ratio of the spin-lattice relaxation (T1 relaxation time).
+      T2 weighting:
+        description: Image processing technique that specifically enhances the signal-to-noise
+          ratio of the true spin-spin relaxation (T2 relaxation time) excluding field
+          inhomogeneities.
+      R2-star weighting:
+        description: Image processing technique that creates the image contrast from
+          the reciprocal of the T2-star relaxation time.
+      R2 weighting:
+        description: Image processing technique that creates the image contrast from
+          the reciprocal of the T2 relaxation time.
+      T1 rho weighting:
+        description: Image processing technique that specifically enhances the signal-to-noise
+          ratio of the spin-lattice relaxation in the rotation frame at the presence
+          of an external RF pulse in the transverse plane (T1 rho relaxation time).

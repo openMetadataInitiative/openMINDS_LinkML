@@ -1,0 +1,18 @@
+id: https://openminds.om-i.org/schemas/latest/enums/OrganSystemStructure?format=linkml
+name: openMINDS-enums-OrganSystemStructure
+title: OpenMINDS enum for OrganSystemStructure
+description: OpenMINDS enum for OrganSystemStructure
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  OrganSystemStructure:
+    enum_uri: https://openminds.om-i.org/types/OrganSystemStructure
+    title: Organ system structure
+    permissible_values:
+      adenohypophysis:
+        description: Is part of the pituitary gland. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002196)]

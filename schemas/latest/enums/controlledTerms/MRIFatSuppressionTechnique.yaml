@@ -1,0 +1,23 @@
+id: https://openminds.om-i.org/schemas/latest/enums/MRIFatSuppressionTechnique?format=linkml
+name: openMINDS-enums-MRIFatSuppressionTechnique
+title: OpenMINDS enum for MRIFatSuppressionTechnique
+description: OpenMINDS enum for MRIFatSuppressionTechnique
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  MRIFatSuppressionTechnique:
+    enum_uri: https://openminds.om-i.org/types/MRIFatSuppressionTechnique
+    title: Mrifat suppression technique
+    permissible_values:
+      chemical shift selective suppression:
+        description: A classical frequency-selective fat saturation technique that
+          suppresses fat signal by applying a narrowband radiofrequency pulse tuned
+          to the fat resonance frequency prior to image acquisition.
+      Dixon water-fat separation technique:
+        description: A water-fat separation technique that acquires images at different
+          echo times to mathematically decompose water and fat signals based on their
+          phase differences.

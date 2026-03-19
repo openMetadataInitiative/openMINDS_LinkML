@@ -1,4 +1,4 @@
-id: https://openminds.ebrains.eu/schemas/latest/chemicals?format=linkml
+id: https://openminds.om-i.org/schemas/latest/chemicals?format=linkml
 name: openMINDS-chemicals
 title: OpenMINDS chemicals module, version "latest"
 description: Schemas for the chemicals module of the openMINDS metadata framework,
@@ -11,41 +11,11 @@ imports:
 prefixes:
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
-  omi: https://openminds.ebrains.eu
+  omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- AmountOfChemical:
-    class_uri: https://openminds.ebrains.eu/chemicals/AmountOfChemical
-    description: Structured information about the amount of a given chemical that
-      was used.
-    title: Amount of chemical
-    slots:
-    - id
-    - amount
-    - chemicalProduct
-    slot_usage:
-      chemicalProduct:
-        required: true
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-- ChemicalSubstance:
-    class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
-    description: Structured information about a chemical substance.
-    title: Chemical substance
-    slots:
-    - id
-    - additionalRemarks
-    - lookupLabel
-    - molecularEntity
-    - productSource
-    - purity
-    slot_usage:
-      molecularEntity:
-        required: true
 - ProductSource:
-    class_uri: https://openminds.ebrains.eu/chemicals/ProductSource
+    class_uri: https://openminds.om-i.org/types/ProductSource
     description: Structured information about the source of a chemical substance or
       mixture.
     title: Product source
@@ -63,8 +33,15 @@ classes:
         required: true
       provider:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
+      purity:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ChemicalMixture:
-    class_uri: https://openminds.ebrains.eu/chemicals/ChemicalMixture
+    class_uri: https://openminds.om-i.org/types/ChemicalMixture
     description: Structured information about a mixture of chemical substances.
     title: Chemical mixture
     slots:
@@ -81,3 +58,37 @@ classes:
       type:
         required: true
         range: ChemicalMixtureType
+- AmountOfChemical:
+    class_uri: https://openminds.om-i.org/types/AmountOfChemical
+    description: Structured information about the amount of a given chemical that
+      was used.
+    title: Amount of chemical
+    slots:
+    - id
+    - amount
+    - chemicalProduct
+    slot_usage:
+      chemicalProduct:
+        required: true
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+- ChemicalSubstance:
+    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
+    description: Structured information about a chemical substance.
+    title: Chemical substance
+    slots:
+    - id
+    - additionalRemarks
+    - lookupLabel
+    - molecularEntity
+    - productSource
+    - purity
+    slot_usage:
+      molecularEntity:
+        required: true
+      purity:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange

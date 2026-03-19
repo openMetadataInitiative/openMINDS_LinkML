@@ -1,0 +1,27 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/CommonCoordinateSpaceVersion?format=linkml
+name: openMINDS-enums-CommonCoordinateSpaceVersion
+title: OpenMINDS enum for CommonCoordinateSpaceVersion
+description: OpenMINDS enum for CommonCoordinateSpaceVersion
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  CommonCoordinateSpaceVersion:
+    enum_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpaceVersion
+    title: Common coordinate space version
+    permissible_values:
+      Paxinos et al. Stereotaxic Coronal Template (Marmoset Brain): {}
+      FsAverage Surface Space: {}
+      Marmoset Nencki-Monash Template: {}
+      Paxinos and Watson's Stereotaxic Coronal Template (Rat Brain): {}
+      MEBRAINS brain template: {}
+      MNI Colin27 Average Brain: {}
+      MNI ICBM152: {}
+      BigBrain Model: {}
+      Swanson's Stereotactic Rat Brain: {}
+      WHS of the SD Rat Brain: {}
+      fsLR Surface Space: {}
+      Allen Mouse Brain CCF: {}

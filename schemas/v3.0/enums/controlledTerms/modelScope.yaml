@@ -1,0 +1,37 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/ModelScope?format=linkml
+name: openMINDS-enums-ModelScope
+title: OpenMINDS enum for ModelScope
+description: OpenMINDS enum for ModelScope
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  ModelScope:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/ModelScope
+    title: Model scope
+    description: Structured information on the scope of the computational model.
+    permissible_values:
+      'network: microcircuit':
+        description: A model of a neuronal microcircuit
+      'network: whole brain':
+        description: A model of an entire brain
+      'subcellular: molecular':
+        description: A model of the structure or behaviour of molecules
+      network:
+        description: A model of a neuronal network
+      single cell:
+        description: A model of a single cell
+      'subcellular: signalling':
+        description: A model of sub-cellular signalling pathways
+      'subcellular: spine':
+        description: A model of a dendritic spine, or of a dendritic region containing
+          several spines
+      subcellular:
+        description: A model of an entity or process contained within a cell
+      'subcellular: ion channel':
+        description: A model of an ion channel
+      'network: brain region':
+        description: A model of one or more brain regions

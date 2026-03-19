@@ -1,0 +1,161 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/UnitOfMeasurement?format=linkml
+name: openMINDS-enums-UnitOfMeasurement
+title: OpenMINDS enum for UnitOfMeasurement
+description: OpenMINDS enum for UnitOfMeasurement
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  UnitOfMeasurement:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement
+    title: Unit of measurement
+    description: Structured information on the unit of measurement.
+    permissible_values:
+      millimeter:
+        description: null
+      bit:
+        description: null
+      wafer-hour:
+        description: Usage of one wafer of a wafer-scale computing system for one
+          hour
+      weight per weight percentage:
+        description: The percentage of a particular substance within a mixture, as
+          measured by weight or mass and expressed in the same unit
+      core-hour:
+        description: Usage of a computer processor core for one hour
+      hour:
+        description: null
+      meter:
+        description: null
+      terabyte:
+        description: null
+      weight per volume percentage:
+        description: Percentage of weight or mass of a dissolved, solid substance
+          in a total volume of a solution. As per definition, the volume of a liquid
+          is expressed in milliliter (ml) and the mass of a solute in grams (g)
+      day:
+        description: null
+      hertz:
+        description: Unit of frequency equivalent to one event per second
+      millisiemens:
+        description: An electrical conduction unit which is equal to one thousandth
+          of a siemen or 10^[-3] siemens.
+      postnatal day:
+        description: '''Postnatal day'' is a specific unit to measure the age of an
+          organism that is born live (viviparous animals), starting with the day of
+          birth (postnatal day 0, or short: P0).'
+      millisecond:
+        description: null
+      ohm:
+        description: The SI derived unit of electrical resistance, named after German
+          physicist Georg Ohm, equal to 1 V/A
+      nanomolar:
+        description: Nanomolar is a decimal fraction of molar concentration describing
+          the amount of substance (measured in nanomole) in one liter solution.
+      arcdegree:
+        description: An arcdegree is a measurement of a plane angle in which one full
+          rotation is 360 degrees.
+      nanoampere:
+        description: An electric current unit current which is equal to one thousand
+          millionth of an ampere or 10^[-9] A.
+      microgram per milliliter:
+        description: null
+      minute:
+        description: null
+      micromolar:
+        description: Micromolar is a decimal fraction of molar concentration describing
+          the amount of substance (measured in micromole) in one liter solution.
+      percent:
+        description: A 'percentage' (from Latin per centum 'by a hundred') is a quantity
+          expressed as a fraction of 100 (amount of something in each hundred).
+      kilobyte:
+        description: null
+      millimolar:
+        description: Millimolar is a decimal fraction of molar concentration that
+          describes a solution as millimole per one liter of a solution.
+      millivolt:
+        description: An electric potential difference unit which is equal to one thousandth
+          of a volt or 10^[-3] V.
+      embryonic day:
+        description: '''Embryonic day'' is a specific unit to measure the developmental
+          stage of an embryo, starting with fertilization (1st embryonic day).'
+      gigabyte:
+        description: null
+      centimeter:
+        description: null
+      ampere:
+        description: An electric current unit which is equal to the constant current
+          which, if maintained in two straight parallel conductors of infinite length,
+          of negligible circular cross-section, and placed 1 m apart in vacuum, would
+          produce between these conductors a force equal to 2 x 10^[-7] newton per
+          meter of length.
+      degree Rankine:
+        description: "The 'degree Rankine' is a unit of temperature on the Rankine\
+          \ scale where the freezing point of water is at 491.67 \xB0R and the boiling\
+          \ point of water is at 671.64102 \xB0R under standard atmospheric pressure."
+      milliliter:
+        description: null
+      liter:
+        description: null
+      microampere:
+        description: An electric current unit current which is equal to one millionth
+          of an ampere or 10^[-6] A.
+      molar:
+        description: Molar is a measure of concentration that describes a solution
+          as moles of solute per one liter of a solution.
+      megaohm:
+        description: null
+      volume per volume percentage:
+        description: Percentage of volume of one liquid dissolved in another liquid,
+          where the volume of both liquids have the same unit
+      gram:
+        description: null
+      gigaohm:
+        description: null
+      month:
+        description: null
+      year:
+        description: null
+      micrometer:
+        description: null
+      second:
+        description: null
+      volt:
+        description: An electric potential difference unit which is equal to the work
+          per unit charge. One volt is the potential difference required to move one
+          coulomb of charge between two points in a circuit while using one joule
+          of energy.
+      radian:
+        description: A 'radian' is the SI unit for measuring angles. One 'radian'
+          defines the arc of a circle with the same length as the radius of that circle.
+      siemens:
+        description: An electrical conduction unit which is equal to A/V.
+      byte:
+        description: null
+      megabyte:
+        description: null
+      milligram per kilogram body weight:
+        description: A milligram of a substance per kilogram of the body weight of
+          the subject taking the substance.
+      week:
+        description: null
+      milligram per milliliter:
+        description: null
+      picoampere:
+        description: An electric current unit current which is equal to one trillionth
+          of an ampere or 10^[-12] A.
+      kilogram:
+        description: null
+      degree Celsius:
+        description: "The 'degree Celsius' is a unit of temperature on the Celsius\
+          \ scale where the freezing point of water is at 0 \xB0C and the boiling\
+          \ point of water is at 100 \xB0C under standard atmospheric pressure."
+      degree Fahrenheit:
+        description: "The 'degree Fahrenheit' is a unit of temperature on the Fahrenheit\
+          \ scale where the freezing point of water is at 32 \xB0F and the boiling\
+          \ point of water is at 212 \xB0F under standard atmospheric pressure."
+      kilohertz:
+        description: Unit of frequency equivalent to one thousand events per second

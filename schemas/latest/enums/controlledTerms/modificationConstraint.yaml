@@ -1,0 +1,33 @@
+id: https://openminds.om-i.org/schemas/latest/enums/ModificationConstraint?format=linkml
+name: openMINDS-enums-ModificationConstraint
+title: OpenMINDS enum for ModificationConstraint
+description: OpenMINDS enum for ModificationConstraint
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  ModificationConstraint:
+    enum_uri: https://openminds.om-i.org/types/ModificationConstraint
+    title: Modification constraint
+    permissible_values:
+      notice required:
+        description: Advance notice must be given before a modification takes effect.
+      ratification required:
+        description: Modifications require later formal confirmation to remain valid.
+      no modification by waiver:
+        description: A waiver or temporary non-enforcement does not constitute or
+          effect a modification.
+      cooling-off period required:
+        description: A mandatory delay applies before a modification becomes effective.
+      regulatory clearance required:
+        description: External regulatory approval is required before effectiveness.
+      no oral modification:
+        description: Verbal modifications are invalid and unenforceable.
+      no implied modification:
+        description: Modifications arising from conduct or practice are excluded.
+      record retention required:
+        description: Formal documentation and retention of modification records is
+          required.

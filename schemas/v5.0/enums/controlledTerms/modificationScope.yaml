@@ -1,0 +1,33 @@
+id: https://openminds.om-i.org/schemas/latest/enums/ModificationScope?format=linkml
+name: openMINDS-enums-ModificationScope
+title: OpenMINDS enum for ModificationScope
+description: OpenMINDS enum for ModificationScope
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  ModificationScope:
+    enum_uri: https://openminds.om-i.org/types/ModificationScope
+    title: Modification scope
+    permissible_values:
+      technical modification:
+        description: Modification may be made to any operational procedures, specifications,
+          or performance methods.
+      material modification:
+        description: Modification may be made to any core rights, duties, or risk
+          allocations of the parties.
+      schedule modification:
+        description: Modification may be made to any deadlines, milestones, and delivery
+          timelines.
+      financial modification:
+        description: Modification may be made to any pricing, payment terms, fees,
+          or compensation.
+      administrative modification:
+        description: Modification may be made to any clerical, formatting, or non-substantive
+          information.
+      unrestricted modification:
+        description: Modification may be made to any subject matter without contractual
+          limitation.

@@ -1,0 +1,104 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/DeviceType?format=linkml
+name: openMINDS-enums-DeviceType
+title: OpenMINDS enum for DeviceType
+description: OpenMINDS enum for DeviceType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  DeviceType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/DeviceType
+    title: Device type
+    permissible_values:
+      MRI RF surface coil:
+        description: A localized radiofrequency (RF) coil designed to transmit and/or
+          receive magnetic resonance imaging (MRI) signals from a limited region near
+          the body surface.
+      wide-bore MRI scanner:
+        description: A 'wide-bore MRI scanner' is a closed high-field scanner which
+          features a widened bore compared to the standard-bore MRI scanner.
+      MRI shim coil:
+        description: "An electromagnetic coil system used to generate corrective magnetic\
+          \ fields that improve static magnetic field (B\u2080) homogeneity in magnetic\
+          \ resonance imaging (MRI)."
+      MRI extremity coil:
+        description: Type of volume coil optimized for imaging peripheral anatomical
+          regions such as the arms, legs, wrists, ankles, or knees; in rare cases,
+          extremity coils may adopt a surface-coil design when full enclosure of the
+          anatomy is impractical.
+      MRI volume coil:
+        description: Type of radiofrequency coil optimized for uniform transmit and/or
+          receive coverage across a defined enclosed volume of anatomy.
+      MRI body coil:
+        description: Type of volume coil optimized for uniform radiofrequency transmission
+          and/or reception across large anatomical regions, typically encompassing
+          the torso or entire body.
+      MRI system gradient coil:
+        description: The primary gradient coil assembly integrated into a magnetic
+          resonance imaging (MRI) system for generating spatially varying magnetic
+          fields used in image encoding.
+      microtome:
+        description: A 'microtome' is a mechanical instrument with a steel, glass
+          or diamond blade used to cut (typically) biological specimens into very
+          thin segments for further treatment and ultimately microscopic or histologic
+          examination.
+      standard-bore MRI scanner:
+        description: A 'standard-bore MRI scanner' is a closed high-field scanner
+          which features a magnet surrounding the patient creating a capsule-like
+          space where the patient lies on.
+      MRI surface coil:
+        description: Type of radiofrequency coil optimized for localized signal reception
+          from tissue near the coil surface, providing high sensitivity over a small
+          field of view.
+      vibrating microtome:
+        description: A 'vibrating microtome' is an mechanical instrument with a vibrating
+          steel blade used to cut (typically) biological specimens into thin segments
+          for further treatment and ultimately microscopic or histologic examination.
+      MRI scanner:
+        description: An 'MRI scanner' is a machine that uses strong magnetic fields,
+          magnetic field gradients, and radio waves to generate static or time-resolved
+          three-dimensional images of the anatomy and physiological processes of the
+          body.
+      MRI RF volume coil:
+        description: An radiofrequency (RF) coil that surrounds the imaging region
+          to provide relatively uniform RF excitation and/or signal reception over
+          a large volume in magnetic resonance imaging (MRI).
+      electronic amplifier:
+        description: An 'electronic amplifier' is a device that increases the power
+          (voltage or current) of a time-varying signal.
+      MRI RF multi-array coil:
+        description: A multi-element radiofrequency (RF) coil system in which independent
+          channels are used for parallel signal transmission and/or reception and
+          enhanced spatial encoding in magnetic resonance imaging (MRI).
+      CT scanner:
+        description: A 'CT scanner' is an x-ray machine that creates and combines
+          serial two-dimensional x-ray images (sections) with the aid of a computer
+          to generate cross-sectional views and/or three-dimensional images of internal
+          body structures (e.g., bones, blood vessels or soft tissues).
+      MRI multi-coil array:
+        description: Type of radiofrequency coil composed of multiple coordinated
+          elements optimized for transmit and/or receive operation over an extended
+          field of view; phased-array coils are a specialized subclass focused on
+          parallel signal reception.
+      MRI insert gradient coil:
+        description: A secondary gradient coil assembly placed inside the main magnetic
+          resonance imaging (MRI) bore to generate high-performance spatially varying
+          magnetic fields over a restricted imaging region.
+      MRI head coil:
+        description: Type of volume coil optimized for radiofrequency transmission
+          and/or reception over the head and brain, providing homogeneous B1 field
+          coverage within the cranial region.
+      closed-bore MRI scanner:
+        description: '''Closed-bore MRI scanners'' are high-field scanners which feature
+          a magnet surrounding the patient creating a capsule-like space (standard
+          or wide) where the patient lies on.'
+      microscope:
+        description: A 'microscope' is an instrument used to obtain a magnified image
+          of small objects and reveal details of structures not otherwise distinguishable.
+      open-bore MRI scanner:
+        description: '''Open-bore MRI scanners'' are low-field scanners which have
+          a magnetic top and bottom, but are otherwise open, increasing patient''s
+          comfort and unobstructed view of the scanning area.'

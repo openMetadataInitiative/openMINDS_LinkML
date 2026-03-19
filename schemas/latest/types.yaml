@@ -1,4 +1,4 @@
-id: https://openminds.ebrains.eu/schemas/latest/types/?format=linkml
+id: https://openminds.om-i.org/schemas/latest/types/?format=linkml
 name: openMINDS-types
 title: Types for OpenMINDS version "latest"
 description: Types for the LinkML representation of the openMINDS metadata framework,
@@ -9,7 +9,7 @@ imports:
 prefixes:
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
-  omi: https://openminds.ebrains.eu
+  omi: https://openminds.om-i.org
 default_prefix: omi
 types:
   Email:

@@ -1,0 +1,15 @@
+id: https://openminds.om-i.org/schemas/latest/enums/MRIWeighting?format=linkml
+name: openMINDS-enums-MRIWeighting
+title: OpenMINDS enum for MRIWeighting
+description: OpenMINDS enum for MRIWeighting
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  MRIWeighting:
+    enum_uri: https://openminds.om-i.org/types/MRIWeighting
+    title: Mriweighting
+    permissible_values: {}

@@ -1,0 +1,25 @@
+id: https://openminds.om-i.org/schemas/latest/?format=linkml
+name: openMINDS
+title: OpenMINDS version "v5.0"
+description: The complete collection of schemas for all metadata models of the openMINDS
+  metadata framework, version "v5.0"
+license: https://spdx.org/licenses/MIT.html
+imports:
+- linkml:types
+- slots
+- types
+- enums
+- computation
+- neuroimaging
+- specimenPrep
+- publications
+- SANDS
+- chemicals
+- core
+- stimulation
+- ephys
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi

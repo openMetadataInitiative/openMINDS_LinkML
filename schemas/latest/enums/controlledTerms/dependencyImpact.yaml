@@ -1,0 +1,42 @@
+id: https://openminds.om-i.org/schemas/latest/enums/DependencyImpact?format=linkml
+name: openMINDS-enums-DependencyImpact
+title: OpenMINDS enum for DependencyImpact
+description: OpenMINDS enum for DependencyImpact
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.om-i.org
+default_prefix: omi
+enums:
+  DependencyImpact:
+    enum_uri: https://openminds.om-i.org/types/DependencyImpact
+    title: Dependency impact
+    permissible_values:
+      data staleness:
+        description: A thing must rely on cached or outdated data because fresh data
+          cannot be retrieved if the thing it depends on is unavailable.
+      non-critical function loss:
+        description: Secondary or optional features of a thing stop working while
+          core functions continue if the thing it depends on is unavailable.
+      queue build-up:
+        description: Requests or tasks directed to a thing accumulate because normal
+          processing cannot proceed if the thing it depends on is unavailable.
+      reduced performance:
+        description: A thing remains functional but responds more slowly or with higher
+          latency if the thing it depends on is unavailable.
+      data unavailability:
+        description: A thing cannot retrieve any required data, causing operations
+          to halt or fail, if the thing it depends on is unavailable.
+      complete outage:
+        description: A thing becomes entirely nonfunctional if the thing it depends
+          on is unavailable.
+      critical function loss:
+        description: Essential or mission-critical features of a thing stop working
+          if the thing it depends on is unavailable.
+      fallback mode activation:
+        description: A thing switches to an intentionally designed degraded or alternate
+          operating mode if the thing it depends on is unavailable.
+      error propagation:
+        description: A thing emits errors that surface to users or downstream systems
+          if the thing it depends on is unavailable.

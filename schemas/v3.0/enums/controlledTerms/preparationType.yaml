@@ -1,0 +1,29 @@
+id: https://openminds.ebrains.eu/schemas/latest/enums/PreparationType?format=linkml
+name: openMINDS-enums-PreparationType
+title: OpenMINDS enum for PreparationType
+description: OpenMINDS enum for PreparationType
+license: https://spdx.org/licenses/MIT.html
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  omi: https://openminds.ebrains.eu
+default_prefix: omi
+enums:
+  PreparationType:
+    enum_uri: https://openminds.ebrains.eu/controlledTerms/PreparationType
+    title: Preparation type
+    permissible_values:
+      in vitro:
+        description: Something happening outside the body in artificial conditions
+          (e.g., in a test tube or culture dish).
+      in vivo:
+        description: Something happening or existing inside a living body.
+      ex vivo:
+        description: Something happening or existing outside a living body.
+      in silico:
+        description: Conducted or produced by means of computer modelling or simulation.
+      in utero:
+        description: Something happening in, within, or while inside the uterus.
+      in situ:
+        description: Something happening or being examined in the original place instead
+          of being moved to another place
