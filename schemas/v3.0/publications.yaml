@@ -104,10 +104,6 @@ classes:
         - range: Consortium
         - range: Organization
         - range: Person
-      requiredTime:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       type:
         range: LearningResourceType
 - PublicationIssue:

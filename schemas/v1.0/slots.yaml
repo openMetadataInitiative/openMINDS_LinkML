@@ -51,8 +51,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   ageCategory:
     slot_uri: ageCategory
@@ -176,8 +176,8 @@ slots:
     slot_uri: contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Person
     - range: Organization
+    - range: Person
   coordinatePoint:
     slot_uri: coordinatePoint
     description: Pair or triplet of numbers defining the position in a particular
@@ -293,12 +293,12 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: SWHID
-    - range: ORCID
-    - range: RORID
-    - range: DigitalIdentifier
-    - range: GRIDID
     - range: DOI
+    - range: GRIDID
+    - range: ORCID
+    - range: SWHID
+    - range: DigitalIdentifier
+    - range: RORID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -383,9 +383,9 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: File
     - range: DOI
     - range: URL
+    - range: File
   fullName:
     slot_uri: fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -394,8 +394,8 @@ slots:
     slot_uri: funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Person
     - range: Organization
+    - range: Person
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -575,11 +575,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileRepository
     - range: DatasetVersion
-    - range: TissueSampleCollection
-    - range: SubjectGroup
     - range: FileBundle
+    - range: SubjectGroup
+    - range: TissueSampleCollection
+    - range: FileRepository
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -787,8 +787,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   quantity:
     slot_uri: quantity
@@ -1016,11 +1016,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: string
-    - range: float
     - range: QuantitativeValue
-    - range: integer
+    - range: float
+    - range: string
     - range: QuantitativeValueRange
+    - range: integer
     multivalued: true
     inlined: true
   versionIdentifier:
@@ -1056,8 +1056,8 @@ slots:
     slot_uri: weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   year:
     slot_uri: year

@@ -216,9 +216,6 @@ classes:
         required: true
       quantitativeOverlap:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - QualitativeRelationAssessment:
     class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
     description: null
@@ -244,6 +241,9 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
+        any_of:
+        - range: CommonCoordinateSpace
+        - range: CustomCoordinateSpace
       coordinates:
         required: true
 - ElectrodeArray:
@@ -352,6 +352,9 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
+        any_of:
+        - range: CommonCoordinateSpace
+        - range: CustomCoordinateSpace
       criteriaQualityType:
         required: true
       internalIdentifier:

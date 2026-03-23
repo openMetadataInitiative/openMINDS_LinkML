@@ -68,10 +68,6 @@ classes:
       stage:
         required: true
         range: DataAnalysis
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
 - HardwareSystem:
     class_uri: https://openminds.om-i.org/types/HardwareSystem
     description: Structured information about computing hardware.
@@ -117,9 +113,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -135,10 +128,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -251,9 +240,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -269,10 +255,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -399,9 +381,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -417,10 +396,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -483,9 +458,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -501,10 +473,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -684,9 +652,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -702,10 +667,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -751,9 +712,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -769,10 +727,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -849,9 +803,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -867,10 +818,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:

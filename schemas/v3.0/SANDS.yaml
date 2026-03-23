@@ -260,10 +260,6 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
-      preferredDisplayColor:
-        any_of:
-        - range: Colormap
-        - range: SingleColor
 - QuantitativeRelationAssessment:
     class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
     description: null
@@ -279,9 +275,6 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - QualitativeRelationAssessment:
     class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
     description: null
@@ -294,10 +287,6 @@ classes:
     slot_usage:
       inRelationTo:
         required: true
-        any_of:
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
 - CoordinatePoint:
