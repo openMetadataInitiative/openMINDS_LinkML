@@ -14,57 +14,74 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- Rectangle:
-    class_uri: https://openminds.om-i.org/types/Rectangle
+- BrainAtlas:
+    class_uri: https://openminds.om-i.org/types/BrainAtlas
     description: null
-    title: Rectangle
+    title: Brain atlas
     slots:
     - id
-    - length
-    - width
-    slot_usage:
-      length:
-        required: true
-      width:
-        required: true
-- Ellipse:
-    class_uri: https://openminds.om-i.org/types/Ellipse
-    description: null
-    title: Ellipse
-    slots:
-    - id
-    - semiMajorAxis
-    - semiMinorAxis
-    slot_usage:
-      semiMajorAxis:
-        required: true
-      semiMinorAxis:
-        required: true
-- Circle:
-    class_uri: https://openminds.om-i.org/types/Circle
-    description: null
-    title: Circle
-    slots:
-    - id
-    - radius
-    slot_usage:
-      radius:
-        required: true
-- ParcellationTerminologyVersion:
-    class_uri: https://openminds.om-i.org/types/ParcellationTerminologyVersion
-    description: null
-    title: Parcellation terminology version
-    slots:
-    - id
-    - dataLocation
-    - hasEntity
+    - abbreviation
+    - author
+    - custodian
+    - description
+    - digitalIdentifier
+    - fullName
+    - hasTerminology
+    - hasVersion
+    - homepage
+    - howToCite
     - ontologyIdentifier
+    - shortName
+    - usedSpecies
     slot_usage:
-      dataLocation:
-        range: File
-      hasEntity:
+      author:
         required: true
-        range: ParcellationEntityVersion
+        range: Consortium
+      custodian:
+        range: Consortium
+      description:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      fullName:
+        required: true
+      hasTerminology:
+        required: true
+        range: ParcellationTerminology
+      hasVersion:
+        required: true
+        range: BrainAtlasVersion
+      shortName:
+        required: true
+- AtlasAnnotation:
+    class_uri: https://openminds.om-i.org/types/AtlasAnnotation
+    description: null
+    title: Atlas annotation
+    slots:
+    - id
+    - anchorPoint
+    - criteria
+    - criteriaQualityType
+    - criteriaType
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - preferredVisualization
+    - specification
+    - type
+    slot_usage:
+      criteriaQualityType:
+        required: true
+      criteriaType:
+        required: true
+      specification:
+        range: File
+      type:
+        required: true
+        range: AnnotationType
 - BrainAtlasVersion:
     class_uri: https://openminds.om-i.org/types/BrainAtlasVersion
     description: null
@@ -118,11 +135,6 @@ classes:
         - range: RRID
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       hasTerminology:
         required: true
         range: ParcellationTerminologyVersion
@@ -153,32 +165,21 @@ classes:
         required: true
       versionInnovation:
         required: true
-- AtlasAnnotation:
-    class_uri: https://openminds.om-i.org/types/AtlasAnnotation
+- ParcellationTerminologyVersion:
+    class_uri: https://openminds.om-i.org/types/ParcellationTerminologyVersion
     description: null
-    title: Atlas annotation
+    title: Parcellation terminology version
     slots:
     - id
-    - anchorPoint
-    - criteria
-    - criteriaQualityType
-    - criteriaType
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - preferredVisualization
-    - specification
-    - type
+    - dataLocation
+    - hasEntity
+    - ontologyIdentifier
     slot_usage:
-      criteriaQualityType:
-        required: true
-      criteriaType:
-        required: true
-      specification:
+      dataLocation:
         range: File
-      type:
+      hasEntity:
         required: true
-        range: AnnotationType
+        range: ParcellationEntityVersion
 - ParcellationTerminology:
     class_uri: https://openminds.om-i.org/types/ParcellationTerminology
     description: null
@@ -194,133 +195,40 @@ classes:
       hasEntity:
         required: true
         range: ParcellationEntity
-- BrainAtlas:
-    class_uri: https://openminds.om-i.org/types/BrainAtlas
+- CustomAnnotation:
+    class_uri: https://openminds.om-i.org/types/CustomAnnotation
     description: null
-    title: Brain atlas
+    title: Custom annotation
     slots:
     - id
-    - abbreviation
-    - author
-    - custodian
-    - description
-    - digitalIdentifier
-    - fullName
-    - hasTerminology
-    - hasVersion
-    - homepage
-    - howToCite
-    - ontologyIdentifier
-    - shortName
-    - usedSpecies
-    slot_usage:
-      author:
-        required: true
-        range: Consortium
-      custodian:
-        range: Consortium
-      description:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: ISBN
-        - range: RRID
-      fullName:
-        required: true
-      hasTerminology:
-        required: true
-        range: ParcellationTerminology
-      hasVersion:
-        required: true
-        range: BrainAtlasVersion
-      shortName:
-        required: true
-- SingleColor:
-    class_uri: https://openminds.om-i.org/types/SingleColor
-    description: null
-    title: Single color
-    slots:
-    - id
-    - value
-    slot_usage:
-      value:
-        required: true
-        range: string
-- ViewerSpecification:
-    class_uri: https://openminds.om-i.org/types/ViewerSpecification
-    description: null
-    title: Viewer specification
-    slots:
-    - id
-    - additionalRemarks
     - anchorPoint
-    - cameraPosition
-    - preferredDisplayColor
-    slot_usage:
-      anchorPoint:
-        required: true
-- QuantitativeRelationAssessment:
-    class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
-    description: null
-    title: Quantitative relation assessment
-    slots:
-    - id
-    - criteria
-    - inRelationTo
-    - quantitativeOverlap
-    slot_usage:
-      inRelationTo:
-        required: true
-        range: ParcellationEntityVersion
-      quantitativeOverlap:
-        required: true
-- QualitativeRelationAssessment:
-    class_uri: https://openminds.om-i.org/types/QualitativeRelationAssessment
-    description: null
-    title: Qualitative relation assessment
-    slots:
-    - id
-    - criteria
-    - inRelationTo
-    - qualitativeOverlap
-    slot_usage:
-      inRelationTo:
-        required: true
-      qualitativeOverlap:
-        required: true
-- CoordinatePoint:
-    class_uri: https://openminds.om-i.org/types/CoordinatePoint
-    description: null
-    title: Coordinate point
-    slots:
-    - id
     - coordinateSpace
-    - coordinates
+    - criteria
+    - criteriaQualityType
+    - criteriaType
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - preferredVisualization
+    - specification
+    - type
     slot_usage:
       coordinateSpace:
         required: true
         any_of:
         - range: CommonCoordinateSpaceVersion
         - range: CustomCoordinateSpace
-      coordinates:
+      criteriaQualityType:
         required: true
-- AnatomicalTargetPosition:
-    class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
-    description: null
-    title: Anatomical target position
-    slots:
-    - id
-    - additionalRemarks
-    - anatomicalTarget
-    - spatialLocation
-    - targetIdentificationType
-    slot_usage:
-      anatomicalTarget:
+      criteriaType:
         required: true
-        range: CellType
-      targetIdentificationType:
+      specification:
+        any_of:
+        - range: File
+        - range: PropertyValueList
+      type:
         required: true
+        range: AnnotationType
 - CustomAnatomicalEntity:
     class_uri: https://openminds.om-i.org/types/CustomAnatomicalEntity
     description: null
@@ -358,37 +266,128 @@ classes:
         required: true
       nativeUnit:
         required: true
-- CustomAnnotation:
-    class_uri: https://openminds.om-i.org/types/CustomAnnotation
+- QuantitativeRelationAssessment:
+    class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
     description: null
-    title: Custom annotation
+    title: Quantitative relation assessment
     slots:
     - id
-    - anchorPoint
-    - coordinateSpace
     - criteria
-    - criteriaQualityType
-    - criteriaType
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - preferredVisualization
-    - specification
-    - type
+    - inRelationTo
+    - quantitativeOverlap
+    slot_usage:
+      inRelationTo:
+        required: true
+        range: ParcellationEntityVersion
+      quantitativeOverlap:
+        required: true
+- SingleColor:
+    class_uri: https://openminds.om-i.org/types/SingleColor
+    description: null
+    title: Single color
+    slots:
+    - id
+    - value
+    slot_usage:
+      value:
+        required: true
+        range: string
+- AnatomicalTargetPosition:
+    class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
+    description: null
+    title: Anatomical target position
+    slots:
+    - id
+    - additionalRemarks
+    - anatomicalTarget
+    - spatialLocation
+    - targetIdentificationType
+    slot_usage:
+      anatomicalTarget:
+        required: true
+        range: CellType
+      targetIdentificationType:
+        required: true
+- CoordinatePoint:
+    class_uri: https://openminds.om-i.org/types/CoordinatePoint
+    description: null
+    title: Coordinate point
+    slots:
+    - id
+    - coordinateSpace
+    - coordinates
     slot_usage:
       coordinateSpace:
         required: true
         any_of:
         - range: CommonCoordinateSpaceVersion
         - range: CustomCoordinateSpace
-      criteriaQualityType:
+      coordinates:
         required: true
-      criteriaType:
+- QualitativeRelationAssessment:
+    class_uri: https://openminds.om-i.org/types/QualitativeRelationAssessment
+    description: null
+    title: Qualitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - qualitativeOverlap
+    slot_usage:
+      inRelationTo:
         required: true
-      specification:
         any_of:
-        - range: File
-        - range: PropertyValueList
-      type:
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
+      qualitativeOverlap:
         required: true
-        range: AnnotationType
+- ViewerSpecification:
+    class_uri: https://openminds.om-i.org/types/ViewerSpecification
+    description: null
+    title: Viewer specification
+    slots:
+    - id
+    - additionalRemarks
+    - anchorPoint
+    - cameraPosition
+    - preferredDisplayColor
+    slot_usage:
+      anchorPoint:
+        required: true
+- Circle:
+    class_uri: https://openminds.om-i.org/types/Circle
+    description: null
+    title: Circle
+    slots:
+    - id
+    - radius
+    slot_usage:
+      radius:
+        required: true
+- Ellipse:
+    class_uri: https://openminds.om-i.org/types/Ellipse
+    description: null
+    title: Ellipse
+    slots:
+    - id
+    - semiMajorAxis
+    - semiMinorAxis
+    slot_usage:
+      semiMajorAxis:
+        required: true
+      semiMinorAxis:
+        required: true
+- Rectangle:
+    class_uri: https://openminds.om-i.org/types/Rectangle
+    description: null
+    title: Rectangle
+    slots:
+    - id
+    - length
+    - width
+    slot_usage:
+      length:
+        required: true
+      width:
+        required: true

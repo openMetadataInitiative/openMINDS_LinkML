@@ -14,6 +14,20 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
+- ChemicalSubstance:
+    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
+    description: Structured information about a chemical substance.
+    title: Chemical substance
+    slots:
+    - id
+    - additionalRemarks
+    - lookupLabel
+    - molecularEntity
+    - productSource
+    - purity
+    slot_usage:
+      molecularEntity:
+        required: true
 - ProductSource:
     class_uri: https://openminds.om-i.org/types/ProductSource
     description: Structured information about the source of a chemical substance or
@@ -33,6 +47,9 @@ classes:
         required: true
       provider:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - ChemicalMixture:
     class_uri: https://openminds.om-i.org/types/ChemicalMixture
     description: Structured information about a mixture of chemical substances.
@@ -63,17 +80,7 @@ classes:
     slot_usage:
       chemicalProduct:
         required: true
-- ChemicalSubstance:
-    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
-    description: Structured information about a chemical substance.
-    title: Chemical substance
-    slots:
-    - id
-    - additionalRemarks
-    - lookupLabel
-    - molecularEntity
-    - productSource
-    - purity
-    slot_usage:
-      molecularEntity:
-        required: true
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity

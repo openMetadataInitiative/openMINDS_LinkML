@@ -14,84 +14,84 @@ enums:
     title: Species
     description: Structured information on the species.
     permissible_values:
-      Bos taurus:
-        description: Cattle (Bos taurus) are large, domesticated, bovid ungulates
-          widely kept as livestock.
+      Cervus elaphus:
+        description: The species *Cervus elaphus* (red deer) belongs to the family
+          of *cervidae* (deers).
+      Berghia stephanieae:
+        description: The species *Berghia stephanieae* belongs to the family of *aeolidiidae*
+          (family of sea slugs, shell-less marine gastropod molluscs).
+      Drosophila melanogaster:
+        description: The species *Drosophila melanogaster* (fruit fly) belongs to
+          the family of *Drosophilidae*.
       Quiscalus mexicanus:
         description: The species *Quiscalus mexicanus* (great-tailed grackle) belongs
           to the family of *Icteridae* (New World blackbirds, orioles and allies)
           of the order *Passeriformes* (song birds).
+      Mustela putorius:
+        description: The species *Mustela putorius* (European polecat) belongs to
+          the family of *mustelidae* (mustelids).
       Chlorocebus aethiops sabaeus:
         description: The species *Chlorocebus aethiops sabaeus* (green monkey) belongs
           to the family of *cercopithecidae* (old world monkeys).
-      Drosophila melanogaster:
-        description: The species *Drosophila melanogaster* (fruit fly) belongs to
-          the family of *Drosophilidae*.
-      Danio rerio:
-        description: The species *Danio rerio* (zebrafish) belongs to the family of
-          *cyprinidae* (cyprinids, freshwater fish).
-      Macaca mulatta:
-        description: The species *Macaca mulatta* (rhesus macaque) belongs to the
-          family of *cercopithecidae* (old world monkeys).
-      Trachemys scripta elegans:
-        description: The red-eared slider or red-eared terrapin (Trachemys scripta
-          elegans) is a subspecies of the pond slider (Trachemys scripta), a semiaquatic
-          turtle belonging to the family Emydidae ([Wikipedia](https://en.wikipedia.org/wiki/Red-eared_slider)).
-      Monodelphis domestica:
-        description: The species *Monodelphis domestica* (gray short-tailed opossum)
-          belongs to the family of *didelphidae* (American possums).
-      Macaca nemestrina:
-        description: The species *Macaca nemestrina* (southern pig-tailed macaque)
-          belongs to the family of *cercopithecidae* (old world monkeys).
-      Macaca fuscata:
-        description: The species *Macaca fuscata* (Japanese macaque) belongs to the
-          family of *cercopithecidae* (old world monkeys).
-      Mus musculus:
-        description: The species *Mus musculus* (house mouse) belongs to the family
-          of *muridae* (murids).
-      Sus scrofa domesticus:
-        description: The species *Sus scrofa domesticus* (domestic pig) belongs to
-          the family of suidae (suids).
-      Rattus norvegicus:
-        description: The species *Rattus norvegicus* (brown rat) belongs to the family
-          of *muridae* (murids).
-      Chlorocebus pygerythrus:
-        description: The species *Chlorocebus pygerythrus* (vervet marmoset) belongs
-          to the family of *cercopithecidae* (old world monkeys).
-      Felis catus:
-        description: The species *Felis catus* (domestic cat) belongs to the family
-          of *Felidae*, subfamily *Felinae*.
-      Ovis aries:
-        description: The species *Ovis aries* (domestic sheep) belongs to the family
-          of bovidae (bovids).
-      Berghia stephanieae:
-        description: The species *Berghia stephanieae* belongs to the family of *aeolidiidae*
-          (family of sea slugs, shell-less marine gastropod molluscs).
-      Homo sapiens:
-        description: The species *Homo sapiens* (humans) belongs to the family of
-          *hominidae* (great apes).
+      Caenorhabditis elegans:
+        description: The species *Caenorhabditis elegans* (C. elegans) belongs to
+          the family of *rhabditidae* (roundworms).
+      Meriones unguiculatus:
+        description: The Mongolian gerbil, also referred to as the Mongolian jird
+          (Meriones unguiculatus), is a rodent belonging to the subfamily Gerbillinae.
+          [Wikipedia]
       Cricetulus griseus:
         description: The Chinese hamster (Cricetulus griseus or Cricetulus aureus)
           is a rodent in the genus Cricetulus of the subfamily Cricetidae.
       Macaca fascicularis:
         description: The species *Macaca fascicularis* (crab-eating macaque) belongs
           to the family of *cercopithecidae* (old world monkeys).
-      Callithrix jacchus:
-        description: The species *Callithrix jacchus* (common marmoset) belongs to
-          the family of *callitrichidae* (new world monkeys).
-      Caenorhabditis elegans:
-        description: The species *Caenorhabditis elegans* (C. elegans) belongs to
-          the family of *rhabditidae* (roundworms).
-      Mustela putorius:
-        description: The species *Mustela putorius* (European polecat) belongs to
-          the family of *mustelidae* (mustelids).
-      Cervus elaphus:
-        description: The species *Cervus elaphus* (red deer) belongs to the family
-          of *cervidae* (deers).
+      Rattus norvegicus:
+        description: The species *Rattus norvegicus* (brown rat) belongs to the family
+          of *muridae* (murids).
       Mustela putorius furo:
         description: The species *Mustela putorius furo* (domestic ferret) belongs
           to the family of *mustelidae* (mustelids).
-      Meriones unguiculatus:
-        description: The Mongolian gerbil, also referred to as the Mongolian jird
-          (Meriones unguiculatus), is a rodent belonging to the subfamily Gerbillinae.
-          [Wikipedia]
+      Danio rerio:
+        description: The species *Danio rerio* (zebrafish) belongs to the family of
+          *cyprinidae* (cyprinids, freshwater fish).
+      Callithrix jacchus:
+        description: The species *Callithrix jacchus* (common marmoset) belongs to
+          the family of *callitrichidae* (new world monkeys).
+      Monodelphis domestica:
+        description: The species *Monodelphis domestica* (gray short-tailed opossum)
+          belongs to the family of *didelphidae* (American possums).
+      Mus musculus:
+        description: The species *Mus musculus* (house mouse) belongs to the family
+          of *muridae* (murids).
+      Ovis aries:
+        description: The species *Ovis aries* (domestic sheep) belongs to the family
+          of bovidae (bovids).
+      Macaca fuscata:
+        description: The species *Macaca fuscata* (Japanese macaque) belongs to the
+          family of *cercopithecidae* (old world monkeys).
+      Felis catus:
+        description: The species *Felis catus* (domestic cat) belongs to the family
+          of *Felidae*, subfamily *Felinae*.
+      Macaca mulatta:
+        description: The species *Macaca mulatta* (rhesus macaque) belongs to the
+          family of *cercopithecidae* (old world monkeys).
+      Macaca nemestrina:
+        description: The species *Macaca nemestrina* (southern pig-tailed macaque)
+          belongs to the family of *cercopithecidae* (old world monkeys).
+      Homo sapiens:
+        description: The species *Homo sapiens* (humans) belongs to the family of
+          *hominidae* (great apes).
+      Chlorocebus pygerythrus:
+        description: The species *Chlorocebus pygerythrus* (vervet marmoset) belongs
+          to the family of *cercopithecidae* (old world monkeys).
+      Bos taurus:
+        description: Cattle (Bos taurus) are large, domesticated, bovid ungulates
+          widely kept as livestock.
+      Sus scrofa domesticus:
+        description: The species *Sus scrofa domesticus* (domestic pig) belongs to
+          the family of suidae (suids).
+      Trachemys scripta elegans:
+        description: The red-eared slider or red-eared terrapin (Trachemys scripta
+          elegans) is a subspecies of the pond slider (Trachemys scripta), a semiaquatic
+          turtle belonging to the family Emydidae ([Wikipedia](https://en.wikipedia.org/wiki/Red-eared_slider)).

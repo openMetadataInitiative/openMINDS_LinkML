@@ -16,10 +16,6 @@ enums:
       one-dimensional phase encoding:
         description: A spatial encoding method in which position along a single dimension
           is represented by controlled phase shifts of the signal.
-      three-dimensional frequency-phase-phase encoding:
-        description: A spatial encoding method in which position in three dimensions
-          is represented using frequency encoding along one axis and phase encoding
-          along two orthogonal axes.
       two-dimensional frequency-phase encoding:
         description: A spatial encoding method in which position in two dimensions
           is represented using frequency encoding along one axis and phase encoding
@@ -27,3 +23,7 @@ enums:
       one-dimensional frequency encoding:
         description: A spatial encoding method in which position along a single dimension
           is represented by differences in signal frequency.
+      three-dimensional frequency-phase-phase encoding:
+        description: A spatial encoding method in which position in three dimensions
+          is represented using frequency encoding along one axis and phase encoding
+          along two orthogonal axes.

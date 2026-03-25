@@ -13,9 +13,9 @@ enums:
     enum_uri: https://openminds.om-i.org/types/SemanticDataType
     title: Semantic data type
     permissible_values:
-      derived data:
-        description: null
       raw data:
+        description: null
+      derived data:
         description: null
       experimental data:
         description: null

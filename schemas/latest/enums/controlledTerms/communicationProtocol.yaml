@@ -13,19 +13,19 @@ enums:
     enum_uri: https://openminds.om-i.org/types/CommunicationProtocol
     title: Communication protocol
     permissible_values:
-      HTTP:
-        description: A network communication protocol used for exchanging hypermedia
-          documents, primarily between web servers and browsers.
-      SSH:
-        description: A network communication protocol that enables secure remote login
-          and command execution over unsecured networks.
       WebSocket:
         description: A computer communications protocol, providing a bidirectional
           communication channel over a single Transmission Control Protocol (TCP)
           connection.
-      HTTPS:
-        description: A network communication protocol that secures HTTP traffic by
-          encrypting it using SSL/TLS.
+      SSH:
+        description: A network communication protocol that enables secure remote login
+          and command execution over unsecured networks.
+      HTTP:
+        description: A network communication protocol used for exchanging hypermedia
+          documents, primarily between web servers and browsers.
       TCP/IP:
         description: A network communication protocol suite that defines how data
           is transmitted across interconnected networks.
+      HTTPS:
+        description: A network communication protocol that secures HTTP traffic by
+          encrypting it using SSL/TLS.

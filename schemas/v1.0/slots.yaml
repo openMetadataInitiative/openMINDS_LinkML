@@ -176,8 +176,8 @@ slots:
     slot_uri: contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Organization
     - range: Person
+    - range: Organization
   coordinatePoint:
     slot_uri: coordinatePoint
     description: Pair or triplet of numbers defining the position in a particular
@@ -231,8 +231,8 @@ slots:
     slot_uri: dataLocation
     description: null
     any_of:
-    - range: File
     - range: FileBundle
+    - range: File
   defaultImage:
     slot_uri: defaultImage
     description: Two or three dimensional image that particluarly represents a specific
@@ -293,12 +293,12 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
+    - range: DigitalIdentifier
     - range: DOI
-    - range: GRIDID
     - range: ORCID
     - range: SWHID
-    - range: DigitalIdentifier
     - range: RORID
+    - range: GRIDID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -383,8 +383,8 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: DOI
     - range: URL
+    - range: DOI
     - range: File
   fullName:
     slot_uri: fullName
@@ -394,8 +394,8 @@ slots:
     slot_uri: funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Organization
     - range: Person
+    - range: Organization
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -500,13 +500,13 @@ slots:
     range: string
     pattern:
       ALTERNATES:
-      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
       - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
       - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
-      - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
-        \ \t\r\n\f]+)*$"
       - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
       - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
+      - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
+        \ \t\r\n\f]+)*$"
+      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
   inRelationTo:
     slot_uri: inRelationTo
     description: Reference to a related element.
@@ -577,9 +577,9 @@ slots:
     any_of:
     - range: DatasetVersion
     - range: FileBundle
+    - range: FileRepository
     - range: SubjectGroup
     - range: TissueSampleCollection
-    - range: FileRepository
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -836,8 +836,8 @@ slots:
     description: Fixed date on which a product is due to become or was made available
       for the general public to see or buy
     any_of:
-    - range: string
     - range: date
+    - range: string
   relevantFor:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
@@ -1016,11 +1016,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: QuantitativeValue
-    - range: float
+    - range: integer
     - range: string
     - range: QuantitativeValueRange
-    - range: integer
+    - range: QuantitativeValue
+    - range: float
     multivalued: true
     inlined: true
   versionIdentifier:

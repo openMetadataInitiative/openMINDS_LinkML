@@ -14,35 +14,35 @@ enums:
     title: License
     description: Structured information on a used license.
     permissible_values:
-      CECILL-2.1: {}
-      GPL-3.0-or-later: {}
-      CC-BY-4.0: {}
-      GPL-1.0-or-later: {}
-      CC-BY-NC-ND-4.0: {}
-      CC-BY-SA-4.0: {}
-      CC-BY-ND-4.0: {}
-      LGPL-2.1-only: {}
-      AGPL-3.0-only: {}
-      BSD-3-Clause: {}
       CC-BY-NC-SA-4.0: {}
-      LGPL-2.0-or-later: {}
-      Apache-2.0: {}
-      LGPL-2.1-or-later: {}
-      EUPL-1.2: {}
-      GPL-2.0-only: {}
-      BSD-4-Clause: {}
-      CC-BY-NC-4.0: {}
-      GPL-3.0-only: {}
-      GPL-1.0-only: {}
-      GPL-2.0-or-later: {}
-      EBRAINS-DUA-4-HDG-NC: {}
-      LGPL-3.0-only: {}
-      LGPL-2.0-only: {}
-      RU-DI-HD-1.0: {}
       MIT: {}
-      MPL-2.0: {}
-      LGPL-3.0-or-later: {}
+      AGPL-3.0-only: {}
       EBRAINS-DUA-4-HDG: {}
-      BSD-2-Clause: {}
-      youtube: {}
+      BSD-3-Clause: {}
+      CC-BY-NC-4.0: {}
+      CC-BY-NC-ND-4.0: {}
+      CECILL-2.1: {}
+      GPL-2.0-or-later: {}
+      LGPL-2.0-only: {}
       CC0-1.0: {}
+      BSD-4-Clause: {}
+      BSD-2-Clause: {}
+      EUPL-1.2: {}
+      youtube: {}
+      LGPL-3.0-only: {}
+      RU-DI-HD-1.0: {}
+      CC-BY-SA-4.0: {}
+      MPL-2.0: {}
+      Apache-2.0: {}
+      GPL-3.0-only: {}
+      GPL-3.0-or-later: {}
+      LGPL-2.1-or-later: {}
+      LGPL-2.0-or-later: {}
+      LGPL-3.0-or-later: {}
+      LGPL-2.1-only: {}
+      GPL-1.0-only: {}
+      CC-BY-ND-4.0: {}
+      GPL-1.0-or-later: {}
+      GPL-2.0-only: {}
+      CC-BY-4.0: {}
+      EBRAINS-DUA-4-HDG-NC: {}

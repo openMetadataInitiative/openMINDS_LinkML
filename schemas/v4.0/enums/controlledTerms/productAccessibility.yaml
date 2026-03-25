@@ -13,22 +13,22 @@ enums:
     enum_uri: https://openminds.om-i.org/types/ProductAccessibility
     title: Product accessibility
     permissible_values:
-      retracted:
-        description: With 'retracted' selected, metadata are released, but data are
-          retracted.
-      restricted access:
-        description: With 'restricted access' selected, metadata are released, but
-          data remain on an access restricted server.
-      paid access:
-        description: With 'paid access' selected, data and metadata are both released,
-          but users paid to gain access to the data (e.g., a one-time fee).
-      free access:
-        description: With 'free access' selected, data and metadata are both released
-          and become immediately available without any access restrictions.
-      under embargo:
-        description: With 'under embargo' selected, metadata are released, but data
-          remain unavailable for the public until the embargo is lifted.
       controlled access:
         description: With 'controlled access' selected, data and metadata are both
           released and available free of charge, but users must logged in and authenticated
           themselves to access the data.
+      free access:
+        description: With 'free access' selected, data and metadata are both released
+          and become immediately available without any access restrictions.
+      paid access:
+        description: With 'paid access' selected, data and metadata are both released,
+          but users paid to gain access to the data (e.g., a one-time fee).
+      restricted access:
+        description: With 'restricted access' selected, metadata are released, but
+          data remain on an access restricted server.
+      retracted:
+        description: With 'retracted' selected, metadata are released, but data are
+          retracted.
+      under embargo:
+        description: With 'under embargo' selected, metadata are released, but data
+          remain unavailable for the public until the embargo is lifted.

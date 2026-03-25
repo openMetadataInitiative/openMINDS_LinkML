@@ -14,55 +14,36 @@ enums:
     title: Disease
     description: Structured information on a disease.
     permissible_values:
-      Parkinson's disease:
-        description: Parkinson's is a progressive central nervous system disorder
-          that affects the motor system.
+      meningioma:
+        description: A generally slow growing tumor attached to the dura mater and
+          composed of neoplastic meningothelial (arachnoidal) cells.
+      malignant neoplasm:
+        description: A 'malignant neoplasm' is composed of atypical, often pleomorphic
+          cells that uncontrollably grow and multiply, spreading into surrounding
+          tissue and even invading distant anatomic sites (metastasis). Many malignant
+          neoplasm form solid tumors, but cancers of the blood generally do not. [(adapted
+          from [NCI](https://www.cancer.gov/about-cancer/understanding/what-is-cancer)].
+      minimally conscious state:
+        description: A 'minimally conscious state' (MCS) is a disorder of consciousness
+          with partial preservation of conscious awareness. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Minimally_conscious_state)]
+      Williams-Beuren syndrome:
+        description: null
       long COVID:
         description: A long-term disease originally caused by the severe acute respiratory
           syndrome coronavirus 2 (SARS-CoV-2) with symptoms persisting beyond three
           to four weeks.
-      epilepsy:
-        description: Epilepsy describes a group of central nervous system disorders
-          characterized by recurrent unprovoked seizures.
-      unresponsive wakefulness syndrome:
-        description: The 'unresponsive wakefulness syndrome' (UWS) is a disorder of
-          consciousness, formerly known as vegetative state, with only reflexive behavior
-          and no sign of conscious awareness [[Laureys et al. 2010](https://doi.org/10.1186/1741-7015-8-68)].
-      focal cerebral ischemia:
-        description: A 'focal brain ischemia' occurs when a blood clot has occluded
-          a cerebral vessel reducing the blood flow to a specific brain region which
-          increases the risk of cell death in that particular area. [adapted from
-          [Wikipedia](https://en.wikipedia.org/wiki/Brain_ischemia#Focal_brain_ischemia)]
       cerebral atrophy:
         description: Cerebral atrophy describes the pathological process of wasting
           or decrease in size of the cells or tissue of the cerebrum.
-      minimally conscious state:
-        description: A 'minimally conscious state' (MCS) is a disorder of consciousness
-          with partial preservation of conscious awareness. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Minimally_conscious_state)]
-      autism spectrum disorder:
-        description: null
-      Alzheimer's disease:
-        description: null
       macular degeneration:
         description: A retinal degeneration characterized by gradual deterioration
           of light-sensing cells in the tissues at the back of the eye resulting in
           vision loss.[adapted from [Disease Ontology definition](http://purl.obolibrary.org/obo/DOID_4448)]
+      unresponsive wakefulness syndrome:
+        description: The 'unresponsive wakefulness syndrome' (UWS) is a disorder of
+          consciousness, formerly known as vegetative state, with only reflexive behavior
+          and no sign of conscious awareness [[Laureys et al. 2010](https://doi.org/10.1186/1741-7015-8-68)].
       fragile X syndrome:
-        description: null
-      multiple sclerosis:
-        description: '''Multiple sclerosis'' is a disorder in which the body''s immune
-          system attacks the protective meylin covering of the nerve cells in the
-          brain, optic nerve and spinal cord (adapted from the [Mayo clinic](https://www.mayoclinic.org/diseases-conditions/multiple-sclerosis/symptoms-causes/syc-20350269#:~:text=Multiple%20sclerosis%20is%20a%20disorder,insulation%20on%20an%20electrical%20wire.))'
-      disorder of consciousness:
-        description: A 'disorder of consciousness' is a state where a subject's consciousness
-          has been affected by damage to the brain.
-      COVID-19:
-        description: A coronavirus infectious disease that is characterized by fever,
-          cough and shortness of breath and caused by the coronavirus strain SARS-CoV-2.
-      meningioma:
-        description: A generally slow growing tumor attached to the dura mater and
-          composed of neoplastic meningothelial (arachnoidal) cells.
-      Williams-Beuren syndrome:
         description: null
       glioma:
         description: A benign or malignant brain and spinal cord tumor that arises
@@ -71,21 +52,40 @@ enums:
         description: Congenital blindness is caused by a group of diseases, disorders
           or injuries that led to permanent severely impaired vision or irreversible
           lack of vision before/during birth or in early childhood.
-      acquired blindness:
-        description: Acquired blindness is caused by a group of diseases, disorders
-          or injuries that led to permanent severely impaired vision or irreversible
-          lack of vision during adulthood.
+      stroke:
+        description: A sudden loss of neurological function secondary to hemorrhage
+          or ischemia in the brain parenchyma due to a vascular event.
+      focal cerebral ischemia:
+        description: A 'focal brain ischemia' occurs when a blood clot has occluded
+          a cerebral vessel reducing the blood flow to a specific brain region which
+          increases the risk of cell death in that particular area. [adapted from
+          [Wikipedia](https://en.wikipedia.org/wiki/Brain_ischemia#Focal_brain_ischemia)]
+      Parkinson's disease:
+        description: Parkinson's is a progressive central nervous system disorder
+          that affects the motor system.
+      multiple sclerosis:
+        description: '''Multiple sclerosis'' is a disorder in which the body''s immune
+          system attacks the protective meylin covering of the nerve cells in the
+          brain, optic nerve and spinal cord (adapted from the [Mayo clinic](https://www.mayoclinic.org/diseases-conditions/multiple-sclerosis/symptoms-causes/syc-20350269#:~:text=Multiple%20sclerosis%20is%20a%20disorder,insulation%20on%20an%20electrical%20wire.))'
+      disorder of consciousness:
+        description: A 'disorder of consciousness' is a state where a subject's consciousness
+          has been affected by damage to the brain.
+      Alzheimer's disease:
+        description: null
       mental disorder:
         description: "A 'mental disorder' is characterized by a clinically significant\
           \ disturbance in an individual\u2019s cognition, emotional regulation, or\
           \ behaviour and is usually associated with distress or impairment in important\
           \ areas of functioning. [adapted from [WHO fact-sheets](https://www.who.int/news-room/fact-sheets/detail/mental-disorders)]"
-      malignant neoplasm:
-        description: A 'malignant neoplasm' is composed of atypical, often pleomorphic
-          cells that uncontrollably grow and multiply, spreading into surrounding
-          tissue and even invading distant anatomic sites (metastasis). Many malignant
-          neoplasm form solid tumors, but cancers of the blood generally do not. [(adapted
-          from [NCI](https://www.cancer.gov/about-cancer/understanding/what-is-cancer)].
-      stroke:
-        description: A sudden loss of neurological function secondary to hemorrhage
-          or ischemia in the brain parenchyma due to a vascular event.
+      epilepsy:
+        description: Epilepsy describes a group of central nervous system disorders
+          characterized by recurrent unprovoked seizures.
+      COVID-19:
+        description: A coronavirus infectious disease that is characterized by fever,
+          cough and shortness of breath and caused by the coronavirus strain SARS-CoV-2.
+      acquired blindness:
+        description: Acquired blindness is caused by a group of diseases, disorders
+          or injuries that led to permanent severely impaired vision or irreversible
+          lack of vision during adulthood.
+      autism spectrum disorder:
+        description: null

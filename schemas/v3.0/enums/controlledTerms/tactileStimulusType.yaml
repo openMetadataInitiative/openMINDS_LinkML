@@ -13,9 +13,9 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/TactileStimulusType
     title: Tactile stimulus type
     permissible_values:
-      textured surface:
-        description: null
       vibrating object:
+        description: null
+      textured surface:
         description: null
       vibrating surface:
         description: null

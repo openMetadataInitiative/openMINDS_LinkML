@@ -13,6 +13,11 @@ enums:
     enum_uri: https://openminds.om-i.org/types/ExternalBodyRegion
     title: External body region
     permissible_values:
+      head:
+        description: Is a subdivision of organism along the main body axis. Is part
+          of the anterior region of the body and the craniocervical region. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000033)
+          ('is_a' and 'relationship')]
       face:
         description: Is a subdivision of the head. [auto-generated from properties
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001456)
@@ -21,9 +26,4 @@ enums:
         description: Is a subdivision of organism connecting the head to the trunk.
           Is part of the anterior region of the body. [auto-generated from properties
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000974)
-          ('is_a' and 'relationship')]
-      head:
-        description: Is a subdivision of organism along the main body axis. Is part
-          of the anterior region of the body and the craniocervical region. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000033)
           ('is_a' and 'relationship')]

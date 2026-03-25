@@ -13,75 +13,75 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareFeature
     title: Software feature
     permissible_values:
-      modelling:
-        description: null
-      scripting interface:
-        description: null
-      provenance:
-        description: null
-      mobile device:
-        description: null
-      statistical data types:
+      command line interface:
+        description: A text-based system that enables users to interact with a computer
+          or software by entering commands, allowing them to perform specific tasks
+          or operations.
+      control:
         description: null
       desktop environment:
         description: null
-      virtual reality:
+      3D geometry data types:
         description: null
-      control:
+      data processing:
         description: null
-      parallel programming:
+      mobile device:
         description: null
-      simulation:
-        description: null
-      heterogeneous architecture:
+      performance measurement:
         description: null
       tiled display wall:
         description: null
-      3D scalar data types:
+      modelling:
+        description: null
+      provenance:
         description: null
       graphical user interface:
         description: A visual system that enables users to interact with a computer
           or software through graphical elements like windows, icons, and menus, allowing
           them to perform specific tasks or operations.
-      augmented reality:
-        description: null
-      3D geometry data types:
-        description: null
-      tensor data types:
-        description: null
-      metadata data types:
-        description: null
-      data processing:
-        description: null
-      data acquisition:
-        description: null
       presentation visualisation:
+        description: null
+      positional data types:
+        description: null
+      simulation:
+        description: null
+      scripting interface:
         description: null
       profiling:
         description: null
-      command line interface:
-        description: A text-based system that enables users to interact with a computer
-          or software by entering commands, allowing them to perform specific tasks
-          or operations.
-      interactive analysis:
+      matrix data types:
         description: null
-      graph data types:
+      3D vector data types:
         description: null
-      positional data types:
+      heterogeneous architecture:
+        description: null
+      virtual reality:
+        description: null
+      metadata data types:
         description: null
       application programming interface:
         description: A set of rules and protocols that allows different software applications
           to communicate with each other, enabling them to access specific functions
           or data.
-      3D vector data types:
-        description: null
-      performance measurement:
+      statistical data types:
         description: null
       raster image data types:
         description: null
-      time series data types:
+      graph data types:
         description: null
       vector image data types:
         description: null
-      matrix data types:
+      augmented reality:
+        description: null
+      interactive analysis:
+        description: null
+      3D scalar data types:
+        description: null
+      tensor data types:
+        description: null
+      parallel programming:
+        description: null
+      data acquisition:
+        description: null
+      time series data types:
         description: null
