@@ -13,15 +13,15 @@ enums:
     enum_uri: https://openminds.om-i.org/types/PublicationStatus
     title: Publication status
     permissible_values:
-      retracted:
-        description: A publication status indicating the work was previously published
-          but has been formally withdrawn from the public record by the publisher
-          or issuing authority, typically accompanied by a retraction notice.
       disposed:
         description: A publication status indicating the work has been removed from
           active retention or management (e.g., after a retention period, superseded,
           or otherwise deaccessioned) and is no longer available, without implying
           wrongdoing or defects in the work.
+      retracted:
+        description: A publication status indicating the work was previously published
+          but has been formally withdrawn from the public record by the publisher
+          or issuing authority, typically accompanied by a retraction notice.
       embargoed:
         description: A publication status indicating the work exists but cannot be
           publicly published, reported on, or made openly available until a specified

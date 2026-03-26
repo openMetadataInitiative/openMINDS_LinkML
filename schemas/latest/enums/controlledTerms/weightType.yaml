@@ -13,15 +13,15 @@ enums:
     enum_uri: https://openminds.om-i.org/types/WeightType
     title: Weight type
     permissible_values:
-      body weight:
-        description: The mass of an intact organism measured as a whole.
-      post fixation weight:
-        description: The mass of an organism or biological tissue measured after it
-          has undergone a fixation process intended to preserve its structural or
-          molecular integrity.
       dry weight:
         description: The mass of an organism or biological tissue measured after complete
           removal of water by drying to constant mass.
       fresh wet weight:
         description: The mass of an organism or biological tissue measured in its
           natural hydrated state prior to processing.
+      post fixation weight:
+        description: The mass of an organism or biological tissue measured after it
+          has undergone a fixation process intended to preserve its structural or
+          molecular integrity.
+      body weight:
+        description: The mass of an intact organism measured as a whole.

@@ -14,39 +14,6 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
-- EphysStimulus:
-    class_uri: https://openminds.ebrains.eu/stimulation/EphysStimulus
-    description: null
-    title: Ephys stimulus
-    slots:
-    - id
-    - deliveredBy
-    - description
-    - epoch
-    - generatedBy
-    - internalIdentifier
-    - lookupLabel
-    - specification
-    - type
-    slot_usage:
-      deliveredBy:
-        any_of:
-        - range: ElectrodeArrayUsage
-        - range: ElectrodeUsage
-        - range: PipetteUsage
-        - range: SlicingDeviceUsage
-      generatedBy:
-        any_of:
-        - range: ElectrodeArrayUsage
-        - range: ElectrodeUsage
-        - range: PipetteUsage
-        - range: SlicingDeviceUsage
-      internalIdentifier:
-        required: true
-      specification:
-        range: Configuration
-      type:
-        range: ElectricalStimulusType
 - StimulationActivity:
     class_uri: https://openminds.ebrains.eu/stimulation/StimulationActivity
     description: null
@@ -93,3 +60,36 @@ classes:
         required: true
       studyTarget:
         range: AuditoryStimulusType
+- EphysStimulus:
+    class_uri: https://openminds.ebrains.eu/stimulation/EphysStimulus
+    description: null
+    title: Ephys stimulus
+    slots:
+    - id
+    - deliveredBy
+    - description
+    - epoch
+    - generatedBy
+    - internalIdentifier
+    - lookupLabel
+    - specification
+    - type
+    slot_usage:
+      deliveredBy:
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: SlicingDeviceUsage
+      generatedBy:
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: SlicingDeviceUsage
+      internalIdentifier:
+        required: true
+      specification:
+        range: Configuration
+      type:
+        range: ElectricalStimulusType

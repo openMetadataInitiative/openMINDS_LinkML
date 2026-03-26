@@ -13,12 +13,12 @@ enums:
     enum_uri: https://openminds.om-i.org/types/SetupType
     title: Setup type
     permissible_values:
-      stimulation system:
-        description: A 'stimulation system' is a setup type with the purpose of stimulating
-          a specimen.
       computing system:
         description: A 'computing system' is a setup type with the purpose of performing
           computations.
       acquisition system:
         description: An 'acquisition system' is a setup type with the purpose of collecting
           data.
+      stimulation system:
+        description: A 'stimulation system' is a setup type with the purpose of stimulating
+          a specimen.

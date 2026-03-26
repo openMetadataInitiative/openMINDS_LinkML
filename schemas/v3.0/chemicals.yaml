@@ -14,6 +14,24 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
+- ChemicalSubstance:
+    class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
+    description: Structured information about a chemical substance.
+    title: Chemical substance
+    slots:
+    - id
+    - additionalRemarks
+    - lookupLabel
+    - molecularEntity
+    - productSource
+    - purity
+    slot_usage:
+      molecularEntity:
+        required: true
+      purity:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ProductSource:
     class_uri: https://openminds.ebrains.eu/chemicals/ProductSource
     description: Structured information about the source of a chemical substance or
@@ -37,6 +55,10 @@ classes:
         - range: Consortium
         - range: Organization
         - range: Person
+      purity:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ChemicalMixture:
     class_uri: https://openminds.ebrains.eu/chemicals/ChemicalMixture
     description: Structured information about a mixture of chemical substances.
@@ -71,17 +93,3 @@ classes:
         - range: ChemicalMixture
         - range: ChemicalSubstance
         - range: MolecularEntity
-- ChemicalSubstance:
-    class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
-    description: Structured information about a chemical substance.
-    title: Chemical substance
-    slots:
-    - id
-    - additionalRemarks
-    - lookupLabel
-    - molecularEntity
-    - productSource
-    - purity
-    slot_usage:
-      molecularEntity:
-        required: true

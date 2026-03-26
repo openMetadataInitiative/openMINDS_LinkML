@@ -14,16 +14,16 @@ enums:
     title: Ethics assessment
     description: Structured information on the ethics assessment of a dataset.
     permissible_values:
-      EU compliant:
-        description: Data are ethically approved in compliance with EU law. No additional
-          ethics assessment was made by the data sharing initiative.
-      EU compliant +:
-        description: Data are ethically approved in compliance with EU law and an
-          additional assessment was made by the data sharing initiative.
       US compliant:
         description: Data are ethically approved in compliance with the laws of the
           United States of America. No additional ethics assessment was made by the
           data sharing initiative.
+      EU compliant:
+        description: Data are ethically approved in compliance with EU law. No additional
+          ethics assessment was made by the data sharing initiative.
       not required:
         description: An ethics assessment is 'not required' when no ethics approval
           was needed to conduct the study.
+      EU compliant +:
+        description: Data are ethically approved in compliance with EU law and an
+          additional assessment was made by the data sharing initiative.

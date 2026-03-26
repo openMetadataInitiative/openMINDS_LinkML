@@ -13,11 +13,11 @@ enums:
     enum_uri: https://openminds.om-i.org/types/ProjectType
     title: Project type
     permissible_values:
-      research project:
-        description: A science-driven project defined primarily by a coherent research
-          question and systematic investigation aimed at generating new knowledge,
-          methods, or insights, regardless of its funding source.
       grant project:
         description: A time-limited, externally funded project defined primarily by
           the formal objectives, conditions, and reporting requirements of a sponsoring
           organization.
+      research project:
+        description: A science-driven project defined primarily by a coherent research
+          question and systematic investigation aimed at generating new knowledge,
+          methods, or insights, regardless of its funding source.

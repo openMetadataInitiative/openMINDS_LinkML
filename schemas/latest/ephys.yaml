@@ -14,156 +14,156 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- ElectrodeArray:
-    class_uri: https://openminds.om-i.org/types/ElectrodeArray
-    description: Structured information on an electrode array.
-    title: Electrode array
-    slots:
-    - id
-    - conductorMaterial
-    - contribution
-    - description
-    - electrodeIdentifier
-    - insulatorMaterial
-    - internalIdentifier
-    - intrinsicResistance
-    - name
-    - numberOfElectrodes
-    - serialNumber
-    - type
-    slot_usage:
-      conductorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-      contribution:
-        required: true
-        range: Organization
-      electrodeIdentifier:
-        required: true
-      insulatorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-      name:
-        required: true
-      numberOfElectrodes:
-        required: true
-      type:
-        required: true
-        any_of:
-        - range: DeviceType
-        - range: HardwareProduct
-- ElectrodeUsage:
-    class_uri: https://openminds.om-i.org/types/ElectrodeUsage
+- RecordingActivity:
+    class_uri: https://openminds.om-i.org/types/RecordingActivity
     description: null
-    title: Electrode usage
+    title: Recording activity
     slots:
     - id
-    - anatomicalLocation
-    - contactResistance
+    - customPropertySet
+    - description
     - device
+    - endTime
+    - input
+    - internalIdentifier
+    - isPartOf
     - lookupLabel
-    - metadataLocation
-    - spatialLocation
-    - usedSpecimen
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
     slot_usage:
-      anatomicalLocation:
+      device:
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
         any_of:
-        - range: AnatomicalCavity
-        - range: CellType
-        - range: ExternalBodyRegion
-        - range: MuscularStructure
-        - range: NervousSystemStructure
-        - range: Organ
-        - range: OrganSystemStructure
-        - range: OrganismSubstance
-        - range: OrganismSystem
-        - range: SkeletalStructure
-        - range: SubcellularEntity
-        - range: TissueStructure
-        - range: VascularStructure
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
+        - range: time
+      input:
+        required: true
+        range: SubjectGroupState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: File
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AnatomicalCavity
+- CellPatching:
+    class_uri: https://openminds.om-i.org/types/CellPatching
+    description: null
+    title: Cell patching
+    slots:
+    - id
+    - bathTemperature
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - targetPosition
+    - tissueBathSolution
+    - variation
+    slot_usage:
+      bathTemperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       device:
         required: true
-        range: Electrode
-      metadataLocation:
-        range: File
-      usedSpecimen:
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
         any_of:
-        - range: SubjectState
-        - range: TissueSampleState
-- ElectrodeArrayUsage:
-    class_uri: https://openminds.om-i.org/types/ElectrodeArrayUsage
+        - range: time
+      input:
+        required: true
+        range: TissueSampleState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AnatomicalCavity
+- ElectrodePlacement:
+    class_uri: https://openminds.om-i.org/types/ElectrodePlacement
     description: null
-    title: Electrode array usage
+    title: Electrode placement
     slots:
     - id
-    - anatomicalLocationOfArray
-    - anatomicalLocationOfElectrodes
-    - contactResistances
+    - customPropertySet
+    - description
     - device
+    - endTime
+    - input
+    - isPartOf
     - lookupLabel
-    - metadataLocation
-    - spatialLocationOfElectrodes
-    - usedElectrode
-    - usedSpecimen
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - targetPosition
     slot_usage:
-      anatomicalLocationOfArray:
-        range: AnatomicalCavity
-      anatomicalLocationOfElectrodes:
-        range: AnatomicalCavity
-      contactResistances:
-        range: QuantitativeValue
       device:
         required: true
-        range: ElectrodeArray
-      metadataLocation:
-        range: File
-      usedSpecimen:
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
         any_of:
-        - range: SubjectState
-        - range: TissueSampleState
-- Electrode:
-    class_uri: https://openminds.om-i.org/types/Electrode
-    description: Structured information on an electrode.
-    title: Electrode
-    slots:
-    - id
-    - conductorMaterial
-    - contribution
-    - description
-    - insulatorMaterial
-    - internalIdentifier
-    - intrinsicResistance
-    - name
-    - serialNumber
-    - type
-    slot_usage:
-      conductorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-      contribution:
+        - range: time
+      input:
         required: true
-        range: Organization
-      insulatorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-      name:
+        range: TissueSampleState
+      isPartOf:
         required: true
-      type:
+        range: DatasetVersion
+      output:
         required: true
+        range: TissueSampleState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      startTime:
+        range: string
         any_of:
-        - range: DeviceType
-        - range: HardwareProduct
+        - range: time
+      studyTarget:
+        range: AnatomicalCavity
 - Pipette:
     class_uri: https://openminds.om-i.org/types/Pipette
     description: null
@@ -248,155 +248,175 @@ classes:
         - range: MolecularEntity
       metadataLocation:
         range: File
+      pipetteResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pipetteSolution:
         required: true
       usedSpecimen:
         any_of:
         - range: SubjectState
         - range: TissueSampleState
-- ElectrodePlacement:
-    class_uri: https://openminds.om-i.org/types/ElectrodePlacement
-    description: null
-    title: Electrode placement
+- Electrode:
+    class_uri: https://openminds.om-i.org/types/Electrode
+    description: Structured information on an electrode.
+    title: Electrode
     slots:
     - id
-    - customPropertySet
+    - conductorMaterial
+    - contribution
     - description
-    - device
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - targetPosition
-    slot_usage:
-      device:
-        required: true
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: TissueSampleState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-        range: Protocol
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
-- CellPatching:
-    class_uri: https://openminds.om-i.org/types/CellPatching
-    description: null
-    title: Cell patching
-    slots:
-    - id
-    - bathTemperature
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - targetPosition
-    - tissueBathSolution
-    - variation
-    slot_usage:
-      device:
-        required: true
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: TissueSampleState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-        range: Protocol
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
-- RecordingActivity:
-    class_uri: https://openminds.om-i.org/types/RecordingActivity
-    description: null
-    title: Recording activity
-    slots:
-    - id
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
+    - insulatorMaterial
     - internalIdentifier
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
+    - intrinsicResistance
+    - name
+    - serialNumber
+    - type
     slot_usage:
+      conductorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      contribution:
+        required: true
+        range: Organization
+      insulatorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      intrinsicResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      name:
+        required: true
+      type:
+        required: true
+        any_of:
+        - range: DeviceType
+        - range: HardwareProduct
+- ElectrodeArray:
+    class_uri: https://openminds.om-i.org/types/ElectrodeArray
+    description: Structured information on an electrode array.
+    title: Electrode array
+    slots:
+    - id
+    - conductorMaterial
+    - contribution
+    - description
+    - electrodeIdentifier
+    - insulatorMaterial
+    - internalIdentifier
+    - intrinsicResistance
+    - name
+    - numberOfElectrodes
+    - serialNumber
+    - type
+    slot_usage:
+      conductorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      contribution:
+        required: true
+        range: Organization
+      electrodeIdentifier:
+        required: true
+      insulatorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      intrinsicResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      name:
+        required: true
+      numberOfElectrodes:
+        required: true
+      type:
+        required: true
+        any_of:
+        - range: DeviceType
+        - range: HardwareProduct
+- ElectrodeUsage:
+    class_uri: https://openminds.om-i.org/types/ElectrodeUsage
+    description: null
+    title: Electrode usage
+    slots:
+    - id
+    - anatomicalLocation
+    - contactResistance
+    - device
+    - lookupLabel
+    - metadataLocation
+    - spatialLocation
+    - usedSpecimen
+    slot_usage:
+      anatomicalLocation:
+        any_of:
+        - range: AnatomicalCavity
+        - range: CellType
+        - range: ExternalBodyRegion
+        - range: MuscularStructure
+        - range: NervousSystemStructure
+        - range: Organ
+        - range: OrganSystemStructure
+        - range: OrganismSubstance
+        - range: OrganismSystem
+        - range: SkeletalStructure
+        - range: SubcellularEntity
+        - range: TissueStructure
+        - range: VascularStructure
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
+      contactResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       device:
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
         required: true
-        range: SubjectGroupState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
+        range: Electrode
+      metadataLocation:
         range: File
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-        range: Protocol
-      startTime:
-        range: string
+      usedSpecimen:
         any_of:
-        - range: time
-      studyTarget:
+        - range: SubjectState
+        - range: TissueSampleState
+- ElectrodeArrayUsage:
+    class_uri: https://openminds.om-i.org/types/ElectrodeArrayUsage
+    description: null
+    title: Electrode array usage
+    slots:
+    - id
+    - anatomicalLocationOfArray
+    - anatomicalLocationOfElectrodes
+    - contactResistances
+    - device
+    - lookupLabel
+    - metadataLocation
+    - spatialLocationOfElectrodes
+    - usedElectrode
+    - usedSpecimen
+    slot_usage:
+      anatomicalLocationOfArray:
         range: AnatomicalCavity
+      anatomicalLocationOfElectrodes:
+        range: AnatomicalCavity
+      contactResistances:
+        range: QuantitativeValue
+      device:
+        required: true
+        range: ElectrodeArray
+      metadataLocation:
+        range: File
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState

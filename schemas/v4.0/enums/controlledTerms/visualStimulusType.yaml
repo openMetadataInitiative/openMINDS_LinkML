@@ -13,19 +13,19 @@ enums:
     enum_uri: https://openminds.om-i.org/types/VisualStimulusType
     title: Visual stimulus type
     permissible_values:
-      natural movie:
-        description: null
       moving grating:
-        description: null
-      static grating:
-        description: null
-      moving checkerboard:
-        description: null
-      static symbol:
         description: null
       moving symbol:
         description: null
-      natural scene:
+      moving checkerboard:
         description: null
       static checkerboard:
+        description: null
+      static symbol:
+        description: null
+      natural scene:
+        description: null
+      static grating:
+        description: null
+      natural movie:
         description: null
