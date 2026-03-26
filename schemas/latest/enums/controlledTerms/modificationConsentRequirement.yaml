@@ -16,15 +16,15 @@ enums:
       advance consent:
         description: Modification is permitted based on prior standing consent given
           in the original agreement.
+      mutual consent:
+        description: Modification requires contemporaneous agreement of all primary
+          parties.
+      single party consent:
+        description: Modification may be made by one designated party only.
       regulatory consent:
         description: Modification requires approval by an external regulatory authority.
       unanimous consent:
         description: Modification requires agreement of all signatories in a multi-party
           agreement.
-      single party consent:
-        description: Modification may be made by one designated party only.
       delegated consent:
         description: Modification may be made by one designated party only.
-      mutual consent:
-        description: Modification requires contemporaneous agreement of all primary
-          parties.

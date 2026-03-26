@@ -13,17 +13,10 @@ enums:
     enum_uri: https://openminds.om-i.org/types/OrganismSystem
     title: Organism system
     permissible_values:
-      gabaergic system:
-        description: The gabaergic system is composed of any molecule, protein, cell,
-          tissue or organ that is related to GABA.
-      cardiovascular system:
-        description: '''The ''cardiovascular system'' is an anatomical organ system
-          where the heart pumps blood through blood vessels to and from all parts
-          of the body.'
-      vascular system:
-        description: The 'vascular system' is an anatomical system that consists of
-          all vessels in the body, and carries blood and lymph through all parts of
-          the body.
+      digestive system:
+        description: The 'digestive system' is an anatomical organ system composed
+          of organs devoted to the ingestion, digestion, the assimilation of food
+          and the discharge of residual wastes.
       glutamatergic system:
         description: The glutamatergic system is composed of any molecule, protein,
           cell, tissue or organ that is related to glutamate (when in the role of
@@ -31,19 +24,26 @@ enums:
       cholinergic system:
         description: The cholinergic system is composed of any molecule, protein,
           cell, tissue or organ that is related to acetylcholine.
+      cardiovascular system:
+        description: '''The ''cardiovascular system'' is an anatomical organ system
+          where the heart pumps blood through blood vessels to and from all parts
+          of the body.'
+      noradrenergic system:
+        description: The noradrenergic system is composed of any molecule, protein,
+          cell, tissue or organ that is related to norepinephrine (also known as noradrenaline).
+      gabaergic system:
+        description: The gabaergic system is composed of any molecule, protein, cell,
+          tissue or organ that is related to GABA.
+      serotonergic system:
+        description: The serotonergic system is composed of any molecule, protein,
+          cell, tissue or organ that is related to serotonin.
       central nervous system:
         description: Is part of the nervous system. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001017)]
       musculoskeletal system:
         description: The 'musculoskeletal system' is an anatomical organ system composed
           of organs providing the body with movement, stability, shape and support.
-      noradrenergic system:
-        description: The noradrenergic system is composed of any molecule, protein,
-          cell, tissue or organ that is related to norepinephrine (also known as noradrenaline).
-      serotonergic system:
-        description: The serotonergic system is composed of any molecule, protein,
-          cell, tissue or organ that is related to serotonin.
-      digestive system:
-        description: The 'digestive system' is an anatomical organ system composed
-          of organs devoted to the ingestion, digestion, the assimilation of food
-          and the discharge of residual wastes.
+      vascular system:
+        description: The 'vascular system' is an anatomical system that consists of
+          all vessels in the body, and carries blood and lymph through all parts of
+          the body.

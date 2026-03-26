@@ -26,26 +26,26 @@ slots:
     slot_uri: about
     description: null
     any_of:
-    - range: WebServiceVersion
-    - range: Model
-    - range: MetaDataModel
-    - range: WebService
-    - range: MetaDataModelVersion
-    - range: ModelVersion
-    - range: ValidationTestVersion
-    - range: CommonCoordinateSpaceVersion
-    - range: LivePaper
-    - range: ValidationTest
-    - range: WorkflowRecipeVersion
-    - range: SoftwareVersion
-    - range: LivePaperVersion
-    - range: Dataset
     - range: DatasetVersion
+    - range: MetaDataModelVersion
+    - range: SoftwareVersion
+    - range: WorkflowRecipeVersion
+    - range: LivePaperVersion
+    - range: Model
+    - range: WebService
+    - range: WebServiceVersion
     - range: CommonCoordinateSpace
-    - range: BrainAtlasVersion
-    - range: BrainAtlas
-    - range: Software
+    - range: CommonCoordinateSpaceVersion
+    - range: ValidationTest
     - range: WorkflowRecipe
+    - range: BrainAtlas
+    - range: Dataset
+    - range: LivePaper
+    - range: BrainAtlasVersion
+    - range: Software
+    - range: ModelVersion
+    - range: MetaDataModel
+    - range: ValidationTestVersion
     multivalued: true
     list_elements_unique: true
   abstract:
@@ -86,8 +86,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   ageCategory:
     slot_uri: ageCategory
@@ -126,14 +126,14 @@ slots:
     slot_uri: anatomicalLocation
     description: null
     any_of:
-    - range: ParcellationEntity
-    - range: CellType
-    - range: SubcellularEntity
-    - range: Organ
-    - range: CustomAnatomicalEntity
     - range: OrganismSubstance
-    - range: ParcellationEntityVersion
+    - range: CellType
+    - range: Organ
+    - range: ParcellationEntity
+    - range: SubcellularEntity
+    - range: CustomAnatomicalEntity
     - range: UBERONParcellation
+    - range: ParcellationEntityVersion
     multivalued: true
     list_elements_unique: true
   anatomicalLocationOfArray:
@@ -247,8 +247,8 @@ slots:
     slot_uri: bathTemperature
     description: null
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   behavioralProtocol:
     slot_uri: behavioralProtocol
@@ -283,8 +283,8 @@ slots:
     slot_uri: chemicalProduct
     description: null
     any_of:
-    - range: MolecularEntity
     - range: ChemicalMixture
+    - range: MolecularEntity
     - range: ChemicalSubstance
   chlorideReversalPotential:
     slot_uri: chlorideReversalPotential
@@ -317,17 +317,17 @@ slots:
     slot_uri: conductorMaterial
     description: null
     any_of:
-    - range: MolecularEntity
     - range: ChemicalMixture
+    - range: MolecularEntity
     - range: ChemicalSubstance
   configuration:
     slot_uri: configuration
     description: null
     any_of:
-    - range: WebResource
     - range: Configuration
-    - range: PropertyValueList
     - range: File
+    - range: PropertyValueList
+    - range: WebResource
     - range: string
   constructionType:
     slot_uri: constructionType
@@ -342,8 +342,8 @@ slots:
     slot_uri: contactResistance
     description: null
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   contactResistances:
     slot_uri: contactResistances
@@ -377,14 +377,14 @@ slots:
     description: Legal person that gave or supplied something as a part or share.
     any_of:
     - range: Organization
-    - range: Person
     - range: Consortium
+    - range: Person
   coordinateSpace:
     slot_uri: coordinateSpace
     description: Two or three dimensional geometric setting.
     any_of:
-    - range: CustomCoordinateSpace
     - range: CommonCoordinateSpaceVersion
+    - range: CustomCoordinateSpace
   coordinates:
     slot_uri: coordinates
     description: Pair or triplet of numbers defining a location in a given coordinate
@@ -464,12 +464,12 @@ slots:
     any_of:
     - range: Configuration
     - range: File
-    - range: FileBundle
-    - range: ModelVersion
     - range: PropertyValueList
-    - range: FileArchive
-    - range: ParcellationEntityVersion
     - range: LivePaperResourceItem
+    - range: ModelVersion
+    - range: FileArchive
+    - range: FileBundle
+    - range: ParcellationEntityVersion
     multivalued: true
     list_elements_unique: true
   dataType:
@@ -496,10 +496,10 @@ slots:
     slot_uri: deliveredBy
     description: null
     any_of:
-    - range: SlicingDeviceUsage
-    - range: ElectrodeArrayUsage
     - range: ElectrodeUsage
     - range: PipetteUsage
+    - range: SlicingDeviceUsage
+    - range: ElectrodeArrayUsage
   descendedFrom:
     slot_uri: descendedFrom
     description: null
@@ -515,8 +515,8 @@ slots:
     description: null
     any_of:
     - range: DOI
-    - range: WebResource
     - range: File
+    - range: WebResource
     multivalued: true
     list_elements_unique: true
   description:
@@ -562,24 +562,24 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: IdentifiersDotOrgID
+    - range: RRID
+    - range: ORCID
+    - range: ISBN
+    - range: GRIDID
     - range: ISSN
     - range: RORID
-    - range: DOI
-    - range: GRIDID
-    - range: ISBN
-    - range: RRID
     - range: SWHID
-    - range: ORCID
+    - range: DOI
+    - range: IdentifiersDotOrgID
     multivalued: true
     list_elements_unique: true
   dimension:
     slot_uri: dimension
     description: null
     any_of:
+    - range: Ellipse
     - range: Circle
     - range: Rectangle
-    - range: Ellipse
     inlined: true
   diseaseModel:
     slot_uri: diseaseModel
@@ -707,9 +707,9 @@ slots:
       particular product.
     any_of:
     - range: DOI
+    - range: File
     - range: ISBN
     - range: WebResource
-    - range: File
   fullName:
     slot_uri: fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -719,8 +719,8 @@ slots:
     description: Legal person that provides money for a particular purpose.
     any_of:
     - range: Organization
-    - range: Person
     - range: Consortium
+    - range: Person
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -731,10 +731,10 @@ slots:
     slot_uri: generatedBy
     description: null
     any_of:
-    - range: SlicingDeviceUsage
-    - range: ElectrodeArrayUsage
     - range: ElectrodeUsage
     - range: PipetteUsage
+    - range: SlicingDeviceUsage
+    - range: ElectrodeArrayUsage
   geneticStrainType:
     slot_uri: geneticStrainType
     description: null
@@ -942,24 +942,24 @@ slots:
     range: string
     pattern:
       ALTERNATES:
-      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
-      - ^http://hdl.handle.net/[.0-9A-Za-z]+/[.0-9A-Za-z]+
-      - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
+      - https://scicrunch.org/resolver/RRID:([A-Za-z]+)[_:]([A-Za-z0-9_:-]+)
+      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
       - ^[0-9]{4}-[0-9]{3}[0-9X]$
-      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
-      - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
+      - ^http://hdl.handle.net/[.0-9A-Za-z]+/[.0-9A-Za-z]+
+      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
+      - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
+      - ^https://identifiers.org/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)|^https://identifiers.org/([a-zA-Z0-9-_.]+)/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)
       - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
         \ \t\r\n\f]+)*$"
-      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
-      - ^https://identifiers.org/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)|^https://identifiers.org/([a-zA-Z0-9-_.]+)/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)
-      - https://scicrunch.org/resolver/RRID:([A-Za-z]+)[_:]([A-Za-z0-9_:-]+)
+      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
+      - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
   inRelationTo:
     slot_uri: inRelationTo
     description: Reference to a related element.
     any_of:
-    - range: ParcellationEntity
-    - range: ParcellationEntityVersion
     - range: CustomAnatomicalEntity
+    - range: ParcellationEntityVersion
+    - range: ParcellationEntity
   input:
     slot_uri: input
     description: Something or someone that is put into or participates in a process
@@ -1015,8 +1015,8 @@ slots:
     slot_uri: insulatorMaterial
     description: null
     any_of:
-    - range: MolecularEntity
     - range: ChemicalMixture
+    - range: MolecularEntity
     - range: ChemicalSubstance
   interlexIdentifier:
     slot_uri: interlexIdentifier
@@ -1036,8 +1036,8 @@ slots:
     slot_uri: intrinsicResistance
     description: null
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   isAlternativeVersionOf:
     slot_uri: isAlternativeVersionOf
@@ -1075,17 +1075,17 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: SubjectGroup
-    - range: FileBundle
-    - range: Periodical
-    - range: PublicationVolume
     - range: FileRepository
-    - range: DatasetVersion
     - range: LivePaperSection
-    - range: TissueSampleCollection
-    - range: Book
+    - range: SubjectGroup
+    - range: DatasetVersion
     - range: PublicationIssue
+    - range: Book
     - range: LivePaperVersion
+    - range: Periodical
+    - range: FileBundle
+    - range: TissueSampleCollection
+    - range: PublicationVolume
     multivalued: true
     list_elements_unique: true
   issueNumber:
@@ -1187,8 +1187,8 @@ slots:
     slot_uri: labelingCompound
     description: null
     any_of:
-    - range: MolecularEntity
     - range: ChemicalMixture
+    - range: MolecularEntity
     - range: ChemicalSubstance
   laboratoryCode:
     slot_uri: laboratoryCode
@@ -1232,8 +1232,8 @@ slots:
     description: Grant by a party to another party as an element of an agreement between
       those parties that permits to do, use, or own something.
     any_of:
-    - range: WebResource
     - range: License
+    - range: WebResource
     multivalued: true
     list_elements_unique: true
   liquidJunctionPotential:
@@ -1266,8 +1266,8 @@ slots:
     slot_uri: material
     description: null
     any_of:
-    - range: MolecularEntity
     - range: ChemicalMixture
+    - range: MolecularEntity
     - range: ChemicalSubstance
   maxValue:
     slot_uri: maxValue
@@ -1287,10 +1287,10 @@ slots:
     slot_uri: measuredWith
     description: null
     any_of:
-    - range: SlicingDeviceUsage
-    - range: ElectrodeArrayUsage
     - range: ElectrodeUsage
     - range: PipetteUsage
+    - range: SlicingDeviceUsage
+    - range: ElectrodeArrayUsage
   memberOf:
     slot_uri: memberOf
     description: null
@@ -1383,9 +1383,9 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: Organ
-    - range: CellType
     - range: OrganismSubstance
+    - range: CellType
+    - range: Organ
     multivalued: true
     list_elements_unique: true
   oscillationAmplitude:
@@ -1477,8 +1477,8 @@ slots:
     slot_uri: pipetteResistance
     description: null
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   pipetteSolution:
     slot_uri: pipetteSolution
@@ -1495,8 +1495,8 @@ slots:
     slot_uri: preferredDisplayColor
     description: null
     any_of:
-    - range: Colormap
     - range: SingleColor
+    - range: Colormap
   preferredOntologyIdentifier:
     slot_uri: preferredOntologyIdentifier
     description: Persistent identifier of a preferred ontological term.
@@ -1560,8 +1560,8 @@ slots:
     description: null
     any_of:
     - range: Organization
-    - range: Person
     - range: Consortium
+    - range: Person
   publicationDate:
     slot_uri: publicationDate
     description: null
@@ -1571,14 +1571,14 @@ slots:
     description: null
     any_of:
     - range: Organization
-    - range: Person
     - range: Consortium
+    - range: Person
   purity:
     slot_uri: purity
     description: null
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   qualitativeOverlap:
     slot_uri: qualitativeOverlap
@@ -1590,8 +1590,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   radius:
     slot_uri: radius
@@ -1606,10 +1606,10 @@ slots:
     slot_uri: recordedWith
     description: null
     any_of:
-    - range: SlicingDeviceUsage
-    - range: ElectrodeArrayUsage
     - range: ElectrodeUsage
     - range: PipetteUsage
+    - range: SlicingDeviceUsage
+    - range: ElectrodeArrayUsage
   referenceData:
     slot_uri: referenceData
     description: null
@@ -1657,8 +1657,8 @@ slots:
     slot_uri: relatedUBERONTerm
     description: null
     any_of:
-    - range: Organ
     - range: UBERONParcellation
+    - range: Organ
   relationAssessment:
     slot_uri: relationAssessment
     description: null
@@ -1672,8 +1672,8 @@ slots:
     slot_uri: relativeTimeIndication
     description: null
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   releaseDate:
     slot_uri: releaseDate
@@ -1684,12 +1684,12 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: MRIWeighting
-    - range: AnalysisTechnique
-    - range: MRIPulseSequence
-    - range: StimulationApproach
     - range: Technique
     - range: StimulationTechnique
+    - range: StimulationApproach
+    - range: AnalysisTechnique
+    - range: MRIWeighting
+    - range: MRIPulseSequence
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -1698,8 +1698,8 @@ slots:
     slot_uri: requiredTime
     description: null
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   requirement:
     slot_uri: requirement
@@ -1785,8 +1785,8 @@ slots:
     slot_uri: sliceThickness
     description: null
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   slicingAngle:
     slot_uri: slicingAngle
@@ -1850,9 +1850,9 @@ slots:
     slot_uri: specification
     description: Detailed and precise presentation of, or proposal for something.
     any_of:
+    - range: FileBundle
     - range: Configuration
     - range: File
-    - range: FileBundle
     - range: PropertyValueList
     - range: uri
     multivalued: true
@@ -2008,8 +2008,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: string
     - range: uri
+    - range: string
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -2049,8 +2049,8 @@ slots:
     slot_uri: temperature
     description: null
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   timestamp:
     slot_uri: timestamp
@@ -2111,11 +2111,11 @@ slots:
     slot_uri: usedSpecimen
     description: null
     any_of:
-    - range: TissueSampleState
     - range: SubjectGroup
+    - range: TissueSampleState
+    - range: TissueSample
     - range: Subject
     - range: TissueSampleCollection
-    - range: TissueSample
     - range: SubjectState
     multivalued: true
     list_elements_unique: true
@@ -2127,15 +2127,15 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
-    - range: string
+    - range: QuantitativeValueRange
     - range: integer
     - range: float
+    - range: string
+    pattern: ^#[0-9A-Fa-f]{6}$
     multivalued: true
     inlined: true
     list_elements_unique: true
-    pattern: ^#[0-9A-Fa-f]{6}$
   values:
     slot_uri: values
     description: null
@@ -2173,13 +2173,13 @@ slots:
     slot_uri: wasInformedBy
     description: null
     any_of:
-    - range: Visualization
-    - range: Simulation
     - range: DataCopy
     - range: Optimization
-    - range: ModelValidation
-    - range: GenericComputation
+    - range: Simulation
     - range: DataAnalysis
+    - range: GenericComputation
+    - range: ModelValidation
+    - range: Visualization
   webpage:
     slot_uri: webpage
     description: Hypertext document (block of information) found on the World Wide
@@ -2191,8 +2191,8 @@ slots:
     slot_uri: weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   width:
     slot_uri: width

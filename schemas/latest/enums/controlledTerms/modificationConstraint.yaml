@@ -13,21 +13,21 @@ enums:
     enum_uri: https://openminds.om-i.org/types/ModificationConstraint
     title: Modification constraint
     permissible_values:
-      cooling-off period required:
-        description: A mandatory delay applies before a modification becomes effective.
-      no implied modification:
-        description: Modifications arising from conduct or practice are excluded.
       notice required:
         description: Advance notice must be given before a modification takes effect.
-      record retention required:
-        description: Formal documentation and retention of modification records is
-          required.
-      no oral modification:
-        description: Verbal modifications are invalid and unenforceable.
-      regulatory clearance required:
-        description: External regulatory approval is required before effectiveness.
       ratification required:
         description: Modifications require later formal confirmation to remain valid.
       no modification by waiver:
         description: A waiver or temporary non-enforcement does not constitute or
           effect a modification.
+      cooling-off period required:
+        description: A mandatory delay applies before a modification becomes effective.
+      regulatory clearance required:
+        description: External regulatory approval is required before effectiveness.
+      no oral modification:
+        description: Verbal modifications are invalid and unenforceable.
+      no implied modification:
+        description: Modifications arising from conduct or practice are excluded.
+      record retention required:
+        description: Formal documentation and retention of modification records is
+          required.

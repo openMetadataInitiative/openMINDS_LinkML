@@ -13,34 +13,34 @@ enums:
     enum_uri: https://openminds.om-i.org/types/SupranationalBody
     title: Supranational body
     permissible_values:
-      COVAX:
-        description: Global vaccine alliance regarding the COVID-19 pandemic. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q99360983)]
-      Arab Maghreb Union:
-        description: Trade agreement among Arab countries. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q370862)]
-      Provisional World Government:
-        description: World Government in Provisional stage. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q119439372)]
-      Union State:
-        description: Supranational entity consisting of the Russian Federation and
-          the Republic of Belarus. [auto-generated from 'schema:description' property
-          of the [Wikidata entity](http://www.wikidata.org/entity/Q166110)]
-      The Mahdi Servants Union:
-        description: International non-governmental organization. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q96979217)]
-      West African Examinations Council:
-        description: Is an examination board established in the public interest to
-          conduct exams and award certificates in English-speaking West African countries.
-          [adapted from [Wikipedia](https://en.wikipedia.org/wiki/West_African_Examinations_Council)]
-      European Economic Area:
-        description: Area of the European Union's internal market and some of EFTA
-          states established in 1994. [auto-generated from 'schema:description' property
-          of the [Wikidata entity](http://www.wikidata.org/entity/Q8932)]
-      European Union:
-        description: Political and economic union of 27 European states. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q458)]
       Nordic Council:
         description: Geo-political inter-parliamentary forum for co-operation between
           the Nordic countries. [auto-generated from 'schema:description' property
           of the [Wikidata entity](http://www.wikidata.org/entity/Q146165)]
+      Union State:
+        description: Supranational entity consisting of the Russian Federation and
+          the Republic of Belarus. [auto-generated from 'schema:description' property
+          of the [Wikidata entity](http://www.wikidata.org/entity/Q166110)]
+      West African Examinations Council:
+        description: Is an examination board established in the public interest to
+          conduct exams and award certificates in English-speaking West African countries.
+          [adapted from [Wikipedia](https://en.wikipedia.org/wiki/West_African_Examinations_Council)]
+      The Mahdi Servants Union:
+        description: International non-governmental organization. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q96979217)]
+      European Union:
+        description: Political and economic union of 27 European states. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q458)]
+      European Economic Area:
+        description: Area of the European Union's internal market and some of EFTA
+          states established in 1994. [auto-generated from 'schema:description' property
+          of the [Wikidata entity](http://www.wikidata.org/entity/Q8932)]
+      Provisional World Government:
+        description: World Government in Provisional stage. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q119439372)]
+      Arab Maghreb Union:
+        description: Trade agreement among Arab countries. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q370862)]
+      COVAX:
+        description: Global vaccine alliance regarding the COVID-19 pandemic. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q99360983)]
