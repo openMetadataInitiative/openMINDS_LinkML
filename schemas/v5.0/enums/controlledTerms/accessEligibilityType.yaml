@@ -13,11 +13,11 @@ enums:
     enum_uri: https://openminds.om-i.org/types/AccessEligibilityType
     title: Access eligibility type
     permissible_values:
-      controlled access:
-        description: Access limited to registered and/or authenticated users meeting
-          defined eligibility criteria.
       restricted access:
         description: Access limited to authenticated and specifically authorised users
           meeting enhanced legal, ethical, contractual, or governance requirements.
       open access:
         description: Access without prior registration, authentication, or authorisation.
+      controlled access:
+        description: Access limited to registered and/or authenticated users meeting
+          defined eligibility criteria.

@@ -13,23 +13,23 @@ enums:
     enum_uri: https://openminds.om-i.org/types/MRIWeighting
     title: Mriweighting
     permissible_values:
-      R2-star weighting:
-        description: Image processing technique that creates the image contrast from
-          the reciprocal of the T2-star relaxation time.
-      T1 weighting:
-        description: Image processing technique that specifically enhances the signal-to-noise
-          ratio of the spin-lattice relaxation (T1 relaxation time).
       PD weighting:
         description: Image processing technique that specifically enhances the signal-to-noise
           ratio of density of protons (hydrogen atoms).
-      T2 weighting:
-        description: Image processing technique that specifically enhances the signal-to-noise
-          ratio of the true spin-spin relaxation (T2 relaxation time) excluding field
-          inhomogeneities.
       T2-star weighting:
         description: Image processing technique that specifically enhances the signal-to-noise
           ratio of the observed spin-spin relaxation (T2-star relaxation time) which
           includes field inhomogeneities.
+      T1 weighting:
+        description: Image processing technique that specifically enhances the signal-to-noise
+          ratio of the spin-lattice relaxation (T1 relaxation time).
+      T2 weighting:
+        description: Image processing technique that specifically enhances the signal-to-noise
+          ratio of the true spin-spin relaxation (T2 relaxation time) excluding field
+          inhomogeneities.
+      R2-star weighting:
+        description: Image processing technique that creates the image contrast from
+          the reciprocal of the T2-star relaxation time.
       R2 weighting:
         description: Image processing technique that creates the image contrast from
           the reciprocal of the T2 relaxation time.

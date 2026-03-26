@@ -56,8 +56,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   ageCategory:
     slot_uri: ageCategory
@@ -252,10 +252,10 @@ slots:
     description: Digital handle to identify objects or legal persons.
     any_of:
     - range: ORCID
-    - range: SWHID
+    - range: GRIDID
     - range: RORID
     - range: DOI
-    - range: GRIDID
+    - range: SWHID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -443,13 +443,13 @@ slots:
     list_elements_unique: true
     pattern:
       ALTERNATES:
+      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
       - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
       - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
-      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
-      - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
       - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
         \ \t\r\n\f]+)*$"
-      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
+      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
+      - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
   inRelationTo:
     slot_uri: inRelationTo
     description: Reference to a related element.
@@ -519,11 +519,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileRepository
-    - range: FileBundle
-    - range: SubjectGroup
-    - range: TissueSampleCollection
     - range: ParcellationTerminology
+    - range: SubjectGroup
+    - range: FileBundle
+    - range: FileRepository
+    - range: TissueSampleCollection
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -605,8 +605,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: CellType
     - range: Organ
+    - range: CellType
     multivalued: true
     list_elements_unique: true
   otherContribution:
@@ -714,8 +714,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   quantity:
     slot_uri: quantity
@@ -920,8 +920,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: uri
     - range: string
+    - range: uri
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -965,11 +965,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: string
     - range: integer
+    - range: string
     - range: float
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     multivalued: true
     inlined: true
   versionIdentifier:
@@ -998,8 +998,8 @@ slots:
     slot_uri: weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   year:
     slot_uri: year

@@ -13,11 +13,11 @@ enums:
     enum_uri: https://openminds.om-i.org/types/MRIParallelAcquisitionTechnique
     title: Mriparallel acquisition technique
     permissible_values:
-      generalized autocalibrating partially parallel acquisition:
-        description: A parallel MRI reconstruction technique that accelerates imaging
-          by undersampling k-space and reconstructing missing data using calibration-derived
-          interpolation kernels in k-space.
       sensitivity encoding:
         description: A parallel MRI reconstruction technique that accelerates imaging
           by undersampling k-space and using coil sensitivity profiles to reconstruct
           full-resolution images in the image domain.
+      generalized autocalibrating partially parallel acquisition:
+        description: A parallel MRI reconstruction technique that accelerates imaging
+          by undersampling k-space and reconstructing missing data using calibration-derived
+          interpolation kernels in k-space.

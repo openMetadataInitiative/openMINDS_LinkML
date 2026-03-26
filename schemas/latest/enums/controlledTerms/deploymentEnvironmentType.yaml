@@ -24,9 +24,9 @@ enums:
         description: A working environment for developers to build, test, and debug
           new features or changes; usually more flexible and less restricted than
           other environments.
-      staging:
-        description: An isolated environment that replicates the production environment
-          for final integration and validation; often used for release candidate testing.
       integration:
         description: An environment in which multiple components or services are integrated
           and tested together to ensure interoperability and to detect issues early.
+      staging:
+        description: An isolated environment that replicates the production environment
+          for final integration and validation; often used for release candidate testing.

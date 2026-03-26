@@ -13,45 +13,45 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/Service
     title: Service
     permissible_values:
-      EBRAINS Collaboratory Lab:
-        description: The Collaboratory Lab is a web-based JupyterLab service provided
-          by the EBRAINS research infrastructure.
-      LocaliZoom:
-        description: Web application for viewing of series of high-resolution 2D images
-          that have been anchored to reference atlases.
-      Multi-Image-OSd:
-        description: Web application for viewing of series of high-resolution 2D images.
-      EBRAINS Model Catalog:
-        description: The EBRAINS Model Catalog contains information about models developed
-          and/or used within the EBRAINS research infrastructure.
-      Allen Institute Cell Types Data Portal:
-        description: Web application for visualizing and browsing the Allen Cell Types
-          Database.
-      ModelDB:
-        description: ModelDB is a curated database of published models in the broad
-          domain of computational neuroscience.
-      Neuroglancer:
-        description: '''Neuroglancer'' is a WebGL-based viewer for volumetric data.'
-      Neurosift:
-        description: Neurosift is a browser-based tool designed for the visualization
-          of neuroscience data with a focus on NWB (Neurodata Without Borders) files.
-      MeshView:
-        description: Web application for viewing atlas surface meshes and data point
-          clouds.
       EBRAINS Knowledge Graph Search UI:
         description: The EBRAINS Knowledge Graph Search User Interface is a web application
           for searching the EBRAINS Knowledge Graph.
       NeuroMorpho.Org:
         description: A web-based inventory dedicated to densely archive and organize
           all publicly shared digital reconstructions of neuronal morphology.
+      Neurosift:
+        description: Neurosift is a browser-based tool designed for the visualization
+          of neuroscience data with a focus on NWB (Neurodata Without Borders) files.
       siibra-explorer:
         description: '''siibra-explorer'' is an interactive viewer for multilevel
           brain atlases'
+      ModelDB:
+        description: ModelDB is a curated database of published models in the broad
+          domain of computational neuroscience.
+      Neuroglancer:
+        description: '''Neuroglancer'' is a WebGL-based viewer for volumetric data.'
+      LocaliZoom:
+        description: Web application for viewing of series of high-resolution 2D images
+          that have been anchored to reference atlases.
       EBRAINS Collaboratory Wiki:
         description: The Collaboratory Wiki is the main interface to access all other
           Collaboratory service provided by the EBRAINS research infrastructure.
+      EBRAINS Collaboratory Lab:
+        description: The Collaboratory Lab is a web-based JupyterLab service provided
+          by the EBRAINS research infrastructure.
+      Allen Institute Cell Types Data Portal:
+        description: Web application for visualizing and browsing the Allen Cell Types
+          Database.
+      EBRAINS Model Catalog:
+        description: The EBRAINS Model Catalog contains information about models developed
+          and/or used within the EBRAINS research infrastructure.
       Zenodo:
         description: Zenodo is a general-purpose open repository developed under the
           European OpenAIRE program and operated by CERN.
+      MeshView:
+        description: Web application for viewing atlas surface meshes and data point
+          clouds.
+      Multi-Image-OSd:
+        description: Web application for viewing of series of high-resolution 2D images.
       SeriesZoom:
         description: Web application for viewing of series of high-resolution 2D images.

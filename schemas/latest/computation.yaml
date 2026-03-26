@@ -14,10 +14,81 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- DataCopy:
-    class_uri: https://openminds.om-i.org/types/DataCopy
-    description: null
-    title: Data copy
+- Environment:
+    class_uri: https://openminds.om-i.org/types/Environment
+    description: Structured information on the computer system or set of systems in
+      which a computation is deployed and executed.
+    title: Environment
+    slots:
+    - id
+    - configuration
+    - description
+    - hardware
+    - name
+    - software
+    slot_usage:
+      configuration:
+        range: Configuration
+      hardware:
+        required: true
+      name:
+        required: true
+- SoftwareAgent:
+    class_uri: https://openminds.om-i.org/types/SoftwareAgent
+    description: Structured information about a piece of software or web service that
+      can perform a task autonomously.
+    title: Software agent
+    slots:
+    - id
+    - environment
+    - name
+    - software
+    slot_usage:
+      environment:
+        range: Environment
+      name:
+        required: true
+      software:
+        required: true
+- WorkflowExecution:
+    class_uri: https://openminds.om-i.org/types/WorkflowExecution
+    description: Structured information about an execution of a computational workflow.
+    title: Workflow execution
+    slots:
+    - id
+    - configuration
+    - recipe
+    - stage
+    - startedBy
+    slot_usage:
+      configuration:
+        any_of:
+        - range: Configuration
+        - range: File
+      stage:
+        required: true
+        range: DataAnalysis
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
+- HardwareSystem:
+    class_uri: https://openminds.om-i.org/types/HardwareSystem
+    description: Structured information about computing hardware.
+    title: Hardware system
+    slots:
+    - id
+    - description
+    - name
+    - versionIdentifier
+    slot_usage:
+      name:
+        required: true
+- ModelValidation:
+    class_uri: https://openminds.om-i.org/types/ModelValidation
+    description: Structured information about a process of validating a computational
+      model.
+    title: Model validation
     slots:
     - id
     - customPropertySet
@@ -31,6 +102,7 @@ classes:
     - performedBy
     - recipe
     - resourceUsage
+    - score
     - startTime
     - startedBy
     - status
@@ -45,9 +117,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -63,6 +132,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -76,6 +149,73 @@ classes:
         - range: Optimization
         - range: Simulation
         - range: Visualization
+- ValidationTest:
+    class_uri: https://openminds.om-i.org/types/ValidationTest
+    description: Structured information about the definition of a process for validating
+      a computational model.
+    title: Validation test
+    slots:
+    - id
+    - contribution
+    - contributorAffiliation
+    - description
+    - digitalIdentifier
+    - documentation
+    - fullName
+    - homepage
+    - howToCite
+    - keyword
+    - referenceDataAcquisition
+    - relatedPublication
+    - scope
+    - scoreType
+    - shortName
+    - studyTarget
+    - supportChannel
+    slot_usage:
+      contribution:
+        required: true
+        range: Contribution
+      description:
+        required: true
+      digitalIdentifier:
+        range: DOI
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
+      fullName:
+        required: true
+      keyword:
+        range: AccessChannel
+      relatedPublication:
+        range: DOI
+      scope:
+        range: ModelScope
+      shortName:
+        required: true
+      studyTarget:
+        range: AnatomicalCavity
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
+- LaunchConfiguration:
+    class_uri: https://openminds.om-i.org/types/LaunchConfiguration
+    description: Structured information about the launch of a computational process.
+    title: Launch configuration
+    slots:
+    - id
+    - argument
+    - description
+    - environmentVariable
+    - executable
+    - name
+    slot_usage:
+      executable:
+        required: true
 - GenericComputation:
     class_uri: https://openminds.om-i.org/types/GenericComputation
     description: Structured information about a computation whose type is unknown
@@ -108,9 +248,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -126,6 +263,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -139,23 +280,6 @@ classes:
         - range: Optimization
         - range: Simulation
         - range: Visualization
-- SoftwareAgent:
-    class_uri: https://openminds.om-i.org/types/SoftwareAgent
-    description: Structured information about a piece of software or web service that
-      can perform a task autonomously.
-    title: Software agent
-    slots:
-    - id
-    - environment
-    - name
-    - software
-    slot_usage:
-      environment:
-        range: Environment
-      name:
-        required: true
-      software:
-        required: true
 - WorkflowRecipeVersion:
     class_uri: https://openminds.om-i.org/types/WorkflowRecipeVersion
     description: Structured information about a specific implemented version of a
@@ -237,6 +361,70 @@ classes:
         required: true
       versionSpecification:
         required: true
+- DataAnalysis:
+    class_uri: https://openminds.om-i.org/types/DataAnalysis
+    description: Structured information on inspecting, cleansing, transforming, and
+      modelling data.
+    title: Data analysis
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - environment
+    - input
+    - launchConfiguration
+    - lookupLabel
+    - output
+    - performedBy
+    - recipe
+    - resourceUsage
+    - startTime
+    - startedBy
+    - status
+    - studyTarget
+    - tag
+    - technique
+    - wasInformedBy
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      environment:
+        required: true
+      input:
+        required: true
+        range: LocalFile
+      output:
+        required: true
+        range: LocalFile
+      performedBy:
+        range: SoftwareAgent
+      resourceUsage:
+        range: QuantitativeValue
+      startTime:
+        required: true
+        range: string
+        any_of:
+        - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
+      studyTarget:
+        range: AnatomicalCavity
+      technique:
+        range: AnalysisTechnique
+      wasInformedBy:
+        any_of:
+        - range: DataAnalysis
+        - range: DataCopy
+        - range: GenericComputation
+        - range: ModelValidation
+        - range: Optimization
+        - range: Simulation
+        - range: Visualization
 - DeployedInterface:
     class_uri: https://openminds.om-i.org/types/DeployedInterface
     description: null
@@ -254,6 +442,114 @@ classes:
         range: WebResource
       interface:
         required: true
+- Optimization:
+    class_uri: https://openminds.om-i.org/types/Optimization
+    description: Structured information about a process of optimizing a model or a
+      piece of code.
+    title: Optimization
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - environment
+    - input
+    - launchConfiguration
+    - lookupLabel
+    - output
+    - performedBy
+    - recipe
+    - resourceUsage
+    - startTime
+    - startedBy
+    - status
+    - studyTarget
+    - tag
+    - technique
+    - wasInformedBy
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      environment:
+        required: true
+      input:
+        required: true
+        range: LocalFile
+      output:
+        required: true
+        range: LocalFile
+      performedBy:
+        range: SoftwareAgent
+      resourceUsage:
+        range: QuantitativeValue
+      startTime:
+        required: true
+        range: string
+        any_of:
+        - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
+      studyTarget:
+        range: AnatomicalCavity
+      technique:
+        range: AnalysisTechnique
+      wasInformedBy:
+        any_of:
+        - range: DataAnalysis
+        - range: DataCopy
+        - range: GenericComputation
+        - range: ModelValidation
+        - range: Optimization
+        - range: Simulation
+        - range: Visualization
+- WorkflowRecipe:
+    class_uri: https://openminds.om-i.org/types/WorkflowRecipe
+    description: Structured information about the description of a prospective workflow.
+    title: Workflow recipe
+    slots:
+    - id
+    - contribution
+    - contributorAffiliation
+    - description
+    - digitalIdentifier
+    - documentation
+    - fullName
+    - homepage
+    - howToCite
+    - keyword
+    - relatedPublication
+    - shortName
+    - supportChannel
+    slot_usage:
+      contribution:
+        required: true
+        range: Contribution
+      description:
+        required: true
+      digitalIdentifier:
+        range: DOI
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
+      fullName:
+        required: true
+      keyword:
+        range: AccessChannel
+      relatedPublication:
+        range: DOI
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
 - ValidationTestVersion:
     class_uri: https://openminds.om-i.org/types/ValidationTestVersion
     description: Structured information about a specific implementation of a validation
@@ -345,6 +641,69 @@ classes:
         required: true
       versionSpecification:
         required: true
+- DataCopy:
+    class_uri: https://openminds.om-i.org/types/DataCopy
+    description: null
+    title: Data copy
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - endTime
+    - environment
+    - input
+    - launchConfiguration
+    - lookupLabel
+    - output
+    - performedBy
+    - recipe
+    - resourceUsage
+    - startTime
+    - startedBy
+    - status
+    - studyTarget
+    - tag
+    - technique
+    - wasInformedBy
+    slot_usage:
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      environment:
+        required: true
+      input:
+        required: true
+        range: LocalFile
+      output:
+        required: true
+        range: LocalFile
+      performedBy:
+        range: SoftwareAgent
+      resourceUsage:
+        range: QuantitativeValue
+      startTime:
+        required: true
+        range: string
+        any_of:
+        - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
+      studyTarget:
+        range: AnatomicalCavity
+      technique:
+        range: AnalysisTechnique
+      wasInformedBy:
+        any_of:
+        - range: DataAnalysis
+        - range: DataCopy
+        - range: GenericComputation
+        - range: ModelValidation
+        - range: Optimization
+        - range: Simulation
+        - range: Visualization
 - Simulation:
     class_uri: https://openminds.om-i.org/types/Simulation
     description: Structured information about a process of running simulations of
@@ -377,9 +736,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -395,356 +751,10 @@ classes:
         range: string
         any_of:
         - range: time
-      studyTarget:
-        range: AnatomicalCavity
-      technique:
-        range: AnalysisTechnique
-      wasInformedBy:
+      startedBy:
         any_of:
-        - range: DataAnalysis
-        - range: DataCopy
-        - range: GenericComputation
-        - range: ModelValidation
-        - range: Optimization
-        - range: Simulation
-        - range: Visualization
-- Environment:
-    class_uri: https://openminds.om-i.org/types/Environment
-    description: Structured information on the computer system or set of systems in
-      which a computation is deployed and executed.
-    title: Environment
-    slots:
-    - id
-    - configuration
-    - description
-    - hardware
-    - name
-    - software
-    slot_usage:
-      configuration:
-        range: Configuration
-      hardware:
-        required: true
-      name:
-        required: true
-- ValidationTest:
-    class_uri: https://openminds.om-i.org/types/ValidationTest
-    description: Structured information about the definition of a process for validating
-      a computational model.
-    title: Validation test
-    slots:
-    - id
-    - contribution
-    - contributorAffiliation
-    - description
-    - digitalIdentifier
-    - documentation
-    - fullName
-    - homepage
-    - howToCite
-    - keyword
-    - referenceDataAcquisition
-    - relatedPublication
-    - scope
-    - scoreType
-    - shortName
-    - studyTarget
-    - supportChannel
-    slot_usage:
-      contribution:
-        required: true
-        range: Contribution
-      description:
-        required: true
-      digitalIdentifier:
-        range: DOI
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
-      fullName:
-        required: true
-      keyword:
-        range: AccessChannel
-      relatedPublication:
-        range: DOI
-      scope:
-        range: ModelScope
-      shortName:
-        required: true
-      studyTarget:
-        range: AnatomicalCavity
-      supportChannel:
-        range: string
-        any_of:
-        - range: uri
-- WorkflowExecution:
-    class_uri: https://openminds.om-i.org/types/WorkflowExecution
-    description: Structured information about an execution of a computational workflow.
-    title: Workflow execution
-    slots:
-    - id
-    - configuration
-    - recipe
-    - stage
-    - startedBy
-    slot_usage:
-      configuration:
-        any_of:
-        - range: Configuration
-        - range: File
-      stage:
-        required: true
-        range: DataAnalysis
-- ModelValidation:
-    class_uri: https://openminds.om-i.org/types/ModelValidation
-    description: Structured information about a process of validating a computational
-      model.
-    title: Model validation
-    slots:
-    - id
-    - customPropertySet
-    - description
-    - endTime
-    - environment
-    - input
-    - launchConfiguration
-    - lookupLabel
-    - output
-    - performedBy
-    - recipe
-    - resourceUsage
-    - score
-    - startTime
-    - startedBy
-    - status
-    - studyTarget
-    - tag
-    - technique
-    - wasInformedBy
-    slot_usage:
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      environment:
-        required: true
-        any_of:
-        - range: Environment
-        - range: Service
-      input:
-        required: true
-        range: LocalFile
-      output:
-        required: true
-        range: LocalFile
-      performedBy:
-        range: SoftwareAgent
-      resourceUsage:
-        range: QuantitativeValue
-      startTime:
-        required: true
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
-      technique:
-        range: AnalysisTechnique
-      wasInformedBy:
-        any_of:
-        - range: DataAnalysis
-        - range: DataCopy
-        - range: GenericComputation
-        - range: ModelValidation
-        - range: Optimization
-        - range: Simulation
-        - range: Visualization
-- Visualization:
-    class_uri: https://openminds.om-i.org/types/Visualization
-    description: Structured information about a process of visualizing a computational
-      model, a computational process, or a dataset.
-    title: Visualization
-    slots:
-    - id
-    - customPropertySet
-    - description
-    - endTime
-    - environment
-    - input
-    - launchConfiguration
-    - lookupLabel
-    - output
-    - performedBy
-    - recipe
-    - resourceUsage
-    - startTime
-    - startedBy
-    - status
-    - studyTarget
-    - tag
-    - technique
-    - wasInformedBy
-    slot_usage:
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      environment:
-        required: true
-        any_of:
-        - range: Environment
-        - range: Service
-      input:
-        required: true
-        range: LocalFile
-      output:
-        required: true
-        range: LocalFile
-      performedBy:
-        range: SoftwareAgent
-      resourceUsage:
-        range: QuantitativeValue
-      startTime:
-        required: true
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
-      technique:
-        range: AnalysisTechnique
-      wasInformedBy:
-        any_of:
-        - range: DataAnalysis
-        - range: DataCopy
-        - range: GenericComputation
-        - range: ModelValidation
-        - range: Optimization
-        - range: Simulation
-        - range: Visualization
-- HardwareSystem:
-    class_uri: https://openminds.om-i.org/types/HardwareSystem
-    description: Structured information about computing hardware.
-    title: Hardware system
-    slots:
-    - id
-    - description
-    - name
-    - versionIdentifier
-    slot_usage:
-      name:
-        required: true
-- WorkflowRecipe:
-    class_uri: https://openminds.om-i.org/types/WorkflowRecipe
-    description: Structured information about the description of a prospective workflow.
-    title: Workflow recipe
-    slots:
-    - id
-    - contribution
-    - contributorAffiliation
-    - description
-    - digitalIdentifier
-    - documentation
-    - fullName
-    - homepage
-    - howToCite
-    - keyword
-    - relatedPublication
-    - shortName
-    - supportChannel
-    slot_usage:
-      contribution:
-        required: true
-        range: Contribution
-      description:
-        required: true
-      digitalIdentifier:
-        range: DOI
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
-      fullName:
-        required: true
-      keyword:
-        range: AccessChannel
-      relatedPublication:
-        range: DOI
-      shortName:
-        required: true
-      supportChannel:
-        range: string
-        any_of:
-        - range: uri
-- LaunchConfiguration:
-    class_uri: https://openminds.om-i.org/types/LaunchConfiguration
-    description: Structured information about the launch of a computational process.
-    title: Launch configuration
-    slots:
-    - id
-    - argument
-    - description
-    - environmentVariable
-    - executable
-    - name
-    slot_usage:
-      executable:
-        required: true
-- Optimization:
-    class_uri: https://openminds.om-i.org/types/Optimization
-    description: Structured information about a process of optimizing a model or a
-      piece of code.
-    title: Optimization
-    slots:
-    - id
-    - customPropertySet
-    - description
-    - endTime
-    - environment
-    - input
-    - launchConfiguration
-    - lookupLabel
-    - output
-    - performedBy
-    - recipe
-    - resourceUsage
-    - startTime
-    - startedBy
-    - status
-    - studyTarget
-    - tag
-    - technique
-    - wasInformedBy
-    slot_usage:
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      environment:
-        required: true
-        any_of:
-        - range: Environment
-        - range: Service
-      input:
-        required: true
-        range: LocalFile
-      output:
-        required: true
-        range: LocalFile
-      performedBy:
-        range: SoftwareAgent
-      resourceUsage:
-        range: QuantitativeValue
-      startTime:
-        required: true
-        range: string
-        any_of:
-        - range: time
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -789,11 +799,11 @@ classes:
         range: datetime
       uses:
         range: WorkflowRecipeVersion
-- DataAnalysis:
-    class_uri: https://openminds.om-i.org/types/DataAnalysis
-    description: Structured information on inspecting, cleansing, transforming, and
-      modelling data.
-    title: Data analysis
+- Visualization:
+    class_uri: https://openminds.om-i.org/types/Visualization
+    description: Structured information about a process of visualizing a computational
+      model, a computational process, or a dataset.
+    title: Visualization
     slots:
     - id
     - customPropertySet
@@ -821,9 +831,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -839,6 +846,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:

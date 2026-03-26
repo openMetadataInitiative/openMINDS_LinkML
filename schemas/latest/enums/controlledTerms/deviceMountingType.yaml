@@ -13,13 +13,13 @@ enums:
     enum_uri: https://openminds.om-i.org/types/DeviceMountingType
     title: Device mounting type
     permissible_values:
+      form-stable mounting:
+        description: A mounting configuration in which the device retains a fixed
+          geometry and does not conform to the surface shape of the host structure.
+      conformable mounting:
+        description: A mounting configuration in which the device or its mounting
+          interface deforms to conform to the surface geometry of the host structure.
       integrated mounting:
         description: A mounting configuration in which the device is structurally
           incorporated into a larger system or enclosure and not intended for routine
           removal.
-      conformable mounting:
-        description: A mounting configuration in which the device or its mounting
-          interface deforms to conform to the surface geometry of the host structure.
-      form-stable mounting:
-        description: A mounting configuration in which the device retains a fixed
-          geometry and does not conform to the surface shape of the host structure.
