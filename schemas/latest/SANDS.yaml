@@ -95,6 +95,11 @@ classes:
         - range: RRID
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       howToCite:
@@ -182,6 +187,12 @@ classes:
         - range: DOI
         - range: ISBN
         - range: RRID
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       hasTerminology:
@@ -258,6 +269,11 @@ classes:
         - range: RRID
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       hasTerminology:
@@ -327,6 +343,12 @@ classes:
         - range: DOI
         - range: ISBN
         - range: RRID
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       howToCite:
@@ -386,6 +408,9 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       criteriaQualityType:
         required: true
       criteriaType:
@@ -791,6 +816,9 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - SingleColor:
     class_uri: https://openminds.om-i.org/types/SingleColor
     description: null
@@ -829,6 +857,9 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       coordinates:
         required: true
 - QualitativeRelationAssessment:

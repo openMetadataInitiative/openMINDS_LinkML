@@ -577,10 +577,18 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - TissueSampleCollection:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleCollection
     description: null
@@ -648,8 +656,16 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Subject:
     class_uri: https://openminds.ebrains.eu/core/Subject
     description: Structured information on a subject.
@@ -693,9 +709,6 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
-        any_of:
-        - range: BehavioralTask
-        - range: Technique
 - TissueSample:
     class_uri: https://openminds.ebrains.eu/core/TissueSample
     description: Structured information on a tissue sample.
@@ -765,10 +778,18 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Protocol:
     class_uri: https://openminds.ebrains.eu/core/Protocol
     description: Structured information on a research project.
@@ -798,8 +819,16 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - StringParameter:
     class_uri: https://openminds.ebrains.eu/core/StringParameter
     description: null
@@ -841,9 +870,6 @@ classes:
     slot_usage:
       dataLocation:
         required: true
-        any_of:
-        - range: File
-        - range: FileBundle
       openDataIn:
         required: true
       service:
@@ -1070,9 +1096,6 @@ classes:
         required: true
       contributor:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - ContactInformation:
     class_uri: https://openminds.ebrains.eu/core/ContactInformation
     description: Structured information about how to contact a given person or consortium.
@@ -1143,9 +1166,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - ORCID:
     class_uri: https://openminds.ebrains.eu/core/ORCID
     description: A persistent identifier for a researcher provided by Open Researcher

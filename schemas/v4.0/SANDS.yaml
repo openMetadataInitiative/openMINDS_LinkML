@@ -135,6 +135,11 @@ classes:
         - range: RRID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       hasTerminology:
         required: true
         range: ParcellationTerminologyVersion
@@ -281,6 +286,9 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - SingleColor:
     class_uri: https://openminds.om-i.org/types/SingleColor
     description: null

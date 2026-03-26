@@ -60,10 +60,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -124,10 +120,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -203,6 +195,11 @@ classes:
         range: DOI
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       format:
         required: true
       fullName:
@@ -304,6 +301,11 @@ classes:
         range: DOI
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       entryPoint:
         range: string
       format:
@@ -384,10 +386,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -451,6 +449,12 @@ classes:
         required: true
       digitalIdentifier:
         range: DOI
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -485,10 +489,6 @@ classes:
       stage:
         required: true
         range: DataAnalysis
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
 - ModelValidation:
     class_uri: https://openminds.om-i.org/types/ModelValidation
     description: Structured information about a process of validating a computational
@@ -537,10 +537,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -601,10 +597,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -656,6 +648,12 @@ classes:
         required: true
       digitalIdentifier:
         range: DOI
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -729,10 +727,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -824,10 +818,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:

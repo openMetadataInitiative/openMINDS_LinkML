@@ -45,6 +45,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -60,10 +63,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -109,6 +108,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -124,10 +126,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -203,6 +201,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       hasPart:
         range: WorkflowRecipeVersion
       isAlternativeVersionOf:
@@ -280,6 +283,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       isAlternativeVersionOf:
         range: ValidationTestVersion
       isNewVersionOf:
@@ -336,6 +344,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -351,10 +362,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -444,10 +451,6 @@ classes:
       stage:
         required: true
         range: DataAnalysis
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
 - ModelValidation:
     class_uri: https://openminds.om-i.org/types/ModelValidation
     description: Structured information about a process of validating a computational
@@ -481,6 +484,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -496,10 +502,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -545,6 +547,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -560,10 +565,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -667,6 +668,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -682,10 +686,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -731,6 +731,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -746,10 +749,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:

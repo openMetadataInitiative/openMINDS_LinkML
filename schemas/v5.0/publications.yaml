@@ -61,6 +61,10 @@ classes:
         required: true
       publicationDate:
         required: true
+      requiredTime:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       type:
         range: LearningResourceType
       usageCondition:
@@ -182,6 +186,11 @@ classes:
         range: DOI
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       isPrecededBy:
@@ -252,6 +261,12 @@ classes:
         required: true
       digitalIdentifier:
         range: DOI
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       keyword:

@@ -59,6 +59,11 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       isAlternativeVersionOf:
         range: MetaDataModelVersion
       isNewVersionOf:
@@ -170,6 +175,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       inputData:
         range: DOI
       isAlternativeVersionOf:
@@ -180,6 +190,9 @@ classes:
         range: ActionStatusType
       license:
         required: true
+        any_of:
+        - range: License
+        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:
@@ -261,6 +274,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       hasPart:
         range: ModelVersion
       isAlternativeVersionOf:
@@ -383,6 +401,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       inputData:
         range: DOI
       isAlternativeVersionOf:
@@ -518,6 +541,11 @@ classes:
         range: Consortium
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       hasPart:
         range: SoftwareVersion
       isAlternativeVersionOf:
@@ -728,6 +756,10 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -736,6 +768,14 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Configuration:
     class_uri: https://openminds.ebrains.eu/core/Configuration
     description: Structured information about the properties or parameters of an entity
@@ -860,12 +900,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - PropertyValueList:
     class_uri: https://openminds.ebrains.eu/core/PropertyValueList
     description: An identifiable list of property-value pairs.
@@ -951,6 +1003,10 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -959,6 +1015,14 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Protocol:
     class_uri: https://openminds.ebrains.eu/core/Protocol
     description: Structured information on a research project.
@@ -971,6 +1035,11 @@ classes:
     - stimulusType
     - technique
     slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
       description:
         required: true
       name:
@@ -996,12 +1065,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Strain:
     class_uri: https://openminds.ebrains.eu/core/Strain
     description: null
@@ -1460,6 +1541,9 @@ classes:
     slot_usage:
       memberOf:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
 - QuantitativeValueArray:
     class_uri: https://openminds.ebrains.eu/core/QuantitativeValueArray
     description: A representation of an array of quantitative values, optionally with

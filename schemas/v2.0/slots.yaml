@@ -56,8 +56,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValue
     - range: QuantitativeValueRange
+    - range: QuantitativeValue
     inlined: true
   ageCategory:
     slot_uri: ageCategory
@@ -150,8 +150,8 @@ slots:
     slot_uri: contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Person
     - range: Organization
+    - range: Person
   coordinatePoint:
     slot_uri: coordinatePoint
     description: Pair or triplet of numbers defining the position in a particular
@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: DOI
     - range: RORID
-    - range: ORCID
-    - range: SWHID
+    - range: DOI
     - range: GRIDID
+    - range: SWHID
+    - range: ORCID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -326,8 +326,8 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: URL
     - range: DOI
+    - range: URL
     - range: File
   fullName:
     slot_uri: fullName
@@ -337,8 +337,8 @@ slots:
     slot_uri: funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Person
     - range: Organization
+    - range: Person
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -519,10 +519,10 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileBundle
-    - range: ParcellationTerminology
-    - range: FileRepository
     - range: SubjectGroup
+    - range: ParcellationTerminology
+    - range: FileBundle
+    - range: FileRepository
     - range: TissueSampleCollection
     multivalued: true
     list_elements_unique: true
@@ -714,8 +714,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValue
     - range: QuantitativeValueRange
+    - range: QuantitativeValue
     inlined: true
   quantity:
     slot_uri: quantity
@@ -774,8 +774,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: Technique
     - range: BehavioralTask
+    - range: Technique
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -965,10 +965,10 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: integer
-    - range: string
     - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: string
+    - range: integer
     - range: float
     multivalued: true
     inlined: true
@@ -998,8 +998,8 @@ slots:
     slot_uri: weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValue
     - range: QuantitativeValueRange
+    - range: QuantitativeValue
     inlined: true
   year:
     slot_uri: year
