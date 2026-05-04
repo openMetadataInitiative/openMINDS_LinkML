@@ -13,242 +13,172 @@ enums:
     enum_uri: https://openminds.om-i.org/types/Terminology
     title: Terminology
     permissible_values:
-      preparation type:
+      optical stimulus type:
+        description: An 'optical stimulus type' groups similar optical stimuli used
+          across optical stimulation techniques.
+      stimulation approach:
         description: null
-      cranial window reinforcement type:
-        description: The reinforcement type of a cranial window.
-      cranial window construction type:
-        description: The construction type of a cranial window.
-      organism substance:
-        description: Terminology defining biological substances produced by or contained
-          within an organism.
-      file repository type:
-        description: null
-      muscular structure:
-        description: Terminology defining anatomical structures composed primarily
-          of muscle tissue that contribute to body movement or internal mechanical
-          function.
-      file usage role:
-        description: null
-      programming language:
-        description: null
-      file bundle grouping:
-        description: null
-      difference measure:
-        description: A measure of the difference between two things
-      cell culture type:
-        description: The type of a cell culture (e.g. primary, secondary)
-      pulse shape:
-        description: A terminology defining the temporal amplitude profiles of excitation,
-          stimulation, or modulation pulses based on their mathematical or functional
-          form.
-      age reference:
-        description: "A terminology concept denoting a biologically or clinically\
-          \ defined boundary event used to anchor the measurement or interpretation\
-          \ of age in relation to an organism\u2019s life cycle."
-      software feature:
-        description: null
-      laterality:
-        description: null
-      setup type:
-        description: The setup type describes the overall purpose of arranging equipment
-          in a certain way (setup).
-      action status type:
-        description: null
-      anatomical axes orientation:
-        description: null
-      software application category:
-        description: null
-      device mounting type:
-        description: A terminology defining methods for mechanically attaching devices
-          based on structural integration, compliance, and geometric conformity to
-          the host structure.
-      type of uncertainty:
-        description: null
-      organ:
-        description: Terminology defining whole anatomical organs that function as
-          discrete structural and functional units within an organism.
       external body region:
         description: "Terminology defining anatomical regions located on the external\
           \ surface of an organism\u2019s body."
-      payment model type:
-        description: Terminology defining the pricing structure or financial model
-          associated with accessing a resource.
-      cell type:
+      programming language:
         description: null
-      biological sex:
+      biological order:
         description: null
-      project type:
-        description: Terminology characterizing a project according to its primary
-          grounding, organizational basis, and driving objectives.
-      auditory stimulus type:
-        description: An 'auditory stimulus type' groups similar auditory stimuli used
-          across auditory stimulation techniques.
+      nervous system structure:
+        description: Terminology defining anatomical structures that are components
+          of the nervous system.
+      genetic strain type:
+        description: The genetic strain type describes the genetic background type
+          of a strain.
       MRI pulse sequence:
         description: An 'MRI pulse sequence' is a particular setting of pulse sequences
           and pulsed field gradients, resulting in a particular image appearance [adapted
           from [Wikipedia](https://en.wikipedia.org/wiki/MRI_pulse_sequence)].
-      tissue sample type:
-        description: null
-      weight type:
-        description: A terminology that specifies the biological or processing state
-          of a specimen at the time its mass was measured.
-      vascular structure:
-        description: Terminology defining anatomical structures that form the circulatory
-          vessel networks responsible for transporting blood or lymph within an organism.
-      organism system:
-        description: Terminology defining biological systems composed of multiple
-          interacting anatomical structures that together perform a major physiological
-          function.
-      colormap:
-        description: A colormap is a lookup table specifying the colors to be used
-          in rendering a palettized image, [adapted from [Wiktionary](https://en.wiktionary.org/wiki/colormap)].
-      modification form:
-        description: Terminology for specifying the formal method by which consent
-          to a modification must be expressed.
-      language:
-        description: null
-      anatomical cavity:
-        description: Terminology defining anatomical cavities and internal spaces
-          within an organism that contain organs, tissues, or fluids, excluding blood
-          and lymph vessels.
-      atlas type:
-        description: null
-      contribution type:
-        description: A functional role characterized by a specific activity or responsibility
-          realized by a role-bearing entity in relation to a target entity and its
-          life cycle.
-      access eligibility type:
-        description: The terminology defining access eligibility type specifies whether
-          a resource is openly available to anyone, requires authentication, or authorization.
-      subject attribute:
-        description: null
-      gustatory stimulus type:
-        description: A 'gustatory stimulus type' groups similar gustatory stimuli
-          used across gustatory stimulation techniques.
-      chemicalMixtureType:
-        description: A 'chemical mixture type' groups all mixtures with the same chemical
-          and physical characteristics under a general term.
-      disease model:
+      species:
         description: null
       disease:
-        description: null
-      educational level:
-        description: 'An ''educational level'' defines the developmental stage of
-          a student and how learning environments are structured. '
-      molecular entity:
-        description: Any constitutionally or isotopically distinct atom, molecule,
-          ion, ion pair, radical, radical ion, complex, conformer etc., identifiable
-          as a separately distinguishable entity.
-      subcellular entity:
-        description: Entity derived from a cell or cells. The anatomical scale of
-          these objects roughly corresponds to that which would be visible in high
-          resolution light microscopy or conventional electron microscopy, e.g., nanometers
-          to microns
-      anatomical plane:
-        description: A flat anatomical 2D surface that bisects an anatomical structure
-          or an anatomical space.
-      organ system structure:
-        description: Terminology defining anatomical components and structural parts
-          that belong to or form part of an organ system.
-      operating device:
-        description: null
-      genetic strain type:
-        description: The genetic strain type describes the genetic background type
-          of a strain.
-      olfactory stimulus type:
-        description: An 'olfactory stimulus type' groups similar olfactory stimuli
-          used across olfactory stimulation techniques.
-      handedness:
-        description: null
-      tissue sample attribute:
-        description: null
-      modification scope:
-        description: Terminology for specifying which parts or aspects of an agreement
-          may be modified.
-      optical stimulus type:
-        description: An 'optical stimulus type' groups similar optical stimuli used
-          across optical stimulation techniques.
-      tactile stimulus type:
-        description: A 'tactile stimulus type' groups similar tactile stimuli used
-          across tactile stimulation techniques.
-      learning resource type:
-        description: A 'learning resource type' groups persistent resources that explicitly
-          entail learning activities or learning experiences in a certain format (e.g.,
-          in a physical or digital presentation).
-      MRI fat suppression technique:
-        description: "A terminology defining methods for reducing or separating fat\
-          \ signal in MRI using spectral, inversion recovery, or water\u2013fat decomposition\
-          \ techniques."
-      supranational body:
-        description: An institutional entity created by sovereign states to which
-          they delegate or pool defined aspects of their governing authority for common
-          decision-making that is binding on the member states.
-      annotation criteria type:
-        description: General classification of how data were annotated.
-      age category:
-        description: The age category describes a specific spatiotemporal part of
-          the life cycle of an organism.
-      unit of measurement:
         description: null
       measured signal type:
         description: The types of biological electrical and non-electrical signals
           that vary in time and/or space and can be measured.
+      model abstraction level:
+        description: null
+      learning resource type:
+        description: A 'learning resource type' groups persistent resources that explicitly
+          entail learning activities or learning experiences in a certain format (e.g.,
+          in a physical or digital presentation).
+      cell type:
+        description: null
+      difference measure:
+        description: A measure of the difference between two things
+      software application category:
+        description: null
+      tissue sample attribute:
+        description: null
+      MR spatial encoding:
+        description: MR spatial encoding type defines the method by which imaging
+          data is collected, determining the spatial encoding strategy and affecting
+          resolution, scan time, and overall image quality.
+      measured quantity:
+        description: A qualified physical quantity that was measured/recorded
+      file repository type:
+        description: null
+      data type:
+        description: null
+      tissue structure:
+        description: Terminology defining anatomical structures composed of integumentary
+          or connective tissues that form protective coverings, structural support,
+          or separating boundaries within an organism.
+      biological sex:
+        description: null
+      electrical stimulus type:
+        description: An 'electrical stimulus type' groups similar electrical stimuli
+          used across electrical stimulation techniques.
+      analysis technique:
+        description: null
+      chemicalMixtureType:
+        description: A 'chemical mixture type' groups all mixtures with the same chemical
+          and physical characteristics under a general term.
       organization type:
         description: Terminology for classifying an organization based on its legal
           status or position within a larger entity.
-      sovereign state:
-        description: A political entity that possesses supreme governing authority
-          within a defined territory and is not legally subordinate to another state.
-      stimulation approach:
+      organism substance:
+        description: Terminology defining biological substances produced by or contained
+          within an organism.
+      molecular entity:
+        description: Any constitutionally or isotopically distinct atom, molecule,
+          ion, ion pair, radical, radical ion, complex, conformer etc., identifiable
+          as a separately distinguishable entity.
+      payment model type:
+        description: Terminology defining the pricing structure or financial model
+          associated with accessing a resource.
+      access process type:
+        description: Terminology defining the workflow or mechanism through which
+          access to a resource is granted.
+      device type:
+        description: null
+      patch clamp variation:
+        description: A variation of the patch clamp technique
+      modification scope:
+        description: Terminology for specifying which parts or aspects of an agreement
+          may be modified.
+      auditory stimulus type:
+        description: An 'auditory stimulus type' groups similar auditory stimuli used
+          across auditory stimulation techniques.
+      muscular structure:
+        description: Terminology defining anatomical structures composed primarily
+          of muscle tissue that contribute to body movement or internal mechanical
+          function.
+      handedness:
         description: null
       MRI weighting:
         description: Class of imaging techniques where the image contrast is generated
           from a specific intrinsic tissue parameter (T1, T2, etc.).
-      experimental approach:
+      subject attribute:
         description: null
-      species:
+      stimulation technique:
         description: null
-      access process type:
-        description: Terminology defining the workflow or mechanism through which
-          access to a resource is granted.
-      analysis technique:
-        description: null
-      visual stimulus type:
-        description: A 'visual stimulus type' groups similar visual stimuli used across
-          visual stimulation techniques.
-      access form:
-        description: Terminology defining the manner in which access to a resource
-          is facilitated.
-      nervous system structure:
-        description: Terminology defining anatomical structures that are components
-          of the nervous system.
-      model scope:
-        description: null
-      annotation type:
-        description: Geometrical classification of annotations into types.
-      qualitative overlap:
-        description: null
-      technique:
-        description: null
-      (meta)data model type:
-        description: null
-      spatial encoding:
-        description: A terminology defining methods for representing spatial position
-          in signals through frequency-, phase-, or combined encoding mechanisms across
-          one or more dimensions.
-      model abstraction level:
-        description: null
-      device type:
-        description: null
+      olfactory stimulus type:
+        description: An 'olfactory stimulus type' groups similar olfactory stimuli
+          used across olfactory stimulation techniques.
       modification constraint:
         description: Terminology for specifying procedural conditions or prohibitions
           that limit how modifications may be made.
-      publication status:
-        description: Terminology defining the status of a resource in the publication
-          lifecycle.
-      patch clamp variation:
-        description: A variation of the patch clamp technique
+      operating device:
+        description: null
+      tactile stimulus type:
+        description: A 'tactile stimulus type' groups similar tactile stimuli used
+          across tactile stimulation techniques.
+      annotation criteria type:
+        description: General classification of how data were annotated.
+      model scope:
+        description: null
+      atlas type:
+        description: null
+      criteria quality type:
+        description: null
+      anatomical identification type:
+        description: The type of identiciation that was used to determine an anatomical
+          location.
+      anatomical plane:
+        description: A flat anatomical 2D surface that bisects an anatomical structure
+          or an anatomical space.
+      qualitative overlap:
+        description: null
+      disease model:
+        description: null
+      vascular structure:
+        description: Terminology defining anatomical structures that form the circulatory
+          vessel networks responsible for transporting blood or lymph within an organism.
+      laterality:
+        description: null
+      age reference:
+        description: "A terminology concept denoting a biologically or clinically\
+          \ defined boundary event used to anchor the measurement or interpretation\
+          \ of age in relation to an organism\u2019s life cycle."
+      visual stimulus type:
+        description: A 'visual stimulus type' groups similar visual stimuli used across
+          visual stimulation techniques.
+      language:
+        description: null
+      experimental approach:
+        description: null
+      cell culture type:
+        description: The type of a cell culture (e.g. primary, secondary)
+      device mounting type:
+        description: A terminology defining methods for mechanically attaching devices
+          based on structural integration, compliance, and geometric conformity to
+          the host structure.
+      educational level:
+        description: 'An ''educational level'' defines the developmental stage of
+          a student and how learning environments are structured. '
+      annotation type:
+        description: Geometrical classification of annotations into types.
+      technique:
+        description: null
+      software feature:
+        description: null
       MRI spoiling technique:
         description: A terminology defining methods for suppressing residual transverse
           magnetization in MRI through radiofrequency, gradient, or combined spoiling
@@ -256,40 +186,110 @@ enums:
       breeding type:
         description: The breeding type describes how plants or animals have been sexually
           propagated.
-      biological order:
+      anatomical axes orientation:
         description: null
-      electrical stimulus type:
-        description: An 'electrical stimulus type' groups similar electrical stimuli
-          used across electrical stimulation techniques.
-      operating system:
+      gustatory stimulus type:
+        description: A 'gustatory stimulus type' groups similar gustatory stimuli
+          used across gustatory stimulation techniques.
+      weight type:
+        description: A terminology that specifies the biological or processing state
+          of a specimen at the time its mass was measured.
+      file bundle grouping:
         description: null
-      tissue structure:
-        description: Terminology defining anatomical structures composed of integumentary
-          or connective tissues that form protective coverings, structural support,
-          or separating boundaries within an organism.
-      anatomical identification type:
-        description: The type of identiciation that was used to determine an anatomical
-          location.
-      data type:
-        description: null
-      modification consent requirement:
-        description: Terminology for specifying whose agreement is required for a
-          contract modification to be legally valid.
-      stimulation technique:
-        description: null
-      measured quantity:
-        description: A qualified physical quantity that was measured/recorded
-      MR spatial encoding:
-        description: MR spatial encoding type defines the method by which imaging
-          data is collected, determining the spatial encoding strategy and affecting
-          resolution, scan time, and overall image quality.
+      organ system structure:
+        description: Terminology defining anatomical components and structural parts
+          that belong to or form part of an organ system.
+      organism system:
+        description: Terminology defining biological systems composed of multiple
+          interacting anatomical structures that together perform a major physiological
+          function.
       access channel:
         description: Terminology defining the location or medium through which a resource
           can be accessed.
-      semantic data type:
+      action status type:
+        description: null
+      tissue sample type:
         description: null
       skeletal structure:
         description: Terminology defining anatomical structures that form part of
           the skeletal system.
-      criteria quality type:
+      project type:
+        description: Terminology characterizing a project according to its primary
+          grounding, organizational basis, and driving objectives.
+      cranial window construction type:
+        description: The construction type of a cranial window.
+      setup type:
+        description: The setup type describes the overall purpose of arranging equipment
+          in a certain way (setup).
+      (meta)data model type:
         description: null
+      modification form:
+        description: Terminology for specifying the formal method by which consent
+          to a modification must be expressed.
+      anatomical cavity:
+        description: Terminology defining anatomical cavities and internal spaces
+          within an organism that contain organs, tissues, or fluids, excluding blood
+          and lymph vessels.
+      contribution type:
+        description: A functional role characterized by a specific activity or responsibility
+          realized by a role-bearing entity in relation to a target entity and its
+          life cycle.
+      sovereign state:
+        description: A political entity that possesses supreme governing authority
+          within a defined territory and is not legally subordinate to another state.
+      modification consent requirement:
+        description: Terminology for specifying whose agreement is required for a
+          contract modification to be legally valid.
+      age category:
+        description: The age category describes a specific spatiotemporal part of
+          the life cycle of an organism.
+      MRI fat suppression technique:
+        description: "A terminology defining methods for reducing or separating fat\
+          \ signal in MRI using spectral, inversion recovery, or water\u2013fat decomposition\
+          \ techniques."
+      publication status:
+        description: Terminology defining the status of a resource in the publication
+          lifecycle.
+      unit of measurement:
+        description: null
+      semantic data type:
+        description: null
+      subcellular entity:
+        description: Entity derived from a cell or cells. The anatomical scale of
+          these objects roughly corresponds to that which would be visible in high
+          resolution light microscopy or conventional electron microscopy, e.g., nanometers
+          to microns
+      operating system:
+        description: null
+      preparation type:
+        description: null
+      access eligibility type:
+        description: The terminology defining access eligibility type specifies whether
+          a resource is openly available to anyone, requires authentication, or authorization.
+      type of uncertainty:
+        description: null
+      supranational body:
+        description: An institutional entity created by sovereign states to which
+          they delegate or pool defined aspects of their governing authority for common
+          decision-making that is binding on the member states.
+      file usage role:
+        description: null
+      pulse shape:
+        description: A terminology defining the temporal amplitude profiles of excitation,
+          stimulation, or modulation pulses based on their mathematical or functional
+          form.
+      access form:
+        description: Terminology defining the manner in which access to a resource
+          is facilitated.
+      organ:
+        description: Terminology defining whole anatomical organs that function as
+          discrete structural and functional units within an organism.
+      cranial window reinforcement type:
+        description: The reinforcement type of a cranial window.
+      colormap:
+        description: A colormap is a lookup table specifying the colors to be used
+          in rendering a palettized image, [adapted from [Wiktionary](https://en.wiktionary.org/wiki/colormap)].
+      spatial encoding:
+        description: A terminology defining methods for representing spatial position
+          in signals through frequency-, phase-, or combined encoding mechanisms across
+          one or more dimensions.

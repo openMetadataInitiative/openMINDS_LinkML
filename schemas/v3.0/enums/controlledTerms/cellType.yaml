@@ -13,170 +13,170 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/CellType
     title: Cell type
     permissible_values:
-      interneuron:
-        description: An 'interneuron' is neuron that cannot be classified as sensory
-          receptor or motor neuron.
-      motor neuron:
-        description: null
-      neostriatum direct pathway spiny neuron:
-        description: The principal projection neuron of the caudate and putamen that
-          excite their output structure.
-      progenitor cell:
-        description: A 'progenitor cell' is a descendent of a stem cell that further
-          differentiate to create specialized cell types.
-      cortical basket cell:
-        description: An inhibitory GABAergic interneurons of the cortex, enmeshing
-          the cell body of another neuron with its terminal axon ramifications.
-      cerebellar interneuron:
-        description: null
-      neocortex layer 5 tufted pyramidal neuron:
-        description: An excitatory neuron type with a pyramidal-shaped cell body found
-          in layer 5 of the neocortex and projects to subcortical areas.
-      striatal interneuron:
-        description: null
-      postmitotic cell:
-        description: A 'postmitotic cell' is a fully differentiated, non-dividing
-          mature cell that no longer undergoes mitosis.
-      vasoactive-intestinal peptide expressing neuron:
-        description: Any neuron that expresses vasoactive-intestinal peptide.
-      main olfactory bulb mitral neuron:
-        description: Neuronal cell type in the mammalian olfactory bulb, distinguished
-          by the position of their somata located in an orderly row in the mitral
-          cell layer of the bulb. [from [Wikipedia](https://en.wikipedia.org/wiki/Mitral_cell#Structure)]
       neuropeptide Y expressing neuron:
         description: Any neuron that expresses neuropeptide Y.
-      neocortex layer 2/3 pyramidal neuron:
-        description: An excitatory neuron type with a pyramidal-shaped cell body that
-          is located in layer 2/3 of the neocortex.
-      inhibitory neuron:
-        description: An 'inhibitory neuron' releases neurotransmitters (e.g. GABA)
-          that have a hyperpolarizing effect on the post-synaptic neuron, making it
-          difficult to generate an action potential.
-      choline acetyltransferase expressing neuron:
-        description: Any neuron that expresses choline acetyltransferase.
-      main olfactory bulb external tufted neuron:
-        description: An excitatory neuron type found predominately at the glomerular
-          layer of the main olfactory bulb.
-      basket cell:
-        description: An inhibitory GABAergic interneurons of the brain, enmeshing
-          the cell body of another neuron with its terminal axon ramifications.
-      hippocampus CA1 pyramidal neuron:
-        description: An excitatory neuron type with a pyramidal-shaped cell body that
-          is located in the cornu ammonis 1 (CA1) of the hippocampus.
-      cerebellum basket cell:
-        description: An inhibitory GABAergic interneurons of the cerebellum, enmeshing
-          the cell body of another neuron with its terminal axon ramifications.
-      main olfactory bulb tufted neuron:
-        description: Principle neurons of the mammalian main olfactory bulb.
-      neostriatum indirect pathway spiny neuron:
-        description: The principal projection neuron of the caudate and putamen that
-          inhibit their output structure.
-      microglial cell:
-        description: '''Microglial cells'' are small, migratory, phagocytic, interstitial
-          glial cells in the central nervous system.'
-      fast spiking interneuron:
-        description: A parvalbumin positive GABAergic interneuron with a high-frequency
-          firing pattern.
-      somatostatin expressing neuron:
-        description: Any neuron that expresses somatostatin.
-      macroglial cell:
-        description: '''Macroglial cells'' are large glial cells in the central nervous
-          system.'
-      astrocyte:
-        description: '''Astrocytes'' are a class of large, star-shaped neuroglial
-          (macroglial) cells in the central nervous system.'
-      dopaminergic neuron:
-        description: Any neuron that releases some dopamine as a neurotransmitter
-      stellate neuron:
-        description: Any neuron in the central nervous system that has a star-like
-          shape formed by dendritic processes radiating from the cell body.
-      vascular endothelial cell:
-        description: Cells that constitute the inner cellular lining of arteries,
-          veins and capillaries.
+      spinal interneuron:
+        description: null
+      cholinergic interneuron:
+        description: An inhibitory interneuron which mainly uses the neurotrasmitter
+          acetylcholine (ACh).
       main olfactory bulb granule neuron:
         description: Axonless inhibitory interneurons and form the majority of neurons
           in the vertebrate main olfactory bulb [adapted from [Egger et al. (2003)](https://doi.org/10.1523/JNEUROSCI.23-20-07551.2003)].
-      cortical interneuron:
+      basket cell:
+        description: An inhibitory GABAergic interneurons of the brain, enmeshing
+          the cell body of another neuron with its terminal axon ramifications.
+      main olfactory bulb middle tufted neuron:
+        description: A subclass of neurons situated in the middle layer of the external
+          plexiform layer of the main olfactory bulb.
+      interneuron:
+        description: An 'interneuron' is neuron that cannot be classified as sensory
+          receptor or motor neuron.
+      astrocyte:
+        description: '''Astrocytes'' are a class of large, star-shaped neuroglial
+          (macroglial) cells in the central nervous system.'
+      D1 receptor expressing neuron:
+        description: Any neuron that expresses D1 receptors.
+      motor neuron:
         description: null
       aromatase expressing neuron:
         description: Any neuron that expresses aromatase.
+      cerebellum stellate neuron:
+        description: Any cerebellar neuron that has a star-like shape formed by dendritic
+          processes radiating from the cell body.
+      D2 receptor expressing neuron:
+        description: Any neuron that expresses D2 receptors.
+      neocortex layer 2/3 pyramidal neuron:
+        description: An excitatory neuron type with a pyramidal-shaped cell body that
+          is located in layer 2/3 of the neocortex.
+      granule neuron:
+        description: The term 'granule neuron' refers to a set of neuron types typically
+          found in granular layers across brain regions whose only common feature
+          is that they all have very small cell bodies [[adapted from Wikipedia](https://en.wikipedia.org/wiki/Granule_cell)].
+      calretinin expressing neuron:
+        description: Any neuron that expresses calretinin.
+      cortical interneuron:
+        description: null
+      cortical basket cell:
+        description: An inhibitory GABAergic interneurons of the cortex, enmeshing
+          the cell body of another neuron with its terminal axon ramifications.
+      calbindin expressing neuron:
+        description: Any neuron that expresses calbindin.
+      main olfactory bulb external tufted neuron:
+        description: An excitatory neuron type found predominately at the glomerular
+          layer of the main olfactory bulb.
+      vascular endothelial cell:
+        description: Cells that constitute the inner cellular lining of arteries,
+          veins and capillaries.
+      cholecystokinin expressing neuron:
+        description: Any neuron that expresses cholecystokinin.
+      striatum medium spiny neuron:
+        description: A special type of GABAergic neuron with large dendritic trees
+          that is located in the striatum.
+      nitric oxide synthase expressing neuron:
+        description: Any neuron that expresses nitric oxide synthase.
+      striatal interneuron:
+        description: null
+      hippocampus CA1 pyramidal neuron:
+        description: An excitatory neuron type with a pyramidal-shaped cell body that
+          is located in the cornu ammonis 1 (CA1) of the hippocampus.
+      cerebellum Golgi cell:
+        description: An inhibitory interneuron found within the granular layer of
+          the cerebellum.
+      main olfactory bulb superficial tufted neuron:
+        description: A subclass of neurons situated in the outermost (superficial)
+          layer of the external plexiform layer of the main olfactory bulb.
+      vasoactive-intestinal peptide expressing neuron:
+        description: Any neuron that expresses vasoactive-intestinal peptide.
+      neocortex layer 5 tufted pyramidal neuron:
+        description: An excitatory neuron type with a pyramidal-shaped cell body found
+          in layer 5 of the neocortex and projects to subcortical areas.
+      main olfactory bulb tufted neuron:
+        description: Principle neurons of the mammalian main olfactory bulb.
       main olfactory bulb periglomerular neuron:
         description: Small intrinsic neurons in the glomerular layer of the main olfactory
           bulb, with cell bodies surrounding the olfactory glomerulus. [adapted from
           [InterLex](http://uri.interlex.org/base/ilx_0107934)]
-      cerebellum stellate neuron:
-        description: Any cerebellar neuron that has a star-like shape formed by dendritic
-          processes radiating from the cell body.
-      cerebellum granule cell:
-        description: '''Cerebellum granule cells'' form the thick granular layer of
-          the cerebellar cortex and typically have small cell bodies but varying functions.'
-      calretinin expressing neuron:
-        description: Any neuron that expresses calretinin.
-      cerebellum Golgi cell:
-        description: An inhibitory interneuron found within the granular layer of
-          the cerebellum.
-      cholecystokinin expressing neuron:
-        description: Any neuron that expresses cholecystokinin.
-      pyramidal neuron:
-        description: A 'pyramidal neuron' is a type of multipolar neuron that is characterized
-          by a pyramidal shaped cell body (soma) and two distinct dendritic trees.
-      D2 receptor expressing neuron:
-        description: Any neuron that expresses D2 receptors.
-      main olfactory bulb superficial tufted neuron:
-        description: A subclass of neurons situated in the outermost (superficial)
-          layer of the external plexiform layer of the main olfactory bulb.
-      spiny neuron:
-        description: Any neuron characterized by a high density of dendritic spines
-          on the dendrites.
-      sensory neuron:
-        description: null
-      cholinergic neuron:
-        description: Any neuron that releases some acetylcholine as a neurotransmitter
+      inhibitory neuron:
+        description: An 'inhibitory neuron' releases neurotransmitters (e.g. GABA)
+          that have a hyperpolarizing effect on the post-synaptic neuron, making it
+          difficult to generate an action potential.
+      progenitor cell:
+        description: A 'progenitor cell' is a descendent of a stem cell that further
+          differentiate to create specialized cell types.
+      macroglial cell:
+        description: '''Macroglial cells'' are large glial cells in the central nervous
+          system.'
+      main olfactory bulb deep tufted neuron:
+        description: A subclass of neurons situated in the innermost (deep) layer
+          of the external plexiform layer of the main olfactory bulb.
       Purkinje cell:
         description: A class of GABAergic inhibitory neurons located in the cerebellum
           with pear-shape cell bodies arranged in a single layer, typically one primary
           dendrites and an elaborate dendritic tree heavily invested with dendritic
           spines.
+      spiny neuron:
+        description: Any neuron characterized by a high density of dendritic spines
+          on the dendrites.
+      microglial cell:
+        description: '''Microglial cells'' are small, migratory, phagocytic, interstitial
+          glial cells in the central nervous system.'
+      cholinergic neuron:
+        description: Any neuron that releases some acetylcholine as a neurotransmitter
+      cerebellum basket cell:
+        description: An inhibitory GABAergic interneurons of the cerebellum, enmeshing
+          the cell body of another neuron with its terminal axon ramifications.
+      cerebellum granule cell:
+        description: '''Cerebellum granule cells'' form the thick granular layer of
+          the cerebellar cortex and typically have small cell bodies but varying functions.'
+      stellate neuron:
+        description: Any neuron in the central nervous system that has a star-like
+          shape formed by dendritic processes radiating from the cell body.
+      pyramidal neuron:
+        description: A 'pyramidal neuron' is a type of multipolar neuron that is characterized
+          by a pyramidal shaped cell body (soma) and two distinct dendritic trees.
+      postmitotic cell:
+        description: A 'postmitotic cell' is a fully differentiated, non-dividing
+          mature cell that no longer undergoes mitosis.
+      neostriatum cholinergic interneuron:
+        description: An inhibitory interneuron in the caudate nucleus and putamen
+          which mainly uses the neurotrasmitter acetylcholine (ACh).
+      fast spiking interneuron:
+        description: A parvalbumin positive GABAergic interneuron with a high-frequency
+          firing pattern.
+      vascular smooth muscle cell:
+        description: A smooth muscle cell assocatiated with the vasculature.
+      neuron:
+        description: A 'neuron' is a basic cellular unit of nervous tissue which can
+          receive, conduct, and transmit electrical impulses.
+      dopaminergic neuron:
+        description: Any neuron that releases some dopamine as a neurotransmitter
+      neostriatum indirect pathway spiny neuron:
+        description: The principal projection neuron of the caudate and putamen that
+          inhibit their output structure.
+      main olfactory bulb mitral neuron:
+        description: Neuronal cell type in the mammalian olfactory bulb, distinguished
+          by the position of their somata located in an orderly row in the mitral
+          cell layer of the bulb. [from [Wikipedia](https://en.wikipedia.org/wiki/Mitral_cell#Structure)]
+      parvalbumin expressing neuron:
+        description: Any neuron that expresses parvalbumin.
+      cerebellar interneuron:
+        description: null
+      choline acetyltransferase expressing neuron:
+        description: Any neuron that expresses choline acetyltransferase.
       excitatory neuron:
         description: An 'excitatory neuron' releases neurotransmitters (e.g. glutamate)
           that have a deperpolarizing effect on the post-synaptic neuron, facilitating
           the generation of an action potential.
-      cholinergic interneuron:
-        description: An inhibitory interneuron which mainly uses the neurotrasmitter
-          acetylcholine (ACh).
+      somatostatin expressing neuron:
+        description: Any neuron that expresses somatostatin.
+      sensory neuron:
+        description: null
+      neostriatum direct pathway spiny neuron:
+        description: The principal projection neuron of the caudate and putamen that
+          excite their output structure.
       glial cell:
         description: A 'glial cell' is a non-neuronal cell of the nervous system.
           Glial cells provide physical support, respond to injury, regulate the ionic
           and chemical composition of the extracellular milieu, guide neuronal migration
           during development, and exchange metabolites with neurons.
-      D1 receptor expressing neuron:
-        description: Any neuron that expresses D1 receptors.
-      main olfactory bulb deep tufted neuron:
-        description: A subclass of neurons situated in the innermost (deep) layer
-          of the external plexiform layer of the main olfactory bulb.
-      main olfactory bulb middle tufted neuron:
-        description: A subclass of neurons situated in the middle layer of the external
-          plexiform layer of the main olfactory bulb.
-      neuron:
-        description: A 'neuron' is a basic cellular unit of nervous tissue which can
-          receive, conduct, and transmit electrical impulses.
-      nitric oxide synthase expressing neuron:
-        description: Any neuron that expresses nitric oxide synthase.
-      striatum medium spiny neuron:
-        description: A special type of GABAergic neuron with large dendritic trees
-          that is located in the striatum.
-      spinal interneuron:
-        description: null
-      calbindin expressing neuron:
-        description: Any neuron that expresses calbindin.
-      parvalbumin expressing neuron:
-        description: Any neuron that expresses parvalbumin.
-      vascular smooth muscle cell:
-        description: A smooth muscle cell assocatiated with the vasculature.
-      granule neuron:
-        description: The term 'granule neuron' refers to a set of neuron types typically
-          found in granular layers across brain regions whose only common feature
-          is that they all have very small cell bodies [[adapted from Wikipedia](https://en.wikipedia.org/wiki/Granule_cell)].
-      neostriatum cholinergic interneuron:
-        description: An inhibitory interneuron in the caudate nucleus and putamen
-          which mainly uses the neurotrasmitter acetylcholine (ACh).

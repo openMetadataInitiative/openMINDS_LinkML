@@ -14,12 +14,12 @@ enums:
     title: Biological sex
     description: Structured information on the biological sex of a subject.
     permissible_values:
+      hermaphrodite:
+        description: Biological sex with both male and female reproductive organs.
       not detectable:
         description: Can be stated if the biological sex in visually not detectable
           at a specific point in time.
-      hermaphrodite:
-        description: Biological sex with both male and female reproductive organs.
-      female:
-        description: Biological sex that produces egg cells (ova).
       male:
         description: Biological sex that produces sperm cells (spermatozoa).
+      female:
+        description: Biological sex that produces egg cells (ova).

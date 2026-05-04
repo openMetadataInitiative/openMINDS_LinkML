@@ -14,297 +14,148 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- AccountInformation:
-    class_uri: https://openminds.om-i.org/types/AccountInformation
-    description: Structured information about a user account for a web service.
-    title: Account information
-    slots:
-    - id
-    - service
-    - userName
-    slot_usage:
-      service:
-        required: true
-        range: WebService
-      userName:
-        required: true
-- Organization:
-    class_uri: https://openminds.om-i.org/types/Organization
-    description: An entity comprised of one or more natural persons with a particular
-      purpose. [adapted from Wikipedia](https://en.wikipedia.org/wiki/Organization)
-    title: Organization
-    slots:
-    - id
-    - affiliation
-    - digitalIdentifier
-    - fullName
-    - hasParent
-    - homepage
-    - shortName
-    slot_usage:
-      digitalIdentifier:
-        range: GRIDID
-      fullName:
-        required: true
-      hasParent:
-        range: Organization
-- Contribution:
-    class_uri: https://openminds.om-i.org/types/Contribution
-    description: Structured information on the contribution made to a research product.
-    title: Contribution
-    slots:
-    - id
-    - contributor
-    - type
-    slot_usage:
-      contributor:
-        required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
-      type:
-        required: true
-        range: ContributionType
-- ContactInformation:
-    class_uri: https://openminds.om-i.org/types/ContactInformation
-    description: Structured information about how to contact a given person or consortium.
-    title: Contact information
-    slots:
-    - id
-    - email
-    slot_usage:
-      email:
-        required: true
-- Affiliation:
-    class_uri: https://openminds.om-i.org/types/Affiliation
-    description: Structured information about a relationship between two entities,
-      such as a person and their employer.
-    title: Affiliation
-    slots:
-    - id
-    - endDate
-    - memberOf
-    - startDate
-    slot_usage:
-      memberOf:
-        required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-- Consortium:
-    class_uri: https://openminds.om-i.org/types/Consortium
-    description: Structured information about an association of two or more persons
-      or organizations, with the objective of participating in a common activity.
-    title: Consortium
-    slots:
-    - id
-    - contactInformation
-    - fullName
-    - homepage
-    - shortName
-    slot_usage:
-      fullName:
-        required: true
-- Person:
-    class_uri: https://openminds.om-i.org/types/Person
-    description: Structured information on a person.
-    title: Person
-    slots:
-    - id
-    - affiliation
-    - alternateName
-    - associatedAccount
-    - contactInformation
-    - digitalIdentifier
-    - familyName
-    - givenName
-    slot_usage:
-      digitalIdentifier:
-        range: ORCID
-      givenName:
-        required: true
-- SubjectGroup:
-    class_uri: https://openminds.om-i.org/types/SubjectGroup
+- SWHID:
+    class_uri: https://openminds.om-i.org/types/SWHID
     description: null
-    title: Subject group
+    title: Swhid
     slots:
     - id
-    - additionalRemarks
-    - biologicalSex
-    - internalIdentifier
-    - lookupLabel
-    - numberOfSubjects
-    - species
-    - studiedState
+    - identifier
     slot_usage:
-      species:
+      identifier:
         required: true
-        range: Species
-      studiedState:
+        pattern: "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
+          \ \t\r\n\f]+)*$"
+- ISSN:
+    class_uri: https://openminds.om-i.org/types/ISSN
+    description: An International Standard Serial Number of the ISSN International
+      Centre.
+    title: Issn
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
         required: true
-        range: SubjectGroupState
-- Strain:
-    class_uri: https://openminds.om-i.org/types/Strain
+        pattern: ^[0-9]{4}-[0-9]{3}[0-9X]$
+- ISBN:
+    class_uri: https://openminds.om-i.org/types/ISBN
+    description: An International Standard Book Number of the International ISBN Agency.
+    title: Isbn
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
+        required: true
+        pattern: ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
+- IdentifiersDotOrgID:
+    class_uri: https://openminds.om-i.org/types/IdentifiersDotOrgID
     description: null
-    title: Strain
+    title: Identifiers dot org id
     slots:
     - id
-    - alternateIdentifier
-    - backgroundStrain
-    - breedingType
-    - description
-    - digitalIdentifier
-    - diseaseModel
-    - geneticStrainType
-    - laboratoryCode
-    - name
-    - ontologyIdentifier
-    - phenotype
-    - species
-    - stockNumber
-    - synonym
+    - identifier
     slot_usage:
-      digitalIdentifier:
-        range: RRID
-      diseaseModel:
-        range: Disease
-      geneticStrainType:
+      identifier:
         required: true
-      name:
-        required: true
-      species:
-        required: true
-        range: Species
-- Protocol:
-    class_uri: https://openminds.om-i.org/types/Protocol
-    description: Structured information on a research project.
-    title: Protocol
+        pattern: ^https://identifiers.org/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)|^https://identifiers.org/([a-zA-Z0-9-_.]+)/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)
+- HANDLE:
+    class_uri: https://openminds.om-i.org/types/HANDLE
+    description: A persistent identifier for an information resource provided by the
+      Handle System of the Corporation for National Research Initiatives.
+    title: Handle
     slots:
     - id
-    - describedIn
-    - description
-    - name
-    - stimulusType
-    - technique
+    - identifier
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
-      description:
+      identifier:
         required: true
-      name:
-        required: true
-      stimulusType:
-        range: AuditoryStimulusType
-      technique:
-        required: true
-        range: AnalysisTechnique
-- Subject:
-    class_uri: https://openminds.om-i.org/types/Subject
-    description: Structured information on a subject.
-    title: Subject
+        pattern: ^http://hdl.handle.net/[.0-9A-Za-z]+/[.0-9A-Za-z]+
+- GRIDID:
+    class_uri: https://openminds.om-i.org/types/GRIDID
+    description: A GRID (Global Research Identifier Database) identifier.
+    title: Gridid
     slots:
     - id
-    - biologicalSex
-    - internalIdentifier
-    - isPartOf
-    - lookupLabel
-    - species
-    - studiedState
+    - identifier
     slot_usage:
-      isPartOf:
-        range: SubjectGroup
-      species:
+      identifier:
         required: true
-      studiedState:
+        pattern: ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
+- RORID:
+    class_uri: https://openminds.om-i.org/types/RORID
+    description: A persistent identifier for a research organization, provided by
+      the Research Organization Registry.
+    title: Rorid
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
         required: true
-        range: SubjectState
-- TissueSampleCollectionState:
-    class_uri: https://openminds.om-i.org/types/TissueSampleCollectionState
+        pattern: ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
+- RRID:
+    class_uri: https://openminds.om-i.org/types/RRID
+    description: A persistent identifier for a research resource provided by the Resource
+      Identification Initiative.
+    title: Rrid
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
+        required: true
+        pattern: https://scicrunch.org/resolver/RRID:([A-Za-z]+)[_:]([A-Za-z0-9_:-]+)
+- ORCID:
+    class_uri: https://openminds.om-i.org/types/ORCID
+    description: A persistent identifier for a researcher provided by Open Researcher
+      and Contributor ID, Inc.
+    title: Orcid
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
+        required: true
+        pattern: ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
+- DOI:
+    class_uri: https://openminds.om-i.org/types/DOI
+    description: Structured information about a digital object identifier, as standardized
+      by the International Organization for Standardization.
+    title: Doi
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
+        required: true
+        pattern: ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
+- StockNumber:
+    class_uri: https://openminds.om-i.org/types/StockNumber
     description: null
-    title: Tissue sample collection state
+    title: Stock number
     slots:
     - id
-    - additionalRemarks
-    - age
-    - attribute
-    - descendedFrom
-    - internalIdentifier
-    - lookupLabel
-    - pathology
-    - relativeTimeIndication
-    - weight
+    - identifier
+    - vendor
     slot_usage:
-      attribute:
-        range: TissueSampleAttribute
-      descendedFrom:
-        range: SubjectGroupState
-      pathology:
-        range: Disease
-- SubjectGroupState:
-    class_uri: https://openminds.om-i.org/types/SubjectGroupState
-    description: null
-    title: Subject group state
+      identifier:
+        required: true
+      vendor:
+        required: true
+- PropertyValueList:
+    class_uri: https://openminds.om-i.org/types/PropertyValueList
+    description: An identifiable list of property-value pairs.
+    title: Property value list
     slots:
     - id
-    - additionalRemarks
-    - age
-    - ageCategory
-    - attribute
-    - descendedFrom
-    - handedness
-    - internalIdentifier
     - lookupLabel
-    - pathology
-    - relativeTimeIndication
-    - weight
+    - propertyValuePair
     slot_usage:
-      ageCategory:
+      propertyValuePair:
         required: true
-      attribute:
-        range: SubjectAttribute
-      descendedFrom:
-        range: SubjectGroupState
-      pathology:
-        range: Disease
-- TissueSample:
-    class_uri: https://openminds.om-i.org/types/TissueSample
-    description: Structured information on a tissue sample.
-    title: Tissue sample
-    slots:
-    - id
-    - anatomicalLocation
-    - biologicalSex
-    - internalIdentifier
-    - isPartOf
-    - laterality
-    - lookupLabel
-    - origin
-    - species
-    - studiedState
-    - type
-    slot_usage:
-      anatomicalLocation:
-        range: CellType
-      isPartOf:
-        range: TissueSampleCollection
-      origin:
-        required: true
-        any_of:
-        - range: CellType
-        - range: Organ
-        - range: OrganismSubstance
-      species:
-        required: true
-      studiedState:
-        required: true
-        range: TissueSampleState
-      type:
-        required: true
-        range: TissueSampleType
+        range: NumericalProperty
 - TissueSampleState:
     class_uri: https://openminds.om-i.org/types/TissueSampleState
     description: Structured information on a temporary state of a tissue sample.
@@ -321,12 +172,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - CustomPropertySet:
     class_uri: https://openminds.om-i.org/types/CustomPropertySet
     description: Structured information about properties of an entity that are not
@@ -355,60 +218,6 @@ classes:
         - range: StimulationApproach
         - range: StimulationTechnique
         - range: Technique
-- Configuration:
-    class_uri: https://openminds.om-i.org/types/Configuration
-    description: Structured information about the properties or parameters of an entity
-      or process.
-    title: Configuration
-    slots:
-    - id
-    - configuration
-    - format
-    - lookupLabel
-    slot_usage:
-      configuration:
-        required: true
-        range: string
-      format:
-        required: true
-- SubjectState:
-    class_uri: https://openminds.om-i.org/types/SubjectState
-    description: Structured information on a temporary state of a subject.
-    title: Subject state
-    slots:
-    - id
-    - additionalRemarks
-    - age
-    - ageCategory
-    - attribute
-    - descendedFrom
-    - handedness
-    - internalIdentifier
-    - lookupLabel
-    - pathology
-    - relativeTimeIndication
-    - weight
-    slot_usage:
-      ageCategory:
-        required: true
-      attribute:
-        range: SubjectAttribute
-      descendedFrom:
-        range: SubjectState
-      pathology:
-        range: Disease
-- PropertyValueList:
-    class_uri: https://openminds.om-i.org/types/PropertyValueList
-    description: An identifiable list of property-value pairs.
-    title: Property value list
-    slots:
-    - id
-    - lookupLabel
-    - propertyValuePair
-    slot_usage:
-      propertyValuePair:
-        required: true
-        range: NumericalProperty
 - BehavioralProtocol:
     class_uri: https://openminds.om-i.org/types/BehavioralProtocol
     description: Structured information about a protocol used in an experiment studying
@@ -433,6 +242,92 @@ classes:
         range: StimulationApproach
       stimulusType:
         range: AuditoryStimulusType
+- Configuration:
+    class_uri: https://openminds.om-i.org/types/Configuration
+    description: Structured information about the properties or parameters of an entity
+      or process.
+    title: Configuration
+    slots:
+    - id
+    - configuration
+    - format
+    - lookupLabel
+    slot_usage:
+      configuration:
+        required: true
+        range: string
+      format:
+        required: true
+- TissueSampleCollection:
+    class_uri: https://openminds.om-i.org/types/TissueSampleCollection
+    description: null
+    title: Tissue sample collection
+    slots:
+    - id
+    - additionalRemarks
+    - anatomicalLocation
+    - biologicalSex
+    - internalIdentifier
+    - laterality
+    - lookupLabel
+    - numberOfTissueSamples
+    - origin
+    - species
+    - studiedState
+    - type
+    slot_usage:
+      anatomicalLocation:
+        range: CellType
+      origin:
+        required: true
+        range: CellType
+      species:
+        required: true
+        range: Species
+      studiedState:
+        required: true
+        range: TissueSampleCollectionState
+      type:
+        required: true
+        range: TissueSampleType
+- SubjectState:
+    class_uri: https://openminds.om-i.org/types/SubjectState
+    description: Structured information on a temporary state of a subject.
+    title: Subject state
+    slots:
+    - id
+    - additionalRemarks
+    - age
+    - ageCategory
+    - attribute
+    - descendedFrom
+    - handedness
+    - internalIdentifier
+    - lookupLabel
+    - pathology
+    - relativeTimeIndication
+    - weight
+    slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      ageCategory:
+        required: true
+      attribute:
+        range: SubjectAttribute
+      descendedFrom:
+        range: SubjectState
+      pathology:
+        range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - StringProperty:
     class_uri: https://openminds.om-i.org/types/StringProperty
     description: null
@@ -462,6 +357,78 @@ classes:
       value:
         required: true
         range: QuantitativeValue
+- SubjectGroupState:
+    class_uri: https://openminds.om-i.org/types/SubjectGroupState
+    description: null
+    title: Subject group state
+    slots:
+    - id
+    - additionalRemarks
+    - age
+    - ageCategory
+    - attribute
+    - descendedFrom
+    - handedness
+    - internalIdentifier
+    - lookupLabel
+    - pathology
+    - relativeTimeIndication
+    - weight
+    slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      ageCategory:
+        required: true
+      attribute:
+        range: SubjectAttribute
+      descendedFrom:
+        range: SubjectGroupState
+      pathology:
+        range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- TissueSampleCollectionState:
+    class_uri: https://openminds.om-i.org/types/TissueSampleCollectionState
+    description: null
+    title: Tissue sample collection state
+    slots:
+    - id
+    - additionalRemarks
+    - age
+    - attribute
+    - descendedFrom
+    - internalIdentifier
+    - lookupLabel
+    - pathology
+    - relativeTimeIndication
+    - weight
+    slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      attribute:
+        range: TissueSampleAttribute
+      descendedFrom:
+        range: SubjectGroupState
+      pathology:
+        range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ProtocolExecution:
     class_uri: https://openminds.om-i.org/types/ProtocolExecution
     description: Structured information on a protocol execution.
@@ -505,19 +472,73 @@ classes:
         - range: time
       studyTarget:
         range: AuditoryStimulusType
-- TissueSampleCollection:
-    class_uri: https://openminds.om-i.org/types/TissueSampleCollection
-    description: null
-    title: Tissue sample collection
+- Subject:
+    class_uri: https://openminds.om-i.org/types/Subject
+    description: Structured information on a subject.
+    title: Subject
     slots:
     - id
-    - additionalRemarks
+    - biologicalSex
+    - internalIdentifier
+    - isPartOf
+    - lookupLabel
+    - species
+    - studiedState
+    slot_usage:
+      isPartOf:
+        range: SubjectGroup
+      species:
+        required: true
+        any_of:
+        - range: Species
+        - range: Strain
+      studiedState:
+        required: true
+        range: SubjectState
+- Strain:
+    class_uri: https://openminds.om-i.org/types/Strain
+    description: null
+    title: Strain
+    slots:
+    - id
+    - alternateIdentifier
+    - backgroundStrain
+    - breedingType
+    - description
+    - digitalIdentifier
+    - diseaseModel
+    - geneticStrainType
+    - laboratoryCode
+    - name
+    - ontologyIdentifier
+    - phenotype
+    - species
+    - stockNumber
+    - synonym
+    slot_usage:
+      digitalIdentifier:
+        range: RRID
+      diseaseModel:
+        range: Disease
+      geneticStrainType:
+        required: true
+      name:
+        required: true
+      species:
+        required: true
+        range: Species
+- TissueSample:
+    class_uri: https://openminds.om-i.org/types/TissueSample
+    description: Structured information on a tissue sample.
+    title: Tissue sample
+    slots:
+    - id
     - anatomicalLocation
     - biologicalSex
     - internalIdentifier
+    - isPartOf
     - laterality
     - lookupLabel
-    - numberOfTissueSamples
     - origin
     - species
     - studiedState
@@ -525,147 +546,200 @@ classes:
     slot_usage:
       anatomicalLocation:
         range: CellType
+      isPartOf:
+        range: TissueSampleCollection
       origin:
         required: true
-        range: CellType
+      species:
+        required: true
+        any_of:
+        - range: Species
+        - range: Strain
+      studiedState:
+        required: true
+        range: TissueSampleState
+      type:
+        required: true
+        range: TissueSampleType
+- Protocol:
+    class_uri: https://openminds.om-i.org/types/Protocol
+    description: Structured information on a research project.
+    title: Protocol
+    slots:
+    - id
+    - describedIn
+    - description
+    - name
+    - stimulusType
+    - technique
+    slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
+      description:
+        required: true
+      name:
+        required: true
+      stimulusType:
+        range: AuditoryStimulusType
+      technique:
+        required: true
+        range: AnalysisTechnique
+- SubjectGroup:
+    class_uri: https://openminds.om-i.org/types/SubjectGroup
+    description: null
+    title: Subject group
+    slots:
+    - id
+    - additionalRemarks
+    - biologicalSex
+    - internalIdentifier
+    - lookupLabel
+    - numberOfSubjects
+    - species
+    - studiedState
+    slot_usage:
       species:
         required: true
         range: Species
       studiedState:
         required: true
-        range: TissueSampleCollectionState
-      type:
-        required: true
-        range: TissueSampleType
-- QuantitativeValueArray:
-    class_uri: https://openminds.om-i.org/types/QuantitativeValueArray
-    description: A representation of an array of quantitative values, optionally with
-      uncertainties.
-    title: Quantitative value array
+        range: SubjectGroupState
+- Person:
+    class_uri: https://openminds.om-i.org/types/Person
+    description: Structured information on a person.
+    title: Person
     slots:
     - id
-    - negativeUncertainties
-    - positiveUncertainties
-    - typeOfUncertainty
-    - unit
-    - values
+    - affiliation
+    - alternateName
+    - associatedAccount
+    - contactInformation
+    - digitalIdentifier
+    - familyName
+    - givenName
     slot_usage:
-      values:
+      digitalIdentifier:
+        range: ORCID
+      givenName:
         required: true
-- Funding:
-    class_uri: https://openminds.om-i.org/types/Funding
-    description: Structured information on used funding.
-    title: Funding
+- AccountInformation:
+    class_uri: https://openminds.om-i.org/types/AccountInformation
+    description: Structured information about a user account for a web service.
+    title: Account information
     slots:
     - id
-    - acknowledgement
-    - awardNumber
-    - awardTitle
-    - funder
+    - service
+    - userName
     slot_usage:
-      funder:
+      service:
+        required: true
+        range: WebService
+      userName:
+        required: true
+- Organization:
+    class_uri: https://openminds.om-i.org/types/Organization
+    description: An entity comprised of one or more natural persons with a particular
+      purpose. [adapted from Wikipedia](https://en.wikipedia.org/wiki/Organization)
+    title: Organization
+    slots:
+    - id
+    - affiliation
+    - digitalIdentifier
+    - fullName
+    - hasParent
+    - homepage
+    - shortName
+    slot_usage:
+      digitalIdentifier:
+        range: GRIDID
+      fullName:
+        required: true
+      hasParent:
+        range: Organization
+- Consortium:
+    class_uri: https://openminds.om-i.org/types/Consortium
+    description: Structured information about an association of two or more persons
+      or organizations, with the objective of participating in a common activity.
+    title: Consortium
+    slots:
+    - id
+    - contactInformation
+    - fullName
+    - homepage
+    - shortName
+    slot_usage:
+      fullName:
+        required: true
+- ContactInformation:
+    class_uri: https://openminds.om-i.org/types/ContactInformation
+    description: Structured information about how to contact a given person or consortium.
+    title: Contact information
+    slots:
+    - id
+    - email
+    slot_usage:
+      email:
+        required: true
+- Contribution:
+    class_uri: https://openminds.om-i.org/types/Contribution
+    description: Structured information on the contribution made to a research product.
+    title: Contribution
+    slots:
+    - id
+    - contributor
+    - type
+    slot_usage:
+      contributor:
         required: true
         any_of:
         - range: Consortium
         - range: Organization
         - range: Person
-- WebResource:
-    class_uri: https://openminds.om-i.org/types/WebResource
-    description: null
-    title: Web resource
-    slots:
-    - id
-    - IRI
-    - contentDescription
-    - format
-    slot_usage:
-      IRI:
+      type:
         required: true
-- QuantitativeValue:
-    class_uri: https://openminds.om-i.org/types/QuantitativeValue
-    description: Structured information on a quantitative value.
-    title: Quantitative value
+        range: ContributionType
+- Affiliation:
+    class_uri: https://openminds.om-i.org/types/Affiliation
+    description: Structured information about a relationship between two entities,
+      such as a person and their employer.
+    title: Affiliation
     slots:
     - id
-    - typeOfUncertainty
-    - uncertainty
-    - unit
-    - value
+    - endDate
+    - memberOf
+    - startDate
     slot_usage:
-      value:
+      memberOf:
         required: true
         any_of:
-        - range: integer
-        - range: float
-- Comment:
-    class_uri: https://openminds.om-i.org/types/Comment
-    description: Structured information about a short text expressing an opinion on,
-      or giving information about some entity.
-    title: Comment
+        - range: Consortium
+        - range: Organization
+- Project:
+    class_uri: https://openminds.om-i.org/types/Project
+    description: Structured information on a research project.
+    title: Project
     slots:
     - id
-    - about
-    - comment
-    - commenter
-    - timestamp
-    slot_usage:
-      about:
-        required: true
-        any_of:
-        - range: ValidationTest
-        - range: ValidationTestVersion
-        - range: WorkflowRecipe
-        - range: WorkflowRecipeVersion
-        - range: Dataset
-        - range: DatasetVersion
-        - range: MetaDataModel
-        - range: MetaDataModelVersion
-        - range: Model
-        - range: ModelVersion
-        - range: Software
-        - range: SoftwareVersion
-        - range: WebService
-        - range: WebServiceVersion
-        - range: LivePaper
-        - range: LivePaperVersion
-        - range: BrainAtlas
-        - range: BrainAtlasVersion
-        - range: CommonCoordinateSpace
-        - range: CommonCoordinateSpaceVersion
-      comment:
-        required: true
-      commenter:
-        required: true
-      timestamp:
-        required: true
-- ResearchProductGroup:
-    class_uri: https://openminds.om-i.org/types/ResearchProductGroup
-    description: null
-    title: Research product group
-    slots:
-    - id
-    - context
+    - coordinator
+    - description
+    - fullName
     - hasPart
+    - homepage
+    - shortName
     slot_usage:
-      context:
+      coordinator:
+        range: Consortium
+      description:
+        required: true
+      fullName:
         required: true
       hasPart:
         required: true
         range: ValidationTest
-- QuantitativeValueRange:
-    class_uri: https://openminds.om-i.org/types/QuantitativeValueRange
-    description: A representation of a range of quantitative values.
-    title: Quantitative value range
-    slots:
-    - id
-    - maxValue
-    - maxValueUnit
-    - minValue
-    - minValueUnit
-    slot_usage:
-      maxValue:
-        required: true
-      minValue:
+      shortName:
         required: true
 - Dataset:
     class_uri: https://openminds.om-i.org/types/Dataset
@@ -700,6 +774,65 @@ classes:
       hasVersion:
         required: true
         range: DatasetVersion
+      shortName:
+        required: true
+- Setup:
+    class_uri: https://openminds.om-i.org/types/Setup
+    description: null
+    title: Setup
+    slots:
+    - id
+    - description
+    - hasPart
+    - location
+    - manufacturer
+    - name
+    - type
+    slot_usage:
+      description:
+        required: true
+      hasPart:
+        required: true
+        range: Setup
+      manufacturer:
+        range: Consortium
+      name:
+        required: true
+      type:
+        range: SetupType
+- Software:
+    class_uri: https://openminds.om-i.org/types/Software
+    description: Structured information on a software tool (concept level).
+    title: Software
+    slots:
+    - id
+    - custodian
+    - description
+    - developer
+    - digitalIdentifier
+    - fullName
+    - hasVersion
+    - homepage
+    - howToCite
+    - shortName
+    slot_usage:
+      custodian:
+        range: Consortium
+      description:
+        required: true
+      developer:
+        required: true
+        range: Consortium
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: RRID
+        - range: SWHID
+      fullName:
+        required: true
+      hasVersion:
+        required: true
+        range: SoftwareVersion
       shortName:
         required: true
 - ModelVersion:
@@ -781,75 +914,15 @@ classes:
         required: true
       versionInnovation:
         required: true
-- Project:
-    class_uri: https://openminds.om-i.org/types/Project
-    description: Structured information on a research project.
-    title: Project
-    slots:
-    - id
-    - coordinator
-    - description
-    - fullName
-    - hasPart
-    - homepage
-    - shortName
-    slot_usage:
-      coordinator:
-        range: Consortium
-      description:
-        required: true
-      fullName:
-        required: true
-      hasPart:
-        required: true
-        range: ValidationTest
-      shortName:
-        required: true
-- Software:
-    class_uri: https://openminds.om-i.org/types/Software
-    description: Structured information on a software tool (concept level).
-    title: Software
-    slots:
-    - id
-    - custodian
-    - description
-    - developer
-    - digitalIdentifier
-    - fullName
-    - hasVersion
-    - homepage
-    - howToCite
-    - shortName
-    slot_usage:
-      custodian:
-        range: Consortium
-      description:
-        required: true
-      developer:
-        required: true
-        range: Consortium
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: RRID
-        - range: SWHID
-      fullName:
-        required: true
-      hasVersion:
-        required: true
-        range: SoftwareVersion
-      shortName:
-        required: true
-- MetaDataModel:
-    class_uri: https://openminds.om-i.org/types/MetaDataModel
+- WebService:
+    class_uri: https://openminds.om-i.org/types/WebService
     description: null
-    title: Meta data model
+    title: Web service
     slots:
     - id
     - custodian
     - description
     - developer
-    - digitalIdentifier
     - fullName
     - hasVersion
     - homepage
@@ -863,15 +936,11 @@ classes:
       developer:
         required: true
         range: Consortium
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: SWHID
       fullName:
         required: true
       hasVersion:
         required: true
-        range: MetaDataModelVersion
+        range: WebServiceVersion
       shortName:
         required: true
 - DatasetVersion:
@@ -974,21 +1043,27 @@ classes:
         required: true
       versionInnovation:
         required: true
-- WebService:
-    class_uri: https://openminds.om-i.org/types/WebService
-    description: null
-    title: Web service
+- Model:
+    class_uri: https://openminds.om-i.org/types/Model
+    description: Structured information on a computational model (concept level).
+    title: Model
     slots:
     - id
+    - abstractionLevel
     - custodian
     - description
     - developer
+    - digitalIdentifier
     - fullName
     - hasVersion
     - homepage
     - howToCite
+    - scope
     - shortName
+    - studyTarget
     slot_usage:
+      abstractionLevel:
+        required: true
       custodian:
         range: Consortium
       description:
@@ -996,13 +1071,22 @@ classes:
       developer:
         required: true
         range: Consortium
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: SWHID
       fullName:
         required: true
       hasVersion:
         required: true
-        range: WebServiceVersion
+        range: ModelVersion
+      scope:
+        required: true
       shortName:
         required: true
+      studyTarget:
+        required: true
+        range: AuditoryStimulusType
 - WebServiceVersion:
     class_uri: https://openminds.om-i.org/types/WebServiceVersion
     description: null
@@ -1065,6 +1149,82 @@ classes:
         range: string
         any_of:
         - range: uri
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- MetaDataModelVersion:
+    class_uri: https://openminds.om-i.org/types/MetaDataModelVersion
+    description: null
+    title: Meta data model version
+    slots:
+    - id
+    - accessibility
+    - copyright
+    - custodian
+    - description
+    - developer
+    - digitalIdentifier
+    - fullDocumentation
+    - fullName
+    - funding
+    - homepage
+    - howToCite
+    - isAlternativeVersionOf
+    - isNewVersionOf
+    - keyword
+    - license
+    - otherContribution
+    - relatedPublication
+    - releaseDate
+    - repository
+    - serializationFormat
+    - shortName
+    - specificationFormat
+    - supportChannel
+    - type
+    - versionIdentifier
+    - versionInnovation
+    slot_usage:
+      accessibility:
+        required: true
+      custodian:
+        range: Consortium
+      developer:
+        range: Consortium
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: SWHID
+      fullDocumentation:
+        required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
+      isAlternativeVersionOf:
+        range: MetaDataModelVersion
+      isNewVersionOf:
+        range: MetaDataModelVersion
+      keyword:
+        range: ActionStatusType
+      license:
+        required: true
+        range: License
+      relatedPublication:
+        range: DOI
+      releaseDate:
+        required: true
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
+      type:
+        required: true
+        range: MetaDataModelType
       versionIdentifier:
         required: true
       versionInnovation:
@@ -1165,13 +1325,12 @@ classes:
         required: true
       versionInnovation:
         required: true
-- Model:
-    class_uri: https://openminds.om-i.org/types/Model
-    description: Structured information on a computational model (concept level).
-    title: Model
+- MetaDataModel:
+    class_uri: https://openminds.om-i.org/types/MetaDataModel
+    description: null
+    title: Meta data model
     slots:
     - id
-    - abstractionLevel
     - custodian
     - description
     - developer
@@ -1180,12 +1339,8 @@ classes:
     - hasVersion
     - homepage
     - howToCite
-    - scope
     - shortName
-    - studyTarget
     slot_usage:
-      abstractionLevel:
-        required: true
       custodian:
         range: Consortium
       description:
@@ -1201,114 +1356,139 @@ classes:
         required: true
       hasVersion:
         required: true
-        range: ModelVersion
-      scope:
-        required: true
+        range: MetaDataModelVersion
       shortName:
         required: true
-      studyTarget:
-        required: true
-        range: AuditoryStimulusType
-- MetaDataModelVersion:
-    class_uri: https://openminds.om-i.org/types/MetaDataModelVersion
-    description: null
-    title: Meta data model version
+- QuantitativeValueArray:
+    class_uri: https://openminds.om-i.org/types/QuantitativeValueArray
+    description: A representation of an array of quantitative values, optionally with
+      uncertainties.
+    title: Quantitative value array
     slots:
     - id
-    - accessibility
-    - copyright
-    - custodian
-    - description
-    - developer
-    - digitalIdentifier
-    - fullDocumentation
-    - fullName
-    - funding
-    - homepage
-    - howToCite
-    - isAlternativeVersionOf
-    - isNewVersionOf
-    - keyword
-    - license
-    - otherContribution
-    - relatedPublication
-    - releaseDate
-    - repository
-    - serializationFormat
-    - shortName
-    - specificationFormat
-    - supportChannel
-    - type
-    - versionIdentifier
-    - versionInnovation
+    - negativeUncertainties
+    - positiveUncertainties
+    - typeOfUncertainty
+    - unit
+    - values
     slot_usage:
-      accessibility:
+      values:
         required: true
-      custodian:
-        range: Consortium
-      developer:
-        range: Consortium
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: SWHID
-      fullDocumentation:
-        required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
-      isAlternativeVersionOf:
-        range: MetaDataModelVersion
-      isNewVersionOf:
-        range: MetaDataModelVersion
-      keyword:
-        range: ActionStatusType
-      license:
-        required: true
-        range: License
-      relatedPublication:
-        range: DOI
-      releaseDate:
-        required: true
-      shortName:
-        required: true
-      supportChannel:
-        range: string
-        any_of:
-        - range: uri
-      type:
-        required: true
-        range: MetaDataModelType
-      versionIdentifier:
-        required: true
-      versionInnovation:
-        required: true
-- Setup:
-    class_uri: https://openminds.om-i.org/types/Setup
-    description: null
-    title: Setup
+- QuantitativeValue:
+    class_uri: https://openminds.om-i.org/types/QuantitativeValue
+    description: Structured information on a quantitative value.
+    title: Quantitative value
     slots:
     - id
-    - description
+    - typeOfUncertainty
+    - uncertainty
+    - unit
+    - value
+    slot_usage:
+      value:
+        required: true
+        any_of:
+        - range: integer
+        - range: float
+- Funding:
+    class_uri: https://openminds.om-i.org/types/Funding
+    description: Structured information on used funding.
+    title: Funding
+    slots:
+    - id
+    - acknowledgement
+    - awardNumber
+    - awardTitle
+    - funder
+    slot_usage:
+      funder:
+        required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
+- QuantitativeValueRange:
+    class_uri: https://openminds.om-i.org/types/QuantitativeValueRange
+    description: A representation of a range of quantitative values.
+    title: Quantitative value range
+    slots:
+    - id
+    - maxValue
+    - maxValueUnit
+    - minValue
+    - minValueUnit
+    slot_usage:
+      maxValue:
+        required: true
+      minValue:
+        required: true
+- ResearchProductGroup:
+    class_uri: https://openminds.om-i.org/types/ResearchProductGroup
+    description: null
+    title: Research product group
+    slots:
+    - id
+    - context
     - hasPart
-    - location
-    - manufacturer
-    - name
-    - type
     slot_usage:
-      description:
+      context:
         required: true
       hasPart:
         required: true
-        range: Setup
-      manufacturer:
-        range: Consortium
-      name:
+        range: ValidationTest
+- WebResource:
+    class_uri: https://openminds.om-i.org/types/WebResource
+    description: null
+    title: Web resource
+    slots:
+    - id
+    - IRI
+    - contentDescription
+    - format
+    slot_usage:
+      IRI:
         required: true
-      type:
-        range: SetupType
+- Comment:
+    class_uri: https://openminds.om-i.org/types/Comment
+    description: Structured information about a short text expressing an opinion on,
+      or giving information about some entity.
+    title: Comment
+    slots:
+    - id
+    - about
+    - comment
+    - commenter
+    - timestamp
+    slot_usage:
+      about:
+        required: true
+        any_of:
+        - range: ValidationTest
+        - range: ValidationTestVersion
+        - range: WorkflowRecipe
+        - range: WorkflowRecipeVersion
+        - range: Dataset
+        - range: DatasetVersion
+        - range: MetaDataModel
+        - range: MetaDataModelVersion
+        - range: Model
+        - range: ModelVersion
+        - range: Software
+        - range: SoftwareVersion
+        - range: WebService
+        - range: WebServiceVersion
+        - range: LivePaper
+        - range: LivePaperVersion
+        - range: BrainAtlas
+        - range: BrainAtlasVersion
+        - range: CommonCoordinateSpace
+        - range: CommonCoordinateSpaceVersion
+      comment:
+        required: true
+      commenter:
+        required: true
+      timestamp:
+        required: true
 - Measurement:
     class_uri: https://openminds.om-i.org/types/Measurement
     description: Structured information about a measurement performed during a scientific
@@ -1333,54 +1513,32 @@ classes:
       value:
         required: true
         range: QuantitativeValue
-- FileBundle:
-    class_uri: https://openminds.om-i.org/types/FileBundle
-    description: Structured information on a bundle of file instances.
-    title: File bundle
+- ServiceLink:
+    class_uri: https://openminds.om-i.org/types/ServiceLink
+    description: null
+    title: Service link
     slots:
     - id
-    - contentDescription
-    - format
-    - groupedBy
-    - groupingType
-    - hash
-    - isPartOf
-    - name
-    - storageSize
+    - dataLocation
+    - displayLabel
+    - openDataIn
+    - previewImage
+    - service
     slot_usage:
-      groupedBy:
-        range: LocalFile
-      isPartOf:
+      dataLocation:
         required: true
         any_of:
+        - range: File
+        - range: FileArchive
         - range: FileBundle
-        - range: FileRepository
-      name:
+        - range: ModelVersion
+        - range: LivePaperResourceItem
+        - range: ParcellationEntityVersion
+      openDataIn:
         required: true
-- FilePathPattern:
-    class_uri: https://openminds.om-i.org/types/FilePathPattern
-    description: null
-    title: File path pattern
-    slots:
-    - id
-    - groupingType
-    - regex
-    slot_usage:
-      groupingType:
+      service:
         required: true
-      regex:
-        required: true
-- FileRepositoryStructure:
-    class_uri: https://openminds.om-i.org/types/FileRepositoryStructure
-    description: null
-    title: File repository structure
-    slots:
-    - id
-    - filePathPattern
-    - lookupLabel
-    slot_usage:
-      filePathPattern:
-        required: true
+        range: Service
 - FileRepository:
     class_uri: https://openminds.om-i.org/types/FileRepository
     description: Structured information on a file repository.
@@ -1405,6 +1563,17 @@ classes:
         required: true
       type:
         range: FileRepositoryType
+- FileRepositoryStructure:
+    class_uri: https://openminds.om-i.org/types/FileRepositoryStructure
+    description: null
+    title: File repository structure
+    slots:
+    - id
+    - filePathPattern
+    - lookupLabel
+    slot_usage:
+      filePathPattern:
+        required: true
 - File:
     class_uri: https://openminds.om-i.org/types/File
     description: Structured information on a file instance that is accessible via
@@ -1444,6 +1613,19 @@ classes:
         required: true
       digest:
         required: true
+- FilePathPattern:
+    class_uri: https://openminds.om-i.org/types/FilePathPattern
+    description: null
+    title: File path pattern
+    slots:
+    - id
+    - groupingType
+    - regex
+    slot_usage:
+      groupingType:
+        required: true
+      regex:
+        required: true
 - Copyright:
     class_uri: https://openminds.om-i.org/types/Copyright
     description: Structured information on the copyright.
@@ -1458,32 +1640,30 @@ classes:
         range: Consortium
       year:
         required: true
-- ServiceLink:
-    class_uri: https://openminds.om-i.org/types/ServiceLink
-    description: null
-    title: Service link
+- FileBundle:
+    class_uri: https://openminds.om-i.org/types/FileBundle
+    description: Structured information on a bundle of file instances.
+    title: File bundle
     slots:
     - id
-    - dataLocation
-    - displayLabel
-    - openDataIn
-    - previewImage
-    - service
+    - contentDescription
+    - format
+    - groupedBy
+    - groupingType
+    - hash
+    - isPartOf
+    - name
+    - storageSize
     slot_usage:
-      dataLocation:
+      groupedBy:
+        range: LocalFile
+      isPartOf:
         required: true
         any_of:
-        - range: File
-        - range: FileArchive
         - range: FileBundle
-        - range: ModelVersion
-        - range: LivePaperResourceItem
-        - range: ParcellationEntityVersion
-      openDataIn:
+        - range: FileRepository
+      name:
         required: true
-      service:
-        required: true
-        range: Service
 - FileArchive:
     class_uri: https://openminds.om-i.org/types/FileArchive
     description: null
@@ -1498,133 +1678,3 @@ classes:
         required: true
       format:
         required: true
-- RRID:
-    class_uri: https://openminds.om-i.org/types/RRID
-    description: A persistent identifier for a research resource provided by the Resource
-      Identification Initiative.
-    title: Rrid
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        required: true
-        pattern: https://scicrunch.org/resolver/RRID:([A-Za-z]+)[_:]([A-Za-z0-9_:-]+)
-- GRIDID:
-    class_uri: https://openminds.om-i.org/types/GRIDID
-    description: A GRID (Global Research Identifier Database) identifier.
-    title: Gridid
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        required: true
-        pattern: ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
-- ISSN:
-    class_uri: https://openminds.om-i.org/types/ISSN
-    description: An International Standard Serial Number of the ISSN International
-      Centre.
-    title: Issn
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        required: true
-        pattern: ^[0-9]{4}-[0-9]{3}[0-9X]$
-- HANDLE:
-    class_uri: https://openminds.om-i.org/types/HANDLE
-    description: A persistent identifier for an information resource provided by the
-      Handle System of the Corporation for National Research Initiatives.
-    title: Handle
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        required: true
-        pattern: ^http://hdl.handle.net/[.0-9A-Za-z]+/[.0-9A-Za-z]+
-- DOI:
-    class_uri: https://openminds.om-i.org/types/DOI
-    description: Structured information about a digital object identifier, as standardized
-      by the International Organization for Standardization.
-    title: Doi
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        required: true
-        pattern: ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
-- RORID:
-    class_uri: https://openminds.om-i.org/types/RORID
-    description: A persistent identifier for a research organization, provided by
-      the Research Organization Registry.
-    title: Rorid
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        required: true
-        pattern: ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
-- IdentifiersDotOrgID:
-    class_uri: https://openminds.om-i.org/types/IdentifiersDotOrgID
-    description: null
-    title: Identifiers dot org id
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        required: true
-        pattern: ^https://identifiers.org/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)|^https://identifiers.org/([a-zA-Z0-9-_.]+)/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)
-- SWHID:
-    class_uri: https://openminds.om-i.org/types/SWHID
-    description: null
-    title: Swhid
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        required: true
-        pattern: "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
-          \ \t\r\n\f]+)*$"
-- StockNumber:
-    class_uri: https://openminds.om-i.org/types/StockNumber
-    description: null
-    title: Stock number
-    slots:
-    - id
-    - identifier
-    - vendor
-    slot_usage:
-      identifier:
-        required: true
-      vendor:
-        required: true
-- ORCID:
-    class_uri: https://openminds.om-i.org/types/ORCID
-    description: A persistent identifier for a researcher provided by Open Researcher
-      and Contributor ID, Inc.
-    title: Orcid
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        required: true
-        pattern: ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
-- ISBN:
-    class_uri: https://openminds.om-i.org/types/ISBN
-    description: An International Standard Book Number of the International ISBN Agency.
-    title: Isbn
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        required: true
-        pattern: ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$

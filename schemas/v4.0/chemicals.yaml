@@ -14,29 +14,6 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- ProductSource:
-    class_uri: https://openminds.om-i.org/types/ProductSource
-    description: Structured information about the source of a chemical substance or
-      mixture.
-    title: Product source
-    slots:
-    - id
-    - digitalIdentifier
-    - identifier
-    - productName
-    - provider
-    - purity
-    slot_usage:
-      digitalIdentifier:
-        range: RRID
-      productName:
-        required: true
-      provider:
-        required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - ChemicalMixture:
     class_uri: https://openminds.om-i.org/types/ChemicalMixture
     description: Structured information about a mixture of chemical substances.
@@ -85,3 +62,34 @@ classes:
     slot_usage:
       molecularEntity:
         required: true
+      purity:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- ProductSource:
+    class_uri: https://openminds.om-i.org/types/ProductSource
+    description: Structured information about the source of a chemical substance or
+      mixture.
+    title: Product source
+    slots:
+    - id
+    - digitalIdentifier
+    - identifier
+    - productName
+    - provider
+    - purity
+    slot_usage:
+      digitalIdentifier:
+        range: RRID
+      productName:
+        required: true
+      provider:
+        required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
+      purity:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange

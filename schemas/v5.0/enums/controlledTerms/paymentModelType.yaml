@@ -13,43 +13,43 @@ enums:
     enum_uri: https://openminds.om-i.org/types/PaymentModelType
     title: Payment model type
     permissible_values:
-      transaction-based payment model:
-        description: Payment is based on counted event units (e.g., processing operations,
-          message deliveries, document generations).
-      performance-based payment model:
-        description: Payment is triggered by achievement of defined outcome units
-          (e.g., qualified leads, completed projects, conversions, performance targets).
-      fixed-recurring payment model:
-        description: Time-recurring payment grants shared access, independent of billable
+      single-payment model:
+        description: Payment is made once for access, independent of any billable
           units (entitlement, consumption, event, monetary value, outcome, or capacity
           units).
       zero-cost payment model:
         description: No payment is required for any billable units (entitlement, consumption,
           event, monetary value, outcome, or capacity units).
-      take-rate payment model:
-        description: Payment is calculated as a fixed percentage of the monetary value
-          of each user transaction, so the user pays more when transaction amounts
-          increase and less when they decrease.
+      performance-based payment model:
+        description: Payment is triggered by achievement of defined outcome units
+          (e.g., qualified leads, completed projects, conversions, performance targets).
       step-pricing payment model:
         description: Payment is determined by predefined thresholds of billable units
           (entitlement, consumption, event, monetary value, outcome, or capacity units).
-      revenue-split payment model:
-        description: Payment is determined by dividing aggregated monetary value among
-          participating parties according to predefined shares.
-      single-payment model:
-        description: Payment is made once for access, independent of any billable
-          units (entitlement, consumption, event, monetary value, outcome, or capacity
-          units).
-      unit-based payment model:
-        description: Payment is based on allocated entitlement units (e.g., users,
-          licenses, devices, seats).
-      retainer payment model:
-        description: Time-recurring payment reserves dedicated capacity units (e.g.,
-          staff hours, server instances, support slots).
-      consumption-based payment model:
-        description: Payment is based on measured consumption units (e.g., data volume,
-          compute time, storage space, network bandwidth).
       allowance-overage payment model:
         description: Payment includes an allowance of billable units (entitlement,
           consumption, event, monetary value, outcome, or capacity units), with charges
           for excess units.
+      revenue-split payment model:
+        description: Payment is determined by dividing aggregated monetary value among
+          participating parties according to predefined shares.
+      unit-based payment model:
+        description: Payment is based on allocated entitlement units (e.g., users,
+          licenses, devices, seats).
+      fixed-recurring payment model:
+        description: Time-recurring payment grants shared access, independent of billable
+          units (entitlement, consumption, event, monetary value, outcome, or capacity
+          units).
+      consumption-based payment model:
+        description: Payment is based on measured consumption units (e.g., data volume,
+          compute time, storage space, network bandwidth).
+      retainer payment model:
+        description: Time-recurring payment reserves dedicated capacity units (e.g.,
+          staff hours, server instances, support slots).
+      transaction-based payment model:
+        description: Payment is based on counted event units (e.g., processing operations,
+          message deliveries, document generations).
+      take-rate payment model:
+        description: Payment is calculated as a fixed percentage of the monetary value
+          of each user transaction, so the user pays more when transaction amounts
+          increase and less when they decrease.

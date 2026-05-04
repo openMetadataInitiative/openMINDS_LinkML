@@ -13,20 +13,20 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/DifferenceMeasure
     title: Difference measure
     permissible_values:
-      Kullback-Leibler divergence:
-        description: A measure of how one probability distribution is different from
-          a second, reference probability distribution.
       z-score:
         description: The number of standard deviations by which an observed value
           is above or below the mean value.
-      mean squared error:
-        description: The mean squared difference between two series of values.
+      Kullback-Leibler divergence:
+        description: A measure of how one probability distribution is different from
+          a second, reference probability distribution.
+      t-statistic:
+        description: The ratio of the departure of the estimated value of a parameter
+          from its hypothesized value to its standard error.
       chi-squared statistic:
         description: Test statistic resulting from a chi-squared test.
+      mean squared error:
+        description: The mean squared difference between two series of values.
       Kolmogorov-Smirnov statistic:
         description: Quantification of a distance between the empirical distribution
           function of the sample and the cumulative distribution function of the reference
           distribution, or between the empirical distribution functions of two samples.
-      t-statistic:
-        description: The ratio of the departure of the estimated value of a parameter
-          from its hypothesized value to its standard error.

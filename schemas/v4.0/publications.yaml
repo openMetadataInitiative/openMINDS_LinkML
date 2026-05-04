@@ -14,46 +14,63 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- LivePaper:
-    class_uri: https://openminds.om-i.org/types/LivePaper
+- PublicationVolume:
+    class_uri: https://openminds.om-i.org/types/PublicationVolume
     description: null
-    title: Live paper
+    title: Publication volume
     slots:
     - id
-    - author
-    - custodian
-    - description
-    - digitalIdentifier
-    - fullName
-    - hasVersion
-    - homepage
-    - howToCite
-    - shortName
+    - isPartOf
+    - volumeNumber
     slot_usage:
-      author:
+      isPartOf:
         required: true
-        range: Consortium
-      custodian:
-        range: Consortium
-      description:
+        range: Periodical
+      volumeNumber:
         required: true
-      digitalIdentifier:
-        range: DOI
-      fullName:
-        required: true
-      hasVersion:
+- LivePaperSection:
+    class_uri: https://openminds.om-i.org/types/LivePaperSection
+    description: null
+    title: Live paper section
+    slots:
+    - id
+    - description
+    - isPartOf
+    - name
+    - order
+    - type
+    slot_usage:
+      isPartOf:
         required: true
         range: LivePaperVersion
-      shortName:
+      name:
         required: true
-- LearningResource:
-    class_uri: https://openminds.om-i.org/types/LearningResource
+      order:
+        required: true
+      type:
+        required: true
+        range: string
+- PublicationIssue:
+    class_uri: https://openminds.om-i.org/types/PublicationIssue
     description: null
-    title: Learning resource
+    title: Publication issue
+    slots:
+    - id
+    - isPartOf
+    - issueNumber
+    slot_usage:
+      isPartOf:
+        required: true
+        range: PublicationVolume
+      issueNumber:
+        required: true
+- ScholarlyArticle:
+    class_uri: https://openminds.om-i.org/types/ScholarlyArticle
+    description: null
+    title: Scholarly article
     slots:
     - id
     - IRI
-    - about
     - abstract
     - author
     - citedPublication
@@ -62,26 +79,19 @@ classes:
     - custodian
     - digitalIdentifier
     - editor
-    - educationalLevel
     - funding
+    - isPartOf
     - keyword
-    - learningOutcome
     - license
     - modificationDate
     - name
-    - order
-    - prerequisite
+    - pagination
     - publicationDate
     - publisher
-    - requiredTime
-    - topic
-    - type
     - versionIdentifier
     slot_usage:
-      about:
-        required: true
-        range: ValidationTest
       author:
+        required: true
         range: Consortium
       citedPublication:
         range: DOI
@@ -89,6 +99,11 @@ classes:
         range: Consortium
       digitalIdentifier:
         range: DOI
+      isPartOf:
+        required: true
+        any_of:
+        - range: PublicationIssue
+        - range: PublicationVolume
       keyword:
         range: ActionStatusType
       license:
@@ -104,21 +119,72 @@ classes:
         - range: Consortium
         - range: Organization
         - range: Person
-      type:
-        range: LearningResourceType
-- PublicationIssue:
-    class_uri: https://openminds.om-i.org/types/PublicationIssue
+- Chapter:
+    class_uri: https://openminds.om-i.org/types/Chapter
     description: null
-    title: Publication issue
+    title: Chapter
     slots:
     - id
+    - IRI
+    - abstract
+    - author
+    - citedPublication
+    - copyright
+    - creationDate
+    - custodian
+    - digitalIdentifier
+    - editor
+    - funding
     - isPartOf
-    - issueNumber
+    - keyword
+    - license
+    - modificationDate
+    - name
+    - pagination
+    - publicationDate
+    - publisher
+    - versionIdentifier
     slot_usage:
+      author:
+        required: true
+        range: Consortium
+      citedPublication:
+        range: DOI
+      custodian:
+        range: Consortium
+      digitalIdentifier:
+        range: DOI
       isPartOf:
         required: true
-        range: PublicationVolume
-      issueNumber:
+        range: Book
+      keyword:
+        range: ActionStatusType
+      license:
+        range: License
+      modificationDate:
+        range: date
+      name:
+        required: true
+      publicationDate:
+        required: true
+      publisher:
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
+- Periodical:
+    class_uri: https://openminds.om-i.org/types/Periodical
+    description: null
+    title: Periodical
+    slots:
+    - id
+    - abbreviation
+    - digitalIdentifier
+    - name
+    slot_usage:
+      digitalIdentifier:
+        range: ISSN
+      name:
         required: true
 - Book:
     class_uri: https://openminds.om-i.org/types/Book
@@ -169,6 +235,58 @@ classes:
         - range: Consortium
         - range: Organization
         - range: Person
+- LivePaper:
+    class_uri: https://openminds.om-i.org/types/LivePaper
+    description: null
+    title: Live paper
+    slots:
+    - id
+    - author
+    - custodian
+    - description
+    - digitalIdentifier
+    - fullName
+    - hasVersion
+    - homepage
+    - howToCite
+    - shortName
+    slot_usage:
+      author:
+        required: true
+        range: Consortium
+      custodian:
+        range: Consortium
+      description:
+        required: true
+      digitalIdentifier:
+        range: DOI
+      fullName:
+        required: true
+      hasVersion:
+        required: true
+        range: LivePaperVersion
+      shortName:
+        required: true
+- LivePaperResourceItem:
+    class_uri: https://openminds.om-i.org/types/LivePaperResourceItem
+    description: null
+    title: Live paper resource item
+    slots:
+    - id
+    - IRI
+    - hostedBy
+    - isPartOf
+    - name
+    slot_usage:
+      IRI:
+        required: true
+      hostedBy:
+        required: true
+      isPartOf:
+        required: true
+        range: LivePaperSection
+      name:
+        required: true
 - LivePaperVersion:
     class_uri: https://openminds.om-i.org/types/LivePaperVersion
     description: null
@@ -244,13 +362,14 @@ classes:
         required: true
       versionInnovation:
         required: true
-- Chapter:
-    class_uri: https://openminds.om-i.org/types/Chapter
+- LearningResource:
+    class_uri: https://openminds.om-i.org/types/LearningResource
     description: null
-    title: Chapter
+    title: Learning resource
     slots:
     - id
     - IRI
+    - about
     - abstract
     - author
     - citedPublication
@@ -259,142 +378,26 @@ classes:
     - custodian
     - digitalIdentifier
     - editor
+    - educationalLevel
     - funding
-    - isPartOf
     - keyword
+    - learningOutcome
     - license
     - modificationDate
-    - name
-    - pagination
-    - publicationDate
-    - publisher
-    - versionIdentifier
-    slot_usage:
-      author:
-        required: true
-        range: Consortium
-      citedPublication:
-        range: DOI
-      custodian:
-        range: Consortium
-      digitalIdentifier:
-        range: DOI
-      isPartOf:
-        required: true
-        range: Book
-      keyword:
-        range: ActionStatusType
-      license:
-        range: License
-      modificationDate:
-        range: date
-      name:
-        required: true
-      publicationDate:
-        required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
-- Periodical:
-    class_uri: https://openminds.om-i.org/types/Periodical
-    description: null
-    title: Periodical
-    slots:
-    - id
-    - abbreviation
-    - digitalIdentifier
-    - name
-    slot_usage:
-      digitalIdentifier:
-        range: ISSN
-      name:
-        required: true
-- PublicationVolume:
-    class_uri: https://openminds.om-i.org/types/PublicationVolume
-    description: null
-    title: Publication volume
-    slots:
-    - id
-    - isPartOf
-    - volumeNumber
-    slot_usage:
-      isPartOf:
-        required: true
-        range: Periodical
-      volumeNumber:
-        required: true
-- LivePaperResourceItem:
-    class_uri: https://openminds.om-i.org/types/LivePaperResourceItem
-    description: null
-    title: Live paper resource item
-    slots:
-    - id
-    - IRI
-    - hostedBy
-    - isPartOf
-    - name
-    slot_usage:
-      IRI:
-        required: true
-      hostedBy:
-        required: true
-      isPartOf:
-        required: true
-        range: LivePaperSection
-      name:
-        required: true
-- LivePaperSection:
-    class_uri: https://openminds.om-i.org/types/LivePaperSection
-    description: null
-    title: Live paper section
-    slots:
-    - id
-    - description
-    - isPartOf
     - name
     - order
-    - type
-    slot_usage:
-      isPartOf:
-        required: true
-        range: LivePaperVersion
-      name:
-        required: true
-      order:
-        required: true
-      type:
-        required: true
-        range: string
-- ScholarlyArticle:
-    class_uri: https://openminds.om-i.org/types/ScholarlyArticle
-    description: null
-    title: Scholarly article
-    slots:
-    - id
-    - IRI
-    - abstract
-    - author
-    - citedPublication
-    - copyright
-    - creationDate
-    - custodian
-    - digitalIdentifier
-    - editor
-    - funding
-    - isPartOf
-    - keyword
-    - license
-    - modificationDate
-    - name
-    - pagination
+    - prerequisite
     - publicationDate
     - publisher
+    - requiredTime
+    - topic
+    - type
     - versionIdentifier
     slot_usage:
-      author:
+      about:
         required: true
+        range: ValidationTest
+      author:
         range: Consortium
       citedPublication:
         range: DOI
@@ -402,11 +405,6 @@ classes:
         range: Consortium
       digitalIdentifier:
         range: DOI
-      isPartOf:
-        required: true
-        any_of:
-        - range: PublicationIssue
-        - range: PublicationVolume
       keyword:
         range: ActionStatusType
       license:
@@ -422,3 +420,9 @@ classes:
         - range: Consortium
         - range: Organization
         - range: Person
+      requiredTime:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      type:
+        range: LearningResourceType

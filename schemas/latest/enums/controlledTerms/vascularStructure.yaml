@@ -13,154 +13,154 @@ enums:
     enum_uri: https://openminds.om-i.org/types/VascularStructure
     title: Vascular structure
     permissible_values:
-      venous system of brain:
-        description: Is part of the brain. [auto-generated from 'relationship' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0013146)]
-      superior sagittal sinus:
-        description: Is a sagittal sinus. [auto-generated from 'is_a' property of
-          the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001642)]
-      cerebral blood vessel:
-        description: Is a brain blood vessel. Is part of the cerebellum. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0016565)
-          ('is_a' and 'relationship')]
-      primitive superior sagittal sinus:
-        description: Is part of the venous dural sinus. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009968)]
-      central retinal artery:
-        description: Is a retina blood vessel. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001620)]
-      unpaired venous dural sinus:
-        description: Is a venous dural sinus. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017640)]
+      primitive marginal sinus:
+        description: Is a paired venous dural sinus. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017638)]
       anterior cerebral vein:
         description: Is a cerebral vein. [auto-generated from 'is_a' property of the
           [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001672)]
-      central retinal vein:
-        description: Is part of the cavernous sinus. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001673)]
-      inferior petrosal sinus:
-        description: Is a paired venous dural sinus. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007160)]
-      sagittal sinus:
-        description: Is an unpaired venous dural sinus. [auto-generated from 'is_a'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0015704)]
-      superficial middle cerebral vein:
-        description: Is a cerebral vein. Is part of the cavernous sinus. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035231)
-          ('is_a' and 'relationship')]
-      tentorial sinus:
-        description: Is an unpaired venous dural sinus. [auto-generated from 'is_a'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005481)]
-      anterior mesencephalic central artery:
-        description: Is a central artery. [auto-generated from 'is_a' property of
-          the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005052)]
+      retina blood vessel:
+        description: Is part of the vasculature of retina. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003501)]
       cavernous sinus:
         description: Is a venous dural sinus. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003712)]
-      inferior sagittal sinus:
-        description: Is a sagittal sinus. Is part of the tentorial sinus. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007152)
-          ('is_a' and 'relationship')]
-      paired venous dural sinus:
-        description: Is a venous dural sinus. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017635)]
       transverse sinus:
         description: Is a paired venous dural sinus. Is part of the sigmoid sinus.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001641)
           ('is_a' and 'relationship')]
-      primitive marginal sinus:
-        description: Is a paired venous dural sinus. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017638)]
-      marginal venous sinus:
-        description: Is a paired venous dural sinus. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017637)]
-      great cerebral vein:
-        description: Is a cerebral vein. [auto-generated from 'is_a' property of the
-          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006666)]
-      cerebellar central artery:
-        description: Is a central artery. [auto-generated from 'is_a' property of
-          the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005021)]
-      vasculature of retina:
-        description: Is part of the retina. [auto-generated from 'relationship' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004864)]
-      deep cerebral vein:
-        description: Is a cerebral vein. [auto-generated from 'is_a' property of the
-          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0016564)]
-      perineural vascular plexus:
-        description: Is part of the nervous system. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0015189)]
-      sigmoid sinus:
-        description: Is a paired venous dural sinus. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005475)]
-      superficial cerebral vein:
-        description: Is a cerebral vein. [auto-generated from 'is_a' property of the
-          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0016559)]
-      dorsal cerebral vein:
-        description: Is a cerebral vein. [auto-generated from 'is_a' property of the
-          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035151)]
       internal cerebral vein:
         description: Is a cerebral vein. [auto-generated from 'is_a' property of the
           [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035152)]
-      hindbrain venous system:
-        description: Is part of the hindbrain. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005720)]
-      superior cerebral vein:
-        description: Is a superficial cerebral vein. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035150)]
       hyaloid artery:
         description: Is a brain blood vessel. Is part of the optic stalk. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002270)
           ('is_a' and 'relationship')]
+      superior sagittal sinus:
+        description: Is a sagittal sinus. [auto-generated from 'is_a' property of
+          the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001642)]
       venous dural sinus:
         description: Is part of the meningeal cluster. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005486)]
-      cerebellum vasculature:
-        description: Is a vasculature of central nervous system. Is part of the cerebellum.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006694)
-          ('is_a' and 'relationship')]
-      vasculature of brain:
-        description: Is a vasculature of central nervous system. Is part of the brain.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0008998)
+      naso-frontal vein:
+        description: Is part of the cavernous sinus. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004689)]
+      paired venous dural sinus:
+        description: Is a venous dural sinus. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017635)]
+      hindbrain venous system:
+        description: Is part of the hindbrain. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005720)]
+      great cerebral vein:
+        description: Is a cerebral vein. [auto-generated from 'is_a' property of the
+          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006666)]
+      tentorial sinus:
+        description: Is an unpaired venous dural sinus. [auto-generated from 'is_a'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005481)]
+      marginal venous sinus:
+        description: Is a paired venous dural sinus. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017637)]
+      dorsal cerebral vein:
+        description: Is a cerebral vein. [auto-generated from 'is_a' property of the
+          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035151)]
+      inferior petrosal sinus:
+        description: Is a paired venous dural sinus. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007160)]
+      vasculature of retina:
+        description: Is part of the retina. [auto-generated from 'relationship' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004864)]
+      cerebral vein:
+        description: Is a brain blood vessel. Is part of the telencephalon. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001663)
           ('is_a' and 'relationship')]
       vasculature of central nervous system:
         description: Is an anatomical entity. Is part of the central nervous system.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0036303)
           ('is_a' and 'relationship')]
-      basal vein:
-        description: Is a deep cerebral vein. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035530)]
+      central artery:
+        description: Is a brain blood vessel. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005020)]
+      sigmoid sinus:
+        description: Is a paired venous dural sinus. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005475)]
+      central retinal artery:
+        description: Is a retina blood vessel. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001620)]
+      central retinal vein:
+        description: Is part of the cavernous sinus. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001673)]
+      superficial middle cerebral vein:
+        description: Is a cerebral vein. Is part of the cavernous sinus. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035231)
+          ('is_a' and 'relationship')]
+      dorsal longitudinal vein:
+        description: Is a brain blood vessel. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005031)]
+      vasculature of brain:
+        description: Is a vasculature of central nervous system. Is part of the brain.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0008998)
+          ('is_a' and 'relationship')]
+      superior cerebral vein:
+        description: Is a superficial cerebral vein. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035150)]
+      cerebellum vasculature:
+        description: Is a vasculature of central nervous system. Is part of the cerebellum.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006694)
+          ('is_a' and 'relationship')]
+      inferior sagittal sinus:
+        description: Is a sagittal sinus. Is part of the tentorial sinus. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007152)
+          ('is_a' and 'relationship')]
+      venous system of brain:
+        description: Is part of the brain. [auto-generated from 'relationship' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0013146)]
+      perineural vascular plexus:
+        description: Is part of the nervous system. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0015189)]
+      anterior mesencephalic central artery:
+        description: Is a central artery. [auto-generated from 'is_a' property of
+          the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005052)]
+      cerebral blood vessel:
+        description: Is a brain blood vessel. Is part of the cerebellum. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0016565)
+          ('is_a' and 'relationship')]
+      unpaired venous dural sinus:
+        description: Is a venous dural sinus. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017640)]
+      brain blood vessel:
+        description: Is part of the vasculature of brain. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003499)]
+      tributary of central retinal vein:
+        description: Is part of the central retinal vein. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0036300)]
+      sphenoparietal sinus:
+        description: Is a paired venous dural sinus. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035338)]
       deep middle cerebral vein:
         description: Is a cerebral vein. Is part of the basal vein. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035532)
           ('is_a' and 'relationship')]
-      tributary of central retinal vein:
-        description: Is part of the central retinal vein. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0036300)]
-      cerebral vein:
-        description: Is a brain blood vessel. Is part of the telencephalon. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001663)
-          ('is_a' and 'relationship')]
-      middle mesencephalic central artery:
-        description: Is a central artery. [auto-generated from 'is_a' property of
-          the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005078)]
-      brain blood vessel:
-        description: Is part of the vasculature of brain. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003499)]
-      sphenoparietal sinus:
-        description: Is a paired venous dural sinus. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035338)]
+      primitive superior sagittal sinus:
+        description: Is part of the venous dural sinus. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009968)]
+      sagittal sinus:
+        description: Is an unpaired venous dural sinus. [auto-generated from 'is_a'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0015704)]
       dura mater lymph vessel:
         description: Is part of the meningeal cluster. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035608)]
-      retina blood vessel:
-        description: Is part of the vasculature of retina. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003501)]
-      dorsal longitudinal vein:
-        description: Is a brain blood vessel. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005031)]
-      naso-frontal vein:
-        description: Is part of the cavernous sinus. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004689)]
-      central artery:
-        description: Is a brain blood vessel. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005020)]
+      deep cerebral vein:
+        description: Is a cerebral vein. [auto-generated from 'is_a' property of the
+          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0016564)]
+      basal vein:
+        description: Is a deep cerebral vein. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035530)]
+      cerebellar central artery:
+        description: Is a central artery. [auto-generated from 'is_a' property of
+          the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005021)]
+      superficial cerebral vein:
+        description: Is a cerebral vein. [auto-generated from 'is_a' property of the
+          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0016559)]
+      middle mesencephalic central artery:
+        description: Is a central artery. [auto-generated from 'is_a' property of
+          the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005078)]

@@ -16,9 +16,9 @@ enums:
       stimulation system:
         description: A 'stimulation system' is a setup type with the purpose of stimulating
           a specimen.
-      computing system:
-        description: A 'computing system' is a setup type with the purpose of performing
-          computations.
       acquisition system:
         description: An 'acquisition system' is a setup type with the purpose of collecting
           data.
+      computing system:
+        description: A 'computing system' is a setup type with the purpose of performing
+          computations.

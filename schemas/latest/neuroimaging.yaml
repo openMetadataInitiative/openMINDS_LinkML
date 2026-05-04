@@ -14,216 +14,6 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- MRICoilUsage:
-    class_uri: https://openminds.om-i.org/types/MRICoilUsage
-    description: null
-    title: Mricoil usage
-    slots:
-    - id
-    - activeElement
-    - device
-    - lookupLabel
-    - metadataLocation
-    - mountingLocation
-    - signalDirectionality
-    - usedSpecimen
-    slot_usage:
-      device:
-        required: true
-        range: MRICoil
-      metadataLocation:
-        range: File
-      signalDirectionality:
-        required: true
-      usedSpecimen:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleState
-- MRICoil:
-    class_uri: https://openminds.om-i.org/types/MRICoil
-    description: null
-    title: Mricoil
-    slots:
-    - id
-    - contribution
-    - description
-    - elementCount
-    - intendedMountingLocation
-    - internalIdentifier
-    - mountingType
-    - name
-    - serialNumber
-    - type
-    slot_usage:
-      contribution:
-        required: true
-        range: Organization
-      elementCount:
-        required: true
-      mountingType:
-        required: true
-      name:
-        required: true
-      type:
-        required: true
-        any_of:
-        - range: DeviceType
-        - range: HardwareProduct
-- MRIScannerUsage:
-    class_uri: https://openminds.om-i.org/types/MRIScannerUsage
-    description: null
-    title: Mriscanner usage
-    slots:
-    - id
-    - MRIWeighting
-    - MTPulseShape
-    - accelerationFactor
-    - diffusionEncodingParameters
-    - dwellTime
-    - echoTime
-    - fatSuppressionTechnique
-    - fieldOfView
-    - flipAngle
-    - gradientCorrection
-    - inversionTime
-    - lookupLabel
-    - matrixSize
-    - metadataLocation
-    - numberOfDiscardedVolumes
-    - numberOfExcitations
-    - numberOfSlices
-    - parallelAcquisitionTechnique
-    - phaseEncodingDirection
-    - receiverBandwidth
-    - repetitionTime
-    - sliceAngulation
-    - sliceGap
-    - sliceOrientation
-    - sliceThickness
-    - sliceTiming
-    - spatialEncoding
-    - spoilingTechnique
-    - totalReadOutTime
-    - transmitterBandwidth
-    - usedCoils
-    - usedSpecimen
-    - voxelSize
-    slot_usage:
-      echoTime:
-        required: true
-      metadataLocation:
-        range: File
-      repetitionTime:
-        required: true
-      sliceTiming:
-        required: true
-      usedCoils:
-        range: DeviceType
-      usedSpecimen:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleState
-      voxelSize:
-        range: QuantitativeValueArray
-- MRIScanner:
-    class_uri: https://openminds.om-i.org/types/MRIScanner
-    description: null
-    title: Mriscanner
-    slots:
-    - id
-    - contribution
-    - description
-    - internalIdentifier
-    - magneticFieldStrength
-    - name
-    - serialNumber
-    - type
-    slot_usage:
-      contribution:
-        required: true
-        range: Organization
-      magneticFieldStrength:
-        required: true
-      name:
-        required: true
-      type:
-        required: true
-        any_of:
-        - range: DeviceType
-        - range: HardwareProduct
-- StaticMRIAcquisition:
-    class_uri: https://openminds.om-i.org/types/StaticMRIAcquisition
-    description: null
-    title: Static mriacquisition
-    slots:
-    - id
-    - contrastAgent
-    - customPropertySet
-    - description
-    - device
-    - distortionCorrection
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - motionCorrection
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - registrationData
-    - specimenOrientation
-    - startTime
-    - studyTarget
-    - targetAnatomy
-    slot_usage:
-      device:
-        required: true
-        range: MRIScannerUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: SubjectState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: File
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-        range: Protocol
-      specimenOrientation:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
-      targetAnatomy:
-        any_of:
-        - range: AnatomicalCavity
-        - range: CellType
-        - range: ExternalBodyRegion
-        - range: MuscularStructure
-        - range: NervousSystemStructure
-        - range: Organ
-        - range: OrganSystemStructure
-        - range: OrganismSubstance
-        - range: OrganismSystem
-        - range: SkeletalStructure
-        - range: SubcellularEntity
-        - range: TissueStructure
-        - range: VascularStructure
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
 - DynamicMRIAcquisition:
     class_uri: https://openminds.om-i.org/types/DynamicMRIAcquisition
     description: null
@@ -306,3 +96,221 @@ classes:
         - range: ParcellationEntityVersion
       volumeAcquisitionTime:
         required: true
+- StaticMRIAcquisition:
+    class_uri: https://openminds.om-i.org/types/StaticMRIAcquisition
+    description: null
+    title: Static mriacquisition
+    slots:
+    - id
+    - contrastAgent
+    - customPropertySet
+    - description
+    - device
+    - distortionCorrection
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - motionCorrection
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - registrationData
+    - specimenOrientation
+    - startTime
+    - studyTarget
+    - targetAnatomy
+    slot_usage:
+      device:
+        required: true
+        range: MRIScannerUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: File
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      specimenOrientation:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AnatomicalCavity
+      targetAnatomy:
+        any_of:
+        - range: AnatomicalCavity
+        - range: CellType
+        - range: ExternalBodyRegion
+        - range: MuscularStructure
+        - range: NervousSystemStructure
+        - range: Organ
+        - range: OrganSystemStructure
+        - range: OrganismSubstance
+        - range: OrganismSystem
+        - range: SkeletalStructure
+        - range: SubcellularEntity
+        - range: TissueStructure
+        - range: VascularStructure
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
+- MRIScannerUsage:
+    class_uri: https://openminds.om-i.org/types/MRIScannerUsage
+    description: null
+    title: Mriscanner usage
+    slots:
+    - id
+    - MRIWeighting
+    - MTPulseShape
+    - accelerationFactor
+    - diffusionEncodingParameters
+    - dwellTime
+    - echoTime
+    - fatSuppressionTechnique
+    - fieldOfView
+    - flipAngle
+    - gradientCorrection
+    - inversionTime
+    - lookupLabel
+    - matrixSize
+    - metadataLocation
+    - numberOfDiscardedVolumes
+    - numberOfExcitations
+    - numberOfSlices
+    - parallelAcquisitionTechnique
+    - phaseEncodingDirection
+    - receiverBandwidth
+    - repetitionTime
+    - sliceAngulation
+    - sliceGap
+    - sliceOrientation
+    - sliceThickness
+    - sliceTiming
+    - spatialEncoding
+    - spoilingTechnique
+    - totalReadOutTime
+    - transmitterBandwidth
+    - usedCoils
+    - usedSpecimen
+    - voxelSize
+    slot_usage:
+      echoTime:
+        required: true
+      metadataLocation:
+        range: File
+      repetitionTime:
+        required: true
+      sliceGap:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      sliceThickness:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      sliceTiming:
+        required: true
+      usedCoils:
+        range: DeviceType
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
+      voxelSize:
+        range: QuantitativeValueArray
+- MRIScanner:
+    class_uri: https://openminds.om-i.org/types/MRIScanner
+    description: null
+    title: Mriscanner
+    slots:
+    - id
+    - contribution
+    - description
+    - internalIdentifier
+    - magneticFieldStrength
+    - name
+    - serialNumber
+    - type
+    slot_usage:
+      contribution:
+        required: true
+        range: Organization
+      magneticFieldStrength:
+        required: true
+      name:
+        required: true
+      type:
+        required: true
+        any_of:
+        - range: DeviceType
+        - range: HardwareProduct
+- MRICoilUsage:
+    class_uri: https://openminds.om-i.org/types/MRICoilUsage
+    description: null
+    title: Mricoil usage
+    slots:
+    - id
+    - activeElement
+    - device
+    - lookupLabel
+    - metadataLocation
+    - mountingLocation
+    - signalDirectionality
+    - usedSpecimen
+    slot_usage:
+      device:
+        required: true
+        range: MRICoil
+      metadataLocation:
+        range: File
+      signalDirectionality:
+        required: true
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
+- MRICoil:
+    class_uri: https://openminds.om-i.org/types/MRICoil
+    description: null
+    title: Mricoil
+    slots:
+    - id
+    - contribution
+    - description
+    - elementCount
+    - intendedMountingLocation
+    - internalIdentifier
+    - mountingType
+    - name
+    - serialNumber
+    - type
+    slot_usage:
+      contribution:
+        required: true
+        range: Organization
+      elementCount:
+        required: true
+      mountingType:
+        required: true
+      name:
+        required: true
+      type:
+        required: true
+        any_of:
+        - range: DeviceType
+        - range: HardwareProduct

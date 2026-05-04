@@ -47,6 +47,85 @@ classes:
         required: true
       versionInnovation:
         required: true
+- ParcellationTerminology:
+    class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
+    description: null
+    title: Parcellation terminology
+    slots:
+    - id
+    - definedIn
+    - fullName
+    - isAlternativeVersionOf
+    - isNewVersionOf
+    - ontologyIdentifier
+    - shortName
+    - versionIdentifier
+    - versionInnovation
+    slot_usage:
+      fullName:
+        required: true
+      isAlternativeVersionOf:
+        range: BrainAtlasVersion
+      isNewVersionOf:
+        range: BrainAtlasVersion
+      shortName:
+        required: true
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- BrainAtlas:
+    class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
+    description: null
+    title: Brain atlas
+    slots:
+    - id
+    - description
+    - digitalIdentifier
+    - fullName
+    - hasVersion
+    - homepage
+    - howToCite
+    - shortName
+    slot_usage:
+      description:
+        required: true
+      digitalIdentifier:
+        range: DOI
+      fullName:
+        required: true
+      hasVersion:
+        required: true
+        range: BrainAtlasVersion
+      shortName:
+        required: true
+- AtlasAnnotation:
+    class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
+    description: null
+    title: Atlas annotation
+    slots:
+    - id
+    - bestViewPoint
+    - criteria
+    - criteriaQualityType
+    - displayColor
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - lookupLabel
+    - name
+    - versionIdentifier
+    - versionInnovation
+    - visualizedIn
+    slot_usage:
+      criteriaQualityType:
+        required: true
+      internalIdentifier:
+        required: true
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
 - BrainAtlasVersion:
     class_uri: https://openminds.ebrains.eu/sands/BrainAtlasVersion
     description: null
@@ -88,60 +167,6 @@ classes:
         required: true
       versionInnovation:
         required: true
-- AtlasAnnotation:
-    class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
-    description: null
-    title: Atlas annotation
-    slots:
-    - id
-    - bestViewPoint
-    - criteria
-    - criteriaQualityType
-    - displayColor
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - lookupLabel
-    - name
-    - versionIdentifier
-    - versionInnovation
-    - visualizedIn
-    slot_usage:
-      criteriaQualityType:
-        required: true
-      internalIdentifier:
-        required: true
-      versionIdentifier:
-        required: true
-      versionInnovation:
-        required: true
-- ParcellationTerminology:
-    class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
-    description: null
-    title: Parcellation terminology
-    slots:
-    - id
-    - definedIn
-    - fullName
-    - isAlternativeVersionOf
-    - isNewVersionOf
-    - ontologyIdentifier
-    - shortName
-    - versionIdentifier
-    - versionInnovation
-    slot_usage:
-      fullName:
-        required: true
-      isAlternativeVersionOf:
-        range: BrainAtlasVersion
-      isNewVersionOf:
-        range: BrainAtlasVersion
-      shortName:
-        required: true
-      versionIdentifier:
-        required: true
-      versionInnovation:
-        required: true
 - CommonCoordinateSpace:
     class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpace
     description: null
@@ -177,31 +202,6 @@ classes:
         required: true
       versionIdentifier:
         required: true
-- BrainAtlas:
-    class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
-    description: null
-    title: Brain atlas
-    slots:
-    - id
-    - description
-    - digitalIdentifier
-    - fullName
-    - hasVersion
-    - homepage
-    - howToCite
-    - shortName
-    slot_usage:
-      description:
-        required: true
-      digitalIdentifier:
-        range: DOI
-      fullName:
-        required: true
-      hasVersion:
-        required: true
-        range: BrainAtlasVersion
-      shortName:
-        required: true
 - QuantitativeRelationAssessment:
     class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
     description: null
@@ -215,6 +215,22 @@ classes:
       inRelationTo:
         required: true
       quantitativeOverlap:
+        required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- CoordinatePoint:
+    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
+    description: null
+    title: Coordinate point
+    slots:
+    - id
+    - coordinateSpace
+    - coordinates
+    slot_usage:
+      coordinateSpace:
+        required: true
+      coordinates:
         required: true
 - QualitativeRelationAssessment:
     class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
@@ -230,19 +246,6 @@ classes:
         required: true
       qualitativeOverlap:
         required: true
-- CoordinatePoint:
-    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
-    description: null
-    title: Coordinate point
-    slots:
-    - id
-    - coordinateSpace
-    - coordinates
-    slot_usage:
-      coordinateSpace:
-        required: true
-      coordinates:
-        required: true
 - ElectrodeArray:
     class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
     description: Structured information on an electrode array.
@@ -256,6 +259,32 @@ classes:
       electrodes:
         required: true
       internalIdentifier:
+        required: true
+- CustomAnnotation:
+    class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
+    description: null
+    title: Custom annotation
+    slots:
+    - id
+    - bestViewPoint
+    - coordinateSpace
+    - criteria
+    - criteriaQualityType
+    - displayColor
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - lookupLabel
+    - name
+    - visualizedIn
+    slot_usage:
+      coordinateSpace:
+        required: true
+      criteriaQualityType:
+        required: true
+      internalIdentifier:
+        required: true
+      visualizedIn:
         required: true
 - Electrode:
     class_uri: https://openminds.ebrains.eu/sands/Electrode
@@ -287,6 +316,26 @@ classes:
         required: true
       relationAssessment:
         range: QualitativeRelationAssessment
+- CustomCoordinateSpace:
+    class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
+    description: null
+    title: Custom coordinate space
+    slots:
+    - id
+    - anatomicalAxesOrientation
+    - axesOrigin
+    - defaultImage
+    - name
+    - nativeUnit
+    slot_usage:
+      anatomicalAxesOrientation:
+        required: true
+      axesOrigin:
+        required: true
+      name:
+        required: true
+      nativeUnit:
+        required: true
 - ElectrodeContact:
     class_uri: https://openminds.ebrains.eu/sands/ElectrodeContact
     description: Structured information on an electrode contact.
@@ -309,49 +358,3 @@ classes:
         range: File
       relatedStimulation:
         range: File
-- CustomCoordinateSpace:
-    class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
-    description: null
-    title: Custom coordinate space
-    slots:
-    - id
-    - anatomicalAxesOrientation
-    - axesOrigin
-    - defaultImage
-    - name
-    - nativeUnit
-    slot_usage:
-      anatomicalAxesOrientation:
-        required: true
-      axesOrigin:
-        required: true
-      name:
-        required: true
-      nativeUnit:
-        required: true
-- CustomAnnotation:
-    class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
-    description: null
-    title: Custom annotation
-    slots:
-    - id
-    - bestViewPoint
-    - coordinateSpace
-    - criteria
-    - criteriaQualityType
-    - displayColor
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - lookupLabel
-    - name
-    - visualizedIn
-    slot_usage:
-      coordinateSpace:
-        required: true
-      criteriaQualityType:
-        required: true
-      internalIdentifier:
-        required: true
-      visualizedIn:
-        required: true

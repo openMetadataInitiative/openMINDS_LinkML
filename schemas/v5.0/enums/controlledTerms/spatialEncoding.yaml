@@ -13,17 +13,17 @@ enums:
     enum_uri: https://openminds.om-i.org/types/SpatialEncoding
     title: Spatial encoding
     permissible_values:
-      one-dimensional phase encoding:
+      one-dimensional frequency encoding:
         description: A spatial encoding method in which position along a single dimension
-          is represented by controlled phase shifts of the signal.
-      three-dimensional frequency-phase-phase encoding:
-        description: A spatial encoding method in which position in three dimensions
-          is represented using frequency encoding along one axis and phase encoding
-          along two orthogonal axes.
+          is represented by differences in signal frequency.
       two-dimensional frequency-phase encoding:
         description: A spatial encoding method in which position in two dimensions
           is represented using frequency encoding along one axis and phase encoding
           along a second axis.
-      one-dimensional frequency encoding:
+      three-dimensional frequency-phase-phase encoding:
+        description: A spatial encoding method in which position in three dimensions
+          is represented using frequency encoding along one axis and phase encoding
+          along two orthogonal axes.
+      one-dimensional phase encoding:
         description: A spatial encoding method in which position along a single dimension
-          is represented by differences in signal frequency.
+          is represented by controlled phase shifts of the signal.

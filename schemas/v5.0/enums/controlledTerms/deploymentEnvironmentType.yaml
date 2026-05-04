@@ -13,9 +13,6 @@ enums:
     enum_uri: https://openminds.om-i.org/types/DeploymentEnvironmentType
     title: Deployment environment type
     permissible_values:
-      production:
-        description: The live environment where an application is fully deployed and
-          accessed by end users; it requires high stability, performance, and monitoring.
       pre-production:
         description: A near-final environment used to validate releases before moving
           to production; typically mirrors the production setup closely and is used
@@ -27,6 +24,9 @@ enums:
       integration:
         description: An environment in which multiple components or services are integrated
           and tested together to ensure interoperability and to detect issues early.
+      production:
+        description: The live environment where an application is fully deployed and
+          accessed by end users; it requires high stability, performance, and monitoring.
       staging:
         description: An isolated environment that replicates the production environment
           for final integration and validation; often used for release candidate testing.

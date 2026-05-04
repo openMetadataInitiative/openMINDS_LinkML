@@ -14,80 +14,6 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
-- Organization:
-    class_uri: https://openminds.ebrains.eu/core/Organization
-    description: An entity comprised of one or more natural persons with a particular
-      purpose. [adapted from Wikipedia](https://en.wikipedia.org/wiki/Organization)
-    title: Organization
-    slots:
-    - id
-    - digitalIdentifier
-    - fullName
-    - hasParent
-    - homepage
-    - shortName
-    slot_usage:
-      digitalIdentifier:
-        range: GRIDID
-      fullName:
-        required: true
-      hasParent:
-        range: Organization
-- Contribution:
-    class_uri: https://openminds.ebrains.eu/core/Contribution
-    description: Structured information on the contribution made to a research product.
-    title: Contribution
-    slots:
-    - id
-    - contributionType
-    - contributor
-    slot_usage:
-      contributionType:
-        required: true
-      contributor:
-        required: true
-        any_of:
-        - range: Organization
-        - range: Person
-- ContactInformation:
-    class_uri: https://openminds.ebrains.eu/core/ContactInformation
-    description: Structured information about how to contact a given person or consortium.
-    title: Contact information
-    slots:
-    - id
-    - email
-    slot_usage:
-      email:
-        required: true
-- Affiliation:
-    class_uri: https://openminds.ebrains.eu/core/Affiliation
-    description: Structured information about a relationship between two entities,
-      such as a person and their employer.
-    title: Affiliation
-    slots:
-    - id
-    - endDate
-    - organization
-    - startDate
-    slot_usage:
-      organization:
-        required: true
-- Person:
-    class_uri: https://openminds.ebrains.eu/core/Person
-    description: Structured information on a person.
-    title: Person
-    slots:
-    - id
-    - affiliation
-    - contactInformation
-    - digitalIdentifier
-    - familyName
-    - givenName
-    slot_usage:
-      digitalIdentifier:
-        range: ORCID
-      givenName:
-        required: true
 - StringParameter:
     class_uri: https://openminds.ebrains.eu/core/StringParameter
     description: null
@@ -102,144 +28,6 @@ classes:
       value:
         required: true
         range: string
-- SubjectGroup:
-    class_uri: https://openminds.ebrains.eu/core/SubjectGroup
-    description: null
-    title: Subject group
-    slots:
-    - id
-    - additionalRemarks
-    - biologicalSex
-    - internalIdentifier
-    - lookupLabel
-    - phenotype
-    - quantity
-    - species
-    - strain
-    - studiedState
-    slot_usage:
-      biologicalSex:
-        required: true
-      species:
-        required: true
-      studiedState:
-        required: true
-        range: SubjectGroupState
-- Protocol:
-    class_uri: https://openminds.ebrains.eu/core/Protocol
-    description: Structured information on a research project.
-    title: Protocol
-    slots:
-    - id
-    - behavioralTask
-    - description
-    - name
-    - studyOption
-    - technique
-    slot_usage:
-      description:
-        required: true
-      name:
-        required: true
-      studyOption:
-        range: BiologicalSex
-      technique:
-        required: true
-- Subject:
-    class_uri: https://openminds.ebrains.eu/core/Subject
-    description: Structured information on a subject.
-    title: Subject
-    slots:
-    - id
-    - biologicalSex
-    - internalIdentifier
-    - isPartOf
-    - lookupLabel
-    - phenotype
-    - species
-    - strain
-    - studiedState
-    slot_usage:
-      biologicalSex:
-        required: true
-      internalIdentifier:
-        required: true
-      isPartOf:
-        range: SubjectGroup
-      species:
-        required: true
-      studiedState:
-        required: true
-        range: SubjectState
-- TissueSampleCollectionState:
-    class_uri: https://openminds.ebrains.eu/core/TissueSampleCollectionState
-    description: null
-    title: Tissue sample collection state
-    slots:
-    - id
-    - additionalRemarks
-    - age
-    - lookupLabel
-    - pathology
-    - weight
-    slot_usage:
-      pathology:
-        range: Disease
-- SubjectGroupState:
-    class_uri: https://openminds.ebrains.eu/core/SubjectGroupState
-    description: null
-    title: Subject group state
-    slots:
-    - id
-    - additionalRemarks
-    - age
-    - ageCategory
-    - handedness
-    - lookupLabel
-    - pathology
-    - weight
-    slot_usage:
-      ageCategory:
-        required: true
-      pathology:
-        range: Disease
-- TissueSample:
-    class_uri: https://openminds.ebrains.eu/core/TissueSample
-    description: Structured information on a tissue sample.
-    title: Tissue sample
-    slots:
-    - id
-    - biologicalSex
-    - internalIdentifier
-    - isPartOf
-    - laterality
-    - lookupLabel
-    - origin
-    - phenotype
-    - species
-    - strain
-    - studiedState
-    - type
-    slot_usage:
-      biologicalSex:
-        required: true
-      internalIdentifier:
-        required: true
-      isPartOf:
-        range: TissueSampleCollection
-      origin:
-        required: true
-        any_of:
-        - range: CellType
-        - range: Organ
-      species:
-        required: true
-      studiedState:
-        required: true
-        range: TissueSampleState
-      type:
-        required: true
-        range: TissueSampleType
 - TissueSampleState:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleState
     description: Structured information on a temporary state of a tissue sample.
@@ -252,46 +40,16 @@ classes:
     - pathology
     - weight
     slot_usage:
-      pathology:
-        range: Disease
-- SubjectState:
-    class_uri: https://openminds.ebrains.eu/core/SubjectState
-    description: Structured information on a temporary state of a subject.
-    title: Subject state
-    slots:
-    - id
-    - additionalRemarks
-    - age
-    - ageCategory
-    - handedness
-    - lookupLabel
-    - pathology
-    - weight
-    slot_usage:
-      ageCategory:
-        required: true
-      pathology:
-        range: Disease
-- ParameterSet:
-    class_uri: https://openminds.ebrains.eu/core/ParameterSet
-    description: Structured information on a used parameter set.
-    title: Parameter set
-    slots:
-    - id
-    - context
-    - parameter
-    - relevantFor
-    slot_usage:
-      context:
-        required: true
-      parameter:
-        required: true
-        range: NumericalParameter
-      relevantFor:
-        required: true
+      age:
         any_of:
-        - range: BehavioralTask
-        - range: Technique
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      pathology:
+        range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - NumericalParameter:
     class_uri: https://openminds.ebrains.eu/core/NumericalParameter
     description: null
@@ -306,32 +64,6 @@ classes:
       value:
         required: true
         range: QuantitativeValue
-- ProtocolExecution:
-    class_uri: https://openminds.ebrains.eu/core/ProtocolExecution
-    description: Structured information on a protocol execution.
-    title: Protocol execution
-    slots:
-    - id
-    - description
-    - input
-    - lookupLabel
-    - output
-    - parameterSet
-    - preparationType
-    - protocol
-    - semanticallyAnchoredTo
-    - studyTarget
-    slot_usage:
-      input:
-        required: true
-        range: FileBundle
-      output:
-        required: true
-        range: FileBundle
-      protocol:
-        required: true
-      studyTarget:
-        range: BiologicalSex
 - TissueSampleCollection:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleCollection
     description: null
@@ -364,124 +96,321 @@ classes:
       type:
         required: true
         range: TissueSampleType
-- GRIDID:
-    class_uri: https://openminds.ebrains.eu/core/GRIDID
-    description: A GRID (Global Research Identifier Database) identifier.
-    title: Gridid
+- SubjectState:
+    class_uri: https://openminds.ebrains.eu/core/SubjectState
+    description: Structured information on a temporary state of a subject.
+    title: Subject state
     slots:
     - id
-    - identifier
+    - additionalRemarks
+    - age
+    - ageCategory
+    - handedness
+    - lookupLabel
+    - pathology
+    - weight
     slot_usage:
-      identifier:
-        pattern: ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
-- DOI:
-    class_uri: https://openminds.ebrains.eu/core/DOI
-    description: Structured information about a digital object identifier, as standardized
-      by the International Organization for Standardization.
-    title: Doi
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        pattern: ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
-- Funding:
-    class_uri: https://openminds.ebrains.eu/core/Funding
-    description: Structured information on used funding.
-    title: Funding
-    slots:
-    - id
-    - acknowledgement
-    - awardNumber
-    - awardTitle
-    - funder
-    slot_usage:
-      funder:
-        required: true
+      age:
         any_of:
-        - range: Organization
-        - range: Person
-- QuantitativeValue:
-    class_uri: https://openminds.ebrains.eu/core/QuantitativeValue
-    description: Structured information on a quantitative value.
-    title: Quantitative value
-    slots:
-    - id
-    - typeOfUncertainty
-    - uncertainty
-    - unit
-    - value
-    slot_usage:
-      value:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      ageCategory:
         required: true
+      pathology:
+        range: Disease
+      weight:
         any_of:
-        - range: integer
-        - range: float
-- RORID:
-    class_uri: https://openminds.ebrains.eu/core/RORID
-    description: A persistent identifier for a research organization, provided by
-      the Research Organization Registry.
-    title: Rorid
-    slots:
-    - id
-    - identifier
-    slot_usage:
-      identifier:
-        pattern: ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
-- URL:
-    class_uri: https://openminds.ebrains.eu/core/URL
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- SubjectGroupState:
+    class_uri: https://openminds.ebrains.eu/core/SubjectGroupState
     description: null
-    title: Url
+    title: Subject group state
     slots:
     - id
-    - URL
-    slot_usage: {}
-- SWHID:
-    class_uri: https://openminds.ebrains.eu/core/SWHID
+    - additionalRemarks
+    - age
+    - ageCategory
+    - handedness
+    - lookupLabel
+    - pathology
+    - weight
+    slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      ageCategory:
+        required: true
+      pathology:
+        range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- TissueSampleCollectionState:
+    class_uri: https://openminds.ebrains.eu/core/TissueSampleCollectionState
     description: null
-    title: Swhid
+    title: Tissue sample collection state
     slots:
     - id
-    - identifier
+    - additionalRemarks
+    - age
+    - lookupLabel
+    - pathology
+    - weight
     slot_usage:
-      identifier:
-        pattern: "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
-          \ \t\r\n\f]+)*$"
-- ORCID:
-    class_uri: https://openminds.ebrains.eu/core/ORCID
-    description: A persistent identifier for a researcher provided by Open Researcher
-      and Contributor ID, Inc.
-    title: Orcid
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      pathology:
+        range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- ProtocolExecution:
+    class_uri: https://openminds.ebrains.eu/core/ProtocolExecution
+    description: Structured information on a protocol execution.
+    title: Protocol execution
     slots:
     - id
-    - identifier
+    - description
+    - input
+    - lookupLabel
+    - output
+    - parameterSet
+    - preparationType
+    - protocol
+    - semanticallyAnchoredTo
+    - studyTarget
     slot_usage:
-      identifier:
-        pattern: ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
-- QuantitativeValueRange:
-    class_uri: https://openminds.ebrains.eu/core/QuantitativeValueRange
-    description: A representation of a range of quantitative values.
-    title: Quantitative value range
-    slots:
-    - id
-    - maxValue
-    - minValue
-    - unit
-    slot_usage:
-      maxValue:
+      input:
         required: true
-      minValue:
+        range: FileBundle
+      output:
         required: true
-- ISBN:
-    class_uri: https://openminds.ebrains.eu/core/ISBN
-    description: An International Standard Book Number of the International ISBN Agency.
-    title: Isbn
+        range: FileBundle
+      protocol:
+        required: true
+      studyTarget:
+        range: BiologicalSex
+- Subject:
+    class_uri: https://openminds.ebrains.eu/core/Subject
+    description: Structured information on a subject.
+    title: Subject
     slots:
     - id
-    - identifier
+    - biologicalSex
+    - internalIdentifier
+    - isPartOf
+    - lookupLabel
+    - phenotype
+    - species
+    - strain
+    - studiedState
     slot_usage:
-      identifier:
-        pattern: ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
+      biologicalSex:
+        required: true
+      internalIdentifier:
+        required: true
+      isPartOf:
+        range: SubjectGroup
+      species:
+        required: true
+      studiedState:
+        required: true
+        range: SubjectState
+- TissueSample:
+    class_uri: https://openminds.ebrains.eu/core/TissueSample
+    description: Structured information on a tissue sample.
+    title: Tissue sample
+    slots:
+    - id
+    - biologicalSex
+    - internalIdentifier
+    - isPartOf
+    - laterality
+    - lookupLabel
+    - origin
+    - phenotype
+    - species
+    - strain
+    - studiedState
+    - type
+    slot_usage:
+      biologicalSex:
+        required: true
+      internalIdentifier:
+        required: true
+      isPartOf:
+        range: TissueSampleCollection
+      origin:
+        required: true
+      species:
+        required: true
+      studiedState:
+        required: true
+        range: TissueSampleState
+      type:
+        required: true
+        range: TissueSampleType
+- Protocol:
+    class_uri: https://openminds.ebrains.eu/core/Protocol
+    description: Structured information on a research project.
+    title: Protocol
+    slots:
+    - id
+    - behavioralTask
+    - description
+    - name
+    - studyOption
+    - technique
+    slot_usage:
+      description:
+        required: true
+      name:
+        required: true
+      studyOption:
+        range: BiologicalSex
+      technique:
+        required: true
+- SubjectGroup:
+    class_uri: https://openminds.ebrains.eu/core/SubjectGroup
+    description: null
+    title: Subject group
+    slots:
+    - id
+    - additionalRemarks
+    - biologicalSex
+    - internalIdentifier
+    - lookupLabel
+    - phenotype
+    - quantity
+    - species
+    - strain
+    - studiedState
+    slot_usage:
+      biologicalSex:
+        required: true
+      species:
+        required: true
+      studiedState:
+        required: true
+        range: SubjectGroupState
+- ParameterSet:
+    class_uri: https://openminds.ebrains.eu/core/ParameterSet
+    description: Structured information on a used parameter set.
+    title: Parameter set
+    slots:
+    - id
+    - context
+    - parameter
+    - relevantFor
+    slot_usage:
+      context:
+        required: true
+      parameter:
+        required: true
+        range: NumericalParameter
+      relevantFor:
+        required: true
+- Person:
+    class_uri: https://openminds.ebrains.eu/core/Person
+    description: Structured information on a person.
+    title: Person
+    slots:
+    - id
+    - affiliation
+    - contactInformation
+    - digitalIdentifier
+    - familyName
+    - givenName
+    slot_usage:
+      digitalIdentifier:
+        range: ORCID
+      givenName:
+        required: true
+- Organization:
+    class_uri: https://openminds.ebrains.eu/core/Organization
+    description: An entity comprised of one or more natural persons with a particular
+      purpose. [adapted from Wikipedia](https://en.wikipedia.org/wiki/Organization)
+    title: Organization
+    slots:
+    - id
+    - digitalIdentifier
+    - fullName
+    - hasParent
+    - homepage
+    - shortName
+    slot_usage:
+      digitalIdentifier:
+        range: GRIDID
+      fullName:
+        required: true
+      hasParent:
+        range: Organization
+- ContactInformation:
+    class_uri: https://openminds.ebrains.eu/core/ContactInformation
+    description: Structured information about how to contact a given person or consortium.
+    title: Contact information
+    slots:
+    - id
+    - email
+    slot_usage:
+      email:
+        required: true
+- Contribution:
+    class_uri: https://openminds.ebrains.eu/core/Contribution
+    description: Structured information on the contribution made to a research product.
+    title: Contribution
+    slots:
+    - id
+    - contributionType
+    - contributor
+    slot_usage:
+      contributionType:
+        required: true
+      contributor:
+        required: true
+- Affiliation:
+    class_uri: https://openminds.ebrains.eu/core/Affiliation
+    description: Structured information about a relationship between two entities,
+      such as a person and their employer.
+    title: Affiliation
+    slots:
+    - id
+    - endDate
+    - organization
+    - startDate
+    slot_usage:
+      organization:
+        required: true
+- Project:
+    class_uri: https://openminds.ebrains.eu/core/Project
+    description: Structured information on a research project.
+    title: Project
+    slots:
+    - id
+    - coordinator
+    - description
+    - fullName
+    - hasResearchProducts
+    - homepage
+    - shortName
+    slot_usage:
+      coordinator:
+        range: Organization
+      description:
+        required: true
+      fullName:
+        required: true
+      hasResearchProducts:
+        required: true
+        range: Dataset
+      shortName:
+        required: true
 - Dataset:
     class_uri: https://openminds.ebrains.eu/core/Dataset
     description: Structured information on data originating from human/animal studies
@@ -513,6 +442,40 @@ classes:
       hasVersion:
         required: true
         range: DatasetVersion
+      shortName:
+        required: true
+- Software:
+    class_uri: https://openminds.ebrains.eu/core/Software
+    description: Structured information on a software tool (concept level).
+    title: Software
+    slots:
+    - id
+    - custodian
+    - description
+    - developer
+    - digitalIdentifier
+    - fullName
+    - hasVersion
+    - homepage
+    - howToCite
+    - shortName
+    slot_usage:
+      custodian:
+        range: Organization
+      description:
+        required: true
+      developer:
+        required: true
+        range: Organization
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: SWHID
+      fullName:
+        required: true
+      hasVersion:
+        required: true
+        range: SoftwareVersion
       shortName:
         required: true
 - ModelVersion:
@@ -591,98 +554,6 @@ classes:
       versionIdentifier:
         required: true
       versionInnovation:
-        required: true
-- Project:
-    class_uri: https://openminds.ebrains.eu/core/Project
-    description: Structured information on a research project.
-    title: Project
-    slots:
-    - id
-    - coordinator
-    - description
-    - fullName
-    - hasResearchProducts
-    - homepage
-    - shortName
-    slot_usage:
-      coordinator:
-        range: Organization
-      description:
-        required: true
-      fullName:
-        required: true
-      hasResearchProducts:
-        required: true
-        range: Dataset
-      shortName:
-        required: true
-- Software:
-    class_uri: https://openminds.ebrains.eu/core/Software
-    description: Structured information on a software tool (concept level).
-    title: Software
-    slots:
-    - id
-    - custodian
-    - description
-    - developer
-    - digitalIdentifier
-    - fullName
-    - hasVersion
-    - homepage
-    - howToCite
-    - shortName
-    slot_usage:
-      custodian:
-        range: Organization
-      description:
-        required: true
-      developer:
-        required: true
-        range: Organization
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: SWHID
-      fullName:
-        required: true
-      hasVersion:
-        required: true
-        range: SoftwareVersion
-      shortName:
-        required: true
-- MetaDataModel:
-    class_uri: https://openminds.ebrains.eu/core/MetaDataModel
-    description: null
-    title: Meta data model
-    slots:
-    - id
-    - custodian
-    - description
-    - developer
-    - digitalIdentifier
-    - fullName
-    - hasVersion
-    - homepage
-    - howToCite
-    - shortName
-    slot_usage:
-      custodian:
-        range: Organization
-      description:
-        required: true
-      developer:
-        required: true
-        range: Organization
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: SWHID
-      fullName:
-        required: true
-      hasVersion:
-        required: true
-        range: MetaDataModelVersion
-      shortName:
         required: true
 - DatasetVersion:
     class_uri: https://openminds.ebrains.eu/core/DatasetVersion
@@ -767,96 +638,6 @@ classes:
       type:
         required: true
         range: SemanticDataType
-      versionIdentifier:
-        required: true
-      versionInnovation:
-        required: true
-- SoftwareVersion:
-    class_uri: https://openminds.ebrains.eu/core/SoftwareVersion
-    description: null
-    title: Software version
-    slots:
-    - id
-    - accessibility
-    - applicationCategory
-    - copyright
-    - custodian
-    - description
-    - developer
-    - device
-    - digitalIdentifier
-    - feature
-    - fullDocumentation
-    - fullName
-    - funding
-    - hasComponent
-    - homepage
-    - howToCite
-    - inputFormat
-    - isAlternativeVersionOf
-    - isNewVersionOf
-    - keyword
-    - language
-    - license
-    - operatingSystem
-    - otherContribution
-    - outputFormat
-    - programmingLanguage
-    - relatedPublication
-    - releaseDate
-    - repository
-    - requirement
-    - shortName
-    - supportChannel
-    - versionIdentifier
-    - versionInnovation
-    slot_usage:
-      accessibility:
-        required: true
-      applicationCategory:
-        required: true
-      custodian:
-        range: Organization
-      developer:
-        range: Organization
-      device:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: SWHID
-      feature:
-        required: true
-      fullDocumentation:
-        required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
-      funding:
-        required: true
-      isAlternativeVersionOf:
-        range: SoftwareVersion
-      isNewVersionOf:
-        range: SoftwareVersion
-      language:
-        required: true
-      license:
-        required: true
-      operatingSystem:
-        required: true
-      programmingLanguage:
-        required: true
-      relatedPublication:
-        range: DOI
-      releaseDate:
-        required: true
-      shortName:
-        required: true
-      supportChannel:
-        range: string
-        any_of:
-        - range: uri
       versionIdentifier:
         required: true
       versionInnovation:
@@ -979,27 +760,245 @@ classes:
         required: true
       versionInnovation:
         required: true
-- FileBundle:
-    class_uri: https://openminds.ebrains.eu/core/FileBundle
-    description: Structured information on a bundle of file instances.
-    title: File bundle
+- SoftwareVersion:
+    class_uri: https://openminds.ebrains.eu/core/SoftwareVersion
+    description: null
+    title: Software version
     slots:
     - id
-    - format
-    - groupedBy
-    - hash
-    - isPartOf
-    - name
-    - patternOfFilenames
-    - storageSize
+    - accessibility
+    - applicationCategory
+    - copyright
+    - custodian
+    - description
+    - developer
+    - device
+    - digitalIdentifier
+    - feature
+    - fullDocumentation
+    - fullName
+    - funding
+    - hasComponent
+    - homepage
+    - howToCite
+    - inputFormat
+    - isAlternativeVersionOf
+    - isNewVersionOf
+    - keyword
+    - language
+    - license
+    - operatingSystem
+    - otherContribution
+    - outputFormat
+    - programmingLanguage
+    - relatedPublication
+    - releaseDate
+    - repository
+    - requirement
+    - shortName
+    - supportChannel
+    - versionIdentifier
+    - versionInnovation
     slot_usage:
-      isPartOf:
+      accessibility:
+        required: true
+      applicationCategory:
+        required: true
+      custodian:
+        range: Organization
+      developer:
+        range: Organization
+      device:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: SWHID
+      feature:
+        required: true
+      fullDocumentation:
         required: true
         any_of:
-        - range: FileBundle
-        - range: FileRepository
-      name:
+        - range: DOI
+        - range: File
+        - range: URL
+      funding:
         required: true
+      isAlternativeVersionOf:
+        range: SoftwareVersion
+      isNewVersionOf:
+        range: SoftwareVersion
+      language:
+        required: true
+      license:
+        required: true
+      operatingSystem:
+        required: true
+      programmingLanguage:
+        required: true
+      relatedPublication:
+        range: DOI
+      releaseDate:
+        required: true
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- MetaDataModel:
+    class_uri: https://openminds.ebrains.eu/core/MetaDataModel
+    description: null
+    title: Meta data model
+    slots:
+    - id
+    - custodian
+    - description
+    - developer
+    - digitalIdentifier
+    - fullName
+    - hasVersion
+    - homepage
+    - howToCite
+    - shortName
+    slot_usage:
+      custodian:
+        range: Organization
+      description:
+        required: true
+      developer:
+        required: true
+        range: Organization
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: SWHID
+      fullName:
+        required: true
+      hasVersion:
+        required: true
+        range: MetaDataModelVersion
+      shortName:
+        required: true
+- SWHID:
+    class_uri: https://openminds.ebrains.eu/core/SWHID
+    description: null
+    title: Swhid
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
+        pattern: "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
+          \ \t\r\n\f]+)*$"
+- ISBN:
+    class_uri: https://openminds.ebrains.eu/core/ISBN
+    description: An International Standard Book Number of the International ISBN Agency.
+    title: Isbn
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
+        pattern: ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
+- URL:
+    class_uri: https://openminds.ebrains.eu/core/URL
+    description: null
+    title: Url
+    slots:
+    - id
+    - URL
+    slot_usage: {}
+- QuantitativeValue:
+    class_uri: https://openminds.ebrains.eu/core/QuantitativeValue
+    description: Structured information on a quantitative value.
+    title: Quantitative value
+    slots:
+    - id
+    - typeOfUncertainty
+    - uncertainty
+    - unit
+    - value
+    slot_usage:
+      value:
+        required: true
+        any_of:
+        - range: integer
+        - range: float
+- GRIDID:
+    class_uri: https://openminds.ebrains.eu/core/GRIDID
+    description: A GRID (Global Research Identifier Database) identifier.
+    title: Gridid
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
+        pattern: ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
+- RORID:
+    class_uri: https://openminds.ebrains.eu/core/RORID
+    description: A persistent identifier for a research organization, provided by
+      the Research Organization Registry.
+    title: Rorid
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
+        pattern: ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
+- Funding:
+    class_uri: https://openminds.ebrains.eu/core/Funding
+    description: Structured information on used funding.
+    title: Funding
+    slots:
+    - id
+    - acknowledgement
+    - awardNumber
+    - awardTitle
+    - funder
+    slot_usage:
+      funder:
+        required: true
+- ORCID:
+    class_uri: https://openminds.ebrains.eu/core/ORCID
+    description: A persistent identifier for a researcher provided by Open Researcher
+      and Contributor ID, Inc.
+    title: Orcid
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
+        pattern: ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
+- QuantitativeValueRange:
+    class_uri: https://openminds.ebrains.eu/core/QuantitativeValueRange
+    description: A representation of a range of quantitative values.
+    title: Quantitative value range
+    slots:
+    - id
+    - maxValue
+    - minValue
+    - unit
+    slot_usage:
+      maxValue:
+        required: true
+      minValue:
+        required: true
+- DOI:
+    class_uri: https://openminds.ebrains.eu/core/DOI
+    description: Structured information about a digital object identifier, as standardized
+      by the International Organization for Standardization.
+    title: Doi
+    slots:
+    - id
+    - identifier
+    slot_usage:
+      identifier:
+        pattern: ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
 - License:
     class_uri: https://openminds.ebrains.eu/core/License
     description: Structured information on a used license.
@@ -1016,22 +1015,6 @@ classes:
       legalCode:
         required: true
       shortName:
-        required: true
-- ContentType:
-    class_uri: https://openminds.ebrains.eu/core/ContentType
-    description: Structured information on the content type of a file instance, bundle
-      or repository.
-    title: Content type
-    slots:
-    - id
-    - description
-    - fileExtension
-    - name
-    - relatedMediaType
-    - specification
-    - synonym
-    slot_usage:
-      name:
         required: true
 - FileRepository:
     class_uri: https://openminds.ebrains.eu/core/FileRepository
@@ -1051,6 +1034,22 @@ classes:
         required: true
       hostedBy:
         required: true
+      name:
+        required: true
+- ContentType:
+    class_uri: https://openminds.ebrains.eu/core/ContentType
+    description: Structured information on the content type of a file instance, bundle
+      or repository.
+    title: Content type
+    slots:
+    - id
+    - description
+    - fileExtension
+    - name
+    - relatedMediaType
+    - specification
+    - synonym
+    slot_usage:
       name:
         required: true
 - File:
@@ -1103,4 +1102,25 @@ classes:
         required: true
         range: Organization
       year:
+        required: true
+- FileBundle:
+    class_uri: https://openminds.ebrains.eu/core/FileBundle
+    description: Structured information on a bundle of file instances.
+    title: File bundle
+    slots:
+    - id
+    - format
+    - groupedBy
+    - hash
+    - isPartOf
+    - name
+    - patternOfFilenames
+    - storageSize
+    slot_usage:
+      isPartOf:
+        required: true
+        any_of:
+        - range: FileBundle
+        - range: FileRepository
+      name:
         required: true

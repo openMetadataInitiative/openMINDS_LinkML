@@ -13,382 +13,382 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/AnalysisTechnique
     title: Analysis technique
     permissible_values:
-      manifold learning:
-        description: '''manifold learning'' refers to a group of machine learning
-          algorithms for non-linear dimensionality reduction of high-dimensionalty
-          data.'
-      inter-subject analysis:
-        description: null
-      reconstruction technique:
-        description: A 'reconstruction technique' is able to re-build, re-assemble,
-          re-create, or re-imagine something by applying (often mathematical) principles
-          to physical evidence.
-      ICA based denoising technique:
-        description: An 'ICA based denoising technique' removes independent components
-          from input data to reduce noise while preserving the features of interest
-          in the data.
-      semiquantitative analysis:
-        description: An analysis technique which constitutes or involves less than
-          quantitative precision.
-      nonlinear transformation:
-        description: A 'nonlinear transformation' is a mathematical function to map
-          coordinates between two different coordinate systems, not preserving straight
-          lines.
-      multi-scale individual component clustering:
-        description: '''multi-scale individual component clustering'' is a multi-scale,
-          unsupervised cluster analysis technique to group individual, independent
-          components of a single-object/single-subject independent component analysis
-          (ICA) from an object-pool/subject-pool (cf. [Naveau et al, 2012](https://doi.org/10.1007/s12021-012-9145-2)).'
-      Ward clustering:
-        description: '''Ward clustering'' is a general agglomerative hierarchical
-          clustering procedure, where the criterion for choosing the pair of clusters
-          to merge at each step is based on the optimal value of an objective function
-          (typically aiming to minimize the total within-cluster variance). [adapted
-          from [Wikipedia](https://en.wikipedia.org/wiki/Ward%27s_method)]'
-      linear image registration:
-        description: A 'linear image registration' is a process of bringing a set
-          of images into the same coordinate system using linear transformation.
-      rigid image registration:
-        description: A 'rigid image registration' is a process of bringing a set of
-          images into the same coordinate system using rigid transformation.
-      current source density analysis:
-        description: null
-      correlation analysis:
-        description: null
-      motion correction:
-        description: '''Motion correction'' is the general term for any preprocessing
-          analysis technique used to correct for motion artifacts in imaging time-series.'
-      image registration:
-        description: An 'image registration' is a process of bringing a set of images
-          into the same coordinate system.
-      4-points congruent sets alignment:
-        description: 4-points congruent sets alignment is a fast and robust alignment
-          technique for 3D point sets without pre-filtering or denoising the data,
-          even if the data are noisy and/or contaminated with outliers ([Aiger et
-          al., 2008](https://doi.org/10.1145/1360612.1360684)).
-      spike sorting:
-        description: '''Spike sorting'' is a class of techniques used in the analysis
-          of extracellular electrophysiological data to extract the activity of one
-          or more neurons from the background electrical noise by making use of the
-          typical waveforms action potentials (spikes) create in the recorded neuronal
-          signal.'
-      bootstrapping:
-        description: null
-      general linear modeling:
-        description: null
-      multivariate analysis:
-        description: Any statistical analysis of data where multiple measurements
-          are made on each experimental unit and where the relationships among multivariate
-          measurements and their structure are important. [adapted from [Olkin and
-          Sampson, 2001](https://doi.org/10.1016/B0-08-043076-7/00472-1)]
-      deep learning:
-        description: null
-      signal processing technique:
-        description: '''Signal processing'' refers to a class of analysis techniques
-          used to improve transmission, storage efficiency and subjective quality
-          as well as to emphasize or detect components of interest in a measured signal.
-          [adapted from [wikipedia](https://en.wikipedia.org/wiki/Signal_processing)]'
-      Isomap:
-        description: A manifold learning algorithm used for computing a quasi-isometric,
-          low-dimensional embedding of a set of high-dimensional data points to perform
-          a nonlinear dimensionality reduction. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Isomap)]
-      morphometry:
-        description: null
-      activation likelihood estimation:
-        description: An 'activation likelihood estimation' is a coordinate-based meta-analysis
-          of neuroimaging data that determines the above-chance convergence of activation
-          probabilities between experiments (i.e., not between foci). [adapted from
-          [Eickhoff et al., 2011](https://dx.doi.org/10.1016%2Fj.neuroimage.2011.09.017)]
       stochastic online matrix factorization:
         description: '''Stochastic online matrix factorization'' is a matrix-factorization
           algorithm that scales to input matrices with both huge number of rows and
           columns [(Mensch et al., 2018)](https://doi.org/10.1109/TSP.2017.2752697).'
-      anatomical delineation technique:
-        description: null
-      k-means clustering:
-        description: '''k-means clustering'' is a centroid-based cluster analysis
-          technique that aims to partition n observations into a pre-defined number
-          of k clusters by assigning each observation to the cluster with the nearest
-          mean (centroid).'
-      performance profiling:
-        description: null
-      magnetization transfer saturation image processing:
-        description: Magnetization transfer estimation method that improves the contrast
-          between white matter, gray matter, and cerebrospinal fluid, as well as the
-          correlation with macromolecular content [adapted from [Longoni et al., (2023)](https://doi.org/10.1177/13524585221137500)].
-      dynamic causal modeling:
-        description: An analysis framework for specifying non-linear state-space models
-          in continuous time using stochastic or ordinary differential equations,
-          for fitting them to data and comparing their evidence using Bayesian model
-          comparison.[adapted from [Wikipedia](https://en.wikipedia.org/wiki/Dynamic_causal_modeling)]
-      pathway analysis:
-        description: "A 'pathway analysis' refers to a group of techniques that aim\
-          \ to discover what biological themes, and which biomolecules, are crucial\
-          \ to understand biological pathways of (typically) high-throughput biological\
-          \ data (adapted from [Garc\xEDa-Campos et al., 2015](https://doi.org/10.3389/fphys.2015.00383))."
-      mass univariate analysis:
-        description: A 'mass univariate analysis' is the statistical analysis of a
-          massive number of simultaneously measured dependent variables via the performance
-          of univariate hypothesis tests.
-      linear regression:
-        description: A 'linear regression' is an analysis approach for modelling the
-          linear relationship between a scalar response and one or more explanatory
-          variables.
-      communication profiling:
-        description: null
-      macromolecular tissue volume image processing:
-        description: Magnetic resonance imaging analysis technique that provides a
-          quantitative estimate of the macromolecular tissue volume within the image.
-          [adapted from [Mezer et al., (2013)](https://doi.org/10.1038/nm.3390)].
-      phase synchronization analysis:
-        description: A 'phase synchronization analysis' detects and quantifies synchronization
-          between two time series.
-      genetic correlation analysis:
-        description: null
-      model-based stimulation artifact correction:
-        description: The 'model-based stimulation artifact correction' is a model-based
-          analysis technique for removing stimulation artifacts from intracranial
-          electroencephalography signals to uncover the cortico-cortical evoked potentials
-          caused by the stimulation (cf. [Trebaul et al. (2016)](https://doi.org/10.1016/j.jneumeth.2016.03.002)).
-      hierarchical clustering:
-        description: null
-      intra-subject analysis:
-        description: null
-      structural covariance analysis:
-        description: null
-      spectral power auto-segmentation technique:
-        description: A 'spectral power auto-segmentation technique' makes use of the
-          power spectrum along the time axis of individual pixels or voxels in an
-          image to automatically generate a segmentation.
-      average linkage clustering:
-        description: null
-      slice timing correction:
-        description: '''Slice timing correction'' is a preprocessing technique applied
-          to functional magnetic resonance image data in order to correct for temporal
-          offsets between 2D image slices during the data acquisition. [adapted from
-          [Parker and Razlighi, 2019](https://doi.org/10.3389/fnins.2019.00821)]'
-      principal component analysis:
-        description: A 'principal component analysis' is a statistical technique for
-          reducing the dimensionality of a dataset by linearly transforming the data
-          into a new coordinate system where (most of) the variation in the data can
-          be described with fewer dimensions than the initial data. [adapted from
-          [wikipedia](https://en.wikipedia.org/wiki/Principal_component_analysis)]
-      rigid motion correction:
-        description: null
-      connected-component analysis:
-        description: '''connected-component analysis'' is an algorithmic application
-          of graph theory, where subsets of connected components are uniquely labeled
-          based on a given heuristic. [adapted from: [wikipedia](https://en.wikipedia.org/wiki/Connected-component_labeling)]'
-      image distortion correction:
-        description: '''Image distortion correction'' is the general term for any
-          image processing technique correcting optical or perspective aberrations
-          of an image.'
-      metadata parsing:
-        description: null
-      isometric mapping:
-        description: A superclass of distance-preserving transformations between metric
-          spaces, often used to reduce dimensionality of data by embedding one space
-          into another. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Isometry)]
-      density measurement:
-        description: null
-      quantitative analysis:
-        description: null
-      conjunction analysis:
-        description: null
-      probabilistic anatomical parcellation technique:
-        description: null
-      hierarchical divisive clustering:
-        description: null
-      Hilbert transform:
-        description: "A convolution technique for a function u(t) of a real variable\
-          \ with the function h(t) = 1/\u03C0t, known as the Cauchy kernel, producing\
-          \ a function of a real variable H(u)(t). [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Hilbert_transform)]"
-      linear transformation:
-        description: A 'linear transformation' is a linear mathematical function to
-          map coordinates between two different coordinate systems while preserving
-          straight lines.
-      transformation:
-        description: A 'transformation' is a mathematical function to map coordinates
-          between two different coordinate systems.
-      "Mann\u2013Whitney U test":
-        description: "The 'Mann\u2013Whitney U test' is a nonparametric test of the\
-          \ null hypothesis that, for randomly selected values X and Y from two populations,\
-          \ the probability of X being greater than Y is equal to the probability\
-          \ of Y being greater than X. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test)]"
-      Spearman's rank-order correlation:
-        description: The 'Spearman's rank-order correlation' is the nonparametric
-          version of the Pearson product-moment correlation measuring the strength
-          and direction of association between a set of two ranked variables. [adapted
-          from [Laerd.com](https://statistics.laerd.com/statistical-guides/spearmans-rank-order-correlation-statistical-guide.php)]
-      literature mining:
-        description: null
-      diffeomorphic registration:
-        description: '''Diffeomorphic registration'' refers to a suite of algorithms
-          that register or build correspondences between dense coordinate systems
-          in medical imaging by ensuring the solutions are diffeomorphic.'
-      nonlinear image registration:
-        description: A 'nonlinear image registration' is a process of bringing a set
-          of images into the same coordinate system using nonlinear transformation.
-      qualitative analysis:
-        description: '''Qualitative analysis'' uses subjective judgment to analyze
-          data based on non-quantifiable information. The resulting data are typically
-          nonnumerical.'
-      tractography:
-        description: null
-      nonrigid transformation:
-        description: A 'nonrigid transformation' is a specific linear transformation
-          using combinations of rotations, translations, reflections, scaling, shearing,
-          and perspective projections to map coordinates between two coordinate spaces.
-      nuisance regression:
-        description: '''Nuisance regression'' is an image processing technique which
-          seeks to attenuate non-neural BOLD fluctuations from measurable noise sources
-          such as scanner drift and head motion, as well as periodic physiological
-          signals. [adapted from [Hallquist et al. 2013](https://doi.org/10.1016%2Fj.neuroimage.2013.05.116)]'
-      nonrigid motion correction:
-        description: null
-      video annotation:
-        description: null
-      "combined volume\u2013surface registration":
-        description: The term 'combined volume-surface registration' refers to an
-          image registration framework which utilizes information from the brain surface
-          and the brain volume to perform the registration (cf. [Postelnicu et al.
-          (2009)](https://doi.org/10.1109/TMI.2008.2004426)).
-      eye movement analysis:
-        description: '''Eye movement analysis'' refers to a group of techniques used
-          to analyze eye movements from video or images.'
-      affine image registration:
-        description: A 'affine image registration' is a process of bringing a set
-          of images into the same coordinate system using affine transformation.
-      univariate analysis:
-        description: Any statistical analysis that is carried out on only one (dependent)
-          variable of the data to summarize or describe that variable. [adapted from
-          [Dandilands, 2014](https://doi.org/10.1007/978-94-007-0753-5_3108)]
-      maximum probability projection:
-        description: null
-      surface projection:
-        description: null
-      semantic anchoring:
-        description: null
+      motion correction:
+        description: '''Motion correction'' is the general term for any preprocessing
+          analysis technique used to correct for motion artifacts in imaging time-series.'
       rigid transformation:
         description: A 'rigid transformation' is a specific linear transformation
           using combinations of rotations, translations, and reflections to map coordinates
           between two coordinate spaces, leaving the object congruent.
-      support-vector machine classifier:
-        description: A 'support-vector machine classifier' is a supervised machine
-          learning technique that analyzes data for classification.
-      probabilistic diffusion tractography:
+      magnetization transfer saturation image processing:
+        description: Magnetization transfer estimation method that improves the contrast
+          between white matter, gray matter, and cerebrospinal fluid, as well as the
+          correlation with macromolecular content [adapted from [Longoni et al., (2023)](https://doi.org/10.1177/13524585221137500)].
+      magnetization transfer ratio image processing:
         description: null
-      cluster analysis:
+      tractography:
         description: null
-      boundary-based registration:
-        description: The term 'boundary-based registration' refers to feature based
-          image registration methods which utilize a boundary which can be identified
-          in the source and target image.
+      morphometry:
+        description: null
+      current source density analysis:
+        description: null
+      genetic risk score:
+        description: A genetic risk score is an estimate of the cumulative contribution
+          of genetic factors to a specific outcome of interest in an individual (Igo
+          et al, 2019).
+      semantic anchoring:
+        description: null
+      maximum probability projection:
+        description: null
+      video annotation:
+        description: null
+      density measurement:
+        description: null
       maximum likelihood estimation technique:
         description: '''Maximum likelihood estimation'' is a statistical analysis
           technique that estimates the parameters of an assumed probability distribution
           for some observed data by maximizing a likelihood function so that, under
           the assumed statistical model, the observed data is most probable. [adapted
           from [wikipedia](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation)]'
-      signal filtering technique:
-        description: '''Signal filtering'' is a signal processing technique used to
-          remove or suppress unwanted components or features (e.g., certain frequencies)
-          from a measured signal. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Filter_(signal_processing))]'
-      z-score analysis:
-        description: The 'z-score analysis' is a statistical normalization technique
-          where the z-score is calculated by subtracting the population mean from
-          an individual raw score (observed data point) and dividing the difference
-          by the population standard deviation. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Standard_score)]
+      independent component analysis:
+        description: null
+      hierarchical divisive clustering:
+        description: null
       temporal filtering:
         description: '''Temporal filtering'' is a functional image signal processing
           technique that aims to remove or attenuate frequencies that vary along the
           time axis of the raw signal. [adapted from [Wikibooks](https://en.wikibooks.org/wiki/Neuroimaging_Data_Processing/Processing/Steps/Temporal_Filtering)]'
-      bootstrap aggregating:
-        description: A specialized machine learning ensemble meta-algorithm designed
-          to improve the stability and accuracy of machine learning algorithms used
-          in statistical classification and regression. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Bootstrap_aggregating)]
-      multiple linear regression:
-        description: A 'multiple linear regression' is a linear approach for modelling
-          the relationship between a scalar response and multiple explanatory variables.
-          [adapted from [wikipedia](https://en.wikipedia.org/wiki/Linear_regression)]
-      global signal regression:
-        description: 'A ''global signal regression'' is a denoising technique where
-          the global signal is removed from the time series of each voxel through
-          linear regression. [adapted from: [Murphy & Fox, 2017](https://dx.doi.org/10.1016%2Fj.neuroimage.2016.11.052)]'
-      Shapiro-Wilk test:
-        description: "The 'Shapiro\u2013Wilk test' is a statistical test of normality\
-          \ of a complete sample, first described by [Shapiro and Wilk (1965)](https://doi.org/10.1093/biomet/52.3-4.591).\
-          \ [adapted from [wikipedia](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test)]"
-      motion analysis:
-        description: '''Motion analysis'' refers to a group of analysis techniques
-          used to measure from video/images the movement and/or position of an object,
-          specimen, or anatomical parts of a specimen over a given period of time.'
       multi-voxel pattern analysis:
         description: A 'multi-voxel pattern analysis' is considered as a supervised
           classification problem where a classifier attempts to capture the relationships
           between spatial patterns of functional magnetic resonance imaging activity
           and experimental conditions ([Mahmoudi et al., 2012](https://doi.org/10.1155/2012/961257),
           [Davatzikos et al., 2005](https://doi.org/10.1016/j.neuroimage.2005.08.009)).
+      affine image registration:
+        description: A 'affine image registration' is a process of bringing a set
+          of images into the same coordinate system using affine transformation.
+      linear transformation:
+        description: A 'linear transformation' is a linear mathematical function to
+          map coordinates between two different coordinate systems while preserving
+          straight lines.
+      univariate analysis:
+        description: Any statistical analysis that is carried out on only one (dependent)
+          variable of the data to summarize or describe that variable. [adapted from
+          [Dandilands, 2014](https://doi.org/10.1007/978-94-007-0753-5_3108)]
+      hierarchical clustering:
+        description: null
+      multi-scale individual component clustering:
+        description: '''multi-scale individual component clustering'' is a multi-scale,
+          unsupervised cluster analysis technique to group individual, independent
+          components of a single-object/single-subject independent component analysis
+          (ICA) from an object-pool/subject-pool (cf. [Naveau et al, 2012](https://doi.org/10.1007/s12021-012-9145-2)).'
+      correlation analysis:
+        description: null
+      meta-analytic connectivity modeling:
+        description: null
+      signal filtering technique:
+        description: '''Signal filtering'' is a signal processing technique used to
+          remove or suppress unwanted components or features (e.g., certain frequencies)
+          from a measured signal. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Filter_(signal_processing))]'
+      support-vector machine classifier:
+        description: A 'support-vector machine classifier' is a supervised machine
+          learning technique that analyzes data for classification.
+      communication profiling:
+        description: null
+      phase synchronization analysis:
+        description: A 'phase synchronization analysis' detects and quantifies synchronization
+          between two time series.
+      image registration:
+        description: An 'image registration' is a process of bringing a set of images
+          into the same coordinate system.
+      metadata parsing:
+        description: null
+      image distortion correction:
+        description: '''Image distortion correction'' is the general term for any
+          image processing technique correcting optical or perspective aberrations
+          of an image.'
+      rigid image registration:
+        description: A 'rigid image registration' is a process of bringing a set of
+          images into the same coordinate system using rigid transformation.
+      convolution:
+        description: In functional analysis, 'convolution' is a mathematical operation
+          on two functions (f and g) producing a third function (f * g) that expresses
+          how the shape of one is modified by the other. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Convolution)]
+      slice timing correction:
+        description: '''Slice timing correction'' is a preprocessing technique applied
+          to functional magnetic resonance image data in order to correct for temporal
+          offsets between 2D image slices during the data acquisition. [adapted from
+          [Parker and Razlighi, 2019](https://doi.org/10.3389/fnins.2019.00821)]'
+      structural covariance analysis:
+        description: null
+      signal processing technique:
+        description: '''Signal processing'' refers to a class of analysis techniques
+          used to improve transmission, storage efficiency and subjective quality
+          as well as to emphasize or detect components of interest in a measured signal.
+          [adapted from [wikipedia](https://en.wikipedia.org/wiki/Signal_processing)]'
+      genetic correlation analysis:
+        description: null
+      reconstruction technique:
+        description: A 'reconstruction technique' is able to re-build, re-assemble,
+          re-create, or re-imagine something by applying (often mathematical) principles
+          to physical evidence.
+      probabilistic anatomical parcellation technique:
+        description: null
+      motion analysis:
+        description: '''Motion analysis'' refers to a group of analysis techniques
+          used to measure from video/images the movement and/or position of an object,
+          specimen, or anatomical parts of a specimen over a given period of time.'
+      boundary-based registration:
+        description: The term 'boundary-based registration' refers to feature based
+          image registration methods which utilize a boundary which can be identified
+          in the source and target image.
+      bootstrapping:
+        description: null
+      performance profiling:
+        description: null
+      connected-component analysis:
+        description: '''connected-component analysis'' is an algorithmic application
+          of graph theory, where subsets of connected components are uniquely labeled
+          based on a given heuristic. [adapted from: [wikipedia](https://en.wikipedia.org/wiki/Connected-component_labeling)]'
+      nonrigid transformation:
+        description: A 'nonrigid transformation' is a specific linear transformation
+          using combinations of rotations, translations, reflections, scaling, shearing,
+          and perspective projections to map coordinates between two coordinate spaces.
+      seed-based correlation analysis:
+        description: null
+      mass univariate analysis:
+        description: A 'mass univariate analysis' is the statistical analysis of a
+          massive number of simultaneously measured dependent variables via the performance
+          of univariate hypothesis tests.
+      Spearman's rank-order correlation:
+        description: The 'Spearman's rank-order correlation' is the nonparametric
+          version of the Pearson product-moment correlation measuring the strength
+          and direction of association between a set of two ranked variables. [adapted
+          from [Laerd.com](https://statistics.laerd.com/statistical-guides/spearmans-rank-order-correlation-statistical-guide.php)]
+      eye movement analysis:
+        description: '''Eye movement analysis'' refers to a group of techniques used
+          to analyze eye movements from video or images.'
+      ratiometry:
+        description: Quantitative analysis technique utilizing the ratio of two signals
+          or responses obtained from a sample.
+      conjunction analysis:
+        description: null
+      covariance analysis:
+        description: null
+      general linear modeling:
+        description: null
+      model-based stimulation artifact correction:
+        description: The 'model-based stimulation artifact correction' is a model-based
+          analysis technique for removing stimulation artifacts from intracranial
+          electroencephalography signals to uncover the cortico-cortical evoked potentials
+          caused by the stimulation (cf. [Trebaul et al. (2016)](https://doi.org/10.1016/j.jneumeth.2016.03.002)).
+      literature mining:
+        description: null
+      "Mann\u2013Whitney U test":
+        description: "The 'Mann\u2013Whitney U test' is a nonparametric test of the\
+          \ null hypothesis that, for randomly selected values X and Y from two populations,\
+          \ the probability of X being greater than Y is equal to the probability\
+          \ of Y being greater than X. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test)]"
+      Ward clustering:
+        description: '''Ward clustering'' is a general agglomerative hierarchical
+          clustering procedure, where the criterion for choosing the pair of clusters
+          to merge at each step is based on the optimal value of an objective function
+          (typically aiming to minimize the total within-cluster variance). [adapted
+          from [Wikipedia](https://en.wikipedia.org/wiki/Ward%27s_method)]'
+      isometric mapping:
+        description: A superclass of distance-preserving transformations between metric
+          spaces, often used to reduce dimensionality of data by embedding one space
+          into another. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Isometry)]
+      principal component analysis:
+        description: A 'principal component analysis' is a statistical technique for
+          reducing the dimensionality of a dataset by linearly transforming the data
+          into a new coordinate system where (most of) the variation in the data can
+          be described with fewer dimensions than the initial data. [adapted from
+          [wikipedia](https://en.wikipedia.org/wiki/Principal_component_analysis)]
+      linear regression:
+        description: A 'linear regression' is an analysis approach for modelling the
+          linear relationship between a scalar response and one or more explanatory
+          variables.
+      anatomical delineation technique:
+        description: null
       voxel-based morphometry:
+        description: null
+      transformation:
+        description: A 'transformation' is a mathematical function to map coordinates
+          between two different coordinate systems.
+      affine transformation:
+        description: An 'affine transformation' is a specific linear transformation
+          using combinations of rotations, translations, reflections, scaling and
+          shearing to map coordinates between two coordinate spaces.
+      probabilistic diffusion tractography:
+        description: null
+      multivariate analysis:
+        description: Any statistical analysis of data where multiple measurements
+          are made on each experimental unit and where the relationships among multivariate
+          measurements and their structure are important. [adapted from [Olkin and
+          Sampson, 2001](https://doi.org/10.1016/B0-08-043076-7/00472-1)]
+      pathway analysis:
+        description: "A 'pathway analysis' refers to a group of techniques that aim\
+          \ to discover what biological themes, and which biomolecules, are crucial\
+          \ to understand biological pathways of (typically) high-throughput biological\
+          \ data (adapted from [Garc\xEDa-Campos et al., 2015](https://doi.org/10.3389/fphys.2015.00383))."
+      rigid motion correction:
+        description: null
+      global signal regression:
+        description: 'A ''global signal regression'' is a denoising technique where
+          the global signal is removed from the time series of each voxel through
+          linear regression. [adapted from: [Murphy & Fox, 2017](https://dx.doi.org/10.1016%2Fj.neuroimage.2016.11.052)]'
+      average linkage clustering:
+        description: null
+      spike sorting:
+        description: '''Spike sorting'' is a class of techniques used in the analysis
+          of extracellular electrophysiological data to extract the activity of one
+          or more neurons from the background electrical noise by making use of the
+          typical waveforms action potentials (spikes) create in the recorded neuronal
+          signal.'
+      nuisance regression:
+        description: '''Nuisance regression'' is an image processing technique which
+          seeks to attenuate non-neural BOLD fluctuations from measurable noise sources
+          such as scanner drift and head motion, as well as periodic physiological
+          signals. [adapted from [Hallquist et al. 2013](https://doi.org/10.1016%2Fj.neuroimage.2013.05.116)]'
+      cluster analysis:
+        description: null
+      bootstrap aggregating:
+        description: A specialized machine learning ensemble meta-algorithm designed
+          to improve the stability and accuracy of machine learning algorithms used
+          in statistical classification and regression. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Bootstrap_aggregating)]
+      myelin water fraction image processing:
+        description: null
+      linear image registration:
+        description: A 'linear image registration' is a process of bringing a set
+          of images into the same coordinate system using linear transformation.
+      diffeomorphic registration:
+        description: '''Diffeomorphic registration'' refers to a suite of algorithms
+          that register or build correspondences between dense coordinate systems
+          in medical imaging by ensuring the solutions are diffeomorphic.'
+      meta-analysis:
+        description: null
+      Hilbert transform:
+        description: "A convolution technique for a function u(t) of a real variable\
+          \ with the function h(t) = 1/\u03C0t, known as the Cauchy kernel, producing\
+          \ a function of a real variable H(u)(t). [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Hilbert_transform)]"
+      Isomap:
+        description: A manifold learning algorithm used for computing a quasi-isometric,
+          low-dimensional embedding of a set of high-dimensional data points to perform
+          a nonlinear dimensionality reduction. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Isomap)]
+      nonlinear transformation:
+        description: A 'nonlinear transformation' is a mathematical function to map
+          coordinates between two different coordinate systems, not preserving straight
+          lines.
+      qualitative analysis:
+        description: '''Qualitative analysis'' uses subjective judgment to analyze
+          data based on non-quantifiable information. The resulting data are typically
+          nonnumerical.'
+      support-vector regression algorithm:
+        description: A 'Support-Vector Regression Algorithm' is a supervised machine
+          learning technique used to estimate the relationship between a dependent
+          and a number of independent variables.
+      activation likelihood estimation:
+        description: An 'activation likelihood estimation' is a coordinate-based meta-analysis
+          of neuroimaging data that determines the above-chance convergence of activation
+          probabilities between experiments (i.e., not between foci). [adapted from
+          [Eickhoff et al., 2011](https://dx.doi.org/10.1016%2Fj.neuroimage.2011.09.017)]
+      Shapiro-Wilk test:
+        description: "The 'Shapiro\u2013Wilk test' is a statistical test of normality\
+          \ of a complete sample, first described by [Shapiro and Wilk (1965)](https://doi.org/10.1093/biomet/52.3-4.591).\
+          \ [adapted from [wikipedia](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test)]"
+      cytoarchitectonic mapping:
+        description: '''Cytoarchitectonic mapping'' is a delineation technique that
+          defines regional borders based on histological analysis of the cellular
+          composition of the studied tissue.'
+      dictionary learning:
+        description: '''Dictionary learning'' is a branch of signal processing and
+          machine learning that aims at finding a frame (called dictionary) in which
+          some training data admits a sparse representation.'
+      surface projection:
+        description: null
+      nonlinear image registration:
+        description: A 'nonlinear image registration' is a process of bringing a set
+          of images into the same coordinate system using nonlinear transformation.
+      k-means clustering:
+        description: '''k-means clustering'' is a centroid-based cluster analysis
+          technique that aims to partition n observations into a pre-defined number
+          of k clusters by assigning each observation to the cluster with the nearest
+          mean (centroid).'
+      hierarchical agglomerative clustering:
+        description: null
+      nonrigid image registration:
+        description: A 'nonrigid image registration' is a process of bringing a set
+          of images into the same coordinate system using nonrigid transformation.
+      dynamic causal modeling:
+        description: An analysis framework for specifying non-linear state-space models
+          in continuous time using stochastic or ordinary differential equations,
+          for fitting them to data and comparing their evidence using Bayesian model
+          comparison.[adapted from [Wikipedia](https://en.wikipedia.org/wiki/Dynamic_causal_modeling)]
+      "combined volume\u2013surface registration":
+        description: The term 'combined volume-surface registration' refers to an
+          image registration framework which utilizes information from the brain surface
+          and the brain volume to perform the registration (cf. [Postelnicu et al.
+          (2009)](https://doi.org/10.1109/TMI.2008.2004426)).
+      spectral power auto-segmentation technique:
+        description: A 'spectral power auto-segmentation technique' makes use of the
+          power spectrum along the time axis of individual pixels or voxels in an
+          image to automatically generate a segmentation.
+      manifold learning:
+        description: '''manifold learning'' refers to a group of machine learning
+          algorithms for non-linear dimensionality reduction of high-dimensionalty
+          data.'
+      connectivity based parcellation technique:
         description: null
       Grubbs' test:
         description: The 'Grubbs test' is a statistical test, first published by [Grubbs
           (1950)](https://doi.org/10.1214/aoms/1177729885), used to detect outliers
           in univariate data that are assumed to come from a normally distributed
           population. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Grubbs%27s_test)]
-      magnetization transfer ratio image processing:
+      semiquantitative analysis:
+        description: An analysis technique which constitutes or involves less than
+          quantitative precision.
+      z-score analysis:
+        description: The 'z-score analysis' is a statistical normalization technique
+          where the z-score is calculated by subtracting the population mean from
+          an individual raw score (observed data point) and dividing the difference
+          by the population standard deviation. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Standard_score)]
+      inter-subject analysis:
         description: null
-      hierarchical agglomerative clustering:
+      ICA based denoising technique:
+        description: An 'ICA based denoising technique' removes independent components
+          from input data to reduce noise while preserving the features of interest
+          in the data.
+      interpolation:
+        description: An 'interpolation' is an analysis technique that delivers estimates
+          for new data points based on a range of a discrete set of known data points.
+      quantitative analysis:
         description: null
-      connectivity based parcellation technique:
+      nonrigid motion correction:
         description: null
-      covariance analysis:
+      4-points congruent sets alignment:
+        description: 4-points congruent sets alignment is a fast and robust alignment
+          technique for 3D point sets without pre-filtering or denoising the data,
+          even if the data are noisy and/or contaminated with outliers ([Aiger et
+          al., 2008](https://doi.org/10.1145/1360612.1360684)).
+      deep learning:
         description: null
-      meta-analysis:
-        description: null
+      macromolecular tissue volume image processing:
+        description: Magnetic resonance imaging analysis technique that provides a
+          quantitative estimate of the macromolecular tissue volume within the image.
+          [adapted from [Mezer et al., (2013)](https://doi.org/10.1038/nm.3390)].
       bias field correction:
         description: "A 'bias field correction' is a mathematical technique to remove\
           \ a corrupting, low frequency signal from magnetic resonance images. This\
           \ bias field signal is typically caused by inhomogeneities in the magnetic\
           \ \uFB01elds of the magnetic resonance imaging machine."
-      genetic risk score:
-        description: A genetic risk score is an estimate of the cumulative contribution
-          of genetic factors to a specific outcome of interest in an individual (Igo
-          et al, 2019).
-      seed-based correlation analysis:
+      intra-subject analysis:
         description: null
-      meta-analytic connectivity modeling:
-        description: null
-      nonrigid image registration:
-        description: A 'nonrigid image registration' is a process of bringing a set
-          of images into the same coordinate system using nonrigid transformation.
-      interpolation:
-        description: An 'interpolation' is an analysis technique that delivers estimates
-          for new data points based on a range of a discrete set of known data points.
-      dictionary learning:
-        description: '''Dictionary learning'' is a branch of signal processing and
-          machine learning that aims at finding a frame (called dictionary) in which
-          some training data admits a sparse representation.'
-      ratiometry:
-        description: Quantitative analysis technique utilizing the ratio of two signals
-          or responses obtained from a sample.
-      affine transformation:
-        description: An 'affine transformation' is a specific linear transformation
-          using combinations of rotations, translations, reflections, scaling and
-          shearing to map coordinates between two coordinate spaces.
-      myelin water fraction image processing:
-        description: null
-      convolution:
-        description: In functional analysis, 'convolution' is a mathematical operation
-          on two functions (f and g) producing a third function (f * g) that expresses
-          how the shape of one is modified by the other. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Convolution)]
-      independent component analysis:
-        description: null
-      support-vector regression algorithm:
-        description: A 'Support-Vector Regression Algorithm' is a supervised machine
-          learning technique used to estimate the relationship between a dependent
-          and a number of independent variables.
-      cytoarchitectonic mapping:
-        description: '''Cytoarchitectonic mapping'' is a delineation technique that
-          defines regional borders based on histological analysis of the cellular
-          composition of the studied tissue.'
+      multiple linear regression:
+        description: A 'multiple linear regression' is a linear approach for modelling
+          the relationship between a scalar response and multiple explanatory variables.
+          [adapted from [wikipedia](https://en.wikipedia.org/wiki/Linear_regression)]

@@ -14,21 +14,21 @@ enums:
     title: Language
     description: Structured information on the available language setting.
     permissible_values:
-      Swedish:
-        description: null
-      German:
-        description: null
-      English:
-        description: null
-      Italian:
-        description: null
-      Dutch:
-        description: null
       French:
         description: null
-      Greek:
+      Swedish:
         description: null
       Spanish:
         description: null
       Norwegian:
+        description: null
+      English:
+        description: null
+      German:
+        description: null
+      Dutch:
+        description: null
+      Italian:
+        description: null
+      Greek:
         description: null

@@ -13,17 +13,6 @@ enums:
     enum_uri: https://openminds.om-i.org/types/PulseShape
     title: Pulse shape
     permissible_values:
-      Gaussian-Hanning pulse:
-        description: A composite pulse formed by applying a Hanning window to a Gaussian
-          pulse envelope.
-      sinc-Gaussian pulse:
-        description: A composite pulse formed by modulating a sinc pulse with a Gaussian
-          envelope.
-      sinc-Hanning pulse:
-        description: A composite pulse formed by modulating a sinc pulse with a Hanning
-          window.
-      Fermi pulse:
-        description: A pulse whose amplitude envelope follows a Fermi (logistic) function.
       sinc pulse:
         description: A pulse whose amplitude envelope follows a sinc function in time.
       Gaussian pulse:
@@ -32,3 +21,14 @@ enums:
       rectangular pulse:
         description: A pulse with constant amplitude over its duration and abrupt
           onset and offset transitions.
+      sinc-Gaussian pulse:
+        description: A composite pulse formed by modulating a sinc pulse with a Gaussian
+          envelope.
+      sinc-Hanning pulse:
+        description: A composite pulse formed by modulating a sinc pulse with a Hanning
+          window.
+      Fermi pulse:
+        description: A pulse whose amplitude envelope follows a Fermi (logistic) function.
+      Gaussian-Hanning pulse:
+        description: A composite pulse formed by applying a Hanning window to a Gaussian
+          pulse envelope.

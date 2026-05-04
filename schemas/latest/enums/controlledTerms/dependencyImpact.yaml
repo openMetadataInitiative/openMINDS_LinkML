@@ -16,18 +16,9 @@ enums:
       data staleness:
         description: A thing must rely on cached or outdated data because fresh data
           cannot be retrieved if the thing it depends on is unavailable.
-      non-critical function loss:
-        description: Secondary or optional features of a thing stop working while
-          core functions continue if the thing it depends on is unavailable.
       queue build-up:
         description: Requests or tasks directed to a thing accumulate because normal
           processing cannot proceed if the thing it depends on is unavailable.
-      reduced performance:
-        description: A thing remains functional but responds more slowly or with higher
-          latency if the thing it depends on is unavailable.
-      data unavailability:
-        description: A thing cannot retrieve any required data, causing operations
-          to halt or fail, if the thing it depends on is unavailable.
       complete outage:
         description: A thing becomes entirely nonfunctional if the thing it depends
           on is unavailable.
@@ -37,6 +28,15 @@ enums:
       fallback mode activation:
         description: A thing switches to an intentionally designed degraded or alternate
           operating mode if the thing it depends on is unavailable.
+      reduced performance:
+        description: A thing remains functional but responds more slowly or with higher
+          latency if the thing it depends on is unavailable.
+      data unavailability:
+        description: A thing cannot retrieve any required data, causing operations
+          to halt or fail, if the thing it depends on is unavailable.
+      non-critical function loss:
+        description: Secondary or optional features of a thing stop working while
+          core functions continue if the thing it depends on is unavailable.
       error propagation:
         description: A thing emits errors that surface to users or downstream systems
           if the thing it depends on is unavailable.

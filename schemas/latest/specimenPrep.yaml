@@ -14,61 +14,59 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- SlicingDeviceUsage:
-    class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
+- TissueSampleSlicing:
+    class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
     description: null
-    title: Slicing device usage
+    title: Tissue sample slicing
     slots:
     - id
+    - customPropertySet
+    - description
     - device
+    - endTime
+    - input
+    - isPartOf
     - lookupLabel
-    - metadataLocation
-    - oscillationAmplitude
-    - sliceThickness
-    - slicingAngle
-    - slicingPlane
-    - slicingSpeed
-    - usedSpecimen
-    - vibrationFrequency
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - temperature
+    - tissueBathSolution
     slot_usage:
       device:
         required: true
-        range: SlicingDevice
-      metadataLocation:
-        range: File
-      sliceThickness:
-        required: true
-      slicingAngle:
-        range: QuantitativeValue
-      slicingPlane:
-        required: true
-      usedSpecimen:
+        range: SlicingDeviceUsage
+      endTime:
+        range: string
         any_of:
-        - range: SubjectState
-        - range: TissueSampleState
-- SlicingDevice:
-    class_uri: https://openminds.om-i.org/types/SlicingDevice
-    description: null
-    title: Slicing device
-    slots:
-    - id
-    - contribution
-    - description
-    - internalIdentifier
-    - name
-    - serialNumber
-    - type
-    slot_usage:
-      contribution:
+        - range: time
+      input:
         required: true
-        range: Organization
-      name:
+        range: SubjectState
+      isPartOf:
         required: true
-      type:
+        range: DatasetVersion
+      output:
         required: true
+        range: TissueSampleCollectionState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      startTime:
+        range: string
         any_of:
-        - range: DeviceType
-        - range: HardwareProduct
+        - range: time
+      studyTarget:
+        range: AnatomicalCavity
+      temperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - CranialWindowPreparation:
     class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
     description: null
@@ -191,52 +189,61 @@ classes:
         - range: time
       studyTarget:
         range: AnatomicalCavity
-- TissueSampleSlicing:
-    class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
+- SlicingDeviceUsage:
+    class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
     description: null
-    title: Tissue sample slicing
+    title: Slicing device usage
     slots:
     - id
-    - customPropertySet
-    - description
     - device
-    - endTime
-    - input
-    - isPartOf
     - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - temperature
-    - tissueBathSolution
+    - metadataLocation
+    - oscillationAmplitude
+    - sliceThickness
+    - slicingAngle
+    - slicingPlane
+    - slicingSpeed
+    - usedSpecimen
+    - vibrationFrequency
     slot_usage:
       device:
         required: true
-        range: SlicingDeviceUsage
-      endTime:
-        range: string
+        range: SlicingDevice
+      metadataLocation:
+        range: File
+      sliceThickness:
+        required: true
         any_of:
-        - range: time
-      input:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      slicingAngle:
+        range: QuantitativeValue
+      slicingPlane:
         required: true
-        range: SubjectState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleCollectionState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-        range: Protocol
-      startTime:
-        range: string
+      usedSpecimen:
         any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
+        - range: SubjectState
+        - range: TissueSampleState
+- SlicingDevice:
+    class_uri: https://openminds.om-i.org/types/SlicingDevice
+    description: null
+    title: Slicing device
+    slots:
+    - id
+    - contribution
+    - description
+    - internalIdentifier
+    - name
+    - serialNumber
+    - type
+    slot_usage:
+      contribution:
+        required: true
+        range: Organization
+      name:
+        required: true
+      type:
+        required: true
+        any_of:
+        - range: DeviceType
+        - range: HardwareProduct

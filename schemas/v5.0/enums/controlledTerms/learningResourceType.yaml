@@ -13,16 +13,16 @@ enums:
     enum_uri: https://openminds.om-i.org/types/LearningResourceType
     title: Learning resource type
     permissible_values:
-      developer documentation:
-        description: Documentation for the developers of a resource.
       interactive tutorial:
         description: A tutorial presented in an interactive format, for example a
           Jupyter notebook.
+      video presentation:
+        description: A video recorded presentation.
+      developer documentation:
+        description: Documentation for the developers of a resource.
       slide deck:
         description: A set of slides for a visual presentation.
       video tutorial:
         description: A tutorial presented as a video.
       user documentation:
         description: Documentation for the users of a resource.
-      video presentation:
-        description: A video recorded presentation.

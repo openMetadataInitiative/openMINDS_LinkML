@@ -13,21 +13,21 @@ enums:
     enum_uri: https://openminds.om-i.org/types/ModificationScope
     title: Modification scope
     permissible_values:
-      technical modification:
-        description: Modification may be made to any operational procedures, specifications,
-          or performance methods.
-      material modification:
-        description: Modification may be made to any core rights, duties, or risk
-          allocations of the parties.
-      schedule modification:
-        description: Modification may be made to any deadlines, milestones, and delivery
-          timelines.
-      financial modification:
-        description: Modification may be made to any pricing, payment terms, fees,
-          or compensation.
       administrative modification:
         description: Modification may be made to any clerical, formatting, or non-substantive
           information.
+      technical modification:
+        description: Modification may be made to any operational procedures, specifications,
+          or performance methods.
+      schedule modification:
+        description: Modification may be made to any deadlines, milestones, and delivery
+          timelines.
       unrestricted modification:
         description: Modification may be made to any subject matter without contractual
           limitation.
+      material modification:
+        description: Modification may be made to any core rights, duties, or risk
+          allocations of the parties.
+      financial modification:
+        description: Modification may be made to any pricing, payment terms, fees,
+          or compensation.

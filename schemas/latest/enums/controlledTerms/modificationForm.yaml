@@ -13,9 +13,6 @@ enums:
     enum_uri: https://openminds.om-i.org/types/ModificationForm
     title: Modification form
     permissible_values:
-      physically signed modification:
-        description: Modification is executed by physical signatures of the required
-          parties.
       registered modification:
         description: Modification becomes effective upon registration in an official
           public or regulatory registry.
@@ -25,9 +22,12 @@ enums:
       electronically signed modification:
         description: Modification is executed using legally recognized electronic
           signature systems.
-      notarized modification:
-        description: Modification is authenticated by a licensed notary or equivalent
-          public officer.
       board approved modification:
         description: Modification is approved through a formal resolution of the governing
           body.
+      notarized modification:
+        description: Modification is authenticated by a licensed notary or equivalent
+          public officer.
+      physically signed modification:
+        description: Modification is executed by physical signatures of the required
+          parties.

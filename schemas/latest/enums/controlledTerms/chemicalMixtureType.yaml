@@ -13,6 +13,10 @@ enums:
     enum_uri: https://openminds.om-i.org/types/ChemicalMixtureType
     title: Chemical mixture type
     permissible_values:
+      alloy:
+        description: A mixture of chemical elements of which at least one is a metal,
+          the atoms are joined by metallic bonding and retains all properties of a
+          metal. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Alloy)]
       suspension:
         description: A 'suspension' is a heterogeneous mixture of a fluid that contains
           solid particles sufficiently large for sedimentation and may even be visible
@@ -25,7 +29,3 @@ enums:
         description: A 'solution' is a special type of homogeneous mixture where at
           least one substance, called solute, is fully dissolved in another substance,
           known as a solvent. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Solution_(chemistry))
-      alloy:
-        description: A mixture of chemical elements of which at least one is a metal,
-          the atoms are joined by metallic bonding and retains all properties of a
-          metal. [adapted from [wikipedia](https://en.wikipedia.org/wiki/Alloy)]

@@ -14,6 +14,124 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
+- CommonCoordinateFramework:
+    class_uri: https://openminds.om-i.org/types/CommonCoordinateFramework
+    description: null
+    title: Common coordinate framework
+    slots:
+    - id
+    - abbreviation
+    - contribution
+    - contributorAffiliation
+    - description
+    - digitalIdentifier
+    - documentation
+    - fullName
+    - homepage
+    - howToCite
+    - keyword
+    - ontologyIdentifier
+    - relatedPublication
+    - shortName
+    - supportChannel
+    - usedTaxon
+    slot_usage:
+      contribution:
+        required: true
+        range: Contribution
+      description:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
+      fullName:
+        required: true
+      howToCite:
+        required: true
+      keyword:
+        range: AccessChannel
+      relatedPublication:
+        range: DOI
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
+      usedTaxon:
+        required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
+- AnatomicalAtlas:
+    class_uri: https://openminds.om-i.org/types/AnatomicalAtlas
+    description: null
+    title: Anatomical atlas
+    slots:
+    - id
+    - abbreviation
+    - contribution
+    - contributorAffiliation
+    - description
+    - digitalIdentifier
+    - documentation
+    - fullName
+    - hasTerminology
+    - homepage
+    - howToCite
+    - keyword
+    - ontologyIdentifier
+    - relatedPublication
+    - shortName
+    - supportChannel
+    - usedTaxon
+    slot_usage:
+      contribution:
+        required: true
+        range: Contribution
+      description:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
+      fullName:
+        required: true
+      hasTerminology:
+        required: true
+        range: ParcellationTerminology
+      howToCite:
+        required: true
+      keyword:
+        range: AccessChannel
+      relatedPublication:
+        range: DOI
+      shortName:
+        required: true
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
+      usedTaxon:
+        required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - CommonCoordinateFrameworkVersion:
     class_uri: https://openminds.om-i.org/types/CommonCoordinateFrameworkVersion
     description: null
@@ -129,6 +247,52 @@ classes:
       hasEntity:
         required: true
         range: ParcellationEntityVersion
+- ParcellationTerminology:
+    class_uri: https://openminds.om-i.org/types/ParcellationTerminology
+    description: null
+    title: Parcellation terminology
+    slots:
+    - id
+    - dataLocation
+    - digitalIdentifier
+    - hasEntity
+    - ontologyIdentifier
+    slot_usage:
+      dataLocation:
+        range: File
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      hasEntity:
+        required: true
+        range: ParcellationEntity
+- AtlasAnnotation:
+    class_uri: https://openminds.om-i.org/types/AtlasAnnotation
+    description: null
+    title: Atlas annotation
+    slots:
+    - id
+    - criteria
+    - criteriaQualityType
+    - criteriaType
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - preferredVisualization
+    - specification
+    - type
+    slot_usage:
+      criteriaQualityType:
+        required: true
+      criteriaType:
+        required: true
+      specification:
+        range: File
+      type:
+        required: true
+        range: AnnotationType
 - AnatomicalAtlasVersion:
     class_uri: https://openminds.om-i.org/types/AnatomicalAtlasVersion
     description: null
@@ -225,170 +389,335 @@ classes:
         required: true
       versionSpecification:
         required: true
-- CommonCoordinateFramework:
-    class_uri: https://openminds.om-i.org/types/CommonCoordinateFramework
+- CentroidalPyramid:
+    class_uri: https://openminds.om-i.org/types/CentroidalPyramid
     description: null
-    title: Common coordinate framework
+    title: Centroidal pyramid
     slots:
     - id
-    - abbreviation
-    - contribution
-    - contributorAffiliation
-    - description
-    - digitalIdentifier
-    - documentation
-    - fullName
-    - homepage
-    - howToCite
-    - keyword
-    - ontologyIdentifier
-    - relatedPublication
-    - shortName
-    - supportChannel
-    - usedTaxon
+    - apexBaseDistance
+    - baseShape
     slot_usage:
-      contribution:
+      apexBaseDistance:
         required: true
-        range: Contribution
-      description:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: ISBN
-        - range: RRID
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
-      fullName:
-        required: true
-      howToCite:
-        required: true
-      keyword:
-        range: AccessChannel
-      relatedPublication:
-        range: DOI
-      shortName:
-        required: true
-      supportChannel:
-        range: string
-        any_of:
-        - range: uri
-      usedTaxon:
+      baseShape:
         required: true
         any_of:
-        - range: BiologicalOrder
-        - range: Species
-- AtlasAnnotation:
-    class_uri: https://openminds.om-i.org/types/AtlasAnnotation
+        - range: EquilateralTriangle
+        - range: IsoscelesTriangle
+        - range: Kite
+        - range: Parallelogram
+        - range: Rectangle
+        - range: RegularPolygon
+        - range: Rhombus
+        - range: RightTriangle
+        - range: Square
+        - range: Trapezoid
+        - range: Triangle
+- CircularSector:
+    class_uri: https://openminds.om-i.org/types/CircularSector
     description: null
-    title: Atlas annotation
+    title: Circular sector
     slots:
     - id
-    - criteria
-    - criteriaQualityType
-    - criteriaType
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - preferredVisualization
-    - specification
-    - type
+    - centralAngle
+    - radius
     slot_usage:
-      criteriaQualityType:
+      centralAngle:
         required: true
-      criteriaType:
+      radius:
         required: true
-      specification:
-        range: File
-      type:
-        required: true
-        range: AnnotationType
-- ParcellationTerminology:
-    class_uri: https://openminds.om-i.org/types/ParcellationTerminology
+- RightCone:
+    class_uri: https://openminds.om-i.org/types/RightCone
     description: null
-    title: Parcellation terminology
+    title: Right cone
     slots:
     - id
-    - dataLocation
-    - digitalIdentifier
-    - hasEntity
-    - ontologyIdentifier
+    - apexBaseDistance
+    - baseShape
     slot_usage:
-      dataLocation:
-        range: File
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: ISBN
-        - range: RRID
-      hasEntity:
+      apexBaseDistance:
         required: true
-        range: ParcellationEntity
-- AnatomicalAtlas:
-    class_uri: https://openminds.om-i.org/types/AnatomicalAtlas
+      baseShape:
+        required: true
+        any_of:
+        - range: Circle
+        - range: Ellipse
+- Spheroid:
+    class_uri: https://openminds.om-i.org/types/Spheroid
     description: null
-    title: Anatomical atlas
+    title: Spheroid
     slots:
     - id
-    - abbreviation
-    - contribution
-    - contributorAffiliation
-    - description
-    - digitalIdentifier
-    - documentation
-    - fullName
-    - hasTerminology
-    - homepage
-    - howToCite
-    - keyword
-    - ontologyIdentifier
-    - relatedPublication
-    - shortName
-    - supportChannel
-    - usedTaxon
+    - equatorialDiameter
+    - polarDiameter
     slot_usage:
-      contribution:
+      equatorialDiameter:
         required: true
-        range: Contribution
-      description:
+      polarDiameter:
         required: true
-      digitalIdentifier:
+- Kite:
+    class_uri: https://openminds.om-i.org/types/Kite
+    description: null
+    title: Kite
+    slots:
+    - id
+    - legLengths
+    - symmetryDiagonalLength
+    slot_usage:
+      legLengths:
+        required: true
+      symmetryDiagonalLength:
+        required: true
+- Rectangle:
+    class_uri: https://openminds.om-i.org/types/Rectangle
+    description: null
+    title: Rectangle
+    slots:
+    - id
+    - majorSideLength
+    - minorSideLength
+    slot_usage:
+      majorSideLength:
+        required: true
+      minorSideLength:
+        required: true
+- Cube:
+    class_uri: https://openminds.om-i.org/types/Cube
+    description: null
+    title: Cube
+    slots:
+    - id
+    - sideLength
+    slot_usage:
+      sideLength:
+        required: true
+- Trapezoid:
+    class_uri: https://openminds.om-i.org/types/Trapezoid
+    description: null
+    title: Trapezoid
+    slots:
+    - id
+    - baseDistance
+    - baseLengths
+    slot_usage:
+      baseDistance:
+        required: true
+      baseLengths:
+        required: true
+- Sphere:
+    class_uri: https://openminds.om-i.org/types/Sphere
+    description: null
+    title: Sphere
+    slots:
+    - id
+    - radius
+    slot_usage:
+      radius:
+        required: true
+- IsoscelesTriangle:
+    class_uri: https://openminds.om-i.org/types/IsoscelesTriangle
+    description: null
+    title: Isosceles triangle
+    slots:
+    - id
+    - apexAngle
+    - legLength
+    slot_usage:
+      apexAngle:
+        required: true
+      legLength:
+        required: true
+- Circle:
+    class_uri: https://openminds.om-i.org/types/Circle
+    description: null
+    title: Circle
+    slots:
+    - id
+    - radius
+    slot_usage:
+      radius:
+        required: true
+- EquilateralTriangle:
+    class_uri: https://openminds.om-i.org/types/EquilateralTriangle
+    description: null
+    title: Equilateral triangle
+    slots:
+    - id
+    - sideLength
+    slot_usage:
+      sideLength:
+        required: true
+- Frustum:
+    class_uri: https://openminds.om-i.org/types/Frustum
+    description: null
+    title: Frustum
+    slots:
+    - id
+    - baseDistance
+    - majorBaseShape
+    - minorBaseScale
+    slot_usage:
+      baseDistance:
+        required: true
+      majorBaseShape:
+        required: true
         any_of:
-        - range: DOI
-        - range: ISBN
-        - range: RRID
-      documentation:
+        - range: Circle
+        - range: CircularSector
+        - range: Ellipse
+        - range: EquilateralTriangle
+        - range: IsoscelesTriangle
+        - range: Kite
+        - range: Parallelogram
+        - range: Rectangle
+        - range: RegularPolygon
+        - range: Rhombus
+        - range: RightTriangle
+        - range: Square
+        - range: Trapezoid
+        - range: Triangle
+      minorBaseScale:
+        required: true
+- Square:
+    class_uri: https://openminds.om-i.org/types/Square
+    description: null
+    title: Square
+    slots:
+    - id
+    - sideLength
+    slot_usage:
+      sideLength:
+        required: true
+- Ellipse:
+    class_uri: https://openminds.om-i.org/types/Ellipse
+    description: null
+    title: Ellipse
+    slots:
+    - id
+    - diameters
+    slot_usage:
+      diameters:
+        required: true
+- Ellipsoid:
+    class_uri: https://openminds.om-i.org/types/Ellipsoid
+    description: null
+    title: Ellipsoid
+    slots:
+    - id
+    - intermediateDiameter
+    - majorDiameter
+    - minorDiameter
+    slot_usage:
+      intermediateDiameter:
+        required: true
+      majorDiameter:
+        required: true
+      minorDiameter:
+        required: true
+- Parallelogram:
+    class_uri: https://openminds.om-i.org/types/Parallelogram
+    description: null
+    title: Parallelogram
+    slots:
+    - id
+    - baseDistance
+    - baseLength
+    - interiorAngle
+    slot_usage:
+      baseDistance:
+        required: true
+      baseLength:
+        required: true
+      interiorAngle:
+        required: true
+- RightCylinder:
+    class_uri: https://openminds.om-i.org/types/RightCylinder
+    description: null
+    title: Right cylinder
+    slots:
+    - id
+    - baseDistance
+    - baseShape
+    slot_usage:
+      baseDistance:
+        required: true
+      baseShape:
+        required: true
         any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
-      fullName:
+        - range: Circle
+        - range: Ellipse
+- RightPrism:
+    class_uri: https://openminds.om-i.org/types/RightPrism
+    description: null
+    title: Right prism
+    slots:
+    - id
+    - baseDistance
+    - baseShape
+    slot_usage:
+      baseDistance:
         required: true
-      hasTerminology:
-        required: true
-        range: ParcellationTerminology
-      howToCite:
-        required: true
-      keyword:
-        range: AccessChannel
-      relatedPublication:
-        range: DOI
-      shortName:
-        required: true
-      supportChannel:
-        range: string
-        any_of:
-        - range: uri
-      usedTaxon:
+      baseShape:
         required: true
         any_of:
-        - range: BiologicalOrder
-        - range: Species
+        - range: EquilateralTriangle
+        - range: IsoscelesTriangle
+        - range: Kite
+        - range: Parallelogram
+        - range: Rectangle
+        - range: RegularPolygon
+        - range: Rhombus
+        - range: RightTriangle
+        - range: Square
+        - range: Trapezoid
+        - range: Triangle
+- RegularPolygon:
+    class_uri: https://openminds.om-i.org/types/RegularPolygon
+    description: null
+    title: Regular polygon
+    slots:
+    - id
+    - circumradius
+    - numberOfSides
+    slot_usage:
+      circumradius:
+        required: true
+      numberOfSides:
+        required: true
+- RightTriangle:
+    class_uri: https://openminds.om-i.org/types/RightTriangle
+    description: null
+    title: Right triangle
+    slots:
+    - id
+    - perpendicularLegLengths
+    slot_usage:
+      perpendicularLegLengths:
+        required: true
+- Rhombus:
+    class_uri: https://openminds.om-i.org/types/Rhombus
+    description: null
+    title: Rhombus
+    slots:
+    - id
+    - diagonalLengths
+    slot_usage:
+      diagonalLengths:
+        required: true
+- Triangle:
+    class_uri: https://openminds.om-i.org/types/Triangle
+    description: null
+    title: Triangle
+    slots:
+    - id
+    - apexAngle
+    - legLengths
+    slot_usage:
+      apexAngle:
+        required: true
+      legLengths:
+        required: true
 - SingleColor:
     class_uri: https://openminds.om-i.org/types/SingleColor
     description: null
@@ -432,6 +761,25 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- CoordinatePoint:
+    class_uri: https://openminds.om-i.org/types/CoordinatePoint
+    description: null
+    title: Coordinate point
+    slots:
+    - id
+    - coordinateFramework
+    - coordinates
+    slot_usage:
+      coordinateFramework:
+        required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
+      coordinates:
+        required: true
 - QualitativeRelationAssessment:
     class_uri: https://openminds.om-i.org/types/QualitativeRelationAssessment
     description: null
@@ -450,22 +798,6 @@ classes:
         - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
-- CoordinatePoint:
-    class_uri: https://openminds.om-i.org/types/CoordinatePoint
-    description: null
-    title: Coordinate point
-    slots:
-    - id
-    - coordinateFramework
-    - coordinates
-    slot_usage:
-      coordinateFramework:
-        required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
-      coordinates:
-        required: true
 - AnatomicalTargetPosition:
     class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
     description: null
@@ -482,335 +814,39 @@ classes:
         range: AnatomicalCavity
       targetIdentificationType:
         required: true
-- Cube:
-    class_uri: https://openminds.om-i.org/types/Cube
+- CustomAnnotation:
+    class_uri: https://openminds.om-i.org/types/CustomAnnotation
     description: null
-    title: Cube
+    title: Custom annotation
     slots:
     - id
-    - sideLength
+    - coordinateFramework
+    - criteria
+    - criteriaQualityType
+    - criteriaType
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - preferredVisualization
+    - specification
+    - type
     slot_usage:
-      sideLength:
-        required: true
-- Parallelogram:
-    class_uri: https://openminds.om-i.org/types/Parallelogram
-    description: null
-    title: Parallelogram
-    slots:
-    - id
-    - baseDistance
-    - baseLength
-    - interiorAngle
-    slot_usage:
-      baseDistance:
-        required: true
-      baseLength:
-        required: true
-      interiorAngle:
-        required: true
-- RegularPolygon:
-    class_uri: https://openminds.om-i.org/types/RegularPolygon
-    description: null
-    title: Regular polygon
-    slots:
-    - id
-    - circumradius
-    - numberOfSides
-    slot_usage:
-      circumradius:
-        required: true
-      numberOfSides:
-        required: true
-- Kite:
-    class_uri: https://openminds.om-i.org/types/Kite
-    description: null
-    title: Kite
-    slots:
-    - id
-    - legLengths
-    - symmetryDiagonalLength
-    slot_usage:
-      legLengths:
-        required: true
-      symmetryDiagonalLength:
-        required: true
-- Trapezoid:
-    class_uri: https://openminds.om-i.org/types/Trapezoid
-    description: null
-    title: Trapezoid
-    slots:
-    - id
-    - baseDistance
-    - baseLengths
-    slot_usage:
-      baseDistance:
-        required: true
-      baseLengths:
-        required: true
-- CircularSector:
-    class_uri: https://openminds.om-i.org/types/CircularSector
-    description: null
-    title: Circular sector
-    slots:
-    - id
-    - centralAngle
-    - radius
-    slot_usage:
-      centralAngle:
-        required: true
-      radius:
-        required: true
-- IsoscelesTriangle:
-    class_uri: https://openminds.om-i.org/types/IsoscelesTriangle
-    description: null
-    title: Isosceles triangle
-    slots:
-    - id
-    - apexAngle
-    - legLength
-    slot_usage:
-      apexAngle:
-        required: true
-      legLength:
-        required: true
-- RightPrism:
-    class_uri: https://openminds.om-i.org/types/RightPrism
-    description: null
-    title: Right prism
-    slots:
-    - id
-    - baseDistance
-    - baseShape
-    slot_usage:
-      baseDistance:
-        required: true
-      baseShape:
+      coordinateFramework:
         required: true
         any_of:
-        - range: EquilateralTriangle
-        - range: IsoscelesTriangle
-        - range: Kite
-        - range: Parallelogram
-        - range: Rectangle
-        - range: RegularPolygon
-        - range: Rhombus
-        - range: RightTriangle
-        - range: Square
-        - range: Trapezoid
-        - range: Triangle
-- Rectangle:
-    class_uri: https://openminds.om-i.org/types/Rectangle
-    description: null
-    title: Rectangle
-    slots:
-    - id
-    - majorSideLength
-    - minorSideLength
-    slot_usage:
-      majorSideLength:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
+      criteriaQualityType:
         required: true
-      minorSideLength:
+      criteriaType:
         required: true
-- EquilateralTriangle:
-    class_uri: https://openminds.om-i.org/types/EquilateralTriangle
-    description: null
-    title: Equilateral triangle
-    slots:
-    - id
-    - sideLength
-    slot_usage:
-      sideLength:
-        required: true
-- Triangle:
-    class_uri: https://openminds.om-i.org/types/Triangle
-    description: null
-    title: Triangle
-    slots:
-    - id
-    - apexAngle
-    - legLengths
-    slot_usage:
-      apexAngle:
-        required: true
-      legLengths:
-        required: true
-- Spheroid:
-    class_uri: https://openminds.om-i.org/types/Spheroid
-    description: null
-    title: Spheroid
-    slots:
-    - id
-    - equatorialDiameter
-    - polarDiameter
-    slot_usage:
-      equatorialDiameter:
-        required: true
-      polarDiameter:
-        required: true
-- Square:
-    class_uri: https://openminds.om-i.org/types/Square
-    description: null
-    title: Square
-    slots:
-    - id
-    - sideLength
-    slot_usage:
-      sideLength:
-        required: true
-- Sphere:
-    class_uri: https://openminds.om-i.org/types/Sphere
-    description: null
-    title: Sphere
-    slots:
-    - id
-    - radius
-    slot_usage:
-      radius:
-        required: true
-- CentroidalPyramid:
-    class_uri: https://openminds.om-i.org/types/CentroidalPyramid
-    description: null
-    title: Centroidal pyramid
-    slots:
-    - id
-    - apexBaseDistance
-    - baseShape
-    slot_usage:
-      apexBaseDistance:
-        required: true
-      baseShape:
-        required: true
+      specification:
         any_of:
-        - range: EquilateralTriangle
-        - range: IsoscelesTriangle
-        - range: Kite
-        - range: Parallelogram
-        - range: Rectangle
-        - range: RegularPolygon
-        - range: Rhombus
-        - range: RightTriangle
-        - range: Square
-        - range: Trapezoid
-        - range: Triangle
-- RightCylinder:
-    class_uri: https://openminds.om-i.org/types/RightCylinder
-    description: null
-    title: Right cylinder
-    slots:
-    - id
-    - baseDistance
-    - baseShape
-    slot_usage:
-      baseDistance:
+        - range: File
+        - range: PropertyValueList
+      type:
         required: true
-      baseShape:
-        required: true
-        any_of:
-        - range: Circle
-        - range: Ellipse
-- RightTriangle:
-    class_uri: https://openminds.om-i.org/types/RightTriangle
-    description: null
-    title: Right triangle
-    slots:
-    - id
-    - perpendicularLegLengths
-    slot_usage:
-      perpendicularLegLengths:
-        required: true
-- Frustum:
-    class_uri: https://openminds.om-i.org/types/Frustum
-    description: null
-    title: Frustum
-    slots:
-    - id
-    - baseDistance
-    - majorBaseShape
-    - minorBaseScale
-    slot_usage:
-      baseDistance:
-        required: true
-      majorBaseShape:
-        required: true
-        any_of:
-        - range: Circle
-        - range: CircularSector
-        - range: Ellipse
-        - range: EquilateralTriangle
-        - range: IsoscelesTriangle
-        - range: Kite
-        - range: Parallelogram
-        - range: Rectangle
-        - range: RegularPolygon
-        - range: Rhombus
-        - range: RightTriangle
-        - range: Square
-        - range: Trapezoid
-        - range: Triangle
-      minorBaseScale:
-        required: true
-- RightCone:
-    class_uri: https://openminds.om-i.org/types/RightCone
-    description: null
-    title: Right cone
-    slots:
-    - id
-    - apexBaseDistance
-    - baseShape
-    slot_usage:
-      apexBaseDistance:
-        required: true
-      baseShape:
-        required: true
-        any_of:
-        - range: Circle
-        - range: Ellipse
-- Rhombus:
-    class_uri: https://openminds.om-i.org/types/Rhombus
-    description: null
-    title: Rhombus
-    slots:
-    - id
-    - diagonalLengths
-    slot_usage:
-      diagonalLengths:
-        required: true
-- Ellipse:
-    class_uri: https://openminds.om-i.org/types/Ellipse
-    description: null
-    title: Ellipse
-    slots:
-    - id
-    - diameters
-    slot_usage:
-      diameters:
-        required: true
-- Circle:
-    class_uri: https://openminds.om-i.org/types/Circle
-    description: null
-    title: Circle
-    slots:
-    - id
-    - radius
-    slot_usage:
-      radius:
-        required: true
-- Ellipsoid:
-    class_uri: https://openminds.om-i.org/types/Ellipsoid
-    description: null
-    title: Ellipsoid
-    slots:
-    - id
-    - intermediateDiameter
-    - majorDiameter
-    - minorDiameter
-    slot_usage:
-      intermediateDiameter:
-        required: true
-      majorDiameter:
-        required: true
-      minorDiameter:
-        required: true
+        range: AnnotationType
 - CustomCoordinateFramework:
     class_uri: https://openminds.om-i.org/types/CustomCoordinateFramework
     description: null
@@ -861,36 +897,3 @@ classes:
         - range: VascularStructure
       relationAssessment:
         range: QualitativeRelationAssessment
-- CustomAnnotation:
-    class_uri: https://openminds.om-i.org/types/CustomAnnotation
-    description: null
-    title: Custom annotation
-    slots:
-    - id
-    - coordinateFramework
-    - criteria
-    - criteriaQualityType
-    - criteriaType
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - preferredVisualization
-    - specification
-    - type
-    slot_usage:
-      coordinateFramework:
-        required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
-      criteriaQualityType:
-        required: true
-      criteriaType:
-        required: true
-      specification:
-        any_of:
-        - range: File
-        - range: PropertyValueList
-      type:
-        required: true
-        range: AnnotationType

@@ -13,11 +13,11 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/SemanticDataType
     title: Semantic data type
     permissible_values:
+      simulated data:
+        description: null
       derived data:
         description: null
       raw data:
         description: null
       experimental data:
-        description: null
-      simulated data:
         description: null
