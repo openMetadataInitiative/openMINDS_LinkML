@@ -260,10 +260,6 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
-      preferredDisplayColor:
-        any_of:
-        - range: Colormap
-        - range: SingleColor
 - QuantitativeRelationAssessment:
     class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
     description: null
