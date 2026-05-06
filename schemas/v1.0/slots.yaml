@@ -293,11 +293,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: SWHID
-    - range: RORID
-    - range: DOI
     - range: ORCID
     - range: GRIDID
+    - range: SWHID
+    - range: DOI
+    - range: RORID
     - range: DigitalIdentifier
     multivalued: true
     list_elements_unique: true
@@ -575,11 +575,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileBundle
     - range: TissueSampleCollection
-    - range: DatasetVersion
-    - range: FileRepository
     - range: SubjectGroup
+    - range: FileRepository
+    - range: FileBundle
+    - range: DatasetVersion
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -1016,11 +1016,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: QuantitativeValueRange
+    - range: string
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     - range: integer
     - range: float
-    - range: string
     multivalued: true
     inlined: true
   versionIdentifier:

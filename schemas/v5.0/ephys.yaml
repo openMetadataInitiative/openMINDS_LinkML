@@ -182,11 +182,21 @@ classes:
     - serialNumber
     - type
     slot_usage:
+      conductorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
       contribution:
         required: true
         range: Organization
       electrodeIdentifier:
         required: true
+      insulatorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
       intrinsicResistance:
         any_of:
         - range: QuantitativeValue
@@ -323,9 +333,19 @@ classes:
     - serialNumber
     - type
     slot_usage:
+      conductorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
       contribution:
         required: true
         range: Organization
+      insulatorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
       intrinsicResistance:
         any_of:
         - range: QuantitativeValue

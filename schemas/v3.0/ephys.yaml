@@ -182,6 +182,11 @@ classes:
     - owner
     - serialNumber
     slot_usage:
+      conductorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
       deviceType:
         required: true
       digitalIdentifier:
@@ -190,6 +195,11 @@ classes:
         - range: RRID
       electrodeIdentifier:
         required: true
+      insulatorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
       intrinsicResistance:
         any_of:
         - range: QuantitativeValue
@@ -325,12 +335,22 @@ classes:
     - owner
     - serialNumber
     slot_usage:
+      conductorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
       deviceType:
         required: true
       digitalIdentifier:
         any_of:
         - range: DOI
         - range: RRID
+      insulatorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
       intrinsicResistance:
         any_of:
         - range: QuantitativeValue

@@ -197,6 +197,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -228,6 +232,10 @@ classes:
       stage:
         required: true
         range: DataAnalysis
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
 - ServiceDeployment:
     class_uri: https://openminds.om-i.org/types/ServiceDeployment
     description: null
@@ -373,6 +381,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -434,6 +446,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -494,6 +510,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -681,6 +701,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -741,6 +765,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -818,6 +846,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
