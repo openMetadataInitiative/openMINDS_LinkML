@@ -85,6 +85,9 @@ classes:
         required: true
       provider:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
       purity:
         any_of:
         - range: QuantitativeValue

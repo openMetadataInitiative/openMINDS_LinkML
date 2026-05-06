@@ -176,8 +176,8 @@ slots:
     slot_uri: contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Organization
     - range: Person
+    - range: Organization
   coordinatePoint:
     slot_uri: coordinatePoint
     description: Pair or triplet of numbers defining the position in a particular
@@ -293,12 +293,12 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: GRIDID
-    - range: ORCID
-    - range: RORID
     - range: SWHID
-    - range: DigitalIdentifier
+    - range: RORID
     - range: DOI
+    - range: ORCID
+    - range: GRIDID
+    - range: DigitalIdentifier
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -383,8 +383,8 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: File
     - range: DOI
+    - range: File
     - range: URL
   fullName:
     slot_uri: fullName
@@ -394,8 +394,8 @@ slots:
     slot_uri: funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Organization
     - range: Person
+    - range: Organization
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -575,11 +575,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: SubjectGroup
-    - range: FileRepository
-    - range: DatasetVersion
-    - range: TissueSampleCollection
     - range: FileBundle
+    - range: TissueSampleCollection
+    - range: DatasetVersion
+    - range: FileRepository
+    - range: SubjectGroup
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -842,8 +842,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: BehavioralTask
     - range: Technique
+    - range: BehavioralTask
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -965,8 +965,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: string
     - range: uri
+    - range: string
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -1016,11 +1016,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: QuantitativeValue
-    - range: string
     - range: QuantitativeValueRange
+    - range: QuantitativeValue
     - range: integer
     - range: float
+    - range: string
     multivalued: true
     inlined: true
   versionIdentifier:

@@ -178,6 +178,7 @@ classes:
     - MRIWeighting
     - MTPulseShape
     - accelerationFactor
+    - device
     - diffusionEncodingParameters
     - dwellTime
     - echoTime
@@ -209,6 +210,9 @@ classes:
     - usedSpecimen
     - voxelSize
     slot_usage:
+      device:
+        required: true
+        range: MRIScanner
       echoTime:
         required: true
       metadataLocation:

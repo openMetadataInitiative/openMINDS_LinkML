@@ -550,10 +550,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
-        - range: OrganismSubstance
       species:
         required: true
         any_of:
@@ -577,11 +573,6 @@ classes:
     - stimulusType
     - technique
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
       description:
         required: true
       name:
@@ -718,9 +709,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - Project:
     class_uri: https://openminds.om-i.org/types/Project
     description: Structured information on a research project.

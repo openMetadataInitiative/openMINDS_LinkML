@@ -599,10 +599,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
-        - range: OrganismSubstance
       species:
         required: true
         any_of:
@@ -626,11 +622,6 @@ classes:
     - stimulusType
     - technique
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
       description:
         required: true
       name:
@@ -1717,6 +1708,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - Accessibility:
     class_uri: https://openminds.om-i.org/types/Accessibility
     description: null

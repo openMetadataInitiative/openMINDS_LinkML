@@ -114,11 +114,6 @@ classes:
         required: true
       publicationDate:
         required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - Chapter:
     class_uri: https://openminds.om-i.org/types/Chapter
     description: null
@@ -167,11 +162,6 @@ classes:
         required: true
       publicationDate:
         required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - Periodical:
     class_uri: https://openminds.om-i.org/types/Periodical
     description: null
@@ -230,11 +220,6 @@ classes:
         required: true
       publicationDate:
         required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - LivePaper:
     class_uri: https://openminds.om-i.org/types/LivePaper
     description: null
@@ -415,11 +400,6 @@ classes:
         required: true
       publicationDate:
         required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
       requiredTime:
         any_of:
         - range: QuantitativeValue

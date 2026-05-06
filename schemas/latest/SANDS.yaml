@@ -68,9 +68,6 @@ classes:
         - range: uri
       usedTaxon:
         required: true
-        any_of:
-        - range: BiologicalOrder
-        - range: Species
 - AnatomicalAtlas:
     class_uri: https://openminds.om-i.org/types/AnatomicalAtlas
     description: null
@@ -129,9 +126,6 @@ classes:
         - range: uri
       usedTaxon:
         required: true
-        any_of:
-        - range: BiologicalOrder
-        - range: Species
 - CommonCoordinateFrameworkVersion:
     class_uri: https://openminds.om-i.org/types/CommonCoordinateFrameworkVersion
     description: null
@@ -742,6 +736,10 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
+      preferredDisplayColor:
+        any_of:
+        - range: Colormap
+        - range: SingleColor
 - QuantitativeRelationAssessment:
     class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
     description: null
