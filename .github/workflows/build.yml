@@ -6,7 +6,15 @@ on:
       branches:
         - pipeline
   workflow_dispatch: # This triggers the workflow when a webhook is received
-
+      inputs:
+        branch:
+          description: 'The branch of the submodule the workflow was triggered for'
+          required: true
+          type: string
+        repository:
+          description: 'The repository of the submodule the workflow was triggered for'
+          required: true
+          type: string
 
 jobs:
   build:
@@ -35,14 +43,20 @@ jobs:
 
     - name: Push to main
       run: |
-        cp -R target/* main
-        cd main
+        rsync -a --delete --exclude 'img/' target/ main/
+        cp README.md main/
+        cp LICENSE main/
+        cd main  
         git config --global user.email "openminds@ebrains.eu"
         git config --global user.name "openMINDS pipeline"
-        if [[ $(git add . --dry-run | wc -l) -gt 0 ]]; then
-            git add .
-            git commit -m "build triggered by submodule ${{ inputs.repository }} version ${{ inputs.branch }}"
-            git push -f
+        if [[ $(git add -A --dry-run | wc -l) -gt 0 ]]; then
+            git add -A
+            if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+              git commit -m "build triggered by submodule ${{ inputs.repository }} version ${{ inputs.branch }}"
+            else
+              git commit -m "build triggered by ${{ github.event_name }}"
+            fi
+            git push -f origin main
         else
             echo "Nothing to commit"
         fi
