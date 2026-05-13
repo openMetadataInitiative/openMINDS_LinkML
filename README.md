@@ -1,3 +1,11 @@
+<a href="/img/openMINDS-LinkML_logo_light.png">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/img/openMINDS-LinkML_logo_dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="/img/openMINDS-LinkML_logo_light.png">
+    <img alt="openMINDS-LinkML_logo" src="/img/openMINDS-LinkML_logo_light.png" title="Logo created by U. Schlegel, L. Zehl, C. Hagen Blixhavn" align="right" height="70">
+  </picture>
+</a>
+
 # openMINDS LinkML
 
 Complete collection of schemas for the metadata models of the openMINDS metadata framework. All schemas are formatted in [LinkML](https://linkml.io) (*.yaml).
