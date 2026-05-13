@@ -172,24 +172,12 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - CustomPropertySet:
     class_uri: https://openminds.ebrains.eu/core/CustomPropertySet
     description: Structured information about properties of an entity that are not
@@ -306,10 +294,6 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -318,14 +302,6 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - StringProperty:
     class_uri: https://openminds.ebrains.eu/core/StringProperty
     description: null
@@ -373,10 +349,6 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -385,14 +357,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - TissueSampleCollectionState:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleCollectionState
     description: null
@@ -409,24 +373,12 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - ProtocolExecution:
     class_uri: https://openminds.ebrains.eu/core/ProtocolExecution
     description: Structured information on a protocol execution.
@@ -487,9 +439,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -554,9 +503,6 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -575,6 +521,11 @@ classes:
     - stimulusType
     - technique
     slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
       description:
         required: true
       name:
@@ -711,9 +662,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - Project:
     class_uri: https://openminds.ebrains.eu/core/Project
     description: Structured information on a research project.

@@ -40,16 +40,8 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - NumericalParameter:
     class_uri: https://openminds.ebrains.eu/core/NumericalParameter
     description: null
@@ -110,18 +102,10 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - SubjectGroupState:
     class_uri: https://openminds.ebrains.eu/core/SubjectGroupState
     description: null
@@ -136,18 +120,10 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - TissueSampleCollectionState:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleCollectionState
     description: null
@@ -160,16 +136,8 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - ProtocolExecution:
     class_uri: https://openminds.ebrains.eu/core/ProtocolExecution
     description: Structured information on a protocol execution.
@@ -319,9 +287,6 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
-        any_of:
-        - range: BehavioralTask
-        - range: Technique
 - Person:
     class_uri: https://openminds.ebrains.eu/core/Person
     description: Structured information on a person.
@@ -380,6 +345,9 @@ classes:
         required: true
       contributor:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - Affiliation:
     class_uri: https://openminds.ebrains.eu/core/Affiliation
     description: Structured information about a relationship between two entities,
@@ -953,6 +921,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - ORCID:
     class_uri: https://openminds.ebrains.eu/core/ORCID
     description: A persistent identifier for a researcher provided by Open Researcher
