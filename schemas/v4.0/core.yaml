@@ -489,6 +489,9 @@ classes:
         range: SubjectGroup
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -553,6 +556,9 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -571,11 +577,6 @@ classes:
     - stimulusType
     - technique
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
       description:
         required: true
       name:
@@ -692,6 +693,10 @@ classes:
     slot_usage:
       contributor:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
       type:
         required: true
         range: ContributionType
@@ -708,6 +713,9 @@ classes:
     slot_usage:
       memberOf:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
 - Project:
     class_uri: https://openminds.om-i.org/types/Project
     description: Structured information on a research project.
@@ -873,6 +881,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       inputData:
         range: DOI
       isAlternativeVersionOf:
@@ -990,6 +1003,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       inputData:
         range: DOI
       isAlternativeVersionOf:
@@ -1000,6 +1018,9 @@ classes:
         range: ActionStatusType
       license:
         required: true
+        any_of:
+        - range: License
+        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:
@@ -1104,6 +1125,11 @@ classes:
         range: Consortium
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       hasPart:
         range: SoftwareVersion
       isAlternativeVersionOf:
@@ -1171,6 +1197,11 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       isAlternativeVersionOf:
         range: MetaDataModelVersion
       isNewVersionOf:
@@ -1257,6 +1288,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       hasPart:
         range: ModelVersion
       isAlternativeVersionOf:
@@ -1366,6 +1402,10 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
 - QuantitativeValueRange:
     class_uri: https://openminds.om-i.org/types/QuantitativeValueRange
     description: A representation of a range of quantitative values.

@@ -201,6 +201,11 @@ classes:
         - range: RRID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       hasTerminology:
         required: true
         range: ParcellationTerminologyVersion
