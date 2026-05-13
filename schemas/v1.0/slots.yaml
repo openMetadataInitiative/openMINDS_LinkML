@@ -176,8 +176,8 @@ slots:
     slot_uri: contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Organization
     - range: Person
+    - range: Organization
   coordinatePoint:
     slot_uri: coordinatePoint
     description: Pair or triplet of numbers defining the position in a particular
@@ -231,8 +231,8 @@ slots:
     slot_uri: dataLocation
     description: null
     any_of:
-    - range: FileBundle
     - range: File
+    - range: FileBundle
   defaultImage:
     slot_uri: defaultImage
     description: Two or three dimensional image that particluarly represents a specific
@@ -293,12 +293,12 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: DOI
-    - range: ORCID
     - range: DigitalIdentifier
-    - range: SWHID
     - range: RORID
     - range: GRIDID
+    - range: DOI
+    - range: SWHID
+    - range: ORCID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -383,8 +383,8 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: DOI
     - range: File
+    - range: DOI
     - range: URL
   fullName:
     slot_uri: fullName
@@ -394,8 +394,8 @@ slots:
     slot_uri: funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Organization
     - range: Person
+    - range: Organization
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -575,10 +575,10 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: TissueSampleCollection
-    - range: DatasetVersion
     - range: FileRepository
     - range: SubjectGroup
+    - range: DatasetVersion
+    - range: TissueSampleCollection
     - range: FileBundle
     multivalued: true
     list_elements_unique: true
@@ -672,8 +672,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: CellType
     - range: Organ
+    - range: CellType
     multivalued: true
     list_elements_unique: true
   otherAnatomicalRelation:
@@ -1016,11 +1016,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: integer
     - range: QuantitativeValue
-    - range: string
     - range: float
     - range: QuantitativeValueRange
+    - range: string
+    - range: integer
     multivalued: true
     inlined: true
   versionIdentifier:
