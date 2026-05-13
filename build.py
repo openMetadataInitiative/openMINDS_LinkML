@@ -17,6 +17,7 @@ from pipeline.utils import clone_sources, SchemaLoader, InstanceLoader, get_shor
 terms_as_enums = True
 licenses_as_enums = True
 content_types_as_enums = True
+accessibilities_as_enums = True
 graph_structures_as_enums = True
 
 print("********************************************************")
@@ -78,9 +79,11 @@ for schema_version in schema_loader.get_schema_versions():
                 terms_as_enums and "controlled" in schema_file_path,
                 licenses_as_enums and "license" in schema_file_path,
                 content_types_as_enums and "contentType" in schema_file_path,
+                accessibilities_as_enums and "accessibility" in schema_file_path,
                 graph_structures_as_enums
                 and (
                     "parcellationEntity" in schema_file_path
+                    or "commonCoordinateFramework" in schema_file_path
                     or "commonCoordinateSpace" in schema_file_path
                 ),
             ]
