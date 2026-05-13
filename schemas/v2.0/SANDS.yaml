@@ -227,9 +227,6 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
-        any_of:
-        - range: CommonCoordinateSpace
-        - range: CustomCoordinateSpace
       coordinates:
         required: true
 - QualitativeRelationAssessment:
@@ -280,9 +277,6 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
-        any_of:
-        - range: CommonCoordinateSpace
-        - range: CustomCoordinateSpace
       criteriaQualityType:
         required: true
       internalIdentifier:

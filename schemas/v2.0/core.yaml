@@ -284,9 +284,6 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
-        any_of:
-        - range: BehavioralTask
-        - range: Technique
 - Person:
     class_uri: https://openminds.ebrains.eu/core/Person
     description: Structured information on a person.
@@ -496,10 +493,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       inputData:
@@ -578,10 +571,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       inputData:
@@ -702,10 +691,6 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
@@ -789,10 +774,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:

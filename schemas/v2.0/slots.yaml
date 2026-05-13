@@ -162,8 +162,8 @@ slots:
     slot_uri: coordinateSpace
     description: Two or three dimensional geometric setting.
     any_of:
-    - range: CustomCoordinateSpace
     - range: CommonCoordinateSpace
+    - range: CustomCoordinateSpace
   coordinates:
     slot_uri: coordinates
     description: Pair or triplet of numbers defining a location in a given coordinate
@@ -326,8 +326,8 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: File
     - range: DOI
+    - range: File
     - range: URL
   fullName:
     slot_uri: fullName
@@ -520,10 +520,10 @@ slots:
     description: Reference to the ensemble of multiple things or beings.
     any_of:
     - range: TissueSampleCollection
-    - range: FileBundle
-    - range: SubjectGroup
     - range: FileRepository
     - range: ParcellationTerminology
+    - range: SubjectGroup
+    - range: FileBundle
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -774,8 +774,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: Technique
     - range: BehavioralTask
+    - range: Technique
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -920,8 +920,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: string
     - range: uri
+    - range: string
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -965,10 +965,10 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: float
-    - range: string
     - range: integer
     - range: QuantitativeValue
+    - range: string
+    - range: float
     - range: QuantitativeValueRange
     multivalued: true
     inlined: true

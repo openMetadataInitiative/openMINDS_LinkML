@@ -580,6 +580,10 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
+        any_of:
+        - range: CellType
+        - range: Organ
+        - range: OrganismSubstance
       species:
         required: true
       studiedState:
@@ -713,10 +717,6 @@ classes:
         range: GenericIdentifier
       hasParent:
         range: Organization
-      jurisdiction:
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       location:
         range: Location
       name:
@@ -1978,9 +1978,6 @@ classes:
         required: true
       jurisdiction:
         required: true
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       modificationProfile:
         required: true
         range: ModificationConsentRequirement
