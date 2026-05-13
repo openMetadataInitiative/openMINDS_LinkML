@@ -199,6 +199,11 @@ classes:
         - range: PropertyValueList
       relevantFor:
         required: true
+        any_of:
+        - range: AnalysisTechnique
+        - range: StimulationApproach
+        - range: StimulationTechnique
+        - range: Technique
 - BehavioralProtocol:
     class_uri: https://openminds.ebrains.eu/core/BehavioralProtocol
     description: Structured information about a protocol used in an experiment studying
@@ -663,6 +668,9 @@ classes:
     slot_usage:
       memberOf:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
 - Project:
     class_uri: https://openminds.ebrains.eu/core/Project
     description: Structured information on a research project.
@@ -965,6 +973,9 @@ classes:
         range: ActionStatusType
       license:
         required: true
+        any_of:
+        - range: License
+        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:

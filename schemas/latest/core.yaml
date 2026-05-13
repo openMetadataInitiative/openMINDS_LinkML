@@ -723,10 +723,6 @@ classes:
         range: GenericIdentifier
       hasParent:
         range: Organization
-      jurisdiction:
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       location:
         range: Location
       name:
@@ -1184,9 +1180,6 @@ classes:
         - range: WebResource
       ethicsJurisdiction:
         required: true
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       experimentalApproach:
         required: true
       fullName:
@@ -1708,9 +1701,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - Accessibility:
     class_uri: https://openminds.om-i.org/types/Accessibility
     description: null
@@ -1983,9 +1973,6 @@ classes:
         required: true
       jurisdiction:
         required: true
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       modificationProfile:
         required: true
         range: ModificationConsentRequirement

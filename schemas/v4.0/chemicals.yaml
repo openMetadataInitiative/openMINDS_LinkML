@@ -44,10 +44,6 @@ classes:
     slot_usage:
       chemicalProduct:
         required: true
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
 - ChemicalSubstance:
     class_uri: https://openminds.om-i.org/types/ChemicalSubstance
     description: Structured information about a chemical substance.

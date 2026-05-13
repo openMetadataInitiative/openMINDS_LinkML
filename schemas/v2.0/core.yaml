@@ -216,9 +216,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
       species:
         required: true
       studiedState:
@@ -287,6 +284,9 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
+        any_of:
+        - range: BehavioralTask
+        - range: Technique
 - Person:
     class_uri: https://openminds.ebrains.eu/core/Person
     description: Structured information on a person.
@@ -345,9 +345,6 @@ classes:
         required: true
       contributor:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - Affiliation:
     class_uri: https://openminds.ebrains.eu/core/Affiliation
     description: Structured information about a relationship between two entities,
@@ -499,10 +496,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       inputData:
@@ -581,10 +574,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       inputData:
@@ -705,10 +694,6 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
@@ -792,10 +777,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
@@ -937,9 +918,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - ORCID:
     class_uri: https://openminds.ebrains.eu/core/ORCID
     description: A persistent identifier for a researcher provided by Open Researcher
