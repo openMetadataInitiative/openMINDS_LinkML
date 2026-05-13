@@ -172,12 +172,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - CustomPropertySet:
     class_uri: https://openminds.om-i.org/types/CustomPropertySet
     description: Structured information about properties of an entity that are not
@@ -296,6 +308,10 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -304,6 +320,14 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - StringProperty:
     class_uri: https://openminds.om-i.org/types/StringProperty
     description: null
@@ -351,6 +375,10 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -359,6 +387,14 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - TissueSampleCollectionState:
     class_uri: https://openminds.om-i.org/types/TissueSampleCollectionState
     description: null
@@ -375,12 +411,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ProtocolExecution:
     class_uri: https://openminds.om-i.org/types/ProtocolExecution
     description: Structured information on a protocol execution.
@@ -441,9 +489,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -508,9 +553,6 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -650,10 +692,6 @@ classes:
     slot_usage:
       contributor:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
       type:
         required: true
         range: ContributionType
@@ -670,9 +708,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - Project:
     class_uri: https://openminds.om-i.org/types/Project
     description: Structured information on a research project.
@@ -838,11 +873,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       inputData:
         range: DOI
       isAlternativeVersionOf:
@@ -960,11 +990,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       inputData:
         range: DOI
       isAlternativeVersionOf:
@@ -975,9 +1000,6 @@ classes:
         range: ActionStatusType
       license:
         required: true
-        any_of:
-        - range: License
-        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:
@@ -1082,11 +1104,6 @@ classes:
         range: Consortium
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       hasPart:
         range: SoftwareVersion
       isAlternativeVersionOf:
@@ -1154,11 +1171,6 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       isAlternativeVersionOf:
         range: MetaDataModelVersion
       isNewVersionOf:
@@ -1245,11 +1257,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       hasPart:
         range: ModelVersion
       isAlternativeVersionOf:
@@ -1359,10 +1366,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - QuantitativeValueRange:
     class_uri: https://openminds.om-i.org/types/QuantitativeValueRange
     description: A representation of a range of quantitative values.

@@ -210,6 +210,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - CustomPropertySet:
@@ -366,6 +370,10 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - StringProperty:
@@ -430,6 +438,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleCollectionState:
@@ -459,6 +471,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - ProtocolExecution:
@@ -522,9 +538,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -589,9 +602,6 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1636,10 +1646,6 @@ classes:
     slot_usage:
       member:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - QuantitativeValueArray:
     class_uri: https://openminds.om-i.org/types/QuantitativeValueArray
     description: A representation of an array of quantitative values, optionally with
@@ -1701,6 +1707,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - Accessibility:
     class_uri: https://openminds.om-i.org/types/Accessibility
     description: null

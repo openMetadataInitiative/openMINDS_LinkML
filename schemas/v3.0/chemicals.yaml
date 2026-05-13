@@ -44,6 +44,10 @@ classes:
     slot_usage:
       chemicalProduct:
         required: true
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
 - ChemicalSubstance:
     class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
     description: Structured information about a chemical substance.
@@ -58,6 +62,10 @@ classes:
     slot_usage:
       molecularEntity:
         required: true
+      purity:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ProductSource:
     class_uri: https://openminds.ebrains.eu/chemicals/ProductSource
     description: Structured information about the source of a chemical substance or
@@ -77,7 +85,7 @@ classes:
         required: true
       provider:
         required: true
+      purity:
         any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
