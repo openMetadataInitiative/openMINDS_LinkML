@@ -260,10 +260,6 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
-      preferredDisplayColor:
-        any_of:
-        - range: Colormap
-        - range: SingleColor
 - QuantitativeRelationAssessment:
     class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
     description: null
@@ -279,6 +275,9 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - CoordinatePoint:
     class_uri: https://openminds.om-i.org/types/CoordinatePoint
     description: null
@@ -378,10 +377,6 @@ classes:
         range: CustomAnnotation
       name:
         required: true
-      relatedUBERONTerm:
-        any_of:
-        - range: Organ
-        - range: UBERONParcellation
       relationAssessment:
         range: QualitativeRelationAssessment
 - CustomCoordinateSpace:
