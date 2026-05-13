@@ -210,10 +210,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - CustomPropertySet:
@@ -370,10 +366,6 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - StringProperty:
@@ -438,10 +430,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleCollectionState:
@@ -471,10 +459,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - ProtocolExecution:
@@ -1873,6 +1857,10 @@ classes:
     - pixelSize
     - z-stepSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1907,6 +1895,10 @@ classes:
     - obtainedWith
     - pixelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -2092,6 +2084,10 @@ classes:
     - obtainedWith
     - voxelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -2230,6 +2226,10 @@ classes:
     - temporalSamplingFrequency
     - voxelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
