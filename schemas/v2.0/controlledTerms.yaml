@@ -14,6 +14,58 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
+- Terminology:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Terminology
+    description: null
+    title: Terminology
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- ProductAccessibility:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ProductAccessibility
+    description: null
+    title: Product accessibility
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- FileUsageRole:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/FileUsageRole
+    description: Structured information on the usage role of a file instance or bundle.
+    title: File usage role
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- UnitOfMeasurement:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement
+    description: Structured information on the unit of measurement.
+    title: Unit of measurement
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
 - TermSuggestion:
     class_uri: https://openminds.ebrains.eu/controlledTerms/TermSuggestion
     description: null
@@ -42,10 +94,49 @@ classes:
     slot_usage:
       name:
         required: true
-- ProductAccessibility:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/ProductAccessibility
+- Technique:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Technique
+    description: Structured information on the technique.
+    title: Technique
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- DiseaseModel:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/DiseaseModel
     description: null
-    title: Product accessibility
+    title: Disease model
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- CellType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/CellType
+    description: null
+    title: Cell type
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- FileBundleGrouping:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/FileBundleGrouping
+    description: Structured information on the grouping mechanism of a file bundle.
+    title: File bundle grouping
     slots:
     - id
     - definition
@@ -68,72 +159,6 @@ classes:
     slot_usage:
       name:
         required: true
-- QualitativeOverlap:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/QualitativeOverlap
-    description: null
-    title: Qualitative overlap
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- Handedness:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/Handedness
-    description: null
-    title: Handedness
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- TypeOfUncertainty:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/TypeOfUncertainty
-    description: null
-    title: Type of uncertainty
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- BehavioralTask:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/BehavioralTask
-    description: Structured information on the behavioral task that had to be performed
-      by a subject.
-    title: Behavioral task
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- FileRepositoryType:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/FileRepositoryType
-    description: null
-    title: File repository type
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
 - ModelScope:
     class_uri: https://openminds.ebrains.eu/controlledTerms/ModelScope
     description: Structured information on the scope of the computational model.
@@ -147,49 +172,10 @@ classes:
     slot_usage:
       name:
         required: true
-- UBERONParcellation:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/UBERONParcellation
+- MetaDataModelType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/MetaDataModelType
     description: null
-    title: Uberonparcellation
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- Technique:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/Technique
-    description: Structured information on the technique.
-    title: Technique
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- Organ:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/Organ
-    description: null
-    title: Organ
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- Terminology:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/Terminology
-    description: null
-    title: Terminology
+    title: Meta data model type
     slots:
     - id
     - definition
@@ -213,10 +199,10 @@ classes:
     slot_usage:
       name:
         required: true
-- FileBundleGrouping:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/FileBundleGrouping
-    description: Structured information on the grouping mechanism of a file bundle.
-    title: File bundle grouping
+- SemanticDataType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/SemanticDataType
+    description: null
+    title: Semantic data type
     slots:
     - id
     - definition
@@ -226,10 +212,10 @@ classes:
     slot_usage:
       name:
         required: true
-- Disease:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/Disease
-    description: Structured information on a disease.
-    title: Disease
+- Phenotype:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Phenotype
+    description: Structured information on the phenotype of a subject.
+    title: Phenotype
     slots:
     - id
     - definition
@@ -239,10 +225,10 @@ classes:
     slot_usage:
       name:
         required: true
-- Laterality:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/Laterality
-    description: Structured information on the lateral direction.
-    title: Laterality
+- SoftwareApplicationCategory:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareApplicationCategory
+    description: Structured information on the category of the software application.
+    title: Software application category
     slots:
     - id
     - definition
@@ -252,23 +238,10 @@ classes:
     slot_usage:
       name:
         required: true
-- OperatingSystem:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/OperatingSystem
-    description: Structured information on the operating system.
-    title: Operating system
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- ProgrammingLanguage:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/ProgrammingLanguage
-    description: Structured information on the programming language.
-    title: Programming language
+- ExperimentalApproach:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ExperimentalApproach
+    description: null
+    title: Experimental approach
     slots:
     - id
     - definition
@@ -292,10 +265,10 @@ classes:
     slot_usage:
       name:
         required: true
-- SemanticDataType:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/SemanticDataType
+- UBERONParcellation:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/UBERONParcellation
     description: null
-    title: Semantic data type
+    title: Uberonparcellation
     slots:
     - id
     - definition
@@ -305,63 +278,10 @@ classes:
     slot_usage:
       name:
         required: true
-- PreparationType:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/PreparationType
+- Handedness:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Handedness
     description: null
-    title: Preparation type
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- Species:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/Species
-    description: Structured information on the species.
-    title: Species
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- Phenotype:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/Phenotype
-    description: Structured information on the phenotype of a subject.
-    title: Phenotype
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- MetaDataModelType:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/MetaDataModelType
-    description: null
-    title: Meta data model type
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- CriteriaQualityType:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/CriteriaQualityType
-    description: Structured information on the quality type of the defined criteria
-      for a measurement.
-    title: Criteria quality type
+    title: Handedness
     slots:
     - id
     - definition
@@ -385,10 +305,10 @@ classes:
     slot_usage:
       name:
         required: true
-- ExperimentalApproach:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/ExperimentalApproach
-    description: null
-    title: Experimental approach
+- Laterality:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Laterality
+    description: Structured information on the lateral direction.
+    title: Laterality
     slots:
     - id
     - definition
@@ -398,10 +318,11 @@ classes:
     slot_usage:
       name:
         required: true
-- OperatingDevice:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/OperatingDevice
-    description: Structured information on the operating device.
-    title: Operating device
+- CriteriaQualityType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/CriteriaQualityType
+    description: Structured information on the quality type of the defined criteria
+      for a measurement.
+    title: Criteria quality type
     slots:
     - id
     - definition
@@ -411,49 +332,10 @@ classes:
     slot_usage:
       name:
         required: true
-- TissueSampleType:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/TissueSampleType
-    description: Structured information on the general type of the tissue sample.
-    title: Tissue sample type
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- DiseaseModel:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/DiseaseModel
-    description: null
-    title: Disease model
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- SoftwareFeature:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareFeature
-    description: null
-    title: Software feature
-    slots:
-    - id
-    - definition
-    - description
-    - name
-    - ontologyIdentifier
-    slot_usage:
-      name:
-        required: true
-- BiologicalSex:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalSex
-    description: Structured information on the biological sex of a subject.
-    title: Biological sex
+- Species:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Species
+    description: Structured information on the species.
+    title: Species
     slots:
     - id
     - definition
@@ -477,6 +359,98 @@ classes:
     slot_usage:
       name:
         required: true
+- Organ:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Organ
+    description: null
+    title: Organ
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- Disease:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/Disease
+    description: Structured information on a disease.
+    title: Disease
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- OperatingDevice:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/OperatingDevice
+    description: Structured information on the operating device.
+    title: Operating device
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- FileRepositoryType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/FileRepositoryType
+    description: null
+    title: File repository type
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- QualitativeOverlap:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/QualitativeOverlap
+    description: null
+    title: Qualitative overlap
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- TissueSampleType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/TissueSampleType
+    description: Structured information on the general type of the tissue sample.
+    title: Tissue sample type
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- BehavioralTask:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/BehavioralTask
+    description: Structured information on the behavioral task that had to be performed
+      by a subject.
+    title: Behavioral task
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
 - ModelAbstractionLevel:
     class_uri: https://openminds.ebrains.eu/controlledTerms/ModelAbstractionLevel
     description: Structured information on abstraction level of the computational
@@ -491,10 +465,10 @@ classes:
     slot_usage:
       name:
         required: true
-- CellType:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/CellType
+- PreparationType:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/PreparationType
     description: null
-    title: Cell type
+    title: Preparation type
     slots:
     - id
     - definition
@@ -504,10 +478,10 @@ classes:
     slot_usage:
       name:
         required: true
-- SoftwareApplicationCategory:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareApplicationCategory
-    description: Structured information on the category of the software application.
-    title: Software application category
+- ProgrammingLanguage:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/ProgrammingLanguage
+    description: Structured information on the programming language.
+    title: Programming language
     slots:
     - id
     - definition
@@ -517,10 +491,10 @@ classes:
     slot_usage:
       name:
         required: true
-- UnitOfMeasurement:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/UnitOfMeasurement
-    description: Structured information on the unit of measurement.
-    title: Unit of measurement
+- SoftwareFeature:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareFeature
+    description: null
+    title: Software feature
     slots:
     - id
     - definition
@@ -530,10 +504,36 @@ classes:
     slot_usage:
       name:
         required: true
-- FileUsageRole:
-    class_uri: https://openminds.ebrains.eu/controlledTerms/FileUsageRole
-    description: Structured information on the usage role of a file instance or bundle.
-    title: File usage role
+- OperatingSystem:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/OperatingSystem
+    description: Structured information on the operating system.
+    title: Operating system
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- TypeOfUncertainty:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/TypeOfUncertainty
+    description: null
+    title: Type of uncertainty
+    slots:
+    - id
+    - definition
+    - description
+    - name
+    - ontologyIdentifier
+    slot_usage:
+      name:
+        required: true
+- BiologicalSex:
+    class_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalSex
+    description: Structured information on the biological sex of a subject.
+    title: Biological sex
     slots:
     - id
     - definition

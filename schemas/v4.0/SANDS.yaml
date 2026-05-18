@@ -14,42 +14,32 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- Rectangle:
-    class_uri: https://openminds.om-i.org/types/Rectangle
+- AtlasAnnotation:
+    class_uri: https://openminds.om-i.org/types/AtlasAnnotation
     description: null
-    title: Rectangle
+    title: Atlas annotation
     slots:
     - id
-    - length
-    - width
+    - anchorPoint
+    - criteria
+    - criteriaQualityType
+    - criteriaType
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - preferredVisualization
+    - specification
+    - type
     slot_usage:
-      length:
+      criteriaQualityType:
         required: true
-      width:
+      criteriaType:
         required: true
-- Circle:
-    class_uri: https://openminds.om-i.org/types/Circle
-    description: null
-    title: Circle
-    slots:
-    - id
-    - radius
-    slot_usage:
-      radius:
+      specification:
+        range: File
+      type:
         required: true
-- Ellipse:
-    class_uri: https://openminds.om-i.org/types/Ellipse
-    description: null
-    title: Ellipse
-    slots:
-    - id
-    - semiMajorAxis
-    - semiMinorAxis
-    slot_usage:
-      semiMajorAxis:
-        required: true
-      semiMinorAxis:
-        required: true
+        range: AnnotationType
 - ParcellationTerminologyVersion:
     class_uri: https://openminds.om-i.org/types/ParcellationTerminologyVersion
     description: null
@@ -122,32 +112,6 @@ classes:
         range: BrainAtlasVersion
       shortName:
         required: true
-- AtlasAnnotation:
-    class_uri: https://openminds.om-i.org/types/AtlasAnnotation
-    description: null
-    title: Atlas annotation
-    slots:
-    - id
-    - anchorPoint
-    - criteria
-    - criteriaQualityType
-    - criteriaType
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - preferredVisualization
-    - specification
-    - type
-    slot_usage:
-      criteriaQualityType:
-        required: true
-      criteriaType:
-        required: true
-      specification:
-        range: File
-      type:
-        required: true
-        range: AnnotationType
 - BrainAtlasVersion:
     class_uri: https://openminds.om-i.org/types/BrainAtlasVersion
     description: null
@@ -236,127 +200,42 @@ classes:
         required: true
       versionInnovation:
         required: true
-- SingleColor:
-    class_uri: https://openminds.om-i.org/types/SingleColor
+- Rectangle:
+    class_uri: https://openminds.om-i.org/types/Rectangle
     description: null
-    title: Single color
+    title: Rectangle
     slots:
     - id
-    - value
+    - length
+    - width
     slot_usage:
-      value:
+      length:
         required: true
-        range: string
-- ViewerSpecification:
-    class_uri: https://openminds.om-i.org/types/ViewerSpecification
+      width:
+        required: true
+- Circle:
+    class_uri: https://openminds.om-i.org/types/Circle
     description: null
-    title: Viewer specification
+    title: Circle
     slots:
     - id
-    - additionalRemarks
-    - anchorPoint
-    - cameraPosition
-    - preferredDisplayColor
+    - radius
     slot_usage:
-      anchorPoint:
+      radius:
         required: true
-      preferredDisplayColor:
-        any_of:
-        - range: Colormap
-        - range: SingleColor
-- QuantitativeRelationAssessment:
-    class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
+- Ellipse:
+    class_uri: https://openminds.om-i.org/types/Ellipse
     description: null
-    title: Quantitative relation assessment
+    title: Ellipse
     slots:
     - id
-    - criteria
-    - inRelationTo
-    - quantitativeOverlap
+    - semiMajorAxis
+    - semiMinorAxis
     slot_usage:
-      inRelationTo:
+      semiMajorAxis:
         required: true
-        range: ParcellationEntityVersion
-      quantitativeOverlap:
+      semiMinorAxis:
         required: true
-- CoordinatePoint:
-    class_uri: https://openminds.om-i.org/types/CoordinatePoint
-    description: null
-    title: Coordinate point
-    slots:
-    - id
-    - coordinateSpace
-    - coordinates
-    slot_usage:
-      coordinateSpace:
-        required: true
-      coordinates:
-        required: true
-- QualitativeRelationAssessment:
-    class_uri: https://openminds.om-i.org/types/QualitativeRelationAssessment
-    description: null
-    title: Qualitative relation assessment
-    slots:
-    - id
-    - criteria
-    - inRelationTo
-    - qualitativeOverlap
-    slot_usage:
-      inRelationTo:
-        required: true
-        any_of:
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
-      qualitativeOverlap:
-        required: true
-- AnatomicalTargetPosition:
-    class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
-    description: null
-    title: Anatomical target position
-    slots:
-    - id
-    - additionalRemarks
-    - anatomicalTarget
-    - spatialLocation
-    - targetIdentificationType
-    slot_usage:
-      anatomicalTarget:
-        required: true
-        range: CellType
-      targetIdentificationType:
-        required: true
-- CustomAnnotation:
-    class_uri: https://openminds.om-i.org/types/CustomAnnotation
-    description: null
-    title: Custom annotation
-    slots:
-    - id
-    - anchorPoint
-    - coordinateSpace
-    - criteria
-    - criteriaQualityType
-    - criteriaType
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - preferredVisualization
-    - specification
-    - type
-    slot_usage:
-      coordinateSpace:
-        required: true
-      criteriaQualityType:
-        required: true
-      criteriaType:
-        required: true
-      specification:
-        any_of:
-        - range: File
-        - range: PropertyValueList
-      type:
-        required: true
-        range: AnnotationType
 - CustomAnatomicalEntity:
     class_uri: https://openminds.om-i.org/types/CustomAnatomicalEntity
     description: null
@@ -394,3 +273,127 @@ classes:
         required: true
       nativeUnit:
         required: true
+- CustomAnnotation:
+    class_uri: https://openminds.om-i.org/types/CustomAnnotation
+    description: null
+    title: Custom annotation
+    slots:
+    - id
+    - anchorPoint
+    - coordinateSpace
+    - criteria
+    - criteriaQualityType
+    - criteriaType
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - preferredVisualization
+    - specification
+    - type
+    slot_usage:
+      coordinateSpace:
+        required: true
+      criteriaQualityType:
+        required: true
+      criteriaType:
+        required: true
+      specification:
+        any_of:
+        - range: File
+        - range: PropertyValueList
+      type:
+        required: true
+        range: AnnotationType
+- QuantitativeRelationAssessment:
+    class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
+    description: null
+    title: Quantitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - quantitativeOverlap
+    slot_usage:
+      inRelationTo:
+        required: true
+        range: ParcellationEntityVersion
+      quantitativeOverlap:
+        required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- AnatomicalTargetPosition:
+    class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
+    description: null
+    title: Anatomical target position
+    slots:
+    - id
+    - additionalRemarks
+    - anatomicalTarget
+    - spatialLocation
+    - targetIdentificationType
+    slot_usage:
+      anatomicalTarget:
+        required: true
+        range: CellType
+      targetIdentificationType:
+        required: true
+- SingleColor:
+    class_uri: https://openminds.om-i.org/types/SingleColor
+    description: null
+    title: Single color
+    slots:
+    - id
+    - value
+    slot_usage:
+      value:
+        required: true
+        range: string
+- CoordinatePoint:
+    class_uri: https://openminds.om-i.org/types/CoordinatePoint
+    description: null
+    title: Coordinate point
+    slots:
+    - id
+    - coordinateSpace
+    - coordinates
+    slot_usage:
+      coordinateSpace:
+        required: true
+      coordinates:
+        required: true
+- QualitativeRelationAssessment:
+    class_uri: https://openminds.om-i.org/types/QualitativeRelationAssessment
+    description: null
+    title: Qualitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - qualitativeOverlap
+    slot_usage:
+      inRelationTo:
+        required: true
+        any_of:
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
+      qualitativeOverlap:
+        required: true
+- ViewerSpecification:
+    class_uri: https://openminds.om-i.org/types/ViewerSpecification
+    description: null
+    title: Viewer specification
+    slots:
+    - id
+    - additionalRemarks
+    - anchorPoint
+    - cameraPosition
+    - preferredDisplayColor
+    slot_usage:
+      anchorPoint:
+        required: true
+      preferredDisplayColor:
+        any_of:
+        - range: Colormap
+        - range: SingleColor

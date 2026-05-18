@@ -14,6 +14,64 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
+- SlicingDeviceUsage:
+    class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
+    description: null
+    title: Slicing device usage
+    slots:
+    - id
+    - device
+    - lookupLabel
+    - metadataLocation
+    - oscillationAmplitude
+    - sliceThickness
+    - slicingAngle
+    - slicingPlane
+    - slicingSpeed
+    - usedSpecimen
+    - vibrationFrequency
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDevice
+      metadataLocation:
+        range: File
+      sliceThickness:
+        required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      slicingAngle:
+        range: QuantitativeValue
+      slicingPlane:
+        required: true
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
+- SlicingDevice:
+    class_uri: https://openminds.om-i.org/types/SlicingDevice
+    description: null
+    title: Slicing device
+    slots:
+    - id
+    - contribution
+    - description
+    - internalIdentifier
+    - name
+    - serialNumber
+    - type
+    slot_usage:
+      contribution:
+        required: true
+        range: Organization
+      name:
+        required: true
+      type:
+        required: true
+        any_of:
+        - range: DeviceType
+        - range: HardwareProduct
 - TissueSampleSlicing:
     class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
     description: null
@@ -63,6 +121,10 @@ classes:
         - range: time
       studyTarget:
         range: AnatomicalCavity
+      temperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - CranialWindowPreparation:
     class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
     description: null
@@ -185,58 +247,3 @@ classes:
         - range: time
       studyTarget:
         range: AnatomicalCavity
-- SlicingDeviceUsage:
-    class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
-    description: null
-    title: Slicing device usage
-    slots:
-    - id
-    - device
-    - lookupLabel
-    - metadataLocation
-    - oscillationAmplitude
-    - sliceThickness
-    - slicingAngle
-    - slicingPlane
-    - slicingSpeed
-    - usedSpecimen
-    - vibrationFrequency
-    slot_usage:
-      device:
-        required: true
-        range: SlicingDevice
-      metadataLocation:
-        range: File
-      sliceThickness:
-        required: true
-      slicingAngle:
-        range: QuantitativeValue
-      slicingPlane:
-        required: true
-      usedSpecimen:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleState
-- SlicingDevice:
-    class_uri: https://openminds.om-i.org/types/SlicingDevice
-    description: null
-    title: Slicing device
-    slots:
-    - id
-    - contribution
-    - description
-    - internalIdentifier
-    - name
-    - serialNumber
-    - type
-    slot_usage:
-      contribution:
-        required: true
-        range: Organization
-      name:
-        required: true
-      type:
-        required: true
-        any_of:
-        - range: DeviceType
-        - range: HardwareProduct

@@ -13,75 +13,75 @@ enums:
     enum_uri: https://openminds.om-i.org/types/SoftwareFeature
     title: Software feature
     permissible_values:
-      desktop environment:
-        description: null
-      command line interface:
-        description: A text-based system that enables users to interact with a computer
-          or software by entering commands, allowing them to perform specific tasks
-          or operations.
-      control:
-        description: null
-      data processing:
-        description: null
-      interactive analysis:
-        description: null
-      presentation visualisation:
-        description: null
-      positional data types:
-        description: null
-      3D vector data types:
-        description: null
-      matrix data types:
-        description: null
-      augmented reality:
-        description: null
-      tiled display wall:
-        description: null
-      statistical data types:
-        description: null
       heterogeneous architecture:
-        description: null
-      scripting interface:
-        description: null
-      vector image data types:
-        description: null
-      data acquisition:
-        description: null
-      3D scalar data types:
-        description: null
-      3D geometry data types:
-        description: null
-      application programming interface:
-        description: A set of rules and protocols that allows different software applications
-          to communicate with each other, enabling them to access specific functions
-          or data.
-      virtual reality:
-        description: null
-      provenance:
-        description: null
-      mobile device:
         description: null
       tensor data types:
         description: null
-      graph data types:
+      parallel programming:
+        description: null
+      desktop environment:
+        description: null
+      presentation visualisation:
+        description: null
+      vector image data types:
+        description: null
+      scripting interface:
+        description: null
+      provenance:
+        description: null
+      profiling:
+        description: null
+      raster image data types:
         description: null
       graphical user interface:
         description: A visual system that enables users to interact with a computer
           or software through graphical elements like windows, icons, and menus, allowing
           them to perform specific tasks or operations.
-      profiling:
+      positional data types:
         description: null
-      raster image data types:
+      statistical data types:
         description: null
-      performance measurement:
+      3D scalar data types:
         description: null
       time series data types:
         description: null
+      mobile device:
+        description: null
+      tiled display wall:
+        description: null
+      command line interface:
+        description: A text-based system that enables users to interact with a computer
+          or software by entering commands, allowing them to perform specific tasks
+          or operations.
+      data acquisition:
+        description: null
+      application programming interface:
+        description: A set of rules and protocols that allows different software applications
+          to communicate with each other, enabling them to access specific functions
+          or data.
       modelling:
         description: null
-      parallel programming:
+      augmented reality:
+        description: null
+      control:
+        description: null
+      graph data types:
         description: null
       metadata data types:
         description: null
+      performance measurement:
+        description: null
       simulation:
+        description: null
+      3D geometry data types:
+        description: null
+      virtual reality:
+        description: null
+      interactive analysis:
+        description: null
+      3D vector data types:
+        description: null
+      matrix data types:
+        description: null
+      data processing:
         description: null

@@ -13,15 +13,15 @@ enums:
     enum_uri: https://openminds.om-i.org/types/CommonCoordinateSpace
     title: Common coordinate space
     permissible_values:
-      MNI ICBM152: {}
-      fsLR Surface Space: {}
-      Marmoset Nencki-Monash Template: {}
-      FsAverage Surface Space: {}
-      BigBrain Model: {}
       Allen Mouse Brain CCF: {}
-      Paxinos and Watson's Stereotaxic Coronal Template (Rat Brain): {}
-      Paxinos et al. Stereotaxic Coronal Template (Marmoset Brain): {}
+      fsLR Surface Space: {}
       WHS of the SD Rat Brain: {}
+      BigBrain Model: {}
+      MNI ICBM152: {}
+      Paxinos et al. Stereotaxic Coronal Template (Marmoset Brain): {}
+      Marmoset Nencki-Monash Template: {}
+      Paxinos and Watson's Stereotaxic Coronal Template (Rat Brain): {}
       MEBRAINS brain template: {}
+      FsAverage Surface Space: {}
       MNI Colin27 Average Brain: {}
       Swanson's Stereotactic Rat Brain: {}
