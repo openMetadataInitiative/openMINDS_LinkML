@@ -47,7 +47,7 @@ jobs:
         cp README.md main/
         cp LICENSE main/
         cd main  
-        git config --global user.email "openminds@ebrains.eu"
+        git config --global user.email "support@openmetadatainitiative.org"
         git config --global user.name "openMINDS pipeline"
         if [[ $(git add -A --dry-run | wc -l) -gt 0 ]]; then
             git add -A
