@@ -280,7 +280,9 @@ class LinkMLEnumBuilder(object):
             return enum
 
         def get_instance_name(instance):
-            return instance.get("name", instance.get("shortName"))
+            # Final fallback for special cases (e.g. the "Accessibility" library)
+            # where neither "name" nor "shortName" is available.
+            return instance.get("name", instance.get("shortName") or instance.get("@id").split("/")[-1])
 
         instances_payload = self.instances[self._schema_payload["_type"]]
         self._translated_schema = {
