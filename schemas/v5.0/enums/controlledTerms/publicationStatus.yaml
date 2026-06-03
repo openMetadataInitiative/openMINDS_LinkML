@@ -17,6 +17,11 @@ enums:
         description: A publication status indicating the work exists but cannot be
           publicly published, reported on, or made openly available until a specified
           embargo end date set by the embargoing party.
+      disposed:
+        description: A publication status indicating the work has been removed from
+          active retention or management (e.g., after a retention period, superseded,
+          or otherwise deaccessioned) and is no longer available, without implying
+          wrongdoing or defects in the work.
       under review:
         description: A publication status indicating the work has been submitted for
           evaluation and is currently being assessed by an editor, reviewers, or an
@@ -29,8 +34,3 @@ enums:
         description: A publication status indicating the work has been formally released
           to the public by the responsible publisher or issuing entity and is accessible
           in its official published form.
-      disposed:
-        description: A publication status indicating the work has been removed from
-          active retention or management (e.g., after a retention period, superseded,
-          or otherwise deaccessioned) and is no longer available, without implying
-          wrongdoing or defects in the work.

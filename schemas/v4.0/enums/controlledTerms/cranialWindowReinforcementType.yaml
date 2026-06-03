@@ -16,11 +16,11 @@ enums:
       crystalline-based cranial window:
         description: A cranial window reinforced by an implantation of a crystalline
           material.
-      prism-based cranial window:
-        description: A cranial window reinforced by an implanted prism.
       GRIN lens-based cranial window:
         description: A cranial window reinforced by an implanted GRIN lens.
-      glass coverslip cranial window:
-        description: A cranial window reinforced by an implantation of a glass coverslip.
       polymer-based cranial window:
         description: A cranial window reinforced by an implantation of a polymer material.
+      glass coverslip cranial window:
+        description: A cranial window reinforced by an implantation of a glass coverslip.
+      prism-based cranial window:
+        description: A cranial window reinforced by an implanted prism.

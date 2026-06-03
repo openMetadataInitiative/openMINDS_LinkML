@@ -14,6 +14,66 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
+- ParcellationTerminology:
+    class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
+    description: null
+    title: Parcellation terminology
+    slots:
+    - id
+    - definedIn
+    - fullName
+    - isAlternativeVersionOf
+    - isNewVersionOf
+    - ontologyIdentifier
+    - shortName
+    - versionIdentifier
+    - versionInnovation
+    slot_usage:
+      fullName:
+        required: true
+      isAlternativeVersionOf:
+        range: BrainAtlasVersion
+      isNewVersionOf:
+        range: BrainAtlasVersion
+      shortName:
+        required: true
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- ParcellationEntity:
+    class_uri: https://openminds.ebrains.eu/sands/ParcellationEntity
+    description: null
+    title: Parcellation entity
+    slots:
+    - id
+    - hasAnnotation
+    - hasParent
+    - isPartOf
+    - name
+    - ontologyIdentifier
+    - relatedUBERONTerm
+    - relationAssessment
+    - versionIdentifier
+    - versionInnovation
+    slot_usage:
+      hasAnnotation:
+        range: AtlasAnnotation
+      hasParent:
+        range: ParcellationEntity
+      isPartOf:
+        required: true
+        range: ParcellationTerminology
+      name:
+        required: true
+      relatedUBERONTerm:
+        required: true
+      relationAssessment:
+        range: QualitativeRelationAssessment
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
 - CommonCoordinateSpace:
     class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpace
     description: null
@@ -49,60 +109,6 @@ classes:
         required: true
       versionIdentifier:
         required: true
-- AtlasAnnotation:
-    class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
-    description: null
-    title: Atlas annotation
-    slots:
-    - id
-    - bestViewPoint
-    - criteria
-    - criteriaQualityType
-    - displayColor
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - lookupLabel
-    - name
-    - versionIdentifier
-    - versionInnovation
-    - visualizedIn
-    slot_usage:
-      criteriaQualityType:
-        required: true
-      internalIdentifier:
-        required: true
-      versionIdentifier:
-        required: true
-      versionInnovation:
-        required: true
-- ParcellationTerminology:
-    class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
-    description: null
-    title: Parcellation terminology
-    slots:
-    - id
-    - definedIn
-    - fullName
-    - isAlternativeVersionOf
-    - isNewVersionOf
-    - ontologyIdentifier
-    - shortName
-    - versionIdentifier
-    - versionInnovation
-    slot_usage:
-      fullName:
-        required: true
-      isAlternativeVersionOf:
-        range: BrainAtlasVersion
-      isNewVersionOf:
-        range: BrainAtlasVersion
-      shortName:
-        required: true
-      versionIdentifier:
-        required: true
-      versionInnovation:
-        required: true
 - BrainAtlas:
     class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
     description: null
@@ -127,39 +133,6 @@ classes:
         required: true
         range: BrainAtlasVersion
       shortName:
-        required: true
-- ParcellationEntity:
-    class_uri: https://openminds.ebrains.eu/sands/ParcellationEntity
-    description: null
-    title: Parcellation entity
-    slots:
-    - id
-    - hasAnnotation
-    - hasParent
-    - isPartOf
-    - name
-    - ontologyIdentifier
-    - relatedUBERONTerm
-    - relationAssessment
-    - versionIdentifier
-    - versionInnovation
-    slot_usage:
-      hasAnnotation:
-        range: AtlasAnnotation
-      hasParent:
-        range: ParcellationEntity
-      isPartOf:
-        required: true
-        range: ParcellationTerminology
-      name:
-        required: true
-      relatedUBERONTerm:
-        required: true
-      relationAssessment:
-        range: QualitativeRelationAssessment
-      versionIdentifier:
-        required: true
-      versionInnovation:
         required: true
 - BrainAtlasVersion:
     class_uri: https://openminds.ebrains.eu/sands/BrainAtlasVersion
@@ -202,33 +175,79 @@ classes:
         required: true
       versionInnovation:
         required: true
-- ElectrodeArray:
-    class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
-    description: Structured information on an electrode array.
-    title: Electrode array
+- AtlasAnnotation:
+    class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
+    description: null
+    title: Atlas annotation
     slots:
     - id
-    - electrodes
+    - bestViewPoint
+    - criteria
+    - criteriaQualityType
+    - displayColor
+    - inspiredBy
     - internalIdentifier
+    - laterality
     - lookupLabel
+    - name
+    - versionIdentifier
+    - versionInnovation
+    - visualizedIn
     slot_usage:
-      electrodes:
+      criteriaQualityType:
         required: true
       internalIdentifier:
         required: true
-- Electrode:
-    class_uri: https://openminds.ebrains.eu/sands/Electrode
-    description: Structured information on an electrode.
-    title: Electrode
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- QuantitativeRelationAssessment:
+    class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
+    description: null
+    title: Quantitative relation assessment
     slots:
     - id
-    - electrodeContact
-    - internalIdentifier
-    - lookupLabel
+    - criteria
+    - inRelationTo
+    - quantitativeOverlap
     slot_usage:
-      electrodeContact:
+      inRelationTo:
         required: true
-      internalIdentifier:
+      quantitativeOverlap:
+        required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- CoordinatePoint:
+    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
+    description: null
+    title: Coordinate point
+    slots:
+    - id
+    - coordinateSpace
+    - coordinates
+    slot_usage:
+      coordinateSpace:
+        required: true
+        any_of:
+        - range: CommonCoordinateSpace
+        - range: CustomCoordinateSpace
+      coordinates:
+        required: true
+- QualitativeRelationAssessment:
+    class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
+    description: null
+    title: Qualitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - qualitativeOverlap
+    slot_usage:
+      inRelationTo:
+        required: true
+      qualitativeOverlap:
         required: true
 - CustomAnatomicalEntity:
     class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
@@ -246,6 +265,63 @@ classes:
         required: true
       relationAssessment:
         range: QualitativeRelationAssessment
+- Electrode:
+    class_uri: https://openminds.ebrains.eu/sands/Electrode
+    description: Structured information on an electrode.
+    title: Electrode
+    slots:
+    - id
+    - electrodeContact
+    - internalIdentifier
+    - lookupLabel
+    slot_usage:
+      electrodeContact:
+        required: true
+      internalIdentifier:
+        required: true
+- CustomAnnotation:
+    class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
+    description: null
+    title: Custom annotation
+    slots:
+    - id
+    - bestViewPoint
+    - coordinateSpace
+    - criteria
+    - criteriaQualityType
+    - displayColor
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - lookupLabel
+    - name
+    - visualizedIn
+    slot_usage:
+      coordinateSpace:
+        required: true
+        any_of:
+        - range: CommonCoordinateSpace
+        - range: CustomCoordinateSpace
+      criteriaQualityType:
+        required: true
+      internalIdentifier:
+        required: true
+      visualizedIn:
+        required: true
+- ElectrodeArray:
+    class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
+    description: Structured information on an electrode array.
+    title: Electrode array
+    slots:
+    - id
+    - electrodes
+    - internalIdentifier
+    - lookupLabel
+    slot_usage:
+      electrodes:
+        required: true
+      internalIdentifier:
+        required: true
 - ElectrodeContact:
     class_uri: https://openminds.ebrains.eu/sands/ElectrodeContact
     description: Structured information on an electrode contact.
@@ -287,74 +363,4 @@ classes:
       name:
         required: true
       nativeUnit:
-        required: true
-- CustomAnnotation:
-    class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
-    description: null
-    title: Custom annotation
-    slots:
-    - id
-    - bestViewPoint
-    - coordinateSpace
-    - criteria
-    - criteriaQualityType
-    - displayColor
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - lookupLabel
-    - name
-    - visualizedIn
-    slot_usage:
-      coordinateSpace:
-        required: true
-      criteriaQualityType:
-        required: true
-      internalIdentifier:
-        required: true
-      visualizedIn:
-        required: true
-- QuantitativeRelationAssessment:
-    class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
-    description: null
-    title: Quantitative relation assessment
-    slots:
-    - id
-    - criteria
-    - inRelationTo
-    - quantitativeOverlap
-    slot_usage:
-      inRelationTo:
-        required: true
-      quantitativeOverlap:
-        required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-- CoordinatePoint:
-    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
-    description: null
-    title: Coordinate point
-    slots:
-    - id
-    - coordinateSpace
-    - coordinates
-    slot_usage:
-      coordinateSpace:
-        required: true
-      coordinates:
-        required: true
-- QualitativeRelationAssessment:
-    class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
-    description: null
-    title: Qualitative relation assessment
-    slots:
-    - id
-    - criteria
-    - inRelationTo
-    - qualitativeOverlap
-    slot_usage:
-      inRelationTo:
-        required: true
-      qualitativeOverlap:
         required: true

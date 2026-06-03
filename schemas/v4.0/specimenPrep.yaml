@@ -76,6 +76,53 @@ classes:
         required: true
       owner:
         range: Consortium
+- CranialWindowPreparation:
+    class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
+    description: null
+    title: Cranial window preparation
+    slots:
+    - id
+    - constructionType
+    - customPropertySet
+    - description
+    - dimension
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - reinforcementType
+    - startTime
+    - studyTarget
+    slot_usage:
+      constructionType:
+        required: true
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: SubjectState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
 - TissueSampleSlicing:
     class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
     description: null
@@ -128,58 +175,6 @@ classes:
         any_of:
         - range: QuantitativeValue
         - range: QuantitativeValueRange
-- CranialWindowPreparation:
-    class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
-    description: null
-    title: Cranial window preparation
-    slots:
-    - id
-    - constructionType
-    - customPropertySet
-    - description
-    - dimension
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - reinforcementType
-    - startTime
-    - studyTarget
-    slot_usage:
-      constructionType:
-        required: true
-      dimension:
-        any_of:
-        - range: Circle
-        - range: Ellipse
-        - range: Rectangle
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: SubjectState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: SubjectState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
 - TissueCulturePreparation:
     class_uri: https://openminds.om-i.org/types/TissueCulturePreparation
     description: null

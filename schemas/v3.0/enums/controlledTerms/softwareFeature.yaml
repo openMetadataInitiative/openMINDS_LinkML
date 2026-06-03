@@ -13,75 +13,75 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/SoftwareFeature
     title: Software feature
     permissible_values:
-      heterogeneous architecture:
-        description: null
-      tensor data types:
-        description: null
-      parallel programming:
-        description: null
-      desktop environment:
-        description: null
-      presentation visualisation:
+      raster image data types:
         description: null
       vector image data types:
         description: null
-      scripting interface:
+      3D geometry data types:
         description: null
-      provenance:
+      matrix data types:
         description: null
-      profiling:
+      augmented reality:
         description: null
-      raster image data types:
+      virtual reality:
         description: null
-      graphical user interface:
-        description: A visual system that enables users to interact with a computer
-          or software through graphical elements like windows, icons, and menus, allowing
-          them to perform specific tasks or operations.
-      positional data types:
+      presentation visualisation:
         description: null
-      statistical data types:
+      simulation:
         description: null
-      3D scalar data types:
+      data acquisition:
         description: null
-      time series data types:
+      metadata data types:
         description: null
       mobile device:
         description: null
-      tiled display wall:
-        description: null
-      command line interface:
-        description: A text-based system that enables users to interact with a computer
-          or software by entering commands, allowing them to perform specific tasks
-          or operations.
-      data acquisition:
+      scripting interface:
         description: null
       application programming interface:
         description: A set of rules and protocols that allows different software applications
           to communicate with each other, enabling them to access specific functions
           or data.
-      modelling:
+      performance measurement:
         description: null
-      augmented reality:
+      profiling:
+        description: null
+      desktop environment:
+        description: null
+      command line interface:
+        description: A text-based system that enables users to interact with a computer
+          or software by entering commands, allowing them to perform specific tasks
+          or operations.
+      provenance:
+        description: null
+      parallel programming:
+        description: null
+      data processing:
+        description: null
+      time series data types:
+        description: null
+      interactive analysis:
         description: null
       control:
         description: null
       graph data types:
         description: null
-      metadata data types:
+      tensor data types:
         description: null
-      performance measurement:
+      3D scalar data types:
         description: null
-      simulation:
+      heterogeneous architecture:
         description: null
-      3D geometry data types:
+      graphical user interface:
+        description: A visual system that enables users to interact with a computer
+          or software through graphical elements like windows, icons, and menus, allowing
+          them to perform specific tasks or operations.
+      statistical data types:
         description: null
-      virtual reality:
+      tiled display wall:
         description: null
-      interactive analysis:
+      modelling:
         description: null
       3D vector data types:
         description: null
-      matrix data types:
-        description: null
-      data processing:
+      positional data types:
         description: null

@@ -72,59 +72,6 @@ classes:
         any_of:
         - range: DeviceType
         - range: HardwareProduct
-- TissueSampleSlicing:
-    class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
-    description: null
-    title: Tissue sample slicing
-    slots:
-    - id
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - temperature
-    - tissueBathSolution
-    slot_usage:
-      device:
-        required: true
-        range: SlicingDeviceUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: SubjectState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleCollectionState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-        range: Protocol
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
-      temperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - CranialWindowPreparation:
     class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
     description: null
@@ -198,6 +145,59 @@ classes:
         - range: time
       studyTarget:
         range: AnatomicalCavity
+- TissueSampleSlicing:
+    class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
+    description: null
+    title: Tissue sample slicing
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - temperature
+    - tissueBathSolution
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDeviceUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleCollectionState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AnatomicalCavity
+      temperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - TissueCulturePreparation:
     class_uri: https://openminds.om-i.org/types/TissueCulturePreparation
     description: null

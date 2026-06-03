@@ -14,32 +14,6 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- MRIScanner:
-    class_uri: https://openminds.om-i.org/types/MRIScanner
-    description: null
-    title: Mriscanner
-    slots:
-    - id
-    - contribution
-    - description
-    - internalIdentifier
-    - magneticFieldStrength
-    - name
-    - serialNumber
-    - type
-    slot_usage:
-      contribution:
-        required: true
-        range: Organization
-      magneticFieldStrength:
-        required: true
-      name:
-        required: true
-      type:
-        required: true
-        any_of:
-        - range: DeviceType
-        - range: HardwareProduct
 - MRICoil:
     class_uri: https://openminds.om-i.org/types/MRICoil
     description: null
@@ -79,6 +53,7 @@ classes:
     - MRIWeighting
     - MTPulseShape
     - accelerationFactor
+    - device
     - diffusionEncodingParameters
     - dwellTime
     - echoTime
@@ -110,6 +85,9 @@ classes:
     - usedSpecimen
     - voxelSize
     slot_usage:
+      device:
+        required: true
+        range: MRIScanner
       echoTime:
         required: true
       metadataLocation:
@@ -159,6 +137,32 @@ classes:
         any_of:
         - range: SubjectState
         - range: TissueSampleState
+- MRIScanner:
+    class_uri: https://openminds.om-i.org/types/MRIScanner
+    description: null
+    title: Mriscanner
+    slots:
+    - id
+    - contribution
+    - description
+    - internalIdentifier
+    - magneticFieldStrength
+    - name
+    - serialNumber
+    - type
+    slot_usage:
+      contribution:
+        required: true
+        range: Organization
+      magneticFieldStrength:
+        required: true
+      name:
+        required: true
+      type:
+        required: true
+        any_of:
+        - range: DeviceType
+        - range: HardwareProduct
 - StaticMRIAcquisition:
     class_uri: https://openminds.om-i.org/types/StaticMRIAcquisition
     description: null

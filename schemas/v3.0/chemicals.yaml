@@ -14,24 +14,6 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
-- ChemicalMixture:
-    class_uri: https://openminds.ebrains.eu/chemicals/ChemicalMixture
-    description: Structured information about a mixture of chemical substances.
-    title: Chemical mixture
-    slots:
-    - id
-    - additionalRemarks
-    - hasPart
-    - name
-    - productSource
-    - type
-    slot_usage:
-      hasPart:
-        required: true
-        range: AmountOfChemical
-      type:
-        required: true
-        range: ChemicalMixtureType
 - ChemicalSubstance:
     class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
     description: Structured information about a chemical substance.
@@ -69,10 +51,32 @@ classes:
         required: true
       provider:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
       purity:
         any_of:
         - range: QuantitativeValue
         - range: QuantitativeValueRange
+- ChemicalMixture:
+    class_uri: https://openminds.ebrains.eu/chemicals/ChemicalMixture
+    description: Structured information about a mixture of chemical substances.
+    title: Chemical mixture
+    slots:
+    - id
+    - additionalRemarks
+    - hasPart
+    - name
+    - productSource
+    - type
+    slot_usage:
+      hasPart:
+        required: true
+        range: AmountOfChemical
+      type:
+        required: true
+        range: ChemicalMixtureType
 - AmountOfChemical:
     class_uri: https://openminds.ebrains.eu/chemicals/AmountOfChemical
     description: Structured information about the amount of a given chemical that

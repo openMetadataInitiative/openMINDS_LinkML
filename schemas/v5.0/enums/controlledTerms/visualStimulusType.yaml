@@ -15,17 +15,17 @@ enums:
     permissible_values:
       static symbol:
         description: null
-      natural scene:
-        description: null
-      static grating:
-        description: null
-      static checkerboard:
-        description: null
       natural movie:
         description: null
-      moving grating:
+      natural scene:
+        description: null
+      static checkerboard:
         description: null
       moving symbol:
         description: null
       moving checkerboard:
+        description: null
+      moving grating:
+        description: null
+      static grating:
         description: null
