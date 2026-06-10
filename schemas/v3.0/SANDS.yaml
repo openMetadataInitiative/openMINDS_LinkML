@@ -251,6 +251,9 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - AnatomicalTargetPosition:
     class_uri: https://openminds.ebrains.eu/sands/AnatomicalTargetPosition
     description: null
@@ -344,10 +347,6 @@ classes:
         range: CustomAnnotation
       name:
         required: true
-      relatedUBERONTerm:
-        any_of:
-        - range: Organ
-        - range: UBERONParcellation
       relationAssessment:
         range: QualitativeRelationAssessment
 - CustomAnnotation:

@@ -537,6 +537,9 @@ classes:
         required: true
       contributor:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - Organization:
     class_uri: https://openminds.ebrains.eu/core/Organization
     description: An entity comprised of one or more natural persons with a particular
@@ -594,8 +597,16 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ParameterSet:
     class_uri: https://openminds.ebrains.eu/core/ParameterSet
     description: Structured information on a used parameter set.
@@ -653,6 +664,9 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
+        any_of:
+        - range: CellType
+        - range: Organ
       species:
         required: true
       studiedState:
@@ -724,10 +738,18 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - TissueSampleCollectionState:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleCollectionState
     description: null
@@ -740,8 +762,16 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - TissueSampleCollection:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleCollection
     description: null
@@ -808,10 +838,18 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Subject:
     class_uri: https://openminds.ebrains.eu/core/Subject
     description: Structured information on a subject.
@@ -920,6 +958,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - QuantitativeValueRange:
     class_uri: https://openminds.ebrains.eu/core/QuantitativeValueRange
     description: A representation of a range of quantitative values.

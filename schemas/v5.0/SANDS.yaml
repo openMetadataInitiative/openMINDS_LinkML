@@ -304,6 +304,9 @@ classes:
         - range: uri
       usedTaxon:
         required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - AtlasAnnotation:
     class_uri: https://openminds.om-i.org/types/AtlasAnnotation
     description: null
@@ -383,6 +386,9 @@ classes:
         - range: uri
       usedTaxon:
         required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - Frustum:
     class_uri: https://openminds.om-i.org/types/Frustum
     description: null
@@ -727,6 +733,9 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - AnatomicalTargetPosition:
     class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
     description: null
@@ -765,9 +774,6 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       coordinates:
         required: true
 - ViewerSpecification:
@@ -854,9 +860,6 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       criteriaQualityType:
         required: true
       criteriaType:

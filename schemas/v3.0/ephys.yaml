@@ -80,6 +80,10 @@ classes:
         - range: ChemicalMixture
         - range: ChemicalSubstance
         - range: MolecularEntity
+      intrinsicResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       manufacturer:
         range: Consortium
       name:
@@ -167,6 +171,10 @@ classes:
         - range: MolecularEntity
       metadataLocation:
         range: File
+      pipetteResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pipetteSolution:
         required: true
       usedSpecimen:
@@ -212,6 +220,10 @@ classes:
         - range: ChemicalMixture
         - range: ChemicalSubstance
         - range: MolecularEntity
+      intrinsicResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       manufacturer:
         range: Consortium
       name:
@@ -244,6 +256,10 @@ classes:
         - range: CustomAnatomicalEntity
         - range: ParcellationEntity
         - range: ParcellationEntityVersion
+      contactResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       device:
         required: true
         range: Electrode
@@ -290,11 +306,6 @@ classes:
         - range: FileBundle
       recordedWith:
         required: true
-        any_of:
-        - range: ElectrodeArrayUsage
-        - range: ElectrodeUsage
-        - range: PipetteUsage
-        - range: SlicingDeviceUsage
       samplingFrequency:
         required: true
 - ElectrodePlacement:
@@ -414,6 +425,10 @@ classes:
     - tissueBathSolution
     - variation
     slot_usage:
+      bathTemperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       device:
         required: true
         range: ElectrodeArrayUsage

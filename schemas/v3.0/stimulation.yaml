@@ -29,18 +29,6 @@ classes:
     - specification
     - type
     slot_usage:
-      deliveredBy:
-        any_of:
-        - range: ElectrodeArrayUsage
-        - range: ElectrodeUsage
-        - range: PipetteUsage
-        - range: SlicingDeviceUsage
-      generatedBy:
-        any_of:
-        - range: ElectrodeArrayUsage
-        - range: ElectrodeUsage
-        - range: PipetteUsage
-        - range: SlicingDeviceUsage
       internalIdentifier:
         required: true
       specification:
