@@ -38,9 +38,6 @@ classes:
         range: File
       sliceThickness:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       slicingAngle:
         range: QuantitativeValue
       slicingPlane:
@@ -100,6 +97,11 @@ classes:
     slot_usage:
       constructionType:
         required: true
+      dimension:
+        any_of:
+        - range: Circle
+        - range: Ellipse
+        - range: Rectangle
       endTime:
         range: string
         any_of:
@@ -145,10 +147,6 @@ classes:
         - range: TissueSampleState
       output:
         range: TissueSampleCollectionState
-      temperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - TissueCulturePreparation:
     class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
     description: null
