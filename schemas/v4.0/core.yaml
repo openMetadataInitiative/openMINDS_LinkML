@@ -388,6 +388,9 @@ classes:
         range: ActionStatusType
       license:
         required: true
+        any_of:
+        - range: License
+        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:
@@ -796,9 +799,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - AccountInformation:
     class_uri: https://openminds.om-i.org/types/AccountInformation
     description: Structured information about a user account for a web service.
@@ -824,10 +824,6 @@ classes:
     slot_usage:
       contributor:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
       type:
         required: true
         range: ContributionType
@@ -944,6 +940,9 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1183,6 +1182,11 @@ classes:
     - stimulusType
     - technique
     slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
       description:
         required: true
       name:
@@ -1250,6 +1254,9 @@ classes:
         range: SubjectGroup
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -1357,10 +1364,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - ResearchProductGroup:
     class_uri: https://openminds.om-i.org/types/ResearchProductGroup
     description: null
