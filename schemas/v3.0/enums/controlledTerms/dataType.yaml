@@ -13,9 +13,6 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/DataType
     title: Data type
     permissible_values:
-      scalar:
-        description: A 'scalar' represent a single value (e.g., integer, float, string,
-          etc.).
       raster graphic:
         description: A 'raster graphic' is a matrix, representing values (scalars,
           lists, matrices) on a grid in a two dimensional space, viewable via a monitor,
@@ -24,6 +21,12 @@ enums:
         description: A '3D computer graphic' is an associative array, defining points,
           lines, and/or curves in a three dimensional space, which can be rendered
           to raster graphic.
+      scalar:
+        description: A 'scalar' represent a single value (e.g., integer, float, string,
+          etc.).
+      event sequence:
+        description: An 'event sequence' is a list or matrix, where elements are ordered
+          in not equally spaced points in time.
       voxel data:
         description: '''Voxel data'' is a matrix defining values (scalars, lists,
           or matrices) on a grid in a three dimensional space, which can be rendered
@@ -40,10 +43,7 @@ enums:
       vector graphic:
         description: A 'vector graphic' is an associative array defining points, lines
           and curves which can be rendered to a raster graphic.
-      matrix:
-        description: A 'matrix' is a list of lists.
-      event sequence:
-        description: An 'event sequence' is a list or matrix, where elements are ordered
-          in not equally spaced points in time.
       list:
         description: A 'list' is a series of ordered scalars and/or lists.
+      matrix:
+        description: A 'matrix' is a list of lists.

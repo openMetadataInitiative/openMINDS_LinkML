@@ -14,86 +14,50 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- PublicationVolume:
-    class_uri: https://openminds.om-i.org/types/PublicationVolume
+- LivePaper:
+    class_uri: https://openminds.om-i.org/types/LivePaper
     description: null
-    title: Publication volume
+    title: Live paper
     slots:
     - id
-    - isPartOf
-    - volumeNumber
-    slot_usage:
-      isPartOf:
-        required: true
-        range: Periodical
-      volumeNumber:
-        required: true
-- LivePaperSection:
-    class_uri: https://openminds.om-i.org/types/LivePaperSection
-    description: null
-    title: Live paper section
-    slots:
-    - id
-    - description
-    - isPartOf
-    - name
-    - order
-    - type
-    slot_usage:
-      isPartOf:
-        required: true
-        range: LivePaperVersion
-      name:
-        required: true
-      order:
-        required: true
-      type:
-        required: true
-        range: string
-- Chapter:
-    class_uri: https://openminds.om-i.org/types/Chapter
-    description: null
-    title: Chapter
-    slots:
-    - id
-    - IRI
-    - abstract
-    - citedPublication
     - contribution
     - contributorAffiliation
-    - copyright
-    - creationDate
+    - description
     - digitalIdentifier
-    - funding
-    - isPartOf
+    - documentation
+    - fullName
+    - homepage
+    - howToCite
     - keyword
-    - modificationDate
-    - name
-    - pagination
-    - publicationDate
-    - usageCondition
-    - versionIdentifier
+    - relatedPublication
+    - shortName
+    - supportChannel
     slot_usage:
-      citedPublication:
-        range: DOI
       contribution:
         required: true
         range: Contribution
+      description:
+        required: true
       digitalIdentifier:
         range: DOI
-      isPartOf:
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
+      fullName:
         required: true
-        range: Book
       keyword:
         range: AccessChannel
-      modificationDate:
-        range: date
-      name:
+      relatedPublication:
+        range: DOI
+      shortName:
         required: true
-      publicationDate:
-        required: true
-      usageCondition:
-        range: License
+      supportChannel:
+        range: string
+        any_of:
+        - range: uri
 - LearningResource:
     class_uri: https://openminds.om-i.org/types/LearningResource
     description: null
@@ -149,6 +113,66 @@ classes:
         range: LearningResourceType
       usageCondition:
         range: License
+- Periodical:
+    class_uri: https://openminds.om-i.org/types/Periodical
+    description: null
+    title: Periodical
+    slots:
+    - id
+    - abbreviation
+    - digitalIdentifier
+    - name
+    slot_usage:
+      digitalIdentifier:
+        range: ISSN
+      name:
+        required: true
+- ScholarlyArticle:
+    class_uri: https://openminds.om-i.org/types/ScholarlyArticle
+    description: null
+    title: Scholarly article
+    slots:
+    - id
+    - IRI
+    - abstract
+    - citedPublication
+    - contribution
+    - contributorAffiliation
+    - copyright
+    - creationDate
+    - digitalIdentifier
+    - funding
+    - isPartOf
+    - keyword
+    - modificationDate
+    - name
+    - pagination
+    - publicationDate
+    - usageCondition
+    - versionIdentifier
+    slot_usage:
+      citedPublication:
+        range: DOI
+      contribution:
+        required: true
+        range: Contribution
+      digitalIdentifier:
+        range: DOI
+      isPartOf:
+        required: true
+        any_of:
+        - range: PublicationIssue
+        - range: PublicationVolume
+      keyword:
+        range: AccessChannel
+      modificationDate:
+        range: date
+      name:
+        required: true
+      publicationDate:
+        required: true
+      usageCondition:
+        range: License
 - LivePaperResourceItem:
     class_uri: https://openminds.om-i.org/types/LivePaperResourceItem
     description: null
@@ -173,34 +197,28 @@ classes:
         range: LivePaperSection
       name:
         required: true
-- Periodical:
-    class_uri: https://openminds.om-i.org/types/Periodical
+- LivePaperSection:
+    class_uri: https://openminds.om-i.org/types/LivePaperSection
     description: null
-    title: Periodical
+    title: Live paper section
     slots:
     - id
-    - abbreviation
-    - digitalIdentifier
-    - name
-    slot_usage:
-      digitalIdentifier:
-        range: ISSN
-      name:
-        required: true
-- PublicationIssue:
-    class_uri: https://openminds.om-i.org/types/PublicationIssue
-    description: null
-    title: Publication issue
-    slots:
-    - id
+    - description
     - isPartOf
-    - issueNumber
+    - name
+    - order
+    - type
     slot_usage:
       isPartOf:
         required: true
-        range: PublicationVolume
-      issueNumber:
+        range: LivePaperVersion
+      name:
         required: true
+      order:
+        required: true
+      type:
+        required: true
+        range: string
 - Book:
     class_uri: https://openminds.om-i.org/types/Book
     description: null
@@ -231,6 +249,50 @@ classes:
         any_of:
         - range: DOI
         - range: ISBN
+      keyword:
+        range: AccessChannel
+      modificationDate:
+        range: date
+      name:
+        required: true
+      publicationDate:
+        required: true
+      usageCondition:
+        range: License
+- Chapter:
+    class_uri: https://openminds.om-i.org/types/Chapter
+    description: null
+    title: Chapter
+    slots:
+    - id
+    - IRI
+    - abstract
+    - citedPublication
+    - contribution
+    - contributorAffiliation
+    - copyright
+    - creationDate
+    - digitalIdentifier
+    - funding
+    - isPartOf
+    - keyword
+    - modificationDate
+    - name
+    - pagination
+    - publicationDate
+    - usageCondition
+    - versionIdentifier
+    slot_usage:
+      citedPublication:
+        range: DOI
+      contribution:
+        required: true
+        range: Contribution
+      digitalIdentifier:
+        range: DOI
+      isPartOf:
+        required: true
+        range: Book
       keyword:
         range: AccessChannel
       modificationDate:
@@ -323,93 +385,31 @@ classes:
         required: true
       versionSpecification:
         required: true
-- LivePaper:
-    class_uri: https://openminds.om-i.org/types/LivePaper
+- PublicationIssue:
+    class_uri: https://openminds.om-i.org/types/PublicationIssue
     description: null
-    title: Live paper
+    title: Publication issue
     slots:
     - id
-    - contribution
-    - contributorAffiliation
-    - description
-    - digitalIdentifier
-    - documentation
-    - fullName
-    - homepage
-    - howToCite
-    - keyword
-    - relatedPublication
-    - shortName
-    - supportChannel
-    slot_usage:
-      contribution:
-        required: true
-        range: Contribution
-      description:
-        required: true
-      digitalIdentifier:
-        range: DOI
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
-      fullName:
-        required: true
-      keyword:
-        range: AccessChannel
-      relatedPublication:
-        range: DOI
-      shortName:
-        required: true
-      supportChannel:
-        range: string
-        any_of:
-        - range: uri
-- ScholarlyArticle:
-    class_uri: https://openminds.om-i.org/types/ScholarlyArticle
-    description: null
-    title: Scholarly article
-    slots:
-    - id
-    - IRI
-    - abstract
-    - citedPublication
-    - contribution
-    - contributorAffiliation
-    - copyright
-    - creationDate
-    - digitalIdentifier
-    - funding
     - isPartOf
-    - keyword
-    - modificationDate
-    - name
-    - pagination
-    - publicationDate
-    - usageCondition
-    - versionIdentifier
+    - issueNumber
     slot_usage:
-      citedPublication:
-        range: DOI
-      contribution:
-        required: true
-        range: Contribution
-      digitalIdentifier:
-        range: DOI
       isPartOf:
         required: true
-        any_of:
-        - range: PublicationIssue
-        - range: PublicationVolume
-      keyword:
-        range: AccessChannel
-      modificationDate:
-        range: date
-      name:
+        range: PublicationVolume
+      issueNumber:
         required: true
-      publicationDate:
+- PublicationVolume:
+    class_uri: https://openminds.om-i.org/types/PublicationVolume
+    description: null
+    title: Publication volume
+    slots:
+    - id
+    - isPartOf
+    - volumeNumber
+    slot_usage:
+      isPartOf:
         required: true
-      usageCondition:
-        range: License
+        range: Periodical
+      volumeNumber:
+        required: true

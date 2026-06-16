@@ -14,155 +14,6 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- MRICoil:
-    class_uri: https://openminds.om-i.org/types/MRICoil
-    description: null
-    title: Mricoil
-    slots:
-    - id
-    - contribution
-    - description
-    - elementCount
-    - intendedMountingLocation
-    - internalIdentifier
-    - mountingType
-    - name
-    - serialNumber
-    - type
-    slot_usage:
-      contribution:
-        required: true
-        range: Organization
-      elementCount:
-        required: true
-      mountingType:
-        required: true
-      name:
-        required: true
-      type:
-        required: true
-        any_of:
-        - range: DeviceType
-        - range: HardwareProduct
-- MRIScannerUsage:
-    class_uri: https://openminds.om-i.org/types/MRIScannerUsage
-    description: null
-    title: Mriscanner usage
-    slots:
-    - id
-    - MRIWeighting
-    - MTPulseShape
-    - accelerationFactor
-    - device
-    - diffusionEncodingParameters
-    - dwellTime
-    - echoTime
-    - fatSuppressionTechnique
-    - fieldOfView
-    - flipAngle
-    - gradientCorrection
-    - inversionTime
-    - lookupLabel
-    - matrixSize
-    - metadataLocation
-    - numberOfDiscardedVolumes
-    - numberOfExcitations
-    - numberOfSlices
-    - parallelAcquisitionTechnique
-    - phaseEncodingDirection
-    - receiverBandwidth
-    - repetitionTime
-    - sliceAngulation
-    - sliceGap
-    - sliceOrientation
-    - sliceThickness
-    - sliceTiming
-    - spatialEncoding
-    - spoilingTechnique
-    - totalReadOutTime
-    - transmitterBandwidth
-    - usedCoils
-    - usedSpecimen
-    - voxelSize
-    slot_usage:
-      device:
-        required: true
-        range: MRIScanner
-      echoTime:
-        required: true
-      metadataLocation:
-        range: File
-      repetitionTime:
-        required: true
-      sliceGap:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      sliceThickness:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      sliceTiming:
-        required: true
-      usedCoils:
-        range: DeviceType
-      usedSpecimen:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleState
-      voxelSize:
-        range: QuantitativeValueArray
-- MRICoilUsage:
-    class_uri: https://openminds.om-i.org/types/MRICoilUsage
-    description: null
-    title: Mricoil usage
-    slots:
-    - id
-    - activeElement
-    - device
-    - lookupLabel
-    - metadataLocation
-    - mountingLocation
-    - signalDirectionality
-    - usedSpecimen
-    slot_usage:
-      device:
-        required: true
-        range: MRICoil
-      metadataLocation:
-        range: File
-      signalDirectionality:
-        required: true
-      usedSpecimen:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleState
-- MRIScanner:
-    class_uri: https://openminds.om-i.org/types/MRIScanner
-    description: null
-    title: Mriscanner
-    slots:
-    - id
-    - contribution
-    - description
-    - internalIdentifier
-    - magneticFieldStrength
-    - name
-    - serialNumber
-    - type
-    slot_usage:
-      contribution:
-        required: true
-        range: Organization
-      magneticFieldStrength:
-        required: true
-      name:
-        required: true
-      type:
-        required: true
-        any_of:
-        - range: DeviceType
-        - range: HardwareProduct
 - StaticMRIAcquisition:
     class_uri: https://openminds.om-i.org/types/StaticMRIAcquisition
     description: null
@@ -318,3 +169,152 @@ classes:
         - range: ParcellationEntityVersion
       volumeAcquisitionTime:
         required: true
+- MRICoil:
+    class_uri: https://openminds.om-i.org/types/MRICoil
+    description: null
+    title: Mricoil
+    slots:
+    - id
+    - contribution
+    - description
+    - elementCount
+    - intendedMountingLocation
+    - internalIdentifier
+    - mountingType
+    - name
+    - serialNumber
+    - type
+    slot_usage:
+      contribution:
+        required: true
+        range: Organization
+      elementCount:
+        required: true
+      mountingType:
+        required: true
+      name:
+        required: true
+      type:
+        required: true
+        any_of:
+        - range: DeviceType
+        - range: HardwareProduct
+- MRIScannerUsage:
+    class_uri: https://openminds.om-i.org/types/MRIScannerUsage
+    description: null
+    title: Mriscanner usage
+    slots:
+    - id
+    - MRIWeighting
+    - MTPulseShape
+    - accelerationFactor
+    - device
+    - diffusionEncodingParameters
+    - dwellTime
+    - echoTime
+    - fatSuppressionTechnique
+    - fieldOfView
+    - flipAngle
+    - gradientCorrection
+    - inversionTime
+    - lookupLabel
+    - matrixSize
+    - metadataLocation
+    - numberOfDiscardedVolumes
+    - numberOfExcitations
+    - numberOfSlices
+    - parallelAcquisitionTechnique
+    - phaseEncodingDirection
+    - receiverBandwidth
+    - repetitionTime
+    - sliceAngulation
+    - sliceGap
+    - sliceOrientation
+    - sliceThickness
+    - sliceTiming
+    - spatialEncoding
+    - spoilingTechnique
+    - totalReadOutTime
+    - transmitterBandwidth
+    - usedCoils
+    - usedSpecimen
+    - voxelSize
+    slot_usage:
+      device:
+        required: true
+        range: MRIScanner
+      echoTime:
+        required: true
+      metadataLocation:
+        range: File
+      repetitionTime:
+        required: true
+      sliceGap:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      sliceThickness:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      sliceTiming:
+        required: true
+      usedCoils:
+        range: DeviceType
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
+      voxelSize:
+        range: QuantitativeValueArray
+- MRIScanner:
+    class_uri: https://openminds.om-i.org/types/MRIScanner
+    description: null
+    title: Mriscanner
+    slots:
+    - id
+    - contribution
+    - description
+    - internalIdentifier
+    - magneticFieldStrength
+    - name
+    - serialNumber
+    - type
+    slot_usage:
+      contribution:
+        required: true
+        range: Organization
+      magneticFieldStrength:
+        required: true
+      name:
+        required: true
+      type:
+        required: true
+        any_of:
+        - range: DeviceType
+        - range: HardwareProduct
+- MRICoilUsage:
+    class_uri: https://openminds.om-i.org/types/MRICoilUsage
+    description: null
+    title: Mricoil usage
+    slots:
+    - id
+    - activeElement
+    - device
+    - lookupLabel
+    - metadataLocation
+    - mountingLocation
+    - signalDirectionality
+    - usedSpecimen
+    slot_usage:
+      device:
+        required: true
+        range: MRICoil
+      metadataLocation:
+        range: File
+      signalDirectionality:
+        required: true
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState

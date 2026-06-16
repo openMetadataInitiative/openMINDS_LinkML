@@ -14,6 +14,156 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
+- ElectrodeContact:
+    class_uri: https://openminds.ebrains.eu/sands/ElectrodeContact
+    description: Structured information on an electrode contact.
+    title: Electrode contact
+    slots:
+    - id
+    - coordinatePoint
+    - definedIn
+    - internalIdentifier
+    - lookupLabel
+    - relatedRecording
+    - relatedStimulation
+    - visualizedIn
+    slot_usage:
+      coordinatePoint:
+        required: true
+      internalIdentifier:
+        required: true
+      relatedRecording:
+        range: File
+      relatedStimulation:
+        range: File
+- CustomAnatomicalEntity:
+    class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
+    description: null
+    title: Custom anatomical entity
+    slots:
+    - id
+    - hasAnnotation
+    - name
+    - relationAssessment
+    slot_usage:
+      hasAnnotation:
+        range: CustomAnnotation
+      name:
+        required: true
+      relationAssessment:
+        range: QualitativeRelationAssessment
+- Electrode:
+    class_uri: https://openminds.ebrains.eu/sands/Electrode
+    description: Structured information on an electrode.
+    title: Electrode
+    slots:
+    - id
+    - electrodeContact
+    - internalIdentifier
+    - lookupLabel
+    slot_usage:
+      electrodeContact:
+        required: true
+      internalIdentifier:
+        required: true
+- CustomCoordinateSpace:
+    class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
+    description: null
+    title: Custom coordinate space
+    slots:
+    - id
+    - anatomicalAxesOrientation
+    - axesOrigin
+    - defaultImage
+    - name
+    - nativeUnit
+    slot_usage:
+      anatomicalAxesOrientation:
+        required: true
+      axesOrigin:
+        required: true
+      name:
+        required: true
+      nativeUnit:
+        required: true
+- ElectrodeArray:
+    class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
+    description: Structured information on an electrode array.
+    title: Electrode array
+    slots:
+    - id
+    - electrodes
+    - internalIdentifier
+    - lookupLabel
+    slot_usage:
+      electrodes:
+        required: true
+      internalIdentifier:
+        required: true
+- CustomAnnotation:
+    class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
+    description: null
+    title: Custom annotation
+    slots:
+    - id
+    - bestViewPoint
+    - coordinateSpace
+    - criteria
+    - criteriaQualityType
+    - displayColor
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - lookupLabel
+    - name
+    - visualizedIn
+    slot_usage:
+      coordinateSpace:
+        required: true
+        any_of:
+        - range: CommonCoordinateSpace
+        - range: CustomCoordinateSpace
+      criteriaQualityType:
+        required: true
+      internalIdentifier:
+        required: true
+      visualizedIn:
+        required: true
+- CommonCoordinateSpace:
+    class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpace
+    description: null
+    title: Common coordinate space
+    slots:
+    - id
+    - anatomicalAxesOrientation
+    - axesOrigin
+    - defaultImage
+    - digitalIdentifier
+    - fullName
+    - homepage
+    - howToCite
+    - nativeUnit
+    - ontologyIdentifier
+    - releaseDate
+    - shortName
+    - versionIdentifier
+    slot_usage:
+      anatomicalAxesOrientation:
+        required: true
+      axesOrigin:
+        required: true
+      digitalIdentifier:
+        range: DOI
+      fullName:
+        required: true
+      nativeUnit:
+        required: true
+      releaseDate:
+        required: true
+      shortName:
+        required: true
+      versionIdentifier:
+        required: true
 - ParcellationTerminology:
     class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
     description: null
@@ -73,41 +223,6 @@ classes:
       versionIdentifier:
         required: true
       versionInnovation:
-        required: true
-- CommonCoordinateSpace:
-    class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpace
-    description: null
-    title: Common coordinate space
-    slots:
-    - id
-    - anatomicalAxesOrientation
-    - axesOrigin
-    - defaultImage
-    - digitalIdentifier
-    - fullName
-    - homepage
-    - howToCite
-    - nativeUnit
-    - ontologyIdentifier
-    - releaseDate
-    - shortName
-    - versionIdentifier
-    slot_usage:
-      anatomicalAxesOrientation:
-        required: true
-      axesOrigin:
-        required: true
-      digitalIdentifier:
-        range: DOI
-      fullName:
-        required: true
-      nativeUnit:
-        required: true
-      releaseDate:
-        required: true
-      shortName:
-        required: true
-      versionIdentifier:
         required: true
 - BrainAtlas:
     class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
@@ -202,6 +317,20 @@ classes:
         required: true
       versionInnovation:
         required: true
+- QualitativeRelationAssessment:
+    class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
+    description: null
+    title: Qualitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - qualitativeOverlap
+    slot_usage:
+      inRelationTo:
+        required: true
+      qualitativeOverlap:
+        required: true
 - QuantitativeRelationAssessment:
     class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
     description: null
@@ -234,133 +363,4 @@ classes:
         - range: CommonCoordinateSpace
         - range: CustomCoordinateSpace
       coordinates:
-        required: true
-- QualitativeRelationAssessment:
-    class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
-    description: null
-    title: Qualitative relation assessment
-    slots:
-    - id
-    - criteria
-    - inRelationTo
-    - qualitativeOverlap
-    slot_usage:
-      inRelationTo:
-        required: true
-      qualitativeOverlap:
-        required: true
-- CustomAnatomicalEntity:
-    class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
-    description: null
-    title: Custom anatomical entity
-    slots:
-    - id
-    - hasAnnotation
-    - name
-    - relationAssessment
-    slot_usage:
-      hasAnnotation:
-        range: CustomAnnotation
-      name:
-        required: true
-      relationAssessment:
-        range: QualitativeRelationAssessment
-- Electrode:
-    class_uri: https://openminds.ebrains.eu/sands/Electrode
-    description: Structured information on an electrode.
-    title: Electrode
-    slots:
-    - id
-    - electrodeContact
-    - internalIdentifier
-    - lookupLabel
-    slot_usage:
-      electrodeContact:
-        required: true
-      internalIdentifier:
-        required: true
-- CustomAnnotation:
-    class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
-    description: null
-    title: Custom annotation
-    slots:
-    - id
-    - bestViewPoint
-    - coordinateSpace
-    - criteria
-    - criteriaQualityType
-    - displayColor
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - lookupLabel
-    - name
-    - visualizedIn
-    slot_usage:
-      coordinateSpace:
-        required: true
-        any_of:
-        - range: CommonCoordinateSpace
-        - range: CustomCoordinateSpace
-      criteriaQualityType:
-        required: true
-      internalIdentifier:
-        required: true
-      visualizedIn:
-        required: true
-- ElectrodeArray:
-    class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
-    description: Structured information on an electrode array.
-    title: Electrode array
-    slots:
-    - id
-    - electrodes
-    - internalIdentifier
-    - lookupLabel
-    slot_usage:
-      electrodes:
-        required: true
-      internalIdentifier:
-        required: true
-- ElectrodeContact:
-    class_uri: https://openminds.ebrains.eu/sands/ElectrodeContact
-    description: Structured information on an electrode contact.
-    title: Electrode contact
-    slots:
-    - id
-    - coordinatePoint
-    - definedIn
-    - internalIdentifier
-    - lookupLabel
-    - relatedRecording
-    - relatedStimulation
-    - visualizedIn
-    slot_usage:
-      coordinatePoint:
-        required: true
-      internalIdentifier:
-        required: true
-      relatedRecording:
-        range: File
-      relatedStimulation:
-        range: File
-- CustomCoordinateSpace:
-    class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
-    description: null
-    title: Custom coordinate space
-    slots:
-    - id
-    - anatomicalAxesOrientation
-    - axesOrigin
-    - defaultImage
-    - name
-    - nativeUnit
-    slot_usage:
-      anatomicalAxesOrientation:
-        required: true
-      axesOrigin:
-        required: true
-      name:
-        required: true
-      nativeUnit:
         required: true

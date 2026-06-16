@@ -26,26 +26,26 @@ slots:
     slot_uri: about
     description: null
     any_of:
-    - range: WebService
-    - range: DatasetVersion
-    - range: WorkflowRecipe
-    - range: LivePaper
     - range: WorkflowRecipeVersion
     - range: SoftwareVersion
     - range: ModelVersion
+    - range: LivePaper
+    - range: Software
+    - range: CommonCoordinateSpace
+    - range: DatasetVersion
+    - range: WorkflowRecipe
+    - range: CommonCoordinateSpaceVersion
+    - range: Model
+    - range: WebService
     - range: BrainAtlasVersion
     - range: BrainAtlas
-    - range: Model
-    - range: Software
     - range: MetaDataModelVersion
-    - range: ValidationTestVersion
-    - range: MetaDataModel
     - range: LivePaperVersion
-    - range: CommonCoordinateSpaceVersion
-    - range: Dataset
-    - range: CommonCoordinateSpace
-    - range: WebServiceVersion
     - range: ValidationTest
+    - range: ValidationTestVersion
+    - range: Dataset
+    - range: WebServiceVersion
+    - range: MetaDataModel
     multivalued: true
     list_elements_unique: true
   abstract:
@@ -126,14 +126,14 @@ slots:
     slot_uri: anatomicalLocation
     description: null
     any_of:
-    - range: OrganismSubstance
-    - range: Organ
-    - range: CellType
-    - range: UBERONParcellation
     - range: SubcellularEntity
-    - range: CustomAnatomicalEntity
+    - range: OrganismSubstance
     - range: ParcellationEntity
+    - range: CustomAnatomicalEntity
+    - range: UBERONParcellation
+    - range: CellType
     - range: ParcellationEntityVersion
+    - range: Organ
     multivalued: true
     list_elements_unique: true
   anatomicalLocationOfArray:
@@ -324,11 +324,11 @@ slots:
     slot_uri: configuration
     description: null
     any_of:
-    - range: WebResource
-    - range: File
-    - range: string
-    - range: PropertyValueList
     - range: Configuration
+    - range: File
+    - range: PropertyValueList
+    - range: string
+    - range: WebResource
   constructionType:
     slot_uri: constructionType
     description: null
@@ -376,15 +376,15 @@ slots:
     slot_uri: contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Person
-    - range: Consortium
     - range: Organization
+    - range: Consortium
+    - range: Person
   coordinateSpace:
     slot_uri: coordinateSpace
     description: Two or three dimensional geometric setting.
     any_of:
-    - range: CustomCoordinateSpace
     - range: CommonCoordinateSpaceVersion
+    - range: CustomCoordinateSpace
   coordinates:
     slot_uri: coordinates
     description: Pair or triplet of numbers defining a location in a given coordinate
@@ -462,14 +462,14 @@ slots:
     slot_uri: dataLocation
     description: null
     any_of:
-    - range: FileArchive
-    - range: ModelVersion
-    - range: FileBundle
-    - range: File
-    - range: ParcellationEntityVersion
-    - range: PropertyValueList
-    - range: LivePaperResourceItem
     - range: Configuration
+    - range: File
+    - range: PropertyValueList
+    - range: ModelVersion
+    - range: ParcellationEntityVersion
+    - range: LivePaperResourceItem
+    - range: FileBundle
+    - range: FileArchive
     multivalued: true
     list_elements_unique: true
   dataType:
@@ -496,10 +496,10 @@ slots:
     slot_uri: deliveredBy
     description: null
     any_of:
-    - range: ElectrodeArrayUsage
     - range: ElectrodeUsage
-    - range: PipetteUsage
     - range: SlicingDeviceUsage
+    - range: PipetteUsage
+    - range: ElectrodeArrayUsage
   descendedFrom:
     slot_uri: descendedFrom
     description: null
@@ -514,9 +514,9 @@ slots:
     slot_uri: describedIn
     description: null
     any_of:
+    - range: WebResource
     - range: File
     - range: DOI
-    - range: WebResource
     multivalued: true
     list_elements_unique: true
   description:
@@ -562,23 +562,23 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: ISBN
-    - range: DOI
-    - range: IdentifiersDotOrgID
-    - range: RRID
-    - range: GRIDID
-    - range: SWHID
     - range: RORID
+    - range: IdentifiersDotOrgID
     - range: ISSN
+    - range: RRID
     - range: ORCID
+    - range: GRIDID
+    - range: ISBN
+    - range: SWHID
+    - range: DOI
     multivalued: true
     list_elements_unique: true
   dimension:
     slot_uri: dimension
     description: null
     any_of:
-    - range: Circle
     - range: Rectangle
+    - range: Circle
     - range: Ellipse
     inlined: true
   diseaseModel:
@@ -706,10 +706,10 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
+    - range: WebResource
+    - range: DOI
     - range: File
     - range: ISBN
-    - range: DOI
-    - range: WebResource
   fullName:
     slot_uri: fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -718,9 +718,9 @@ slots:
     slot_uri: funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Person
-    - range: Consortium
     - range: Organization
+    - range: Consortium
+    - range: Person
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -731,10 +731,10 @@ slots:
     slot_uri: generatedBy
     description: null
     any_of:
-    - range: ElectrodeArrayUsage
     - range: ElectrodeUsage
-    - range: PipetteUsage
     - range: SlicingDeviceUsage
+    - range: PipetteUsage
+    - range: ElectrodeArrayUsage
   geneticStrainType:
     slot_uri: geneticStrainType
     description: null
@@ -872,8 +872,8 @@ slots:
     - range: CommonCoordinateSpaceVersion
     - range: SlicingDevice
     multivalued: true
-    inlined: true
     list_elements_unique: true
+    inlined: true
   hasTerminology:
     slot_uri: hasTerminology
     description: null
@@ -939,41 +939,41 @@ slots:
     range: string
     pattern:
       ALTERNATES:
-      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
-      - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
       - ^http://hdl.handle.net/[.0-9A-Za-z]+/[.0-9A-Za-z]+
-      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
-      - https://scicrunch.org/resolver/RRID:([A-Za-z]+)[_:]([A-Za-z0-9_:-]+)
-      - ^https://identifiers.org/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)|^https://identifiers.org/([a-zA-Z0-9-_.]+)/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)
-      - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
-      - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
-        \ \t\r\n\f]+)*$"
       - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
       - ^[0-9]{4}-[0-9]{3}[0-9X]$
+      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
+      - ^https://identifiers.org/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)|^https://identifiers.org/([a-zA-Z0-9-_.]+)/([a-zA-Z0-9-_.]+):([a-zA-Z0-9-_.]+)
+      - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
+      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
+      - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
+        \ \t\r\n\f]+)*$"
+      - https://scicrunch.org/resolver/RRID:([A-Za-z]+)[_:]([A-Za-z0-9_:-]+)
+      - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
   inRelationTo:
     slot_uri: inRelationTo
     description: Reference to a related element.
     any_of:
     - range: ParcellationEntityVersion
-    - range: CustomAnatomicalEntity
     - range: ParcellationEntity
+    - range: CustomAnatomicalEntity
   input:
     slot_uri: input
     description: Something or someone that is put into or participates in a process
       or machine.
     any_of:
-    - range: DatasetVersion
+    - range: SubjectState
+    - range: File
+    - range: TissueSampleState
     - range: SoftwareVersion
     - range: CommonCoordinateSpaceVersion
     - range: ModelVersion
-    - range: FileBundle
-    - range: TissueSampleCollectionState
-    - range: File
-    - range: TissueSampleState
-    - range: BrainAtlasVersion
     - range: ValidationTestVersion
     - range: LocalFile
-    - range: SubjectState
+    - range: BrainAtlasVersion
+    - range: FileBundle
+    - range: TissueSampleCollectionState
+    - range: DatasetVersion
     - range: SubjectGroupState
     multivalued: true
     list_elements_unique: true
@@ -1072,17 +1072,17 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
+    - range: TissueSampleCollection
+    - range: Periodical
     - range: Book
-    - range: DatasetVersion
-    - range: LivePaperVersion
-    - range: FileRepository
     - range: PublicationIssue
+    - range: FileRepository
+    - range: LivePaperVersion
     - range: LivePaperSection
     - range: FileBundle
-    - range: TissueSampleCollection
-    - range: PublicationVolume
     - range: SubjectGroup
-    - range: Periodical
+    - range: PublicationVolume
+    - range: DatasetVersion
     multivalued: true
     list_elements_unique: true
   issueNumber:
@@ -1227,8 +1227,8 @@ slots:
     description: Grant by a party to another party as an element of an agreement between
       those parties that permits to do, use, or own something.
     any_of:
-    - range: License
     - range: WebResource
+    - range: License
     multivalued: true
     list_elements_unique: true
   liquidJunctionPotential:
@@ -1282,16 +1282,16 @@ slots:
     slot_uri: measuredWith
     description: null
     any_of:
-    - range: ElectrodeArrayUsage
     - range: ElectrodeUsage
-    - range: PipetteUsage
     - range: SlicingDeviceUsage
+    - range: PipetteUsage
+    - range: ElectrodeArrayUsage
   memberOf:
     slot_uri: memberOf
     description: null
     any_of:
-    - range: Consortium
     - range: Organization
+    - range: Consortium
   metadataLocation:
     slot_uri: metadataLocation
     description: null
@@ -1378,8 +1378,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: OrganismSubstance
     - range: Organ
+    - range: OrganismSubstance
     - range: CellType
     multivalued: true
     list_elements_unique: true
@@ -1490,8 +1490,8 @@ slots:
     slot_uri: preferredDisplayColor
     description: null
     any_of:
-    - range: SingleColor
     - range: Colormap
+    - range: SingleColor
   preferredOntologyIdentifier:
     slot_uri: preferredOntologyIdentifier
     description: Persistent identifier of a preferred ontological term.
@@ -1554,9 +1554,9 @@ slots:
     slot_uri: provider
     description: null
     any_of:
-    - range: Person
-    - range: Consortium
     - range: Organization
+    - range: Consortium
+    - range: Person
   publicationDate:
     slot_uri: publicationDate
     description: null
@@ -1565,9 +1565,9 @@ slots:
     slot_uri: publisher
     description: null
     any_of:
-    - range: Person
-    - range: Consortium
     - range: Organization
+    - range: Consortium
+    - range: Person
   purity:
     slot_uri: purity
     description: null
@@ -1601,10 +1601,10 @@ slots:
     slot_uri: recordedWith
     description: null
     any_of:
-    - range: ElectrodeArrayUsage
     - range: ElectrodeUsage
-    - range: PipetteUsage
     - range: SlicingDeviceUsage
+    - range: PipetteUsage
+    - range: ElectrodeArrayUsage
   referenceData:
     slot_uri: referenceData
     description: null
@@ -1679,10 +1679,10 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: AnalysisTechnique
-    - range: StimulationApproach
     - range: Technique
+    - range: StimulationApproach
     - range: StimulationTechnique
+    - range: AnalysisTechnique
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -1835,19 +1835,19 @@ slots:
       a binomial that consists of the name of a genus followed by a Latin or latinized
       uncapitalized noun or adjective.
     any_of:
-    - range: Species
     - range: Strain
+    - range: Species
     multivalued: true
     list_elements_unique: true
   specification:
     slot_uri: specification
     description: Detailed and precise presentation of, or proposal for something.
     any_of:
-    - range: FileBundle
-    - range: uri
+    - range: Configuration
     - range: File
     - range: PropertyValueList
-    - range: Configuration
+    - range: uri
+    - range: FileBundle
     multivalued: true
     list_elements_unique: true
   specificationFormat:
@@ -1889,8 +1889,8 @@ slots:
     slot_uri: startedBy
     description: null
     any_of:
-    - range: Person
     - range: SoftwareAgent
+    - range: Person
   status:
     slot_uri: status
     description: null
@@ -2000,8 +2000,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: string
     - range: uri
+    - range: string
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -2101,12 +2101,12 @@ slots:
     slot_uri: usedSpecimen
     description: null
     any_of:
-    - range: Subject
-    - range: TissueSampleState
     - range: TissueSampleCollection
+    - range: Subject
+    - range: SubjectState
+    - range: TissueSampleState
     - range: TissueSample
     - range: SubjectGroup
-    - range: SubjectState
     multivalued: true
     list_elements_unique: true
   userName:
@@ -2117,11 +2117,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: QuantitativeValue
-    - range: float
     - range: QuantitativeValueRange
     - range: integer
     - range: string
+    - range: float
+    - range: QuantitativeValue
     multivalued: true
     inlined: true
     list_elements_unique: true
@@ -2164,12 +2164,12 @@ slots:
     description: null
     any_of:
     - range: DataAnalysis
+    - range: Optimization
     - range: Visualization
+    - range: GenericComputation
     - range: DataCopy
     - range: ModelValidation
     - range: Simulation
-    - range: Optimization
-    - range: GenericComputation
   webpage:
     slot_uri: webpage
     description: Hypertext document (block of information) found on the World Wide

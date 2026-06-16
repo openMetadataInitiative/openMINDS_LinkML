@@ -16,103 +16,103 @@ enums:
       nervous system:
         description: Is an anatomical entity and anatomical system. [auto-generated
           from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001016)]
-      somatic nervous system:
-        description: Is an anatomical entity. Is part of the peripheral nervous system.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000012)
-          ('is_a' and 'relationship')]
       sensorimotor system:
         description: Is a neural system. [auto-generated from 'is_a' property of the
           [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0025534)]
-      ventricular system of central nervous system:
-        description: Is an anatomical system. Is part of the central nervous system.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005281)
-          ('is_a' and 'relationship')]
+      proprioceptive system:
+        description: Is a neural system. [auto-generated from 'is_a' property of the
+          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0025533)]
+      enteric nervous system:
+        description: Is part of the autonomic nervous system. [auto-generated from
+          'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002005)]
+      noradrenergic system:
+        description: The noradrenergic system is composed of any molecule, protein,
+          cell, tissue or organ that is related to norepinephrine (also known as noradrenaline).
       central nervous system:
         description: Is part of the nervous system. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001017)]
-      ventricular system of brain:
-        description: Is an anatomical system. Is part of the brain and the ventricular
-          system of central nervous system. [auto-generated from properties of the
-          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005282) ('is_a'
-          and 'relationship')]
+      cholinergic system:
+        description: The cholinergic system is composed of any molecule, protein,
+          cell, tissue or organ that is related to acetylcholine.
+      gabaergic system:
+        description: The gabaergic system is composed of any molecule, protein, cell,
+          tissue or organ that is related to GABA.
+      glutamatergic system:
+        description: The glutamatergic system is composed of any molecule, protein,
+          cell, tissue or organ that is related to glutamate (when in the role of
+          a neurotransmitter).
+      musculoskeletal system:
+        description: The 'musculoskeletal system' is an anatomical organ system composed
+          of organs providing the body with movement, stability, shape and support.
       extrapyramidal tract system:
         description: Is a regional part of brain. Is part of the motor system. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035803)
           ('is_a' and 'relationship')]
-      enteric nervous system:
-        description: Is part of the autonomic nervous system. [auto-generated from
-          'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002005)]
-      visual processing part of nervous system:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006794)
+      motor system:
+        description: Is a neural system. [auto-generated from 'is_a' property of the
+          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0025525)]
+      serotonergic system:
+        description: The serotonergic system is composed of any molecule, protein,
+          cell, tissue or organ that is related to serotonin.
+      cardiovascular system:
+        description: '''The ''cardiovascular system'' is an anatomical organ system
+          where the heart pumps blood through blood vessels to and from all parts
+          of the body.'
+      ventricular system of central nervous system:
+        description: Is an anatomical system. Is part of the central nervous system.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005281)
+          ('is_a' and 'relationship')]
+      digestive system:
+        description: The 'digestive system' is an anatomical organ system composed
+          of organs devoted to the ingestion, digestion, the assimilation of food
+          and the discharge of residual wastes.
+      somatic motor system:
+        description: Is an anatomical entity. Is part of the somatic nervous system.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003945)
           ('is_a' and 'relationship')]
       autonomic nervous system:
         description: Is an anatomical entity. Is part of the peripheral nervous system.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002410)
           ('is_a' and 'relationship')]
-      somatic motor system:
-        description: Is an anatomical entity. Is part of the somatic nervous system.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003945)
+      limbic system:
+        description: Is part of the forebrain. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000349)]
+      visual processing part of nervous system:
+        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006794)
           ('is_a' and 'relationship')]
       parasympathetic nervous system:
         description: Is part of the autonomic nervous system. [auto-generated from
           'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000011)]
-      noradrenergic system:
-        description: The noradrenergic system is composed of any molecule, protein,
-          cell, tissue or organ that is related to norepinephrine (also known as noradrenaline).
-      somatic sensory system:
-        description: Is part of the somatic nervous system. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003942)]
       glymphatic system:
         description: Is an anatomical entity and anatomical system. Is part of the
           nervous system. [auto-generated from properties of the [UBERON ontology
           term](http://purl.obolibrary.org/obo/UBERON_0036145) ('is_a' and 'relationship')]
-      peripheral nervous system:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000010)
-          ('is_a' and 'relationship')]
-      serotonergic system:
-        description: The serotonergic system is composed of any molecule, protein,
-          cell, tissue or organ that is related to serotonin.
-      gabaergic system:
-        description: The gabaergic system is composed of any molecule, protein, cell,
-          tissue or organ that is related to GABA.
-      limbic system:
-        description: Is part of the forebrain. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000349)]
+      ventricular system of brain:
+        description: Is an anatomical system. Is part of the brain and the ventricular
+          system of central nervous system. [auto-generated from properties of the
+          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005282) ('is_a'
+          and 'relationship')]
+      somatic sensory system:
+        description: Is part of the somatic nervous system. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003942)]
       neural system:
         description: Is an anatomical entity. Is part of the nervous system. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0023879)
           ('is_a' and 'relationship')]
-      proprioceptive system:
-        description: Is a neural system. [auto-generated from 'is_a' property of the
-          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0025533)]
-      vascular system:
-        description: The 'vascular system' is an anatomical system that consists of
-          all vessels in the body, and carries blood and lymph through all parts of
-          the body.
-      glutamatergic system:
-        description: The glutamatergic system is composed of any molecule, protein,
-          cell, tissue or organ that is related to glutamate (when in the role of
-          a neurotransmitter).
-      cardiovascular system:
-        description: '''The ''cardiovascular system'' is an anatomical organ system
-          where the heart pumps blood through blood vessels to and from all parts
-          of the body.'
-      digestive system:
-        description: The 'digestive system' is an anatomical organ system composed
-          of organs devoted to the ingestion, digestion, the assimilation of food
-          and the discharge of residual wastes.
-      musculoskeletal system:
-        description: The 'musculoskeletal system' is an anatomical organ system composed
-          of organs providing the body with movement, stability, shape and support.
       sympathetic nervous system:
         description: Is an anatomical entity. Is part of the autonomic nervous system.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000013)
           ('is_a' and 'relationship')]
-      cholinergic system:
-        description: The cholinergic system is composed of any molecule, protein,
-          cell, tissue or organ that is related to acetylcholine.
-      motor system:
-        description: Is a neural system. [auto-generated from 'is_a' property of the
-          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0025525)]
+      vascular system:
+        description: The 'vascular system' is an anatomical system that consists of
+          all vessels in the body, and carries blood and lymph through all parts of
+          the body.
+      peripheral nervous system:
+        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000010)
+          ('is_a' and 'relationship')]
+      somatic nervous system:
+        description: Is an anatomical entity. Is part of the peripheral nervous system.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000012)
+          ('is_a' and 'relationship')]

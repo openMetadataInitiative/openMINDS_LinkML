@@ -13,12 +13,12 @@ enums:
     enum_uri: https://openminds.om-i.org/types/SignalDirectionality
     title: Signal directionality
     permissible_values:
-      signal-receiving:
-        description: A signal directionality mode in which a device detects and acquires
-          incoming signals from an external source or medium.
-      signal-transceiving:
-        description: A signal directionality mode in which a device both emits and
-          detects signals within the same system or operational context.
       signal-transmitting:
         description: A signal directionality mode in which a device generates and
           emits signals toward an external system, medium, or target.
+      signal-transceiving:
+        description: A signal directionality mode in which a device both emits and
+          detects signals within the same system or operational context.
+      signal-receiving:
+        description: A signal directionality mode in which a device detects and acquires
+          incoming signals from an external source or medium.

@@ -15,11 +15,11 @@ enums:
     permissible_values:
       authenticated access:
         description: Access following authentication through an account.
+      immediate access:
+        description: Automatic access upon acceptance of the applicable terms.
       authorized access:
         description: Access granted following an explicit authorisation decision based
           on assessment of the access request and, where applicable, acceptance or
           negotiation of relevant usage conditions.
       registered access:
         description: Access requires registration but no authentication.
-      immediate access:
-        description: Automatic access upon acceptance of the applicable terms.

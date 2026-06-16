@@ -15,14 +15,14 @@ enums:
     permissible_values:
       slide deck:
         description: A set of slides for a visual presentation.
-      video tutorial:
-        description: A tutorial presented as a video.
-      user documentation:
-        description: Documentation for the users of a resource.
-      developer documentation:
-        description: Documentation for the developers of a resource.
       interactive tutorial:
         description: A tutorial presented in an interactive format, for example a
           Jupyter notebook.
+      video tutorial:
+        description: A tutorial presented as a video.
       video presentation:
         description: A video recorded presentation.
+      developer documentation:
+        description: Documentation for the developers of a resource.
+      user documentation:
+        description: Documentation for the users of a resource.

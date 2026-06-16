@@ -14,68 +14,74 @@ enums:
     title: Species
     description: Structured information on the species.
     permissible_values:
-      Bos taurus:
-        description: Cattle (Bos taurus) are large, domesticated, bovid ungulates
-          widely kept as livestock.
       Rattus norvegicus:
         description: The species *Rattus norvegicus* (brown rat) belongs to the family
           of *muridae* (murids).
-      Callithrix jacchus:
-        description: The species *Callithrix jacchus* (common marmoset) belongs to
-          the family of *callitrichidae* (new world monkeys).
-      Danio rerio:
-        description: The species *Danio rerio* (zebrafish) belongs to the family of
-          *cyprinidae* (cyprinids, freshwater fish).
-      Drosophila melanogaster:
-        description: The species *Drosophila melanogaster* (fruit fly) belongs to
-          the family of *Drosophilidae*.
-      Berghia stephanieae:
-        description: The species *Berghia stephanieae* belongs to the family of *aeolidiidae*
-          (family of sea slugs, shell-less marine gastropod molluscs).
-      Homo sapiens:
-        description: The species *Homo sapiens* (humans) belongs to the family of
-          *hominidae* (great apes).
-      Chlorocebus pygerythrus:
-        description: The species *Chlorocebus pygerythrus* (vervet marmoset) belongs
-          to the family of *cercopithecidae* (old world monkeys).
-      Quiscalus mexicanus:
-        description: The species *Quiscalus mexicanus* (great-tailed grackle) belongs
-          to the family of *Icteridae* (New World blackbirds, orioles and allies)
-          of the order *Passeriformes* (song birds).
       Caenorhabditis elegans:
         description: The species *Caenorhabditis elegans* (C. elegans) belongs to
           the family of *rhabditidae* (roundworms).
-      Sus scrofa domesticus:
-        description: The species *Sus scrofa domesticus* (domestic pig) belongs to
-          the family of suidae (suids).
-      Macaca fuscata:
-        description: The species *Macaca fuscata* (Japanese macaque) belongs to the
-          family of *cercopithecidae* (old world monkeys).
-      Cervus elaphus:
-        description: The species *Cervus elaphus* (red deer) belongs to the family
-          of *cervidae* (deers).
-      Cricetulus griseus:
-        description: The Chinese hamster (Cricetulus griseus or Cricetulus aureus)
-          is a rodent in the genus Cricetulus of the subfamily Cricetidae.
-      Ovis aries:
-        description: The species *Ovis aries* (domestic sheep) belongs to the family
-          of bovidae (bovids).
-      Macaca mulatta:
-        description: The species *Macaca mulatta* (rhesus macaque) belongs to the
-          family of *cercopithecidae* (old world monkeys).
-      Macaca fascicularis:
-        description: The species *Macaca fascicularis* (crab-eating macaque) belongs
-          to the family of *cercopithecidae* (old world monkeys).
+      Callithrix jacchus:
+        description: The species *Callithrix jacchus* (common marmoset) belongs to
+          the family of *callitrichidae* (new world monkeys).
       Meriones unguiculatus:
         description: The Mongolian gerbil, also referred to as the Mongolian jird
           (Meriones unguiculatus), is a rodent belonging to the subfamily Gerbillinae.
           [Wikipedia]
+      Bos taurus:
+        description: Cattle (Bos taurus) are large, domesticated, bovid ungulates
+          widely kept as livestock.
+      Berghia stephanieae:
+        description: The species *Berghia stephanieae* belongs to the family of *aeolidiidae*
+          (family of sea slugs, shell-less marine gastropod molluscs).
+      Felis catus:
+        description: The species *Felis catus* (domestic cat) belongs to the family
+          of *Felidae*, subfamily *Felinae*.
+      Quiscalus mexicanus:
+        description: The species *Quiscalus mexicanus* (great-tailed grackle) belongs
+          to the family of *Icteridae* (New World blackbirds, orioles and allies)
+          of the order *Passeriformes* (song birds).
+      Macaca nemestrina:
+        description: The species *Macaca nemestrina* (southern pig-tailed macaque)
+          belongs to the family of *cercopithecidae* (old world monkeys).
+      Macaca mulatta:
+        description: The species *Macaca mulatta* (rhesus macaque) belongs to the
+          family of *cercopithecidae* (old world monkeys).
+      Mustela putorius furo:
+        description: The species *Mustela putorius furo* (domestic ferret) belongs
+          to the family of *mustelidae* (mustelids).
       Trachemys scripta elegans:
         description: The red-eared slider or red-eared terrapin (Trachemys scripta
           elegans) is a subspecies of the pond slider (Trachemys scripta), a semiaquatic
           turtle belonging to the family Emydidae ([Wikipedia](https://en.wikipedia.org/wiki/Red-eared_slider)).
+      Cricetulus griseus:
+        description: The Chinese hamster (Cricetulus griseus or Cricetulus aureus)
+          is a rodent in the genus Cricetulus of the subfamily Cricetidae.
+      Danio rerio:
+        description: The species *Danio rerio* (zebrafish) belongs to the family of
+          *cyprinidae* (cyprinids, freshwater fish).
+      Ovis aries:
+        description: The species *Ovis aries* (domestic sheep) belongs to the family
+          of bovidae (bovids).
+      Sus scrofa domesticus:
+        description: The species *Sus scrofa domesticus* (domestic pig) belongs to
+          the family of suidae (suids).
+      Drosophila melanogaster:
+        description: The species *Drosophila melanogaster* (fruit fly) belongs to
+          the family of *Drosophilidae*.
+      Macaca fuscata:
+        description: The species *Macaca fuscata* (Japanese macaque) belongs to the
+          family of *cercopithecidae* (old world monkeys).
       Chlorocebus aethiops sabaeus:
         description: The species *Chlorocebus aethiops sabaeus* (green monkey) belongs
+          to the family of *cercopithecidae* (old world monkeys).
+      Mustela putorius:
+        description: The species *Mustela putorius* (European polecat) belongs to
+          the family of *mustelidae* (mustelids).
+      Macaca fascicularis:
+        description: The species *Macaca fascicularis* (crab-eating macaque) belongs
+          to the family of *cercopithecidae* (old world monkeys).
+      Chlorocebus pygerythrus:
+        description: The species *Chlorocebus pygerythrus* (vervet marmoset) belongs
           to the family of *cercopithecidae* (old world monkeys).
       Mus musculus:
         description: The species *Mus musculus* (house mouse) belongs to the family
@@ -83,15 +89,9 @@ enums:
       Monodelphis domestica:
         description: The species *Monodelphis domestica* (gray short-tailed opossum)
           belongs to the family of *didelphidae* (American possums).
-      Felis catus:
-        description: The species *Felis catus* (domestic cat) belongs to the family
-          of *Felidae*, subfamily *Felinae*.
-      Macaca nemestrina:
-        description: The species *Macaca nemestrina* (southern pig-tailed macaque)
-          belongs to the family of *cercopithecidae* (old world monkeys).
-      Mustela putorius:
-        description: The species *Mustela putorius* (European polecat) belongs to
-          the family of *mustelidae* (mustelids).
-      Mustela putorius furo:
-        description: The species *Mustela putorius furo* (domestic ferret) belongs
-          to the family of *mustelidae* (mustelids).
+      Cervus elaphus:
+        description: The species *Cervus elaphus* (red deer) belongs to the family
+          of *cervidae* (deers).
+      Homo sapiens:
+        description: The species *Homo sapiens* (humans) belongs to the family of
+          *hominidae* (great apes).

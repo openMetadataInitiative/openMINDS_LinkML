@@ -15,74 +15,80 @@ enums:
     description: Structured information on the anatomical directions of the X, Y,
       and Z axis.
     permissible_values:
-      ARI:
-        description: X, Y, Z axes are oriented towards anterior, right and inferior,
-          respectively.
-      LSA:
-        description: X, Y, Z axes are oriented towards left, superior and anterior,
-          respectively.
-      IPR:
-        description: X, Y, Z axes are oriented towards inferior, posterior and right,
-          respectively.
-      RIP:
-        description: X, Y, Z axes are oriented towards right, inferior and posterior,
-          respectively.
       IAL:
         description: X, Y, Z axes are oriented towards inferior, anterior and left,
           respectively.
       SAL:
         description: X, Y, Z axes are oriented towards superior, anterior and left,
           respectively.
-      RPS:
-        description: X, Y, Z axes are oriented towards right, posterior and superior,
-          respectively.
-      LAS:
-        description: X, Y, Z axes are oriented towards left, anterior and superior,
-          respectively.
-      ILP:
-        description: X, Y, Z axes are oriented towards inferior, left and posterior,
-          respectively.
       SRA:
         description: X, Y, Z axes are oriented towards superior, right and anterior,
           respectively.
-      SLA:
-        description: X, Y, Z axes are oriented towards superior, left and anterior,
+      IPL:
+        description: X, Y, Z axes are oriented towards inferior, posterior and left,
           respectively.
-      AIR:
-        description: X, Y, Z axes are oriented towards anterior, inferior and right,
+      LPS:
+        description: X, Y, Z axes are oriented towards left, posterior and superior,
           respectively.
-      SPL:
-        description: X, Y, Z axes are oriented towards superior, posterior and left,
+      IRP:
+        description: X, Y, Z axes are oriented towards inferior, right and posterior,
           respectively.
-      LAI:
-        description: X, Y, Z axes are oriented towards left, anterior and inferior,
-          respectively.
-      RSP:
-        description: X, Y, Z axes are oriented towards right, superior and posterior,
-          respectively.
-      PIL:
-        description: X, Y, Z axes are oriented towards posterior, inferior and left,
-          respectively.
-      LIP:
-        description: X, Y, Z axes are oriented towards left, inferior and posterior,
-          respectively.
-      PLI:
-        description: X, Y, Z axes are oriented towards posterior, left and inferior,
+      PRI:
+        description: X, Y, Z axes are oriented towards posterior, right and inferior,
           respectively.
       RSA:
         description: X, Y, Z axes are oriented towards right, superior and anterior,
           respectively.
-      ASL:
-        description: X, Y, Z axes are oriented towards anterior, superior and left,
+      RPI:
+        description: X, Y, Z axes are oriented towards right, posterior and inferior,
           respectively.
-      ALI:
-        description: X, Y, Z axes are oriented towards anterior, left and inferior,
+      PIL:
+        description: X, Y, Z axes are oriented towards posterior, inferior and left,
+          respectively.
+      LIA:
+        description: X, Y, Z axes are oriented towards left, inferior and anterior,
+          respectively.
+      IRA:
+        description: X, Y, Z axes are oriented towards inferior, right and anterior,
+          respectively.
+      RIP:
+        description: X, Y, Z axes are oriented towards right, inferior and posterior,
+          respectively.
+      LSA:
+        description: X, Y, Z axes are oriented towards left, superior and anterior,
+          respectively.
+      RIA:
+        description: X, Y, Z axes are oriented towards right, inferior and anterior,
+          respectively.
+      PRS:
+        description: X, Y, Z axes are oriented towards posterior, right and superior,
+          respectively.
+      LAS:
+        description: X, Y, Z axes are oriented towards left, anterior and superior,
+          respectively.
+      IPR:
+        description: X, Y, Z axes are oriented towards inferior, posterior and right,
+          respectively.
+      LPI:
+        description: X, Y, Z axes are oriented towards left, posterior and inferior,
+          respectively.
+      SPL:
+        description: X, Y, Z axes are oriented towards superior, posterior and left,
+          respectively.
+      PSL:
+        description: X, Y, Z axes are oriented towards posterior, superior and left,
+          respectively.
+      PLI:
+        description: X, Y, Z axes are oriented towards posterior, left and inferior,
+          respectively.
+      ALS:
+        description: X, Y, Z axes are oriented towards anterior, left and superior,
           respectively.
       IAR:
         description: X, Y, Z axes are oriented towards inferior, anterior and right,
           respectively.
-      LSP:
-        description: X, Y, Z axes are oriented towards left, superior and posterior,
+      ALI:
+        description: X, Y, Z axes are oriented towards anterior, left and inferior,
           respectively.
       SRP:
         description: X, Y, Z axes are oriented towards superior, right and posterior,
@@ -90,71 +96,65 @@ enums:
       AIL:
         description: X, Y, Z axes are oriented towards anterior, inferior and left,
           respectively.
-      SAR:
-        description: X, Y, Z axes are oriented towards superior, anterior and right,
-          respectively.
-      PLS:
-        description: X, Y, Z axes are oriented towards posterior, left and superior,
-          respectively.
-      IRA:
-        description: X, Y, Z axes are oriented towards inferior, right and anterior,
-          respectively.
-      ALS:
-        description: X, Y, Z axes are oriented towards anterior, left and superior,
-          respectively.
-      LIA:
-        description: X, Y, Z axes are oriented towards left, inferior and anterior,
-          respectively.
-      RAI:
-        description: X, Y, Z axes are oriented towards right, anterior and inferior,
-          respectively.
-      SPR:
-        description: X, Y, Z axes are oriented towards superior, posterior and right,
-          respectively.
-      IRP:
-        description: X, Y, Z axes are oriented towards inferior, right and posterior,
+      ASL:
+        description: X, Y, Z axes are oriented towards anterior, superior and left,
           respectively.
       ARS:
         description: X, Y, Z axes are oriented towards anterior, right and superior,
           respectively.
-      LPI:
-        description: X, Y, Z axes are oriented towards left, posterior and inferior,
-          respectively.
-      IPL:
-        description: X, Y, Z axes are oriented towards inferior, posterior and left,
-          respectively.
-      PRS:
-        description: X, Y, Z axes are oriented towards posterior, right and superior,
-          respectively.
-      RPI:
-        description: X, Y, Z axes are oriented towards right, posterior and inferior,
-          respectively.
-      PIR:
-        description: X, Y, Z axes are oriented towards posterior, inferior and right,
-          respectively.
-      ASR:
-        description: X, Y, Z axes are oriented towards anterior, superior and right,
-          respectively.
       PSR:
         description: X, Y, Z axes are oriented towards posterior, superior and right,
           respectively.
-      PRI:
-        description: X, Y, Z axes are oriented towards posterior, right and inferior,
-          respectively.
-      RIA:
-        description: X, Y, Z axes are oriented towards right, inferior and anterior,
-          respectively.
-      PSL:
-        description: X, Y, Z axes are oriented towards posterior, superior and left,
-          respectively.
-      SLP:
-        description: X, Y, Z axes are oriented towards superior, left and posterior,
+      LSP:
+        description: X, Y, Z axes are oriented towards left, superior and posterior,
           respectively.
       RAS:
         description: X, Y, Z axes are oriented towards right, anterior and superior,
           respectively.
-      LPS:
-        description: X, Y, Z axes are oriented towards left, posterior and superior,
+      RAI:
+        description: X, Y, Z axes are oriented towards right, anterior and inferior,
+          respectively.
+      LAI:
+        description: X, Y, Z axes are oriented towards left, anterior and inferior,
+          respectively.
+      SPR:
+        description: X, Y, Z axes are oriented towards superior, posterior and right,
+          respectively.
+      RPS:
+        description: X, Y, Z axes are oriented towards right, posterior and superior,
+          respectively.
+      ILP:
+        description: X, Y, Z axes are oriented towards inferior, left and posterior,
+          respectively.
+      PLS:
+        description: X, Y, Z axes are oriented towards posterior, left and superior,
+          respectively.
+      SLP:
+        description: X, Y, Z axes are oriented towards superior, left and posterior,
+          respectively.
+      ASR:
+        description: X, Y, Z axes are oriented towards anterior, superior and right,
+          respectively.
+      SLA:
+        description: X, Y, Z axes are oriented towards superior, left and anterior,
+          respectively.
+      RSP:
+        description: X, Y, Z axes are oriented towards right, superior and posterior,
+          respectively.
+      LIP:
+        description: X, Y, Z axes are oriented towards left, inferior and posterior,
+          respectively.
+      AIR:
+        description: X, Y, Z axes are oriented towards anterior, inferior and right,
+          respectively.
+      ARI:
+        description: X, Y, Z axes are oriented towards anterior, right and inferior,
+          respectively.
+      PIR:
+        description: X, Y, Z axes are oriented towards posterior, inferior and right,
+          respectively.
+      SAR:
+        description: X, Y, Z axes are oriented towards superior, anterior and right,
           respectively.
       ILA:
         description: X, Y, Z axes are oriented towards inferior, left and anterior,
