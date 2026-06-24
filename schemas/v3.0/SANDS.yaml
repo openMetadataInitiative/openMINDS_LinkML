@@ -29,6 +29,10 @@ classes:
         range: CustomAnnotation
       name:
         required: true
+      relatedUBERONTerm:
+        any_of:
+        - range: Organ
+        - range: UBERONParcellation
       relationAssessment:
         range: QualitativeRelationAssessment
 - CustomCoordinateSpace:
@@ -333,6 +337,10 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
+      preferredDisplayColor:
+        any_of:
+        - range: Colormap
+        - range: SingleColor
 - QualitativeRelationAssessment:
     class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
     description: null

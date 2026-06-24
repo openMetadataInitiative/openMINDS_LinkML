@@ -162,8 +162,8 @@ slots:
     slot_uri: coordinateSpace
     description: Two or three dimensional geometric setting.
     any_of:
-    - range: CustomCoordinateSpace
     - range: CommonCoordinateSpace
+    - range: CustomCoordinateSpace
   coordinates:
     slot_uri: coordinates
     description: Pair or triplet of numbers defining a location in a given coordinate
@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: RORID
     - range: ORCID
-    - range: GRIDID
+    - range: RORID
     - range: SWHID
     - range: DOI
+    - range: GRIDID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -519,11 +519,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: TissueSampleCollection
-    - range: FileRepository
-    - range: ParcellationTerminology
     - range: SubjectGroup
+    - range: ParcellationTerminology
+    - range: FileRepository
     - range: FileBundle
+    - range: TissueSampleCollection
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -605,8 +605,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: Organ
     - range: CellType
+    - range: Organ
     multivalued: true
     list_elements_unique: true
   otherContribution:
@@ -774,8 +774,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: Technique
     - range: BehavioralTask
+    - range: Technique
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -965,10 +965,10 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: QuantitativeValueRange
-    - range: integer
     - range: string
+    - range: QuantitativeValueRange
     - range: float
+    - range: integer
     - range: QuantitativeValue
     multivalued: true
     inlined: true
