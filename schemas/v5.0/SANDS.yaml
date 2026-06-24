@@ -412,9 +412,6 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       criteriaQualityType:
         required: true
       criteriaType:
@@ -872,9 +869,6 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       coordinates:
         required: true
 - SingleColor:

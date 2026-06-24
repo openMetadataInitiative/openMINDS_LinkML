@@ -254,10 +254,6 @@ classes:
     - temporalSamplingFrequency
     - voxelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -367,10 +363,6 @@ classes:
     - obtainedWith
     - pixelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -443,10 +435,6 @@ classes:
     - pixelSize
     - z-stepSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -495,10 +483,6 @@ classes:
     - obtainedWith
     - voxelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -887,6 +871,11 @@ classes:
     - stimulusType
     - technique
     slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
       description:
         required: true
       name:
@@ -948,6 +937,10 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
+        any_of:
+        - range: CellType
+        - range: Organ
+        - range: OrganismSubstance
       species:
         required: true
         any_of:
@@ -2072,9 +2065,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - LEI:
     class_uri: https://openminds.om-i.org/types/LEI
     description: null

@@ -186,6 +186,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -250,6 +253,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -346,6 +352,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -410,6 +419,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -492,6 +504,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -629,6 +644,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -693,6 +711,9 @@ classes:
         - range: time
       environment:
         required: true
+        any_of:
+        - range: Environment
+        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
