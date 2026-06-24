@@ -861,9 +861,6 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - CoordinatePoint:
     class_uri: https://openminds.om-i.org/types/CoordinatePoint
     description: null

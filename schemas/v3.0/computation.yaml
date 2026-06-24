@@ -186,9 +186,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -204,6 +201,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -249,9 +250,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -267,6 +265,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -344,9 +346,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -362,6 +361,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -407,9 +410,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -425,6 +425,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -488,9 +492,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -506,6 +507,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -624,9 +629,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -642,6 +644,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -687,9 +693,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: WebServiceVersion
       input:
         required: true
         range: LocalFile
@@ -705,6 +708,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -785,3 +792,7 @@ classes:
       stage:
         required: true
         range: DataAnalysis
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person

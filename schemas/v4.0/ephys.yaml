@@ -175,10 +175,6 @@ classes:
     - tissueBathSolution
     - variation
     slot_usage:
-      bathTemperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       device:
         required: true
         range: ElectrodeArrayUsage
@@ -245,10 +241,6 @@ classes:
         range: Pipette
       metadataLocation:
         range: File
-      pipetteResistance:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       pipetteSolution:
         required: true
       usedSpecimen:
@@ -279,10 +271,6 @@ classes:
         - range: CustomAnatomicalEntity
         - range: ParcellationEntity
         - range: ParcellationEntityVersion
-      contactResistance:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       device:
         required: true
         range: Electrode
@@ -317,10 +305,6 @@ classes:
         any_of:
         - range: DOI
         - range: RRID
-      intrinsicResistance:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       manufacturer:
         range: Consortium
       name:
@@ -356,10 +340,6 @@ classes:
         - range: RRID
       electrodeIdentifier:
         required: true
-      intrinsicResistance:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       manufacturer:
         range: Consortium
       name:
