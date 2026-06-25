@@ -90,6 +90,9 @@ enums:
           of energy.
       milliliter:
         description: null
+      kiloohm:
+        description: "A unit of measurement of electrical resistance equal to 1,000\
+          \ ohms (10\xB3 \u03A9)."
       volume per volume percentage:
         description: Percentage of volume of one liquid dissolved in another liquid,
           where the volume of both liquids have the same unit

@@ -1139,6 +1139,9 @@ classes:
         range: ActionStatusType
       license:
         required: true
+        any_of:
+        - range: License
+        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:

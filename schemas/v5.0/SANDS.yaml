@@ -412,9 +412,6 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       criteriaQualityType:
         required: true
       criteriaType:
@@ -716,9 +713,6 @@ classes:
         - range: uri
       usedTaxon:
         required: true
-        any_of:
-        - range: BiologicalOrder
-        - range: Species
 - CommonCoordinateFramework:
     class_uri: https://openminds.om-i.org/types/CommonCoordinateFramework
     description: null
@@ -773,9 +767,6 @@ classes:
         - range: uri
       usedTaxon:
         required: true
-        any_of:
-        - range: BiologicalOrder
-        - range: Species
 - AtlasAnnotation:
     class_uri: https://openminds.om-i.org/types/AtlasAnnotation
     description: null
@@ -830,10 +821,6 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
-      preferredDisplayColor:
-        any_of:
-        - range: Colormap
-        - range: SingleColor
 - QualitativeRelationAssessment:
     class_uri: https://openminds.om-i.org/types/QualitativeRelationAssessment
     description: null
@@ -878,9 +865,6 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       coordinates:
         required: true
 - SingleColor:

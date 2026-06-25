@@ -150,8 +150,8 @@ slots:
     slot_uri: contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Person
     - range: Organization
+    - range: Person
   coordinatePoint:
     slot_uri: coordinatePoint
     description: Pair or triplet of numbers defining the position in a particular
@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
+    - range: SWHID
+    - range: GRIDID
+    - range: RORID
     - range: ORCID
     - range: DOI
-    - range: SWHID
-    - range: RORID
-    - range: GRIDID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -326,8 +326,8 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: URL
     - range: File
+    - range: URL
     - range: DOI
   fullName:
     slot_uri: fullName
@@ -337,8 +337,8 @@ slots:
     slot_uri: funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Person
     - range: Organization
+    - range: Person
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -520,10 +520,10 @@ slots:
     description: Reference to the ensemble of multiple things or beings.
     any_of:
     - range: SubjectGroup
-    - range: FileRepository
-    - range: ParcellationTerminology
     - range: TissueSampleCollection
     - range: FileBundle
+    - range: FileRepository
+    - range: ParcellationTerminology
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -966,8 +966,8 @@ slots:
     description: Entry for a property.
     any_of:
     - range: integer
-    - range: string
     - range: float
+    - range: string
     - range: QuantitativeValue
     - range: QuantitativeValueRange
     multivalued: true

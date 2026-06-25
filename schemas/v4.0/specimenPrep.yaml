@@ -86,11 +86,6 @@ classes:
     slot_usage:
       constructionType:
         required: true
-      dimension:
-        any_of:
-        - range: Circle
-        - range: Ellipse
-        - range: Rectangle
       endTime:
         range: string
         any_of:
