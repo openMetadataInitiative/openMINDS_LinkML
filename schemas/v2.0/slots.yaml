@@ -150,8 +150,8 @@ slots:
     slot_uri: contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Organization
     - range: Person
+    - range: Organization
   coordinatePoint:
     slot_uri: coordinatePoint
     description: Pair or triplet of numbers defining the position in a particular
@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: GRIDID
-    - range: RORID
-    - range: DOI
     - range: ORCID
+    - range: DOI
     - range: SWHID
+    - range: RORID
+    - range: GRIDID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -326,8 +326,8 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: File
     - range: URL
+    - range: File
     - range: DOI
   fullName:
     slot_uri: fullName
@@ -337,8 +337,8 @@ slots:
     slot_uri: funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Organization
     - range: Person
+    - range: Organization
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -519,11 +519,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
+    - range: SubjectGroup
     - range: FileRepository
     - range: ParcellationTerminology
-    - range: SubjectGroup
-    - range: FileBundle
     - range: TissueSampleCollection
+    - range: FileBundle
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -774,8 +774,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: Technique
     - range: BehavioralTask
+    - range: Technique
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -920,8 +920,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: uri
     - range: string
+    - range: uri
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -966,10 +966,10 @@ slots:
     description: Entry for a property.
     any_of:
     - range: integer
-    - range: QuantitativeValueRange
-    - range: QuantitativeValue
-    - range: float
     - range: string
+    - range: float
+    - range: QuantitativeValue
+    - range: QuantitativeValueRange
     multivalued: true
     inlined: true
   versionIdentifier:
