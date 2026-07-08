@@ -87,6 +87,9 @@ classes:
     slot_usage:
       memberOf:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
 - AccountInformation:
     class_uri: https://openminds.om-i.org/types/AccountInformation
     description: Structured information about a user account for a web service.
@@ -328,10 +331,6 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -340,14 +339,6 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - PropertyValueList:
     class_uri: https://openminds.om-i.org/types/PropertyValueList
     description: An identifiable list of property-value pairs.
@@ -500,10 +491,6 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -512,14 +499,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - SubjectGroup:
     class_uri: https://openminds.om-i.org/types/SubjectGroup
     description: null
@@ -579,24 +558,12 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - NumericalProperty:
     class_uri: https://openminds.om-i.org/types/NumericalProperty
     description: Structured information about a property of some entity or process
@@ -654,24 +621,12 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - TissueSample:
     class_uri: https://openminds.om-i.org/types/TissueSample
     description: Structured information on a tissue sample.

@@ -120,9 +120,6 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
-        any_of:
-        - range: CommonCoordinateSpace
-        - range: CustomCoordinateSpace
       criteriaQualityType:
         required: true
       internalIdentifier:
@@ -345,9 +342,6 @@ classes:
         required: true
       quantitativeOverlap:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - CoordinatePoint:
     class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
     description: null
@@ -359,8 +353,5 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
-        any_of:
-        - range: CommonCoordinateSpace
-        - range: CustomCoordinateSpace
       coordinates:
         required: true

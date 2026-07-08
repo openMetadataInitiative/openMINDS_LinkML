@@ -27,9 +27,6 @@ classes:
         required: true
       contributor:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - ContactInformation:
     class_uri: https://openminds.ebrains.eu/core/ContactInformation
     description: Structured information about how to contact a given person or consortium.
@@ -227,18 +224,10 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - TissueSampleCollection:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleCollection
     description: null
@@ -285,18 +274,10 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - SubjectGroup:
     class_uri: https://openminds.ebrains.eu/core/SubjectGroup
     description: null
@@ -358,16 +339,8 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - Protocol:
     class_uri: https://openminds.ebrains.eu/core/Protocol
     description: Structured information on a research project.
@@ -400,16 +373,8 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - StringParameter:
     class_uri: https://openminds.ebrains.eu/core/StringParameter
     description: null
@@ -450,6 +415,9 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
+        any_of:
+        - range: CellType
+        - range: Organ
       species:
         required: true
       studiedState:
@@ -515,9 +483,6 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
-        any_of:
-        - range: BehavioralTask
-        - range: Technique
 - ModelVersion:
     class_uri: https://openminds.ebrains.eu/core/ModelVersion
     description: Structured information on a computational model (version level).
@@ -1119,9 +1084,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - RORID:
     class_uri: https://openminds.ebrains.eu/core/RORID
     description: A persistent identifier for a research organization, provided by
