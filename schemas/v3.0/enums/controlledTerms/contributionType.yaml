@@ -25,6 +25,10 @@ enums:
       marketing:
         description: A contribution type of a role-bearing entity realized by promoting,
           advertising, or commercializing a target entity.
+      fundraising:
+        description: A contribution type of a role-bearing entity realized by securing
+          financial resources to support a target entity or activities related to
+          it.
       validation:
         description: A contribution type of a role-bearing entity realized by confirming,
           based on evidence or evaluation results, that a target entity fulfills specified
@@ -35,6 +39,10 @@ enums:
       liaison:
         description: A contribution type of a role-bearing entity realized by serving
           as a point of contact or intermediary regarding a target entity.
+      supervision:
+        description: A contribution type of a role-bearing entity realized by overseeing
+          and guiding the work or activities performed by humans, non-human animals,
+          or software agents in relation to a target entity.
       manufacturing:
         description: A contribution type of a role-bearing entity realized by producing
           physical target entities, typically in a repeatable or systematic manner,
@@ -47,6 +55,10 @@ enums:
         description: A contribution type of a role-bearing entity realized by creating
           textual, visual, or other expressive intellectual content about or for a
           target entity.
+      research:
+        description: A contribution type of a role-bearing entity realized by conducting
+          systematic inquiry concerning a target entity to generate, validate, or
+          refine knowledge or understanding.
       human medical care:
         description: A contribution type of a role-bearing entity realized by providing
           medical diagnosis, treatment, or health management for a human.
@@ -61,14 +73,15 @@ enums:
         description: A contribution type of a role-bearing entity realized by performing
           surgical procedures on a living organism.
       coordination:
-        description: A contribution type of a role-bearing entity realized by coordinating
-          activities, participants, or processes related to a target entity.
+        description: A contribution type of a role-bearing entity realized by aligning
+          interdependent activities, contributors, or resources to enable coherent
+          joint action.
       creation:
         description: A contribution type of a role-bearing entity realized by producing
           or bringing a target entity into existence.
       operation:
-        description: A contribution type of a role-bearing entity realized by controlling,
-          operating, or running a target entity in an active environment.
+        description: A contribution type of a role-bearing entity realized by controlling
+          and sustaining the functioning of a target entity.
       development:
         description: A contribution type of a role-bearing entity realized by creating,
           implementing, or extending physical or digital technological components
@@ -81,6 +94,9 @@ enums:
         description: A contribution type of a role-bearing entity realized by managing
           the day-to-day care, growth, reproduction, or environmental conditions of
           living organisms.
+      approval:
+        description: A contribution type of a role-bearing entity realized by formally
+          authorizing or accepting a target entity so that it may proceed or be used.
       hosting:
         description: A contribution type of a role-bearing entity realized by providing
           and maintaining an environment, infrastructure, or resources that enable
@@ -89,6 +105,9 @@ enums:
         description: A contribution type of a role-bearing entity realized by sustaining,
           updating, or repairing a target entity to ensure its continued functionality
           and quality.
+      management:
+        description: A contribution type of a role-bearing entity realized by organizing
+          and administering people, resources, and/or work toward specified objectives.
       information technology support:
         description: A contribution type of a role-bearing entity realized by providing
           operational or technical assistance for computing infrastructure, systems,
@@ -120,6 +139,9 @@ enums:
       data collection:
         description: A contribution type of a role-bearing entity realized by gathering
           or aggregating data.
+      execution:
+        description: A contribution type of a role-bearing entity realized by carrying
+          out substantive tasks according to an established plan, method, or procedure.
       data management:
         description: A contribution type of a role-bearing entity realized by organizing,
           storing, maintaining, and governing data assets to ensure their accessibility,
@@ -151,6 +173,10 @@ enums:
         description: A contribution type of a role-bearing entity realized by overseeing
           the creation, curation, governance, and maintenance of metadata to ensure
           its quality, consistency, and fitness for use.
+      funding:
+        description: A contribution type of a role-bearing entity realized by providing
+          financial resources to support a target entity or activities related to
+          it.
       deployment:
         description: A contribution type of a role-bearing entity realized by installing
           or releasing a target entity into an operational or accessible environment.
@@ -161,6 +187,10 @@ enums:
         description: A contribution type of a role-bearing entity realized by incorporating
           another living or non-living thing into a target entity so that it becomes
           part of and functions within a coherent whole.
+      editorial decision-making:
+        description: A contribution type of a role-bearing entity realized by evaluating
+          a target entity against relevant criteria and determining its acceptance,
+          rejection, revision, or other editorial disposition.
       communication:
         description: A contribution type of a role-bearing entity realized by communicating
           information about a target entity to relevant audiences.
@@ -174,15 +204,22 @@ enums:
       veterinary care:
         description: A contribution type of a role-bearing entity realized by providing
           veterinary diagnosis, treatment, or health management for an animal.
+      editing:
+        description: A contribution type of a role-bearing entity realized by modifying
+          the content or form of a target entity to improve its accuracy, clarity,
+          coherence, or quality.
       testing:
         description: A contribution type of a role-bearing entity realized by executing
           defined procedures or experiments to evaluate the behavior, functionality,
           or performance of a target entity.
+      leadership:
+        description: A contribution type of a role-bearing entity realized by setting
+          direction and making consequential decisions for a collective undertaking.
       implementation:
         description: A contribution type of a role-bearing entity realized by putting
-          a specified design, plan, method, or specification into effect through or
-          within a target entity.
+          an adopted plan, method, system, or procedure into practical effect.
       review:
         description: A contribution type of a role-bearing entity realized by critically
           assessing a target entity through expert judgment to evaluate its quality,
-          validity, or suitability.
+          validity, or suitability and, where appropriate, identify deficiencies or
+          opportunities for improvement and recommend changes.
