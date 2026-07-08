@@ -27,6 +27,9 @@ classes:
         required: true
       contributor:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - ContactInformation:
     class_uri: https://openminds.ebrains.eu/core/ContactInformation
     description: Structured information about how to contact a given person or consortium.
@@ -155,9 +158,6 @@ classes:
     slot_usage:
       dataLocation:
         required: true
-        any_of:
-        - range: File
-        - range: FileBundle
       openDataIn:
         required: true
       service:
@@ -516,9 +516,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
       species:
         required: true
       studiedState:
@@ -661,6 +658,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       inputData:
@@ -733,6 +734,10 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       isAlternativeVersionOf:
@@ -853,6 +858,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       isAlternativeVersionOf:
@@ -961,6 +970,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       inputData:
@@ -1220,6 +1233,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - RORID:
     class_uri: https://openminds.ebrains.eu/core/RORID
     description: A persistent identifier for a research organization, provided by

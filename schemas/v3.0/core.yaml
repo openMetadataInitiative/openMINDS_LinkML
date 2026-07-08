@@ -87,9 +87,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - AccountInformation:
     class_uri: https://openminds.ebrains.eu/core/AccountInformation
     description: Structured information about a user account for a web service.
@@ -558,6 +555,9 @@ classes:
         range: SubjectGroup
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -699,6 +699,9 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
