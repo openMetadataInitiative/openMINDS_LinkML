@@ -534,6 +534,9 @@ classes:
         range: SubjectGroup
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -586,11 +589,6 @@ classes:
     - stimulusType
     - technique
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
       description:
         required: true
       name:
@@ -651,6 +649,9 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1139,9 +1140,6 @@ classes:
         range: ActionStatusType
       license:
         required: true
-        any_of:
-        - range: License
-        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:

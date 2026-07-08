@@ -105,6 +105,10 @@ classes:
         required: true
       publicationDate:
         required: true
+      requiredTime:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       type:
         range: LearningResourceType
       usageCondition:
