@@ -14,47 +14,47 @@ enums:
     title: Programming language
     description: Structured information on the programming language.
     permissible_values:
-      C#:
-        description: null
-      C:
-        description: null
-      Java:
-        description: null
-      C++:
-        description: null
-      JavaScript:
-        description: null
-      T-SQL:
+      Python:
         description: null
       GLSL:
         description: null
-      Scala:
-        description: null
       Fortran:
         description: null
+      PHP:
+        description: null
+      C++:
+        description: null
+      Shell:
+        description: null
+      HTML:
+        description: null
+      Pascal:
+        description: null
       TypeScript:
+        description: null
+      C:
+        description: null
+      Ruby:
+        description: null
+      Scala:
+        description: null
+      R:
+        description: null
+      C#:
+        description: null
+      MATLAB:
+        description: null
+      JavaScript:
         description: null
       IGOR Pro:
         description: C-like programming language of the correspondent scientific data
           analysis software and numerical computing environment IGOR Pro available
           for Windows or Mac operating systems.
-      Pascal:
+      T-SQL:
         description: null
-      Bash:
+      Java:
         description: null
       AMPL:
         description: null
-      PHP:
-        description: null
-      Shell:
-        description: null
-      R:
-        description: null
-      Ruby:
-        description: null
-      HTML:
-        description: null
-      MATLAB:
-        description: null
-      Python:
+      Bash:
         description: null

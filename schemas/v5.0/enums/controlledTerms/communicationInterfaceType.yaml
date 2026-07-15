@@ -13,24 +13,24 @@ enums:
     enum_uri: https://openminds.om-i.org/types/CommunicationInterfaceType
     title: Communication interface type
     permissible_values:
-      desktop GUI:
-        description: A graphical user interface that runs as a native application
-          on a desktop computer.
-      library API:
-        description: An application programming interface implemented as a library
-          for a specific programming language.
       mobile GUI:
         description: A graphical user interface that runs as a native app on a mobile
           phone.
-      OS API:
-        description: An application programming interface that allows applications
-          to interact with the underlying operating system.
-      web socket API:
-        description: An application programming interface based on exchanging messages
-          between a client application and a server using web sockets.
       command line interface:
         description: A means of interacting with software through text-based commands
           entered in a terminal or shell.
+      RPC API:
+        description: An application programming interface that allows remote functions
+          in external servers to be called as if they were local functions.
+      web socket API:
+        description: An application programming interface based on exchanging messages
+          between a client application and a server using web sockets.
+      SOAP API:
+        description: An application programming interface that uses the Simple Object
+          Access Protocol (SOAP).
+      desktop GUI:
+        description: A graphical user interface that runs as a native application
+          on a desktop computer.
       REST API:
         description: An application programming interface that conforms to the representational
           state transfer (REST) architectural style, typically using the HTTP(S) protocol
@@ -38,15 +38,15 @@ enums:
       message queue:
         description: A means of interacting with a software system by sending messages
           to a buffer from which they may be retrieved at a later time.
-      email communication:
-        description: A means of interacting with a service through sending and receiving
-          e-mail.
-      SOAP API:
-        description: An application programming interface that uses the Simple Object
-          Access Protocol (SOAP).
-      RPC API:
-        description: An application programming interface that allows remote functions
-          in external servers to be called as if they were local functions.
       web GUI:
         description: A graphical user interface that runs in a web browser, typically
           implemented in HTML, Javascript and CSS.
+      email communication:
+        description: A means of interacting with a service through sending and receiving
+          e-mail.
+      OS API:
+        description: An application programming interface that allows applications
+          to interact with the underlying operating system.
+      library API:
+        description: An application programming interface implemented as a library
+          for a specific programming language.

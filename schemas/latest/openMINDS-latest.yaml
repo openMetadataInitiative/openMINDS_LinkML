@@ -10,14 +10,14 @@ imports:
 - types
 - enums
 - core
-- specimenPrep
-- neuroimaging
+- SANDS
+- publications
 - ephys
 - chemicals
 - stimulation
-- publications
+- specimenPrep
+- neuroimaging
 - computation
-- SANDS
 prefixes:
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/

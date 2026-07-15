@@ -13,17 +13,17 @@ enums:
     enum_uri: https://openminds.om-i.org/types/GeneticStrainType
     title: Genetic strain type
     permissible_values:
-      conditional knockout ready:
-        description: null
-      knockout:
-        description: null
-      conditional knockin ready:
-        description: null
-      knockin:
-        description: null
       transgenic:
         description: null
       conditional ready:
         description: null
+      knockout:
+        description: null
+      conditional knockout ready:
+        description: null
+      knockin:
+        description: null
       wildtype:
+        description: null
+      conditional knockin ready:
         description: null

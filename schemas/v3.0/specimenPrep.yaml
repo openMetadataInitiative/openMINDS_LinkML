@@ -14,6 +14,68 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
+- SlicingDevice:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDevice
+    description: null
+    title: Slicing device
+    slots:
+    - id
+    - description
+    - deviceType
+    - digitalIdentifier
+    - lookupLabel
+    - manufacturer
+    - name
+    - owner
+    - serialNumber
+    slot_usage:
+      deviceType:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: RRID
+      manufacturer:
+        range: Consortium
+      name:
+        required: true
+      owner:
+        range: Consortium
+- SlicingDeviceUsage:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
+    description: null
+    title: Slicing device usage
+    slots:
+    - id
+    - device
+    - lookupLabel
+    - metadataLocation
+    - oscillationAmplitude
+    - sliceThickness
+    - slicingAngle
+    - slicingPlane
+    - slicingSpeed
+    - usedSpecimen
+    - vibrationFrequency
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDevice
+      metadataLocation:
+        range: File
+      sliceThickness:
+        required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      slicingAngle:
+        range: QuantitativeValue
+      slicingPlane:
+        required: true
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
 - TissueCulturePreparation:
     class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
     description: null
@@ -111,62 +173,7 @@ classes:
         - range: TissueSampleState
       output:
         range: TissueSampleCollectionState
-- SlicingDevice:
-    class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDevice
-    description: null
-    title: Slicing device
-    slots:
-    - id
-    - description
-    - deviceType
-    - digitalIdentifier
-    - lookupLabel
-    - manufacturer
-    - name
-    - owner
-    - serialNumber
-    slot_usage:
-      deviceType:
-        required: true
-      digitalIdentifier:
+      temperature:
         any_of:
-        - range: DOI
-        - range: RRID
-      manufacturer:
-        range: Consortium
-      name:
-        required: true
-      owner:
-        range: Consortium
-- SlicingDeviceUsage:
-    class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
-    description: null
-    title: Slicing device usage
-    slots:
-    - id
-    - device
-    - lookupLabel
-    - metadataLocation
-    - oscillationAmplitude
-    - sliceThickness
-    - slicingAngle
-    - slicingPlane
-    - slicingSpeed
-    - usedSpecimen
-    - vibrationFrequency
-    slot_usage:
-      device:
-        required: true
-        range: SlicingDevice
-      metadataLocation:
-        range: File
-      sliceThickness:
-        required: true
-      slicingAngle:
-        range: QuantitativeValue
-      slicingPlane:
-        required: true
-      usedSpecimen:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleState
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
