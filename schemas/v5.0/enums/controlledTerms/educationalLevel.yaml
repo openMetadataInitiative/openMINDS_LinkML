@@ -16,7 +16,7 @@ enums:
       beginner:
         description: The learner has no or minimal knowledge or experience of the
           given topic.
-      intermediate:
-        description: The learner has knowledge of the given topic, but is not an expert.
       advanced:
         description: The learner has extensive knowledge of the given topic.
+      intermediate:
+        description: The learner has knowledge of the given topic, but is not an expert.

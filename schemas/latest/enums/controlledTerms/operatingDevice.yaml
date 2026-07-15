@@ -14,19 +14,19 @@ enums:
     title: Operating device
     description: Structured information on the operating device.
     permissible_values:
-      mobile:
-        description: null
-      server:
+      neuromorphic computer:
+        description: Very-large-scale integration (VLSI) systems containing electronic
+          circuits used to mimic neuro-biological architectures present in the nervous
+          system.
+      web:
         description: null
       desktop:
-        description: null
-      web:
         description: null
       embedded system:
         description: null
       high-performance computer:
         description: null
-      neuromorphic computer:
-        description: Very-large-scale integration (VLSI) systems containing electronic
-          circuits used to mimic neuro-biological architectures present in the nervous
-          system.
+      mobile:
+        description: null
+      server:
+        description: null

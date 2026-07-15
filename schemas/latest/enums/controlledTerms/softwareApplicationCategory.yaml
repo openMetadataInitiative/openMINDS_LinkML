@@ -14,15 +14,15 @@ enums:
     title: Software application category
     description: Structured information on the category of the software application.
     permissible_values:
-      plugin:
-        description: null
       module:
         description: null
-      notebook:
+      application:
         description: null
       library:
         description: null
-      middleware:
+      plugin:
         description: null
-      application:
+      notebook:
+        description: null
+      middleware:
         description: null

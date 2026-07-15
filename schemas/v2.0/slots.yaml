@@ -162,8 +162,8 @@ slots:
     slot_uri: coordinateSpace
     description: Two or three dimensional geometric setting.
     any_of:
-    - range: CommonCoordinateSpace
     - range: CustomCoordinateSpace
+    - range: CommonCoordinateSpace
   coordinates:
     slot_uri: coordinates
     description: Pair or triplet of numbers defining a location in a given coordinate
@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: SWHID
-    - range: DOI
-    - range: ORCID
-    - range: RORID
     - range: GRIDID
+    - range: SWHID
+    - range: ORCID
+    - range: DOI
+    - range: RORID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -441,13 +441,13 @@ slots:
     range: string
     pattern:
       ALTERNATES:
+      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
+      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
+      - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
+      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
       - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
         \ \t\r\n\f]+)*$"
-      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
-      - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
       - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
-      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
-      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
     multivalued: true
     list_elements_unique: true
   inRelationTo:
@@ -519,11 +519,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileRepository
     - range: ParcellationTerminology
-    - range: SubjectGroup
-    - range: FileBundle
     - range: TissueSampleCollection
+    - range: FileBundle
+    - range: SubjectGroup
+    - range: FileRepository
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -920,8 +920,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: string
     - range: uri
+    - range: string
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -965,11 +965,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: integer
-    - range: QuantitativeValueRange
     - range: float
-    - range: QuantitativeValue
+    - range: QuantitativeValueRange
+    - range: integer
     - range: string
+    - range: QuantitativeValue
     multivalued: true
     inlined: true
   versionIdentifier:

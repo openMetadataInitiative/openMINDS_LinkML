@@ -13,75 +13,75 @@ enums:
     enum_uri: https://openminds.om-i.org/types/SoftwareFeature
     title: Software feature
     permissible_values:
-      command line interface:
-        description: A text-based system that enables users to interact with a computer
-          or software by entering commands, allowing them to perform specific tasks
-          or operations.
-      virtual reality:
-        description: null
-      3D vector data types:
-        description: null
-      presentation visualisation:
+      data processing:
         description: null
       interactive analysis:
         description: null
       tiled display wall:
         description: null
-      scripting interface:
-        description: null
-      parallel programming:
-        description: null
-      graph data types:
-        description: null
-      augmented reality:
-        description: null
       vector image data types:
-        description: null
-      positional data types:
         description: null
       provenance:
         description: null
-      tensor data types:
-        description: null
-      raster image data types:
-        description: null
-      matrix data types:
-        description: null
-      3D geometry data types:
+      data acquisition:
         description: null
       graphical user interface:
         description: A visual system that enables users to interact with a computer
           or software through graphical elements like windows, icons, and menus, allowing
           them to perform specific tasks or operations.
-      3D scalar data types:
+      profiling:
         description: null
-      data acquisition:
+      mobile device:
         description: null
-      simulation:
+      parallel programming:
         description: null
-      desktop environment:
+      statistical data types:
         description: null
-      performance measurement:
+      3D geometry data types:
         description: null
       modelling:
         description: null
-      heterogeneous architecture:
+      command line interface:
+        description: A text-based system that enables users to interact with a computer
+          or software by entering commands, allowing them to perform specific tasks
+          or operations.
+      graph data types:
         description: null
       control:
         description: null
-      time series data types:
+      desktop environment:
+        description: null
+      tensor data types:
+        description: null
+      matrix data types:
+        description: null
+      heterogeneous architecture:
+        description: null
+      scripting interface:
+        description: null
+      positional data types:
+        description: null
+      3D scalar data types:
+        description: null
+      augmented reality:
+        description: null
+      performance measurement:
+        description: null
+      virtual reality:
+        description: null
+      simulation:
+        description: null
+      presentation visualisation:
+        description: null
+      raster image data types:
         description: null
       application programming interface:
         description: A set of rules and protocols that allows different software applications
           to communicate with each other, enabling them to access specific functions
           or data.
-      data processing:
+      3D vector data types:
+        description: null
+      time series data types:
         description: null
       metadata data types:
-        description: null
-      profiling:
-        description: null
-      statistical data types:
-        description: null
-      mobile device:
         description: null

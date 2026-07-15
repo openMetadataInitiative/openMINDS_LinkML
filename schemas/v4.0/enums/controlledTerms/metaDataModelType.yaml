@@ -13,6 +13,14 @@ enums:
     enum_uri: https://openminds.om-i.org/types/MetaDataModelType
     title: Meta data model type
     permissible_values:
+      graph metadata model:
+        description: A graph metadata model defines a set of modular metadata schemas
+          (including their relations) as architectural base of a graph database for
+          describing the products represented in that database.
+      common data elements:
+        description: Common Data Elements (CDEs) define standardized key terms or
+          concepts for diseases in form of a data dictionary that can be used in both
+          relational and graph metadata models.
       data repository model:
         description: A data repository model defines the file and folder naming and
           structure as well as partially the file content (metadata definitions) and
@@ -21,11 +29,3 @@ enums:
         description: A relational metadata model defines a set of tabular metadata
           schemas (including their relations) as architectural base of a relational
           database for describing the products represented in that database.
-      common data elements:
-        description: Common Data Elements (CDEs) define standardized key terms or
-          concepts for diseases in form of a data dictionary that can be used in both
-          relational and graph metadata models.
-      graph metadata model:
-        description: A graph metadata model defines a set of modular metadata schemas
-          (including their relations) as architectural base of a graph database for
-          describing the products represented in that database.

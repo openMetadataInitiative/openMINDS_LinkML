@@ -14,22 +14,6 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
-- CustomAnatomicalEntity:
-    class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
-    description: null
-    title: Custom anatomical entity
-    slots:
-    - id
-    - hasAnnotation
-    - name
-    - relationAssessment
-    slot_usage:
-      hasAnnotation:
-        range: CustomAnnotation
-      name:
-        required: true
-      relationAssessment:
-        range: QualitativeRelationAssessment
 - ElectrodeContact:
     class_uri: https://openminds.ebrains.eu/sands/ElectrodeContact
     description: Structured information on an electrode contact.
@@ -52,17 +36,33 @@ classes:
         range: File
       relatedStimulation:
         range: File
-- ElectrodeArray:
-    class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
-    description: Structured information on an electrode array.
-    title: Electrode array
+- CustomAnatomicalEntity:
+    class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
+    description: null
+    title: Custom anatomical entity
     slots:
     - id
-    - electrodes
+    - hasAnnotation
+    - name
+    - relationAssessment
+    slot_usage:
+      hasAnnotation:
+        range: CustomAnnotation
+      name:
+        required: true
+      relationAssessment:
+        range: QualitativeRelationAssessment
+- Electrode:
+    class_uri: https://openminds.ebrains.eu/sands/Electrode
+    description: Structured information on an electrode.
+    title: Electrode
+    slots:
+    - id
+    - electrodeContact
     - internalIdentifier
     - lookupLabel
     slot_usage:
-      electrodes:
+      electrodeContact:
         required: true
       internalIdentifier:
         required: true
@@ -86,6 +86,20 @@ classes:
         required: true
       nativeUnit:
         required: true
+- ElectrodeArray:
+    class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
+    description: Structured information on an electrode array.
+    title: Electrode array
+    slots:
+    - id
+    - electrodes
+    - internalIdentifier
+    - lookupLabel
+    slot_usage:
+      electrodes:
+        required: true
+      internalIdentifier:
+        required: true
 - CustomAnnotation:
     class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
     description: null
@@ -106,69 +120,134 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
+        any_of:
+        - range: CommonCoordinateSpace
+        - range: CustomCoordinateSpace
       criteriaQualityType:
         required: true
       internalIdentifier:
         required: true
       visualizedIn:
         required: true
-- Electrode:
-    class_uri: https://openminds.ebrains.eu/sands/Electrode
-    description: Structured information on an electrode.
-    title: Electrode
-    slots:
-    - id
-    - electrodeContact
-    - internalIdentifier
-    - lookupLabel
-    slot_usage:
-      electrodeContact:
-        required: true
-      internalIdentifier:
-        required: true
-- QuantitativeRelationAssessment:
-    class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
+- CommonCoordinateSpace:
+    class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpace
     description: null
-    title: Quantitative relation assessment
+    title: Common coordinate space
     slots:
     - id
-    - criteria
-    - inRelationTo
-    - quantitativeOverlap
+    - anatomicalAxesOrientation
+    - axesOrigin
+    - defaultImage
+    - digitalIdentifier
+    - fullName
+    - homepage
+    - howToCite
+    - nativeUnit
+    - ontologyIdentifier
+    - releaseDate
+    - shortName
+    - versionIdentifier
     slot_usage:
-      inRelationTo:
+      anatomicalAxesOrientation:
         required: true
-      quantitativeOverlap:
+      axesOrigin:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-- CoordinatePoint:
-    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
+      digitalIdentifier:
+        range: DOI
+      fullName:
+        required: true
+      nativeUnit:
+        required: true
+      releaseDate:
+        required: true
+      shortName:
+        required: true
+      versionIdentifier:
+        required: true
+- ParcellationTerminology:
+    class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
     description: null
-    title: Coordinate point
+    title: Parcellation terminology
     slots:
     - id
-    - coordinateSpace
-    - coordinates
+    - definedIn
+    - fullName
+    - isAlternativeVersionOf
+    - isNewVersionOf
+    - ontologyIdentifier
+    - shortName
+    - versionIdentifier
+    - versionInnovation
     slot_usage:
-      coordinateSpace:
+      fullName:
         required: true
-      coordinates:
+      isAlternativeVersionOf:
+        range: BrainAtlasVersion
+      isNewVersionOf:
+        range: BrainAtlasVersion
+      shortName:
         required: true
-- QualitativeRelationAssessment:
-    class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- ParcellationEntity:
+    class_uri: https://openminds.ebrains.eu/sands/ParcellationEntity
     description: null
-    title: Qualitative relation assessment
+    title: Parcellation entity
     slots:
     - id
-    - criteria
-    - inRelationTo
-    - qualitativeOverlap
+    - hasAnnotation
+    - hasParent
+    - isPartOf
+    - name
+    - ontologyIdentifier
+    - relatedUBERONTerm
+    - relationAssessment
+    - versionIdentifier
+    - versionInnovation
     slot_usage:
-      inRelationTo:
+      hasAnnotation:
+        range: AtlasAnnotation
+      hasParent:
+        range: ParcellationEntity
+      isPartOf:
         required: true
-      qualitativeOverlap:
+        range: ParcellationTerminology
+      name:
+        required: true
+      relatedUBERONTerm:
+        required: true
+      relationAssessment:
+        range: QualitativeRelationAssessment
+      versionIdentifier:
+        required: true
+      versionInnovation:
+        required: true
+- BrainAtlas:
+    class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
+    description: null
+    title: Brain atlas
+    slots:
+    - id
+    - description
+    - digitalIdentifier
+    - fullName
+    - hasVersion
+    - homepage
+    - howToCite
+    - shortName
+    slot_usage:
+      description:
+        required: true
+      digitalIdentifier:
+        range: DOI
+      fullName:
+        required: true
+      hasVersion:
+        required: true
+        range: BrainAtlasVersion
+      shortName:
         required: true
 - BrainAtlasVersion:
     class_uri: https://openminds.ebrains.eu/sands/BrainAtlasVersion
@@ -211,39 +290,6 @@ classes:
         required: true
       versionInnovation:
         required: true
-- ParcellationEntity:
-    class_uri: https://openminds.ebrains.eu/sands/ParcellationEntity
-    description: null
-    title: Parcellation entity
-    slots:
-    - id
-    - hasAnnotation
-    - hasParent
-    - isPartOf
-    - name
-    - ontologyIdentifier
-    - relatedUBERONTerm
-    - relationAssessment
-    - versionIdentifier
-    - versionInnovation
-    slot_usage:
-      hasAnnotation:
-        range: AtlasAnnotation
-      hasParent:
-        range: ParcellationEntity
-      isPartOf:
-        required: true
-        range: ParcellationTerminology
-      name:
-        required: true
-      relatedUBERONTerm:
-        required: true
-      relationAssessment:
-        range: QualitativeRelationAssessment
-      versionIdentifier:
-        required: true
-      versionInnovation:
-        required: true
 - AtlasAnnotation:
     class_uri: https://openminds.ebrains.eu/sands/AtlasAnnotation
     description: null
@@ -271,90 +317,50 @@ classes:
         required: true
       versionInnovation:
         required: true
-- BrainAtlas:
-    class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
+- QualitativeRelationAssessment:
+    class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
     description: null
-    title: Brain atlas
+    title: Qualitative relation assessment
     slots:
     - id
-    - description
-    - digitalIdentifier
-    - fullName
-    - hasVersion
-    - homepage
-    - howToCite
-    - shortName
+    - criteria
+    - inRelationTo
+    - qualitativeOverlap
     slot_usage:
-      description:
+      inRelationTo:
         required: true
-      digitalIdentifier:
-        range: DOI
-      fullName:
+      qualitativeOverlap:
         required: true
-      hasVersion:
-        required: true
-        range: BrainAtlasVersion
-      shortName:
-        required: true
-- ParcellationTerminology:
-    class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
+- QuantitativeRelationAssessment:
+    class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
     description: null
-    title: Parcellation terminology
+    title: Quantitative relation assessment
     slots:
     - id
-    - definedIn
-    - fullName
-    - isAlternativeVersionOf
-    - isNewVersionOf
-    - ontologyIdentifier
-    - shortName
-    - versionIdentifier
-    - versionInnovation
+    - criteria
+    - inRelationTo
+    - quantitativeOverlap
     slot_usage:
-      fullName:
+      inRelationTo:
         required: true
-      isAlternativeVersionOf:
-        range: BrainAtlasVersion
-      isNewVersionOf:
-        range: BrainAtlasVersion
-      shortName:
+      quantitativeOverlap:
         required: true
-      versionIdentifier:
-        required: true
-      versionInnovation:
-        required: true
-- CommonCoordinateSpace:
-    class_uri: https://openminds.ebrains.eu/sands/CommonCoordinateSpace
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- CoordinatePoint:
+    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
     description: null
-    title: Common coordinate space
+    title: Coordinate point
     slots:
     - id
-    - anatomicalAxesOrientation
-    - axesOrigin
-    - defaultImage
-    - digitalIdentifier
-    - fullName
-    - homepage
-    - howToCite
-    - nativeUnit
-    - ontologyIdentifier
-    - releaseDate
-    - shortName
-    - versionIdentifier
+    - coordinateSpace
+    - coordinates
     slot_usage:
-      anatomicalAxesOrientation:
+      coordinateSpace:
         required: true
-      axesOrigin:
-        required: true
-      digitalIdentifier:
-        range: DOI
-      fullName:
-        required: true
-      nativeUnit:
-        required: true
-      releaseDate:
-        required: true
-      shortName:
-        required: true
-      versionIdentifier:
+        any_of:
+        - range: CommonCoordinateSpace
+        - range: CustomCoordinateSpace
+      coordinates:
         required: true

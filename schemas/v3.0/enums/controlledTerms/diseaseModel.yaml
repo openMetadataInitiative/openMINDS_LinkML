@@ -13,18 +13,15 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/DiseaseModel
     title: Disease model
     permissible_values:
-      epilepsy model:
-        description: An animal or cell displaying all or some of the pathological
-          processes that are observed for epilepsy in humans or animals.
       Alzheimer's disease model:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed in the actual human or animal Alzheimer's disease.
-      stroke model:
-        description: An animal or cell displaying all or some of the pathological
-          processes that are observed during stroke in humans or animals.
       Parkinson's disease model:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed in the actual human or animal Parkinson's disease.
+      Huntington's disease model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal Huntington's disease.
       autism spectrum disorder model:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed in the actual human or animal autism sprectrum
@@ -33,9 +30,12 @@ enums:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed in the actual human or animal Williams-Beuren
           syndrome.
-      Huntington's disease model:
+      stroke model:
         description: An animal or cell displaying all or some of the pathological
-          processes that are observed in the actual human or animal Huntington's disease.
+          processes that are observed during stroke in humans or animals.
       fragile X syndrome model:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed in the actual human or animal fragile X syndrome.
+      epilepsy model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed for epilepsy in humans or animals.
