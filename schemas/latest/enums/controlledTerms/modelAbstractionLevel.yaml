@@ -15,40 +15,40 @@ enums:
     description: Structured information on abstraction level of the computational
       model.
     permissible_values:
-      'systems biology: continuous':
-        description: Systems biology modelling using concentrations
+      rate neurons:
+        description: Modelling neural networks in which individual neurons are represented
+          by their firing rate
+      statistical model:
+        description: Statistical modelling of neural data generation
       population modelling:
         description: Modelling of neural circuits at the population level
-      protein structure:
-        description: Modelling of protein structure
+      'systems biology: continuous':
+        description: Systems biology modelling using concentrations
       'population modelling: neural mass':
         description: Modelling neural populations using the approximation of neural
           masses
+      algorithm:
+        description: Modelling of a neural structure or process as an algorithm
+      cognitive modelling:
+        description: Modelling of cognitive processes
+      protein structure:
+        description: Modelling of protein structure
+      'population modelling: neural field':
+        description: Modelling neural populations using the approximation of a neural
+          field
       spiking neurons:
         description: Modelling neural networks in which the action potentials of individual
           neurons are represented
+      systems biology:
+        description: Modelling of neural systems below the level of individual neurons
       'systems biology: flux balance':
         description: Systems biology modelling using flux balance analysis
       'systems biology: discrete':
         description: Systems biology modelling using representations of individual
           particles
-      'spiking neurons: point neuron':
-        description: Modelling neural networks in which individual neurons are represented
-          by point neuron models
-      cognitive modelling:
-        description: Modelling of cognitive processes
-      statistical model:
-        description: Statistical modelling of neural data generation
-      'population modelling: neural field':
-        description: Modelling neural populations using the approximation of a neural
-          field
-      algorithm:
-        description: Modelling of a neural structure or process as an algorithm
-      rate neurons:
-        description: Modelling neural networks in which individual neurons are represented
-          by their firing rate
       'spiking neurons: biophysical':
         description: Modelling neural networks in which individual neurons are represented
           by models with detailed morphology and biophysical models of ion channels
-      systems biology:
-        description: Modelling of neural systems below the level of individual neurons
+      'spiking neurons: point neuron':
+        description: Modelling neural networks in which individual neurons are represented
+          by point neuron models

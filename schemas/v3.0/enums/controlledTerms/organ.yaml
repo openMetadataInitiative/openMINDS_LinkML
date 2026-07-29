@@ -15,10 +15,10 @@ enums:
     permissible_values:
       brain:
         description: '''Brain'' is part of the central nervous system.'
-      muscle:
-        description: '''Muscle'' is part of the musculoskeletal system.'
       heart:
         description: '''Heart'' is part of the cardiovascular system'
+      muscle:
+        description: '''Muscle'' is part of the musculoskeletal system.'
       skin:
         description: '''Skin'' is the organ covering the body that consists of the
           dermis and epidermis.'

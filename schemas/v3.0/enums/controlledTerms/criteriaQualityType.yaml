@@ -15,9 +15,9 @@ enums:
     description: Structured information on the quality type of the defined criteria
       for a measurement.
     permissible_values:
-      processive:
-        description: If a criteria is 'processive' it is based on a repeatable and
-          often automated process.
       asserted:
         description: If a criteria is 'asserted' it is based on an opinion or claim,
           usually made by an expert.
+      processive:
+        description: If a criteria is 'processive' it is based on a repeatable and
+          often automated process.

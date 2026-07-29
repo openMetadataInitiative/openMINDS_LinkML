@@ -23,10 +23,10 @@ enums:
         description: A near-final environment used to validate releases before moving
           to production; typically mirrors the production setup closely and is used
           for final checks.
+      integration:
+        description: An environment in which multiple components or services are integrated
+          and tested together to ensure interoperability and to detect issues early.
       development:
         description: A working environment for developers to build, test, and debug
           new features or changes; usually more flexible and less restricted than
           other environments.
-      integration:
-        description: An environment in which multiple components or services are integrated
-          and tested together to ensure interoperability and to detect issues early.

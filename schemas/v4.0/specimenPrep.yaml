@@ -14,158 +14,6 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- TissueCulturePreparation:
-    class_uri: https://openminds.om-i.org/types/TissueCulturePreparation
-    description: null
-    title: Tissue culture preparation
-    slots:
-    - id
-    - cultureMedium
-    - cultureType
-    - customPropertySet
-    - description
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    slot_usage:
-      cultureMedium:
-        required: true
-      cultureType:
-        required: true
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: TissueSampleState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
-- CranialWindowPreparation:
-    class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
-    description: null
-    title: Cranial window preparation
-    slots:
-    - id
-    - constructionType
-    - customPropertySet
-    - description
-    - dimension
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - reinforcementType
-    - startTime
-    - studyTarget
-    slot_usage:
-      constructionType:
-        required: true
-      dimension:
-        any_of:
-        - range: Circle
-        - range: Ellipse
-        - range: Rectangle
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: SubjectState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: SubjectState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
-- TissueSampleSlicing:
-    class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
-    description: null
-    title: Tissue sample slicing
-    slots:
-    - id
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - temperature
-    - tissueBathSolution
-    slot_usage:
-      device:
-        required: true
-        range: SlicingDeviceUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: SubjectState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleCollectionState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
-      temperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - SlicingDevice:
     class_uri: https://openminds.om-i.org/types/SlicingDevice
     description: null
@@ -228,3 +76,155 @@ classes:
         any_of:
         - range: SubjectState
         - range: TissueSampleState
+- TissueSampleSlicing:
+    class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
+    description: null
+    title: Tissue sample slicing
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - temperature
+    - tissueBathSolution
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDeviceUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleCollectionState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
+      temperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+- CranialWindowPreparation:
+    class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
+    description: null
+    title: Cranial window preparation
+    slots:
+    - id
+    - constructionType
+    - customPropertySet
+    - description
+    - dimension
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - reinforcementType
+    - startTime
+    - studyTarget
+    slot_usage:
+      constructionType:
+        required: true
+      dimension:
+        any_of:
+        - range: Circle
+        - range: Ellipse
+        - range: Rectangle
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: SubjectState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
+- TissueCulturePreparation:
+    class_uri: https://openminds.om-i.org/types/TissueCulturePreparation
+    description: null
+    title: Tissue culture preparation
+    slots:
+    - id
+    - cultureMedium
+    - cultureType
+    - customPropertySet
+    - description
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    slot_usage:
+      cultureMedium:
+        required: true
+      cultureType:
+        required: true
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: TissueSampleState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
