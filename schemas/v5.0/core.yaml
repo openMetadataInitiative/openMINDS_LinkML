@@ -348,11 +348,6 @@ classes:
         - range: SWHID
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       entryPoint:
         range: string
       format:
@@ -410,12 +405,6 @@ classes:
         range: Contribution
       description:
         required: true
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -489,12 +478,6 @@ classes:
         - range: GenericIdentifier
         - range: RRID
         - range: SWHID
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -537,12 +520,6 @@ classes:
         - range: GenericIdentifier
         - range: RRID
         - range: SWHID
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -636,11 +613,6 @@ classes:
         - range: SWHID
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       isPrecededBy:
@@ -731,16 +703,8 @@ classes:
         - range: RRID
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       ethicsJurisdiction:
         required: true
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       experimentalApproach:
         required: true
       fullName:
@@ -830,11 +794,6 @@ classes:
         - range: SWHID
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       isPrecededBy:
@@ -896,12 +855,6 @@ classes:
         - range: GenericIdentifier
         - range: IdentifiersDotOrgID
         - range: RRID
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -977,12 +930,6 @@ classes:
         range: Contribution
       description:
         required: true
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       interfaceType:
@@ -1032,12 +979,6 @@ classes:
         - range: GenericIdentifier
         - range: RRID
         - range: SWHID
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -1096,11 +1037,6 @@ classes:
         required: true
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       isPrecededBy:
@@ -1307,10 +1243,6 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleCollectionState:
@@ -1340,10 +1272,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - Configuration:
@@ -1417,10 +1345,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleCollection:
@@ -1611,10 +1535,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - Protocol:
@@ -1629,11 +1549,6 @@ classes:
     - stimulusType
     - technique
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
       description:
         required: true
       name:
@@ -1850,9 +1765,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - Measurement:
     class_uri: https://openminds.om-i.org/types/Measurement
     description: Structured information about a measurement performed during a scientific
@@ -1946,6 +1858,10 @@ classes:
     - obtainedWith
     - pixelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -2009,6 +1925,10 @@ classes:
     - temporalSamplingFrequency
     - voxelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -2092,6 +2012,10 @@ classes:
     - pixelSize
     - z-stepSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -2151,6 +2075,10 @@ classes:
     - obtainedWith
     - voxelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:

@@ -63,9 +63,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -195,12 +192,6 @@ classes:
         required: true
       digitalIdentifier:
         range: DOI
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -266,11 +257,6 @@ classes:
         range: DOI
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       entryPoint:
         range: string
       format:
@@ -335,9 +321,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -398,9 +381,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -462,9 +442,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -525,9 +502,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -588,9 +562,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -651,9 +622,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -713,12 +681,6 @@ classes:
         required: true
       digitalIdentifier:
         range: DOI
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -797,11 +759,6 @@ classes:
         range: DOI
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       format:
         required: true
       fullName:

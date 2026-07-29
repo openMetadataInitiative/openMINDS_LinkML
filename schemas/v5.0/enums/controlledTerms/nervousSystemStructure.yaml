@@ -1577,9 +1577,6 @@ enums:
       inferior cerebellar peduncle:
         description: Is a cerebellar peduncle and white matter of medulla oblongata.
           [auto-generated from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002163)]
-      brain:
-        description: Is part of the central nervous system. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000955)]
       prefrontal cortex:
         description: Is a regional part of brain. Is part of the frontal cortex. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000451)
@@ -2323,9 +2320,6 @@ enums:
           accessory olfactory bulb. [auto-generated from properties of the [UBERON
           ontology term](http://purl.obolibrary.org/obo/UBERON_0007631) ('is_a' and
           'relationship')]
-      insect embryonic brain:
-        description: Is a brain. [auto-generated from 'is_a' property of the [UBERON
-          ontology term](http://purl.obolibrary.org/obo/UBERON_6001060)]
       lateral forebrain bundle telencephalon:
         description: Is a telencephalic tracts. Is part of the lateral forebrain bundle.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000779)
@@ -5279,11 +5273,6 @@ enums:
         description: Is a regional part of brain. Is part of the vestibulolateralis
           lobe. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000187)
           ('is_a' and 'relationship')]
-      insect embryonic/larval brain:
-        description: Is a brain and ganglion of central nervous system. Is part of
-          the insect embryonic/larval central nervous system. [auto-generated from
-          properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_6001920)
-          ('is_a' and 'relationship')]
       thoracic dorsal root ganglion:
         description: Is a dorsal root ganglion and thoracic ganglion. [auto-generated
           from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002835)]
@@ -5328,10 +5317,6 @@ enums:
       striosome:
         description: Is a chemoarchitectural part of striatum. [auto-generated from
           'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0027371)]
-      neuroendocrine gland:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010133)
-          ('is_a' and 'relationship')]
       nucleus of medial longitudinal fasciculus of medulla:
         description: Is a nucleus of medulla oblongata. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000815)]
@@ -7082,10 +7067,6 @@ enums:
       metencephalon sulcus limitans:
         description: Is part of the future metencephalon. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009577)]
-      insect adult brain:
-        description: Is a brain. Is part of the insect adult central nervous system.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_6003624)
-          ('is_a' and 'relationship')]
       ventral oculomotor nucleus:
         description: Is a brainstem nucleus and midbrain nucleus. Is part of the oculomotor
           nuclear complex. [auto-generated from properties of the [UBERON ontology
@@ -9520,9 +9501,6 @@ enums:
       pars amphibiorum:
         description: Is part of the saccule of membranous labyrinth. [auto-generated
           from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_3000393)]
-      spinal cord:
-        description: Is part of the central nervous system. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002240)]
       solitary tract:
         description: Is a tract of brain. Is part of the white matter of medulla oblongata.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002718)

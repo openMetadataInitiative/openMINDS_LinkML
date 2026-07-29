@@ -14,7 +14,11 @@ enums:
     title: Organ
     permissible_values:
       brain:
-        description: '''Brain'' is part of the central nervous system.'
+        description: '''Brain'' is part of the central nervous system. [auto-generated
+          from ''relationship'' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000955)]'
+      insect embryonic brain:
+        description: Is a brain. [auto-generated from 'is_a' property of the [UBERON
+          ontology term](http://purl.obolibrary.org/obo/UBERON_6001060)]
       heart:
         description: '''Heart'' is part of the cardiovascular system'
       muscle:
@@ -22,6 +26,22 @@ enums:
       skin:
         description: '''Skin'' is the organ covering the body that consists of the
           dermis and epidermis.'
+      insect embryonic/larval brain:
+        description: Is a brain and ganglion of central nervous system. Is part of
+          the insect embryonic/larval central nervous system. [auto-generated from
+          properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_6001920)
+          ('is_a' and 'relationship')]
+      neuroendocrine gland:
+        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010133)
+          ('is_a' and 'relationship')]
+      insect adult brain:
+        description: Is a brain. Is part of the insect adult central nervous system.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_6003624)
+          ('is_a' and 'relationship')]
       liver:
         description: '''Liver'' is an organ that is part of the digestive system of
           vertebrate animals.'
+      spinal cord:
+        description: Is part of the central nervous system. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002240)]
