@@ -150,8 +150,8 @@ slots:
     slot_uri: contributor
     description: Legal person that gave or supplied something as a part or share.
     any_of:
-    - range: Organization
     - range: Person
+    - range: Organization
   coordinatePoint:
     slot_uri: coordinatePoint
     description: Pair or triplet of numbers defining the position in a particular
@@ -162,8 +162,8 @@ slots:
     slot_uri: coordinateSpace
     description: Two or three dimensional geometric setting.
     any_of:
-    - range: CommonCoordinateSpace
     - range: CustomCoordinateSpace
+    - range: CommonCoordinateSpace
   coordinates:
     slot_uri: coordinates
     description: Pair or triplet of numbers defining a location in a given coordinate
@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: RORID
     - range: DOI
-    - range: GRIDID
     - range: SWHID
+    - range: RORID
     - range: ORCID
+    - range: GRIDID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -326,8 +326,8 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: URL
     - range: DOI
+    - range: URL
     - range: File
   fullName:
     slot_uri: fullName
@@ -337,8 +337,8 @@ slots:
     slot_uri: funder
     description: Legal person that provides money for a particular purpose.
     any_of:
-    - range: Organization
     - range: Person
+    - range: Organization
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -519,10 +519,10 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileBundle
-    - range: TissueSampleCollection
-    - range: SubjectGroup
     - range: FileRepository
+    - range: SubjectGroup
+    - range: TissueSampleCollection
+    - range: FileBundle
     - range: ParcellationTerminology
     multivalued: true
     list_elements_unique: true
@@ -605,8 +605,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: Organ
     - range: CellType
+    - range: Organ
     multivalued: true
     list_elements_unique: true
   otherContribution:
@@ -774,8 +774,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: BehavioralTask
     - range: Technique
+    - range: BehavioralTask
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -920,8 +920,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: string
     - range: uri
+    - range: string
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -967,8 +967,8 @@ slots:
     any_of:
     - range: QuantitativeValueRange
     - range: integer
-    - range: string
     - range: QuantitativeValue
+    - range: string
     - range: float
     multivalued: true
     inlined: true
