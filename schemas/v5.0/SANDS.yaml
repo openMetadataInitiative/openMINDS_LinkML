@@ -397,6 +397,9 @@ classes:
         - range: uri
       usedTaxon:
         required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - CommonCoordinateFrameworkVersion:
     class_uri: https://openminds.om-i.org/types/CommonCoordinateFrameworkVersion
     description: null
@@ -687,6 +690,9 @@ classes:
         - range: uri
       usedTaxon:
         required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - AtlasAnnotation:
     class_uri: https://openminds.om-i.org/types/AtlasAnnotation
     description: null

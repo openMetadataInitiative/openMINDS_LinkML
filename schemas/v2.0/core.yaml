@@ -622,6 +622,9 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
+        any_of:
+        - range: BehavioralTask
+        - range: Technique
 - Subject:
     class_uri: https://openminds.ebrains.eu/core/Subject
     description: Structured information on a subject.
