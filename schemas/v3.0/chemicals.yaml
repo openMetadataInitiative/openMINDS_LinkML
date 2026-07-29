@@ -28,10 +28,6 @@ classes:
     slot_usage:
       molecularEntity:
         required: true
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - AmountOfChemical:
     class_uri: https://openminds.ebrains.eu/chemicals/AmountOfChemical
     description: Structured information about the amount of a given chemical that
@@ -67,14 +63,6 @@ classes:
         required: true
       provider:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - ChemicalMixture:
     class_uri: https://openminds.ebrains.eu/chemicals/ChemicalMixture
     description: Structured information about a mixture of chemical substances.

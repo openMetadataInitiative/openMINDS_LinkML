@@ -51,8 +51,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   ageCategory:
     slot_uri: ageCategory
@@ -231,8 +231,8 @@ slots:
     slot_uri: dataLocation
     description: null
     any_of:
-    - range: FileBundle
     - range: File
+    - range: FileBundle
   defaultImage:
     slot_uri: defaultImage
     description: Two or three dimensional image that particluarly represents a specific
@@ -293,12 +293,12 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: RORID
-    - range: DOI
     - range: ORCID
     - range: DigitalIdentifier
     - range: SWHID
     - range: GRIDID
+    - range: RORID
+    - range: DOI
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -576,10 +576,10 @@ slots:
     description: Reference to the ensemble of multiple things or beings.
     any_of:
     - range: TissueSampleCollection
-    - range: SubjectGroup
-    - range: DatasetVersion
-    - range: FileBundle
     - range: FileRepository
+    - range: FileBundle
+    - range: DatasetVersion
+    - range: SubjectGroup
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -787,8 +787,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   quantity:
     slot_uri: quantity
@@ -842,8 +842,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: Technique
     - range: BehavioralTask
+    - range: Technique
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -965,8 +965,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: string
     - range: uri
+    - range: string
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -1016,11 +1016,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: integer
-    - range: string
-    - range: QuantitativeValueRange
-    - range: QuantitativeValue
     - range: float
+    - range: QuantitativeValue
+    - range: QuantitativeValueRange
+    - range: string
+    - range: integer
     multivalued: true
     inlined: true
   versionIdentifier:
@@ -1056,8 +1056,8 @@ slots:
     slot_uri: weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   year:
     slot_uri: year
