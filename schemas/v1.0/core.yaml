@@ -87,9 +87,6 @@ classes:
         required: true
       contributor:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - ModelVersion:
     class_uri: https://openminds.ebrains.eu/core/ModelVersion
     description: Structured information on a computational model (version level).
@@ -831,9 +828,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
       species:
         required: true
       studiedState:
@@ -1056,9 +1050,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - FilePathPattern:
     class_uri: https://openminds.ebrains.eu/core/FilePathPattern
     description: null
