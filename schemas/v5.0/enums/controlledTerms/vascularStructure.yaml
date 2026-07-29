@@ -88,6 +88,9 @@ enums:
       cerebellar central artery:
         description: Is a central artery. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005021)]
+      vein of vestibular aqueduct:
+        description: Is part of the transverse sinus and the inferior petrosal sinus.
+          [auto-generated from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0036074)]
       unpaired venous dural sinus:
         description: Is a venous dural sinus. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017640)]
@@ -99,6 +102,9 @@ enums:
         description: Is a vasculature of central nervous system. Is part of the brain.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0008998)
           ('is_a' and 'relationship')]
+      inferior cerebral vein:
+        description: Is a cerebral vein. [auto-generated from 'is_a' property of the
+          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001664)]
       tentorial sinus:
         description: Is an unpaired venous dural sinus. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005481)]
@@ -138,9 +144,15 @@ enums:
       paired venous dural sinus:
         description: Is a venous dural sinus. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017635)]
+      posterior mesencephalic central artery:
+        description: Is a central artery. [auto-generated from 'is_a' property of
+          the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005079)]
       central retinal vein:
         description: Is part of the cavernous sinus. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001673)]
+      canal of Schlemm:
+        description: Is part of the cavernous sinus. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004029)]
       sagittal sinus:
         description: Is an unpaired venous dural sinus. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0015704)]

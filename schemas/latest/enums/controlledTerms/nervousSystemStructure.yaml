@@ -3599,9 +3599,6 @@ enums:
         description: Is a regional part of brain. Is part of the pallium. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014913)
           ('is_a' and 'relationship')]
-      vein of vestibular aqueduct:
-        description: Is part of the transverse sinus and the inferior petrosal sinus.
-          [auto-generated from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0036074)]
       intermediate acoustic stria:
         description: Is a stria of neuraxis and white matter of pontine tegmentum.
           [auto-generated from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002952)]
@@ -4821,9 +4818,6 @@ enums:
         description: Is a layer of neocortex. Is part of the barrel cortex. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035876)
           ('is_a' and 'relationship')]
-      inferior cerebral vein:
-        description: Is a cerebral vein. [auto-generated from 'is_a' property of the
-          [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001664)]
       trans-choroid plexus branch:
         description: Is a brain blood vessel. Is part of the choroid plexus vascular
           circuit. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005248)
@@ -6963,9 +6957,6 @@ enums:
       accessory cuneate nucleus:
         description: Is a nucleus of medulla oblongata. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002864)]
-      posterior mesencephalic central artery:
-        description: Is a central artery. [auto-generated from 'is_a' property of
-          the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005079)]
       brain ventricle/choroid plexus:
         description: Is part of the brain. [auto-generated from 'relationship' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003947)]
@@ -7940,9 +7931,6 @@ enums:
         description: Is a commissure of telencephalon. Is part of the ventral part
           of telencephalon. [auto-generated from properties of the [UBERON ontology
           term](http://purl.obolibrary.org/obo/UBERON_0005341) ('is_a' and 'relationship')]
-      canal of Schlemm:
-        description: Is part of the cavernous sinus. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004029)]
       splenium of the corpus callosum:
         description: Is a cerebral hemisphere white matter. Is part of the corpus
           callosum. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0015708)
