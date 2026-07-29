@@ -44,10 +44,6 @@ classes:
     slot_usage:
       chemicalProduct:
         required: true
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
 - ProductSource:
     class_uri: https://openminds.om-i.org/types/ProductSource
     description: Structured information about the source of a chemical substance or
@@ -67,10 +63,6 @@ classes:
         required: true
       provider:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
       purity:
         any_of:
         - range: QuantitativeValue
