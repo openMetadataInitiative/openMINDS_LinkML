@@ -63,6 +63,9 @@ classes:
         required: true
       provider:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - ChemicalMixture:
     class_uri: https://openminds.om-i.org/types/ChemicalMixture
     description: Structured information about a mixture of chemical substances.

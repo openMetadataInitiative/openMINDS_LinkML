@@ -128,6 +128,11 @@ classes:
         range: DOI
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       isAlternativeVersionOf:
         range: LivePaperVersion
       isNewVersionOf:
