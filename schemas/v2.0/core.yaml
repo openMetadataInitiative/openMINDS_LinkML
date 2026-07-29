@@ -135,6 +135,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       inputData:
@@ -311,6 +315,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
@@ -391,6 +399,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       inputData:
@@ -467,6 +479,10 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
@@ -609,9 +625,6 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
-        any_of:
-        - range: BehavioralTask
-        - range: Technique
 - Subject:
     class_uri: https://openminds.ebrains.eu/core/Subject
     description: Structured information on a subject.
@@ -784,9 +797,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
       species:
         required: true
       studiedState:
