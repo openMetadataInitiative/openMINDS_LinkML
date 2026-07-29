@@ -373,6 +373,9 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - AnatomicalTargetPosition:
     class_uri: https://openminds.ebrains.eu/sands/AnatomicalTargetPosition
     description: null

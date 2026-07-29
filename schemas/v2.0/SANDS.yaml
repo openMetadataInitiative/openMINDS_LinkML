@@ -222,9 +222,6 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
-        any_of:
-        - range: CommonCoordinateSpace
-        - range: CustomCoordinateSpace
       criteriaQualityType:
         required: true
       internalIdentifier:
@@ -328,9 +325,6 @@ classes:
     slot_usage:
       coordinateSpace:
         required: true
-        any_of:
-        - range: CommonCoordinateSpace
-        - range: CustomCoordinateSpace
       coordinates:
         required: true
 - QualitativeRelationAssessment:
@@ -361,3 +355,6 @@ classes:
         required: true
       quantitativeOverlap:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange

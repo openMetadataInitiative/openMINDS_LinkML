@@ -1308,6 +1308,10 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleCollectionState:
@@ -1337,6 +1341,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - Configuration:
@@ -1410,6 +1418,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleCollection:
@@ -1470,6 +1482,10 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
+        any_of:
+        - range: CellType
+        - range: Organ
+        - range: OrganismSubstance
       species:
         required: true
       studiedState:
@@ -1593,6 +1609,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - Protocol:
