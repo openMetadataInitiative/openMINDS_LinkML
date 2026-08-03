@@ -302,10 +302,6 @@ classes:
         range: CustomAnnotation
       name:
         required: true
-      relatedUBERONTerm:
-        any_of:
-        - range: Organ
-        - range: UBERONParcellation
       relationAssessment:
         range: QualitativeRelationAssessment
 - CoordinatePoint:
@@ -333,6 +329,10 @@ classes:
     slot_usage:
       inRelationTo:
         required: true
+        any_of:
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
 - ViewerSpecification:
@@ -363,6 +363,9 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - AnatomicalTargetPosition:
     class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
     description: null
