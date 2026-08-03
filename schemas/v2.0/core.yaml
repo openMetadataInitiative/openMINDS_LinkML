@@ -665,18 +665,10 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - TissueSampleCollectionState:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleCollectionState
     description: null
@@ -689,16 +681,8 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - StringParameter:
     class_uri: https://openminds.ebrains.eu/core/StringParameter
     description: null
@@ -727,18 +711,10 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - TissueSampleCollection:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleCollection
     description: null
@@ -857,16 +833,8 @@ classes:
     - pathology
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       pathology:
         range: Disease
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - Protocol:
     class_uri: https://openminds.ebrains.eu/core/Protocol
     description: Structured information on a research project.

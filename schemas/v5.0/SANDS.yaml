@@ -397,9 +397,6 @@ classes:
         - range: uri
       usedTaxon:
         required: true
-        any_of:
-        - range: BiologicalOrder
-        - range: Species
 - CommonCoordinateFrameworkVersion:
     class_uri: https://openminds.om-i.org/types/CommonCoordinateFrameworkVersion
     description: null
@@ -690,9 +687,6 @@ classes:
         - range: uri
       usedTaxon:
         required: true
-        any_of:
-        - range: BiologicalOrder
-        - range: Species
 - AtlasAnnotation:
     class_uri: https://openminds.om-i.org/types/AtlasAnnotation
     description: null
@@ -829,10 +823,6 @@ classes:
     slot_usage:
       inRelationTo:
         required: true
-        any_of:
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
 - ViewerSpecification:
@@ -863,9 +853,6 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - AnatomicalTargetPosition:
     class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
     description: null

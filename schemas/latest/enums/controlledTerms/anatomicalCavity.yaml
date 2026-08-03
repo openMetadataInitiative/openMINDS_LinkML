@@ -13,6 +13,112 @@ enums:
     enum_uri: https://openminds.om-i.org/types/AnatomicalCavity
     title: Anatomical cavity
     permissible_values:
+      lumen of central canal of spinal cord:
+        description: Is an anatomical entity. Is part of the central canal of spinal
+          cord. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009572)
+          ('is_a' and 'relationship')]
+      subdural space:
+        description: Is an anatomical entity. Is part of the meningeal cluster. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000416)
+          ('is_a' and 'relationship')]
+      lumbar division of spinal cord central canal:
+        description: Is a subdivision of spinal cord central canal. [auto-generated
+          from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014543)]
+      central canal of spinal cord:
+        description: Is part of the spinal cord and the ventricular system of central
+          nervous system. [auto-generated from 'relationship' property of the [UBERON
+          ontology term](http://purl.obolibrary.org/obo/UBERON_0002291)]
+      optic recess of third ventricle:
+        description: Is an anatomical entity. Is part of the third ventricle. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002287)
+          ('is_a' and 'relationship')]
+      cervical division of cord spinal central canal:
+        description: Is a subdivision of spinal cord central canal. [auto-generated
+          from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014542)]
+      hindbrain subarachnoid space:
+        description: Is a subarachnoid space. Is part of the hindbrain. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005219)
+          ('is_a' and 'relationship')]
+      thoracic division of spinal cord central canal:
+        description: Is a subdivision of spinal cord central canal. [auto-generated
+          from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014541)]
+      pineal recess of third ventricle:
+        description: Is an anatomical entity. Is part of the third ventricle. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0022283)
+          ('is_a' and 'relationship')]
+      posterior cerebellomedullary cistern:
+        description: Is a cerebellomedullary cistern. [auto-generated from 'is_a'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005974)]
+      sacral division of spinal cord central canal:
+        description: Is a subdivision of spinal cord central canal. [auto-generated
+          from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014547)]
+      chiasmatic cistern:
+        description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002898)]
+      remnant of lumen of Rathke's pouch:
+        description: Is an anatomical entity. Is part of the adenohypophysis. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009975)
+          ('is_a' and 'relationship')]
+      subdivision of spinal cord central canal:
+        description: Is part of the central canal of spinal cord. [auto-generated
+          from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014538)]
+      midbrain subarachnoid space:
+        description: Is a subarachnoid space. Is part of the midbrain. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005217)
+          ('is_a' and 'relationship')]
+      subarachnoid space:
+        description: Is an anatomical entity. Is part of the brain. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000315)
+          ('is_a' and 'relationship')]
+      infundibular recess of 3rd ventricle:
+        description: Is part of the third ventricle and the future neurohypophysis.
+          [auto-generated from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006250)]
+      quadrigeminal cistern:
+        description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004052)]
+      embryonic intraretinal space:
+        description: Is an anatomical entity. Is part of the retina. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006253)
+          ('is_a' and 'relationship')]
+      lateral recess of third vetricle:
+        description: Is an anatomical entity. Is part of the third ventricle. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0008902)
+          ('is_a' and 'relationship')]
+      perivascular space:
+        description: Is an anatomical entity. Is part of the meningeal cluster. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014930)
+          ('is_a' and 'relationship')]
+      lateral recess of fourth ventricle:
+        description: Is an anatomical entity. Is part of the fourth ventricle. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007656)
+          ('is_a' and 'relationship')]
+      posterior recess:
+        description: Is an anatomical entity. Is part of the third ventricle. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005338)
+          ('is_a' and 'relationship')]
+      subarachnoid cistern:
+        description: Is a subarachnoid space. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004050)]
+      Sylvian cistern:
+        description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0011155)]
       basal cistern:
         description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004047)]
+      diencephalon subarachnoid space:
+        description: Is a subarachnoid space. Is part of the diencephalon. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005218)
+          ('is_a' and 'relationship')]
+      cerebellomedullary cistern:
+        description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004049)]
+      pontine cistern:
+        description: Is a subarachnoid cistern and hindbrain subarachnoid space. Is
+          part of the pons. [auto-generated from properties of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0004048) ('is_a' and 'relationship')]
+      lateral cerebellomedullary cistern:
+        description: Is a cerebellomedullary cistern. [auto-generated from 'is_a'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004051)]
+      cistern of lamina terminalis:
+        description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002897)]
