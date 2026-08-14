@@ -13,10 +13,10 @@ enums:
     enum_uri: https://openminds.om-i.org/types/GustatoryStimulusType
     title: Gustatory stimulus type
     permissible_values:
-      sweet substance:
-        description: Any chemical compound that tastes sweet.
       bitter substance:
         description: Any chemical compound that tastes bitter.
+      sweet substance:
+        description: Any chemical compound that tastes sweet.
       sour substance:
         description: Any chemical compound that tastes sour.
       salty substance:

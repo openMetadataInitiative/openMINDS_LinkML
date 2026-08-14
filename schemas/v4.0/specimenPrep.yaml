@@ -14,6 +14,38 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
+- SlicingDeviceUsage:
+    class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
+    description: null
+    title: Slicing device usage
+    slots:
+    - id
+    - device
+    - lookupLabel
+    - metadataLocation
+    - oscillationAmplitude
+    - sliceThickness
+    - slicingAngle
+    - slicingPlane
+    - slicingSpeed
+    - usedSpecimen
+    - vibrationFrequency
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDevice
+      metadataLocation:
+        range: File
+      sliceThickness:
+        required: true
+      slicingAngle:
+        range: QuantitativeValue
+      slicingPlane:
+        required: true
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
 - SlicingDevice:
     class_uri: https://openminds.om-i.org/types/SlicingDevice
     description: null
@@ -41,41 +73,54 @@ classes:
         required: true
       owner:
         range: Consortium
-- SlicingDeviceUsage:
-    class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
+- TissueCulturePreparation:
+    class_uri: https://openminds.om-i.org/types/TissueCulturePreparation
     description: null
-    title: Slicing device usage
+    title: Tissue culture preparation
     slots:
     - id
-    - device
+    - cultureMedium
+    - cultureType
+    - customPropertySet
+    - description
+    - endTime
+    - input
+    - isPartOf
     - lookupLabel
-    - metadataLocation
-    - oscillationAmplitude
-    - sliceThickness
-    - slicingAngle
-    - slicingPlane
-    - slicingSpeed
-    - usedSpecimen
-    - vibrationFrequency
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
     slot_usage:
-      device:
+      cultureMedium:
         required: true
-        range: SlicingDevice
-      metadataLocation:
-        range: File
-      sliceThickness:
+      cultureType:
         required: true
+      endTime:
+        range: string
         any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      slicingAngle:
-        range: QuantitativeValue
-      slicingPlane:
+        - range: time
+      input:
         required: true
-      usedSpecimen:
+        range: TissueSampleState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
         any_of:
-        - range: SubjectState
-        - range: TissueSampleState
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
 - TissueSampleSlicing:
     class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
     description: null
@@ -124,10 +169,6 @@ classes:
         - range: time
       studyTarget:
         range: AuditoryStimulusType
-      temperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - CranialWindowPreparation:
     class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
     description: null
@@ -152,11 +193,6 @@ classes:
     slot_usage:
       constructionType:
         required: true
-      dimension:
-        any_of:
-        - range: Circle
-        - range: Ellipse
-        - range: Rectangle
       endTime:
         range: string
         any_of:
@@ -170,54 +206,6 @@ classes:
       output:
         required: true
         range: SubjectState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
-- TissueCulturePreparation:
-    class_uri: https://openminds.om-i.org/types/TissueCulturePreparation
-    description: null
-    title: Tissue culture preparation
-    slots:
-    - id
-    - cultureMedium
-    - cultureType
-    - customPropertySet
-    - description
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    slot_usage:
-      cultureMedium:
-        required: true
-      cultureType:
-        required: true
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: TissueSampleState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleState
       performedBy:
         range: SoftwareAgent
       protocol:

@@ -56,8 +56,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   ageCategory:
     slot_uri: ageCategory
@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: RORID
+    - range: DOI
     - range: SWHID
+    - range: RORID
     - range: GRIDID
     - range: ORCID
-    - range: DOI
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -441,13 +441,13 @@ slots:
     range: string
     pattern:
       ALTERNATES:
-      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
-      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
       - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
-      - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
-      - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
       - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
         \ \t\r\n\f]+)*$"
+      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
+      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
+      - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
+      - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
     multivalued: true
     list_elements_unique: true
   inRelationTo:
@@ -519,9 +519,9 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
+    - range: SubjectGroup
     - range: FileRepository
     - range: FileBundle
-    - range: SubjectGroup
     - range: TissueSampleCollection
     - range: ParcellationTerminology
     multivalued: true
@@ -605,8 +605,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: CellType
     - range: Organ
+    - range: CellType
     multivalued: true
     list_elements_unique: true
   otherContribution:
@@ -714,8 +714,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   quantity:
     slot_uri: quantity
@@ -774,8 +774,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: BehavioralTask
     - range: Technique
+    - range: BehavioralTask
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -920,8 +920,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: string
     - range: uri
+    - range: string
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -965,11 +965,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: float
-    - range: QuantitativeValueRange
-    - range: integer
-    - range: string
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
+    - range: string
+    - range: integer
+    - range: float
     multivalued: true
     inlined: true
   versionIdentifier:
@@ -998,8 +998,8 @@ slots:
     slot_uri: weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   year:
     slot_uri: year

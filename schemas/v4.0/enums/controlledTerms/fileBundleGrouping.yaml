@@ -14,21 +14,21 @@ enums:
     title: File bundle grouping
     description: Structured information on the grouping mechanism of a file bundle.
     permissible_values:
-      subject group:
-        description: null
-      coordinate space:
-        description: null
       tissue sample:
         description: null
       protocol:
         description: null
-      behavioral protocol:
-        description: null
-      subject:
-        description: null
-      technique:
+      coordinate space:
         description: null
       study target:
         description: null
+      subject:
+        description: null
+      behavioral protocol:
+        description: null
       tissue sample collection:
+        description: null
+      technique:
+        description: null
+      subject group:
         description: null

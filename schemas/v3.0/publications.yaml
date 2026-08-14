@@ -14,24 +14,71 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
-- LivePaperResourceItem:
-    class_uri: https://openminds.ebrains.eu/publications/LivePaperResourceItem
+- Chapter:
+    class_uri: https://openminds.ebrains.eu/publications/Chapter
     description: null
-    title: Live paper resource item
+    title: Chapter
     slots:
     - id
     - IRI
-    - hostedBy
+    - abstract
+    - author
+    - citedPublication
+    - copyright
+    - creationDate
+    - custodian
+    - digitalIdentifier
+    - editor
+    - funding
     - isPartOf
+    - keyword
+    - license
+    - modificationDate
     - name
+    - pagination
+    - publicationDate
+    - publisher
+    - versionIdentifier
     slot_usage:
-      IRI:
+      author:
         required: true
-      hostedBy:
-        required: true
+        range: Consortium
+      citedPublication:
+        range: DOI
+      custodian:
+        range: Consortium
+      digitalIdentifier:
+        range: DOI
       isPartOf:
         required: true
-        range: LivePaperSection
+        range: Book
+      keyword:
+        range: ActionStatusType
+      license:
+        range: License
+      modificationDate:
+        range: date
+      name:
+        required: true
+      publicationDate:
+        required: true
+      publisher:
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
+- Periodical:
+    class_uri: https://openminds.ebrains.eu/publications/Periodical
+    description: null
+    title: Periodical
+    slots:
+    - id
+    - abbreviation
+    - digitalIdentifier
+    - name
+    slot_usage:
+      digitalIdentifier:
+        range: ISSN
       name:
         required: true
 - Book:
@@ -68,6 +115,61 @@ classes:
         any_of:
         - range: DOI
         - range: ISBN
+      keyword:
+        range: ActionStatusType
+      license:
+        range: License
+      modificationDate:
+        range: date
+      name:
+        required: true
+      publicationDate:
+        required: true
+      publisher:
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
+- ScholarlyArticle:
+    class_uri: https://openminds.ebrains.eu/publications/ScholarlyArticle
+    description: null
+    title: Scholarly article
+    slots:
+    - id
+    - IRI
+    - abstract
+    - author
+    - citedPublication
+    - copyright
+    - creationDate
+    - custodian
+    - digitalIdentifier
+    - editor
+    - funding
+    - isPartOf
+    - keyword
+    - license
+    - modificationDate
+    - name
+    - pagination
+    - publicationDate
+    - publisher
+    - versionIdentifier
+    slot_usage:
+      author:
+        required: true
+        range: Consortium
+      citedPublication:
+        range: DOI
+      custodian:
+        range: Consortium
+      digitalIdentifier:
+        range: DOI
+      isPartOf:
+        required: true
+        any_of:
+        - range: PublicationIssue
+        - range: PublicationVolume
       keyword:
         range: ActionStatusType
       license:
@@ -158,111 +260,6 @@ classes:
         required: true
       versionInnovation:
         required: true
-- LivePaperSection:
-    class_uri: https://openminds.ebrains.eu/publications/LivePaperSection
-    description: null
-    title: Live paper section
-    slots:
-    - id
-    - description
-    - isPartOf
-    - name
-    - order
-    - type
-    slot_usage:
-      isPartOf:
-        required: true
-        range: LivePaperVersion
-      name:
-        required: true
-      order:
-        required: true
-      type:
-        required: true
-        range: string
-- PublicationIssue:
-    class_uri: https://openminds.ebrains.eu/publications/PublicationIssue
-    description: null
-    title: Publication issue
-    slots:
-    - id
-    - isPartOf
-    - issueNumber
-    slot_usage:
-      isPartOf:
-        required: true
-        range: PublicationVolume
-      issueNumber:
-        required: true
-- ScholarlyArticle:
-    class_uri: https://openminds.ebrains.eu/publications/ScholarlyArticle
-    description: null
-    title: Scholarly article
-    slots:
-    - id
-    - IRI
-    - abstract
-    - author
-    - citedPublication
-    - copyright
-    - creationDate
-    - custodian
-    - digitalIdentifier
-    - editor
-    - funding
-    - isPartOf
-    - keyword
-    - license
-    - modificationDate
-    - name
-    - pagination
-    - publicationDate
-    - publisher
-    - versionIdentifier
-    slot_usage:
-      author:
-        required: true
-        range: Consortium
-      citedPublication:
-        range: DOI
-      custodian:
-        range: Consortium
-      digitalIdentifier:
-        range: DOI
-      isPartOf:
-        required: true
-        any_of:
-        - range: PublicationIssue
-        - range: PublicationVolume
-      keyword:
-        range: ActionStatusType
-      license:
-        range: License
-      modificationDate:
-        range: date
-      name:
-        required: true
-      publicationDate:
-        required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
-- PublicationVolume:
-    class_uri: https://openminds.ebrains.eu/publications/PublicationVolume
-    description: null
-    title: Publication volume
-    slots:
-    - id
-    - isPartOf
-    - volumeNumber
-    slot_usage:
-      isPartOf:
-        required: true
-        range: Periodical
-      volumeNumber:
-        required: true
 - LivePaper:
     class_uri: https://openminds.ebrains.eu/publications/LivePaper
     description: null
@@ -295,59 +292,48 @@ classes:
         range: LivePaperVersion
       shortName:
         required: true
-- Chapter:
-    class_uri: https://openminds.ebrains.eu/publications/Chapter
+- LivePaperSection:
+    class_uri: https://openminds.ebrains.eu/publications/LivePaperSection
     description: null
-    title: Chapter
+    title: Live paper section
+    slots:
+    - id
+    - description
+    - isPartOf
+    - name
+    - order
+    - type
+    slot_usage:
+      isPartOf:
+        required: true
+        range: LivePaperVersion
+      name:
+        required: true
+      order:
+        required: true
+      type:
+        required: true
+        range: string
+- LivePaperResourceItem:
+    class_uri: https://openminds.ebrains.eu/publications/LivePaperResourceItem
+    description: null
+    title: Live paper resource item
     slots:
     - id
     - IRI
-    - abstract
-    - author
-    - citedPublication
-    - copyright
-    - creationDate
-    - custodian
-    - digitalIdentifier
-    - editor
-    - funding
+    - hostedBy
     - isPartOf
-    - keyword
-    - license
-    - modificationDate
     - name
-    - pagination
-    - publicationDate
-    - publisher
-    - versionIdentifier
     slot_usage:
-      author:
+      IRI:
         required: true
-        range: Consortium
-      citedPublication:
-        range: DOI
-      custodian:
-        range: Consortium
-      digitalIdentifier:
-        range: DOI
+      hostedBy:
+        required: true
       isPartOf:
         required: true
-        range: Book
-      keyword:
-        range: ActionStatusType
-      license:
-        range: License
-      modificationDate:
-        range: date
+        range: LivePaperSection
       name:
         required: true
-      publicationDate:
-        required: true
-      publisher:
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - LearningResource:
     class_uri: https://openminds.ebrains.eu/publications/LearningResource
     description: null
@@ -406,23 +392,33 @@ classes:
         - range: Consortium
         - range: Organization
         - range: Person
-      requiredTime:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       type:
         range: LearningResourceType
-- Periodical:
-    class_uri: https://openminds.ebrains.eu/publications/Periodical
+- PublicationVolume:
+    class_uri: https://openminds.ebrains.eu/publications/PublicationVolume
     description: null
-    title: Periodical
+    title: Publication volume
     slots:
     - id
-    - abbreviation
-    - digitalIdentifier
-    - name
+    - isPartOf
+    - volumeNumber
     slot_usage:
-      digitalIdentifier:
-        range: ISSN
-      name:
+      isPartOf:
+        required: true
+        range: Periodical
+      volumeNumber:
+        required: true
+- PublicationIssue:
+    class_uri: https://openminds.ebrains.eu/publications/PublicationIssue
+    description: null
+    title: Publication issue
+    slots:
+    - id
+    - isPartOf
+    - issueNumber
+    slot_usage:
+      isPartOf:
+        required: true
+        range: PublicationVolume
+      issueNumber:
         required: true

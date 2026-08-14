@@ -18,37 +18,37 @@ enums:
       rate neurons:
         description: Modelling neural networks in which individual neurons are represented
           by their firing rate
-      statistical model:
-        description: Statistical modelling of neural data generation
       population modelling:
         description: Modelling of neural circuits at the population level
-      'systems biology: continuous':
-        description: Systems biology modelling using concentrations
-      'population modelling: neural mass':
-        description: Modelling neural populations using the approximation of neural
-          masses
-      algorithm:
-        description: Modelling of a neural structure or process as an algorithm
       cognitive modelling:
         description: Modelling of cognitive processes
+      'systems biology: continuous':
+        description: Systems biology modelling using concentrations
+      'systems biology: discrete':
+        description: Systems biology modelling using representations of individual
+          particles
+      statistical model:
+        description: Statistical modelling of neural data generation
+      algorithm:
+        description: Modelling of a neural structure or process as an algorithm
+      'spiking neurons: point neuron':
+        description: Modelling neural networks in which individual neurons are represented
+          by point neuron models
+      systems biology:
+        description: Modelling of neural systems below the level of individual neurons
+      spiking neurons:
+        description: Modelling neural networks in which the action potentials of individual
+          neurons are represented
+      'spiking neurons: biophysical':
+        description: Modelling neural networks in which individual neurons are represented
+          by models with detailed morphology and biophysical models of ion channels
+      'systems biology: flux balance':
+        description: Systems biology modelling using flux balance analysis
       protein structure:
         description: Modelling of protein structure
       'population modelling: neural field':
         description: Modelling neural populations using the approximation of a neural
           field
-      spiking neurons:
-        description: Modelling neural networks in which the action potentials of individual
-          neurons are represented
-      systems biology:
-        description: Modelling of neural systems below the level of individual neurons
-      'systems biology: flux balance':
-        description: Systems biology modelling using flux balance analysis
-      'systems biology: discrete':
-        description: Systems biology modelling using representations of individual
-          particles
-      'spiking neurons: biophysical':
-        description: Modelling neural networks in which individual neurons are represented
-          by models with detailed morphology and biophysical models of ion channels
-      'spiking neurons: point neuron':
-        description: Modelling neural networks in which individual neurons are represented
-          by point neuron models
+      'population modelling: neural mass':
+        description: Modelling neural populations using the approximation of neural
+          masses

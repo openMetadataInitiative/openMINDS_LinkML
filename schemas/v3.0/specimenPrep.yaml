@@ -14,6 +14,38 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
+- SlicingDeviceUsage:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
+    description: null
+    title: Slicing device usage
+    slots:
+    - id
+    - device
+    - lookupLabel
+    - metadataLocation
+    - oscillationAmplitude
+    - sliceThickness
+    - slicingAngle
+    - slicingPlane
+    - slicingSpeed
+    - usedSpecimen
+    - vibrationFrequency
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDevice
+      metadataLocation:
+        range: File
+      sliceThickness:
+        required: true
+      slicingAngle:
+        range: QuantitativeValue
+      slicingPlane:
+        required: true
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
 - SlicingDevice:
     class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDevice
     description: null
@@ -41,41 +73,29 @@ classes:
         required: true
       owner:
         range: Consortium
-- SlicingDeviceUsage:
-    class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
+- TissueCulturePreparation:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
     description: null
-    title: Slicing device usage
+    title: Tissue culture preparation
     slots:
     - id
-    - device
-    - lookupLabel
-    - metadataLocation
-    - oscillationAmplitude
-    - sliceThickness
-    - slicingAngle
-    - slicingPlane
-    - slicingSpeed
-    - usedSpecimen
-    - vibrationFrequency
+    - cultureMedium
+    - cultureType
+    - input
+    - output
     slot_usage:
-      device:
+      cultureMedium:
         required: true
-        range: SlicingDevice
-      metadataLocation:
-        range: File
-      sliceThickness:
+      cultureType:
         required: true
+      input:
         any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      slicingAngle:
-        range: QuantitativeValue
-      slicingPlane:
-        required: true
-      usedSpecimen:
-        any_of:
-        - range: SubjectState
         - range: TissueSampleState
+        - range: TissueSampleCollectionState
+        - range: SubjectGroupState
+        - range: SubjectState
+      output:
+        range: TissueSampleState
 - TissueSampleSlicing:
     class_uri: https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing
     description: null
@@ -98,10 +118,6 @@ classes:
         - range: TissueSampleState
       output:
         range: TissueSampleCollectionState
-      temperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - CranialWindowPreparation:
     class_uri: https://openminds.ebrains.eu/specimenPrep/CranialWindowPreparation
     description: null
@@ -126,11 +142,6 @@ classes:
     slot_usage:
       constructionType:
         required: true
-      dimension:
-        any_of:
-        - range: Circle
-        - range: Ellipse
-        - range: Rectangle
       endTime:
         range: string
         any_of:
@@ -154,26 +165,3 @@ classes:
         - range: time
       studyTarget:
         range: AuditoryStimulusType
-- TissueCulturePreparation:
-    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
-    description: null
-    title: Tissue culture preparation
-    slots:
-    - id
-    - cultureMedium
-    - cultureType
-    - input
-    - output
-    slot_usage:
-      cultureMedium:
-        required: true
-      cultureType:
-        required: true
-      input:
-        any_of:
-        - range: TissueSampleState
-        - range: TissueSampleCollectionState
-        - range: SubjectGroupState
-        - range: SubjectState
-      output:
-        range: TissueSampleState

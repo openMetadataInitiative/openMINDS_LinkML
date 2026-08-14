@@ -14,40 +14,24 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- ChemicalSubstance:
-    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
-    description: Structured information about a chemical substance.
-    title: Chemical substance
+- ChemicalMixture:
+    class_uri: https://openminds.om-i.org/types/ChemicalMixture
+    description: Structured information about a mixture of chemical substances.
+    title: Chemical mixture
     slots:
     - id
     - additionalRemarks
-    - lookupLabel
-    - molecularEntity
+    - hasPart
+    - name
     - productSource
-    - purity
+    - type
     slot_usage:
-      molecularEntity:
+      hasPart:
         required: true
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-- AmountOfChemical:
-    class_uri: https://openminds.om-i.org/types/AmountOfChemical
-    description: Structured information about the amount of a given chemical that
-      was used.
-    title: Amount of chemical
-    slots:
-    - id
-    - amount
-    - chemicalProduct
-    slot_usage:
-      chemicalProduct:
+        range: AmountOfChemical
+      type:
         required: true
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
+        range: ChemicalMixtureType
 - ProductSource:
     class_uri: https://openminds.om-i.org/types/ProductSource
     description: Structured information about the source of a chemical substance or
@@ -71,25 +55,33 @@ classes:
         - range: Consortium
         - range: Organization
         - range: Person
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-- ChemicalMixture:
-    class_uri: https://openminds.om-i.org/types/ChemicalMixture
-    description: Structured information about a mixture of chemical substances.
-    title: Chemical mixture
+- ChemicalSubstance:
+    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
+    description: Structured information about a chemical substance.
+    title: Chemical substance
     slots:
     - id
     - additionalRemarks
-    - hasPart
-    - name
+    - lookupLabel
+    - molecularEntity
     - productSource
-    - type
+    - purity
     slot_usage:
-      hasPart:
+      molecularEntity:
         required: true
-        range: AmountOfChemical
-      type:
+- AmountOfChemical:
+    class_uri: https://openminds.om-i.org/types/AmountOfChemical
+    description: Structured information about the amount of a given chemical that
+      was used.
+    title: Amount of chemical
+    slots:
+    - id
+    - amount
+    - chemicalProduct
+    slot_usage:
+      chemicalProduct:
         required: true
-        range: ChemicalMixtureType
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity

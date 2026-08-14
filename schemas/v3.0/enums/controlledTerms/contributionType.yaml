@@ -15,211 +15,211 @@ enums:
     description: Structured information on the type of contribution a person or organization
       performed.
     permissible_values:
-      operation:
-        description: A contribution type of a role-bearing entity realized by controlling
-          and sustaining the functioning of a target entity.
-      inspection:
-        description: A contribution type of a role-bearing entity realized by examining
-          a target entity through observation or review to assess its condition, compliance,
-          conformity, or quality.
-      creation:
-        description: A contribution type of a role-bearing entity realized by producing
-          or bringing a target entity into existence.
+      validation:
+        description: A contribution type of a role-bearing entity realized by confirming,
+          based on evidence or evaluation results, that a target entity fulfills specified
+          requirements or intended purposes.
+      data processing:
+        description: A contribution type of a role-bearing entity realized by handling,
+          cleaning, transforming, or preparing data for subsequent analysis or use.
       technical writing:
         description: A contribution type of a role-bearing entity realized by producing
           structured explanatory or instructional textual content describing the design,
           structure, operation, or use of a target entity.
-      liaison:
-        description: A contribution type of a role-bearing entity realized by serving
-          as a point of contact or intermediary regarding a target entity.
-      marketing:
-        description: A contribution type of a role-bearing entity realized by promoting,
-          advertising, or commercializing a target entity.
-      implementation:
-        description: A contribution type of a role-bearing entity realized by putting
-          an adopted plan, method, system, or procedure into practical effect.
-      scientific writing:
-        description: A contribution type of a role-bearing entity realized by producing
-          textual content that reports, analyzes, or interprets scientific investigations
-          or knowledge about a target entity.
-      leadership:
-        description: A contribution type of a role-bearing entity realized by setting
-          direction and making consequential decisions for a collective undertaking.
-      information technology support:
-        description: A contribution type of a role-bearing entity realized by providing
-          operational or technical assistance for computing infrastructure, systems,
-          or digital tools.
-      approval:
-        description: A contribution type of a role-bearing entity realized by formally
-          authorizing or accepting a target entity so that it may proceed or be used.
-      data processing:
-        description: A contribution type of a role-bearing entity realized by handling,
-          cleaning, transforming, or preparing data for subsequent analysis or use.
-      administration:
-        description: A contribution type of a role-bearing entity realized by administrating
-          organizational, operational, or procedural aspects related to a target entity.
-      management:
-        description: A contribution type of a role-bearing entity realized by organizing
-          and administering people, resources, and/or work toward specified objectives.
-      execution:
-        description: A contribution type of a role-bearing entity realized by carrying
-          out substantive tasks according to an established plan, method, or procedure.
-      hosting:
-        description: A contribution type of a role-bearing entity realized by providing
-          and maintaining an environment, infrastructure, or resources that enable
-          a target entity to exist, operate, or take place.
-      testing:
-        description: A contribution type of a role-bearing entity realized by executing
-          defined procedures or experiments to evaluate the behavior, functionality,
-          or performance of a target entity.
-      curation:
-        description: A contribution type of a role-bearing entity realized by organizing,
-          annotating, or improving the quality and usability of a target entity.
-      packaging:
-        description: A contribution type of a role-bearing entity realized by preparing
-          a target entity for distribution, installation, or deployment.
-      training:
-        description: A contribution type of a role-bearing entity realized by instructing
-          or conditioning a target entity to acquire practical skills, behaviors,
-          or operational knowledge.
-      laboratory assistance:
-        description: A contribution type of a role-bearing entity realized by supporting
-          the operational execution of laboratory activities, procedures, or experiments.
-      operational storage:
-        description: A contribution type of a role-bearing entity realized by maintaining
-          a target entity in a storage system or environment to support its active
-          access or use.
       dissemination:
         description: A contribution type of a role-bearing entity realized by distributing
           or publishing a target entity to make it accessible to relevant professional
           or specialist communities.
-      deployment:
-        description: A contribution type of a role-bearing entity realized by installing
-          or releasing a target entity into an operational or accessible environment.
-      veterinary care:
-        description: A contribution type of a role-bearing entity realized by providing
-          veterinary diagnosis, treatment, or health management for an animal.
-      research:
-        description: A contribution type of a role-bearing entity realized by conducting
-          systematic inquiry concerning a target entity to generate, validate, or
-          refine knowledge or understanding.
-      support:
-        description: A contribution type of a role-bearing entity realized by assisting
-          users or systems in the effective use or functioning of a target entity.
-      human medical care:
-        description: A contribution type of a role-bearing entity realized by providing
-          medical diagnosis, treatment, or health management for a human.
-      maintenance:
-        description: A contribution type of a role-bearing entity realized by sustaining,
-          updating, or repairing a target entity to ensure its continued functionality
-          and quality.
-      outreach:
-        description: A contribution type of a role-bearing entity realized by engaging
-          with broader or non-specialist audiences to raise awareness, understanding,
-          or adoption of a target entity.
-      versioning:
-        description: A contribution type of a role-bearing entity realized by managing
-          and tracking changes or designated versions of a target entity over time.
-      provision:
-        description: A contribution type of a role-bearing entity realized by making
-          a target entity or its functionality available for use.
-      metadata management:
-        description: A contribution type of a role-bearing entity realized by overseeing
-          the creation, curation, governance, and maintenance of metadata to ensure
-          its quality, consistency, and fitness for use.
+      data collection:
+        description: A contribution type of a role-bearing entity realized by gathering
+          or aggregating data.
+      surgical performance:
+        description: A contribution type of a role-bearing entity realized by performing
+          surgical procedures on a living organism.
+      development:
+        description: A contribution type of a role-bearing entity realized by creating,
+          implementing, or extending physical or digital technological components
+          of a target entity.
+      editing:
+        description: A contribution type of a role-bearing entity realized by modifying
+          the content or form of a target entity to improve its accuracy, clarity,
+          coherence, or quality.
+      creation:
+        description: A contribution type of a role-bearing entity realized by producing
+          or bringing a target entity into existence.
+      leadership:
+        description: A contribution type of a role-bearing entity realized by setting
+          direction and making consequential decisions for a collective undertaking.
+      approval:
+        description: A contribution type of a role-bearing entity realized by formally
+          authorizing or accepting a target entity so that it may proceed or be used.
       education:
         description: A contribution type of a role-bearing entity realized by transferring
           knowledge about a target entity to enable learning about its nature, context,
           principles, or applications.
-      manufacturing:
+      versioning:
+        description: A contribution type of a role-bearing entity realized by managing
+          and tracking changes or designated versions of a target entity over time.
+      information technology support:
+        description: A contribution type of a role-bearing entity realized by providing
+          operational or technical assistance for computing infrastructure, systems,
+          or digital tools.
+      management:
+        description: A contribution type of a role-bearing entity realized by organizing
+          and administering people, resources, and/or work toward specified objectives.
+      inspection:
+        description: A contribution type of a role-bearing entity realized by examining
+          a target entity through observation or review to assess its condition, compliance,
+          conformity, or quality.
+      packaging:
+        description: A contribution type of a role-bearing entity realized by preparing
+          a target entity for distribution, installation, or deployment.
+      human medical care:
+        description: A contribution type of a role-bearing entity realized by providing
+          medical diagnosis, treatment, or health management for a human.
+      processing:
+        description: A contribution type of a role-bearing entity realized by transforming,
+          analyzing, or manipulating the state or content of a target entity.
+      metadata management:
+        description: A contribution type of a role-bearing entity realized by overseeing
+          the creation, curation, governance, and maintenance of metadata to ensure
+          its quality, consistency, and fitness for use.
+      outreach:
+        description: A contribution type of a role-bearing entity realized by engaging
+          with broader or non-specialist audiences to raise awareness, understanding,
+          or adoption of a target entity.
+      research:
+        description: A contribution type of a role-bearing entity realized by conducting
+          systematic inquiry concerning a target entity to generate, validate, or
+          refine knowledge or understanding.
+      scientific writing:
         description: A contribution type of a role-bearing entity realized by producing
-          physical target entities, typically in a repeatable or systematic manner,
-          for distribution, use, or sale.
-      fundraising:
-        description: A contribution type of a role-bearing entity realized by securing
-          financial resources to support a target entity or activities related to
-          it.
-      integration:
-        description: A contribution type of a role-bearing entity realized by incorporating
-          another living or non-living thing into a target entity so that it becomes
-          part of and functions within a coherent whole.
-      standardization:
-        description: A contribution type of a role-bearing entity realized by aligning
-          a target entity with shared specifications or conventions applied across
-          multiple entities.
+          textual content that reports, analyzes, or interprets scientific investigations
+          or knowledge about a target entity.
+      communication:
+        description: A contribution type of a role-bearing entity realized by communicating
+          information about a target entity to relevant audiences.
       preservation:
         description: A contribution type of a role-bearing entity realized by maintaining
           or protecting a target entity over time to ensure its continued existence,
           integrity, or availability.
-      editorial decision-making:
-        description: A contribution type of a role-bearing entity realized by evaluating
-          a target entity against relevant criteria and determining its acceptance,
-          rejection, revision, or other editorial disposition.
+      operation:
+        description: A contribution type of a role-bearing entity realized by controlling
+          and sustaining the functioning of a target entity.
       husbandry:
         description: A contribution type of a role-bearing entity realized by managing
           the day-to-day care, growth, reproduction, or environmental conditions of
           living organisms.
-      data collection:
-        description: A contribution type of a role-bearing entity realized by gathering
-          or aggregating data.
+      training:
+        description: A contribution type of a role-bearing entity realized by instructing
+          or conditioning a target entity to acquire practical skills, behaviors,
+          or operational knowledge.
+      marketing:
+        description: A contribution type of a role-bearing entity realized by promoting,
+          advertising, or commercializing a target entity.
+      funding:
+        description: A contribution type of a role-bearing entity realized by providing
+          financial resources to support a target entity or activities related to
+          it.
+      curation:
+        description: A contribution type of a role-bearing entity realized by organizing,
+          annotating, or improving the quality and usability of a target entity.
+      authoring:
+        description: A contribution type of a role-bearing entity realized by creating
+          textual, visual, or other expressive intellectual content about or for a
+          target entity.
+      testing:
+        description: A contribution type of a role-bearing entity realized by executing
+          defined procedures or experiments to evaluate the behavior, functionality,
+          or performance of a target entity.
+      liaison:
+        description: A contribution type of a role-bearing entity realized by serving
+          as a point of contact or intermediary regarding a target entity.
+      implementation:
+        description: A contribution type of a role-bearing entity realized by putting
+          an adopted plan, method, system, or procedure into practical effect.
+      laboratory assistance:
+        description: A contribution type of a role-bearing entity realized by supporting
+          the operational execution of laboratory activities, procedures, or experiments.
+      integration:
+        description: A contribution type of a role-bearing entity realized by incorporating
+          another living or non-living thing into a target entity so that it becomes
+          part of and functions within a coherent whole.
+      fundraising:
+        description: A contribution type of a role-bearing entity realized by securing
+          financial resources to support a target entity or activities related to
+          it.
+      maintenance:
+        description: A contribution type of a role-bearing entity realized by sustaining,
+          updating, or repairing a target entity to ensure its continued functionality
+          and quality.
+      deployment:
+        description: A contribution type of a role-bearing entity realized by installing
+          or releasing a target entity into an operational or accessible environment.
+      acquisition:
+        description: A contribution type of a role-bearing entity realized by acquiring
+          or obtaining an existing target entity or resources required for its use.
+      supervision:
+        description: A contribution type of a role-bearing entity realized by overseeing
+          and guiding the work or activities performed by humans, non-human animals,
+          or software agents in relation to a target entity.
+      editorial decision-making:
+        description: A contribution type of a role-bearing entity realized by evaluating
+          a target entity against relevant criteria and determining its acceptance,
+          rejection, revision, or other editorial disposition.
+      operational storage:
+        description: A contribution type of a role-bearing entity realized by maintaining
+          a target entity in a storage system or environment to support its active
+          access or use.
+      standardization:
+        description: A contribution type of a role-bearing entity realized by aligning
+          a target entity with shared specifications or conventions applied across
+          multiple entities.
+      manufacturing:
+        description: A contribution type of a role-bearing entity realized by producing
+          physical target entities, typically in a repeatable or systematic manner,
+          for distribution, use, or sale.
+      veterinary care:
+        description: A contribution type of a role-bearing entity realized by providing
+          veterinary diagnosis, treatment, or health management for an animal.
+      hosting:
+        description: A contribution type of a role-bearing entity realized by providing
+          and maintaining an environment, infrastructure, or resources that enable
+          a target entity to exist, operate, or take place.
+      design:
+        description: A contribution type of a role-bearing entity realized by specifying
+          the structure, methodology, or architecture of a target entity.
+      execution:
+        description: A contribution type of a role-bearing entity realized by carrying
+          out substantive tasks according to an established plan, method, or procedure.
+      support:
+        description: A contribution type of a role-bearing entity realized by assisting
+          users or systems in the effective use or functioning of a target entity.
+      administration:
+        description: A contribution type of a role-bearing entity realized by administrating
+          organizational, operational, or procedural aspects related to a target entity.
+      ownership:
+        description: A contribution type of a role-bearing entity realized by holding
+          legal ownership rights and responsibilities for a target entity.
+      custodianship:
+        description: A contribution type of a role-bearing entity realized by assuming
+          responsibility for the long-term stewardship and oversight of a target entity.
+      data management:
+        description: A contribution type of a role-bearing entity realized by organizing,
+          storing, maintaining, and governing data assets to ensure their accessibility,
+          reliability, and usability throughout their lifecycle
+      coordination:
+        description: A contribution type of a role-bearing entity realized by aligning
+          interdependent activities, contributors, or resources to enable coherent
+          joint action.
       review:
         description: A contribution type of a role-bearing entity realized by critically
           assessing a target entity through expert judgment to evaluate its quality,
           validity, or suitability and, where appropriate, identify deficiencies or
           opportunities for improvement and recommend changes.
-      ownership:
-        description: A contribution type of a role-bearing entity realized by holding
-          legal ownership rights and responsibilities for a target entity.
-      acquisition:
-        description: A contribution type of a role-bearing entity realized by acquiring
-          or obtaining an existing target entity or resources required for its use.
-      data management:
-        description: A contribution type of a role-bearing entity realized by organizing,
-          storing, maintaining, and governing data assets to ensure their accessibility,
-          reliability, and usability throughout their lifecycle
-      custodianship:
-        description: A contribution type of a role-bearing entity realized by assuming
-          responsibility for the long-term stewardship and oversight of a target entity.
-      validation:
-        description: A contribution type of a role-bearing entity realized by confirming,
-          based on evidence or evaluation results, that a target entity fulfills specified
-          requirements or intended purposes.
-      surgical performance:
-        description: A contribution type of a role-bearing entity realized by performing
-          surgical procedures on a living organism.
-      editing:
-        description: A contribution type of a role-bearing entity realized by modifying
-          the content or form of a target entity to improve its accuracy, clarity,
-          coherence, or quality.
-      supervision:
-        description: A contribution type of a role-bearing entity realized by overseeing
-          and guiding the work or activities performed by humans, non-human animals,
-          or software agents in relation to a target entity.
-      communication:
-        description: A contribution type of a role-bearing entity realized by communicating
-          information about a target entity to relevant audiences.
-      coordination:
-        description: A contribution type of a role-bearing entity realized by aligning
-          interdependent activities, contributors, or resources to enable coherent
-          joint action.
-      development:
-        description: A contribution type of a role-bearing entity realized by creating,
-          implementing, or extending physical or digital technological components
-          of a target entity.
       collection:
         description: A contribution type of a role-bearing entity realized by gathering
           or aggregating instances or information forming a target entity.
-      processing:
-        description: A contribution type of a role-bearing entity realized by transforming,
-          analyzing, or manipulating the state or content of a target entity.
-      funding:
-        description: A contribution type of a role-bearing entity realized by providing
-          financial resources to support a target entity or activities related to
-          it.
-      authoring:
-        description: A contribution type of a role-bearing entity realized by creating
-          textual, visual, or other expressive intellectual content about or for a
-          target entity.
-      design:
-        description: A contribution type of a role-bearing entity realized by specifying
-          the structure, methodology, or architecture of a target entity.
+      provision:
+        description: A contribution type of a role-bearing entity realized by making
+          a target entity or its functionality available for use.

@@ -16,9 +16,11 @@ enums:
     permissible_values:
       high-performance computer:
         description: null
+      mobile:
+        description: null
       embedded system:
         description: null
-      web:
+      desktop:
         description: null
       neuromorphic computer:
         description: Very-large-scale integration (VLSI) systems containing electronic
@@ -26,7 +28,5 @@ enums:
           system.
       server:
         description: null
-      mobile:
-        description: null
-      desktop:
+      web:
         description: null

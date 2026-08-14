@@ -16,11 +16,11 @@ enums:
       gradient spoiling:
         description: A spoiling technique that suppresses residual transverse magnetization
           by applying additional gradient moments to induce spatial dephasing.
-      combined spoiling:
-        description: A spoiling technique that suppresses residual transverse magnetization
-          by combining radiofrequency phase cycling with gradient-induced spatial
-          dephasing.
       radiofrequency spoiling:
         description: A spoiling technique that suppresses residual transverse magnetization
           by applying controlled phase cycling to successive radiofrequency excitation
           pulses.
+      combined spoiling:
+        description: A spoiling technique that suppresses residual transverse magnetization
+          by combining radiofrequency phase cycling with gradient-induced spatial
+          dephasing.

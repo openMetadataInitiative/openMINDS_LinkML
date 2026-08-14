@@ -13,9 +13,6 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/BiologicalOrder
     title: Biological order
     permissible_values:
-      Carnivora:
-        description: The biological order *Carnivora* (carnivore) belongs to the class
-          *Mammalia* (mammals).
       Nudibranchia:
         description: The biological order *Nudibranchia* (nudibranchs) belongs to
           the class *Gastropoda* (gastropods).
@@ -25,9 +22,12 @@ enums:
       Didelphimorphia:
         description: The biological order *Didelphimorphia* (opossums) belongs to
           the class *Mammalia* (mammals).
-      Rodentia:
-        description: The biological order *Rodentia* (rodents) belongs to the class
-          *Mammalia* (mammals).
       Cypriniformes:
         description: The biological order *Cypriniformes* belongs to the class *Actinopterygii*
           (ray-finned fishes).
+      Carnivora:
+        description: The biological order *Carnivora* (carnivore) belongs to the class
+          *Mammalia* (mammals).
+      Rodentia:
+        description: The biological order *Rodentia* (rodents) belongs to the class
+          *Mammalia* (mammals).

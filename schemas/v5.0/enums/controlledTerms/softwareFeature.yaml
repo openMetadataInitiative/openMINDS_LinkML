@@ -13,75 +13,75 @@ enums:
     enum_uri: https://openminds.om-i.org/types/SoftwareFeature
     title: Software feature
     permissible_values:
-      simulation:
-        description: null
-      statistical data types:
-        description: null
-      modelling:
-        description: null
-      augmented reality:
-        description: null
-      graphical user interface:
-        description: A visual system that enables users to interact with a computer
-          or software through graphical elements like windows, icons, and menus, allowing
-          them to perform specific tasks or operations.
-      metadata data types:
-        description: null
-      matrix data types:
-        description: null
-      3D vector data types:
+      control:
         description: null
       data processing:
         description: null
-      tensor data types:
-        description: null
-      tiled display wall:
-        description: null
-      raster image data types:
+      positional data types:
         description: null
       time series data types:
         description: null
+      metadata data types:
+        description: null
+      augmented reality:
+        description: null
       data acquisition:
         description: null
-      positional data types:
-        description: null
-      presentation visualisation:
+      interactive analysis:
         description: null
       parallel programming:
         description: null
-      vector image data types:
+      performance measurement:
+        description: null
+      virtual reality:
+        description: null
+      3D geometry data types:
+        description: null
+      heterogeneous architecture:
         description: null
       provenance:
+        description: null
+      presentation visualisation:
+        description: null
+      statistical data types:
+        description: null
+      matrix data types:
+        description: null
+      mobile device:
         description: null
       application programming interface:
         description: A set of rules and protocols that allows different software applications
           to communicate with each other, enabling them to access specific functions
           or data.
-      mobile device:
+      desktop environment:
         description: null
-      virtual reality:
+      tiled display wall:
         description: null
-      control:
+      profiling:
         description: null
-      graph data types:
+      modelling:
         description: null
-      performance measurement:
-        description: null
-      3D scalar data types:
-        description: null
-      3D geometry data types:
-        description: null
+      graphical user interface:
+        description: A visual system that enables users to interact with a computer
+          or software through graphical elements like windows, icons, and menus, allowing
+          them to perform specific tasks or operations.
       command line interface:
         description: A text-based system that enables users to interact with a computer
           or software by entering commands, allowing them to perform specific tasks
           or operations.
-      interactive analysis:
+      3D scalar data types:
+        description: null
+      simulation:
+        description: null
+      3D vector data types:
+        description: null
+      vector image data types:
+        description: null
+      graph data types:
         description: null
       scripting interface:
         description: null
-      profiling:
+      tensor data types:
         description: null
-      desktop environment:
-        description: null
-      heterogeneous architecture:
+      raster image data types:
         description: null

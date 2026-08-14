@@ -16,10 +16,10 @@ enums:
     permissible_values:
       female:
         description: Biological sex that produces egg cells (ova).
+      male:
+        description: Biological sex that produces sperm cells (spermatozoa).
       hermaphrodite:
         description: Biological sex with both male and female reproductive organs.
       not detectable:
         description: Can be stated if the biological sex in visually not detectable
           at a specific point in time.
-      male:
-        description: Biological sex that produces sperm cells (spermatozoa).
