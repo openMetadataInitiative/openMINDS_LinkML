@@ -525,10 +525,18 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - SubjectGroupState:
     class_uri: https://openminds.ebrains.eu/core/SubjectGroupState
     description: null
@@ -543,10 +551,18 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ProtocolExecution:
     class_uri: https://openminds.ebrains.eu/core/ProtocolExecution
     description: Structured information on a protocol execution.
@@ -676,9 +692,6 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
-        any_of:
-        - range: BehavioralTask
-        - range: Technique
 - TissueSampleState:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleState
     description: Structured information on a temporary state of a tissue sample.
@@ -691,8 +704,16 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - SubjectGroup:
     class_uri: https://openminds.ebrains.eu/core/SubjectGroup
     description: null
@@ -785,8 +806,16 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ContentType:
     class_uri: https://openminds.ebrains.eu/core/ContentType
     description: Structured information on the content type of a file instance, bundle
@@ -970,9 +999,6 @@ classes:
         required: true
       contributor:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - Affiliation:
     class_uri: https://openminds.ebrains.eu/core/Affiliation
     description: Structured information about a relationship between two entities,
@@ -1070,9 +1096,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - GRIDID:
     class_uri: https://openminds.ebrains.eu/core/GRIDID
     description: A GRID (Global Research Identifier Database) identifier.

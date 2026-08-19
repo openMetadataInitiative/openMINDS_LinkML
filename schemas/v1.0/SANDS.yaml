@@ -49,6 +49,10 @@ classes:
         required: true
       qualitativeOverlap:
         required: true
+      quantitativeOverlap:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ElectrodeArray:
     class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
     description: Structured information on an electrode array.
