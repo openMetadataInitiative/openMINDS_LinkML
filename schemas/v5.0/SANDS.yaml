@@ -810,10 +810,6 @@ classes:
     slot_usage:
       inRelationTo:
         required: true
-        any_of:
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
 - SingleColor:
@@ -858,9 +854,6 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - ViewerSpecification:
     class_uri: https://openminds.om-i.org/types/ViewerSpecification
     description: null

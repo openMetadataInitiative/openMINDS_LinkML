@@ -51,10 +51,6 @@ classes:
         required: true
       provider:
         required: true
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - ChemicalSubstance:
     class_uri: https://openminds.om-i.org/types/ChemicalSubstance
     description: Structured information about a chemical substance.
@@ -69,10 +65,6 @@ classes:
     slot_usage:
       molecularEntity:
         required: true
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - AmountOfChemical:
     class_uri: https://openminds.om-i.org/types/AmountOfChemical
     description: Structured information about the amount of a given chemical that

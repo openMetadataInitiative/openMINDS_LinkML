@@ -51,8 +51,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   ageCategory:
     slot_uri: ageCategory
@@ -293,11 +293,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: GRIDID
-    - range: SWHID
     - range: DOI
     - range: RORID
     - range: ORCID
+    - range: GRIDID
+    - range: SWHID
     - range: DigitalIdentifier
     multivalued: true
     list_elements_unique: true
@@ -384,8 +384,8 @@ slots:
       particular product.
     any_of:
     - range: File
-    - range: DOI
     - range: URL
+    - range: DOI
   fullName:
     slot_uri: fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -575,9 +575,9 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
+    - range: SubjectGroup
     - range: FileBundle
     - range: FileRepository
-    - range: SubjectGroup
     - range: TissueSampleCollection
     - range: DatasetVersion
     multivalued: true
@@ -672,8 +672,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: Organ
     - range: CellType
+    - range: Organ
     multivalued: true
     list_elements_unique: true
   otherAnatomicalRelation:
@@ -787,8 +787,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   quantity:
     slot_uri: quantity
@@ -842,8 +842,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: BehavioralTask
     - range: Technique
+    - range: BehavioralTask
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -965,8 +965,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: uri
     - range: string
+    - range: uri
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -1017,10 +1017,10 @@ slots:
     description: Entry for a property.
     any_of:
     - range: QuantitativeValue
-    - range: QuantitativeValueRange
-    - range: string
-    - range: float
     - range: integer
+    - range: float
+    - range: string
+    - range: QuantitativeValueRange
     multivalued: true
     inlined: true
   versionIdentifier:
@@ -1056,8 +1056,8 @@ slots:
     slot_uri: weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   year:
     slot_uri: year

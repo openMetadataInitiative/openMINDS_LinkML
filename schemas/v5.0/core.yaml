@@ -886,10 +886,6 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SubjectGroupState:
@@ -923,10 +919,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SpecimenAge:
@@ -1174,10 +1166,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SubjectGroup:
@@ -1354,10 +1342,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - File:

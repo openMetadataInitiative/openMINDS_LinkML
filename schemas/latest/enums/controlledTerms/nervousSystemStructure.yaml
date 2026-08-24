@@ -781,9 +781,6 @@ enums:
         description: Is a regional part of brain. Is part of the medulla oblongata.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005807)
           ('is_a' and 'relationship')]
-      climbing fiber:
-        description: Is part of the corpus cerebelli and the valvula cerebelli. [auto-generated
-          from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2002185)]
       piriform cortex layer 1a:
         description: Is a central nervous system cell part cluster and nervous system
           cell part layer. Is part of the piriform cortex layer 1. [auto-generated
@@ -1583,9 +1580,6 @@ enums:
       anterior nucleus of hypothalamus:
         description: Is a preoptic nucleus. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002634)]
-      mossy fiber:
-        description: Is part of the corpus cerebelli and the valvula cerebelli. [auto-generated
-          from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2002210)]
       tuberomammillary nucleus:
         description: Is a hypothalamic nucleus. Is part of the mammillary body and
           the lateral hypothalamic area. [auto-generated from properties of the [UBERON
@@ -6049,9 +6043,6 @@ enums:
         description: Is a rhombomere roof plate. Is part of the rhombomere 3. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005575)
           ('is_a' and 'relationship')]
-      internal cellular layer:
-        description: Is part of the olfactory bulb. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000573)]
       bed nucleus of the accessory olfactory tract:
         description: Is a telencephalic nucleus. Is part of the medial amygdaloid
           nucleus. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035977)
@@ -8326,9 +8317,6 @@ enums:
         description: Is a layer of CA2 field. Is part of the hippocampus alveus. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035802)
           ('is_a' and 'relationship')]
-      external cellular layer:
-        description: Is part of the olfactory bulb. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000352)]
       paraventricular nucleus of the hypothalamus parvicellular division:
         description: Is a regional part of brain. Is part of the paraventricular nucleus
           of hypothalamus. [auto-generated from properties of the [UBERON ontology
