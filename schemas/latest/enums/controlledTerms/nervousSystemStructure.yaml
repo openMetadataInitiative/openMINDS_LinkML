@@ -302,9 +302,6 @@ enums:
       anterior subcentral sulcus:
         description: Is a subarachnoid sulcus and frontal sulcus. [auto-generated
           from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002672)]
-      filum terminale internum:
-        description: Is part of the filum terminale. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010269)]
       third ventricle:
         description: Is a brain ventricle. Is part of the diencephalon. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002286)
@@ -450,10 +447,6 @@ enums:
           Is part of the medullary reticular formation. [auto-generated from properties
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004166)
           ('is_a' and 'relationship')]
-      third ventricle choroid plexus epithelium:
-        description: Is a choroid plexus epithelium. Is part of the choroid plexus
-          of third ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0004275) ('is_a' and 'relationship')]
       layer of CA3 field:
         description: Is a layer of hippocampus. Is part of the CA3 field of hippocampus.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035788)
@@ -505,9 +498,6 @@ enums:
         description: Is a spinal cord lateral horn. Is part of the sacral spinal cord
           gray matter. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0029538)
           ('is_a' and 'relationship')]
-      statoacoustic epithelium:
-        description: Is a sensory epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009969)]
       cervical spinal cord dorsal horn:
         description: Is a dorsal horn of spinal cord. Is part of the cervical spinal
           cord. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014620)
@@ -737,10 +727,6 @@ enums:
         description: Is a diencephalic nucleus and pretectal nucleus. Is part of the
           synencephalon. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035569)
           ('is_a' and 'relationship')]
-      fourth ventricle ependyma:
-        description: Is a brain ependyma. Is part of the fourth ventricle. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004644)
-          ('is_a' and 'relationship')]
       sub-lobar region:
         description: Is a lobe of cerebral hemisphere. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0023255)]
@@ -883,9 +869,6 @@ enums:
       cerebellum lobule:
         description: Is a regional part of cerebellar cortex. [auto-generated from
           'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004004)]
-      filum terminale:
-        description: Is part of the spinal cord. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005443)]
       arthropod sensillum:
         description: Is an anatomical entity. Is part of the nervous system. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002536)
@@ -1281,10 +1264,6 @@ enums:
       thoracic dorsal root ganglion:
         description: Is a dorsal root ganglion and thoracic ganglion. [auto-generated
           from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002835)]
-      spinal cord ependyma:
-        description: Is an ependyma. Is part of the central canal of spinal cord.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005359)
-          ('is_a' and 'relationship')]
       frontal cortex:
         description: Is a cortex of cerebral lobe. Is part of the frontal lobe. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001870)
@@ -1486,9 +1465,6 @@ enums:
         description: Is a sulcus of brain. Is part of the arcuate sulcus. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0026382)
           ('is_a' and 'relationship')]
-      filum terminale externum:
-        description: Is part of the filum terminale. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010270)]
       nucleus of medial eminence:
         description: Is a nucleus of brain. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002997)]
@@ -1768,9 +1744,6 @@ enums:
       cardiac baroreceptor:
         description: Is a low-pressure baroreceptor. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0018395)]
-      vestibular epithelium:
-        description: Is a sensory epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006932)]
       granular layer valvula cerebelli:
         description: Is part of the valvula cerebelli. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000766)]
@@ -1928,10 +1901,6 @@ enums:
       dorsal ventricular ridge of pallium:
         description: Is a regional part of brain. Is part of the pallium. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014733)
-          ('is_a' and 'relationship')]
-      lateral ventricle ependyma:
-        description: Is a brain ependyma. Is part of the telencephalic ventricle.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004643)
           ('is_a' and 'relationship')]
       diencephalon dura mater:
         description: Is a meninx of diencephalon and forebrain dura mater. [auto-generated
@@ -2430,10 +2399,6 @@ enums:
       root of sacral nerve:
         description: Is a spinal nerve root. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009633)]
-      sensory epithelium:
-        description: Is an anatomical entity. Is part of the peripheral nervous system.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006934)
-          ('is_a' and 'relationship')]
       posterior subcentral sulcus:
         description: Is a sulcus of brain. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002909)]
@@ -2594,9 +2559,6 @@ enums:
         description: Is a neuropil. Is part of the cerebral cortex. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0013693)
           ('is_a' and 'relationship')]
-      crus commune epithelium:
-        description: Is a vestibular epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005657)]
       hippocampus fimbria:
         description: Is a central nervous system cell part cluster. Is part of the
           fornix of brain, the Ammon's horn and the white matter of telencephalon.
@@ -2775,11 +2737,6 @@ enums:
       interoceptor:
         description: Is a sensory receptor. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0018389)]
-      epithelium of utricle:
-        description: Is a vestibular epithelium. Is part of the macula of utricle
-          of membranous labyrinth. [auto-generated from properties of the [UBERON
-          ontology term](http://purl.obolibrary.org/obo/UBERON_0003241) ('is_a' and
-          'relationship')]
       secondary gustatory tract:
         description: Is a white matter of medulla oblongata. [auto-generated from
           'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000430)]
@@ -3110,9 +3067,6 @@ enums:
         description: Is a segmental subdivision of nervous system. Is part of the
           hindbrain. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004733)
           ('is_a' and 'relationship')]
-      epithelium of ductus reuniens:
-        description: Is a vestibular epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003363)]
       sulcus ypsiloniformis:
         description: Is part of the pallium. [auto-generated from 'relationship' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000589)]
@@ -3203,9 +3157,6 @@ enums:
         description: Is a tela choroidea. Is part of the fourth ventricle. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005287)
           ('is_a' and 'relationship')]
-      germinal neuroepithelium:
-        description: Is a proliferating neuroepithelium. [auto-generated from 'is_a'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004022)]
       stratum fibrosum et griseum superficiale:
         description: Is part of the superior colliculus. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2001347)]
@@ -3363,17 +3314,10 @@ enums:
           Is part of the midbrain tegmentum and the reticular formation. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002639)
           ('is_a' and 'relationship')]
-      gustatory epithelium of tongue:
-        description: Is a gustatory epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014452)]
       cerebellum vermis lobule VI:
         description: Is a cerebellum vermis lobule. Is part of the cerebellum posterior
           vermis. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004080)
           ('is_a' and 'relationship')]
-      lateral ventricle subependymal layer:
-        description: Is part of the telencephalic ventricle and the postnatal subventricular
-          zone. [auto-generated from 'relationship' property of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0010404)]
       rostral intralaminar nuclear group:
         description: Is a nucleus of dorsal thalamus. Is part of the intralaminar
           nuclear group. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002965)
@@ -3450,9 +3394,6 @@ enums:
       ventral nerve root of sacral spinal cord:
         description: Is a root of sacral nerve. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0023623)]
-      proliferating neuroepithelium:
-        description: Is a developing neuroepithelium. [auto-generated from 'is_a'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034706)]
       inferior olive dorsal accessory nucleus:
         description: Is an inferior olivary nucleus. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0013608)]
@@ -3840,9 +3781,6 @@ enums:
       olivary body:
         description: Is part of the medulla oblongata. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000128)]
-      differentiating neuroepithelium:
-        description: Is a developing neuroepithelium. [auto-generated from 'is_a'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034707)]
       spinal cord commissure:
         description: Is a nervous system commissure and tract of spinal cord. [auto-generated
           from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0008882)]
@@ -3902,10 +3840,6 @@ enums:
       thermoreceptor:
         description: Is a sensory receptor. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035018)]
-      epithelium of saccule:
-        description: Is a vestibular epithelium. Is part of the saccule of membranous
-          labyrinth. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003242)
-          ('is_a' and 'relationship')]
       fasciculus of brain:
         description: Is a nerve fasciculus and central nervous system cell part cluster.
           Is part of the brain and the white matter. [auto-generated from properties
@@ -4366,10 +4300,6 @@ enums:
       ventromedial nucleus of hypothalamus:
         description: Is a hypothalamic nucleus. Is part of the intermediate hypothalamic
           region. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001935)
-          ('is_a' and 'relationship')]
-      future hindbrain meninx:
-        description: Is a future meninx. Is part of the hindbrain. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010091)
           ('is_a' and 'relationship')]
       occipital cortex:
         description: Is a cortex of cerebral lobe. Is part of the occipital lobe.
@@ -5108,9 +5038,6 @@ enums:
         description: Is a tract of diencephalon. Is part of the posterior hypothalamic
           region. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002723)
           ('is_a' and 'relationship')]
-      endothelial blood brain barrier:
-        description: Is a blood brain barrier. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000201)]
       orbital part of inferior frontal gyrus:
         description: Is a frontal gyrus. Is part of the inferior frontal gyrus. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002624)
@@ -5160,10 +5087,6 @@ enums:
         description: Is a nuclear complex of neuraxis and gray matter of midbrain.
           Is part of the oculomotor nuclear complex. [auto-generated from properties
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014523)
-          ('is_a' and 'relationship')]
-      third ventricle ependyma:
-        description: Is a brain ependyma. Is part of the third ventricle. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004642)
           ('is_a' and 'relationship')]
       ventral nerve root of lumbar spinal cord:
         description: Is a root of lumbar spinal nerve. [auto-generated from 'is_a'
@@ -5441,10 +5364,6 @@ enums:
       macula neglecta:
         description: Is part of the otolith organ. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000234)]
-      developing neuroepithelium:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034705)
-          ('is_a' and 'relationship')]
       early mesencephalic vesicle:
         description: Is a future brain vesicle. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0013147)]
@@ -5686,10 +5605,6 @@ enums:
       rhombomere 8:
         description: Is a rhombomere. [auto-generated from 'is_a' property of the
           [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005527)]
-      lateral ventricle choroid plexus epithelium:
-        description: Is a choroid plexus epithelium. Is part of the choroid plexus
-          of lateral ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0004274) ('is_a' and 'relationship')]
       stratum lacunosum-moleculare of caudal CA1:
         description: Is a layer of hippocampal field. Is part of the hippocampus stratum
           lacunosum moleculare and the caudal CA1. [auto-generated from properties
@@ -6442,10 +6357,6 @@ enums:
         description: Is a brainstem nucleus and midbrain nucleus. Is part of the ventral
           tegmental area. [auto-generated from properties of the [UBERON ontology
           term](http://purl.obolibrary.org/obo/UBERON_0014646) ('is_a' and 'relationship')]
-      olfactory epithelium:
-        description: Is a sensory epithelium. Is part of the somatic nervous system.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001997)
-          ('is_a' and 'relationship')]
       future spinal cord:
         description: Is part of the central nervous system. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006241)]
@@ -6800,10 +6711,6 @@ enums:
       perifoveal part of retina:
         description: Is part of the macula lutea. [auto-generated from 'relationship'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0018105)]
-      blood brain barrier:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000120)
-          ('is_a' and 'relationship')]
       interthalamic adhesion:
         description: Is a nervous system commissure. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006681)]
@@ -6909,9 +6816,6 @@ enums:
           sublaminar layers S1 or S2 or S5, sublaminar layers S1 or S2 or S3, sublaminar
           layers S2 or S3 or S4 and sublaminar layers S1 or S2 or S3 or S4. [auto-generated
           from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0008923)]
-      glial blood brain barrier:
-        description: Is a blood brain barrier. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000202)]
       sensory nerve:
         description: Is a nerve. [auto-generated from 'is_a' property of the [UBERON
           ontology term](http://purl.obolibrary.org/obo/UBERON_0001027)]
@@ -6953,9 +6857,6 @@ enums:
         description: Is a parasympathetic ganglion. Is part of the enteric nervous
           system. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001809)
           ('is_a' and 'relationship')]
-      crista ampullaris neuroepithelium:
-        description: Is a vestibular epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006935)]
       posterior parahippocampal white matter:
         description: Is a white matter of temporal lobe and white matter of limbic
           lobe. Is part of the posterior parahippocampal gyrus. [auto-generated from
@@ -7385,10 +7286,6 @@ enums:
           hemisphere and the spinocerebellum. [auto-generated from properties of the
           [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004006) ('is_a'
           and 'relationship')]
-      gustatory epithelium:
-        description: Is a sensory epithelium. Is part of the somatic nervous system.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002926)
-          ('is_a' and 'relationship')]
       Ruffini nerve ending:
         description: Is a mechanoreceptor. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0012457)]
@@ -7733,10 +7630,6 @@ enums:
           of the hypothalamus descending division. [auto-generated from properties
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014598)
           ('is_a' and 'relationship')]
-      brain ependyma:
-        description: Is an ependyma. Is part of the brain ventricle. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005357)
-          ('is_a' and 'relationship')]
       vestibulocerebellum:
         description: Is a regional part of brain. Is part of the cerebellum. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014642)
@@ -8022,9 +7915,6 @@ enums:
         description: Is a limbic lobe. Is part of the left cerebral hemisphere. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002804)
           ('is_a' and 'relationship')]
-      choroid plexus epithelium:
-        description: Is part of the choroid plexus. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003911)]
       paravermic lobule VIII:
         description: Is a paravermis lobule area. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0028925)]
@@ -8054,10 +7944,6 @@ enums:
       photoreceptor outer segment layer:
         description: Is a layer of retina. Is part of the photoreceptor layer of retina.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003926)
-          ('is_a' and 'relationship')]
-      blood nerve barrier:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003209)
           ('is_a' and 'relationship')]
       future facial nucleus:
         description: Is a gray matter. [auto-generated from 'is_a' property of the
@@ -8529,9 +8415,6 @@ enums:
         description: Is a nerve trunk. Is part of the vagus nerve. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003535)
           ('is_a' and 'relationship')]
-      gustatory epithelium of palate:
-        description: Is a gustatory epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014453)]
       postcentral fissure of cerebellum:
         description: Is a cerebellum fissure. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014474)]
@@ -8844,9 +8727,6 @@ enums:
         description: Is a cortical layer II. Is part of the dorsolateral prefrontal
           cortex. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035154)
           ('is_a' and 'relationship')]
-      ependyma:
-        description: Is part of the ventricle of nervous system. [auto-generated from
-          'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004670)]
       rhombomere 5 floor plate:
         description: Is a rhombomere floor plate. Is part of the rhombomere 5. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005579)
@@ -9185,9 +9065,6 @@ enums:
       vagal placode 4:
         description: Is an epibranchial placode. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2001300)]
-      blood-cerebrospinal fluid barrier:
-        description: Is part of the choroid plexus. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003210)]
       layer of neocortex:
         description: Is a central nervous system cell part cluster and nervous system
           cell part layer. Is part of the neocortex. [auto-generated from properties
@@ -9321,10 +9198,6 @@ enums:
           the brainstem white matter. [auto-generated from properties of the [UBERON
           ontology term](http://purl.obolibrary.org/obo/UBERON_0015250) ('is_a' and
           'relationship')]
-      fourth ventricle choroid plexus epithelium:
-        description: Is a choroid plexus epithelium. Is part of the choroid plexus
-          of fourth ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0004276) ('is_a' and 'relationship')]
       accessory ciliary ganglion:
         description: Is a ganglion of ciliary nerve. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035776)]

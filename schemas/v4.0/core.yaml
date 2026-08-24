@@ -632,9 +632,6 @@ classes:
         range: ActionStatusType
       license:
         required: true
-        any_of:
-        - range: License
-        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:
@@ -674,10 +671,6 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -686,14 +679,6 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - SubjectGroupState:
     class_uri: https://openminds.om-i.org/types/SubjectGroupState
     description: null
@@ -712,10 +697,6 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -724,14 +705,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - NumericalProperty:
     class_uri: https://openminds.om-i.org/types/NumericalProperty
     description: Structured information about a property of some entity or process
@@ -875,6 +848,9 @@ classes:
         range: SubjectGroup
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -940,24 +916,12 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - SubjectGroup:
     class_uri: https://openminds.om-i.org/types/SubjectGroup
     description: null
@@ -1051,6 +1015,9 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1099,24 +1066,12 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
-      age:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      weight:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - File:
     class_uri: https://openminds.om-i.org/types/File
     description: Structured information on a file instance that is accessible via

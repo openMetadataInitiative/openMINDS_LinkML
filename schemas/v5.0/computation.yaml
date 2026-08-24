@@ -152,10 +152,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -216,10 +212,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -311,10 +303,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -374,10 +362,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -457,10 +441,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -716,10 +696,6 @@ classes:
       stage:
         required: true
         range: DataAnalysis
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
 - DataAnalysis:
     class_uri: https://openminds.om-i.org/types/DataAnalysis
     description: Structured information on inspecting, cleansing, transforming, and
@@ -767,10 +743,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -832,10 +804,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
