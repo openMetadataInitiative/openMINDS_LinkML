@@ -51,6 +51,9 @@ classes:
         required: true
       provider:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - ChemicalSubstance:
     class_uri: https://openminds.om-i.org/types/ChemicalSubstance
     description: Structured information about a chemical substance.
