@@ -33,10 +33,6 @@ enums:
           the habenulo-interpeduncular tract and the white matter of midbrain. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0023740)
           ('is_a' and 'relationship')]
-      third ventricle choroid plexus stroma:
-        description: Is a choroid plexus stroma. Is part of the choroid plexus of
-          third ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0006339) ('is_a' and 'relationship')]
       superior thalamic peduncle:
         description: Is a peduncle of thalamus. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0022241)]
@@ -576,9 +572,6 @@ enums:
         description: Is a hypothalamic nucleus. Is part of the mammillary body. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001940)
           ('is_a' and 'relationship')]
-      crista of ampulla of posterior semicircular duct of membranous laybrinth:
-        description: Is a crista ampullaris neuroepithelium. [auto-generated from
-          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007275)]
       vagal lobe:
         description: Is a nucleus of medulla oblongata. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000297)]
@@ -611,9 +604,6 @@ enums:
       subcallosal fasciculus:
         description: Is an occipitofrontal fasciculus. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0022250)]
-      fourth ventricle median aperture:
-        description: Is a fourth ventricle aperture. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003991)]
       midbrain basal plate:
         description: Is a gray matter. Is part of the midbrain mantle layer. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010285)
@@ -1136,10 +1126,6 @@ enums:
         description: Is a regional part of brain. Is part of the valvula cerebelli.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000532)
           ('is_a' and 'relationship')]
-      lateral ventricle choroid plexus stroma:
-        description: Is a choroid plexus stroma. Is part of the choroid plexus of
-          lateral ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0006338) ('is_a' and 'relationship')]
       collar nerve cord:
         description: Is a primary nerve cord. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035602)]
@@ -1253,9 +1239,6 @@ enums:
         description: Is a matrix compartment of caudate nucleus. Is part of the tail
           of caudate nucleus. [auto-generated from properties of the [UBERON ontology
           term](http://purl.obolibrary.org/obo/UBERON_0027246) ('is_a' and 'relationship')]
-      brain endothelium:
-        description: Is part of the brain. [auto-generated from 'relationship' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0013694)]
       laryngeal nerve:
         description: Is a nerve. [auto-generated from 'is_a' property of the [UBERON
           ontology term](http://purl.obolibrary.org/obo/UBERON_0035642)]
@@ -1332,16 +1315,9 @@ enums:
       subserosal plexus:
         description: Is an enteric plexus. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0012374)]
-      telencephalic part of interventricular foramen:
-        description: Is part of the telencephalic ventricle and the interventricular
-          foramen of CNS. [auto-generated from 'relationship' property of the [UBERON
-          ontology term](http://purl.obolibrary.org/obo/UBERON_0006301)]
       midbrain neuromere:
         description: Is a neuromere. [auto-generated from 'is_a' property of the [UBERON
           ontology term](http://purl.obolibrary.org/obo/UBERON_0014776)]
-      choroid plexus stroma:
-        description: Is part of the choroid plexus. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005206)]
       A9 dopaminergic cell group:
         description: Is a dopaminergic cell groups. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0036003)]
@@ -1447,9 +1423,6 @@ enums:
       nucleus recessus lateralis:
         description: Is a nucleus recessus. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014663)]
-      crista of ampulla of lateral semicircular duct of membranous laybrinth:
-        description: Is a crista ampullaris neuroepithelium. [auto-generated from
-          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007276)]
       third lumbar spinal cord segment:
         description: Is a lumbar subsegment of spinal cord. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006449)]
@@ -1595,9 +1568,6 @@ enums:
         description: Is a nerve of head region. Is part of the oculomotor nerve. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0015161)
           ('is_a' and 'relationship')]
-      interventricular foramen of CNS:
-        description: Is part of the ventricular system of central nervous system.
-          [auto-generated from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003993)]
       caudal motor nucleus of abducens:
         description: Is a brainstem nucleus and hindbrain nucleus. Is part of the
           abducens nucleus. [auto-generated from properties of the [UBERON ontology
@@ -1639,10 +1609,6 @@ enums:
       medial spiriform nucleus:
         description: Is a pretectal nucleus. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035592)]
-      arachnoid barrier layer:
-        description: Is part of the endothelial blood brain barrier and the arachnoid
-          mater. [auto-generated from 'relationship' property of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0000437)]
       superior frontal gyrus:
         description: Is a frontal gyrus. [auto-generated from 'is_a' property of the
           [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002661)]
@@ -1793,9 +1759,6 @@ enums:
         description: Is a neural decussation. Is part of the ventral tegmental area.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002615)
           ('is_a' and 'relationship')]
-      gustatory pore:
-        description: Is part of the taste bud. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007691)]
       abdominal ganglion:
         description: Is a trunk ganglion. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009758)]
@@ -2091,10 +2054,6 @@ enums:
       inferior occipitofrontal fasciculus:
         description: Is an occipitofrontal fasciculus. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034753)]
-      choroid plexus corpora arenacea:
-        description: Is a calcified structure of brain. Is part of the choroid plexus.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0017633)
-          ('is_a' and 'relationship')]
       allocortex:
         description: Is a regional part of brain. Is part of the cerebral cortex.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014734)
@@ -2855,9 +2814,6 @@ enums:
         description: Is a nucleus of dorsal thalamus. Is part of the medial geniculate
           body. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002759)
           ('is_a' and 'relationship')]
-      fourth ventricle aperture:
-        description: Is part of the fourth ventricle. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004668)]
       trunk taste bud:
         description: Is an integumental taste bud. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034726)]
@@ -2895,11 +2851,6 @@ enums:
       white matter of the cerebellar cortex:
         description: Is a white matter of metencephalon. Is part of the cerebellar
           cortex. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0024045)
-          ('is_a' and 'relationship')]
-      choroid plexus:
-        description: Is a brain ventricle/choroid plexus and vasculature of central
-          nervous system. Is part of the brain ventricle and the tela choroidea. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001886)
           ('is_a' and 'relationship')]
       spinal cord ventral commissure:
         description: Is a spinal cord white commissure. [auto-generated from 'is_a'
@@ -3490,9 +3441,6 @@ enums:
       thoracic cavity nerve:
         description: Is a nerve. [auto-generated from 'is_a' property of the [UBERON
           ontology term](http://purl.obolibrary.org/obo/UBERON_0003443)]
-      pars distalis of adenohypophysis:
-        description: Is part of the adenohypophysis. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006964)]
       medial motor nucleus of vagal nerve:
         description: Is a vagal lobe. [auto-generated from 'is_a' property of the
           [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2002207)]
@@ -3732,10 +3680,6 @@ enums:
       outer nuclear layer of retina:
         description: Is a layer of retina. Is part of the retinal neural layer. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001789)
-          ('is_a' and 'relationship')]
-      choroid plexus vascular circuit:
-        description: Is a vasculature of brain. Is part of the choroid plexus. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005219)
           ('is_a' and 'relationship')]
       submandibular ganglion:
         description: Is a parasympathetic ganglion. [auto-generated from 'is_a' property
@@ -4924,10 +4868,6 @@ enums:
         description: Is a telencephalic nucleus. Is part of the bed nucleus of stria
           terminalis. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034895)
           ('is_a' and 'relationship')]
-      cavum septum pellucidum:
-        description: Is an anatomical entity. Is part of the septum pellucidum. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009857)
-          ('is_a' and 'relationship')]
       olfactory glomerulus:
         description: Is a neural glomerulus. Is part of the olfactory bulb glomerular
           layer. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005387)
@@ -5737,9 +5677,6 @@ enums:
       macula of utricle of membranous labyrinth:
         description: Is part of the utricle of membranous labyrinth. [auto-generated
           from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002214)]
-      retinal tapetum lucidum:
-        description: Is part of the retina. [auto-generated from 'relationship' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010245)]
       cerebral cortex subventricular zone:
         description: Is a layer of developing cerebral cortex. [auto-generated from
           'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014940)]
@@ -5995,10 +5932,6 @@ enums:
       cardiac ganglion:
         description: Is a parasympathetic ganglion. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014463)]
-      fourth ventricle choroid plexus stroma:
-        description: Is a choroid plexus stroma. Is part of the choroid plexus of
-          fourth ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0006340) ('is_a' and 'relationship')]
       dentate gyrus of hippocampal formation:
         description: Is a regional part of brain. Is part of the hippocampal formation.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001885)
@@ -6450,10 +6383,6 @@ enums:
       occipital lobe:
         description: Is a lobe of cerebral hemisphere. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002021)]
-      trans-choroid plexus branch:
-        description: Is a brain blood vessel. Is part of the choroid plexus vascular
-          circuit. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2005248)
-          ('is_a' and 'relationship')]
       white matter of superior colliculus:
         description: Is a layer of superior colliculus and central nervous system
           white matter layer. [auto-generated from 'is_a' property of the [UBERON
@@ -6776,10 +6705,6 @@ enums:
       glossopharyngeal nerve:
         description: Is a cranial nerve. [auto-generated from 'is_a' property of the
           [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001649)]
-      ampulla caudalis:
-        description: Is an anatomical entity. Is part of the central canal of spinal
-          cord. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0011360)
-          ('is_a' and 'relationship')]
       ventral nerve root of cervical spinal cord:
         description: Is a ventral root of spinal cord and root of cervical nerve.
           [auto-generated from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014634)]
@@ -7031,10 +6956,6 @@ enums:
       crista ampullaris neuroepithelium:
         description: Is a vestibular epithelium. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006935)]
-      diencephalic part of interventricular foramen:
-        description: Is part of the third ventricle and the interventricular foramen
-          of CNS. [auto-generated from 'relationship' property of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0006220)]
       posterior parahippocampal white matter:
         description: Is a white matter of temporal lobe and white matter of limbic
           lobe. Is part of the posterior parahippocampal gyrus. [auto-generated from
@@ -7330,9 +7251,6 @@ enums:
         description: Is a nerve of head region. Is part of the glossopharyngeal nerve.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0036216)
           ('is_a' and 'relationship')]
-      crista of ampulla of anterior semicircular duct of membranous laybrinth:
-        description: Is a crista ampullaris neuroepithelium. [auto-generated from
-          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007274)]
       suprachiasmatic nucleus ventrolateral part:
         description: Is a regional part of brain. Is part of the suprachiasmatic nucleus.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0027771)
@@ -7414,10 +7332,6 @@ enums:
       intermediate nucleus of lateral lemniscus:
         description: Is a nucleus of lateral lemniscus. [auto-generated from 'is_a'
           property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007710)]
-      choroid plexus of fourth ventricle:
-        description: Is a choroid plexus and cerebellum vasculature. Is part of the
-          fourth ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0002290) ('is_a' and 'relationship')]
       profundal part of trigeminal ganglion complex:
         description: Is a cranial ganglion. Is part of the trigeminal ganglion. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035599)
@@ -7500,10 +7414,6 @@ enums:
       magnocellular superficial pretectal nucleus:
         description: Is a diencephalic nucleus and superficial pretectal nucleus.
           [auto-generated from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0035563)]
-      choroid plexus of lateral ventricle:
-        description: Is a choroid plexus. Is part of the telencephalic ventricle.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002307)
-          ('is_a' and 'relationship')]
       meninx of spinal cord:
         description: Is a meninx. Is part of the spinal cord. [auto-generated from
           properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003292)
@@ -8579,10 +8489,6 @@ enums:
       fourth thoracic spinal cord segment:
         description: Is a thoracic subsegment of spinal cord. [auto-generated from
           'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006452)]
-      neural tissue:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003714)
-          ('is_a' and 'relationship')]
       hypothalamic nucleus:
         description: Is a diencephalic nucleus. Is part of the hypothalamus. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006568)
@@ -8684,10 +8590,6 @@ enums:
       posterior amygdaloid nucleus:
         description: Is a telencephalic nucleus. Is part of the amygdala. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0022229)
-          ('is_a' and 'relationship')]
-      choroid plexus of tectal ventricle:
-        description: Is a choroid plexus. Is part of the midbrain cerebral aqueduct.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007299)
           ('is_a' and 'relationship')]
       lateral inferior limiting sulcus:
         description: Is a subarachnoid sulcus. [auto-generated from 'is_a' property
@@ -8912,10 +8814,6 @@ enums:
       superior raphe nucleus:
         description: Is a brainstem nucleus and hindbrain nucleus. Is part of the
           raphe nuclei. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_2000440)
-          ('is_a' and 'relationship')]
-      choroid plexus of third ventricle:
-        description: Is a choroid plexus. Is part of the third ventricle. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002288)
           ('is_a' and 'relationship')]
       white matter of limbic lobe:
         description: Is a white matter of cerebral lobe. Is part of the limbic lobe.
@@ -9145,10 +9043,6 @@ enums:
       rhombomere 10:
         description: Is a rhombomere. [auto-generated from 'is_a' property of the
           [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0019285)]
-      endoneurial fluid:
-        description: Is an anatomical entity. Is part of the endoneurium. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0011893)
-          ('is_a' and 'relationship')]
       subparietal sulcus:
         description: Is a sulcus of brain. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002908)]
@@ -9161,10 +9055,6 @@ enums:
           Is part of the olivary body. [auto-generated from properties of the [UBERON
           ontology term](http://purl.obolibrary.org/obo/UBERON_0002127) ('is_a' and
           'relationship')]
-      lumen of central nervous system:
-        description: Is an anatomical entity. Is part of the central nervous system.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002561)
-          ('is_a' and 'relationship')]
       olfactory sulcus:
         description: Is a sulcus of brain. [auto-generated from 'is_a' property of
           the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002772)]
@@ -9352,9 +9242,6 @@ enums:
       postlateral sulcus:
         description: Is a subarachnoid sulcus. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0013595)]
-      fourth ventricle lateral aperture:
-        description: Is a fourth ventricle aperture. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003992)]
       rhombomere 8 lateral wall:
         description: Is a rhombomere lateral wall. Is part of the rhombomere 8. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005589)

@@ -16,6 +16,9 @@ enums:
       cistern of lamina terminalis:
         description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002897)]
+      fourth ventricle median aperture:
+        description: Is a fourth ventricle aperture. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003991)]
       infundibular recess of 3rd ventricle:
         description: Is part of the third ventricle and the future neurohypophysis.
           [auto-generated from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006250)]
@@ -23,6 +26,10 @@ enums:
         description: Is an anatomical entity. Is part of the adenohypophysis. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009975)
           ('is_a' and 'relationship')]
+      telencephalic part of interventricular foramen:
+        description: Is part of the telencephalic ventricle and the interventricular
+          foramen of CNS. [auto-generated from 'relationship' property of the [UBERON
+          ontology term](http://purl.obolibrary.org/obo/UBERON_0006301)]
       hindbrain subarachnoid space:
         description: Is a subarachnoid space. Is part of the hindbrain. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005219)
@@ -30,6 +37,9 @@ enums:
       Sylvian cistern:
         description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0011155)]
+      interventricular foramen of CNS:
+        description: Is part of the ventricular system of central nervous system.
+          [auto-generated from 'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003993)]
       embryonic intraretinal space:
         description: Is an anatomical entity. Is part of the retina. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006253)
@@ -46,6 +56,9 @@ enums:
       chiasmatic cistern:
         description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002898)]
+      fourth ventricle aperture:
+        description: Is part of the fourth ventricle. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004668)]
       lateral recess of third vetricle:
         description: Is an anatomical entity. Is part of the third ventricle. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0008902)
@@ -61,6 +74,10 @@ enums:
       cerebellomedullary cistern:
         description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004049)]
+      cavum septum pellucidum:
+        description: Is an anatomical entity. Is part of the septum pellucidum. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009857)
+          ('is_a' and 'relationship')]
       basal cistern:
         description: Is a subarachnoid cistern. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004047)]
@@ -85,6 +102,14 @@ enums:
       cervical division of cord spinal central canal:
         description: Is a subdivision of spinal cord central canal. [auto-generated
           from 'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014542)]
+      ampulla caudalis:
+        description: Is an anatomical entity. Is part of the central canal of spinal
+          cord. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0011360)
+          ('is_a' and 'relationship')]
+      diencephalic part of interventricular foramen:
+        description: Is part of the third ventricle and the interventricular foramen
+          of CNS. [auto-generated from 'relationship' property of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0006220)]
       pontine cistern:
         description: Is a subarachnoid cistern and hindbrain subarachnoid space. Is
           part of the pons. [auto-generated from properties of the [UBERON ontology
@@ -122,3 +147,10 @@ enums:
         description: Is part of the spinal cord and the ventricular system of central
           nervous system. [auto-generated from 'relationship' property of the [UBERON
           ontology term](http://purl.obolibrary.org/obo/UBERON_0002291)]
+      lumen of central nervous system:
+        description: Is an anatomical entity. Is part of the central nervous system.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002561)
+          ('is_a' and 'relationship')]
+      fourth ventricle lateral aperture:
+        description: Is a fourth ventricle aperture. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003992)]

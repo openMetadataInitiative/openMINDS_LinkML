@@ -51,8 +51,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValue
     - range: QuantitativeValueRange
+    - range: QuantitativeValue
     inlined: true
   ageCategory:
     slot_uri: ageCategory
@@ -294,11 +294,11 @@ slots:
     description: Digital handle to identify objects or legal persons.
     any_of:
     - range: DOI
-    - range: DigitalIdentifier
-    - range: SWHID
     - range: RORID
     - range: ORCID
     - range: GRIDID
+    - range: DigitalIdentifier
+    - range: SWHID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -575,10 +575,10 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: TissueSampleCollection
-    - range: DatasetVersion
-    - range: SubjectGroup
     - range: FileRepository
+    - range: TissueSampleCollection
+    - range: SubjectGroup
+    - range: DatasetVersion
     - range: FileBundle
     multivalued: true
     list_elements_unique: true
@@ -787,8 +787,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValue
     - range: QuantitativeValueRange
+    - range: QuantitativeValue
     inlined: true
   quantity:
     slot_uri: quantity
@@ -842,8 +842,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: BehavioralTask
     - range: Technique
+    - range: BehavioralTask
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -965,8 +965,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: uri
     - range: string
+    - range: uri
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -1016,10 +1016,10 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: float
     - range: QuantitativeValueRange
-    - range: string
+    - range: float
     - range: QuantitativeValue
+    - range: string
     - range: integer
     multivalued: true
     inlined: true
@@ -1056,8 +1056,8 @@ slots:
     slot_uri: weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValue
     - range: QuantitativeValueRange
+    - range: QuantitativeValue
     inlined: true
   year:
     slot_uri: year

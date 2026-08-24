@@ -115,6 +115,14 @@ classes:
         range: File
       repetitionTime:
         required: true
+      sliceGap:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      sliceThickness:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       sliceTiming:
         required: true
       usedCoils:

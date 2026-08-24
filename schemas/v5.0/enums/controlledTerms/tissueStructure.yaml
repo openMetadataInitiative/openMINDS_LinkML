@@ -13,6 +13,46 @@ enums:
     enum_uri: https://openminds.om-i.org/types/TissueStructure
     title: Tissue structure
     permissible_values:
+      third ventricle choroid plexus stroma:
+        description: Is a choroid plexus stroma. Is part of the choroid plexus of
+          third ventricle. [auto-generated from properties of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0006339) ('is_a' and 'relationship')]
       dura mater:
         description: Is a meninx. [auto-generated from 'is_a' property of the [UBERON
           ontology term](http://purl.obolibrary.org/obo/UBERON_0002363)]
+      crista of ampulla of posterior semicircular duct of membranous laybrinth:
+        description: Is a crista ampullaris neuroepithelium. [auto-generated from
+          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007275)]
+      lateral ventricle choroid plexus stroma:
+        description: Is a choroid plexus stroma. Is part of the choroid plexus of
+          lateral ventricle. [auto-generated from properties of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0006338) ('is_a' and 'relationship')]
+      brain endothelium:
+        description: Is part of the brain. [auto-generated from 'relationship' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0013694)]
+      choroid plexus stroma:
+        description: Is part of the choroid plexus. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005206)]
+      crista of ampulla of lateral semicircular duct of membranous laybrinth:
+        description: Is a crista ampullaris neuroepithelium. [auto-generated from
+          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007276)]
+      gustatory pore:
+        description: Is part of the taste bud. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007691)]
+      pars distalis of adenohypophysis:
+        description: Is part of the adenohypophysis. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006964)]
+      retinal tapetum lucidum:
+        description: Is part of the retina. [auto-generated from 'relationship' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010245)]
+      fourth ventricle choroid plexus stroma:
+        description: Is a choroid plexus stroma. Is part of the choroid plexus of
+          fourth ventricle. [auto-generated from properties of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0006340) ('is_a' and 'relationship')]
+      crista of ampulla of anterior semicircular duct of membranous laybrinth:
+        description: Is a crista ampullaris neuroepithelium. [auto-generated from
+          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007274)]
+      neural tissue:
+        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003714)
+          ('is_a' and 'relationship')]
