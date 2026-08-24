@@ -231,8 +231,8 @@ slots:
     slot_uri: dataLocation
     description: null
     any_of:
-    - range: File
     - range: FileBundle
+    - range: File
   defaultImage:
     slot_uri: defaultImage
     description: Two or three dimensional image that particluarly represents a specific
@@ -293,12 +293,12 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: DOI
-    - range: RORID
-    - range: ORCID
-    - range: GRIDID
     - range: DigitalIdentifier
+    - range: ORCID
+    - range: DOI
     - range: SWHID
+    - range: GRIDID
+    - range: RORID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -384,8 +384,8 @@ slots:
       particular product.
     any_of:
     - range: DOI
-    - range: File
     - range: URL
+    - range: File
   fullName:
     slot_uri: fullName
     description: Whole, non-abbreviated name of something or somebody.
@@ -575,11 +575,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileRepository
-    - range: TissueSampleCollection
-    - range: SubjectGroup
-    - range: DatasetVersion
     - range: FileBundle
+    - range: FileRepository
+    - range: DatasetVersion
+    - range: SubjectGroup
+    - range: TissueSampleCollection
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -965,8 +965,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: string
     - range: uri
+    - range: string
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -1016,9 +1016,9 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: QuantitativeValueRange
-    - range: float
     - range: QuantitativeValue
+    - range: float
+    - range: QuantitativeValueRange
     - range: string
     - range: integer
     multivalued: true
