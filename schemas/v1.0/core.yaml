@@ -85,10 +85,6 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       homepage:
         range: URL
       isAlternativeVersionOf:
@@ -278,10 +274,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       homepage:
         range: URL
       inputData:
@@ -403,10 +395,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       homepage:
         range: URL
       isAlternativeVersionOf:
@@ -489,10 +477,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       homepage:
         range: URL
       inputData:
@@ -936,9 +920,6 @@ classes:
     slot_usage:
       dataLocation:
         required: true
-        any_of:
-        - range: File
-        - range: FileBundle
       openDataIn:
         required: true
       service:

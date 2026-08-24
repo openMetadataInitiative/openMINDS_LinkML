@@ -83,10 +83,6 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
@@ -270,10 +266,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       inputData:
@@ -392,10 +384,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
@@ -476,10 +464,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       funding:
         required: true
       inputData:
