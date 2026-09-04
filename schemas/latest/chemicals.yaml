@@ -46,10 +46,6 @@ classes:
     slot_usage:
       molecularEntity:
         required: true
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - ProductSource:
     class_uri: https://openminds.om-i.org/types/ProductSource
     description: Structured information about the source of a chemical substance or
@@ -72,10 +68,6 @@ classes:
         any_of:
         - range: Organization
         - range: Person
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - AmountOfChemical:
     class_uri: https://openminds.om-i.org/types/AmountOfChemical
     description: Structured information about the amount of a given chemical that

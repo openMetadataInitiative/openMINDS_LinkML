@@ -188,6 +188,9 @@ classes:
         required: true
       jurisdiction:
         required: true
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       modificationProfile:
         required: true
         range: ModificationConsentRequirement
@@ -582,6 +585,10 @@ classes:
         range: GenericIdentifier
       hasParent:
         range: Organization
+      jurisdiction:
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       location:
         range: Location
       name:
@@ -1007,10 +1014,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SubjectGroup:
@@ -1067,9 +1070,6 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1244,9 +1244,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -1339,10 +1336,6 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SpecimenAge:
@@ -1388,10 +1381,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - ProtocolExecution:
@@ -1465,10 +1454,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - NumericalProperty:
@@ -1582,6 +1567,9 @@ classes:
         - range: WebResource
       ethicsJurisdiction:
         required: true
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       experimentalApproach:
         required: true
       fullName:

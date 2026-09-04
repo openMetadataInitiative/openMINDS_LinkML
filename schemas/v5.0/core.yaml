@@ -188,6 +188,9 @@ classes:
         required: true
       jurisdiction:
         required: true
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       modificationProfile:
         required: true
         range: ModificationConsentRequirement
@@ -315,6 +318,19 @@ classes:
         range: Organization
       year:
         required: true
+- Channel:
+    class_uri: https://openminds.om-i.org/types/Channel
+    description: null
+    title: Channel
+    slots:
+    - id
+    - internalIdentifier
+    - unit
+    slot_usage:
+      internalIdentifier:
+        required: true
+      unit:
+        required: true
 - FileBundle:
     class_uri: https://openminds.om-i.org/types/FileBundle
     description: Structured information on a bundle of file instances.
@@ -379,6 +395,39 @@ classes:
       service:
         required: true
         range: Interface
+- RegularTimeSeries:
+    class_uri: https://openminds.om-i.org/types/RegularTimeSeries
+    description: null
+    title: Regular time series
+    slots:
+    - id
+    - additionalRemarks
+    - channel
+    - dataLocation
+    - internalIdentifier
+    - name
+    - obtainedWith
+    - previousRegularTimeSeries
+    - samplingFrequency
+    slot_usage:
+      channel:
+        required: true
+        range: Channel
+      dataLocation:
+        required: true
+        any_of:
+        - range: File
+        - range: FileBundle
+      obtainedWith:
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: MRICoilUsage
+        - range: MRIScannerUsage
+        - range: SlicingDeviceUsage
+      samplingFrequency:
+        required: true
 - FilePathPattern:
     class_uri: https://openminds.om-i.org/types/FilePathPattern
     description: null
@@ -404,6 +453,42 @@ classes:
       algorithm:
         required: true
       digest:
+        required: true
+- GridImageSequence:
+    class_uri: https://openminds.om-i.org/types/GridImageSequence
+    description: null
+    title: Grid image sequence
+    slots:
+    - id
+    - additionalRemarks
+    - coordinateFramework
+    - dataLocation
+    - dimension
+    - name
+    - numberOfImages
+    - obtainedWith
+    - pixelSize
+    - temporalSamplingFrequency
+    slot_usage:
+      dataLocation:
+        required: true
+        any_of:
+        - range: File
+        - range: FileBundle
+      dimension:
+        required: true
+        range: integer
+      obtainedWith:
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: MRICoilUsage
+        - range: MRIScannerUsage
+        - range: SlicingDeviceUsage
+      pixelSize:
+        required: true
+      temporalSamplingFrequency:
         required: true
 - Consortium:
     class_uri: https://openminds.om-i.org/types/Consortium
@@ -500,6 +585,10 @@ classes:
         range: GenericIdentifier
       hasParent:
         range: Organization
+      jurisdiction:
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       location:
         range: Location
       name:
@@ -689,6 +778,7 @@ classes:
     title: Accessibility
     slots:
     - id
+    - application
     - channel
     - eligibility
     - form
@@ -697,6 +787,7 @@ classes:
     slot_usage:
       channel:
         required: true
+        range: AccessChannel
       eligibility:
         required: true
       form:
@@ -923,10 +1014,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SubjectGroup:
@@ -983,9 +1070,6 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1160,9 +1244,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -1255,10 +1336,6 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SpecimenAge:
@@ -1304,10 +1381,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - ProtocolExecution:
@@ -1381,10 +1454,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - NumericalProperty:
@@ -1498,6 +1567,9 @@ classes:
         - range: WebResource
       ethicsJurisdiction:
         required: true
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       experimentalApproach:
         required: true
       fullName:
