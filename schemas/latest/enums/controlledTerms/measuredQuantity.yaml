@@ -13,24 +13,24 @@ enums:
     enum_uri: https://openminds.om-i.org/types/MeasuredQuantity
     title: Measured quantity
     permissible_values:
-      liquid junction potential:
-        description: A potential difference that develops when two solutions of electrolytes
-          of different concentrations are in contact with each other.
-      holding potential:
-        description: Measured membrane potential during a voltage-clamp protocol.
-      chloride reversal potential:
-        description: The reversal potential for chloride ions.
       membrane potential:
         description: A quality inhering in a cell's plasma membrane by virtue of the
           electric potential difference across it.
       seal resistance:
         description: Resistance of the seal between the pipette tip and cell membrane
           in patch-clamp recording.
-      compensation current:
-        description: Current injected into a cell to maintain the membrane potential
-          at a target value.
+      liquid junction potential:
+        description: A potential difference that develops when two solutions of electrolytes
+          of different concentrations are in contact with each other.
       input resistance:
         description: Total resistance observed by the amplifier during an electrophysiological
           recording.
+      compensation current:
+        description: Current injected into a cell to maintain the membrane potential
+          at a target value.
       series resistance:
         description: Resistance of the electrode during an electrophysiological recording.
+      holding potential:
+        description: Measured membrane potential during a voltage-clamp protocol.
+      chloride reversal potential:
+        description: The reversal potential for chloride ions.

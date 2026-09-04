@@ -32,6 +32,24 @@ classes:
       type:
         required: true
         range: ChemicalMixtureType
+- ChemicalSubstance:
+    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
+    description: Structured information about a chemical substance.
+    title: Chemical substance
+    slots:
+    - id
+    - additionalRemarks
+    - lookupLabel
+    - molecularEntity
+    - productSource
+    - purity
+    slot_usage:
+      molecularEntity:
+        required: true
+      purity:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ProductSource:
     class_uri: https://openminds.om-i.org/types/ProductSource
     description: Structured information about the source of a chemical substance or
@@ -55,20 +73,10 @@ classes:
         - range: Consortium
         - range: Organization
         - range: Person
-- ChemicalSubstance:
-    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
-    description: Structured information about a chemical substance.
-    title: Chemical substance
-    slots:
-    - id
-    - additionalRemarks
-    - lookupLabel
-    - molecularEntity
-    - productSource
-    - purity
-    slot_usage:
-      molecularEntity:
-        required: true
+      purity:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - AmountOfChemical:
     class_uri: https://openminds.om-i.org/types/AmountOfChemical
     description: Structured information about the amount of a given chemical that

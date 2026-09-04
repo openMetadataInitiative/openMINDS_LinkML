@@ -13,10 +13,12 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/DiseaseModel
     title: Disease model
     permissible_values:
-      Williams-Beuren syndrome model:
+      stroke model:
         description: An animal or cell displaying all or some of the pathological
-          processes that are observed in the actual human or animal Williams-Beuren
-          syndrome.
+          processes that are observed during stroke in humans or animals.
+      Parkinson's disease model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal Parkinson's disease.
       autism spectrum disorder model:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed in the actual human or animal autism sprectrum
@@ -24,18 +26,16 @@ enums:
       epilepsy model:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed for epilepsy in humans or animals.
-      fragile X syndrome model:
-        description: An animal or cell displaying all or some of the pathological
-          processes that are observed in the actual human or animal fragile X syndrome.
       Alzheimer's disease model:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed in the actual human or animal Alzheimer's disease.
-      Parkinson's disease model:
+      Williams-Beuren syndrome model:
         description: An animal or cell displaying all or some of the pathological
-          processes that are observed in the actual human or animal Parkinson's disease.
-      stroke model:
+          processes that are observed in the actual human or animal Williams-Beuren
+          syndrome.
+      fragile X syndrome model:
         description: An animal or cell displaying all or some of the pathological
-          processes that are observed during stroke in humans or animals.
+          processes that are observed in the actual human or animal fragile X syndrome.
       Huntington's disease model:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed in the actual human or animal Huntington's disease.

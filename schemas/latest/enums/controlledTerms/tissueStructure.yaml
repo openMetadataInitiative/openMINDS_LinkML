@@ -13,105 +13,159 @@ enums:
     enum_uri: https://openminds.om-i.org/types/TissueStructure
     title: Tissue structure
     permissible_values:
-      third ventricle choroid plexus stroma:
-        description: Is a choroid plexus stroma. Is part of the choroid plexus of
-          third ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0006339) ('is_a' and 'relationship')]
-      dura mater:
-        description: Is a meninx. [auto-generated from 'is_a' property of the [UBERON
-          ontology term](http://purl.obolibrary.org/obo/UBERON_0002363)]
-      filum terminale internum:
-        description: Is part of the filum terminale. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010269)]
-      third ventricle choroid plexus epithelium:
-        description: Is a choroid plexus epithelium. Is part of the choroid plexus
-          of third ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0004275) ('is_a' and 'relationship')]
-      statoacoustic epithelium:
-        description: Is a sensory epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009969)]
-      crista of ampulla of posterior semicircular duct of membranous laybrinth:
-        description: Is a crista ampullaris neuroepithelium. [auto-generated from
-          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007275)]
-      fourth ventricle ependyma:
-        description: Is a brain ependyma. Is part of the fourth ventricle. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004644)
-          ('is_a' and 'relationship')]
-      filum terminale:
-        description: Is part of the spinal cord. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005443)]
-      lateral ventricle choroid plexus stroma:
-        description: Is a choroid plexus stroma. Is part of the choroid plexus of
-          lateral ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0006338) ('is_a' and 'relationship')]
-      brain endothelium:
-        description: Is part of the brain. [auto-generated from 'relationship' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0013694)]
-      spinal cord ependyma:
-        description: Is an ependyma. Is part of the central canal of spinal cord.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005359)
-          ('is_a' and 'relationship')]
-      choroid plexus stroma:
-        description: Is part of the choroid plexus. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005206)]
-      crista of ampulla of lateral semicircular duct of membranous laybrinth:
-        description: Is a crista ampullaris neuroepithelium. [auto-generated from
-          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007276)]
-      filum terminale externum:
-        description: Is part of the filum terminale. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010270)]
-      gustatory pore:
-        description: Is part of the taste bud. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007691)]
-      vestibular epithelium:
-        description: Is a sensory epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006932)]
-      lateral ventricle ependyma:
-        description: Is a brain ependyma. Is part of the telencephalic ventricle.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004643)
-          ('is_a' and 'relationship')]
-      sensory epithelium:
-        description: Is an anatomical entity. Is part of the peripheral nervous system.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006934)
+      epithelium of saccule:
+        description: Is a vestibular epithelium. Is part of the saccule of membranous
+          labyrinth. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003242)
           ('is_a' and 'relationship')]
       crus commune epithelium:
         description: Is a vestibular epithelium. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005657)]
+      lateral ventricle choroid plexus epithelium:
+        description: Is a choroid plexus epithelium. Is part of the choroid plexus
+          of lateral ventricle. [auto-generated from properties of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0004274) ('is_a' and 'relationship')]
       epithelium of utricle:
         description: Is a vestibular epithelium. Is part of the macula of utricle
           of membranous labyrinth. [auto-generated from properties of the [UBERON
           ontology term](http://purl.obolibrary.org/obo/UBERON_0003241) ('is_a' and
           'relationship')]
-      epithelium of ductus reuniens:
-        description: Is a vestibular epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003363)]
-      germinal neuroepithelium:
-        description: Is a proliferating neuroepithelium. [auto-generated from 'is_a'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004022)]
-      gustatory epithelium of tongue:
-        description: Is a gustatory epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014452)]
-      lateral ventricle subependymal layer:
-        description: Is part of the telencephalic ventricle and the postnatal subventricular
-          zone. [auto-generated from 'relationship' property of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0010404)]
-      pars distalis of adenohypophysis:
-        description: Is part of the adenohypophysis. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006964)]
-      proliferating neuroepithelium:
-        description: Is a developing neuroepithelium. [auto-generated from 'is_a'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034706)]
-      differentiating neuroepithelium:
-        description: Is a developing neuroepithelium. [auto-generated from 'is_a'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034707)]
-      epithelium of saccule:
-        description: Is a vestibular epithelium. Is part of the saccule of membranous
-          labyrinth. [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003242)
-          ('is_a' and 'relationship')]
+      statoacoustic epithelium:
+        description: Is a sensory epithelium. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0009969)]
+      third ventricle choroid plexus stroma:
+        description: Is a choroid plexus stroma. Is part of the choroid plexus of
+          third ventricle. [auto-generated from properties of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0006339) ('is_a' and 'relationship')]
       future hindbrain meninx:
         description: Is a future meninx. Is part of the hindbrain. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010091)
           ('is_a' and 'relationship')]
+      sensory epithelium:
+        description: Is an anatomical entity. Is part of the peripheral nervous system.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006934)
+          ('is_a' and 'relationship')]
+      brain ependyma:
+        description: Is an ependyma. Is part of the brain ventricle. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005357)
+          ('is_a' and 'relationship')]
+      blood brain barrier:
+        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000120)
+          ('is_a' and 'relationship')]
+      lateral ventricle ependyma:
+        description: Is a brain ependyma. Is part of the telencephalic ventricle.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004643)
+          ('is_a' and 'relationship')]
+      choroid plexus epithelium:
+        description: Is part of the choroid plexus. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003911)]
+      dura mater:
+        description: Is a meninx. [auto-generated from 'is_a' property of the [UBERON
+          ontology term](http://purl.obolibrary.org/obo/UBERON_0002363)]
+      gustatory pore:
+        description: Is part of the taste bud. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007691)]
+      glial blood brain barrier:
+        description: Is a blood brain barrier. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000202)]
+      ependyma:
+        description: Is part of the ventricle of nervous system. [auto-generated from
+          'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004670)]
+      lateral ventricle subependymal layer:
+        description: Is part of the telencephalic ventricle and the postnatal subventricular
+          zone. [auto-generated from 'relationship' property of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0010404)]
+      crista ampullaris neuroepithelium:
+        description: Is a vestibular epithelium. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006935)]
+      epithelium of ductus reuniens:
+        description: Is a vestibular epithelium. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003363)]
+      lateral ventricle choroid plexus stroma:
+        description: Is a choroid plexus stroma. Is part of the choroid plexus of
+          lateral ventricle. [auto-generated from properties of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0006338) ('is_a' and 'relationship')]
+      choroid plexus stroma:
+        description: Is part of the choroid plexus. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005206)]
+      blood nerve barrier:
+        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003209)
+          ('is_a' and 'relationship')]
+      filum terminale:
+        description: Is part of the spinal cord. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005443)]
+      fourth ventricle ependyma:
+        description: Is a brain ependyma. Is part of the fourth ventricle. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004644)
+          ('is_a' and 'relationship')]
+      spinal cord ependyma:
+        description: Is an ependyma. Is part of the central canal of spinal cord.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005359)
+          ('is_a' and 'relationship')]
+      crista of ampulla of posterior semicircular duct of membranous laybrinth:
+        description: Is a crista ampullaris neuroepithelium. [auto-generated from
+          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007275)]
+      proliferating neuroepithelium:
+        description: Is a developing neuroepithelium. [auto-generated from 'is_a'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034706)]
+      gustatory epithelium:
+        description: Is a sensory epithelium. Is part of the somatic nervous system.
+          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002926)
+          ('is_a' and 'relationship')]
+      retinal tapetum lucidum:
+        description: Is part of the retina. [auto-generated from 'relationship' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010245)]
+      fourth ventricle choroid plexus stroma:
+        description: Is a choroid plexus stroma. Is part of the choroid plexus of
+          fourth ventricle. [auto-generated from properties of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0006340) ('is_a' and 'relationship')]
+      crista of ampulla of lateral semicircular duct of membranous laybrinth:
+        description: Is a crista ampullaris neuroepithelium. [auto-generated from
+          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007276)]
+      neural tissue:
+        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003714)
+          ('is_a' and 'relationship')]
+      gustatory epithelium of tongue:
+        description: Is a gustatory epithelium. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014452)]
+      filum terminale internum:
+        description: Is part of the filum terminale. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010269)]
+      brain endothelium:
+        description: Is part of the brain. [auto-generated from 'relationship' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0013694)]
+      filum terminale externum:
+        description: Is part of the filum terminale. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010270)]
+      developing neuroepithelium:
+        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034705)
+          ('is_a' and 'relationship')]
+      fourth ventricle choroid plexus epithelium:
+        description: Is a choroid plexus epithelium. Is part of the choroid plexus
+          of fourth ventricle. [auto-generated from properties of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0004276) ('is_a' and 'relationship')]
+      third ventricle choroid plexus epithelium:
+        description: Is a choroid plexus epithelium. Is part of the choroid plexus
+          of third ventricle. [auto-generated from properties of the [UBERON ontology
+          term](http://purl.obolibrary.org/obo/UBERON_0004275) ('is_a' and 'relationship')]
+      blood-cerebrospinal fluid barrier:
+        description: Is part of the choroid plexus. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003210)]
+      crista of ampulla of anterior semicircular duct of membranous laybrinth:
+        description: Is a crista ampullaris neuroepithelium. [auto-generated from
+          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007274)]
+      germinal neuroepithelium:
+        description: Is a proliferating neuroepithelium. [auto-generated from 'is_a'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004022)]
+      gustatory epithelium of palate:
+        description: Is a gustatory epithelium. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014453)]
+      differentiating neuroepithelium:
+        description: Is a developing neuroepithelium. [auto-generated from 'is_a'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034707)]
       endothelial blood brain barrier:
         description: Is a blood brain barrier. [auto-generated from 'is_a' property
           of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000201)]
@@ -119,67 +173,13 @@ enums:
         description: Is a brain ependyma. Is part of the third ventricle. [auto-generated
           from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004642)
           ('is_a' and 'relationship')]
-      developing neuroepithelium:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0034705)
-          ('is_a' and 'relationship')]
-      retinal tapetum lucidum:
-        description: Is part of the retina. [auto-generated from 'relationship' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010245)]
-      lateral ventricle choroid plexus epithelium:
-        description: Is a choroid plexus epithelium. Is part of the choroid plexus
-          of lateral ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0004274) ('is_a' and 'relationship')]
-      fourth ventricle choroid plexus stroma:
-        description: Is a choroid plexus stroma. Is part of the choroid plexus of
-          fourth ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0006340) ('is_a' and 'relationship')]
+      pars distalis of adenohypophysis:
+        description: Is part of the adenohypophysis. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006964)]
       olfactory epithelium:
         description: Is a sensory epithelium. Is part of the somatic nervous system.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0001997)
           ('is_a' and 'relationship')]
-      blood brain barrier:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000120)
-          ('is_a' and 'relationship')]
-      glial blood brain barrier:
-        description: Is a blood brain barrier. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000202)]
-      crista ampullaris neuroepithelium:
-        description: Is a vestibular epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006935)]
-      crista of ampulla of anterior semicircular duct of membranous laybrinth:
-        description: Is a crista ampullaris neuroepithelium. [auto-generated from
-          'is_a' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0007274)]
-      gustatory epithelium:
-        description: Is a sensory epithelium. Is part of the somatic nervous system.
-          [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002926)
-          ('is_a' and 'relationship')]
-      brain ependyma:
-        description: Is an ependyma. Is part of the brain ventricle. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0005357)
-          ('is_a' and 'relationship')]
-      choroid plexus epithelium:
-        description: Is part of the choroid plexus. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003911)]
-      blood nerve barrier:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003209)
-          ('is_a' and 'relationship')]
-      neural tissue:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003714)
-          ('is_a' and 'relationship')]
-      gustatory epithelium of palate:
-        description: Is a gustatory epithelium. [auto-generated from 'is_a' property
-          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0014453)]
-      ependyma:
-        description: Is part of the ventricle of nervous system. [auto-generated from
-          'relationship' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0004670)]
-      blood-cerebrospinal fluid barrier:
-        description: Is part of the choroid plexus. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0003210)]
-      fourth ventricle choroid plexus epithelium:
-        description: Is a choroid plexus epithelium. Is part of the choroid plexus
-          of fourth ventricle. [auto-generated from properties of the [UBERON ontology
-          term](http://purl.obolibrary.org/obo/UBERON_0004276) ('is_a' and 'relationship')]
+      vestibular epithelium:
+        description: Is a sensory epithelium. [auto-generated from 'is_a' property
+          of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0006932)]

@@ -13,35 +13,35 @@ enums:
     enum_uri: https://openminds.om-i.org/types/Organ
     title: Organ
     permissible_values:
-      spinal cord:
-        description: Is part of the central nervous system. [auto-generated from 'relationship'
-          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002240)]
-      skin:
-        description: '''Skin'' is the organ covering the body that consists of the
-          dermis and epidermis.'
-      neuroendocrine gland:
-        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
-          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010133)
-          ('is_a' and 'relationship')]
-      insect embryonic brain:
-        description: Is a brain. [auto-generated from 'is_a' property of the [UBERON
-          ontology term](http://purl.obolibrary.org/obo/UBERON_6001060)]
-      liver:
-        description: '''Liver'' is an organ that is part of the digestive system of
-          vertebrate animals.'
-      heart:
-        description: '''Heart'' is part of the cardiovascular system'
       brain:
         description: '''Brain'' is part of the central nervous system. [auto-generated
           from ''relationship'' property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0000955)]'
+      liver:
+        description: '''Liver'' is an organ that is part of the digestive system of
+          vertebrate animals.'
+      insect embryonic brain:
+        description: Is a brain. [auto-generated from 'is_a' property of the [UBERON
+          ontology term](http://purl.obolibrary.org/obo/UBERON_6001060)]
+      heart:
+        description: '''Heart'' is part of the cardiovascular system'
       insect embryonic/larval brain:
         description: Is a brain and ganglion of central nervous system. Is part of
           the insect embryonic/larval central nervous system. [auto-generated from
           properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_6001920)
           ('is_a' and 'relationship')]
-      muscle:
-        description: '''Muscle'' is part of the musculoskeletal system.'
+      spinal cord:
+        description: Is part of the central nervous system. [auto-generated from 'relationship'
+          property of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0002240)]
       insect adult brain:
         description: Is a brain. Is part of the insect adult central nervous system.
           [auto-generated from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_6003624)
+          ('is_a' and 'relationship')]
+      skin:
+        description: '''Skin'' is the organ covering the body that consists of the
+          dermis and epidermis.'
+      muscle:
+        description: '''Muscle'' is part of the musculoskeletal system.'
+      neuroendocrine gland:
+        description: Is an anatomical entity. Is part of the nervous system. [auto-generated
+          from properties of the [UBERON ontology term](http://purl.obolibrary.org/obo/UBERON_0010133)
           ('is_a' and 'relationship')]
