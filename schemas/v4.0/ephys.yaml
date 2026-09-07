@@ -38,11 +38,6 @@ classes:
         - range: FileBundle
       recordedWith:
         required: true
-        any_of:
-        - range: ElectrodeArrayUsage
-        - range: ElectrodeUsage
-        - range: PipetteUsage
-        - range: SlicingDeviceUsage
       samplingFrequency:
         required: true
 - Channel:
