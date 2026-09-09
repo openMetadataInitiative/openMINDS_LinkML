@@ -53,6 +53,12 @@ classes:
     slot_usage:
       measuredQuantity:
         required: true
+      measuredWith:
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: SlicingDeviceUsage
       value:
         required: true
         range: QuantitativeValue
@@ -266,6 +272,9 @@ classes:
     slot_usage:
       memberOf:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
 - Organization:
     class_uri: https://openminds.om-i.org/types/Organization
     description: An entity comprised of one or more natural persons with a particular
@@ -633,6 +642,10 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
+        any_of:
+        - range: CellType
+        - range: Organ
+        - range: OrganismSubstance
       species:
         required: true
       studiedState:
@@ -1102,6 +1115,9 @@ classes:
         range: ActionStatusType
       license:
         required: true
+        any_of:
+        - range: License
+        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:
