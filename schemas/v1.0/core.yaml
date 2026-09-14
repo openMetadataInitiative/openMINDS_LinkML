@@ -216,9 +216,6 @@ classes:
         required: true
       contributor:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - ContactInformation:
     class_uri: https://openminds.ebrains.eu/core/ContactInformation
     description: Structured information about how to contact a given person or consortium.
@@ -379,9 +376,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - GRIDID:
     class_uri: https://openminds.ebrains.eu/core/GRIDID
     description: A GRID (Global Research Identifier Database) identifier.

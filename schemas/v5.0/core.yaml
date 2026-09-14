@@ -823,9 +823,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - RORID:
     class_uri: https://openminds.om-i.org/types/RORID
     description: A persistent identifier for a research organization, provided by
@@ -1269,6 +1266,11 @@ classes:
     - stimulusType
     - technique
     slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
       description:
         required: true
       name:
