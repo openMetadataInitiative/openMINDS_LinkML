@@ -26,26 +26,26 @@ slots:
     slot_uri: about
     description: null
     any_of:
-    - range: WebServiceVersion
-    - range: WebService
-    - range: MetaDataModelVersion
-    - range: WorkflowRecipe
-    - range: LivePaperVersion
-    - range: WorkflowRecipeVersion
-    - range: CommonCoordinateSpaceVersion
     - range: Dataset
-    - range: LivePaper
-    - range: ValidationTestVersion
-    - range: MetaDataModel
-    - range: DatasetVersion
-    - range: BrainAtlas
-    - range: Software
-    - range: Model
-    - range: SoftwareVersion
+    - range: WebServiceVersion
     - range: BrainAtlasVersion
     - range: ModelVersion
+    - range: LivePaper
+    - range: WorkflowRecipe
+    - range: Software
     - range: ValidationTest
+    - range: BrainAtlas
+    - range: Model
     - range: CommonCoordinateSpace
+    - range: WorkflowRecipeVersion
+    - range: MetaDataModelVersion
+    - range: LivePaperVersion
+    - range: SoftwareVersion
+    - range: WebService
+    - range: DatasetVersion
+    - range: CommonCoordinateSpaceVersion
+    - range: MetaDataModel
+    - range: ValidationTestVersion
     multivalued: true
     list_elements_unique: true
   abstract:
@@ -126,14 +126,14 @@ slots:
     slot_uri: anatomicalLocation
     description: null
     any_of:
-    - range: SubcellularEntity
-    - range: ParcellationEntity
-    - range: UBERONParcellation
-    - range: OrganismSubstance
-    - range: ParcellationEntityVersion
     - range: Organ
+    - range: OrganismSubstance
     - range: CustomAnatomicalEntity
     - range: CellType
+    - range: ParcellationEntityVersion
+    - range: ParcellationEntity
+    - range: SubcellularEntity
+    - range: UBERONParcellation
     multivalued: true
     list_elements_unique: true
   anatomicalLocationOfArray:
@@ -283,8 +283,8 @@ slots:
     slot_uri: chemicalProduct
     description: null
     any_of:
-    - range: ChemicalSubstance
     - range: ChemicalMixture
+    - range: ChemicalSubstance
     - range: MolecularEntity
   chlorideReversalPotential:
     slot_uri: chlorideReversalPotential
@@ -317,17 +317,17 @@ slots:
     slot_uri: conductorMaterial
     description: null
     any_of:
-    - range: ChemicalSubstance
     - range: ChemicalMixture
+    - range: ChemicalSubstance
     - range: MolecularEntity
   configuration:
     slot_uri: configuration
     description: null
     any_of:
-    - range: WebResource
-    - range: PropertyValueList
     - range: Configuration
     - range: File
+    - range: PropertyValueList
+    - range: WebResource
     - range: string
   constructionType:
     slot_uri: constructionType
@@ -377,14 +377,14 @@ slots:
     description: Legal person that gave or supplied something as a part or share.
     any_of:
     - range: Organization
-    - range: Consortium
     - range: Person
+    - range: Consortium
   coordinateSpace:
     slot_uri: coordinateSpace
     description: Two or three dimensional geometric setting.
     any_of:
-    - range: CustomCoordinateSpace
     - range: CommonCoordinateSpaceVersion
+    - range: CustomCoordinateSpace
   coordinates:
     slot_uri: coordinates
     description: Pair or triplet of numbers defining a location in a given coordinate
@@ -462,14 +462,14 @@ slots:
     slot_uri: dataLocation
     description: null
     any_of:
-    - range: PropertyValueList
     - range: LivePaperResourceItem
-    - range: FileArchive
-    - range: FileBundle
+    - range: ModelVersion
     - range: ParcellationEntityVersion
     - range: Configuration
+    - range: FileArchive
+    - range: FileBundle
     - range: File
-    - range: ModelVersion
+    - range: PropertyValueList
     multivalued: true
     list_elements_unique: true
   dataType:
@@ -497,9 +497,9 @@ slots:
     description: null
     any_of:
     - range: ElectrodeArrayUsage
-    - range: PipetteUsage
     - range: ElectrodeUsage
     - range: SlicingDeviceUsage
+    - range: PipetteUsage
   descendedFrom:
     slot_uri: descendedFrom
     description: null
@@ -515,8 +515,8 @@ slots:
     description: null
     any_of:
     - range: File
-    - range: DOI
     - range: WebResource
+    - range: DOI
     multivalued: true
     list_elements_unique: true
   description:
@@ -562,15 +562,15 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: DOI
     - range: GRIDID
-    - range: RRID
-    - range: ISBN
-    - range: ORCID
-    - range: RORID
     - range: SWHID
-    - range: IdentifiersDotOrgID
     - range: ISSN
+    - range: RORID
+    - range: ISBN
+    - range: IdentifiersDotOrgID
+    - range: RRID
+    - range: ORCID
+    - range: DOI
     multivalued: true
     list_elements_unique: true
   dimension:
@@ -578,8 +578,8 @@ slots:
     description: null
     any_of:
     - range: Ellipse
-    - range: Rectangle
     - range: Circle
+    - range: Rectangle
     inlined: true
   diseaseModel:
     slot_uri: diseaseModel
@@ -636,8 +636,8 @@ slots:
     slot_uri: environment
     description: null
     any_of:
-    - range: WebServiceVersion
     - range: Environment
+    - range: WebServiceVersion
   environmentVariable:
     slot_uri: environmentVariable
     description: null
@@ -719,8 +719,8 @@ slots:
     description: Legal person that provides money for a particular purpose.
     any_of:
     - range: Organization
-    - range: Consortium
     - range: Person
+    - range: Consortium
   funding:
     slot_uri: funding
     description: Money provided by a legal person for a particular purpose.
@@ -732,9 +732,9 @@ slots:
     description: null
     any_of:
     - range: ElectrodeArrayUsage
-    - range: PipetteUsage
     - range: ElectrodeUsage
     - range: SlicingDeviceUsage
+    - range: PipetteUsage
   geneticStrainType:
     slot_uri: geneticStrainType
     description: null
@@ -957,9 +957,9 @@ slots:
     slot_uri: inRelationTo
     description: Reference to a related element.
     any_of:
-    - range: ParcellationEntity
-    - range: ParcellationEntityVersion
     - range: CustomAnatomicalEntity
+    - range: ParcellationEntityVersion
+    - range: ParcellationEntity
   input:
     slot_uri: input
     description: Something or someone that is put into or participates in a process
@@ -1015,8 +1015,8 @@ slots:
     slot_uri: insulatorMaterial
     description: null
     any_of:
-    - range: ChemicalSubstance
     - range: ChemicalMixture
+    - range: ChemicalSubstance
     - range: MolecularEntity
   interlexIdentifier:
     slot_uri: interlexIdentifier
@@ -1075,17 +1075,17 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: DatasetVersion
-    - range: SubjectGroup
-    - range: Periodical
-    - range: FileBundle
-    - range: TissueSampleCollection
-    - range: LivePaperSection
-    - range: PublicationVolume
-    - range: FileRepository
-    - range: LivePaperVersion
-    - range: PublicationIssue
     - range: Book
+    - range: LivePaperVersion
+    - range: Periodical
+    - range: SubjectGroup
+    - range: LivePaperSection
+    - range: TissueSampleCollection
+    - range: PublicationIssue
+    - range: FileRepository
+    - range: FileBundle
+    - range: DatasetVersion
+    - range: PublicationVolume
     multivalued: true
     list_elements_unique: true
   issueNumber:
@@ -1187,8 +1187,8 @@ slots:
     slot_uri: labelingCompound
     description: null
     any_of:
-    - range: ChemicalSubstance
     - range: ChemicalMixture
+    - range: ChemicalSubstance
     - range: MolecularEntity
   laboratoryCode:
     slot_uri: laboratoryCode
@@ -1232,8 +1232,8 @@ slots:
     description: Grant by a party to another party as an element of an agreement between
       those parties that permits to do, use, or own something.
     any_of:
-    - range: WebResource
     - range: License
+    - range: WebResource
     multivalued: true
     list_elements_unique: true
   liquidJunctionPotential:
@@ -1266,8 +1266,8 @@ slots:
     slot_uri: material
     description: null
     any_of:
-    - range: ChemicalSubstance
     - range: ChemicalMixture
+    - range: ChemicalSubstance
     - range: MolecularEntity
   maxValue:
     slot_uri: maxValue
@@ -1288,9 +1288,9 @@ slots:
     description: null
     any_of:
     - range: ElectrodeArrayUsage
-    - range: PipetteUsage
     - range: ElectrodeUsage
     - range: SlicingDeviceUsage
+    - range: PipetteUsage
   memberOf:
     slot_uri: memberOf
     description: null
@@ -1384,8 +1384,8 @@ slots:
       derives.
     any_of:
     - range: OrganismSubstance
-    - range: Organ
     - range: CellType
+    - range: Organ
     multivalued: true
     list_elements_unique: true
   oscillationAmplitude:
@@ -1495,8 +1495,8 @@ slots:
     slot_uri: preferredDisplayColor
     description: null
     any_of:
-    - range: SingleColor
     - range: Colormap
+    - range: SingleColor
   preferredOntologyIdentifier:
     slot_uri: preferredOntologyIdentifier
     description: Persistent identifier of a preferred ontological term.
@@ -1560,8 +1560,8 @@ slots:
     description: null
     any_of:
     - range: Organization
-    - range: Consortium
     - range: Person
+    - range: Consortium
   publicationDate:
     slot_uri: publicationDate
     description: null
@@ -1570,8 +1570,8 @@ slots:
     slot_uri: publisher
     description: null
     any_of:
-    - range: Person
     - range: Organization
+    - range: Person
     - range: Consortium
   purity:
     slot_uri: purity
@@ -1607,9 +1607,9 @@ slots:
     description: null
     any_of:
     - range: ElectrodeArrayUsage
-    - range: PipetteUsage
     - range: ElectrodeUsage
     - range: SlicingDeviceUsage
+    - range: PipetteUsage
   referenceData:
     slot_uri: referenceData
     description: null
@@ -1685,9 +1685,9 @@ slots:
     description: Reference to what or whom something or someone bears significance.
     any_of:
     - range: Technique
+    - range: MRIPulseSequence
     - range: AnalysisTechnique
     - range: StimulationTechnique
-    - range: MRIPulseSequence
     - range: MRIWeighting
     - range: StimulationApproach
   repository:
@@ -1842,8 +1842,8 @@ slots:
       a binomial that consists of the name of a genus followed by a Latin or latinized
       uncapitalized noun or adjective.
     any_of:
-    - range: Species
     - range: Strain
+    - range: Species
     multivalued: true
     list_elements_unique: true
   specification:
@@ -2111,12 +2111,12 @@ slots:
     slot_uri: usedSpecimen
     description: null
     any_of:
-    - range: SubjectGroup
-    - range: Subject
     - range: TissueSampleState
+    - range: SubjectGroup
     - range: TissueSampleCollection
-    - range: TissueSample
+    - range: Subject
     - range: SubjectState
+    - range: TissueSample
     multivalued: true
     list_elements_unique: true
   userName:
@@ -2127,10 +2127,10 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: integer
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
     - range: float
+    - range: integer
+    - range: QuantitativeValueRange
     - range: string
     pattern: ^#[0-9A-Fa-f]{6}$
     multivalued: true
@@ -2173,13 +2173,13 @@ slots:
     slot_uri: wasInformedBy
     description: null
     any_of:
-    - range: GenericComputation
-    - range: DataCopy
-    - range: Optimization
     - range: ModelValidation
-    - range: DataAnalysis
+    - range: DataCopy
+    - range: GenericComputation
     - range: Visualization
+    - range: DataAnalysis
     - range: Simulation
+    - range: Optimization
   webpage:
     slot_uri: webpage
     description: Hypertext document (block of information) found on the World Wide
