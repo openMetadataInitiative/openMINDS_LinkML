@@ -185,10 +185,6 @@ classes:
         - range: time
       studyTarget:
         range: AnatomicalCavity
-      temperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - SlicingDeviceUsage:
     class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
     description: null
@@ -213,9 +209,6 @@ classes:
         range: File
       sliceThickness:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       slicingAngle:
         range: QuantitativeValue
       slicingPlane:

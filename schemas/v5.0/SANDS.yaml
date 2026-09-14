@@ -72,6 +72,9 @@ classes:
         - range: uri
       usedTaxon:
         required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - CommonCoordinateFrameworkVersion:
     class_uri: https://openminds.om-i.org/types/CommonCoordinateFrameworkVersion
     description: null
@@ -241,6 +244,9 @@ classes:
         - range: uri
       usedTaxon:
         required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - AtlasAnnotation:
     class_uri: https://openminds.om-i.org/types/AtlasAnnotation
     description: null
@@ -743,10 +749,6 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
-      preferredDisplayColor:
-        any_of:
-        - range: Colormap
-        - range: SingleColor
 - QuantitativeRelationAssessment:
     class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
     description: null
@@ -762,9 +764,6 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - CoordinatePoint:
     class_uri: https://openminds.om-i.org/types/CoordinatePoint
     description: null
@@ -776,6 +775,9 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       coordinates:
         required: true
 - SingleColor:
@@ -854,6 +856,9 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       criteriaQualityType:
         required: true
       criteriaType:
