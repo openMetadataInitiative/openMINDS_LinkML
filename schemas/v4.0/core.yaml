@@ -272,9 +272,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - Organization:
     class_uri: https://openminds.om-i.org/types/Organization
     description: An entity comprised of one or more natural persons with a particular
@@ -591,6 +588,10 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -599,6 +600,14 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - SubjectGroup:
     class_uri: https://openminds.om-i.org/types/SubjectGroup
     description: null
@@ -822,11 +831,6 @@ classes:
     - stimulusType
     - technique
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
       description:
         required: true
       name:
@@ -882,6 +886,10 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -890,6 +898,14 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - TissueSampleState:
     class_uri: https://openminds.om-i.org/types/TissueSampleState
     description: Structured information on a temporary state of a tissue sample.
@@ -906,12 +922,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ProtocolExecution:
     class_uri: https://openminds.om-i.org/types/ProtocolExecution
     description: Structured information on a protocol execution.
@@ -971,12 +999,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - NumericalProperty:
     class_uri: https://openminds.om-i.org/types/NumericalProperty
     description: Structured information about a property of some entity or process
