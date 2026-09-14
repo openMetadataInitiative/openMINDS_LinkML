@@ -272,9 +272,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - Organization:
     class_uri: https://openminds.om-i.org/types/Organization
     description: An entity comprised of one or more natural persons with a particular
