@@ -281,6 +281,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       inputData:
@@ -352,6 +356,10 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
@@ -435,6 +443,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
@@ -650,6 +662,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       inputData:
@@ -933,6 +949,9 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
+        any_of:
+        - range: CellType
+        - range: Organ
       species:
         required: true
       studiedState:

@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: DOI
+    - range: GRIDID
     - range: SWHID
     - range: ORCID
-    - range: GRIDID
     - range: RORID
+    - range: DOI
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -326,8 +326,8 @@ slots:
     description: Non-abridged instructions, comments, and information for using a
       particular product.
     any_of:
-    - range: DOI
     - range: File
+    - range: DOI
     - range: URL
   fullName:
     slot_uri: fullName
@@ -519,11 +519,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileRepository
     - range: ParcellationTerminology
-    - range: FileBundle
     - range: TissueSampleCollection
     - range: SubjectGroup
+    - range: FileRepository
+    - range: FileBundle
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -605,8 +605,8 @@ slots:
     description: Source at which something begins or rises, or from which something
       derives.
     any_of:
-    - range: CellType
     - range: Organ
+    - range: CellType
     multivalued: true
     list_elements_unique: true
   otherContribution:
@@ -920,8 +920,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: string
     - range: uri
+    - range: string
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -966,9 +966,9 @@ slots:
     description: Entry for a property.
     any_of:
     - range: QuantitativeValue
+    - range: integer
     - range: QuantitativeValueRange
     - range: float
-    - range: integer
     - range: string
     multivalued: true
     inlined: true

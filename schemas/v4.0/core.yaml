@@ -872,6 +872,9 @@ classes:
         range: ActionStatusType
       license:
         required: true
+        any_of:
+        - range: License
+        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:
@@ -1129,12 +1132,6 @@ classes:
     slot_usage:
       measuredQuantity:
         required: true
-      measuredWith:
-        any_of:
-        - range: ElectrodeArrayUsage
-        - range: ElectrodeUsage
-        - range: PipetteUsage
-        - range: SlicingDeviceUsage
       value:
         required: true
         range: QuantitativeValue
@@ -1409,6 +1406,9 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1533,6 +1533,9 @@ classes:
         range: SubjectGroup
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: SubjectState
