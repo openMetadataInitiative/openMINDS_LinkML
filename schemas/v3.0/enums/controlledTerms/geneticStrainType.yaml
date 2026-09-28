@@ -15,8 +15,6 @@ enums:
     permissible_values:
       conditional knockout ready:
         description: null
-      conditional knockin ready:
-        description: null
       transgenic:
         description: null
       knockout:
@@ -26,4 +24,6 @@ enums:
       conditional ready:
         description: null
       knockin:
+        description: null
+      conditional knockin ready:
         description: null

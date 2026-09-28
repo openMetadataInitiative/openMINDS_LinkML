@@ -18,17 +18,17 @@ enums:
         description: null
       Windows Phone:
         description: null
-      Android:
-        description: null
-      Windows:
+      platform independent:
         description: null
       iOS:
         description: null
+      Windows:
+        description: null
       MacOS:
         description: null
-      Unix:
+      Android:
         description: null
       Linux:
         description: null
-      platform independent:
+      Unix:
         description: null

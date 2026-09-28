@@ -14,24 +14,24 @@ enums:
     title: Model scope
     description: Structured information on the scope of the computational model.
     permissible_values:
+      'subcellular: ion channel':
+        description: A model of an ion channel
+      network:
+        description: A model of a neuronal network
+      subcellular:
+        description: A model of an entity or process contained within a cell
+      'network: brain region':
+        description: A model of one or more brain regions
       'network: whole brain':
         description: A model of an entire brain
+      'subcellular: spine':
+        description: A model of a dendritic spine, or of a dendritic region containing
+          several spines
       'subcellular: signalling':
         description: A model of sub-cellular signalling pathways
       'network: microcircuit':
         description: A model of a neuronal microcircuit
-      subcellular:
-        description: A model of an entity or process contained within a cell
-      'subcellular: molecular':
-        description: A model of the structure or behaviour of molecules
-      'subcellular: ion channel':
-        description: A model of an ion channel
-      'network: brain region':
-        description: A model of one or more brain regions
-      network:
-        description: A model of a neuronal network
-      'subcellular: spine':
-        description: A model of a dendritic spine, or of a dendritic region containing
-          several spines
       single cell:
         description: A model of a single cell
+      'subcellular: molecular':
+        description: A model of the structure or behaviour of molecules

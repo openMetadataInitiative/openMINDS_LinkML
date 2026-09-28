@@ -15,33 +15,33 @@ enums:
     description: Structured information on the life cycle (semantic term) of a specific
       age group.
     permissible_values:
-      neonate:
-        description: Life cycle stage of a subject that immediately follows birth.
-      perinatal:
-        description: '''Perinatal'' categorizes the life cycle stage of an animal
-          or human that starts right before birth and ends right after birth.'
-      juvenile:
-        description: Life cycle stage of a subject that starts with the independence
-          of the nest and/or caregiver and ends with sexual maturity.
-      young adult:
-        description: Life cycle stage of a subject that starts with sexual maturity
-          and ends with the cessation of growth (if reached after sexual maturity).
-      adolescent:
-        description: Life cycle stage of a subject loosely defined by the transitional
-          growth and development between childhood and adulthood, often described
-          as 'puberty'.
-      prime adult:
-        description: Life cycle stage of a subject that starts with sexual maturity
-          or the cessation of growth, whichever comes last, and ends before senescence.
-      adult:
-        description: Life cycle stage of a subject that starts with sexual maturity
-          and ends with death.
-      late adult:
-        description: Life cycle stage of a subject that follows the prime adult stage
-          and ends with death.
       infant:
         description: Life cycle stage of a mammalian subject that follows the neonate
           stage and ends at weaning.
       embryo:
         description: Life cycle stage of a subject that starts with fertilization
           and ends with the fully formed embryo.
+      adult:
+        description: Life cycle stage of a subject that starts with sexual maturity
+          and ends with death.
+      young adult:
+        description: Life cycle stage of a subject that starts with sexual maturity
+          and ends with the cessation of growth (if reached after sexual maturity).
+      perinatal:
+        description: '''Perinatal'' categorizes the life cycle stage of an animal
+          or human that starts right before birth and ends right after birth.'
+      prime adult:
+        description: Life cycle stage of a subject that starts with sexual maturity
+          or the cessation of growth, whichever comes last, and ends before senescence.
+      adolescent:
+        description: Life cycle stage of a subject loosely defined by the transitional
+          growth and development between childhood and adulthood, often described
+          as 'puberty'.
+      neonate:
+        description: Life cycle stage of a subject that immediately follows birth.
+      late adult:
+        description: Life cycle stage of a subject that follows the prime adult stage
+          and ends with death.
+      juvenile:
+        description: Life cycle stage of a subject that starts with the independence
+          of the nest and/or caregiver and ends with sexual maturity.

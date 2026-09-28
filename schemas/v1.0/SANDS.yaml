@@ -31,115 +31,43 @@ classes:
         required: true
       internalIdentifier:
         required: true
-- ElectrodeArray:
-    class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
-    description: Structured information on an electrode array.
-    title: Electrode array
+- AnatomicalEntity:
+    class_uri: https://openminds.ebrains.eu/sands/AnatomicalEntity
+    description: Structured information on an anatomical entity.
+    title: Anatomical entity
     slots:
     - id
-    - electrodes
-    - internalIdentifier
+    - hasParent
+    - name
+    - ontologyIdentifier
+    - otherAnatomicalRelation
     slot_usage:
-      electrodes:
+      hasParent:
+        range: AnatomicalEntity
+      name:
         required: true
-      internalIdentifier:
-        required: true
-- Image:
-    class_uri: https://openminds.ebrains.eu/sands/Image
-    description: Structured information on an image.
-    title: Image
-    slots:
-    - id
-    - coordinateSpace
-    - definedIn
-    - voxelSize
-    slot_usage:
-      coordinateSpace:
-        required: true
-      definedIn:
-        required: true
-      voxelSize:
-        required: true
-- AtlasTerminology:
-    class_uri: https://openminds.ebrains.eu/sands/AtlasTerminology
+- BrainAtlas:
+    class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
     description: null
-    title: Atlas terminology
+    title: Brain atlas
     slots:
     - id
-    - anatomicalEntity
-    - definedIn
+    - description
     - fullName
-    - ontologyIdentifier
-    - shortName
-    slot_usage:
-      anatomicalEntity:
-        required: true
-      fullName:
-        required: true
-      shortName:
-        required: true
-- CoordinateSpace:
-    class_uri: https://openminds.ebrains.eu/sands/CoordinateSpace
-    description: Structured information on a coordinate space.
-    title: Coordinate space
-    slots:
-    - id
-    - anatomicalAxesOrientation
-    - axesOrigin
-    - defaultImage
-    - digitalIdentifier
-    - fullName
+    - hasVersion
     - homepage
-    - nativeUnit
-    - ontologyIdentifier
-    - releaseDate
     - shortName
-    - versionIdentifier
     slot_usage:
-      anatomicalAxesOrientation:
+      description:
         required: true
-      axesOrigin:
-        required: true
-      digitalIdentifier:
-        range: DigitalIdentifier
       fullName:
         required: true
+      hasVersion:
+        required: true
+        range: BrainAtlasVersion
       homepage:
         range: string
-      nativeUnit:
-        required: true
-      releaseDate:
-        required: true
-        range: string
       shortName:
-        required: true
-      versionIdentifier:
-        required: true
-- CoordinatePoint:
-    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
-    description: null
-    title: Coordinate point
-    slots:
-    - id
-    - coordinateSpace
-    - coordinates
-    slot_usage:
-      coordinateSpace:
-        required: true
-      coordinates:
-        required: true
-- Electrode:
-    class_uri: https://openminds.ebrains.eu/sands/Electrode
-    description: Structured information on an electrode.
-    title: Electrode
-    slots:
-    - id
-    - electrodeContact
-    - internalIdentifier
-    slot_usage:
-      electrodeContact:
-        required: true
-      internalIdentifier:
         required: true
 - Annotation:
     class_uri: https://openminds.ebrains.eu/sands/Annotation
@@ -165,6 +93,50 @@ classes:
       laterality:
         required: true
       namingTerm:
+        required: true
+- CoordinatePoint:
+    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
+    description: null
+    title: Coordinate point
+    slots:
+    - id
+    - coordinateSpace
+    - coordinates
+    slot_usage:
+      coordinateSpace:
+        required: true
+      coordinates:
+        required: true
+- AtlasTerminology:
+    class_uri: https://openminds.ebrains.eu/sands/AtlasTerminology
+    description: null
+    title: Atlas terminology
+    slots:
+    - id
+    - anatomicalEntity
+    - definedIn
+    - fullName
+    - ontologyIdentifier
+    - shortName
+    slot_usage:
+      anatomicalEntity:
+        required: true
+      fullName:
+        required: true
+      shortName:
+        required: true
+- ElectrodeArray:
+    class_uri: https://openminds.ebrains.eu/sands/ElectrodeArray
+    description: Structured information on an electrode array.
+    title: Electrode array
+    slots:
+    - id
+    - electrodes
+    - internalIdentifier
+    slot_usage:
+      electrodes:
+        required: true
+      internalIdentifier:
         required: true
 - BrainAtlasVersion:
     class_uri: https://openminds.ebrains.eu/sands/BrainAtlasVersion
@@ -210,20 +182,18 @@ classes:
         required: true
       versionInnovation:
         required: true
-- AnatomicalEntity:
-    class_uri: https://openminds.ebrains.eu/sands/AnatomicalEntity
-    description: Structured information on an anatomical entity.
-    title: Anatomical entity
+- Electrode:
+    class_uri: https://openminds.ebrains.eu/sands/Electrode
+    description: Structured information on an electrode.
+    title: Electrode
     slots:
     - id
-    - hasParent
-    - name
-    - ontologyIdentifier
-    - otherAnatomicalRelation
+    - electrodeContact
+    - internalIdentifier
     slot_usage:
-      hasParent:
-        range: AnatomicalEntity
-      name:
+      electrodeContact:
+        required: true
+      internalIdentifier:
         required: true
 - AnatomicalEntityRelation:
     class_uri: https://openminds.ebrains.eu/sands/AnatomicalEntityRelation
@@ -244,26 +214,56 @@ classes:
         required: true
       qualitativeOverlap:
         required: true
-- BrainAtlas:
-    class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
-    description: null
-    title: Brain atlas
+- Image:
+    class_uri: https://openminds.ebrains.eu/sands/Image
+    description: Structured information on an image.
+    title: Image
     slots:
     - id
-    - description
-    - fullName
-    - hasVersion
-    - homepage
-    - shortName
+    - coordinateSpace
+    - definedIn
+    - voxelSize
     slot_usage:
-      description:
+      coordinateSpace:
         required: true
+      definedIn:
+        required: true
+      voxelSize:
+        required: true
+- CoordinateSpace:
+    class_uri: https://openminds.ebrains.eu/sands/CoordinateSpace
+    description: Structured information on a coordinate space.
+    title: Coordinate space
+    slots:
+    - id
+    - anatomicalAxesOrientation
+    - axesOrigin
+    - defaultImage
+    - digitalIdentifier
+    - fullName
+    - homepage
+    - nativeUnit
+    - ontologyIdentifier
+    - releaseDate
+    - shortName
+    - versionIdentifier
+    slot_usage:
+      anatomicalAxesOrientation:
+        required: true
+      axesOrigin:
+        required: true
+      digitalIdentifier:
+        range: DigitalIdentifier
       fullName:
         required: true
-      hasVersion:
-        required: true
-        range: BrainAtlasVersion
       homepage:
         range: string
+      nativeUnit:
+        required: true
+      releaseDate:
+        required: true
+        range: string
       shortName:
+        required: true
+      versionIdentifier:
         required: true

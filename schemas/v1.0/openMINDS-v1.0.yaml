@@ -9,9 +9,9 @@ imports:
 - slots
 - types
 - enums
-- SANDS
-- core
 - controlledTerms
+- core
+- SANDS
 prefixes:
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/

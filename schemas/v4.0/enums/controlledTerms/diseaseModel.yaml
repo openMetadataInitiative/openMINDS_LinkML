@@ -16,6 +16,22 @@ enums:
       stroke model:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed during stroke in humans or animals.
+      fragile X syndrome model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal fragile X syndrome.
+      epilepsy model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed for epilepsy in humans or animals.
+      Williams-Beuren syndrome model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal Williams-Beuren
+          syndrome.
+      Huntington's disease model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal Huntington's disease.
+      Alzheimer's disease model:
+        description: An animal or cell displaying all or some of the pathological
+          processes that are observed in the actual human or animal Alzheimer's disease.
       Parkinson's disease model:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed in the actual human or animal Parkinson's disease.
@@ -23,19 +39,3 @@ enums:
         description: An animal or cell displaying all or some of the pathological
           processes that are observed in the actual human or animal autism sprectrum
           disorder.
-      epilepsy model:
-        description: An animal or cell displaying all or some of the pathological
-          processes that are observed for epilepsy in humans or animals.
-      Alzheimer's disease model:
-        description: An animal or cell displaying all or some of the pathological
-          processes that are observed in the actual human or animal Alzheimer's disease.
-      Williams-Beuren syndrome model:
-        description: An animal or cell displaying all or some of the pathological
-          processes that are observed in the actual human or animal Williams-Beuren
-          syndrome.
-      fragile X syndrome model:
-        description: An animal or cell displaying all or some of the pathological
-          processes that are observed in the actual human or animal fragile X syndrome.
-      Huntington's disease model:
-        description: An animal or cell displaying all or some of the pathological
-          processes that are observed in the actual human or animal Huntington's disease.
