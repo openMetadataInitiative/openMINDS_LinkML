@@ -77,9 +77,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - Comment:
     class_uri: https://openminds.om-i.org/types/Comment
     description: Structured information about a short text expressing an opinion on,
@@ -191,10 +188,6 @@ classes:
     slot_usage:
       member:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - QuantitativeValue:
     class_uri: https://openminds.om-i.org/types/QuantitativeValue
     description: Structured information on a quantitative value.
@@ -286,6 +279,10 @@ classes:
         range: GenericIdentifier
       hasParent:
         range: Organization
+      jurisdiction:
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       location:
         range: Location
       name:
@@ -1144,6 +1141,9 @@ classes:
         - range: WebResource
       ethicsJurisdiction:
         required: true
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       experimentalApproach:
         required: true
       fullName:
@@ -1410,6 +1410,10 @@ classes:
     - obtainedWith
     - voxelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1603,6 +1607,10 @@ classes:
     - temporalSamplingFrequency
     - voxelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1640,6 +1648,10 @@ classes:
     - pixelSize
     - temporalSamplingFrequency
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1714,6 +1726,10 @@ classes:
     - pixelSize
     - z-stepSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1761,6 +1777,10 @@ classes:
     - obtainedWith
     - pixelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1801,6 +1821,9 @@ classes:
         required: true
       jurisdiction:
         required: true
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       modificationProfile:
         required: true
         range: ModificationConsentRequirement
@@ -1940,6 +1963,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - Protocol:
@@ -1999,6 +2026,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - Strain:
@@ -2062,6 +2093,9 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -2175,6 +2209,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - Subject:
@@ -2194,6 +2232,9 @@ classes:
         range: SubjectGroup
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -2228,6 +2269,10 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - CustomPropertySet:

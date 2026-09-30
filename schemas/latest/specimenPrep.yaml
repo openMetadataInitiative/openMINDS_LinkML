@@ -38,6 +38,9 @@ classes:
         range: File
       sliceThickness:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       slicingAngle:
         range: QuantitativeValue
       slicingPlane:
@@ -240,3 +243,7 @@ classes:
         - range: time
       studyTarget:
         range: AnatomicalCavity
+      temperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
