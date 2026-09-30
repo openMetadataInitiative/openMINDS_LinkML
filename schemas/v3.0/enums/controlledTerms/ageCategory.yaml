@@ -27,9 +27,9 @@ enums:
       young adult:
         description: Life cycle stage of a subject that starts with sexual maturity
           and ends with the cessation of growth (if reached after sexual maturity).
-      perinatal:
-        description: '''Perinatal'' categorizes the life cycle stage of an animal
-          or human that starts right before birth and ends right after birth.'
+      perinate:
+        description: Life cycle stage of a subject that starts right before and ends
+          right after birth.
       prime adult:
         description: Life cycle stage of a subject that starts with sexual maturity
           or the cessation of growth, whichever comes last, and ends before senescence.

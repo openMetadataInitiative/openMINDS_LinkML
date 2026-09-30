@@ -209,9 +209,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - Contribution:
     class_uri: https://openminds.ebrains.eu/core/Contribution
     description: Structured information on the contribution made to a research product.
@@ -1132,6 +1129,12 @@ classes:
     slot_usage:
       measuredQuantity:
         required: true
+      measuredWith:
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: SlicingDeviceUsage
       value:
         required: true
         range: QuantitativeValue
@@ -1406,9 +1409,6 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1533,9 +1533,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState
