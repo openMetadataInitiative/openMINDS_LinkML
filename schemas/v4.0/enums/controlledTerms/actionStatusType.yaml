@@ -14,13 +14,11 @@ enums:
     title: Action status type
     description: Structured information about the status of an action.
     permissible_values:
-      pending:
-        description: An action which is awaiting execution.
-      inactive:
-        description: A pending or suspended action.
       failed:
         description: An action that failed to complete or completed but produced an
           error.
+      inactive:
+        description: A pending or suspended action.
       active:
         description: An in-progress action.
       paused:
@@ -28,5 +26,7 @@ enums:
           in time.
       potential:
         description: A description of an action that is supported.
+      pending:
+        description: An action which is awaiting execution.
       completed:
         description: An action that has already taken place with a successful outcome.
