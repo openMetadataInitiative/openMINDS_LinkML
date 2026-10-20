@@ -37,6 +37,10 @@ enums:
         description: '''Widefield fluorescence microscopy'' comprises all microscopy
           techniques in which fluorescent molecules of an entire sample are excited
           through a permanent exposure of a light source of a specific wavelength.'
+      immunoassay:
+        description: An analytical assay that uses the specific binding between antibodies
+          and antigens to detect or quantify a target substance in a biological or
+          chemical sample.
       diffusion tensor imaging:
         description: null
       mass spectrometry:
@@ -86,10 +90,9 @@ enums:
       beta-galactosidase staining:
         description: null
       enzyme-linked immunosorbent assay:
-        description: The 'enzyme-linked immunosorbent assay' is a commonly used analytical
-          biochemistry assay for the quantitative determination of antibodies, first
-          described by [Engvall and Perlmann (1972)](https://www.jimmunol.org/content/109/1/129.abstract).
-          [adapted from [wikipedia](https://en.wikipedia.org/wiki/ELISA)]
+        description: "An immunoassay that detects or quantifies a target substance\
+          \ using antigen\u2013antibody binding on a solid surface and an enzyme-linked\
+          \ reagent that generates a measurable signal upon reaction with a substrate."
       Nissl staining:
         description: The term 'Nissl staining' refers to various basic dyes (e.g.,
           aniline, thionine, cresyl violet) that selectively label negatively charged
@@ -120,6 +123,10 @@ enums:
       cryosectioning:
         description: Cutting of specimen in cryo/freezing conditions typically resulting
           in micromillimeter thin slices.
+      fluorescence polarization immunoassay:
+        description: An immunoassay that detects or quantifies a target substance
+          by measuring changes in the polarization of fluorescence emitted by labeled
+          molecules as their rotational mobility changes upon binding to antibodies.
       ultra high-field magnetic resonance imaging:
         description: Any medical imaging technique that typically uses a magnetic
           field strength of 7 Tesla (or higher) to generate images of a specimen based
@@ -287,6 +294,10 @@ enums:
       transcardial perfusion technique:
         description: Transcardial perfusion is a technique to distribute fluid throughout
           tissue via the heart.
+      chemiluminescence immunoassay:
+        description: "An immunoassay that detects or quantifies a target substance\
+          \ by measuring light emitted from a chemical reaction associated with an\
+          \ antibody\u2013antigen binding event."
       phase-contrast x-ray imaging:
         description: '''Phase-contrast x-ray imaging'' is a general term for different
           x-ray techniques that use changes in the phase of an x-ray beam passing
@@ -561,6 +572,10 @@ enums:
           technique in which a beam of electrons is transmitted through multiple successive
           slices of a volumetric sample to produce images of the slices (e.g. for
           later 3D reconstruction).
+      radioimmunoassay:
+        description: "An immunoassay that detects or quantifies a target substance\
+          \ by measuring radioactivity associated with the binding of radiolabeled\
+          \ antigens or antibodies in an antigen\u2013antibody reaction."
       magnetic resonance imaging:
         description: Any medical imaging technique that uses strong magnetic fields,
           magnetic field gradients, and radio waves to generate images of a specimen
