@@ -57,9 +57,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
       species:
         required: true
       studiedState:
@@ -85,6 +82,9 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
+        any_of:
+        - range: BehavioralTask
+        - range: Technique
 - BehavioralTask:
     class_uri: https://openminds.ebrains.eu/core/BehavioralTask
     description: Structured information on the behavioral task that had to be performed
@@ -961,6 +961,9 @@ classes:
     slot_usage:
       dataLocation:
         required: true
+        any_of:
+        - range: File
+        - range: FileBundle
       openDataIn:
         required: true
       service:
@@ -1077,6 +1080,9 @@ classes:
         required: true
       contributor:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - ContactInformation:
     class_uri: https://openminds.ebrains.eu/core/ContactInformation
     description: Structured information about how to contact a given person or consortium.
@@ -1149,6 +1155,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - ORCID:
     class_uri: https://openminds.ebrains.eu/core/ORCID
     description: A persistent identifier for a researcher provided by Open Researcher

@@ -303,11 +303,6 @@ classes:
     - stimulusType
     - technique
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
       description:
         required: true
       name:
@@ -1458,9 +1453,6 @@ classes:
         - range: WebResource
       ethicsJurisdiction:
         required: true
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       experimentalApproach:
         required: true
       fullName:
@@ -1941,9 +1933,6 @@ classes:
         required: true
       jurisdiction:
         required: true
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       modificationProfile:
         required: true
         range: ModificationConsentRequirement
@@ -2040,10 +2029,6 @@ classes:
         range: GenericIdentifier
       hasParent:
         range: Organization
-      jurisdiction:
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       location:
         range: Location
       name:
@@ -2192,6 +2177,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - ResearchProductGroup:
     class_uri: https://openminds.om-i.org/types/ResearchProductGroup
     description: null
