@@ -444,6 +444,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       isAlternativeVersionOf:
@@ -555,6 +559,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       inputData:
@@ -698,6 +706,10 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       isAlternativeVersionOf:
@@ -777,6 +789,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       inputData:

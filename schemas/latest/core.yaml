@@ -99,9 +99,6 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -306,6 +303,11 @@ classes:
     - stimulusType
     - technique
     slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
       description:
         required: true
       name:
@@ -356,9 +358,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -1517,6 +1516,10 @@ classes:
     - obtainedWith
     - voxelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1692,6 +1695,10 @@ classes:
     - temporalSamplingFrequency
     - voxelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1753,6 +1760,10 @@ classes:
     - obtainedWith
     - pixelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1798,6 +1809,10 @@ classes:
     - pixelSize
     - z-stepSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1958,6 +1973,10 @@ classes:
     - pixelSize
     - temporalSamplingFrequency
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:

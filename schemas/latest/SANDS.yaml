@@ -362,6 +362,9 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       criteriaQualityType:
         required: true
       criteriaType:
@@ -573,6 +576,9 @@ classes:
         - range: uri
       usedTaxon:
         required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - AnatomicalAtlas:
     class_uri: https://openminds.om-i.org/types/AnatomicalAtlas
     description: null
@@ -631,6 +637,9 @@ classes:
         - range: uri
       usedTaxon:
         required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - ParcellationTerminology:
     class_uri: https://openminds.om-i.org/types/ParcellationTerminology
     description: null
@@ -818,6 +827,9 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       coordinates:
         required: true
 - SingleColor:
@@ -878,7 +890,3 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
-      preferredDisplayColor:
-        any_of:
-        - range: Colormap
-        - range: SingleColor

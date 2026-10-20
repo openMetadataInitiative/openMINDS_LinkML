@@ -91,9 +91,6 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -251,6 +248,11 @@ classes:
     - stimulusType
     - technique
     slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
       description:
         required: true
       name:
@@ -301,9 +303,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -693,6 +692,11 @@ classes:
         range: Consortium
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       hasPart:
         range: SoftwareVersion
       isAlternativeVersionOf:
@@ -775,6 +779,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       hasPart:
         range: ModelVersion
       isAlternativeVersionOf:
@@ -912,6 +921,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       inputData:
         range: DOI
       isAlternativeVersionOf:
@@ -1052,6 +1066,11 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       isAlternativeVersionOf:
         range: MetaDataModelVersion
       isNewVersionOf:
@@ -1139,6 +1158,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       inputData:
         range: DOI
       isAlternativeVersionOf:
@@ -1424,9 +1448,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - Contribution:
     class_uri: https://openminds.ebrains.eu/core/Contribution
     description: Structured information on the contribution made to a research product.

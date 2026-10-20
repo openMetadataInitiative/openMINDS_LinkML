@@ -341,6 +341,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       hasPart:
         range: WorkflowRecipeVersion
       isAlternativeVersionOf:
@@ -751,6 +756,11 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       isAlternativeVersionOf:
         range: ValidationTestVersion
       isNewVersionOf:
