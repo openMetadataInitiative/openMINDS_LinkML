@@ -13,11 +13,36 @@ enums:
     enum_uri: https://openminds.om-i.org/types/MRIPulseSequence
     title: Mripulse sequence
     permissible_values:
+      magnetization transfer pulse sequence:
+        description: A combination of two radiofrequency pulses, the first off-resonance,
+          the second in resonance with the Larmor frequency of free-water protons.
+      inversion recovery pulse sequence:
+        description: A magnetic resonance imaging pulse sequence composed of a 180-degree
+          radiofrequency pulse, followed by a spin echo pulse sequence.
+      fluid attenuated inversion recovery pulse sequence:
+        description: A special inversion recovery pulse sequence where the inversion
+          time is adjusted such that at equilibrium there is no net transverse magnetization
+          of fluid in order to null the signal from fluid in the resulting image.
+      fast low angle shot pulse sequence:
+        description: A gradient echo pulse sequence that combines a low-flip angle
+          radio-frequency excitation of the nuclear magnetic resonance signal (recorded
+          as a spatially encoded gradient echo) with a short repetition time. [adapted
+          from [Wikipedia](https://en.wikipedia.org/wiki/Fast_low_angle_shot_magnetic_resonance_imaging)]
+      gradient-echo pulse sequence:
+        description: A magnetic resonance imaging pulse sequence composed of one or
+          more radio frequency pulses that are usually less than 90 degrees interleaved
+          with the application of a spatial magnetic field gradient.
+      multi-echo pulse sequence:
+        description: A magnetic resonance imaging pulse sequence composed of multiple
+          gradient reversals following a single radiofrequency pulse.
       saturation recovery pulse sequence:
         description: A magnetic resonance imaging pulse sequence composed of multiple
           slice selective 90-degree radiofrequency pulses at regular intervals delayed
           to allow the recovery of all the longitudinal magnetization before another
           pulse is applied.
+      T2-star pulse sequence:
+        description: A magnetic resonance imaging pulse sequence that is optimized
+          to measure the effective spin-spin relaxation time (T2-star).
       fast spin echo pulse sequence:
         description: A magnetic resonance image pulse sequence that collects multiple
           echos instead of a single echo during a spin echo pulse sequence, multiple
@@ -28,35 +53,10 @@ enums:
           multiple echoes at different phase steps (often collected blocks of 64 or
           128 phase steps), which are acquired using rephasing gradients where rephasing
           is achieved by rapidly reversing the readout or frequency-encoding gradient.
-      magnetization transfer pulse sequence:
-        description: A combination of two radiofrequency pulses, the first off-resonance,
-          the second in resonance with the Larmor frequency of free-water protons.
-      gradient-echo pulse sequence:
-        description: A magnetic resonance imaging pulse sequence composed of one or
-          more radio frequency pulses that are usually less than 90 degrees interleaved
-          with the application of a spatial magnetic field gradient.
-      fluid attenuated inversion recovery pulse sequence:
-        description: A special inversion recovery pulse sequence where the inversion
-          time is adjusted such that at equilibrium there is no net transverse magnetization
-          of fluid in order to null the signal from fluid in the resulting image.
-      inversion recovery pulse sequence:
-        description: A magnetic resonance imaging pulse sequence composed of a 180-degree
-          radiofrequency pulse, followed by a spin echo pulse sequence.
       spin echo pulse sequence:
         description: A magnetic resonance imaging pulse sequence composed of a slice
           selective 90-degree pulse followed by one or more (for fast spin echo sequences)
           180-degree refocusing pulses.
-      multi-echo pulse sequence:
-        description: A magnetic resonance imaging pulse sequence composed of multiple
-          gradient reversals following a single radiofrequency pulse.
-      fast low angle shot pulse sequence:
-        description: A gradient echo pulse sequence that combines a low-flip angle
-          radio-frequency excitation of the nuclear magnetic resonance signal (recorded
-          as a spatially encoded gradient echo) with a short repetition time. [adapted
-          from [Wikipedia](https://en.wikipedia.org/wiki/Fast_low_angle_shot_magnetic_resonance_imaging)]
-      T2-star pulse sequence:
-        description: A magnetic resonance imaging pulse sequence that is optimized
-          to measure the effective spin-spin relaxation time (T2-star).
       T2 pulse sequence:
         description: A magnetic resonance imaging pulse sequence that is optimized
           to measure the spin-spin relaxation time (T2).
