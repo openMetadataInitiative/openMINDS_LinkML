@@ -9,13 +9,13 @@ imports:
 - slots
 - types
 - enums
-- computation
 - publications
+- computation
 - stimulation
-- specimenPrep
 - ephys
-- SANDS
 - core
+- specimenPrep
+- SANDS
 - chemicals
 prefixes:
   linkml: https://w3id.org/linkml/

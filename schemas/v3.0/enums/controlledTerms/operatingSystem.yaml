@@ -14,21 +14,21 @@ enums:
     title: Operating system
     description: Structured information on the operating system.
     permissible_values:
+      Solaris:
+        description: null
       Windows Phone:
         description: null
-      Linux:
+      platform independent:
         description: null
-      Solaris:
+      iOS:
         description: null
       Windows:
         description: null
       MacOS:
         description: null
-      platform independent:
-        description: null
-      Unix:
-        description: null
       Android:
         description: null
-      iOS:
+      Linux:
+        description: null
+      Unix:
         description: null
