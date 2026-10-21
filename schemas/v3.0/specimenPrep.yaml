@@ -96,28 +96,6 @@ classes:
         - range: SubjectState
       output:
         range: TissueSampleState
-- TissueSampleSlicing:
-    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing
-    description: null
-    title: Tissue sample slicing
-    slots:
-    - id
-    - device
-    - input
-    - output
-    - temperature
-    - tissueBathSolution
-    slot_usage:
-      device:
-        required: true
-        range: SlicingDeviceUsage
-      input:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleCollectionState
-        - range: TissueSampleState
-      output:
-        range: TissueSampleCollectionState
 - CranialWindowPreparation:
     class_uri: https://openminds.ebrains.eu/specimenPrep/CranialWindowPreparation
     description: null
@@ -170,3 +148,25 @@ classes:
         - range: time
       studyTarget:
         range: AuditoryStimulusType
+- TissueSampleSlicing:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing
+    description: null
+    title: Tissue sample slicing
+    slots:
+    - id
+    - device
+    - input
+    - output
+    - temperature
+    - tissueBathSolution
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDeviceUsage
+      input:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleCollectionState
+        - range: TissueSampleState
+      output:
+        range: TissueSampleCollectionState
