@@ -13,6 +13,8 @@ enums:
     enum_uri: https://openminds.om-i.org/types/AccessProcessType
     title: Access process type
     permissible_values:
+      immediate access:
+        description: Automatic access upon acceptance of the applicable terms.
       authenticated access:
         description: Access following authentication through an account.
       authorized access:
@@ -21,5 +23,3 @@ enums:
           negotiation of relevant usage conditions.
       registered access:
         description: Access requires registration but no authentication.
-      immediate access:
-        description: Automatic access upon acceptance of the applicable terms.
