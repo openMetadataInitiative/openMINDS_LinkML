@@ -76,10 +76,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -193,10 +189,6 @@ classes:
       stage:
         required: true
         range: DataAnalysis
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
 - DataCopy:
     class_uri: https://openminds.ebrains.eu/computation/DataCopy
     description: null
@@ -246,10 +238,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -314,10 +302,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -404,10 +388,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -490,10 +470,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -557,10 +533,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -786,10 +758,6 @@ classes:
         range: string
         any_of:
         - range: time
-      startedBy:
-        any_of:
-        - range: SoftwareAgent
-        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
