@@ -94,6 +94,14 @@ classes:
         range: File
       repetitionTime:
         required: true
+      sliceGap:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      sliceThickness:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       sliceTiming:
         required: true
       usedCoils:
@@ -104,6 +112,31 @@ classes:
         - range: TissueSampleState
       voxelSize:
         range: QuantitativeValueArray
+- MRICoilUsage:
+    class_uri: https://openminds.om-i.org/types/MRICoilUsage
+    description: null
+    title: Mricoil usage
+    slots:
+    - id
+    - activeElement
+    - device
+    - lookupLabel
+    - metadataLocation
+    - mountingLocation
+    - signalDirectionality
+    - usedSpecimen
+    slot_usage:
+      device:
+        required: true
+        range: MRICoil
+      metadataLocation:
+        range: File
+      signalDirectionality:
+        required: true
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
 - MRIScanner:
     class_uri: https://openminds.om-i.org/types/MRIScanner
     description: null
@@ -130,31 +163,6 @@ classes:
         any_of:
         - range: DeviceType
         - range: HardwareProduct
-- MRICoilUsage:
-    class_uri: https://openminds.om-i.org/types/MRICoilUsage
-    description: null
-    title: Mricoil usage
-    slots:
-    - id
-    - activeElement
-    - device
-    - lookupLabel
-    - metadataLocation
-    - mountingLocation
-    - signalDirectionality
-    - usedSpecimen
-    slot_usage:
-      device:
-        required: true
-        range: MRICoil
-      metadataLocation:
-        range: File
-      signalDirectionality:
-        required: true
-      usedSpecimen:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleState
 - DynamicMRIAcquisition:
     class_uri: https://openminds.om-i.org/types/DynamicMRIAcquisition
     description: null
