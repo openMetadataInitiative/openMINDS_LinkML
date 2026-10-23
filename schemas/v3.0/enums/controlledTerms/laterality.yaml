@@ -14,7 +14,7 @@ enums:
     title: Laterality
     description: Structured information on the lateral direction.
     permissible_values:
-      right:
-        description: null
       left:
+        description: null
+      right:
         description: null

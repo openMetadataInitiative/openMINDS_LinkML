@@ -13,9 +13,9 @@ enums:
     enum_uri: https://openminds.om-i.org/types/AccessForm
     title: Access form
     permissible_values:
-      direct access:
-        description: Users interact directly with the product or service through integrated
-          interfaces, or authorised environments.
       mediated access:
         description: Access is provided through designated technical systems or organisational
           actors acting on behalf of the user.
+      direct access:
+        description: Users interact directly with the product or service through integrated
+          interfaces, or authorised environments.
