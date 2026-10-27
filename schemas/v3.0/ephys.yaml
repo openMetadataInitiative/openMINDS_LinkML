@@ -14,50 +14,206 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
-- Channel:
-    class_uri: https://openminds.ebrains.eu/ephys/Channel
+- ElectrodeUsage:
+    class_uri: https://openminds.ebrains.eu/ephys/ElectrodeUsage
     description: null
-    title: Channel
+    title: Electrode usage
     slots:
     - id
-    - internalIdentifier
-    - unit
+    - anatomicalLocation
+    - contactResistance
+    - device
+    - lookupLabel
+    - metadataLocation
+    - spatialLocation
+    - usedSpecimen
     slot_usage:
-      internalIdentifier:
+      anatomicalLocation:
+        any_of:
+        - range: CellType
+        - range: Organ
+        - range: OrganismSubstance
+        - range: SubcellularEntity
+        - range: UBERONParcellation
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
+      contactResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      device:
         required: true
-      unit:
-        required: true
-- Recording:
-    class_uri: https://openminds.ebrains.eu/ephys/Recording
-    description: null
-    title: Recording
+        range: Electrode
+      metadataLocation:
+        range: File
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
+- Electrode:
+    class_uri: https://openminds.ebrains.eu/ephys/Electrode
+    description: Structured information on an electrode.
+    title: Electrode
     slots:
     - id
-    - additionalRemarks
-    - channel
-    - dataLocation
+    - conductorMaterial
+    - description
+    - deviceType
+    - digitalIdentifier
+    - insulatorMaterial
     - internalIdentifier
+    - intrinsicResistance
+    - lookupLabel
+    - manufacturer
     - name
-    - previousRecording
-    - recordedWith
-    - samplingFrequency
+    - owner
+    - serialNumber
     slot_usage:
-      channel:
-        required: true
-      dataLocation:
-        required: true
+      conductorMaterial:
         any_of:
-        - range: File
-        - range: FileBundle
-      recordedWith:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      deviceType:
         required: true
+      digitalIdentifier:
         any_of:
-        - range: ElectrodeArrayUsage
-        - range: ElectrodeUsage
-        - range: PipetteUsage
-        - range: SlicingDeviceUsage
-      samplingFrequency:
+        - range: DOI
+        - range: RRID
+      insulatorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      intrinsicResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      manufacturer:
+        range: Consortium
+      name:
         required: true
+      owner:
+        range: Consortium
+- Pipette:
+    class_uri: https://openminds.ebrains.eu/ephys/Pipette
+    description: null
+    title: Pipette
+    slots:
+    - id
+    - description
+    - deviceType
+    - digitalIdentifier
+    - externalDiameter
+    - internalDiameter
+    - internalIdentifier
+    - lookupLabel
+    - manufacturer
+    - material
+    - name
+    - owner
+    - serialNumber
+    slot_usage:
+      deviceType:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: RRID
+      manufacturer:
+        range: Consortium
+      material:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      name:
+        required: true
+      owner:
+        range: Consortium
+- ElectrodeArray:
+    class_uri: https://openminds.ebrains.eu/ephys/ElectrodeArray
+    description: Structured information on an electrode array.
+    title: Electrode array
+    slots:
+    - id
+    - conductorMaterial
+    - description
+    - deviceType
+    - digitalIdentifier
+    - electrodeIdentifier
+    - insulatorMaterial
+    - internalIdentifier
+    - intrinsicResistance
+    - lookupLabel
+    - manufacturer
+    - name
+    - numberOfElectrodes
+    - owner
+    - serialNumber
+    slot_usage:
+      conductorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      deviceType:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: RRID
+      electrodeIdentifier:
+        required: true
+      insulatorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      intrinsicResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      manufacturer:
+        range: Consortium
+      name:
+        required: true
+      numberOfElectrodes:
+        required: true
+      owner:
+        range: Consortium
+- ElectrodeArrayUsage:
+    class_uri: https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage
+    description: null
+    title: Electrode array usage
+    slots:
+    - id
+    - anatomicalLocationOfArray
+    - anatomicalLocationOfElectrodes
+    - contactResistances
+    - device
+    - lookupLabel
+    - metadataLocation
+    - spatialLocationOfElectrodes
+    - usedElectrode
+    - usedSpecimen
+    slot_usage:
+      anatomicalLocationOfArray:
+        range: CellType
+      anatomicalLocationOfElectrodes:
+        range: CellType
+      contactResistances:
+        range: QuantitativeValue
+      device:
+        required: true
+        range: ElectrodeArray
+      metadataLocation:
+        range: File
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState
 - PipetteUsage:
     class_uri: https://openminds.ebrains.eu/ephys/PipetteUsage
     description: null
@@ -96,177 +252,69 @@ classes:
       device:
         required: true
         range: Pipette
+      labelingCompound:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
       metadataLocation:
         range: File
+      pipetteResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pipetteSolution:
         required: true
       usedSpecimen:
         any_of:
         - range: SubjectState
         - range: TissueSampleState
-- ElectrodeArrayUsage:
-    class_uri: https://openminds.ebrains.eu/ephys/ElectrodeArrayUsage
+- RecordingActivity:
+    class_uri: https://openminds.ebrains.eu/ephys/RecordingActivity
     description: null
-    title: Electrode array usage
+    title: Recording activity
     slots:
     - id
-    - anatomicalLocationOfArray
-    - anatomicalLocationOfElectrodes
-    - contactResistances
+    - customPropertySet
+    - description
     - device
+    - endTime
+    - input
+    - internalIdentifier
+    - isPartOf
     - lookupLabel
-    - metadataLocation
-    - spatialLocationOfElectrodes
-    - usedElectrode
-    - usedSpecimen
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
     slot_usage:
-      anatomicalLocationOfArray:
-        range: CellType
-      anatomicalLocationOfElectrodes:
-        range: CellType
-      contactResistances:
-        range: QuantitativeValue
       device:
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
         required: true
-        range: ElectrodeArray
-      metadataLocation:
+        range: SubjectGroupState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
         range: File
-      usedSpecimen:
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
         any_of:
-        - range: SubjectState
-        - range: TissueSampleState
-- ElectrodeArray:
-    class_uri: https://openminds.ebrains.eu/ephys/ElectrodeArray
-    description: Structured information on an electrode array.
-    title: Electrode array
-    slots:
-    - id
-    - conductorMaterial
-    - description
-    - deviceType
-    - digitalIdentifier
-    - electrodeIdentifier
-    - insulatorMaterial
-    - internalIdentifier
-    - intrinsicResistance
-    - lookupLabel
-    - manufacturer
-    - name
-    - numberOfElectrodes
-    - owner
-    - serialNumber
-    slot_usage:
-      deviceType:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: RRID
-      electrodeIdentifier:
-        required: true
-      manufacturer:
-        range: Consortium
-      name:
-        required: true
-      numberOfElectrodes:
-        required: true
-      owner:
-        range: Consortium
-- Pipette:
-    class_uri: https://openminds.ebrains.eu/ephys/Pipette
-    description: null
-    title: Pipette
-    slots:
-    - id
-    - description
-    - deviceType
-    - digitalIdentifier
-    - externalDiameter
-    - internalDiameter
-    - internalIdentifier
-    - lookupLabel
-    - manufacturer
-    - material
-    - name
-    - owner
-    - serialNumber
-    slot_usage:
-      deviceType:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: RRID
-      manufacturer:
-        range: Consortium
-      name:
-        required: true
-      owner:
-        range: Consortium
-- Electrode:
-    class_uri: https://openminds.ebrains.eu/ephys/Electrode
-    description: Structured information on an electrode.
-    title: Electrode
-    slots:
-    - id
-    - conductorMaterial
-    - description
-    - deviceType
-    - digitalIdentifier
-    - insulatorMaterial
-    - internalIdentifier
-    - intrinsicResistance
-    - lookupLabel
-    - manufacturer
-    - name
-    - owner
-    - serialNumber
-    slot_usage:
-      deviceType:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: RRID
-      manufacturer:
-        range: Consortium
-      name:
-        required: true
-      owner:
-        range: Consortium
-- ElectrodeUsage:
-    class_uri: https://openminds.ebrains.eu/ephys/ElectrodeUsage
-    description: null
-    title: Electrode usage
-    slots:
-    - id
-    - anatomicalLocation
-    - contactResistance
-    - device
-    - lookupLabel
-    - metadataLocation
-    - spatialLocation
-    - usedSpecimen
-    slot_usage:
-      anatomicalLocation:
-        any_of:
-        - range: CellType
-        - range: Organ
-        - range: OrganismSubstance
-        - range: SubcellularEntity
-        - range: UBERONParcellation
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
-      device:
-        required: true
-        range: Electrode
-      metadataLocation:
-        range: File
-      usedSpecimen:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleState
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
 - CellPatching:
     class_uri: https://openminds.ebrains.eu/ephys/CellPatching
     description: null
@@ -291,6 +339,10 @@ classes:
     - tissueBathSolution
     - variation
     slot_usage:
+      bathTemperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       device:
         required: true
         range: ElectrodeArrayUsage
@@ -364,49 +416,47 @@ classes:
         - range: time
       studyTarget:
         range: AuditoryStimulusType
-- RecordingActivity:
-    class_uri: https://openminds.ebrains.eu/ephys/RecordingActivity
+- Recording:
+    class_uri: https://openminds.ebrains.eu/ephys/Recording
     description: null
-    title: Recording activity
+    title: Recording
     slots:
     - id
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
+    - additionalRemarks
+    - channel
+    - dataLocation
     - internalIdentifier
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
+    - name
+    - previousRecording
+    - recordedWith
+    - samplingFrequency
     slot_usage:
-      device:
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
+      channel:
+        required: true
+      dataLocation:
+        required: true
         any_of:
-        - range: time
-      input:
+        - range: File
+        - range: FileBundle
+      recordedWith:
         required: true
-        range: SubjectGroupState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: File
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
         any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: SlicingDeviceUsage
+      samplingFrequency:
+        required: true
+- Channel:
+    class_uri: https://openminds.ebrains.eu/ephys/Channel
+    description: null
+    title: Channel
+    slots:
+    - id
+    - internalIdentifier
+    - unit
+    slot_usage:
+      internalIdentifier:
+        required: true
+      unit:
+        required: true
