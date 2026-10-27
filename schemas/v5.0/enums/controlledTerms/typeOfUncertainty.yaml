@@ -13,7 +13,7 @@ enums:
     enum_uri: https://openminds.om-i.org/types/TypeOfUncertainty
     title: Type of uncertainty
     permissible_values:
-      standard error:
-        description: null
       standard deviation:
+        description: null
+      standard error:
         description: null
