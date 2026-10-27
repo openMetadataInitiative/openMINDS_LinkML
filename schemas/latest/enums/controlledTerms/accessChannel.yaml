@@ -13,12 +13,12 @@ enums:
     enum_uri: https://openminds.om-i.org/types/AccessChannel
     title: Access channel
     permissible_values:
+      hybrid access:
+        description: Access is provided both remotely through digital means and at
+          a specific physical location.
       virtual access:
         description: Refers to the ability of users to connect to, interact with,
           and utilize resources, systems, or other individuals remotely via digital
           interfaces.
       physical access:
         description: Access requires physical presence at a specific location.
-      hybrid access:
-        description: Access is provided both remotely through digital means and at
-          a specific physical location.

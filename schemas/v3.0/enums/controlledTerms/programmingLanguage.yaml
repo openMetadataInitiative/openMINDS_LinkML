@@ -16,45 +16,45 @@ enums:
     permissible_values:
       Fortran:
         description: null
-      C:
-        description: null
-      AMPL:
+      PHP:
         description: null
       Java:
         description: null
-      TypeScript:
-        description: null
-      Python:
-        description: null
-      JavaScript:
-        description: null
-      GLSL:
-        description: null
-      Pascal:
-        description: null
-      Bash:
-        description: null
-      C++:
-        description: null
-      HTML:
-        description: null
-      T-SQL:
-        description: null
-      Shell:
-        description: null
-      R:
-        description: null
       C#:
         description: null
-      PHP:
-        description: null
-      MATLAB:
-        description: null
-      Ruby:
+      HTML:
         description: null
       IGOR Pro:
         description: C-like programming language of the correspondent scientific data
           analysis software and numerical computing environment IGOR Pro available
           for Windows or Mac operating systems.
+      Pascal:
+        description: null
       Scala:
+        description: null
+      Bash:
+        description: null
+      GLSL:
+        description: null
+      R:
+        description: null
+      AMPL:
+        description: null
+      C++:
+        description: null
+      TypeScript:
+        description: null
+      Python:
+        description: null
+      T-SQL:
+        description: null
+      MATLAB:
+        description: null
+      Shell:
+        description: null
+      Ruby:
+        description: null
+      C:
+        description: null
+      JavaScript:
         description: null
