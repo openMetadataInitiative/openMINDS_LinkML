@@ -56,8 +56,8 @@ slots:
     description: Time of life or existence at which some particular qualification,
       capacity or event arises.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   ageCategory:
     slot_uri: ageCategory
@@ -162,8 +162,8 @@ slots:
     slot_uri: coordinateSpace
     description: Two or three dimensional geometric setting.
     any_of:
-    - range: CustomCoordinateSpace
     - range: CommonCoordinateSpace
+    - range: CustomCoordinateSpace
   coordinates:
     slot_uri: coordinates
     description: Pair or triplet of numbers defining a location in a given coordinate
@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: GRIDID
+    - range: ORCID
     - range: RORID
     - range: DOI
     - range: SWHID
-    - range: ORCID
+    - range: GRIDID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -438,18 +438,18 @@ slots:
   identifier:
     slot_uri: identifier
     description: Term or code used to identify something or someone.
-    multivalued: true
     range: string
-    list_elements_unique: true
     pattern:
       ALTERNATES:
       - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
       - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
-      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
-      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
+      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
       - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
         \ \t\r\n\f]+)*$"
-      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
+      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
+      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
+    multivalued: true
+    list_elements_unique: true
   inRelationTo:
     slot_uri: inRelationTo
     description: Reference to a related element.
@@ -519,11 +519,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
+    - range: FileBundle
     - range: TissueSampleCollection
     - range: ParcellationTerminology
-    - range: SubjectGroup
     - range: FileRepository
-    - range: FileBundle
+    - range: SubjectGroup
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -714,8 +714,8 @@ slots:
     description: Numerical characterization of how much two things occupy the same
       space.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   quantity:
     slot_uri: quantity
@@ -774,8 +774,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: BehavioralTask
     - range: Technique
+    - range: BehavioralTask
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -966,10 +966,10 @@ slots:
     description: Entry for a property.
     any_of:
     - range: QuantitativeValueRange
-    - range: integer
     - range: float
-    - range: QuantitativeValue
     - range: string
+    - range: integer
+    - range: QuantitativeValue
     multivalued: true
     inlined: true
   versionIdentifier:
@@ -998,8 +998,8 @@ slots:
     slot_uri: weight
     description: Amount that a thing or being weighs.
     any_of:
-    - range: QuantitativeValueRange
     - range: QuantitativeValue
+    - range: QuantitativeValueRange
     inlined: true
   year:
     slot_uri: year
