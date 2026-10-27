@@ -428,9 +428,6 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       criteriaQualityType:
         required: true
       criteriaType:
@@ -844,10 +841,6 @@ classes:
     slot_usage:
       inRelationTo:
         required: true
-        any_of:
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
 - ViewerSpecification:
@@ -863,10 +856,6 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
-      preferredDisplayColor:
-        any_of:
-        - range: Colormap
-        - range: SingleColor
 - SingleColor:
     class_uri: https://openminds.om-i.org/types/SingleColor
     description: null
@@ -889,8 +878,5 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       coordinates:
         required: true

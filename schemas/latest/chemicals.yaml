@@ -80,7 +80,3 @@ classes:
     slot_usage:
       chemicalProduct:
         required: true
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
