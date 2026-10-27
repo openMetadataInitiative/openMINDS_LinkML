@@ -14,33 +14,6 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
-- SlicingDevice:
-    class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDevice
-    description: null
-    title: Slicing device
-    slots:
-    - id
-    - description
-    - deviceType
-    - digitalIdentifier
-    - lookupLabel
-    - manufacturer
-    - name
-    - owner
-    - serialNumber
-    slot_usage:
-      deviceType:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: RRID
-      manufacturer:
-        range: Consortium
-      name:
-        required: true
-      owner:
-        range: Consortium
 - SlicingDeviceUsage:
     class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage
     description: null
@@ -76,32 +49,33 @@ classes:
         any_of:
         - range: SubjectState
         - range: TissueSampleState
-- TissueSampleSlicing:
-    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing
+- SlicingDevice:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/SlicingDevice
     description: null
-    title: Tissue sample slicing
+    title: Slicing device
     slots:
     - id
-    - device
-    - input
-    - output
-    - temperature
-    - tissueBathSolution
+    - description
+    - deviceType
+    - digitalIdentifier
+    - lookupLabel
+    - manufacturer
+    - name
+    - owner
+    - serialNumber
     slot_usage:
-      device:
+      deviceType:
         required: true
-        range: SlicingDeviceUsage
-      input:
+      digitalIdentifier:
         any_of:
-        - range: SubjectState
-        - range: TissueSampleCollectionState
-        - range: TissueSampleState
-      output:
-        range: TissueSampleCollectionState
-      temperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
+        - range: DOI
+        - range: RRID
+      manufacturer:
+        range: Consortium
+      name:
+        required: true
+      owner:
+        range: Consortium
 - TissueCulturePreparation:
     class_uri: https://openminds.ebrains.eu/specimenPrep/TissueCulturePreparation
     description: null
@@ -177,3 +151,29 @@ classes:
         - range: time
       studyTarget:
         range: AuditoryStimulusType
+- TissueSampleSlicing:
+    class_uri: https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing
+    description: null
+    title: Tissue sample slicing
+    slots:
+    - id
+    - device
+    - input
+    - output
+    - temperature
+    - tissueBathSolution
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDeviceUsage
+      input:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleCollectionState
+        - range: TissueSampleState
+      output:
+        range: TissueSampleCollectionState
+      temperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange

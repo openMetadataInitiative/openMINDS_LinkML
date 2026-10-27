@@ -16,19 +16,19 @@ enums:
     permissible_values:
       Solaris:
         description: null
-      MacOS:
-        description: null
       Windows Phone:
         description: null
       platform independent:
         description: null
-      Linux:
+      iOS:
+        description: null
+      Windows:
+        description: null
+      MacOS:
         description: null
       Android:
         description: null
-      iOS:
+      Linux:
         description: null
       Unix:
-        description: null
-      Windows:
         description: null

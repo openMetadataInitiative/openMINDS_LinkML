@@ -14,24 +14,19 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
-- ProductSource:
-    class_uri: https://openminds.ebrains.eu/chemicals/ProductSource
-    description: Structured information about the source of a chemical substance or
-      mixture.
-    title: Product source
+- ChemicalSubstance:
+    class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
+    description: Structured information about a chemical substance.
+    title: Chemical substance
     slots:
     - id
-    - digitalIdentifier
-    - identifier
-    - productName
-    - provider
+    - additionalRemarks
+    - lookupLabel
+    - molecularEntity
+    - productSource
     - purity
     slot_usage:
-      digitalIdentifier:
-        range: RRID
-      productName:
-        required: true
-      provider:
+      molecularEntity:
         required: true
       purity:
         any_of:
@@ -55,24 +50,6 @@ classes:
       type:
         required: true
         range: ChemicalMixtureType
-- ChemicalSubstance:
-    class_uri: https://openminds.ebrains.eu/chemicals/ChemicalSubstance
-    description: Structured information about a chemical substance.
-    title: Chemical substance
-    slots:
-    - id
-    - additionalRemarks
-    - lookupLabel
-    - molecularEntity
-    - productSource
-    - purity
-    slot_usage:
-      molecularEntity:
-        required: true
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - AmountOfChemical:
     class_uri: https://openminds.ebrains.eu/chemicals/AmountOfChemical
     description: Structured information about the amount of a given chemical that
@@ -85,7 +62,26 @@ classes:
     slot_usage:
       chemicalProduct:
         required: true
+- ProductSource:
+    class_uri: https://openminds.ebrains.eu/chemicals/ProductSource
+    description: Structured information about the source of a chemical substance or
+      mixture.
+    title: Product source
+    slots:
+    - id
+    - digitalIdentifier
+    - identifier
+    - productName
+    - provider
+    - purity
+    slot_usage:
+      digitalIdentifier:
+        range: RRID
+      productName:
+        required: true
+      provider:
+        required: true
+      purity:
         any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
