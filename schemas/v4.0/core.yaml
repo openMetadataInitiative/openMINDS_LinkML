@@ -1287,12 +1287,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Protocol:
     class_uri: https://openminds.om-i.org/types/Protocol
     description: Structured information on a research project.
@@ -1305,6 +1317,11 @@ classes:
     - stimulusType
     - technique
     slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
       description:
         required: true
       name:
@@ -1332,6 +1349,10 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -1340,6 +1361,14 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Strain:
     class_uri: https://openminds.om-i.org/types/Strain
     description: null
@@ -1502,12 +1531,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Subject:
     class_uri: https://openminds.om-i.org/types/Subject
     description: Structured information on a subject.
@@ -1546,6 +1587,10 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -1554,6 +1599,14 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - CustomPropertySet:
     class_uri: https://openminds.om-i.org/types/CustomPropertySet
     description: Structured information about properties of an entity that are not
