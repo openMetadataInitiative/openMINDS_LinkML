@@ -72,6 +72,11 @@ classes:
         required: true
       publicationDate:
         required: true
+      publisher:
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
 - LivePaper:
     class_uri: https://openminds.ebrains.eu/publications/LivePaper
     description: null
@@ -154,6 +159,11 @@ classes:
         required: true
       publicationDate:
         required: true
+      publisher:
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
 - LivePaperVersion:
     class_uri: https://openminds.ebrains.eu/publications/LivePaperVersion
     description: null
@@ -352,6 +362,11 @@ classes:
         required: true
       publicationDate:
         required: true
+      publisher:
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
       requiredTime:
         any_of:
         - range: QuantitativeValue
@@ -406,3 +421,8 @@ classes:
         required: true
       publicationDate:
         required: true
+      publisher:
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person

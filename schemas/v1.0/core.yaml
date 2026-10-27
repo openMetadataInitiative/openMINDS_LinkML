@@ -293,6 +293,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       inputData:
@@ -365,6 +369,10 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       isAlternativeVersionOf:
@@ -449,6 +457,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       isAlternativeVersionOf:
@@ -673,6 +685,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       homepage:
         range: URL
       inputData:
@@ -1008,6 +1024,9 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
+        any_of:
+        - range: BehavioralTask
+        - range: Technique
 - TissueSample:
     class_uri: https://openminds.ebrains.eu/core/TissueSample
     description: Structured information on a tissue sample.
@@ -1037,9 +1056,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
       species:
         required: true
       studiedState:

@@ -56,6 +56,9 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       coordinates:
         required: true
 - QualitativeRelationAssessment:
@@ -70,6 +73,10 @@ classes:
     slot_usage:
       inRelationTo:
         required: true
+        any_of:
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
 - SingleColor:
@@ -497,6 +504,9 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       criteriaQualityType:
         required: true
       criteriaType:

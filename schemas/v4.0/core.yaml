@@ -41,6 +41,10 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
 - Comment:
     class_uri: https://openminds.om-i.org/types/Comment
     description: Structured information about a short text expressing an opinion on,
@@ -205,6 +209,9 @@ classes:
     slot_usage:
       memberOf:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
 - Contribution:
     class_uri: https://openminds.om-i.org/types/Contribution
     description: Structured information on the contribution made to a research product.
@@ -216,6 +223,10 @@ classes:
     slot_usage:
       contributor:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
       type:
         required: true
         range: ContributionType
