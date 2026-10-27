@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: GRIDID
-    - range: RORID
-    - range: ORCID
-    - range: SWHID
     - range: DOI
+    - range: ORCID
+    - range: RORID
+    - range: GRIDID
+    - range: SWHID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -519,11 +519,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: ParcellationTerminology
     - range: TissueSampleCollection
+    - range: ParcellationTerminology
+    - range: SubjectGroup
     - range: FileBundle
     - range: FileRepository
-    - range: SubjectGroup
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -774,8 +774,8 @@ slots:
     slot_uri: relevantFor
     description: Reference to what or whom something or someone bears significance.
     any_of:
-    - range: BehavioralTask
     - range: Technique
+    - range: BehavioralTask
   repository:
     slot_uri: repository
     description: Place, room, or container where something is deposited or stored.
@@ -965,9 +965,9 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: integer
-    - range: float
     - range: QuantitativeValue
+    - range: float
+    - range: integer
     - range: QuantitativeValueRange
     - range: string
     multivalued: true

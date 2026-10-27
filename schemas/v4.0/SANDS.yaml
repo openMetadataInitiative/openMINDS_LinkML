@@ -71,10 +71,6 @@ classes:
     slot_usage:
       inRelationTo:
         required: true
-        any_of:
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
 - SingleColor:
@@ -119,10 +115,6 @@ classes:
         range: CustomAnnotation
       name:
         required: true
-      relatedUBERONTerm:
-        any_of:
-        - range: Organ
-        - range: UBERONParcellation
       relationAssessment:
         range: QualitativeRelationAssessment
 - CustomAnnotation:
