@@ -14,29 +14,6 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- SlicingDevice:
-    class_uri: https://openminds.om-i.org/types/SlicingDevice
-    description: null
-    title: Slicing device
-    slots:
-    - id
-    - contribution
-    - description
-    - internalIdentifier
-    - name
-    - serialNumber
-    - type
-    slot_usage:
-      contribution:
-        required: true
-        range: Organization
-      name:
-        required: true
-      type:
-        required: true
-        any_of:
-        - range: DeviceType
-        - range: HardwareProduct
 - SlicingDeviceUsage:
     class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
     description: null
@@ -69,55 +46,29 @@ classes:
         any_of:
         - range: SubjectState
         - range: TissueSampleState
-- TissueSampleSlicing:
-    class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
+- SlicingDevice:
+    class_uri: https://openminds.om-i.org/types/SlicingDevice
     description: null
-    title: Tissue sample slicing
+    title: Slicing device
     slots:
     - id
-    - customPropertySet
+    - contribution
     - description
-    - device
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - temperature
-    - tissueBathSolution
+    - internalIdentifier
+    - name
+    - serialNumber
+    - type
     slot_usage:
-      device:
+      contribution:
         required: true
-        range: SlicingDeviceUsage
-      endTime:
-        range: string
+        range: Organization
+      name:
+        required: true
+      type:
+        required: true
         any_of:
-        - range: time
-      input:
-        required: true
-        range: SubjectState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleCollectionState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-        range: Protocol
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
+        - range: DeviceType
+        - range: HardwareProduct
 - TissueCulturePreparation:
     class_uri: https://openminds.om-i.org/types/TissueCulturePreparation
     description: null
@@ -229,6 +180,55 @@ classes:
       output:
         required: true
         range: SubjectState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AnatomicalCavity
+- TissueSampleSlicing:
+    class_uri: https://openminds.om-i.org/types/TissueSampleSlicing
+    description: null
+    title: Tissue sample slicing
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - temperature
+    - tissueBathSolution
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDeviceUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleCollectionState
       performedBy:
         range: SoftwareAgent
       protocol:

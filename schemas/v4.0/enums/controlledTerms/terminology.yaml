@@ -13,190 +13,190 @@ enums:
     enum_uri: https://openminds.om-i.org/types/Terminology
     title: Terminology
     permissible_values:
-      type of uncertainty:
+      MRI weighting:
+        description: Class of imaging techniques where the image contrast is generated
+          from a specific intrinsic tissue parameter (T1, T2, etc.).
+      anatomical axes orientation:
         description: null
-      molecular entity:
-        description: Any constitutionally or isotopically distinct atom, molecule,
-          ion, ion pair, radical, radical ion, complex, conformer etc., identifiable
-          as a separately distinguishable entity.
-      organ:
-        description: Terminology defining whole anatomical organs that function as
-          discrete structural and functional units within an organism.
-      gustatory stimulus type:
-        description: A 'gustatory stimulus type' groups similar gustatory stimuli
-          used across gustatory stimulation techniques.
-      criteria quality type:
-        description: null
-      atlas type:
-        description: null
-      measured quantity:
-        description: A qualified physical quantity that was measured/recorded
-      cranial window reinforcement type:
-        description: The reinforcement type of a cranial window.
-      preparation type:
-        description: null
-      model scope:
-        description: null
-      device type:
+      model abstraction level:
         description: null
       contribution type:
         description: A functional role characterized by a specific activity or responsibility
           realized by a role-bearing entity in relation to a target entity and its
           life cycle.
-      disease model:
-        description: null
-      qualitative overlap:
-        description: null
-      tissue sample attribute:
-        description: null
       subcellular entity:
         description: Entity derived from a cell or cells. The anatomical scale of
           these objects roughly corresponds to that which would be visible in high
           resolution light microscopy or conventional electron microscopy, e.g., nanometers
           to microns
-      difference measure:
-        description: A measure of the difference between two things
-      experimental approach:
+      semantic data type:
         description: null
-      learning resource type:
-        description: A 'learning resource type' groups persistent resources that explicitly
-          entail learning activities or learning experiences in a certain format (e.g.,
-          in a physical or digital presentation).
-      biological order:
-        description: null
-      annotation criteria type:
-        description: General classification of how data were annotated.
-      chemicalMixtureType:
-        description: A 'chemical mixture type' groups all mixtures with the same chemical
-          and physical characteristics under a general term.
-      cranial window construction type:
-        description: The construction type of a cranial window.
-      handedness:
-        description: null
-      stimulation approach:
-        description: null
-      age category:
-        description: The age category describes a specific spatiotemporal part of
-          the life cycle of an organism.
-      disease:
-        description: null
-      stimulation technique:
-        description: null
-      subject attribute:
+      patch clamp variation:
+        description: A variation of the patch clamp technique
+      organism substance:
+        description: Terminology defining biological substances produced by or contained
+          within an organism.
+      analysis technique:
         description: null
       setup type:
         description: The setup type describes the overall purpose of arranging equipment
           in a certain way (setup).
-      olfactory stimulus type:
-        description: An 'olfactory stimulus type' groups similar olfactory stimuli
-          used across olfactory stimulation techniques.
-      anatomical identification type:
-        description: The type of identiciation that was used to determine an anatomical
-          location.
-      biological sex:
+      colormap:
+        description: A colormap is a lookup table specifying the colors to be used
+          in rendering a palettized image, [adapted from [Wiktionary](https://en.wiktionary.org/wiki/colormap)].
+      operating system:
         description: null
-      action status type:
-        description: null
-      semantic data type:
-        description: null
-      educational level:
-        description: 'An ''educational level'' defines the developmental stage of
-          a student and how learning environments are structured. '
-      analysis technique:
-        description: null
-      genetic strain type:
-        description: The genetic strain type describes the genetic background type
-          of a strain.
-      electrical stimulus type:
-        description: An 'electrical stimulus type' groups similar electrical stimuli
-          used across electrical stimulation techniques.
-      tissue sample type:
-        description: null
+      breeding type:
+        description: The breeding type describes how plants or animals have been sexually
+          propagated.
       MRI pulse sequence:
         description: An 'MRI pulse sequence' is a particular setting of pulse sequences
           and pulsed field gradients, resulting in a particular image appearance [adapted
           from [Wikipedia](https://en.wikipedia.org/wiki/MRI_pulse_sequence)].
-      technique:
-        description: null
+      age category:
+        description: The age category describes a specific spatiotemporal part of
+          the life cycle of an organism.
       product accessibility:
         description: null
-      file bundle grouping:
+      handedness:
         description: null
-      software feature:
+      subject attribute:
         description: null
-      UBERON parcellation:
+      qualitative overlap:
+        description: null
+      language:
+        description: null
+      annotation criteria type:
+        description: General classification of how data were annotated.
+      anatomical identification type:
+        description: The type of identiciation that was used to determine an anatomical
+          location.
+      stimulation technique:
+        description: null
+      experimental approach:
+        description: null
+      chemicalMixtureType:
+        description: A 'chemical mixture type' groups all mixtures with the same chemical
+          and physical characteristics under a general term.
+      file usage role:
+        description: null
+      software application category:
+        description: null
+      cranial window reinforcement type:
+        description: The reinforcement type of a cranial window.
+      olfactory stimulus type:
+        description: An 'olfactory stimulus type' groups similar olfactory stimuli
+          used across olfactory stimulation techniques.
+      anatomical plane:
+        description: A flat anatomical 2D surface that bisects an anatomical structure
+          or an anatomical space.
+      stimulation approach:
+        description: null
+      service:
         description: null
       tactile stimulus type:
         description: A 'tactile stimulus type' groups similar tactile stimuli used
           across tactile stimulation techniques.
+      gustatory stimulus type:
+        description: A 'gustatory stimulus type' groups similar gustatory stimuli
+          used across gustatory stimulation techniques.
+      learning resource type:
+        description: A 'learning resource type' groups persistent resources that explicitly
+          entail learning activities or learning experiences in a certain format (e.g.,
+          in a physical or digital presentation).
+      laterality:
+        description: null
+      cranial window construction type:
+        description: The construction type of a cranial window.
+      molecular entity:
+        description: Any constitutionally or isotopically distinct atom, molecule,
+          ion, ion pair, radical, radical ion, complex, conformer etc., identifiable
+          as a separately distinguishable entity.
+      (meta)data model type:
+        description: null
+      tissue sample type:
+        description: null
+      species:
+        description: null
+      auditory stimulus type:
+        description: An 'auditory stimulus type' groups similar auditory stimuli used
+          across auditory stimulation techniques.
+      biological order:
+        description: null
+      data type:
+        description: null
+      UBERON parcellation:
+        description: null
+      disease model:
+        description: null
+      genetic strain type:
+        description: The genetic strain type describes the genetic background type
+          of a strain.
+      device type:
+        description: null
+      difference measure:
+        description: A measure of the difference between two things
+      electrical stimulus type:
+        description: An 'electrical stimulus type' groups similar electrical stimuli
+          used across electrical stimulation techniques.
+      measured signal type:
+        description: The types of biological electrical and non-electrical signals
+          that vary in time and/or space and can be measured.
+      criteria quality type:
+        description: null
+      disease:
+        description: null
+      tissue sample attribute:
+        description: null
       annotation type:
         description: Geometrical classification of annotations into types.
+      biological sex:
+        description: null
+      file bundle grouping:
+        description: null
+      preparation type:
+        description: null
+      unit of measurement:
+        description: null
+      file repository type:
+        description: null
+      atlas type:
+        description: null
+      ethics assessment:
+        description: null
+      programming language:
+        description: null
+      optical stimulus type:
+        description: An 'optical stimulus type' groups similar optical stimuli used
+          across optical stimulation techniques.
+      visual stimulus type:
+        description: A 'visual stimulus type' groups similar visual stimuli used across
+          visual stimulation techniques.
+      measured quantity:
+        description: A qualified physical quantity that was measured/recorded
+      educational level:
+        description: 'An ''educational level'' defines the developmental stage of
+          a student and how learning environments are structured. '
+      action status type:
+        description: null
       cell culture type:
         description: The type of a cell culture (e.g. primary, secondary)
       organism system:
         description: Terminology defining biological systems composed of multiple
           interacting anatomical structures that together perform a major physiological
           function.
-      species:
-        description: null
-      file usage role:
-        description: null
-      model abstraction level:
-        description: null
-      organism substance:
-        description: Terminology defining biological substances produced by or contained
-          within an organism.
-      programming language:
-        description: null
-      measured signal type:
-        description: The types of biological electrical and non-electrical signals
-          that vary in time and/or space and can be measured.
-      software application category:
-        description: null
-      laterality:
-        description: null
-      data type:
-        description: null
-      visual stimulus type:
-        description: A 'visual stimulus type' groups similar visual stimuli used across
-          visual stimulation techniques.
-      language:
-        description: null
-      MRI weighting:
-        description: Class of imaging techniques where the image contrast is generated
-          from a specific intrinsic tissue parameter (T1, T2, etc.).
-      optical stimulus type:
-        description: An 'optical stimulus type' groups similar optical stimuli used
-          across optical stimulation techniques.
-      anatomical plane:
-        description: A flat anatomical 2D surface that bisects an anatomical structure
-          or an anatomical space.
-      anatomical axes orientation:
-        description: null
-      operating system:
-        description: null
-      patch clamp variation:
-        description: A variation of the patch clamp technique
-      colormap:
-        description: A colormap is a lookup table specifying the colors to be used
-          in rendering a palettized image, [adapted from [Wiktionary](https://en.wiktionary.org/wiki/colormap)].
-      ethics assessment:
-        description: null
-      operating device:
-        description: null
       cell type:
         description: null
-      file repository type:
+      organ:
+        description: Terminology defining whole anatomical organs that function as
+          discrete structural and functional units within an organism.
+      software feature:
         description: null
-      unit of measurement:
+      technique:
         description: null
-      (meta)data model type:
+      type of uncertainty:
         description: null
-      auditory stimulus type:
-        description: An 'auditory stimulus type' groups similar auditory stimuli used
-          across auditory stimulation techniques.
-      breeding type:
-        description: The breeding type describes how plants or animals have been sexually
-          propagated.
-      service:
+      model scope:
+        description: null
+      operating device:
         description: null

@@ -251,11 +251,11 @@ slots:
     slot_uri: digitalIdentifier
     description: Digital handle to identify objects or legal persons.
     any_of:
-    - range: DOI
+    - range: SWHID
     - range: ORCID
     - range: RORID
+    - range: DOI
     - range: GRIDID
-    - range: SWHID
     multivalued: true
     list_elements_unique: true
   displayColor:
@@ -438,18 +438,18 @@ slots:
   identifier:
     slot_uri: identifier
     description: Term or code used to identify something or someone.
+    multivalued: true
     range: string
+    list_elements_unique: true
     pattern:
       ALTERNATES:
       - ^https://ror.org/0([0-9]|[^ILO]|[a-z]){6}[0-9]{2}$
       - ^([0-9]{3}-|)[0-9]{1}-[0-9]{3}-[0-9]{5}-[0-9]{1}$
-      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
+      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
+      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
       - "^https://archive.softwareheritage.org/swh:1:(cnt|dir|rel|rev|snp):[0-9a-f]{40}(;(origin|visit|anchor|path|lines)=[^\
         \ \t\r\n\f]+)*$"
-      - ^https://grid.ac/institutes/grid.[0-9]{1,}.([a-f0-9]{1,2})$
-      - ^https://doi.org/10.[0-9]{4,9}/[-._;()/:A-Za-z0-9]+
-    multivalued: true
-    list_elements_unique: true
+      - ^https://orcid.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-([0-9]{3}[A-Z]|[0-9]{4})$
   inRelationTo:
     slot_uri: inRelationTo
     description: Reference to a related element.
@@ -519,11 +519,11 @@ slots:
     slot_uri: isPartOf
     description: Reference to the ensemble of multiple things or beings.
     any_of:
-    - range: FileBundle
+    - range: ParcellationTerminology
     - range: FileRepository
     - range: SubjectGroup
     - range: TissueSampleCollection
-    - range: ParcellationTerminology
+    - range: FileBundle
     multivalued: true
     list_elements_unique: true
   keyword:
@@ -920,8 +920,8 @@ slots:
     description: Way of communication used to interact with users or customers.
     multivalued: true
     any_of:
-    - range: uri
     - range: string
+    - range: uri
     list_elements_unique: true
   synonym:
     slot_uri: synonym
@@ -965,11 +965,11 @@ slots:
     slot_uri: value
     description: Entry for a property.
     any_of:
-    - range: string
     - range: float
     - range: QuantitativeValue
-    - range: QuantitativeValueRange
     - range: integer
+    - range: QuantitativeValueRange
+    - range: string
     multivalued: true
     inlined: true
   versionIdentifier:
