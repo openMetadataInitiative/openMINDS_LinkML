@@ -16,12 +16,12 @@ enums:
       liver:
         description: '''Liver'' is an organ that is part of the digestive system of
           vertebrate animals.'
+      muscle:
+        description: '''Muscle'' is part of the musculoskeletal system.'
       brain:
         description: '''Brain'' is part of the central nervous system.'
-      heart:
-        description: '''Heart'' is part of the cardiovascular system'
       skin:
         description: '''Skin'' is the organ covering the body that consists of the
           dermis and epidermis.'
-      muscle:
-        description: '''Muscle'' is part of the musculoskeletal system.'
+      heart:
+        description: '''Heart'' is part of the cardiovascular system'
