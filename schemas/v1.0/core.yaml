@@ -278,6 +278,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - GRIDID:
     class_uri: https://openminds.ebrains.eu/core/GRIDID
     description: A GRID (Global Research Identifier Database) identifier.
@@ -374,10 +377,6 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       homepage:
         range: URL
       isAlternativeVersionOf:
@@ -457,10 +456,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       homepage:
         range: URL
       inputData:
@@ -632,10 +627,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       homepage:
         range: URL
       isAlternativeVersionOf:
@@ -809,10 +800,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: URL
       homepage:
         range: URL
       inputData:
@@ -876,6 +863,9 @@ classes:
         required: true
       contributor:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - Organization:
     class_uri: https://openminds.ebrains.eu/core/Organization
     description: An entity comprised of one or more natural persons with a particular
@@ -1141,6 +1131,9 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
+        any_of:
+        - range: BehavioralTask
+        - range: Technique
 - SubjectGroup:
     class_uri: https://openminds.ebrains.eu/core/SubjectGroup
     description: null

@@ -25,6 +25,9 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       coordinates:
         required: true
 - QualitativeRelationAssessment:
@@ -451,6 +454,9 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       criteriaQualityType:
         required: true
       criteriaType:
@@ -706,9 +712,6 @@ classes:
         - range: uri
       usedTaxon:
         required: true
-        any_of:
-        - range: BiologicalOrder
-        - range: Species
 - AnatomicalAtlas:
     class_uri: https://openminds.om-i.org/types/AnatomicalAtlas
     description: null
@@ -767,9 +770,6 @@ classes:
         - range: uri
       usedTaxon:
         required: true
-        any_of:
-        - range: BiologicalOrder
-        - range: Species
 - AnatomicalAtlasVersion:
     class_uri: https://openminds.om-i.org/types/AnatomicalAtlasVersion
     description: null

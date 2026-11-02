@@ -485,6 +485,9 @@ classes:
         range: ActionStatusType
       license:
         required: true
+        any_of:
+        - range: License
+        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:
@@ -1422,9 +1425,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState
@@ -1497,9 +1497,6 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
