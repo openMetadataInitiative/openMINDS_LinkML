@@ -15,15 +15,15 @@ enums:
     permissible_values:
       conditional ready:
         description: null
-      transgenic:
-        description: null
-      knockin:
-        description: null
-      conditional knockout ready:
+      wildtype:
         description: null
       conditional knockin ready:
         description: null
-      wildtype:
+      conditional knockout ready:
+        description: null
+      transgenic:
+        description: null
+      knockin:
         description: null
       knockout:
         description: null

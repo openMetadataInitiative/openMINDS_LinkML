@@ -17,6 +17,11 @@ enums:
         description: Quantification of a distance between the empirical distribution
           function of the sample and the cumulative distribution function of the reference
           distribution, or between the empirical distribution functions of two samples.
+      chi-squared statistic:
+        description: Test statistic resulting from a chi-squared test.
+      Kullback-Leibler divergence:
+        description: A measure of how one probability distribution is different from
+          a second, reference probability distribution.
       mean squared error:
         description: The mean squared difference between two series of values.
       z-score:
@@ -25,8 +30,3 @@ enums:
       t-statistic:
         description: The ratio of the departure of the estimated value of a parameter
           from its hypothesized value to its standard error.
-      chi-squared statistic:
-        description: Test statistic resulting from a chi-squared test.
-      Kullback-Leibler divergence:
-        description: A measure of how one probability distribution is different from
-          a second, reference probability distribution.

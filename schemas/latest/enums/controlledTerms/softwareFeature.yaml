@@ -13,75 +13,75 @@ enums:
     enum_uri: https://openminds.om-i.org/types/SoftwareFeature
     title: Software feature
     permissible_values:
-      statistical data types:
+      matrix data types:
         description: null
-      time series data types:
-        description: null
-      graph data types:
-        description: null
-      provenance:
-        description: null
-      vector image data types:
-        description: null
-      modelling:
+      performance measurement:
         description: null
       tiled display wall:
         description: null
       scripting interface:
         description: null
-      positional data types:
-        description: null
-      metadata data types:
-        description: null
-      matrix data types:
-        description: null
-      performance measurement:
-        description: null
-      interactive analysis:
-        description: null
-      3D vector data types:
-        description: null
       profiling:
         description: null
-      raster image data types:
-        description: null
-      augmented reality:
-        description: null
-      3D geometry data types:
-        description: null
-      command line interface:
-        description: A text-based system that enables users to interact with a computer
-          or software by entering commands, allowing them to perform specific tasks
-          or operations.
-      presentation visualisation:
-        description: null
-      data acquisition:
+      modelling:
         description: null
       application programming interface:
         description: A set of rules and protocols that allows different software applications
           to communicate with each other, enabling them to access specific functions
           or data.
+      tensor data types:
+        description: null
+      virtual reality:
+        description: null
+      data processing:
+        description: null
+      metadata data types:
+        description: null
       mobile device:
         description: null
-      3D scalar data types:
+      simulation:
         description: null
-      desktop environment:
+      heterogeneous architecture:
+        description: null
+      interactive analysis:
+        description: null
+      control:
+        description: null
+      raster image data types:
+        description: null
+      data acquisition:
+        description: null
+      graph data types:
+        description: null
+      presentation visualisation:
+        description: null
+      time series data types:
         description: null
       parallel programming:
         description: null
-      virtual reality:
+      3D geometry data types:
         description: null
       graphical user interface:
         description: A visual system that enables users to interact with a computer
           or software through graphical elements like windows, icons, and menus, allowing
           them to perform specific tasks or operations.
-      heterogeneous architecture:
+      command line interface:
+        description: A text-based system that enables users to interact with a computer
+          or software by entering commands, allowing them to perform specific tasks
+          or operations.
+      statistical data types:
         description: null
-      simulation:
+      3D vector data types:
         description: null
-      control:
+      augmented reality:
         description: null
-      tensor data types:
+      positional data types:
         description: null
-      data processing:
+      3D scalar data types:
+        description: null
+      provenance:
+        description: null
+      vector image data types:
+        description: null
+      desktop environment:
         description: null
