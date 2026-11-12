@@ -47,9 +47,6 @@ classes:
         required: true
       provider:
         required: true
-        any_of:
-        - range: Organization
-        - range: Person
 - AmountOfChemical:
     class_uri: https://openminds.om-i.org/types/AmountOfChemical
     description: Structured information about the amount of a given chemical that
@@ -62,6 +59,10 @@ classes:
     slot_usage:
       chemicalProduct:
         required: true
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
 - ChemicalMixture:
     class_uri: https://openminds.om-i.org/types/ChemicalMixture
     description: Structured information about a mixture of chemical substances.
