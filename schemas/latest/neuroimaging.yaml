@@ -249,10 +249,6 @@ classes:
         any_of:
         - range: QuantitativeValue
         - range: QuantitativeValueRange
-      sliceThickness:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       sliceTiming:
         required: true
       usedCoils:
