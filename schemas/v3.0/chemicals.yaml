@@ -47,10 +47,6 @@ classes:
         required: true
       provider:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - AmountOfChemical:
     class_uri: https://openminds.ebrains.eu/chemicals/AmountOfChemical
     description: Structured information about the amount of a given chemical that

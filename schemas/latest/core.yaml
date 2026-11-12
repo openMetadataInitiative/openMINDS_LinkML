@@ -42,6 +42,10 @@ classes:
     - obtainedWith
     - voxelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -273,6 +277,10 @@ classes:
     - pixelSize
     - z-stepSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -361,6 +369,10 @@ classes:
     - obtainedWith
     - pixelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -432,6 +444,10 @@ classes:
     - pixelSize
     - temporalSamplingFrequency
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -469,6 +485,10 @@ classes:
     - temporalSamplingFrequency
     - voxelSize
     slot_usage:
+      coordinateFramework:
+        any_of:
+        - range: CommonCoordinateFrameworkVersion
+        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -651,10 +671,6 @@ classes:
     slot_usage:
       member:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - QuantitativeValueRange:
     class_uri: https://openminds.om-i.org/types/QuantitativeValueRange
     description: A representation of a range of quantitative values.

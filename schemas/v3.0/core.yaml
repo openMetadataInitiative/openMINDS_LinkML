@@ -214,10 +214,6 @@ classes:
     slot_usage:
       contributor:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
       type:
         required: true
         range: ContributionType
@@ -268,9 +264,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - Person:
     class_uri: https://openminds.ebrains.eu/core/Person
     description: Structured information on a person.
@@ -326,10 +319,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - QuantitativeValueRange:
     class_uri: https://openminds.ebrains.eu/core/QuantitativeValueRange
     description: A representation of a range of quantitative values.
