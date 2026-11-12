@@ -13,604 +13,604 @@ enums:
     enum_uri: https://openminds.om-i.org/types/SovereignState
     title: Sovereign state
     permissible_values:
-      Albania:
-        description: Country in southeastern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q222)]
-      Vietnam:
-        description: Country in Southeast Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q881)]
-      Jordan:
-        description: Country in West Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q810)]
-      Tonga:
-        description: Sovereign state in Oceania, situated on an archipelago. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q678)]
-      Malaysia:
-        description: Country in Southeast Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q833)]
-      Mali:
-        description: Country in West Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q912)]
-      Pakistan:
-        description: Sovereign state in South Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q843)]
-      Bahrain:
-        description: Country in the Persian Gulf. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q398)]
-      San Marino:
-        description: Sovereign state in southern Europe, enclaved within Italy. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q238)]
-      Timor-Leste:
-        description: Sovereign state situated on several islands in Southeast Asia.
-          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q574)]
+      People's Republic of China:
+        description: Country in East Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q148)]
+      Georgia:
+        description: Country in the Caucasus region of Europe and Asia. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q230)]
+      Egypt:
+        description: Country in Northeast Africa and Southwest Asia. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q79)]
       Honduras:
         description: Sovereign state in Central America. [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q783)]
-      Samoa:
-        description: Sovereign state made up of six islands in the Pacific Ocean.
-          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q683)]
-      Saint Vincent and the Grenadines:
-        description: Island sovereign state in the Caribbean Sea. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q757)]
-      Poland:
-        description: Country in Central Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q36)]
-      North Macedonia:
-        description: Country in southeastern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q221)]
-      Lebanon:
-        description: Country in West Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q822)]
+      Nigeria:
+        description: Sovereign state in West Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1033)]
+      Sauk-Suiattle Indian Tribe:
+        description: Federally recognized Native American tribe in Washington state,
+          USA. [auto-generated from 'schema:description' property of the [Wikidata
+          entity](http://www.wikidata.org/entity/Q1718707)]
       Mongolia:
         description: Country in East Asia. [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q711)]
-      Kenya:
-        description: Country in Eastern Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q114)]
-      Singapore:
-        description: Sovereign island country and city-state in maritime Southeast
-          Asia. [auto-generated from 'schema:description' property of the [Wikidata
-          entity](http://www.wikidata.org/entity/Q334)]
-      Rwanda:
-        description: Country in East Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1037)]
-      Bosnia and Herzegovina:
-        description: Country in Southeast Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q225)]
-      Guinea:
-        description: Sovereign state in West Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1006)]
       Liberia:
         description: Sovereign state in West Africa. [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q1014)]
+      Myanmar:
+        description: Country in Southeast Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q836)]
+      Libya:
+        description: Sovereign state in North Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1016)]
+      Canada:
+        description: Country in North America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q16)]
+      Republic of the Congo:
+        description: Country in Central Africa, capital Brazzaville. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q971)]
+      Azerbaijan:
+        description: Country in the Caucasus in Eastern Europe and Western Asia. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q227)]
+      North Macedonia:
+        description: Country in southeastern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q221)]
+      Central African Republic:
+        description: Country in Central Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q929)]
+      Fiji:
+        description: Island sovereign state in Oceania. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q712)]
+      Hungary:
+        description: Country in Central Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q28)]
+      Costa Rica:
+        description: Country in Central America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q800)]
+      Slovenia:
+        description: Country in Central Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q215)]
+      Senegal:
+        description: Country on the coast of West Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1041)]
+      Belarus:
+        description: Country in Eastern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q184)]
+      South Africa:
+        description: Country in southern Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q258)]
+      Suriname:
+        description: Country in South America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q730)]
+      Algeria:
+        description: Country in North Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q262)]
+      Dominica:
+        description: Island sovereign state in the Caribbean Sea. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q784)]
+      Turkmenistan:
+        description: Country in Central Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q874)]
+      Eswatini:
+        description: Sovereign state in southern Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1050)]
+      Chad:
+        description: Sovereign state in central Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q657)]
+      Luxembourg:
+        description: Country in Western Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q32)]
+      Grenada:
+        description: Island sovereign state in the Caribbean Sea. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q769)]
+      Yemen:
+        description: Country in West Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q805)]
+      Sweden:
+        description: Country in Northern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q34)]
+      Morocco:
+        description: Sovereign state in North Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1028)]
+      Cyprus:
+        description: Mediterranean island country in West Asia. [auto-generated from
+          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q229)]
+      United States:
+        description: Country located primarily in North America. [auto-generated from
+          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q30)]
+      Syria:
+        description: Country in West Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q858)]
+      South Korea:
+        description: Country in East Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q884)]
+      El Salvador:
+        description: Sovereign state in Central America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q792)]
+      Botswana:
+        description: Sovereign state in Southern Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q963)]
+      The Bahamas:
+        description: Island sovereign state in the West Indies. [auto-generated from
+          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q778)]
+      United Kingdom:
+        description: Country in north-west Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q145)]
+      Uzbekistan:
+        description: Sovereign state in Central Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q265)]
+      Poland:
+        description: Country in Central Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q36)]
+      Jamaica:
+        description: Island state in the Caribbean Sea. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q766)]
+      Kuwait:
+        description: Sovereign state in Western Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q817)]
+      The Gambia:
+        description: Sovereign state in West Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1005)]
+      Vietnam:
+        description: Country in Southeast Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q881)]
+      Guatemala:
+        description: Sovereign state in Central America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q774)]
+      Croatia:
+        description: Country in Central Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q224)]
+      North Korea:
+        description: Sovereign state in East Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q423)]
+      Zambia:
+        description: Country at the crossroads of Central and Southern Africa. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q953)]
+      Ethiopia:
+        description: Country in the Horn of Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q115)]
+      Guinea-Bissau:
+        description: Sovereign state in Western Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1007)]
+      Tonga:
+        description: Sovereign state in Oceania, situated on an archipelago. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q678)]
+      Solomon Islands:
+        description: Island sovereign state in Oceania. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q685)]
+      Thailand:
+        description: Country in Southeast Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q869)]
+      Sudan:
+        description: Country in Northeast Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1049)]
+      Kiribati:
+        description: Island sovereign state in the central Pacific Ocean. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q710)]
+      Gabon:
+        description: Country on the Atlantic coast of Central Africa. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q1000)]
+      Ukraine:
+        description: Country in Eastern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q212)]
+      Ghana:
+        description: Country in West Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q117)]
+      Belgium:
+        description: Country in western Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q31)]
+      Tunisia:
+        description: Country in North Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q948)]
+      State of Palestine:
+        description: Country in West Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q219060)]
+      Switzerland:
+        description: Country in Central Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q39)]
+      Comoros:
+        description: Sovereign state situated on an archipelago in the Indian Ocean
+          off the eastern coast of Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q970)]
+      Albania:
+        description: Country in southeastern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q222)]
+      Venezuela:
+        description: Sovereign state in northern South America. [auto-generated from
+          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q717)]
+      Ecuador:
+        description: Sovereign state in South America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q736)]
+      Bosnia and Herzegovina:
+        description: Country in Southeast Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q225)]
+      Burundi:
+        description: Sovereign state in Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q967)]
       Qatar:
         description: Country in West Asia. [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q846)]
-      Armenia:
-        description: Sovereign state in the South Caucasus region of Eurasia. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q399)]
       Democratic Republic of the Congo:
         description: Country in Central Africa. [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q974)]
       Iceland:
         description: Nordic island country in the North Atlantic Ocean. [auto-generated
           from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q189)]
-      Eritrea:
-        description: Country in the Horn of Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q986)]
-      Libya:
-        description: Sovereign state in North Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1016)]
-      Uzbekistan:
-        description: Sovereign state in Central Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q265)]
-      El Salvador:
-        description: Sovereign state in Central America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q792)]
-      Ethiopia:
-        description: Country in the Horn of Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q115)]
-      Monaco:
-        description: Microstate in Western Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q235)]
-      Barbados:
-        description: Island nation in the Caribbean. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q244)]
-      Montenegro:
-        description: Country in southeastern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q236)]
-      Malawi:
-        description: Sovereign state in Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1020)]
-      Nauru:
-        description: Country in Oceania. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q697)]
-      Russia:
-        description: Country in Eastern Europe and Northern Asia. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q159)]
-      Federated States of Micronesia:
-        description: Island sovereign state in Oceania. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q702)]
-      Bhutan:
-        description: Sovereign state in South Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q917)]
-      Ghana:
-        description: Country in West Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q117)]
-      Tanzania:
-        description: Country in East Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q924)]
-      Uruguay:
-        description: Sovereign state in South America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q77)]
-      Sauk-Suiattle Indian Tribe:
-        description: Federally recognized Native American tribe in Washington state,
-          USA. [auto-generated from 'schema:description' property of the [Wikidata
-          entity](http://www.wikidata.org/entity/Q1718707)]
-      South Africa:
-        description: Country in southern Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q258)]
-      Eswatini:
-        description: Sovereign state in southern Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1050)]
-      Austria:
-        description: Country in Central Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q40)]
-      Grenada:
-        description: Island sovereign state in the Caribbean Sea. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q769)]
-      Cyprus:
-        description: Mediterranean island country in West Asia. [auto-generated from
-          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q229)]
-      Sudan:
-        description: Country in Northeast Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1049)]
-      Kyrgyzstan:
-        description: Sovereign state in Central Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q813)]
-      Canada:
-        description: Country in North America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q16)]
-      Turkmenistan:
-        description: Country in Central Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q874)]
-      Australia:
-        description: Country in Oceania. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q408)]
-      Mauritius:
-        description: Island sovereign state off of East Africa in the Indian Ocean.
-          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q1027)]
-      South Sudan:
-        description: Country in East Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q958)]
-      Sweden:
-        description: Country in Northern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q34)]
-      Nigeria:
-        description: Sovereign state in West Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1033)]
-      Portugal:
-        description: Country in Southwestern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q45)]
-      Syria:
-        description: Country in West Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q858)]
-      Djibouti:
-        description: Sovereign state in Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q977)]
-      Mauritania:
-        description: Sovereign state in West Africa and North Africa. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q1025)]
-      Brunei:
-        description: Sovereign country and sultanate on the island of Borneo in south-east
-          Asia, member of the Commonwealth of Nations. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q921)]
-      Saint Kitts and Nevis:
-        description: Island sovereign state in the Caribbean Sea. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q763)]
-      Liechtenstein:
-        description: Country in Central Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q347)]
-      Trinidad and Tobago:
-        description: Island sovereign state in the Caribbean. [auto-generated from
-          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q754)]
-      Cape Verde:
-        description: Sovereign state comprising ten islands off the Western coast
-          of Africa. [auto-generated from 'schema:description' property of the [Wikidata
-          entity](http://www.wikidata.org/entity/Q1011)]
-      Bangladesh:
-        description: Country in South Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q902)]
-      Greece:
-        description: Country in Southeast Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q41)]
-      Angola:
-        description: Country on the west coast of Southern Africa. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q916)]
-      Vanuatu:
-        description: Island country in Oceania. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q686)]
-      Papua New Guinea:
-        description: Country in Oceania. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q691)]
-      Israel:
-        description: Country in West Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q801)]
-      Burkina Faso:
-        description: Sovereign state in Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q965)]
-      Moldova:
-        description: Country in Eastern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q217)]
-      Afghanistan:
-        description: Country in Central and South Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q889)]
-      Tuvalu:
-        description: Country in Oceania. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q672)]
-      Kiribati:
-        description: Island sovereign state in the central Pacific Ocean. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q710)]
-      Taiwan:
-        description: Country in East Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q865)]
-      Laos:
-        description: Country in Southeast Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q819)]
-      Cameroon:
-        description: Sovereign state in West-Central Africa. [auto-generated from
-          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q1009)]
-      United Kingdom:
-        description: Country in north-west Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q145)]
-      Argentina:
-        description: Country in South America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q414)]
-      Ecuador:
-        description: Sovereign state in South America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q736)]
-      Seychelles:
-        description: Island sovereign state off the eastern coast of Africa. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q1042)]
       Philippines:
         description: Archipelagic country in Southeast Asia. [auto-generated from
           'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q928)]
-      Latvia:
-        description: Sovereign state in northeastern Europe. [auto-generated from
-          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q211)]
-      Somalia:
-        description: Sovereign state in Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1045)]
-      Tunisia:
-        description: Country in North Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q948)]
-      Lithuania:
-        description: Country in northeastern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q37)]
-      Solomon Islands:
-        description: Island sovereign state in Oceania. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q685)]
-      Sierra Leone:
-        description: Sovereign state in West Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1044)]
-      North Korea:
-        description: Sovereign state in East Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q423)]
-      Oman:
-        description: Sovereign state in western Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q842)]
-      Slovakia:
-        description: Country in Central Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q214)]
-      Nicaragua:
-        description: Sovereign state in Central America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q811)]
-      Republic of the Congo:
-        description: Country in Central Africa, capital Brazzaville. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q971)]
-      Fiji:
-        description: Island sovereign state in Oceania. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q712)]
+      Dominican Republic:
+        description: Island sovereign state in the Caribbean Sea. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q786)]
+      Mali:
+        description: Country in West Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q912)]
+      Iraq:
+        description: Sovereign state in Western Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q796)]
+      Togo:
+        description: Country in West Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q945)]
+      Papua New Guinea:
+        description: Country in Oceania. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q691)]
+      Indonesia:
+        description: Island country in Southeast Asia and Oceania. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q252)]
+      Peru:
+        description: Sovereign state in South America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q419)]
       Paraguay:
         description: Sovereign state in South America. [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q733)]
-      Cambodia:
-        description: Country in Southeast Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q424)]
+      Zimbabwe:
+        description: Sovereign state in southern Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q954)]
+      Haiti:
+        description: Country in the Caribbean Sea. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q790)]
+      Samoa:
+        description: Sovereign state made up of six islands in the Pacific Ocean.
+          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q683)]
+      Tajikistan:
+        description: Sovereign state in Central Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q863)]
+      Panama:
+        description: Sovereign state in Central America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q804)]
+      Trinidad and Tobago:
+        description: Island sovereign state in the Caribbean. [auto-generated from
+          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q754)]
+      Somalia:
+        description: Sovereign state in Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1045)]
+      Estonia:
+        description: Country in Northern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q191)]
       Marshall Islands:
         description: Country near the equator in the Pacific Ocean. [auto-generated
           from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q709)]
-      Ivory Coast:
+      South Sudan:
+        description: Country in East Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q958)]
+      Saint Kitts and Nevis:
+        description: Island sovereign state in the Caribbean Sea. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q763)]
+      Uruguay:
+        description: Sovereign state in South America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q77)]
+      Malawi:
+        description: Sovereign state in Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1020)]
+      Pakistan:
+        description: Sovereign state in South Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q843)]
+      United Arab Emirates:
+        description: Country in West Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q878)]
+      New Zealand:
+        description: Island country in the southwest Pacific Ocean. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q664)]
+      Malaysia:
+        description: Country in Southeast Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q833)]
+      Kyrgyzstan:
+        description: Sovereign state in Central Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q813)]
+      Sierra Leone:
         description: Sovereign state in West Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1008)]
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1044)]
+      Bulgaria:
+        description: Country in Southeast Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q219)]
+      Czech Republic:
+        description: Country in Central Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q213)]
+      Lithuania:
+        description: Country in northeastern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q37)]
+      Colombia:
+        description: Sovereign state in South America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q739)]
+      Slovakia:
+        description: Country in Central Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q214)]
+      Greece:
+        description: Country in Southeast Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q41)]
       Madagascar:
         description: Island sovereign state off the coast of Southeast Africa, in
           the Indian Ocean. [auto-generated from 'schema:description' property of
           the [Wikidata entity](http://www.wikidata.org/entity/Q1019)]
-      Hungary:
-        description: Country in Central Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q28)]
-      Czech Republic:
-        description: Country in Central Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q213)]
-      Morocco:
-        description: Sovereign state in North Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1028)]
-      State of Palestine:
-        description: Country in West Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q219060)]
-      Chad:
-        description: Sovereign state in central Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q657)]
-      Saudi Arabia:
-        description: Country in West Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q851)]
-      Central African Republic:
-        description: Country in Central Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q929)]
-      Mexico:
-        description: Country in North America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q96)]
-      Kuwait:
-        description: Sovereign state in Western Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q817)]
-      Myanmar:
-        description: Country in Southeast Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q836)]
-      Croatia:
-        description: Country in Central Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q224)]
-      The Gambia:
-        description: Sovereign state in West Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1005)]
-      Algeria:
-        description: Country in North Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q262)]
-      New Zealand:
-        description: Island country in the southwest Pacific Ocean. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q664)]
-      Comoros:
-        description: Sovereign state situated on an archipelago in the Indian Ocean
-          off the eastern coast of Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q970)]
-      Finland:
-        description: Country in Northern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q33)]
-      Spain:
-        description: Country in southwestern Europe with territories in Africa. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q29)]
-      Vatican City:
-        description: Holy See's independent state, an enclave within Rome, Italy.
-          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q237)]
-      Bolivia:
-        description: Sovereign state in South America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q750)]
-      Italy:
-        description: Country in Southern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q38)]
-      Georgia:
-        description: Country in the Caucasus region of Europe and Asia. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q230)]
-      People's Republic of China:
-        description: Country in East Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q148)]
-      Bulgaria:
-        description: Country in Southeast Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q219)]
-      Senegal:
-        description: Country on the coast of West Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1041)]
-      Luxembourg:
-        description: Country in Western Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q32)]
-      India:
-        description: Country in South Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q668)]
-      Kazakhstan:
-        description: Sovereign state in Eastern Europe and Central Asia. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q232)]
-      Suriname:
-        description: Country in South America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q730)]
-      Palau:
-        description: Island sovereign state in Oceania. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q695)]
-      Estonia:
-        description: Country in Northern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q191)]
-      Antigua and Barbuda:
-        description: Island sovereign state in the Caribbean Sea. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q781)]
-      Belgium:
-        description: Country in western Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q31)]
-      Slovenia:
-        description: Country in Central Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q215)]
-      Namibia:
-        description: Country in Southern Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1030)]
-      Chile:
-        description: Country in South America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q298)]
-      Kingdom of Denmark:
-        description: Transcontinental sovereign state and constitutional monarchy.
-          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q756617)]
-      Ukraine:
-        description: Country in Eastern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q212)]
-      Azerbaijan:
-        description: Country in the Caucasus in Eastern Europe and Western Asia. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q227)]
-      United Arab Emirates:
-        description: Country in West Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q878)]
-      Romania:
-        description: Country in Southeast Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q218)]
-      Niger:
-        description: Sovereign state in western Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1032)]
-      Egypt:
-        description: Country in Northeast Africa and Southwest Asia. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q79)]
-      Belarus:
-        description: Country in Eastern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q184)]
-      Iran:
-        description: Country in Western Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q794)]
-      Sri Lanka:
-        description: Island country in South Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q854)]
-      Sao Tome and Principe:
-        description: Island sovereign state in Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1039)]
-      Colombia:
-        description: Sovereign state in South America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q739)]
-      Costa Rica:
-        description: Country in Central America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q800)]
-      Peru:
-        description: Sovereign state in South America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q419)]
-      Lesotho:
-        description: Sovereign state in southern Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1013)]
-      Haiti:
-        description: Country in the Caribbean Sea. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q790)]
-      Ireland:
-        description: Country in Northwestern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q27)]
+      Cape Verde:
+        description: Sovereign state comprising ten islands off the Western coast
+          of Africa. [auto-generated from 'schema:description' property of the [Wikidata
+          entity](http://www.wikidata.org/entity/Q1011)]
       Japan:
         description: Island country in East Asia. [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q17)]
-      Panama:
-        description: Sovereign state in Central America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q804)]
-      Zambia:
-        description: Country at the crossroads of Central and Southern Africa. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q953)]
-      Jamaica:
-        description: Island state in the Caribbean Sea. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q766)]
-      Uganda:
-        description: Country in east Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1036)]
-      Burundi:
-        description: Sovereign state in Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q967)]
-      Serbia:
-        description: Country in Southeast Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q403)]
-      Thailand:
+      Ivory Coast:
+        description: Sovereign state in West Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1008)]
+      Mexico:
+        description: Country in North America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q96)]
+      Afghanistan:
+        description: Country in Central and South Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q889)]
+      Lesotho:
+        description: Sovereign state in southern Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1013)]
+      Palau:
+        description: Island sovereign state in Oceania. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q695)]
+      Bolivia:
+        description: Sovereign state in South America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q750)]
+      Andorra:
+        description: Sovereign microstate between France and Spain, in Western Europe.
+          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q228)]
+      Laos:
         description: Country in Southeast Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q869)]
-      Botswana:
-        description: Sovereign state in Southern Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q963)]
-      Yemen:
-        description: Country in West Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q805)]
-      Kingdom of the Netherlands:
-        description: Transcontinental sovereign state and constitutional monarchy.
-          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q29999)]
-      Indonesia:
-        description: Island country in Southeast Asia and Oceania. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q252)]
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q819)]
+      Burkina Faso:
+        description: Sovereign state in Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q965)]
+      Malta:
+        description: Country in Southern Europe situated on an archipelago in the
+          Mediterranean Sea. [auto-generated from 'schema:description' property of
+          the [Wikidata entity](http://www.wikidata.org/entity/Q233)]
+      Guinea:
+        description: Sovereign state in West Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1006)]
+      Maldives:
+        description: Sovereign state in South Asia, situated on an archipelago in
+          the Arabian Sea. [auto-generated from 'schema:description' property of the
+          [Wikidata entity](http://www.wikidata.org/entity/Q826)]
       Equatorial Guinea:
         description: Sovereign state in Africa. [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q983)]
       Belize:
         description: Sovereign state in Central America. [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q242)]
-      Saint Lucia:
-        description: Island sovereign state in the Caribbean Sea. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q760)]
-      Benin:
-        description: Sovereign state in West Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q962)]
-      Cuba:
-        description: Sovereign state situated on an island in the Caribbean Sea. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q241)]
-      United States:
-        description: Country located primarily in North America. [auto-generated from
-          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q30)]
-      Guatemala:
-        description: Sovereign state in Central America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q774)]
-      Brazil:
+      Monaco:
+        description: Microstate in Western Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q235)]
+      Portugal:
+        description: Country in Southwestern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q45)]
+      Turkey:
+        description: Country in West Asia and Southeast Europe. [auto-generated from
+          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q43)]
+      Uganda:
+        description: Country in east Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1036)]
+      Vatican City:
+        description: Holy See's independent state, an enclave within Rome, Italy.
+          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q237)]
+      Montenegro:
+        description: Country in southeastern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q236)]
+      Chile:
         description: Country in South America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q155)]
-      Venezuela:
-        description: Sovereign state in northern South America. [auto-generated from
-          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q717)]
-      South Korea:
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q298)]
+      Jordan:
+        description: Country in West Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q810)]
+      Nepal:
+        description: Country in South Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q837)]
+      Cambodia:
+        description: Country in Southeast Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q424)]
+      Saudi Arabia:
+        description: Country in West Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q851)]
+      Guyana:
+        description: Country in South America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q734)]
+      Bangladesh:
+        description: Country in South Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q902)]
+      Barbados:
+        description: Island nation in the Caribbean. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q244)]
+      Taiwan:
         description: Country in East Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q884)]
-      Maldives:
-        description: Sovereign state in South Asia, situated on an archipelago in
-          the Arabian Sea. [auto-generated from 'schema:description' property of the
-          [Wikidata entity](http://www.wikidata.org/entity/Q826)]
-      Gabon:
-        description: Country on the Atlantic coast of Central Africa. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q1000)]
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q865)]
+      Iran:
+        description: Country in Western Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q794)]
+      Eritrea:
+        description: Country in the Horn of Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q986)]
+      Ireland:
+        description: Country in Northwestern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q27)]
+      Oman:
+        description: Sovereign state in western Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q842)]
+      Tuvalu:
+        description: Country in Oceania. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q672)]
+      Mauritania:
+        description: Sovereign state in West Africa and North Africa. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q1025)]
+      Armenia:
+        description: Sovereign state in the South Caucasus region of Eurasia. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q399)]
+      Saint Vincent and the Grenadines:
+        description: Island sovereign state in the Caribbean Sea. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q757)]
+      Cameroon:
+        description: Sovereign state in West-Central Africa. [auto-generated from
+          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q1009)]
       Mozambique:
         description: Country in Southeastern Africa; the current form of Mozambique
           since 1975. [auto-generated from 'schema:description' property of the [Wikidata
           entity](http://www.wikidata.org/entity/Q1029)]
-      Norway:
-        description: Country in Northern Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q20)]
-      Switzerland:
-        description: Country in Central Europe. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q39)]
-      Guinea-Bissau:
-        description: Sovereign state in Western Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1007)]
-      Dominican Republic:
+      Djibouti:
+        description: Sovereign state in Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q977)]
+      Antigua and Barbuda:
         description: Island sovereign state in the Caribbean Sea. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q786)]
-      Turkey:
-        description: Country in West Asia and Southeast Europe. [auto-generated from
-          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q43)]
-      Tajikistan:
-        description: Sovereign state in Central Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q863)]
-      Iraq:
-        description: Sovereign state in Western Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q796)]
-      Nepal:
-        description: Country in South Asia. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q837)]
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q781)]
+      Moldova:
+        description: Country in Eastern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q217)]
+      Romania:
+        description: Country in Southeast Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q218)]
+      Argentina:
+        description: Country in South America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q414)]
+      Sao Tome and Principe:
+        description: Island sovereign state in Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1039)]
+      Namibia:
+        description: Country in Southern Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1030)]
+      Kazakhstan:
+        description: Sovereign state in Eastern Europe and Central Asia. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q232)]
+      Latvia:
+        description: Sovereign state in northeastern Europe. [auto-generated from
+          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q211)]
+      San Marino:
+        description: Sovereign state in southern Europe, enclaved within Italy. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q238)]
+      Brunei:
+        description: Sovereign country and sultanate on the island of Borneo in south-east
+          Asia, member of the Commonwealth of Nations. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q921)]
+      Kingdom of the Netherlands:
+        description: Transcontinental sovereign state and constitutional monarchy.
+          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q29999)]
+      Lebanon:
+        description: Country in West Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q822)]
+      Timor-Leste:
+        description: Sovereign state situated on several islands in Southeast Asia.
+          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q574)]
+      Liechtenstein:
+        description: Country in Central Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q347)]
+      Finland:
+        description: Country in Northern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q33)]
+      Bahrain:
+        description: Country in the Persian Gulf. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q398)]
+      Australia:
+        description: Country in Oceania. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q408)]
+      Singapore:
+        description: Sovereign island country and city-state in maritime Southeast
+          Asia. [auto-generated from 'schema:description' property of the [Wikidata
+          entity](http://www.wikidata.org/entity/Q334)]
+      Angola:
+        description: Country on the west coast of Southern Africa. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q916)]
+      Israel:
+        description: Country in West Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q801)]
+      Russia:
+        description: Country in Eastern Europe and Northern Asia. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q159)]
+      Tanzania:
+        description: Country in East Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q924)]
+      Mauritius:
+        description: Island sovereign state off of East Africa in the Indian Ocean.
+          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q1027)]
+      Nauru:
+        description: Country in Oceania. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q697)]
+      Benin:
+        description: Sovereign state in West Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q962)]
+      Kenya:
+        description: Country in Eastern Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q114)]
+      Italy:
+        description: Country in Southern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q38)]
+      Rwanda:
+        description: Country in East Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1037)]
+      Sri Lanka:
+        description: Island country in South Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q854)]
+      Saint Lucia:
+        description: Island sovereign state in the Caribbean Sea. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q760)]
+      Vanuatu:
+        description: Island country in Oceania. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q686)]
       Germany:
         description: Country in Central Europe. [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q183)]
-      Togo:
-        description: Country in West Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q945)]
-      Andorra:
-        description: Sovereign microstate between France and Spain, in Western Europe.
-          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q228)]
-      Guyana:
-        description: Country in South America. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q734)]
-      Dominica:
-        description: Island sovereign state in the Caribbean Sea. [auto-generated
-          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q784)]
-      Zimbabwe:
-        description: Sovereign state in southern Africa. [auto-generated from 'schema:description'
-          property of the [Wikidata entity](http://www.wikidata.org/entity/Q954)]
-      The Bahamas:
-        description: Island sovereign state in the West Indies. [auto-generated from
-          'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q778)]
-      Malta:
-        description: Country in Southern Europe situated on an archipelago in the
-          Mediterranean Sea. [auto-generated from 'schema:description' property of
-          the [Wikidata entity](http://www.wikidata.org/entity/Q233)]
+      Spain:
+        description: Country in southwestern Europe with territories in Africa. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q29)]
+      Bhutan:
+        description: Sovereign state in South Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q917)]
+      Austria:
+        description: Country in Central Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q40)]
+      India:
+        description: Country in South Asia. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q668)]
       France:
         description: Country in Western Europe and other continents (through its overseas
           territories in America, Africa and Oceania). [auto-generated from 'schema:description'
           property of the [Wikidata entity](http://www.wikidata.org/entity/Q142)]
+      Seychelles:
+        description: Island sovereign state off the eastern coast of Africa. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q1042)]
+      Nicaragua:
+        description: Sovereign state in Central America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q811)]
+      Brazil:
+        description: Country in South America. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q155)]
+      Serbia:
+        description: Country in Southeast Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q403)]
+      Cuba:
+        description: Sovereign state situated on an island in the Caribbean Sea. [auto-generated
+          from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q241)]
+      Kingdom of Denmark:
+        description: Transcontinental sovereign state and constitutional monarchy.
+          [auto-generated from 'schema:description' property of the [Wikidata entity](http://www.wikidata.org/entity/Q756617)]
+      Norway:
+        description: Country in Northern Europe. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q20)]
+      Federated States of Micronesia:
+        description: Island sovereign state in Oceania. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q702)]
+      Niger:
+        description: Sovereign state in western Africa. [auto-generated from 'schema:description'
+          property of the [Wikidata entity](http://www.wikidata.org/entity/Q1032)]

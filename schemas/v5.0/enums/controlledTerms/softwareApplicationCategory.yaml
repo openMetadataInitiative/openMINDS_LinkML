@@ -16,13 +16,13 @@ enums:
     permissible_values:
       module:
         description: null
-      notebook:
+      plugin:
         description: null
       library:
         description: null
-      application:
-        description: null
-      plugin:
-        description: null
       middleware:
+        description: null
+      notebook:
+        description: null
+      application:
         description: null

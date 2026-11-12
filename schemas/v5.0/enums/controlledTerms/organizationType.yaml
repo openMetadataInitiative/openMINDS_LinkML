@@ -13,8 +13,8 @@ enums:
     enum_uri: https://openminds.om-i.org/types/OrganizationType
     title: Organization type
     permissible_values:
+      organizational unit:
+        description: A distinct unit within a larger organization.
       legal entity:
         description: An organization classified as a type of legal entity recognized
           within a specific legal system.
-      organizational unit:
-        description: A distinct unit within a larger organization.

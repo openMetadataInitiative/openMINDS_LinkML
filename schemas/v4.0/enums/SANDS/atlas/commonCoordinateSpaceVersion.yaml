@@ -14,14 +14,14 @@ enums:
     title: Common coordinate space version
     permissible_values:
       WHS of the SD Rat Brain: {}
-      FsAverage Surface Space: {}
-      BigBrain Model: {}
-      Allen Mouse Brain CCF: {}
-      Swanson's Stereotactic Rat Brain: {}
-      MEBRAINS brain template: {}
-      MNI Colin27 Average Brain: {}
-      MNI ICBM152: {}
-      Paxinos and Watson's Stereotaxic Coronal Template (Rat Brain): {}
-      fsLR Surface Space: {}
-      Marmoset Nencki-Monash Template: {}
       Paxinos et al. Stereotaxic Coronal Template (Marmoset Brain): {}
+      MNI Colin27 Average Brain: {}
+      BigBrain Model: {}
+      Paxinos and Watson's Stereotaxic Coronal Template (Rat Brain): {}
+      Swanson's Stereotactic Rat Brain: {}
+      Marmoset Nencki-Monash Template: {}
+      FsAverage Surface Space: {}
+      MNI ICBM152: {}
+      Allen Mouse Brain CCF: {}
+      fsLR Surface Space: {}
+      MEBRAINS brain template: {}

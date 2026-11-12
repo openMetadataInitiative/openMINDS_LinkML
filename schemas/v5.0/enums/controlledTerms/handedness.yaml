@@ -13,11 +13,11 @@ enums:
     enum_uri: https://openminds.om-i.org/types/Handedness
     title: Handedness
     permissible_values:
-      left handedness:
-        description: Handedness where the organism preferentially uses the left hand
-          or foot for tasks requiring the use of a single hand or foot.
       right handedness:
         description: Handedness where the organism preferentially uses the right hand
+          or foot for tasks requiring the use of a single hand or foot.
+      left handedness:
+        description: Handedness where the organism preferentially uses the left hand
           or foot for tasks requiring the use of a single hand or foot.
       ambidextrous handedness:
         description: Handedness where the organism exhibits no overall dominance in
