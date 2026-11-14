@@ -42,10 +42,6 @@ classes:
     - obtainedWith
     - voxelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -146,9 +142,6 @@ classes:
         required: true
       jurisdiction:
         required: true
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       modificationProfile:
         required: true
         range: ModificationConsentRequirement
@@ -277,10 +270,6 @@ classes:
     - pixelSize
     - z-stepSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -369,10 +358,6 @@ classes:
     - obtainedWith
     - pixelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -444,10 +429,6 @@ classes:
     - pixelSize
     - temporalSamplingFrequency
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -485,10 +466,6 @@ classes:
     - temporalSamplingFrequency
     - voxelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -550,10 +527,6 @@ classes:
         range: GenericIdentifier
       hasParent:
         range: Organization
-      jurisdiction:
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       location:
         range: Location
       name:
@@ -659,6 +632,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - Membership:
     class_uri: https://openminds.om-i.org/types/Membership
     description: null
@@ -671,6 +647,10 @@ classes:
     slot_usage:
       member:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
 - QuantitativeValueRange:
     class_uri: https://openminds.om-i.org/types/QuantitativeValueRange
     description: A representation of a range of quantitative values.
@@ -1042,10 +1022,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
-        - range: OrganismSubstance
       species:
         required: true
       studiedState:
@@ -1114,11 +1090,6 @@ classes:
     - stimulusType
     - technique
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
       description:
         required: true
       name:
@@ -1507,9 +1478,6 @@ classes:
         - range: WebResource
       ethicsJurisdiction:
         required: true
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       experimentalApproach:
         required: true
       fullName:

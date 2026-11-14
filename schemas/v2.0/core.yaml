@@ -152,6 +152,9 @@ classes:
         required: true
       contributor:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - Organization:
     class_uri: https://openminds.ebrains.eu/core/Organization
     description: An entity comprised of one or more natural persons with a particular
@@ -234,6 +237,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - URL:
     class_uri: https://openminds.ebrains.eu/core/URL
     description: null
@@ -431,9 +437,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
       species:
         required: true
       studiedState:
