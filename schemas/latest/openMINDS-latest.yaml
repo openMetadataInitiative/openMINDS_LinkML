@@ -9,15 +9,15 @@ imports:
 - slots
 - types
 - enums
-- stimulation
-- computation
 - publications
-- neuroimaging
-- ephys
-- specimenPrep
-- chemicals
-- SANDS
 - core
+- specimenPrep
+- computation
+- ephys
+- neuroimaging
+- SANDS
+- stimulation
+- chemicals
 prefixes:
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/

@@ -9,14 +9,14 @@ imports:
 - slots
 - types
 - enums
-- stimulation
-- computation
 - publications
-- ephys
-- specimenPrep
-- chemicals
-- SANDS
 - core
+- specimenPrep
+- computation
+- ephys
+- SANDS
+- stimulation
+- chemicals
 prefixes:
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
