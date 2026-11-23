@@ -13,6 +13,10 @@ enums:
     enum_uri: https://openminds.om-i.org/types/PublicationStatus
     title: Publication status
     permissible_values:
+      under review:
+        description: A publication status indicating the work has been submitted for
+          evaluation and is currently being assessed by an editor, reviewers, or an
+          approval body, with no publication decision or public release yet.
       published:
         description: A publication status indicating the work has been formally released
           to the public by the responsible publisher or issuing entity and is accessible
@@ -30,7 +34,3 @@ enums:
         description: A publication status indicating the work exists but cannot be
           publicly published, reported on, or made openly available until a specified
           embargo end date set by the embargoing party.
-      under review:
-        description: A publication status indicating the work has been submitted for
-          evaluation and is currently being assessed by an editor, reviewers, or an
-          approval body, with no publication decision or public release yet.

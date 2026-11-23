@@ -13,6 +13,9 @@ enums:
     enum_uri: https://openminds.ebrains.eu/controlledTerms/Organ
     title: Organ
     permissible_values:
+      skin:
+        description: '''Skin'' is the organ covering the body that consists of the
+          dermis and epidermis.'
       brain:
         description: '''Brain'' is part of the central nervous system.'
       liver:
@@ -22,6 +25,3 @@ enums:
         description: '''Muscle'' is part of the musculoskeletal system.'
       heart:
         description: '''Heart'' is part of the cardiovascular system'
-      skin:
-        description: '''Skin'' is the organ covering the body that consists of the
-          dermis and epidermis.'

@@ -14,16 +14,16 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- TissueCulturePreparation:
-    class_uri: https://openminds.om-i.org/types/TissueCulturePreparation
+- CranialWindowPreparation:
+    class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
     description: null
-    title: Tissue culture preparation
+    title: Cranial window preparation
     slots:
     - id
-    - cultureMedium
-    - cultureType
+    - constructionType
     - customPropertySet
     - description
+    - dimension
     - endTime
     - input
     - isPartOf
@@ -32,26 +32,30 @@ classes:
     - performedBy
     - preparationDesign
     - protocol
+    - reinforcementType
     - startTime
     - studyTarget
     slot_usage:
-      cultureMedium:
+      constructionType:
         required: true
-      cultureType:
-        required: true
+      dimension:
+        any_of:
+        - range: Circle
+        - range: Ellipse
+        - range: Rectangle
       endTime:
         range: string
         any_of:
         - range: time
       input:
         required: true
-        range: TissueSampleState
+        range: SubjectState
       isPartOf:
         required: true
         range: DatasetVersion
       output:
         required: true
-        range: TissueSampleState
+        range: SubjectState
       performedBy:
         range: SoftwareAgent
       protocol:
@@ -110,20 +114,16 @@ classes:
         - range: time
       studyTarget:
         range: AuditoryStimulusType
-      temperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-- CranialWindowPreparation:
-    class_uri: https://openminds.om-i.org/types/CranialWindowPreparation
+- TissueCulturePreparation:
+    class_uri: https://openminds.om-i.org/types/TissueCulturePreparation
     description: null
-    title: Cranial window preparation
+    title: Tissue culture preparation
     slots:
     - id
-    - constructionType
+    - cultureMedium
+    - cultureType
     - customPropertySet
     - description
-    - dimension
     - endTime
     - input
     - isPartOf
@@ -132,30 +132,26 @@ classes:
     - performedBy
     - preparationDesign
     - protocol
-    - reinforcementType
     - startTime
     - studyTarget
     slot_usage:
-      constructionType:
+      cultureMedium:
         required: true
-      dimension:
-        any_of:
-        - range: Circle
-        - range: Ellipse
-        - range: Rectangle
+      cultureType:
+        required: true
       endTime:
         range: string
         any_of:
         - range: time
       input:
         required: true
-        range: SubjectState
+        range: TissueSampleState
       isPartOf:
         required: true
         range: DatasetVersion
       output:
         required: true
-        range: SubjectState
+        range: TissueSampleState
       performedBy:
         range: SoftwareAgent
       protocol:
@@ -166,41 +162,6 @@ classes:
         - range: time
       studyTarget:
         range: AuditoryStimulusType
-- SlicingDeviceUsage:
-    class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
-    description: null
-    title: Slicing device usage
-    slots:
-    - id
-    - device
-    - lookupLabel
-    - metadataLocation
-    - oscillationAmplitude
-    - sliceThickness
-    - slicingAngle
-    - slicingPlane
-    - slicingSpeed
-    - usedSpecimen
-    - vibrationFrequency
-    slot_usage:
-      device:
-        required: true
-        range: SlicingDevice
-      metadataLocation:
-        range: File
-      sliceThickness:
-        required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      slicingAngle:
-        range: QuantitativeValue
-      slicingPlane:
-        required: true
-      usedSpecimen:
-        any_of:
-        - range: SubjectState
-        - range: TissueSampleState
 - SlicingDevice:
     class_uri: https://openminds.om-i.org/types/SlicingDevice
     description: null
@@ -228,3 +189,35 @@ classes:
         required: true
       owner:
         range: Consortium
+- SlicingDeviceUsage:
+    class_uri: https://openminds.om-i.org/types/SlicingDeviceUsage
+    description: null
+    title: Slicing device usage
+    slots:
+    - id
+    - device
+    - lookupLabel
+    - metadataLocation
+    - oscillationAmplitude
+    - sliceThickness
+    - slicingAngle
+    - slicingPlane
+    - slicingSpeed
+    - usedSpecimen
+    - vibrationFrequency
+    slot_usage:
+      device:
+        required: true
+        range: SlicingDevice
+      metadataLocation:
+        range: File
+      sliceThickness:
+        required: true
+      slicingAngle:
+        range: QuantitativeValue
+      slicingPlane:
+        required: true
+      usedSpecimen:
+        any_of:
+        - range: SubjectState
+        - range: TissueSampleState

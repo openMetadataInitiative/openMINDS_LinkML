@@ -15,12 +15,12 @@ enums:
     permissible_values:
       GRIN lens-based cranial window:
         description: A cranial window reinforced by an implanted GRIN lens.
-      prism-based cranial window:
-        description: A cranial window reinforced by an implanted prism.
       glass coverslip cranial window:
         description: A cranial window reinforced by an implantation of a glass coverslip.
-      polymer-based cranial window:
-        description: A cranial window reinforced by an implantation of a polymer material.
       crystalline-based cranial window:
         description: A cranial window reinforced by an implantation of a crystalline
           material.
+      prism-based cranial window:
+        description: A cranial window reinforced by an implanted prism.
+      polymer-based cranial window:
+        description: A cranial window reinforced by an implantation of a polymer material.

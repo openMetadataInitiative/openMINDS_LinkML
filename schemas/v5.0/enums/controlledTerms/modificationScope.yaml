@@ -19,15 +19,15 @@ enums:
       administrative modification:
         description: Modification may be made to any clerical, formatting, or non-substantive
           information.
-      unrestricted modification:
-        description: Modification may be made to any subject matter without contractual
-          limitation.
-      schedule modification:
-        description: Modification may be made to any deadlines, milestones, and delivery
-          timelines.
-      material modification:
-        description: Modification may be made to any core rights, duties, or risk
-          allocations of the parties.
       financial modification:
         description: Modification may be made to any pricing, payment terms, fees,
           or compensation.
+      material modification:
+        description: Modification may be made to any core rights, duties, or risk
+          allocations of the parties.
+      schedule modification:
+        description: Modification may be made to any deadlines, milestones, and delivery
+          timelines.
+      unrestricted modification:
+        description: Modification may be made to any subject matter without contractual
+          limitation.

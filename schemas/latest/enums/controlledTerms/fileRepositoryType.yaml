@@ -16,6 +16,8 @@ enums:
       git-annex repository:
         description: git-annex allows managing large files with git, without storing
           the file contents in git.
+      Amazon S3 repository:
+        description: An S3 repository uses the cloud storage of the Amazon S3 service.
       Swift repository:
         description: A Swift repository uses the long-term cloud storage of the OpenStack
           Object Store project which is particularly designed for retrieving and updating
@@ -23,8 +25,6 @@ enums:
       Seafile repository:
         description: Seafile is an open source file sync&share solution designed for
           high reliability, performance and productivity.
-      Amazon S3 repository:
-        description: An S3 repository uses the cloud storage of the Amazon S3 service.
       Git repository:
         description: A Git repository offers version control and source code management
           functionalities.

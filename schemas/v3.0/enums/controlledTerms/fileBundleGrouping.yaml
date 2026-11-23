@@ -16,19 +16,19 @@ enums:
     permissible_values:
       coordinate space:
         description: null
-      protocol:
-        description: null
-      subject:
+      study target:
         description: null
       tissue sample collection:
         description: null
-      subject group:
+      technique:
         description: null
       tissue sample:
         description: null
-      study target:
-        description: null
-      technique:
+      protocol:
         description: null
       behavioral protocol:
+        description: null
+      subject group:
+        description: null
+      subject:
         description: null

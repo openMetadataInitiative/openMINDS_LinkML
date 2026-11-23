@@ -20,11 +20,11 @@ enums:
       BOLD signal:
         description: A computed signal type that corresponds to the blood oxygenation
           level of tissue that the measurement was performed on.
-      beta activity:
-        description: A neural oscillation in the mid frequency range (typically between
-          12-30 Hz) arising from synchronous and coherent electrical activity in the
-          brain. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Beta_wave)]
       alpha activity:
         description: A neural oscillation in the low frequency range (typically between
           8-12 Hz) arising from synchronous and coherent electrical activity in the
           brain. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Alpha_wave)]
+      beta activity:
+        description: A neural oscillation in the mid frequency range (typically between
+          12-30 Hz) arising from synchronous and coherent electrical activity in the
+          brain. [adapted from [Wikipedia](https://en.wikipedia.org/wiki/Beta_wave)]

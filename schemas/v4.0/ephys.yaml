@@ -14,104 +14,6 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- Channel:
-    class_uri: https://openminds.om-i.org/types/Channel
-    description: null
-    title: Channel
-    slots:
-    - id
-    - internalIdentifier
-    - unit
-    slot_usage:
-      internalIdentifier:
-        required: true
-      unit:
-        required: true
-- Recording:
-    class_uri: https://openminds.om-i.org/types/Recording
-    description: null
-    title: Recording
-    slots:
-    - id
-    - additionalRemarks
-    - channel
-    - dataLocation
-    - internalIdentifier
-    - name
-    - previousRecording
-    - recordedWith
-    - samplingFrequency
-    slot_usage:
-      channel:
-        required: true
-      dataLocation:
-        required: true
-        any_of:
-        - range: File
-        - range: FileBundle
-      recordedWith:
-        required: true
-        any_of:
-        - range: ElectrodeArrayUsage
-        - range: ElectrodeUsage
-        - range: PipetteUsage
-        - range: SlicingDeviceUsage
-      samplingFrequency:
-        required: true
-- CellPatching:
-    class_uri: https://openminds.om-i.org/types/CellPatching
-    description: null
-    title: Cell patching
-    slots:
-    - id
-    - bathTemperature
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - targetPosition
-    - tissueBathSolution
-    - variation
-    slot_usage:
-      bathTemperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      device:
-        required: true
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: TissueSampleState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
 - RecordingActivity:
     class_uri: https://openminds.om-i.org/types/RecordingActivity
     description: null
@@ -148,6 +50,56 @@ classes:
       output:
         required: true
         range: File
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
+- CellPatching:
+    class_uri: https://openminds.om-i.org/types/CellPatching
+    description: null
+    title: Cell patching
+    slots:
+    - id
+    - bathTemperature
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - targetPosition
+    - tissueBathSolution
+    - variation
+    slot_usage:
+      device:
+        required: true
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: TissueSampleState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleState
       performedBy:
         range: SoftwareAgent
       protocol:
@@ -244,10 +196,6 @@ classes:
         - range: ChemicalMixture
         - range: ChemicalSubstance
         - range: MolecularEntity
-      intrinsicResistance:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       manufacturer:
         range: Consortium
       name:
@@ -256,87 +204,37 @@ classes:
         required: true
       owner:
         range: Consortium
-- Pipette:
-    class_uri: https://openminds.om-i.org/types/Pipette
+- ElectrodeArrayUsage:
+    class_uri: https://openminds.om-i.org/types/ElectrodeArrayUsage
     description: null
-    title: Pipette
+    title: Electrode array usage
     slots:
     - id
-    - description
-    - deviceType
-    - digitalIdentifier
-    - externalDiameter
-    - internalDiameter
-    - internalIdentifier
+    - anatomicalLocationOfArray
+    - anatomicalLocationOfElectrodes
+    - contactResistances
+    - device
     - lookupLabel
-    - manufacturer
-    - material
-    - name
-    - owner
-    - serialNumber
+    - metadataLocation
+    - spatialLocationOfElectrodes
+    - usedElectrode
+    - usedSpecimen
     slot_usage:
-      deviceType:
+      anatomicalLocationOfArray:
+        range: CellType
+      anatomicalLocationOfElectrodes:
+        range: CellType
+      contactResistances:
+        range: QuantitativeValue
+      device:
         required: true
-      digitalIdentifier:
+        range: ElectrodeArray
+      metadataLocation:
+        range: File
+      usedSpecimen:
         any_of:
-        - range: DOI
-        - range: RRID
-      manufacturer:
-        range: Consortium
-      material:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-      name:
-        required: true
-      owner:
-        range: Consortium
-- Electrode:
-    class_uri: https://openminds.om-i.org/types/Electrode
-    description: Structured information on an electrode.
-    title: Electrode
-    slots:
-    - id
-    - conductorMaterial
-    - description
-    - deviceType
-    - digitalIdentifier
-    - insulatorMaterial
-    - internalIdentifier
-    - intrinsicResistance
-    - lookupLabel
-    - manufacturer
-    - name
-    - owner
-    - serialNumber
-    slot_usage:
-      conductorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-      deviceType:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: RRID
-      insulatorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-      intrinsicResistance:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      manufacturer:
-        range: Consortium
-      name:
-        required: true
-      owner:
-        range: Consortium
+        - range: SubjectState
+        - range: TissueSampleState
 - PipetteUsage:
     class_uri: https://openminds.om-i.org/types/PipetteUsage
     description: null
@@ -382,47 +280,89 @@ classes:
         - range: MolecularEntity
       metadataLocation:
         range: File
-      pipetteResistance:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       pipetteSolution:
         required: true
       usedSpecimen:
         any_of:
         - range: SubjectState
         - range: TissueSampleState
-- ElectrodeArrayUsage:
-    class_uri: https://openminds.om-i.org/types/ElectrodeArrayUsage
-    description: null
-    title: Electrode array usage
+- Electrode:
+    class_uri: https://openminds.om-i.org/types/Electrode
+    description: Structured information on an electrode.
+    title: Electrode
     slots:
     - id
-    - anatomicalLocationOfArray
-    - anatomicalLocationOfElectrodes
-    - contactResistances
-    - device
+    - conductorMaterial
+    - description
+    - deviceType
+    - digitalIdentifier
+    - insulatorMaterial
+    - internalIdentifier
+    - intrinsicResistance
     - lookupLabel
-    - metadataLocation
-    - spatialLocationOfElectrodes
-    - usedElectrode
-    - usedSpecimen
+    - manufacturer
+    - name
+    - owner
+    - serialNumber
     slot_usage:
-      anatomicalLocationOfArray:
-        range: CellType
-      anatomicalLocationOfElectrodes:
-        range: CellType
-      contactResistances:
-        range: QuantitativeValue
-      device:
-        required: true
-        range: ElectrodeArray
-      metadataLocation:
-        range: File
-      usedSpecimen:
+      conductorMaterial:
         any_of:
-        - range: SubjectState
-        - range: TissueSampleState
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      deviceType:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: RRID
+      insulatorMaterial:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      manufacturer:
+        range: Consortium
+      name:
+        required: true
+      owner:
+        range: Consortium
+- Pipette:
+    class_uri: https://openminds.om-i.org/types/Pipette
+    description: null
+    title: Pipette
+    slots:
+    - id
+    - description
+    - deviceType
+    - digitalIdentifier
+    - externalDiameter
+    - internalDiameter
+    - internalIdentifier
+    - lookupLabel
+    - manufacturer
+    - material
+    - name
+    - owner
+    - serialNumber
+    slot_usage:
+      deviceType:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: RRID
+      manufacturer:
+        range: Consortium
+      material:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      name:
+        required: true
+      owner:
+        range: Consortium
 - ElectrodeUsage:
     class_uri: https://openminds.om-i.org/types/ElectrodeUsage
     description: null
@@ -447,10 +387,6 @@ classes:
         - range: CustomAnatomicalEntity
         - range: ParcellationEntity
         - range: ParcellationEntityVersion
-      contactResistance:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       device:
         required: true
         range: Electrode
@@ -460,3 +396,47 @@ classes:
         any_of:
         - range: SubjectState
         - range: TissueSampleState
+- Channel:
+    class_uri: https://openminds.om-i.org/types/Channel
+    description: null
+    title: Channel
+    slots:
+    - id
+    - internalIdentifier
+    - unit
+    slot_usage:
+      internalIdentifier:
+        required: true
+      unit:
+        required: true
+- Recording:
+    class_uri: https://openminds.om-i.org/types/Recording
+    description: null
+    title: Recording
+    slots:
+    - id
+    - additionalRemarks
+    - channel
+    - dataLocation
+    - internalIdentifier
+    - name
+    - previousRecording
+    - recordedWith
+    - samplingFrequency
+    slot_usage:
+      channel:
+        required: true
+      dataLocation:
+        required: true
+        any_of:
+        - range: File
+        - range: FileBundle
+      recordedWith:
+        required: true
+        any_of:
+        - range: ElectrodeArrayUsage
+        - range: ElectrodeUsage
+        - range: PipetteUsage
+        - range: SlicingDeviceUsage
+      samplingFrequency:
+        required: true

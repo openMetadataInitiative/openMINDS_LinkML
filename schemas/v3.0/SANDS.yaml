@@ -14,113 +14,99 @@ prefixes:
   omi: https://openminds.ebrains.eu
 default_prefix: omi
 classes:
-- CustomAnatomicalEntity:
-    class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
+- ViewerSpecification:
+    class_uri: https://openminds.ebrains.eu/sands/ViewerSpecification
     description: null
-    title: Custom anatomical entity
+    title: Viewer specification
     slots:
     - id
-    - hasAnnotation
-    - name
-    - relatedUBERONTerm
-    - relationAssessment
-    slot_usage:
-      hasAnnotation:
-        range: CustomAnnotation
-      name:
-        required: true
-      relationAssessment:
-        range: QualitativeRelationAssessment
-- CustomAnnotation:
-    class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
-    description: null
-    title: Custom annotation
-    slots:
-    - id
+    - additionalRemarks
     - anchorPoint
+    - cameraPosition
+    - preferredDisplayColor
+    slot_usage:
+      anchorPoint:
+        required: true
+      preferredDisplayColor:
+        any_of:
+        - range: Colormap
+        - range: SingleColor
+- CoordinatePoint:
+    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
+    description: null
+    title: Coordinate point
+    slots:
+    - id
     - coordinateSpace
-    - criteria
-    - criteriaQualityType
-    - criteriaType
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - preferredVisualization
-    - specification
-    - type
+    - coordinates
     slot_usage:
       coordinateSpace:
         required: true
         any_of:
         - range: CommonCoordinateSpaceVersion
         - range: CustomCoordinateSpace
-      criteriaQualityType:
+      coordinates:
         required: true
-      criteriaType:
+- QualitativeRelationAssessment:
+    class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
+    description: null
+    title: Qualitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - qualitativeOverlap
+    slot_usage:
+      inRelationTo:
         required: true
-      specification:
         any_of:
-        - range: File
-        - range: PropertyValueList
-      type:
+        - range: CustomAnatomicalEntity
+        - range: ParcellationEntity
+        - range: ParcellationEntityVersion
+      qualitativeOverlap:
         required: true
-        range: AnnotationType
-- CustomCoordinateSpace:
-    class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
+- QuantitativeRelationAssessment:
+    class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
     description: null
-    title: Custom coordinate space
+    title: Quantitative relation assessment
     slots:
     - id
-    - anatomicalAxesOrientation
-    - axesOrigin
-    - defaultImage
-    - name
-    - nativeUnit
+    - criteria
+    - inRelationTo
+    - quantitativeOverlap
     slot_usage:
-      anatomicalAxesOrientation:
+      inRelationTo:
         required: true
-      axesOrigin:
+        range: ParcellationEntityVersion
+      quantitativeOverlap:
         required: true
-      name:
-        required: true
-      nativeUnit:
-        required: true
-- Rectangle:
-    class_uri: https://openminds.ebrains.eu/sands/Rectangle
+- AnatomicalTargetPosition:
+    class_uri: https://openminds.ebrains.eu/sands/AnatomicalTargetPosition
     description: null
-    title: Rectangle
+    title: Anatomical target position
     slots:
     - id
-    - length
-    - width
+    - additionalRemarks
+    - anatomicalTarget
+    - spatialLocation
+    - targetIdentificationType
     slot_usage:
-      length:
+      anatomicalTarget:
         required: true
-      width:
+        range: CellType
+      targetIdentificationType:
         required: true
-- Circle:
-    class_uri: https://openminds.ebrains.eu/sands/Circle
+- SingleColor:
+    class_uri: https://openminds.ebrains.eu/sands/SingleColor
     description: null
-    title: Circle
+    title: Single color
     slots:
     - id
-    - radius
+    - value
     slot_usage:
-      radius:
+      value:
         required: true
-- Ellipse:
-    class_uri: https://openminds.ebrains.eu/sands/Ellipse
-    description: null
-    title: Ellipse
-    slots:
-    - id
-    - semiMajorAxis
-    - semiMinorAxis
-    slot_usage:
-      semiMajorAxis:
-        required: true
-      semiMinorAxis:
-        required: true
+        range: string
 - ParcellationTerminology:
     class_uri: https://openminds.ebrains.eu/sands/ParcellationTerminology
     description: null
@@ -136,48 +122,6 @@ classes:
       hasEntity:
         required: true
         range: ParcellationEntity
-- BrainAtlas:
-    class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
-    description: null
-    title: Brain atlas
-    slots:
-    - id
-    - abbreviation
-    - author
-    - custodian
-    - description
-    - digitalIdentifier
-    - fullName
-    - hasTerminology
-    - hasVersion
-    - homepage
-    - howToCite
-    - ontologyIdentifier
-    - shortName
-    - usedSpecies
-    slot_usage:
-      author:
-        required: true
-        range: Consortium
-      custodian:
-        range: Consortium
-      description:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: ISBN
-        - range: RRID
-      fullName:
-        required: true
-      hasTerminology:
-        required: true
-        range: ParcellationTerminology
-      hasVersion:
-        required: true
-        range: BrainAtlasVersion
-      shortName:
-        required: true
 - BrainAtlasVersion:
     class_uri: https://openminds.ebrains.eu/sands/BrainAtlasVersion
     description: null
@@ -307,95 +251,156 @@ classes:
       type:
         required: true
         range: AnnotationType
-- QualitativeRelationAssessment:
-    class_uri: https://openminds.ebrains.eu/sands/QualitativeRelationAssessment
+- BrainAtlas:
+    class_uri: https://openminds.ebrains.eu/sands/BrainAtlas
     description: null
-    title: Qualitative relation assessment
+    title: Brain atlas
     slots:
     - id
-    - criteria
-    - inRelationTo
-    - qualitativeOverlap
+    - abbreviation
+    - author
+    - custodian
+    - description
+    - digitalIdentifier
+    - fullName
+    - hasTerminology
+    - hasVersion
+    - homepage
+    - howToCite
+    - ontologyIdentifier
+    - shortName
+    - usedSpecies
     slot_usage:
-      inRelationTo:
+      author:
         required: true
+        range: Consortium
+      custodian:
+        range: Consortium
+      description:
+        required: true
+      digitalIdentifier:
         any_of:
-        - range: CustomAnatomicalEntity
-        - range: ParcellationEntity
-        - range: ParcellationEntityVersion
-      qualitativeOverlap:
+        - range: DOI
+        - range: ISBN
+        - range: RRID
+      fullName:
         required: true
-- AnatomicalTargetPosition:
-    class_uri: https://openminds.ebrains.eu/sands/AnatomicalTargetPosition
+      hasTerminology:
+        required: true
+        range: ParcellationTerminology
+      hasVersion:
+        required: true
+        range: BrainAtlasVersion
+      shortName:
+        required: true
+- CustomAnnotation:
+    class_uri: https://openminds.ebrains.eu/sands/CustomAnnotation
     description: null
-    title: Anatomical target position
+    title: Custom annotation
     slots:
     - id
-    - additionalRemarks
-    - anatomicalTarget
-    - spatialLocation
-    - targetIdentificationType
-    slot_usage:
-      anatomicalTarget:
-        required: true
-        range: CellType
-      targetIdentificationType:
-        required: true
-- SingleColor:
-    class_uri: https://openminds.ebrains.eu/sands/SingleColor
-    description: null
-    title: Single color
-    slots:
-    - id
-    - value
-    slot_usage:
-      value:
-        required: true
-        range: string
-- CoordinatePoint:
-    class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
-    description: null
-    title: Coordinate point
-    slots:
-    - id
+    - anchorPoint
     - coordinateSpace
-    - coordinates
+    - criteria
+    - criteriaQualityType
+    - criteriaType
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - preferredVisualization
+    - specification
+    - type
     slot_usage:
       coordinateSpace:
         required: true
         any_of:
         - range: CommonCoordinateSpaceVersion
         - range: CustomCoordinateSpace
-      coordinates:
+      criteriaQualityType:
         required: true
-- ViewerSpecification:
-    class_uri: https://openminds.ebrains.eu/sands/ViewerSpecification
-    description: null
-    title: Viewer specification
-    slots:
-    - id
-    - additionalRemarks
-    - anchorPoint
-    - cameraPosition
-    - preferredDisplayColor
-    slot_usage:
-      anchorPoint:
+      criteriaType:
         required: true
-- QuantitativeRelationAssessment:
-    class_uri: https://openminds.ebrains.eu/sands/QuantitativeRelationAssessment
-    description: null
-    title: Quantitative relation assessment
-    slots:
-    - id
-    - criteria
-    - inRelationTo
-    - quantitativeOverlap
-    slot_usage:
-      inRelationTo:
-        required: true
-        range: ParcellationEntityVersion
-      quantitativeOverlap:
-        required: true
+      specification:
         any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
+        - range: File
+        - range: PropertyValueList
+      type:
+        required: true
+        range: AnnotationType
+- CustomAnatomicalEntity:
+    class_uri: https://openminds.ebrains.eu/sands/CustomAnatomicalEntity
+    description: null
+    title: Custom anatomical entity
+    slots:
+    - id
+    - hasAnnotation
+    - name
+    - relatedUBERONTerm
+    - relationAssessment
+    slot_usage:
+      hasAnnotation:
+        range: CustomAnnotation
+      name:
+        required: true
+      relatedUBERONTerm:
+        any_of:
+        - range: Organ
+        - range: UBERONParcellation
+      relationAssessment:
+        range: QualitativeRelationAssessment
+- CustomCoordinateSpace:
+    class_uri: https://openminds.ebrains.eu/sands/CustomCoordinateSpace
+    description: null
+    title: Custom coordinate space
+    slots:
+    - id
+    - anatomicalAxesOrientation
+    - axesOrigin
+    - defaultImage
+    - name
+    - nativeUnit
+    slot_usage:
+      anatomicalAxesOrientation:
+        required: true
+      axesOrigin:
+        required: true
+      name:
+        required: true
+      nativeUnit:
+        required: true
+- Circle:
+    class_uri: https://openminds.ebrains.eu/sands/Circle
+    description: null
+    title: Circle
+    slots:
+    - id
+    - radius
+    slot_usage:
+      radius:
+        required: true
+- Ellipse:
+    class_uri: https://openminds.ebrains.eu/sands/Ellipse
+    description: null
+    title: Ellipse
+    slots:
+    - id
+    - semiMajorAxis
+    - semiMinorAxis
+    slot_usage:
+      semiMajorAxis:
+        required: true
+      semiMinorAxis:
+        required: true
+- Rectangle:
+    class_uri: https://openminds.ebrains.eu/sands/Rectangle
+    description: null
+    title: Rectangle
+    slots:
+    - id
+    - length
+    - width
+    slot_usage:
+      length:
+        required: true
+      width:
+        required: true
