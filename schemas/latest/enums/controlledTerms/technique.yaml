@@ -65,6 +65,11 @@ enums:
         description: Any medical imaging technique that typically uses a magnetic
           field strength of 3 Tesla (or higher but below 7 Tesla) to generate images
           of a specimen based on the principle of nuclear magnetic resonance.
+      electrogastrography:
+        description: A non-invasive technique for recording gastric myoelectrical
+          activity using cutaneous electrodes placed on the abdominal skin over the
+          stomach. [adapted from [Yin and Chen, 2013](https://doi.org/10.5056/jnm.2013.19.1.5
+          )]
       DAPi staining:
         description: "A nuclear-specific staining technique where DAPi (4\u2032,6-diamidino-2-phenylindole)\
           \ is used as a dye."

@@ -1045,10 +1045,6 @@ classes:
     slot_usage:
       member:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - GeoCoordinates:
     class_uri: https://openminds.om-i.org/types/GeoCoordinates
     description: null
@@ -1235,10 +1231,6 @@ classes:
     - temporalSamplingFrequency
     - voxelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1288,10 +1280,6 @@ classes:
     - obtainedWith
     - pixelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1434,10 +1422,6 @@ classes:
     - obtainedWith
     - voxelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1499,10 +1483,6 @@ classes:
     - pixelSize
     - z-stepSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1539,10 +1519,6 @@ classes:
     - pixelSize
     - temporalSamplingFrequency
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
