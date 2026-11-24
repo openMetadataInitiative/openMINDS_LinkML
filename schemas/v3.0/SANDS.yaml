@@ -27,6 +27,10 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
+      preferredDisplayColor:
+        any_of:
+        - range: Colormap
+        - range: SingleColor
 - CoordinatePoint:
     class_uri: https://openminds.ebrains.eu/sands/CoordinatePoint
     description: null
@@ -73,9 +77,6 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - AnatomicalTargetPosition:
     class_uri: https://openminds.ebrains.eu/sands/AnatomicalTargetPosition
     description: null
