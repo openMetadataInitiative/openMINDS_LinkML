@@ -13,11 +13,11 @@ enums:
     enum_uri: https://openminds.om-i.org/types/MRIFatSuppressionTechnique
     title: Mrifat suppression technique
     permissible_values:
-      chemical shift selective suppression:
-        description: A classical frequency-selective fat saturation technique that
-          suppresses fat signal by applying a narrowband radiofrequency pulse tuned
-          to the fat resonance frequency prior to image acquisition.
       Dixon water-fat separation technique:
         description: A water-fat separation technique that acquires images at different
           echo times to mathematically decompose water and fat signals based on their
           phase differences.
+      chemical shift selective suppression:
+        description: A classical frequency-selective fat saturation technique that
+          suppresses fat signal by applying a narrowband radiofrequency pulse tuned
+          to the fat resonance frequency prior to image acquisition.
