@@ -49,10 +49,10 @@ classes:
         required: true
       provider:
         required: true
-      purity:
         any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
+        - range: Consortium
+        - range: Organization
+        - range: Person
 - ChemicalMixture:
     class_uri: https://openminds.om-i.org/types/ChemicalMixture
     description: Structured information about a mixture of chemical substances.
@@ -85,7 +85,3 @@ classes:
     slot_usage:
       molecularEntity:
         required: true
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
