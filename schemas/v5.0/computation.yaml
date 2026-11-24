@@ -40,6 +40,12 @@ classes:
         required: true
       digitalIdentifier:
         range: DOI
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -378,6 +384,11 @@ classes:
         range: DOI
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       entryPoint:
         range: string
       format:
@@ -666,6 +677,12 @@ classes:
         required: true
       digitalIdentifier:
         range: DOI
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -810,6 +827,11 @@ classes:
         range: DOI
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       format:
         required: true
       fullName:

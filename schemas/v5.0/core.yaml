@@ -193,6 +193,12 @@ classes:
         range: Contribution
       description:
         required: true
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -268,6 +274,11 @@ classes:
         - range: RRID
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       ethicsJurisdiction:
         required: true
       experimentalApproach:
@@ -340,6 +351,12 @@ classes:
         - range: GenericIdentifier
         - range: RRID
         - range: SWHID
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -415,6 +432,12 @@ classes:
         range: Contribution
       description:
         required: true
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       interfaceType:
@@ -492,6 +515,12 @@ classes:
         - range: GenericIdentifier
         - range: RRID
         - range: SWHID
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -566,6 +595,12 @@ classes:
         - range: GenericIdentifier
         - range: RRID
         - range: SWHID
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -635,6 +670,11 @@ classes:
         - range: SWHID
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       entryPoint:
         range: string
       format:
@@ -710,6 +750,11 @@ classes:
         required: true
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       isPrecededBy:
@@ -772,6 +817,12 @@ classes:
         - range: GenericIdentifier
         - range: IdentifiersDotOrgID
         - range: RRID
+      documentation:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -839,6 +890,11 @@ classes:
         - range: SWHID
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       isPrecededBy:
@@ -918,6 +974,11 @@ classes:
         - range: SWHID
       documentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: ISBN
+        - range: WebResource
       fullName:
         required: true
       isPrecededBy:
@@ -1950,6 +2011,9 @@ classes:
         - range: OrganismSubstance
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1968,6 +2032,11 @@ classes:
     - stimulusType
     - technique
     slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
       description:
         required: true
       name:
@@ -2045,6 +2114,10 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleCollection:
@@ -2109,6 +2182,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SubjectGroupState:
@@ -2142,6 +2219,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleState:
@@ -2171,6 +2252,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - Subject:
@@ -2190,6 +2275,9 @@ classes:
         range: SubjectGroup
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: SubjectState
