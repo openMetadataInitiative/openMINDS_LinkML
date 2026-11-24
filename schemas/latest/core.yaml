@@ -281,6 +281,9 @@ classes:
         - range: WebResource
       ethicsJurisdiction:
         required: true
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       experimentalApproach:
         required: true
       fullName:
@@ -1626,6 +1629,9 @@ classes:
         required: true
       jurisdiction:
         required: true
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       modificationProfile:
         required: true
         range: ModificationConsentRequirement
@@ -1795,6 +1801,10 @@ classes:
         range: GenericIdentifier
       hasParent:
         range: Organization
+      jurisdiction:
+        any_of:
+        - range: SovereignState
+        - range: SupranationalBody
       location:
         range: Location
       name:
@@ -2126,10 +2136,6 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleCollection:
@@ -2194,10 +2200,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SubjectGroupState:
@@ -2231,10 +2233,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleState:
@@ -2264,10 +2262,6 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
-      relativeTimeIndication:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - Subject:
