@@ -150,6 +150,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SubjectState:
@@ -183,6 +187,10 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - PropertyValueList:
@@ -228,6 +236,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSample:
@@ -351,6 +363,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - CustomPropertySet:
@@ -518,10 +534,6 @@ classes:
     - obtainedWith
     - voxelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -643,10 +655,6 @@ classes:
     - obtainedWith
     - pixelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -681,10 +689,6 @@ classes:
     - pixelSize
     - z-stepSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -857,10 +861,6 @@ classes:
     - pixelSize
     - temporalSamplingFrequency
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -950,10 +950,6 @@ classes:
     - temporalSamplingFrequency
     - voxelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1332,6 +1328,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - Dataset:
     class_uri: https://openminds.om-i.org/types/Dataset
     description: Structured information on data originating from human/animal studies

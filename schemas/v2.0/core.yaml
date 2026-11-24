@@ -78,8 +78,16 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - SubjectState:
     class_uri: https://openminds.ebrains.eu/core/SubjectState
     description: Structured information on a temporary state of a subject.
@@ -94,10 +102,18 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - SubjectGroupState:
     class_uri: https://openminds.ebrains.eu/core/SubjectGroupState
     description: null
@@ -112,10 +128,18 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - ParameterSet:
     class_uri: https://openminds.ebrains.eu/core/ParameterSet
     description: Structured information on a used parameter set.
@@ -159,9 +183,6 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
       species:
         required: true
       studiedState:
@@ -208,8 +229,16 @@ classes:
     - pathology
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pathology:
         range: Disease
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - StringParameter:
     class_uri: https://openminds.ebrains.eu/core/StringParameter
     description: null
@@ -444,6 +473,9 @@ classes:
         required: true
       contributor:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - Person:
     class_uri: https://openminds.ebrains.eu/core/Person
     description: Structured information on a person.
@@ -587,6 +619,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - RORID:
     class_uri: https://openminds.ebrains.eu/core/RORID
     description: A persistent identifier for a research organization, provided by
@@ -676,6 +711,10 @@ classes:
         - range: SWHID
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
@@ -748,6 +787,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       inputData:
@@ -860,6 +903,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       inputData:
@@ -1051,6 +1098,10 @@ classes:
         required: true
       fullDocumentation:
         required: true
+        any_of:
+        - range: DOI
+        - range: File
+        - range: URL
       funding:
         required: true
       isAlternativeVersionOf:
