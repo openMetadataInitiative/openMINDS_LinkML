@@ -16,17 +16,17 @@ enums:
     permissible_values:
       inactive:
         description: A pending or suspended action.
-      potential:
-        description: A description of an action that is supported.
-      paused:
-        description: A temporarily stopped action that can be resumed at a later point
-          in time.
-      completed:
-        description: An action that has already taken place with a successful outcome.
-      pending:
-        description: An action which is awaiting execution.
-      active:
-        description: An in-progress action.
       failed:
         description: An action that failed to complete or completed but produced an
           error.
+      completed:
+        description: An action that has already taken place with a successful outcome.
+      potential:
+        description: A description of an action that is supported.
+      active:
+        description: An in-progress action.
+      pending:
+        description: An action which is awaiting execution.
+      paused:
+        description: A temporarily stopped action that can be resumed at a later point
+          in time.

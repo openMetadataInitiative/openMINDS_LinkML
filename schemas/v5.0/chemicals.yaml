@@ -14,18 +14,6 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
-- AmountOfChemical:
-    class_uri: https://openminds.om-i.org/types/AmountOfChemical
-    description: Structured information about the amount of a given chemical that
-      was used.
-    title: Amount of chemical
-    slots:
-    - id
-    - amount
-    - chemicalProduct
-    slot_usage:
-      chemicalProduct:
-        required: true
 - ProductSource:
     class_uri: https://openminds.om-i.org/types/ProductSource
     description: Structured information about the source of a chemical substance or
@@ -45,9 +33,36 @@ classes:
         required: true
       provider:
         required: true
+- AmountOfChemical:
+    class_uri: https://openminds.om-i.org/types/AmountOfChemical
+    description: Structured information about the amount of a given chemical that
+      was used.
+    title: Amount of chemical
+    slots:
+    - id
+    - amount
+    - chemicalProduct
+    slot_usage:
+      chemicalProduct:
+        required: true
         any_of:
-        - range: Organization
-        - range: Person
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+- ChemicalSubstance:
+    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
+    description: Structured information about a chemical substance.
+    title: Chemical substance
+    slots:
+    - id
+    - additionalRemarks
+    - lookupLabel
+    - molecularEntity
+    - productSource
+    - purity
+    slot_usage:
+      molecularEntity:
+        required: true
 - ChemicalMixture:
     class_uri: https://openminds.om-i.org/types/ChemicalMixture
     description: Structured information about a mixture of chemical substances.
@@ -66,17 +81,3 @@ classes:
       type:
         required: true
         range: ChemicalMixtureType
-- ChemicalSubstance:
-    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
-    description: Structured information about a chemical substance.
-    title: Chemical substance
-    slots:
-    - id
-    - additionalRemarks
-    - lookupLabel
-    - molecularEntity
-    - productSource
-    - purity
-    slot_usage:
-      molecularEntity:
-        required: true

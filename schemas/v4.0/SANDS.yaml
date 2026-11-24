@@ -14,6 +14,34 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
+- CoordinatePoint:
+    class_uri: https://openminds.om-i.org/types/CoordinatePoint
+    description: null
+    title: Coordinate point
+    slots:
+    - id
+    - coordinateSpace
+    - coordinates
+    slot_usage:
+      coordinateSpace:
+        required: true
+      coordinates:
+        required: true
+- QuantitativeRelationAssessment:
+    class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
+    description: null
+    title: Quantitative relation assessment
+    slots:
+    - id
+    - criteria
+    - inRelationTo
+    - quantitativeOverlap
+    slot_usage:
+      inRelationTo:
+        required: true
+        range: ParcellationEntityVersion
+      quantitativeOverlap:
+        required: true
 - ViewerSpecification:
     class_uri: https://openminds.om-i.org/types/ViewerSpecification
     description: null
@@ -26,22 +54,6 @@ classes:
     - preferredDisplayColor
     slot_usage:
       anchorPoint:
-        required: true
-- CoordinatePoint:
-    class_uri: https://openminds.om-i.org/types/CoordinatePoint
-    description: null
-    title: Coordinate point
-    slots:
-    - id
-    - coordinateSpace
-    - coordinates
-    slot_usage:
-      coordinateSpace:
-        required: true
-        any_of:
-        - range: CommonCoordinateSpaceVersion
-        - range: CustomCoordinateSpace
-      coordinates:
         required: true
 - QualitativeRelationAssessment:
     class_uri: https://openminds.om-i.org/types/QualitativeRelationAssessment
@@ -61,21 +73,17 @@ classes:
         - range: ParcellationEntityVersion
       qualitativeOverlap:
         required: true
-- QuantitativeRelationAssessment:
-    class_uri: https://openminds.om-i.org/types/QuantitativeRelationAssessment
+- SingleColor:
+    class_uri: https://openminds.om-i.org/types/SingleColor
     description: null
-    title: Quantitative relation assessment
+    title: Single color
     slots:
     - id
-    - criteria
-    - inRelationTo
-    - quantitativeOverlap
+    - value
     slot_usage:
-      inRelationTo:
+      value:
         required: true
-        range: ParcellationEntityVersion
-      quantitativeOverlap:
-        required: true
+        range: string
 - AnatomicalTargetPosition:
     class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
     description: null
@@ -92,32 +100,114 @@ classes:
         range: CellType
       targetIdentificationType:
         required: true
-- SingleColor:
-    class_uri: https://openminds.om-i.org/types/SingleColor
+- CustomAnatomicalEntity:
+    class_uri: https://openminds.om-i.org/types/CustomAnatomicalEntity
     description: null
-    title: Single color
+    title: Custom anatomical entity
     slots:
     - id
-    - value
+    - hasAnnotation
+    - name
+    - relatedUBERONTerm
+    - relationAssessment
     slot_usage:
-      value:
+      hasAnnotation:
+        range: CustomAnnotation
+      name:
         required: true
-        range: string
-- ParcellationTerminology:
-    class_uri: https://openminds.om-i.org/types/ParcellationTerminology
+      relatedUBERONTerm:
+        any_of:
+        - range: Organ
+        - range: UBERONParcellation
+      relationAssessment:
+        range: QualitativeRelationAssessment
+- CustomCoordinateSpace:
+    class_uri: https://openminds.om-i.org/types/CustomCoordinateSpace
     description: null
-    title: Parcellation terminology
+    title: Custom coordinate space
     slots:
     - id
-    - dataLocation
-    - hasEntity
-    - ontologyIdentifier
+    - anatomicalAxesOrientation
+    - axesOrigin
+    - defaultImage
+    - name
+    - nativeUnit
     slot_usage:
-      dataLocation:
-        range: File
-      hasEntity:
+      anatomicalAxesOrientation:
         required: true
-        range: ParcellationEntity
+      axesOrigin:
+        required: true
+      name:
+        required: true
+      nativeUnit:
+        required: true
+- CustomAnnotation:
+    class_uri: https://openminds.om-i.org/types/CustomAnnotation
+    description: null
+    title: Custom annotation
+    slots:
+    - id
+    - anchorPoint
+    - coordinateSpace
+    - criteria
+    - criteriaQualityType
+    - criteriaType
+    - inspiredBy
+    - internalIdentifier
+    - laterality
+    - preferredVisualization
+    - specification
+    - type
+    slot_usage:
+      coordinateSpace:
+        required: true
+      criteriaQualityType:
+        required: true
+      criteriaType:
+        required: true
+      specification:
+        any_of:
+        - range: File
+        - range: PropertyValueList
+      type:
+        required: true
+        range: AnnotationType
+- Ellipse:
+    class_uri: https://openminds.om-i.org/types/Ellipse
+    description: null
+    title: Ellipse
+    slots:
+    - id
+    - semiMajorAxis
+    - semiMinorAxis
+    slot_usage:
+      semiMajorAxis:
+        required: true
+      semiMinorAxis:
+        required: true
+- Circle:
+    class_uri: https://openminds.om-i.org/types/Circle
+    description: null
+    title: Circle
+    slots:
+    - id
+    - radius
+    slot_usage:
+      radius:
+        required: true
+- Rectangle:
+    class_uri: https://openminds.om-i.org/types/Rectangle
+    description: null
+    title: Rectangle
+    slots:
+    - id
+    - length
+    - width
+    slot_usage:
+      length:
+        required: true
+      width:
+        required: true
 - BrainAtlasVersion:
     class_uri: https://openminds.om-i.org/types/BrainAtlasVersion
     description: null
@@ -206,6 +296,21 @@ classes:
         required: true
       versionInnovation:
         required: true
+- ParcellationTerminology:
+    class_uri: https://openminds.om-i.org/types/ParcellationTerminology
+    description: null
+    title: Parcellation terminology
+    slots:
+    - id
+    - dataLocation
+    - hasEntity
+    - ontologyIdentifier
+    slot_usage:
+      dataLocation:
+        range: File
+      hasEntity:
+        required: true
+        range: ParcellationEntity
 - ParcellationTerminologyVersion:
     class_uri: https://openminds.om-i.org/types/ParcellationTerminologyVersion
     description: null
@@ -288,111 +393,4 @@ classes:
         required: true
         range: BrainAtlasVersion
       shortName:
-        required: true
-- CustomAnnotation:
-    class_uri: https://openminds.om-i.org/types/CustomAnnotation
-    description: null
-    title: Custom annotation
-    slots:
-    - id
-    - anchorPoint
-    - coordinateSpace
-    - criteria
-    - criteriaQualityType
-    - criteriaType
-    - inspiredBy
-    - internalIdentifier
-    - laterality
-    - preferredVisualization
-    - specification
-    - type
-    slot_usage:
-      coordinateSpace:
-        required: true
-        any_of:
-        - range: CommonCoordinateSpaceVersion
-        - range: CustomCoordinateSpace
-      criteriaQualityType:
-        required: true
-      criteriaType:
-        required: true
-      specification:
-        any_of:
-        - range: File
-        - range: PropertyValueList
-      type:
-        required: true
-        range: AnnotationType
-- CustomAnatomicalEntity:
-    class_uri: https://openminds.om-i.org/types/CustomAnatomicalEntity
-    description: null
-    title: Custom anatomical entity
-    slots:
-    - id
-    - hasAnnotation
-    - name
-    - relatedUBERONTerm
-    - relationAssessment
-    slot_usage:
-      hasAnnotation:
-        range: CustomAnnotation
-      name:
-        required: true
-      relationAssessment:
-        range: QualitativeRelationAssessment
-- CustomCoordinateSpace:
-    class_uri: https://openminds.om-i.org/types/CustomCoordinateSpace
-    description: null
-    title: Custom coordinate space
-    slots:
-    - id
-    - anatomicalAxesOrientation
-    - axesOrigin
-    - defaultImage
-    - name
-    - nativeUnit
-    slot_usage:
-      anatomicalAxesOrientation:
-        required: true
-      axesOrigin:
-        required: true
-      name:
-        required: true
-      nativeUnit:
-        required: true
-- Circle:
-    class_uri: https://openminds.om-i.org/types/Circle
-    description: null
-    title: Circle
-    slots:
-    - id
-    - radius
-    slot_usage:
-      radius:
-        required: true
-- Ellipse:
-    class_uri: https://openminds.om-i.org/types/Ellipse
-    description: null
-    title: Ellipse
-    slots:
-    - id
-    - semiMajorAxis
-    - semiMinorAxis
-    slot_usage:
-      semiMajorAxis:
-        required: true
-      semiMinorAxis:
-        required: true
-- Rectangle:
-    class_uri: https://openminds.om-i.org/types/Rectangle
-    description: null
-    title: Rectangle
-    slots:
-    - id
-    - length
-    - width
-    slot_usage:
-      length:
-        required: true
-      width:
         required: true
