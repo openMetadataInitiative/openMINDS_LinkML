@@ -18,9 +18,6 @@ enums:
           production of offspring from mating organisms that are genetically closely
           related (same background breed) and have been selected based on a particular
           phenotype.'
-      hybrid:
-        description: A 'hybrid' is an organism that resulted from special outbreeding
-          of two species (normally within the same genus).
       inbred:
         description: '''Inbred'' breeding (or inbreeding) is the production of offspring
           from mating organisms that are genetically closely related (same background
@@ -33,6 +30,9 @@ enums:
         description: '''Coisogenic'' breeding  is a type of inbreeding where the offspring
           differs at only a single locus through a mutation occurring in the original
           inbred strain.'
+      hybrid:
+        description: A 'hybrid' is an organism that resulted from special outbreeding
+          of two species (normally within the same genus).
       outbred:
         description: '''Outbred'' breeding (or outbreeding) is the production of offspring
           from mating organisms that belong to two different background breeds.'
