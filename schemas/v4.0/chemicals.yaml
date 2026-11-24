@@ -14,6 +14,22 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
+- AmountOfChemical:
+    class_uri: https://openminds.om-i.org/types/AmountOfChemical
+    description: Structured information about the amount of a given chemical that
+      was used.
+    title: Amount of chemical
+    slots:
+    - id
+    - amount
+    - chemicalProduct
+    slot_usage:
+      chemicalProduct:
+        required: true
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
 - ProductSource:
     class_uri: https://openminds.om-i.org/types/ProductSource
     description: Structured information about the source of a chemical substance or
@@ -41,40 +57,6 @@ classes:
         any_of:
         - range: QuantitativeValue
         - range: QuantitativeValueRange
-- AmountOfChemical:
-    class_uri: https://openminds.om-i.org/types/AmountOfChemical
-    description: Structured information about the amount of a given chemical that
-      was used.
-    title: Amount of chemical
-    slots:
-    - id
-    - amount
-    - chemicalProduct
-    slot_usage:
-      chemicalProduct:
-        required: true
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-- ChemicalSubstance:
-    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
-    description: Structured information about a chemical substance.
-    title: Chemical substance
-    slots:
-    - id
-    - additionalRemarks
-    - lookupLabel
-    - molecularEntity
-    - productSource
-    - purity
-    slot_usage:
-      molecularEntity:
-        required: true
-      purity:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - ChemicalMixture:
     class_uri: https://openminds.om-i.org/types/ChemicalMixture
     description: Structured information about a mixture of chemical substances.
@@ -93,3 +75,21 @@ classes:
       type:
         required: true
         range: ChemicalMixtureType
+- ChemicalSubstance:
+    class_uri: https://openminds.om-i.org/types/ChemicalSubstance
+    description: Structured information about a chemical substance.
+    title: Chemical substance
+    slots:
+    - id
+    - additionalRemarks
+    - lookupLabel
+    - molecularEntity
+    - productSource
+    - purity
+    slot_usage:
+      molecularEntity:
+        required: true
+      purity:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange

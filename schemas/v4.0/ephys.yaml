@@ -14,6 +14,153 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
+- RecordingActivity:
+    class_uri: https://openminds.om-i.org/types/RecordingActivity
+    description: null
+    title: Recording activity
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - internalIdentifier
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    slot_usage:
+      device:
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectGroupState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: File
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
+- CellPatching:
+    class_uri: https://openminds.om-i.org/types/CellPatching
+    description: null
+    title: Cell patching
+    slots:
+    - id
+    - bathTemperature
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - targetPosition
+    - tissueBathSolution
+    - variation
+    slot_usage:
+      bathTemperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      device:
+        required: true
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: TissueSampleState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
+- ElectrodePlacement:
+    class_uri: https://openminds.om-i.org/types/ElectrodePlacement
+    description: null
+    title: Electrode placement
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - targetPosition
+    slot_usage:
+      device:
+        required: true
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: TissueSampleState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AuditoryStimulusType
 - ElectrodeArray:
     class_uri: https://openminds.om-i.org/types/ElectrodeArray
     description: Structured information on an electrode array.
@@ -196,6 +343,42 @@ classes:
         required: true
       owner:
         range: Consortium
+- Pipette:
+    class_uri: https://openminds.om-i.org/types/Pipette
+    description: null
+    title: Pipette
+    slots:
+    - id
+    - description
+    - deviceType
+    - digitalIdentifier
+    - externalDiameter
+    - internalDiameter
+    - internalIdentifier
+    - lookupLabel
+    - manufacturer
+    - material
+    - name
+    - owner
+    - serialNumber
+    slot_usage:
+      deviceType:
+        required: true
+      digitalIdentifier:
+        any_of:
+        - range: DOI
+        - range: RRID
+      manufacturer:
+        range: Consortium
+      material:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      name:
+        required: true
+      owner:
+        range: Consortium
 - ElectrodeUsage:
     class_uri: https://openminds.om-i.org/types/ElectrodeUsage
     description: null
@@ -233,189 +416,6 @@ classes:
         any_of:
         - range: SubjectState
         - range: TissueSampleState
-- Pipette:
-    class_uri: https://openminds.om-i.org/types/Pipette
-    description: null
-    title: Pipette
-    slots:
-    - id
-    - description
-    - deviceType
-    - digitalIdentifier
-    - externalDiameter
-    - internalDiameter
-    - internalIdentifier
-    - lookupLabel
-    - manufacturer
-    - material
-    - name
-    - owner
-    - serialNumber
-    slot_usage:
-      deviceType:
-        required: true
-      digitalIdentifier:
-        any_of:
-        - range: DOI
-        - range: RRID
-      manufacturer:
-        range: Consortium
-      material:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-      name:
-        required: true
-      owner:
-        range: Consortium
-- ElectrodePlacement:
-    class_uri: https://openminds.om-i.org/types/ElectrodePlacement
-    description: null
-    title: Electrode placement
-    slots:
-    - id
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - targetPosition
-    slot_usage:
-      device:
-        required: true
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: TissueSampleState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
-- CellPatching:
-    class_uri: https://openminds.om-i.org/types/CellPatching
-    description: null
-    title: Cell patching
-    slots:
-    - id
-    - bathTemperature
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - targetPosition
-    - tissueBathSolution
-    - variation
-    slot_usage:
-      bathTemperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      device:
-        required: true
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: TissueSampleState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
-- RecordingActivity:
-    class_uri: https://openminds.om-i.org/types/RecordingActivity
-    description: null
-    title: Recording activity
-    slots:
-    - id
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
-    - internalIdentifier
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    slot_usage:
-      device:
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: SubjectGroupState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: File
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AuditoryStimulusType
 - Channel:
     class_uri: https://openminds.om-i.org/types/Channel
     description: null

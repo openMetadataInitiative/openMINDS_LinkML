@@ -14,6 +14,156 @@ prefixes:
   omi: https://openminds.om-i.org
 default_prefix: omi
 classes:
+- RecordingActivity:
+    class_uri: https://openminds.om-i.org/types/RecordingActivity
+    description: null
+    title: Recording activity
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - internalIdentifier
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    slot_usage:
+      device:
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: SubjectGroupState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: File
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AnatomicalCavity
+- CellPatching:
+    class_uri: https://openminds.om-i.org/types/CellPatching
+    description: null
+    title: Cell patching
+    slots:
+    - id
+    - bathTemperature
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - targetPosition
+    - tissueBathSolution
+    - variation
+    slot_usage:
+      bathTemperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      device:
+        required: true
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: TissueSampleState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AnatomicalCavity
+- ElectrodePlacement:
+    class_uri: https://openminds.om-i.org/types/ElectrodePlacement
+    description: null
+    title: Electrode placement
+    slots:
+    - id
+    - customPropertySet
+    - description
+    - device
+    - endTime
+    - input
+    - isPartOf
+    - lookupLabel
+    - output
+    - performedBy
+    - preparationDesign
+    - protocol
+    - startTime
+    - studyTarget
+    - targetPosition
+    slot_usage:
+      device:
+        required: true
+        range: ElectrodeArrayUsage
+      endTime:
+        range: string
+        any_of:
+        - range: time
+      input:
+        required: true
+        range: TissueSampleState
+      isPartOf:
+        required: true
+        range: DatasetVersion
+      output:
+        required: true
+        range: TissueSampleState
+      performedBy:
+        range: SoftwareAgent
+      protocol:
+        required: true
+        range: Protocol
+      startTime:
+        range: string
+        any_of:
+        - range: time
+      studyTarget:
+        range: AnatomicalCavity
 - ElectrodeArray:
     class_uri: https://openminds.om-i.org/types/ElectrodeArray
     description: Structured information on an electrode array.
@@ -194,6 +344,37 @@ classes:
         any_of:
         - range: DeviceType
         - range: HardwareProduct
+- Pipette:
+    class_uri: https://openminds.om-i.org/types/Pipette
+    description: null
+    title: Pipette
+    slots:
+    - id
+    - contribution
+    - description
+    - externalDiameter
+    - internalDiameter
+    - internalIdentifier
+    - material
+    - name
+    - serialNumber
+    - type
+    slot_usage:
+      contribution:
+        required: true
+        range: Organization
+      material:
+        any_of:
+        - range: ChemicalMixture
+        - range: ChemicalSubstance
+        - range: MolecularEntity
+      name:
+        required: true
+      type:
+        required: true
+        any_of:
+        - range: DeviceType
+        - range: HardwareProduct
 - ElectrodeUsage:
     class_uri: https://openminds.om-i.org/types/ElectrodeUsage
     description: null
@@ -239,184 +420,3 @@ classes:
         any_of:
         - range: SubjectState
         - range: TissueSampleState
-- Pipette:
-    class_uri: https://openminds.om-i.org/types/Pipette
-    description: null
-    title: Pipette
-    slots:
-    - id
-    - contribution
-    - description
-    - externalDiameter
-    - internalDiameter
-    - internalIdentifier
-    - material
-    - name
-    - serialNumber
-    - type
-    slot_usage:
-      contribution:
-        required: true
-        range: Organization
-      material:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
-      name:
-        required: true
-      type:
-        required: true
-        any_of:
-        - range: DeviceType
-        - range: HardwareProduct
-- ElectrodePlacement:
-    class_uri: https://openminds.om-i.org/types/ElectrodePlacement
-    description: null
-    title: Electrode placement
-    slots:
-    - id
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - targetPosition
-    slot_usage:
-      device:
-        required: true
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: TissueSampleState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-        range: Protocol
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
-- CellPatching:
-    class_uri: https://openminds.om-i.org/types/CellPatching
-    description: null
-    title: Cell patching
-    slots:
-    - id
-    - bathTemperature
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    - targetPosition
-    - tissueBathSolution
-    - variation
-    slot_usage:
-      bathTemperature:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
-      device:
-        required: true
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: TissueSampleState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: TissueSampleState
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-        range: Protocol
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
-- RecordingActivity:
-    class_uri: https://openminds.om-i.org/types/RecordingActivity
-    description: null
-    title: Recording activity
-    slots:
-    - id
-    - customPropertySet
-    - description
-    - device
-    - endTime
-    - input
-    - internalIdentifier
-    - isPartOf
-    - lookupLabel
-    - output
-    - performedBy
-    - preparationDesign
-    - protocol
-    - startTime
-    - studyTarget
-    slot_usage:
-      device:
-        range: ElectrodeArrayUsage
-      endTime:
-        range: string
-        any_of:
-        - range: time
-      input:
-        required: true
-        range: SubjectGroupState
-      isPartOf:
-        required: true
-        range: DatasetVersion
-      output:
-        required: true
-        range: File
-      performedBy:
-        range: SoftwareAgent
-      protocol:
-        required: true
-        range: Protocol
-      startTime:
-        range: string
-        any_of:
-        - range: time
-      studyTarget:
-        range: AnatomicalCavity
