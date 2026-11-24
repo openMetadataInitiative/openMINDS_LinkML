@@ -281,9 +281,6 @@ classes:
         - range: WebResource
       ethicsJurisdiction:
         required: true
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       experimentalApproach:
         required: true
       fullName:
@@ -1241,10 +1238,6 @@ classes:
     - temporalSamplingFrequency
     - voxelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1294,10 +1287,6 @@ classes:
     - obtainedWith
     - pixelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1440,10 +1429,6 @@ classes:
     - obtainedWith
     - voxelSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1505,10 +1490,6 @@ classes:
     - pixelSize
     - z-stepSize
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1545,10 +1526,6 @@ classes:
     - pixelSize
     - temporalSamplingFrequency
     slot_usage:
-      coordinateFramework:
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       dataLocation:
         required: true
         any_of:
@@ -1629,9 +1606,6 @@ classes:
         required: true
       jurisdiction:
         required: true
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       modificationProfile:
         required: true
         range: ModificationConsentRequirement
@@ -1801,10 +1775,6 @@ classes:
         range: GenericIdentifier
       hasParent:
         range: Organization
-      jurisdiction:
-        any_of:
-        - range: SovereignState
-        - range: SupranationalBody
       location:
         range: Location
       name:
@@ -2059,6 +2029,11 @@ classes:
     - stimulusType
     - technique
     slot_usage:
+      describedIn:
+        any_of:
+        - range: DOI
+        - range: File
+        - range: WebResource
       description:
         required: true
       name:
@@ -2136,6 +2111,10 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleCollection:
@@ -2200,6 +2179,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - SubjectGroupState:
@@ -2233,6 +2216,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - TissueSampleState:
@@ -2262,6 +2249,10 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       weight:
         range: SpecimenWeight
 - Subject:
