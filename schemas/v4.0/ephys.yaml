@@ -84,6 +84,10 @@ classes:
     - tissueBathSolution
     - variation
     slot_usage:
+      bathTemperature:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       device:
         required: true
         range: ElectrodeArrayUsage
@@ -178,11 +182,6 @@ classes:
     - owner
     - serialNumber
     slot_usage:
-      conductorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
       deviceType:
         required: true
       digitalIdentifier:
@@ -191,11 +190,10 @@ classes:
         - range: RRID
       electrodeIdentifier:
         required: true
-      insulatorMaterial:
+      intrinsicResistance:
         any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       manufacturer:
         range: Consortium
       name:
@@ -273,13 +271,12 @@ classes:
       device:
         required: true
         range: Pipette
-      labelingCompound:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
       metadataLocation:
         range: File
+      pipetteResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       pipetteSolution:
         required: true
       usedSpecimen:
@@ -305,22 +302,16 @@ classes:
     - owner
     - serialNumber
     slot_usage:
-      conductorMaterial:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
       deviceType:
         required: true
       digitalIdentifier:
         any_of:
         - range: DOI
         - range: RRID
-      insulatorMaterial:
+      intrinsicResistance:
         any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       manufacturer:
         range: Consortium
       name:
@@ -354,11 +345,6 @@ classes:
         - range: RRID
       manufacturer:
         range: Consortium
-      material:
-        any_of:
-        - range: ChemicalMixture
-        - range: ChemicalSubstance
-        - range: MolecularEntity
       name:
         required: true
       owner:
@@ -387,6 +373,10 @@ classes:
         - range: CustomAnatomicalEntity
         - range: ParcellationEntity
         - range: ParcellationEntityVersion
+      contactResistance:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       device:
         required: true
         range: Electrode
