@@ -40,12 +40,6 @@ classes:
         required: true
       digitalIdentifier:
         range: DOI
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -89,9 +83,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -107,6 +98,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -152,9 +147,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -170,6 +162,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -261,6 +257,10 @@ classes:
       stage:
         required: true
         range: DataAnalysis
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
 - GenericComputation:
     class_uri: https://openminds.om-i.org/types/GenericComputation
     description: Structured information about a computation whose type is unknown
@@ -293,9 +293,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -311,6 +308,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -377,11 +378,6 @@ classes:
         range: DOI
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       entryPoint:
         range: string
       format:
@@ -479,9 +475,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -497,6 +490,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -542,9 +539,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -560,6 +554,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -605,9 +603,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -623,6 +618,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -667,12 +666,6 @@ classes:
         required: true
       digitalIdentifier:
         range: DOI
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       keyword:
@@ -740,9 +733,6 @@ classes:
         - range: time
       environment:
         required: true
-        any_of:
-        - range: Environment
-        - range: Service
       input:
         required: true
         range: LocalFile
@@ -758,6 +748,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AnatomicalCavity
       technique:
@@ -816,11 +810,6 @@ classes:
         range: DOI
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       format:
         required: true
       fullName:

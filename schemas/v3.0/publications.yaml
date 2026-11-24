@@ -86,10 +86,6 @@ classes:
         - range: Consortium
         - range: Organization
         - range: Person
-      requiredTime:
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
       type:
         range: LearningResourceType
 - Chapter:
@@ -295,11 +291,6 @@ classes:
         range: DOI
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       isAlternativeVersionOf:
         range: LivePaperVersion
       isNewVersionOf:

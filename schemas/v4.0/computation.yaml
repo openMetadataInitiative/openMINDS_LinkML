@@ -95,6 +95,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -158,6 +162,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -201,6 +209,10 @@ classes:
       stage:
         required: true
         range: DataAnalysis
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
 - GenericComputation:
     class_uri: https://openminds.om-i.org/types/GenericComputation
     description: Structured information about a computation whose type is unknown
@@ -251,6 +263,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -317,11 +333,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       isAlternativeVersionOf:
         range: ValidationTestVersion
       isNewVersionOf:
@@ -428,6 +439,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -514,6 +529,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -577,6 +596,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -698,6 +721,10 @@ classes:
         range: string
         any_of:
         - range: time
+      startedBy:
+        any_of:
+        - range: SoftwareAgent
+        - range: Person
       studyTarget:
         range: AuditoryStimulusType
       technique:
@@ -756,11 +783,6 @@ classes:
         required: true
       fullDocumentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       hasPart:
         range: WorkflowRecipeVersion
       isAlternativeVersionOf:

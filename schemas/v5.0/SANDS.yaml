@@ -371,9 +371,6 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       coordinates:
         required: true
 - QualitativeRelationAssessment:
@@ -409,9 +406,6 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
-        any_of:
-        - range: QuantitativeValue
-        - range: QuantitativeValueRange
 - AnatomicalTargetPosition:
     class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
     description: null
@@ -514,12 +508,6 @@ classes:
         - range: DOI
         - range: ISBN
         - range: RRID
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       hasTerminology:
@@ -539,6 +527,9 @@ classes:
         - range: uri
       usedTaxon:
         required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - AnatomicalAtlasVersion:
     class_uri: https://openminds.om-i.org/types/AnatomicalAtlasVersion
     description: null
@@ -593,11 +584,6 @@ classes:
         - range: RRID
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       hasTerminology:
@@ -716,11 +702,6 @@ classes:
         - range: RRID
       documentation:
         required: true
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       howToCite:
@@ -786,12 +767,6 @@ classes:
         - range: DOI
         - range: ISBN
         - range: RRID
-      documentation:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: ISBN
-        - range: WebResource
       fullName:
         required: true
       howToCite:
@@ -808,6 +783,9 @@ classes:
         - range: uri
       usedTaxon:
         required: true
+        any_of:
+        - range: BiologicalOrder
+        - range: Species
 - CustomAnnotation:
     class_uri: https://openminds.om-i.org/types/CustomAnnotation
     description: null
@@ -827,9 +805,6 @@ classes:
     slot_usage:
       coordinateFramework:
         required: true
-        any_of:
-        - range: CommonCoordinateFrameworkVersion
-        - range: CustomCoordinateFramework
       criteriaQualityType:
         required: true
       criteriaType:
