@@ -909,6 +909,10 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
 - FileArchive:
     class_uri: https://openminds.om-i.org/types/FileArchive
     description: null
@@ -1146,6 +1150,10 @@ classes:
     slot_usage:
       contributor:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
       type:
         required: true
         range: ContributionType
@@ -1353,11 +1361,12 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
+        any_of:
+        - range: CellType
+        - range: Organ
+        - range: OrganismSubstance
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1376,11 +1385,6 @@ classes:
     - stimulusType
     - technique
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
       description:
         required: true
       name:
@@ -1440,6 +1444,10 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -1448,6 +1456,14 @@ classes:
         range: SubjectState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - TissueSampleCollection:
     class_uri: https://openminds.om-i.org/types/TissueSampleCollection
     description: null
@@ -1496,12 +1512,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - SubjectGroupState:
     class_uri: https://openminds.om-i.org/types/SubjectGroupState
     description: null
@@ -1520,6 +1548,10 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       ageCategory:
         required: true
       attribute:
@@ -1528,6 +1560,14 @@ classes:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - TissueSampleState:
     class_uri: https://openminds.om-i.org/types/TissueSampleState
     description: Structured information on a temporary state of a tissue sample.
@@ -1544,12 +1584,24 @@ classes:
     - relativeTimeIndication
     - weight
     slot_usage:
+      age:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
       attribute:
         range: TissueSampleAttribute
       descendedFrom:
         range: SubjectGroupState
       pathology:
         range: Disease
+      relativeTimeIndication:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
+      weight:
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - Subject:
     class_uri: https://openminds.om-i.org/types/Subject
     description: Structured information on a subject.
@@ -1567,9 +1619,6 @@ classes:
         range: SubjectGroup
       species:
         required: true
-        any_of:
-        - range: Species
-        - range: Strain
       studiedState:
         required: true
         range: SubjectState

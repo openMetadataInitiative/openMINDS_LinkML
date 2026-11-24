@@ -356,10 +356,6 @@ classes:
     slot_usage:
       anchorPoint:
         required: true
-      preferredDisplayColor:
-        any_of:
-        - range: Colormap
-        - range: SingleColor
 - CoordinatePoint:
     class_uri: https://openminds.om-i.org/types/CoordinatePoint
     description: null
@@ -409,6 +405,9 @@ classes:
         range: ParcellationEntityVersion
       quantitativeOverlap:
         required: true
+        any_of:
+        - range: QuantitativeValue
+        - range: QuantitativeValueRange
 - AnatomicalTargetPosition:
     class_uri: https://openminds.om-i.org/types/AnatomicalTargetPosition
     description: null
@@ -536,9 +535,6 @@ classes:
         - range: uri
       usedTaxon:
         required: true
-        any_of:
-        - range: BiologicalOrder
-        - range: Species
 - AnatomicalAtlasVersion:
     class_uri: https://openminds.om-i.org/types/AnatomicalAtlasVersion
     description: null
@@ -808,9 +804,6 @@ classes:
         - range: uri
       usedTaxon:
         required: true
-        any_of:
-        - range: BiologicalOrder
-        - range: Species
 - CustomAnnotation:
     class_uri: https://openminds.om-i.org/types/CustomAnnotation
     description: null
