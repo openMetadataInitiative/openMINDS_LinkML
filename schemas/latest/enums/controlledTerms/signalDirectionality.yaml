@@ -16,9 +16,9 @@ enums:
       signal-transceiving:
         description: A signal directionality mode in which a device both emits and
           detects signals within the same system or operational context.
-      signal-receiving:
-        description: A signal directionality mode in which a device detects and acquires
-          incoming signals from an external source or medium.
       signal-transmitting:
         description: A signal directionality mode in which a device generates and
           emits signals toward an external system, medium, or target.
+      signal-receiving:
+        description: A signal directionality mode in which a device detects and acquires
+          incoming signals from an external source or medium.
