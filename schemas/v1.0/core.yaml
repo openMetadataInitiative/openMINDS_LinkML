@@ -746,9 +746,6 @@ classes:
     slot_usage:
       dataLocation:
         required: true
-        any_of:
-        - range: File
-        - range: FileBundle
       openDataIn:
         required: true
       service:
@@ -1097,9 +1094,6 @@ classes:
         range: NumericalParameter
       relevantFor:
         required: true
-        any_of:
-        - range: BehavioralTask
-        - range: Technique
 - TissueSampleCollectionState:
     class_uri: https://openminds.ebrains.eu/core/TissueSampleCollectionState
     description: null

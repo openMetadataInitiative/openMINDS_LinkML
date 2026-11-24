@@ -909,10 +909,6 @@ classes:
     slot_usage:
       funder:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
 - FileArchive:
     class_uri: https://openminds.om-i.org/types/FileArchive
     description: null
@@ -1115,9 +1111,6 @@ classes:
     slot_usage:
       memberOf:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
 - Consortium:
     class_uri: https://openminds.om-i.org/types/Consortium
     description: Structured information about an association of two or more persons
@@ -1153,10 +1146,6 @@ classes:
     slot_usage:
       contributor:
         required: true
-        any_of:
-        - range: Consortium
-        - range: Organization
-        - range: Person
       type:
         required: true
         range: ContributionType
@@ -1388,11 +1377,6 @@ classes:
     - stimulusType
     - technique
     slot_usage:
-      describedIn:
-        any_of:
-        - range: DOI
-        - range: File
-        - range: WebResource
       description:
         required: true
       name:
