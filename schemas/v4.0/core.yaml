@@ -220,9 +220,6 @@ classes:
         range: ActionStatusType
       license:
         required: true
-        any_of:
-        - range: License
-        - range: WebResource
       relatedPublication:
         range: DOI
       releaseDate:
@@ -912,6 +909,10 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
 - FileArchive:
     class_uri: https://openminds.om-i.org/types/FileArchive
     description: null
@@ -1149,6 +1150,10 @@ classes:
     slot_usage:
       contributor:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
       type:
         required: true
         range: ContributionType
@@ -1356,12 +1361,11 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
-        - range: OrganismSubstance
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -1619,6 +1623,9 @@ classes:
         range: SubjectGroup
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: SubjectState

@@ -1048,6 +1048,10 @@ classes:
     slot_usage:
       member:
         required: true
+        any_of:
+        - range: Consortium
+        - range: Organization
+        - range: Person
 - GeoCoordinates:
     class_uri: https://openminds.om-i.org/types/GeoCoordinates
     description: null
@@ -1217,6 +1221,9 @@ classes:
     slot_usage:
       funder:
         required: true
+        any_of:
+        - range: Organization
+        - range: Person
 - GridVolumeSequence:
     class_uri: https://openminds.om-i.org/types/GridVolumeSequence
     description: null
@@ -2008,12 +2015,11 @@ classes:
         range: TissueSampleCollection
       origin:
         required: true
-        any_of:
-        - range: CellType
-        - range: Organ
-        - range: OrganismSubstance
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: TissueSampleState
@@ -2275,6 +2281,9 @@ classes:
         range: SubjectGroup
       species:
         required: true
+        any_of:
+        - range: Species
+        - range: Strain
       studiedState:
         required: true
         range: SubjectState
